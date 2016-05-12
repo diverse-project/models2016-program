@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MODELS 2016 Program</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+<body ng-app="models-app">
+
+<div ng-controller="ProgramController">
+
+    <div ng-repeat="day in days" class="table-responsive">
+        {{day.name}}
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Sessions</th>
+                <th ng-repeat="room in rooms">{{room.name}}</th>
+            </tr>
+            </thead>
+
+            <tbody>
+                <tr ng-repeat="session in day.sessions">
+                    <td>{{session.start}} - {{session.end}}</td>
+
+                    <td ng-repeat="room in session.rooms">
+                        <table>
+                            <tr ng-repeat="talk in room.talks">
+                                <td>{{talk.title}}</td>
+                            </tr>
+                        </table>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/program.js"></script>
+
+</body>
+</html>
