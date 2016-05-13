@@ -5,23 +5,26 @@
     <title>MODELS 2016 Program</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/program.css" />
 </head>
 <body ng-app="models-app">
 
-<div ng-controller="ProgramController">
+<div ng-controller="ProgramController" ng-cloak>
 
-        <div class="container">
+    <div class="container">
 
-            <div>
-                <h1>MODELS 2016 - Program</h1>
+        <div class="row">
+            <h1 class="title">MODELS 2016 - Program</h1>
+        </div>
+
+        <div ng-repeat="day in data" class="row">
+            <h3 class="day">{{day.name}}</h3>
+
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="showFavorites" ng-change="toggleFavorites()"> Show only <span class="glyphicon glyphicon-star"></span></label>
             </div>
 
-            <div>
-                <input type="checkbox" ng-model="showFavorites" ng-change="toggleFavorites()"> Show only <span class="glyphicon glyphicon-star"/>
-            </div>
-
-            <div ng-repeat="day in data" class="table-responsive">
-                {{day.name}}
+            <div class="table-responsive">
                 <table class="table table-bordered table-hover table-condensed">
                     <thead>
                     <tr>
@@ -32,12 +35,15 @@
 
                     <tbody>
                     <tr ng-repeat="session in day.sessions">
-                        <td>{{session.name}} : {{session.start}} - {{session.end}}</td>
-                        
+                        <td>
+                            <strong>{{session.name}}</strong><br/>
+                            {{session.start}} - {{session.end}}
+                        </td>
+
                         <td ng-repeat="talkGroup in session.talkGroups">
                             <table>
                                 <tr ng-repeat="talk in talkGroup">
-                                    <td>
+                                    <td ng-if="talk.title">
                                         <div ng-show="!showFavorites || (showFavorites && talk.selected)">
                                             <button class="btn btn-link" ng-click="toggleFavoriteTalk(talk)">
                                                 <span ng-if="talk.selected" class="glyphicon glyphicon-star"></span>
@@ -53,13 +59,16 @@
                     </tbody>
                 </table>
             </div>
-
-            <div>
-                <button class="btn btn-default" ng-click="exportToCal(true)">Export <span class="glyphicon glyphicon-star"></span> to iCal</button>
-                <button class="btn btn-default" ng-click="exportToCal(false)">Export all to iCal</button>
-            </div>
-
         </div>
+
+        <div class="row">
+            <button class="btn btn-default" ng-click="exportToCal(true)">Export <span class="glyphicon glyphicon-star"></span> to iCal</button>
+            <button class="btn btn-default" ng-click="exportToCal(false)">Export all to iCal</button>
+        </div>
+
+        <footer class="row">
+            <p>Proudly powered by MDE techniques, including Xtext, Xtend and the GEMOC studio.</p>
+        </footer>
     </div>
 
 </div>
