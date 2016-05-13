@@ -11,6 +11,11 @@
 <div ng-controller="ProgramController">
 
         <div class="container">
+
+            <div>
+                <h1>MODELS 2016 - Program</h1>
+            </div>
+
             <div>
                 <input type="checkbox" ng-model="showFavorites" ng-change="toggleFavorites()"> Show only <span class="glyphicon glyphicon-star"/>
             </div>
@@ -34,7 +39,7 @@
                                 <tr ng-repeat="talk in talkGroup">
                                     <td>
                                         <div ng-show="!showFavorites || (showFavorites && talk.selected)">
-                                            <button class="btn btn-info" ng-click="toggleFavoriteTalk(talk)">
+                                            <button class="btn btn-link" ng-click="toggleFavoriteTalk(talk)">
                                                 <span ng-if="talk.selected" class="glyphicon glyphicon-star"></span>
                                                 <span ng-if="!talk.selected" class="glyphicon glyphicon-star-empty"></span>
                                             </button>
