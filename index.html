@@ -9,34 +9,51 @@
 <body ng-app="models-app">
 
 <div ng-controller="ProgramController">
-    <div ng-repeat="day in days" class="table-responsive">
+
+    <div>
+        <input type="checkbox" ng-model="showFavorites" ng-change="toggleFavorites()"> Show only <span class="glyphicon glyphicon-star">
+    </div>
+
+    <div ng-repeat="day in data" class="table-responsive">
         {{day.name}}
-        <table class="table table-bordered">
+        <table class="table table-bordered table-hover table-condensed">
             <thead>
             <tr>
                 <th>Sessions</th>
-                <th ng-repeat="room in roomsWorkshop">{{room.name}}</th>
+                <th ng-repeat="room in day.rooms">{{room}}</th>
             </tr>
             </thead>
 
             <tbody>
                 <tr ng-repeat="session in day.sessions">
-                    <td>{{session.start}} - {{session.end}}</td>
+                    <td>{{session.name}} : {{session.start}} - {{session.end}}</td>
 
-                    <td ng-repeat="room in session.rooms">
+                    <td ng-repeat="talkGroup in session.talkGroups">
                         <table>
-                            <tr ng-repeat="talk in room.talks">
-                                <td>{{talk.title}}</td>
+                            <tr ng-repeat="talk in talkGroup">
+                                <td>
+                                    <div ng-if="!showFavorites || (showFavorites && talk.selected)">
+                                        <button class="btn btn-info" ng-click="toggleFavoriteTalk(talk)">
+                                            <span ng-if="talk.selected" class="glyphicon glyphicon-star"></span>
+                                            <span ng-if="!talk.selected" class="glyphicon glyphicon-star-empty"></span>
+                                        </button>
+                                        {{talk.title}}
+                                    </div>
+                                </td>
                             </tr>
                         </table>
-                        <a class="btn" ng-click="saveSession"><span class="glyphicon glyphicon-star-empty"></span></a>
+
                     </td>
                 </tr>
             </tbody>
         </table>
-        <a class="btn btn-default" href="#" role="button">Export to iCal</a>
-        {{saved}}
     </div>
+
+    <div>
+        <button class="btn btn-default">Export <span class="glyphicon glyphicon-star"></span> to iCal</button>
+        <button class="btn btn-default">Export all to iCal</button>
+    </div>
+
 </div>
 
 <script src="js/jquery-2.2.3.min.js"></script>
