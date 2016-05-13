@@ -10,48 +10,53 @@
 
 <div ng-controller="ProgramController">
 
-    <div>
-        <input type="checkbox" ng-model="showFavorites" ng-change="toggleFavorites()"> Show only <span class="glyphicon glyphicon-star">
-    </div>
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+            <div>
+                <input type="checkbox" ng-model="showFavorites" ng-change="toggleFavorites()"> Show only <span class="glyphicon glyphicon-star"/>
+            </div>
 
-    <div ng-repeat="day in data" class="table-responsive">
-        {{day.name}}
-        <table class="table table-bordered table-hover table-condensed">
-            <thead>
-            <tr>
-                <th>Sessions</th>
-                <th ng-repeat="room in day.rooms">{{room}}</th>
-            </tr>
-            </thead>
+            <div ng-repeat="day in data" class="table-responsive">
+                {{day.name}}
+                <table class="table table-bordered table-hover table-condensed">
+                    <thead>
+                    <tr>
+                        <th>Sessions</th>
+                        <th ng-repeat="room in day.rooms">{{room}}</th>
+                    </tr>
+                    </thead>
 
-            <tbody>
-                <tr ng-repeat="session in day.sessions">
-                    <td>{{session.name}} : {{session.start}} - {{session.end}}</td>
+                    <tbody>
+                    <tr ng-repeat="session in day.sessions">
+                        <td>{{session.name}} : {{session.start}} - {{session.end}}</td>
 
-                    <td ng-repeat="talkGroup in session.talkGroups">
-                        <table>
-                            <tr ng-repeat="talk in talkGroup">
-                                <td>
-                                    <div ng-show="!showFavorites || (showFavorites && talk.selected)">
-                                        <button class="btn btn-info" ng-click="toggleFavoriteTalk(talk)">
-                                            <span ng-if="talk.selected" class="glyphicon glyphicon-star"></span>
-                                            <span ng-if="!talk.selected" class="glyphicon glyphicon-star-empty"></span>
-                                        </button>
-                                        {{talk.title}}
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
+                        <td ng-repeat="talkGroup in session.talkGroups">
+                            <table>
+                                <tr ng-repeat="talk in talkGroup">
+                                    <td>
+                                        <div ng-show="!showFavorites || (showFavorites && talk.selected)">
+                                            <button class="btn btn-info" ng-click="toggleFavoriteTalk(talk)">
+                                                <span ng-if="talk.selected" class="glyphicon glyphicon-star"></span>
+                                                <span ng-if="!talk.selected" class="glyphicon glyphicon-star-empty"></span>
+                                            </button>
+                                            {{talk.title}}
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
 
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+            <div>
+                <button class="btn btn-default" ng-click="exportToCal(true)">Export <span class="glyphicon glyphicon-star"></span> to iCal</button>
+                <button class="btn btn-default" ng-click="exportToCal(false)">Export all to iCal</button>
+            </div>
 
-    <div>
-        <button class="btn btn-default" ng-click="exportToCal(true)">Export <span class="glyphicon glyphicon-star"></span> to iCal</button>
-        <button class="btn btn-default" ng-click="exportToCal(false)">Export all to iCal</button>
+        </div>
+        <div class="col-xs-1"></div>
     </div>
 
 </div>

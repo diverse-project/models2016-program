@@ -71,51 +71,53 @@ class ProgramGenerator implements IGenerator {
 	def String generate() {
 		return
 				'''
-					«FOR d : days»
-					{
-						name : "«d.name»",
-						rooms : [
-							«val roomsOfDay = roomsPerDay.get(d)»
-							«FOR r : roomsOfDay SEPARATOR ","»
-							«r.name»
-							«ENDFOR»
-						],
-						sessions : [
-							«FOR s : d.sessions»
-							{
-								name : "«s.name»",
-								start : "«s.start»",
-								end : "«s.end»",
-								talkGroups : [
-									«val talksPerRoom = talksPerRoomPerSession.get(s)»
-									«IF talksPerRoom == null»
-									[]
-									«ELSE»
-									«FOR r : roomsOfDay»
-									[
-										«val talksInRoom = talksPerRoom.get(r)»
-										«IF talksInRoom == null»
-										{}
+					[
+						«FOR d : days SEPARATOR ","»
+						{
+							name : "«d.name»",
+							rooms : [
+								«val roomsOfDay = roomsPerDay.get(d)»
+								«FOR r : roomsOfDay SEPARATOR ","»
+								"«r.name»"
+								«ENDFOR»
+							],
+							sessions : [
+								«FOR s : d.sessions»
+								{
+									name : "«s.name»",
+									start : "«s.start»",
+									end : "«s.end»",
+									talkGroups : [
+										«val talksPerRoom = talksPerRoomPerSession.get(s)»
+										«IF talksPerRoom == null»
+										[]
 										«ELSE»
-										«FOR t : talksInRoom SEPARATOR ","»
-										{
-											«val hasSpeakers = t.speakers != null && !t.speakers.empty»
-											title: "«t.tilte»"«IF hasSpeakers»,«ENDIF»
-											«IF hasSpeakers»
-											speakers: «FOR sp : t.speakers SEPARATOR ","»"«sp»"«ENDFOR»
+										«FOR r : roomsOfDay SEPARATOR ","»
+										[
+											«val talksInRoom = talksPerRoom.get(r)»
+											«IF talksInRoom == null»
+											{}
+											«ELSE»
+											«FOR t : talksInRoom SEPARATOR ","»
+											{
+												«val hasSpeakers = t.speakers != null && !t.speakers.empty»
+												title: "«t.tilte»"«IF hasSpeakers»,«ENDIF»
+												«IF hasSpeakers»
+												speakers: «FOR sp : t.speakers SEPARATOR ","»"«sp»"«ENDFOR»
+												«ENDIF»
+											}
+											«ENDFOR»
 											«ENDIF»
-										}
+										]
 										«ENDFOR»
 										«ENDIF»
 									]
-									«ENDFOR»
-									«ENDIF»
-								]
-							}
-							«ENDFOR»
-						]
-					}
-					«ENDFOR»
+								}
+								«ENDFOR»
+							]
+						}
+						«ENDFOR»
+					]
 				'''
 	}
 }

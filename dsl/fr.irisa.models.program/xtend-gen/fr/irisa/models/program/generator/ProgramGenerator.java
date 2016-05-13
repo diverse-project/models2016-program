@@ -123,73 +123,96 @@ public class ProgramGenerator implements IGenerator {
   
   public String generate() {
     StringConcatenation _builder = new StringConcatenation();
+    _builder.append("[");
+    _builder.newLine();
     {
+      boolean _hasElements = false;
       for(final Day d : this.days) {
+        if (!_hasElements) {
+          _hasElements = true;
+        } else {
+          _builder.appendImmediate(",", "\t");
+        }
+        _builder.append("\t");
         _builder.append("{");
         _builder.newLine();
         _builder.append("\t");
+        _builder.append("\t");
         _builder.append("name : \"");
         String _name = d.getName();
-        _builder.append(_name, "\t");
+        _builder.append(_name, "\t\t");
         _builder.append("\",");
         _builder.newLineIfNotEmpty();
         _builder.append("\t");
+        _builder.append("\t");
         _builder.append("rooms : [");
         _builder.newLine();
+        _builder.append("\t");
         _builder.append("\t\t");
         final List<Room> roomsOfDay = this.roomsPerDay.get(d);
         _builder.newLineIfNotEmpty();
         {
-          boolean _hasElements = false;
+          boolean _hasElements_1 = false;
           for(final Room r : roomsOfDay) {
-            if (!_hasElements) {
-              _hasElements = true;
+            if (!_hasElements_1) {
+              _hasElements_1 = true;
             } else {
-              _builder.appendImmediate(",", "\t\t");
+              _builder.appendImmediate(",", "\t\t\t");
             }
+            _builder.append("\t");
             _builder.append("\t\t");
+            _builder.append("\"");
             String _name_1 = r.getName();
-            _builder.append(_name_1, "\t\t");
+            _builder.append(_name_1, "\t\t\t");
+            _builder.append("\"");
             _builder.newLineIfNotEmpty();
           }
         }
         _builder.append("\t");
+        _builder.append("\t");
         _builder.append("],");
         _builder.newLine();
+        _builder.append("\t");
         _builder.append("\t");
         _builder.append("sessions : [");
         _builder.newLine();
         {
           EList<Session> _sessions = d.getSessions();
           for(final Session s : _sessions) {
+            _builder.append("\t");
             _builder.append("\t\t");
             _builder.append("{");
             _builder.newLine();
+            _builder.append("\t");
             _builder.append("\t\t");
             _builder.append("\t");
             _builder.append("name : \"");
             String _name_2 = s.getName();
-            _builder.append(_name_2, "\t\t\t");
+            _builder.append(_name_2, "\t\t\t\t");
             _builder.append("\",");
             _builder.newLineIfNotEmpty();
+            _builder.append("\t");
             _builder.append("\t\t");
             _builder.append("\t");
             _builder.append("start : \"");
             String _start = s.getStart();
-            _builder.append(_start, "\t\t\t");
+            _builder.append(_start, "\t\t\t\t");
             _builder.append("\",");
             _builder.newLineIfNotEmpty();
+            _builder.append("\t");
             _builder.append("\t\t");
             _builder.append("\t");
             _builder.append("end : \"");
             String _end = s.getEnd();
-            _builder.append(_end, "\t\t\t");
+            _builder.append(_end, "\t\t\t\t");
             _builder.append("\",");
             _builder.newLineIfNotEmpty();
+            _builder.append("\t");
             _builder.append("\t\t");
             _builder.append("\t");
             _builder.append("talkGroups : [");
             _builder.newLine();
+            _builder.append("\t");
             _builder.append("\t\t");
             _builder.append("\t\t");
             final Map<Room, List<Talk>> talksPerRoom = this.talksPerRoomPerSession.get(s);
@@ -197,17 +220,26 @@ public class ProgramGenerator implements IGenerator {
             {
               boolean _equals = Objects.equal(talksPerRoom, null);
               if (_equals) {
+                _builder.append("\t");
                 _builder.append("\t\t");
                 _builder.append("\t\t");
                 _builder.append("[]");
                 _builder.newLine();
               } else {
                 {
+                  boolean _hasElements_2 = false;
                   for(final Room r_1 : roomsOfDay) {
+                    if (!_hasElements_2) {
+                      _hasElements_2 = true;
+                    } else {
+                      _builder.appendImmediate(",", "\t\t\t\t\t");
+                    }
+                    _builder.append("\t");
                     _builder.append("\t\t");
                     _builder.append("\t\t");
                     _builder.append("[");
                     _builder.newLine();
+                    _builder.append("\t");
                     _builder.append("\t\t");
                     _builder.append("\t\t");
                     _builder.append("\t");
@@ -216,6 +248,7 @@ public class ProgramGenerator implements IGenerator {
                     {
                       boolean _equals_1 = Objects.equal(talksInRoom, null);
                       if (_equals_1) {
+                        _builder.append("\t");
                         _builder.append("\t\t");
                         _builder.append("\t\t");
                         _builder.append("\t");
@@ -223,18 +256,20 @@ public class ProgramGenerator implements IGenerator {
                         _builder.newLine();
                       } else {
                         {
-                          boolean _hasElements_1 = false;
+                          boolean _hasElements_3 = false;
                           for(final Talk t : talksInRoom) {
-                            if (!_hasElements_1) {
-                              _hasElements_1 = true;
+                            if (!_hasElements_3) {
+                              _hasElements_3 = true;
                             } else {
-                              _builder.appendImmediate(",", "\t\t\t\t\t");
+                              _builder.appendImmediate(",", "\t\t\t\t\t\t");
                             }
+                            _builder.append("\t");
                             _builder.append("\t\t");
                             _builder.append("\t\t");
                             _builder.append("\t");
                             _builder.append("{");
                             _builder.newLine();
+                            _builder.append("\t");
                             _builder.append("\t\t");
                             _builder.append("\t\t");
                             _builder.append("\t");
@@ -252,13 +287,14 @@ public class ProgramGenerator implements IGenerator {
                             }
                             final boolean hasSpeakers = _and;
                             _builder.newLineIfNotEmpty();
+                            _builder.append("\t");
                             _builder.append("\t\t");
                             _builder.append("\t\t");
                             _builder.append("\t");
                             _builder.append("\t");
                             _builder.append("title: \"");
                             String _tilte = t.getTilte();
-                            _builder.append(_tilte, "\t\t\t\t\t\t");
+                            _builder.append(_tilte, "\t\t\t\t\t\t\t");
                             _builder.append("\"");
                             {
                               if (hasSpeakers) {
@@ -268,6 +304,7 @@ public class ProgramGenerator implements IGenerator {
                             _builder.newLineIfNotEmpty();
                             {
                               if (hasSpeakers) {
+                                _builder.append("\t");
                                 _builder.append("\t\t");
                                 _builder.append("\t\t");
                                 _builder.append("\t");
@@ -275,21 +312,22 @@ public class ProgramGenerator implements IGenerator {
                                 _builder.append("speakers: ");
                                 {
                                   EList<String> _speakers_2 = t.getSpeakers();
-                                  boolean _hasElements_2 = false;
+                                  boolean _hasElements_4 = false;
                                   for(final String sp : _speakers_2) {
-                                    if (!_hasElements_2) {
-                                      _hasElements_2 = true;
+                                    if (!_hasElements_4) {
+                                      _hasElements_4 = true;
                                     } else {
-                                      _builder.appendImmediate(",", "\t\t\t\t\t\t");
+                                      _builder.appendImmediate(",", "\t\t\t\t\t\t\t");
                                     }
                                     _builder.append("\"");
-                                    _builder.append(sp, "\t\t\t\t\t\t");
+                                    _builder.append(sp, "\t\t\t\t\t\t\t");
                                     _builder.append("\"");
                                   }
                                 }
                                 _builder.newLineIfNotEmpty();
                               }
                             }
+                            _builder.append("\t");
                             _builder.append("\t\t");
                             _builder.append("\t\t");
                             _builder.append("\t");
@@ -299,6 +337,7 @@ public class ProgramGenerator implements IGenerator {
                         }
                       }
                     }
+                    _builder.append("\t");
                     _builder.append("\t\t");
                     _builder.append("\t\t");
                     _builder.append("]");
@@ -307,22 +346,28 @@ public class ProgramGenerator implements IGenerator {
                 }
               }
             }
+            _builder.append("\t");
             _builder.append("\t\t");
             _builder.append("\t");
             _builder.append("]");
             _builder.newLine();
+            _builder.append("\t");
             _builder.append("\t\t");
             _builder.append("}");
             _builder.newLine();
           }
         }
         _builder.append("\t");
+        _builder.append("\t");
         _builder.append("]");
         _builder.newLine();
+        _builder.append("\t");
         _builder.append("}");
         _builder.newLine();
       }
     }
+    _builder.append("]");
+    _builder.newLine();
     return _builder.toString();
   }
 }

@@ -21,7 +21,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalProgramParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'Rooms:'", "';'", "'Days:'", "'Day'", "'['", "'name:'", "'Sessions:'", "']'", "'Session'", "'start:'", "'end:'", "'Talks:'", "'Talk'", "'title:'", "'room:'", "'speakers:'", "','"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'Rooms'", "'Days'", "'['", "'name'", "'Sessions'", "']'", "'start'", "'end'", "'Talks'", "'title'", "'room'", "'speakers'", "','"
     };
     public static final int RULE_STRING=4;
     public static final int RULE_SL_COMMENT=8;
@@ -38,14 +38,10 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
     public static final int RULE_ID=5;
     public static final int RULE_WS=9;
     public static final int RULE_ANY_OTHER=10;
-    public static final int T__26=26;
-    public static final int T__27=27;
     public static final int RULE_INT=6;
     public static final int T__22=22;
     public static final int RULE_ML_COMMENT=7;
     public static final int T__23=23;
-    public static final int T__24=24;
-    public static final int T__25=25;
     public static final int T__20=20;
     public static final int T__21=21;
 
@@ -124,32 +120,31 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleProgram"
-    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:76:1: ruleProgram returns [EObject current=null] : ( (otherlv_0= 'Rooms:' ( (lv_rooms_1_0= ruleRoom ) ) (otherlv_2= ';' ( (lv_rooms_3_0= ruleRoom ) ) )* )? (otherlv_4= 'Days:' ( (lv_days_5_0= ruleDay ) ) ( (lv_days_6_0= ruleDay ) )* )? ) ;
+    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:76:1: ruleProgram returns [EObject current=null] : ( (otherlv_0= 'Rooms' ( (lv_rooms_1_0= ruleRoom ) ) ( (lv_rooms_2_0= ruleRoom ) )* )? (otherlv_3= 'Days' ( (lv_days_4_0= ruleDay ) ) ( (lv_days_5_0= ruleDay ) )* )? ) ;
     public final EObject ruleProgram() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
-        Token otherlv_2=null;
-        Token otherlv_4=null;
+        Token otherlv_3=null;
         EObject lv_rooms_1_0 = null;
 
-        EObject lv_rooms_3_0 = null;
+        EObject lv_rooms_2_0 = null;
+
+        EObject lv_days_4_0 = null;
 
         EObject lv_days_5_0 = null;
-
-        EObject lv_days_6_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:79:28: ( ( (otherlv_0= 'Rooms:' ( (lv_rooms_1_0= ruleRoom ) ) (otherlv_2= ';' ( (lv_rooms_3_0= ruleRoom ) ) )* )? (otherlv_4= 'Days:' ( (lv_days_5_0= ruleDay ) ) ( (lv_days_6_0= ruleDay ) )* )? ) )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:80:1: ( (otherlv_0= 'Rooms:' ( (lv_rooms_1_0= ruleRoom ) ) (otherlv_2= ';' ( (lv_rooms_3_0= ruleRoom ) ) )* )? (otherlv_4= 'Days:' ( (lv_days_5_0= ruleDay ) ) ( (lv_days_6_0= ruleDay ) )* )? )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:79:28: ( ( (otherlv_0= 'Rooms' ( (lv_rooms_1_0= ruleRoom ) ) ( (lv_rooms_2_0= ruleRoom ) )* )? (otherlv_3= 'Days' ( (lv_days_4_0= ruleDay ) ) ( (lv_days_5_0= ruleDay ) )* )? ) )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:80:1: ( (otherlv_0= 'Rooms' ( (lv_rooms_1_0= ruleRoom ) ) ( (lv_rooms_2_0= ruleRoom ) )* )? (otherlv_3= 'Days' ( (lv_days_4_0= ruleDay ) ) ( (lv_days_5_0= ruleDay ) )* )? )
             {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:80:1: ( (otherlv_0= 'Rooms:' ( (lv_rooms_1_0= ruleRoom ) ) (otherlv_2= ';' ( (lv_rooms_3_0= ruleRoom ) ) )* )? (otherlv_4= 'Days:' ( (lv_days_5_0= ruleDay ) ) ( (lv_days_6_0= ruleDay ) )* )? )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:80:2: (otherlv_0= 'Rooms:' ( (lv_rooms_1_0= ruleRoom ) ) (otherlv_2= ';' ( (lv_rooms_3_0= ruleRoom ) ) )* )? (otherlv_4= 'Days:' ( (lv_days_5_0= ruleDay ) ) ( (lv_days_6_0= ruleDay ) )* )?
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:80:1: ( (otherlv_0= 'Rooms' ( (lv_rooms_1_0= ruleRoom ) ) ( (lv_rooms_2_0= ruleRoom ) )* )? (otherlv_3= 'Days' ( (lv_days_4_0= ruleDay ) ) ( (lv_days_5_0= ruleDay ) )* )? )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:80:2: (otherlv_0= 'Rooms' ( (lv_rooms_1_0= ruleRoom ) ) ( (lv_rooms_2_0= ruleRoom ) )* )? (otherlv_3= 'Days' ( (lv_days_4_0= ruleDay ) ) ( (lv_days_5_0= ruleDay ) )* )?
             {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:80:2: (otherlv_0= 'Rooms:' ( (lv_rooms_1_0= ruleRoom ) ) (otherlv_2= ';' ( (lv_rooms_3_0= ruleRoom ) ) )* )?
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:80:2: (otherlv_0= 'Rooms' ( (lv_rooms_1_0= ruleRoom ) ) ( (lv_rooms_2_0= ruleRoom ) )* )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -158,7 +153,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
             }
             switch (alt2) {
                 case 1 :
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:80:4: otherlv_0= 'Rooms:' ( (lv_rooms_1_0= ruleRoom ) ) (otherlv_2= ';' ( (lv_rooms_3_0= ruleRoom ) ) )*
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:80:4: otherlv_0= 'Rooms' ( (lv_rooms_1_0= ruleRoom ) ) ( (lv_rooms_2_0= ruleRoom ) )*
                     {
                     otherlv_0=(Token)match(input,11,FOLLOW_11_in_ruleProgram123); 
 
@@ -195,36 +190,29 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:102:2: (otherlv_2= ';' ( (lv_rooms_3_0= ruleRoom ) ) )*
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:102:2: ( (lv_rooms_2_0= ruleRoom ) )*
                     loop1:
                     do {
                         int alt1=2;
                         int LA1_0 = input.LA(1);
 
-                        if ( (LA1_0==12) ) {
+                        if ( (LA1_0==RULE_STRING) ) {
                             alt1=1;
                         }
 
 
                         switch (alt1) {
                     	case 1 :
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:102:4: otherlv_2= ';' ( (lv_rooms_3_0= ruleRoom ) )
+                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:103:1: (lv_rooms_2_0= ruleRoom )
                     	    {
-                    	    otherlv_2=(Token)match(input,12,FOLLOW_12_in_ruleProgram157); 
-
-                    	        	newLeafNode(otherlv_2, grammarAccess.getProgramAccess().getSemicolonKeyword_0_2_0());
-                    	        
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:106:1: ( (lv_rooms_3_0= ruleRoom ) )
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:107:1: (lv_rooms_3_0= ruleRoom )
-                    	    {
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:107:1: (lv_rooms_3_0= ruleRoom )
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:108:3: lv_rooms_3_0= ruleRoom
+                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:103:1: (lv_rooms_2_0= ruleRoom )
+                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:104:3: lv_rooms_2_0= ruleRoom
                     	    {
                     	     
-                    	    	        newCompositeNode(grammarAccess.getProgramAccess().getRoomsRoomParserRuleCall_0_2_1_0()); 
+                    	    	        newCompositeNode(grammarAccess.getProgramAccess().getRoomsRoomParserRuleCall_0_2_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_ruleRoom_in_ruleProgram178);
-                    	    lv_rooms_3_0=ruleRoom();
+                    	    pushFollow(FOLLOW_ruleRoom_in_ruleProgram165);
+                    	    lv_rooms_2_0=ruleRoom();
 
                     	    state._fsp--;
 
@@ -235,13 +223,10 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                     	           		add(
                     	           			current, 
                     	           			"rooms",
-                    	            		lv_rooms_3_0, 
+                    	            		lv_rooms_2_0, 
                     	            		"Room");
                     	    	        afterParserOrEnumRuleCall();
                     	    	    
-
-                    	    }
-
 
                     	    }
 
@@ -260,32 +245,32 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:124:6: (otherlv_4= 'Days:' ( (lv_days_5_0= ruleDay ) ) ( (lv_days_6_0= ruleDay ) )* )?
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:120:5: (otherlv_3= 'Days' ( (lv_days_4_0= ruleDay ) ) ( (lv_days_5_0= ruleDay ) )* )?
             int alt4=2;
             int LA4_0 = input.LA(1);
 
-            if ( (LA4_0==13) ) {
+            if ( (LA4_0==12) ) {
                 alt4=1;
             }
             switch (alt4) {
                 case 1 :
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:124:8: otherlv_4= 'Days:' ( (lv_days_5_0= ruleDay ) ) ( (lv_days_6_0= ruleDay ) )*
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:120:7: otherlv_3= 'Days' ( (lv_days_4_0= ruleDay ) ) ( (lv_days_5_0= ruleDay ) )*
                     {
-                    otherlv_4=(Token)match(input,13,FOLLOW_13_in_ruleProgram195); 
+                    otherlv_3=(Token)match(input,12,FOLLOW_12_in_ruleProgram181); 
 
-                        	newLeafNode(otherlv_4, grammarAccess.getProgramAccess().getDaysKeyword_1_0());
+                        	newLeafNode(otherlv_3, grammarAccess.getProgramAccess().getDaysKeyword_1_0());
                         
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:128:1: ( (lv_days_5_0= ruleDay ) )
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:129:1: (lv_days_5_0= ruleDay )
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:124:1: ( (lv_days_4_0= ruleDay ) )
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:125:1: (lv_days_4_0= ruleDay )
                     {
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:129:1: (lv_days_5_0= ruleDay )
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:130:3: lv_days_5_0= ruleDay
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:125:1: (lv_days_4_0= ruleDay )
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:126:3: lv_days_4_0= ruleDay
                     {
                      
                     	        newCompositeNode(grammarAccess.getProgramAccess().getDaysDayParserRuleCall_1_1_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleDay_in_ruleProgram216);
-                    lv_days_5_0=ruleDay();
+                    pushFollow(FOLLOW_ruleDay_in_ruleProgram202);
+                    lv_days_4_0=ruleDay();
 
                     state._fsp--;
 
@@ -296,7 +281,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                            		add(
                            			current, 
                            			"days",
-                            		lv_days_5_0, 
+                            		lv_days_4_0, 
                             		"Day");
                     	        afterParserOrEnumRuleCall();
                     	    
@@ -306,29 +291,29 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:146:2: ( (lv_days_6_0= ruleDay ) )*
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:142:2: ( (lv_days_5_0= ruleDay ) )*
                     loop3:
                     do {
                         int alt3=2;
                         int LA3_0 = input.LA(1);
 
-                        if ( (LA3_0==14) ) {
+                        if ( (LA3_0==13) ) {
                             alt3=1;
                         }
 
 
                         switch (alt3) {
                     	case 1 :
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:147:1: (lv_days_6_0= ruleDay )
+                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:143:1: (lv_days_5_0= ruleDay )
                     	    {
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:147:1: (lv_days_6_0= ruleDay )
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:148:3: lv_days_6_0= ruleDay
+                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:143:1: (lv_days_5_0= ruleDay )
+                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:144:3: lv_days_5_0= ruleDay
                     	    {
                     	     
                     	    	        newCompositeNode(grammarAccess.getProgramAccess().getDaysDayParserRuleCall_1_2_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_ruleDay_in_ruleProgram237);
-                    	    lv_days_6_0=ruleDay();
+                    	    pushFollow(FOLLOW_ruleDay_in_ruleProgram223);
+                    	    lv_days_5_0=ruleDay();
 
                     	    state._fsp--;
 
@@ -339,7 +324,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                     	           		add(
                     	           			current, 
                     	           			"days",
-                    	            		lv_days_6_0, 
+                    	            		lv_days_5_0, 
                     	            		"Day");
                     	    	        afterParserOrEnumRuleCall();
                     	    	    
@@ -382,7 +367,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleRoom"
-    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:172:1: entryRuleRoom returns [EObject current=null] : iv_ruleRoom= ruleRoom EOF ;
+    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:168:1: entryRuleRoom returns [EObject current=null] : iv_ruleRoom= ruleRoom EOF ;
     public final EObject entryRuleRoom() throws RecognitionException {
         EObject current = null;
 
@@ -390,17 +375,17 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:173:2: (iv_ruleRoom= ruleRoom EOF )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:174:2: iv_ruleRoom= ruleRoom EOF
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:169:2: (iv_ruleRoom= ruleRoom EOF )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:170:2: iv_ruleRoom= ruleRoom EOF
             {
              newCompositeNode(grammarAccess.getRoomRule()); 
-            pushFollow(FOLLOW_ruleRoom_in_entryRuleRoom276);
+            pushFollow(FOLLOW_ruleRoom_in_entryRuleRoom262);
             iv_ruleRoom=ruleRoom();
 
             state._fsp--;
 
              current =iv_ruleRoom; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleRoom286); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleRoom272); 
 
             }
 
@@ -418,7 +403,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleRoom"
-    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:181:1: ruleRoom returns [EObject current=null] : ( (lv_name_0_0= RULE_STRING ) ) ;
+    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:177:1: ruleRoom returns [EObject current=null] : ( (lv_name_0_0= RULE_STRING ) ) ;
     public final EObject ruleRoom() throws RecognitionException {
         EObject current = null;
 
@@ -427,16 +412,16 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:184:28: ( ( (lv_name_0_0= RULE_STRING ) ) )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:185:1: ( (lv_name_0_0= RULE_STRING ) )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:180:28: ( ( (lv_name_0_0= RULE_STRING ) ) )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:181:1: ( (lv_name_0_0= RULE_STRING ) )
             {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:185:1: ( (lv_name_0_0= RULE_STRING ) )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:186:1: (lv_name_0_0= RULE_STRING )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:181:1: ( (lv_name_0_0= RULE_STRING ) )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:182:1: (lv_name_0_0= RULE_STRING )
             {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:186:1: (lv_name_0_0= RULE_STRING )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:187:3: lv_name_0_0= RULE_STRING
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:182:1: (lv_name_0_0= RULE_STRING )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:183:3: lv_name_0_0= RULE_STRING
             {
-            lv_name_0_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleRoom327); 
+            lv_name_0_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleRoom313); 
 
             			newLeafNode(lv_name_0_0, grammarAccess.getRoomAccess().getNameSTRINGTerminalRuleCall_0()); 
             		
@@ -474,7 +459,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleDay"
-    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:211:1: entryRuleDay returns [EObject current=null] : iv_ruleDay= ruleDay EOF ;
+    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:207:1: entryRuleDay returns [EObject current=null] : iv_ruleDay= ruleDay EOF ;
     public final EObject entryRuleDay() throws RecognitionException {
         EObject current = null;
 
@@ -482,17 +467,17 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:212:2: (iv_ruleDay= ruleDay EOF )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:213:2: iv_ruleDay= ruleDay EOF
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:208:2: (iv_ruleDay= ruleDay EOF )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:209:2: iv_ruleDay= ruleDay EOF
             {
              newCompositeNode(grammarAccess.getDayRule()); 
-            pushFollow(FOLLOW_ruleDay_in_entryRuleDay367);
+            pushFollow(FOLLOW_ruleDay_in_entryRuleDay353);
             iv_ruleDay=ruleDay();
 
             state._fsp--;
 
              current =iv_ruleDay; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDay377); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDay363); 
 
             }
 
@@ -510,51 +495,46 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleDay"
-    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:220:1: ruleDay returns [EObject current=null] : (otherlv_0= 'Day' otherlv_1= '[' otherlv_2= 'name:' ( (lv_name_3_0= RULE_STRING ) ) (otherlv_4= 'Sessions:' ( (lv_sessions_5_0= ruleSession ) ) ( (lv_sessions_6_0= ruleSession ) )* )? otherlv_7= ']' ) ;
+    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:216:1: ruleDay returns [EObject current=null] : (otherlv_0= '[' otherlv_1= 'name' ( (lv_name_2_0= RULE_STRING ) ) (otherlv_3= 'Sessions' ( (lv_sessions_4_0= ruleSession ) ) ( (lv_sessions_5_0= ruleSession ) )* )? otherlv_6= ']' ) ;
     public final EObject ruleDay() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
         Token otherlv_1=null;
-        Token otherlv_2=null;
-        Token lv_name_3_0=null;
-        Token otherlv_4=null;
-        Token otherlv_7=null;
-        EObject lv_sessions_5_0 = null;
+        Token lv_name_2_0=null;
+        Token otherlv_3=null;
+        Token otherlv_6=null;
+        EObject lv_sessions_4_0 = null;
 
-        EObject lv_sessions_6_0 = null;
+        EObject lv_sessions_5_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:223:28: ( (otherlv_0= 'Day' otherlv_1= '[' otherlv_2= 'name:' ( (lv_name_3_0= RULE_STRING ) ) (otherlv_4= 'Sessions:' ( (lv_sessions_5_0= ruleSession ) ) ( (lv_sessions_6_0= ruleSession ) )* )? otherlv_7= ']' ) )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:224:1: (otherlv_0= 'Day' otherlv_1= '[' otherlv_2= 'name:' ( (lv_name_3_0= RULE_STRING ) ) (otherlv_4= 'Sessions:' ( (lv_sessions_5_0= ruleSession ) ) ( (lv_sessions_6_0= ruleSession ) )* )? otherlv_7= ']' )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:219:28: ( (otherlv_0= '[' otherlv_1= 'name' ( (lv_name_2_0= RULE_STRING ) ) (otherlv_3= 'Sessions' ( (lv_sessions_4_0= ruleSession ) ) ( (lv_sessions_5_0= ruleSession ) )* )? otherlv_6= ']' ) )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:220:1: (otherlv_0= '[' otherlv_1= 'name' ( (lv_name_2_0= RULE_STRING ) ) (otherlv_3= 'Sessions' ( (lv_sessions_4_0= ruleSession ) ) ( (lv_sessions_5_0= ruleSession ) )* )? otherlv_6= ']' )
             {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:224:1: (otherlv_0= 'Day' otherlv_1= '[' otherlv_2= 'name:' ( (lv_name_3_0= RULE_STRING ) ) (otherlv_4= 'Sessions:' ( (lv_sessions_5_0= ruleSession ) ) ( (lv_sessions_6_0= ruleSession ) )* )? otherlv_7= ']' )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:224:3: otherlv_0= 'Day' otherlv_1= '[' otherlv_2= 'name:' ( (lv_name_3_0= RULE_STRING ) ) (otherlv_4= 'Sessions:' ( (lv_sessions_5_0= ruleSession ) ) ( (lv_sessions_6_0= ruleSession ) )* )? otherlv_7= ']'
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:220:1: (otherlv_0= '[' otherlv_1= 'name' ( (lv_name_2_0= RULE_STRING ) ) (otherlv_3= 'Sessions' ( (lv_sessions_4_0= ruleSession ) ) ( (lv_sessions_5_0= ruleSession ) )* )? otherlv_6= ']' )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:220:3: otherlv_0= '[' otherlv_1= 'name' ( (lv_name_2_0= RULE_STRING ) ) (otherlv_3= 'Sessions' ( (lv_sessions_4_0= ruleSession ) ) ( (lv_sessions_5_0= ruleSession ) )* )? otherlv_6= ']'
             {
-            otherlv_0=(Token)match(input,14,FOLLOW_14_in_ruleDay414); 
+            otherlv_0=(Token)match(input,13,FOLLOW_13_in_ruleDay400); 
 
-                	newLeafNode(otherlv_0, grammarAccess.getDayAccess().getDayKeyword_0());
+                	newLeafNode(otherlv_0, grammarAccess.getDayAccess().getLeftSquareBracketKeyword_0());
                 
-            otherlv_1=(Token)match(input,15,FOLLOW_15_in_ruleDay426); 
+            otherlv_1=(Token)match(input,14,FOLLOW_14_in_ruleDay412); 
 
-                	newLeafNode(otherlv_1, grammarAccess.getDayAccess().getLeftSquareBracketKeyword_1());
+                	newLeafNode(otherlv_1, grammarAccess.getDayAccess().getNameKeyword_1());
                 
-            otherlv_2=(Token)match(input,16,FOLLOW_16_in_ruleDay438); 
-
-                	newLeafNode(otherlv_2, grammarAccess.getDayAccess().getNameKeyword_2());
-                
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:236:1: ( (lv_name_3_0= RULE_STRING ) )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:237:1: (lv_name_3_0= RULE_STRING )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:228:1: ( (lv_name_2_0= RULE_STRING ) )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:229:1: (lv_name_2_0= RULE_STRING )
             {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:237:1: (lv_name_3_0= RULE_STRING )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:238:3: lv_name_3_0= RULE_STRING
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:229:1: (lv_name_2_0= RULE_STRING )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:230:3: lv_name_2_0= RULE_STRING
             {
-            lv_name_3_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleDay455); 
+            lv_name_2_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleDay429); 
 
-            			newLeafNode(lv_name_3_0, grammarAccess.getDayAccess().getNameSTRINGTerminalRuleCall_3_0()); 
+            			newLeafNode(lv_name_2_0, grammarAccess.getDayAccess().getNameSTRINGTerminalRuleCall_2_0()); 
             		
 
             	        if (current==null) {
@@ -563,7 +543,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                    		setWithLastConsumed(
                    			current, 
                    			"name",
-                    		lv_name_3_0, 
+                    		lv_name_2_0, 
                     		"STRING");
             	    
 
@@ -572,32 +552,32 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:254:2: (otherlv_4= 'Sessions:' ( (lv_sessions_5_0= ruleSession ) ) ( (lv_sessions_6_0= ruleSession ) )* )?
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:246:2: (otherlv_3= 'Sessions' ( (lv_sessions_4_0= ruleSession ) ) ( (lv_sessions_5_0= ruleSession ) )* )?
             int alt6=2;
             int LA6_0 = input.LA(1);
 
-            if ( (LA6_0==17) ) {
+            if ( (LA6_0==15) ) {
                 alt6=1;
             }
             switch (alt6) {
                 case 1 :
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:254:4: otherlv_4= 'Sessions:' ( (lv_sessions_5_0= ruleSession ) ) ( (lv_sessions_6_0= ruleSession ) )*
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:246:4: otherlv_3= 'Sessions' ( (lv_sessions_4_0= ruleSession ) ) ( (lv_sessions_5_0= ruleSession ) )*
                     {
-                    otherlv_4=(Token)match(input,17,FOLLOW_17_in_ruleDay473); 
+                    otherlv_3=(Token)match(input,15,FOLLOW_15_in_ruleDay447); 
 
-                        	newLeafNode(otherlv_4, grammarAccess.getDayAccess().getSessionsKeyword_4_0());
+                        	newLeafNode(otherlv_3, grammarAccess.getDayAccess().getSessionsKeyword_3_0());
                         
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:258:1: ( (lv_sessions_5_0= ruleSession ) )
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:259:1: (lv_sessions_5_0= ruleSession )
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:250:1: ( (lv_sessions_4_0= ruleSession ) )
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:251:1: (lv_sessions_4_0= ruleSession )
                     {
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:259:1: (lv_sessions_5_0= ruleSession )
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:260:3: lv_sessions_5_0= ruleSession
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:251:1: (lv_sessions_4_0= ruleSession )
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:252:3: lv_sessions_4_0= ruleSession
                     {
                      
-                    	        newCompositeNode(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_4_1_0()); 
+                    	        newCompositeNode(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_3_1_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleSession_in_ruleDay494);
-                    lv_sessions_5_0=ruleSession();
+                    pushFollow(FOLLOW_ruleSession_in_ruleDay468);
+                    lv_sessions_4_0=ruleSession();
 
                     state._fsp--;
 
@@ -608,7 +588,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                            		add(
                            			current, 
                            			"sessions",
-                            		lv_sessions_5_0, 
+                            		lv_sessions_4_0, 
                             		"Session");
                     	        afterParserOrEnumRuleCall();
                     	    
@@ -618,29 +598,29 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:276:2: ( (lv_sessions_6_0= ruleSession ) )*
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:268:2: ( (lv_sessions_5_0= ruleSession ) )*
                     loop5:
                     do {
                         int alt5=2;
                         int LA5_0 = input.LA(1);
 
-                        if ( (LA5_0==19) ) {
+                        if ( (LA5_0==13) ) {
                             alt5=1;
                         }
 
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:277:1: (lv_sessions_6_0= ruleSession )
+                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:269:1: (lv_sessions_5_0= ruleSession )
                     	    {
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:277:1: (lv_sessions_6_0= ruleSession )
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:278:3: lv_sessions_6_0= ruleSession
+                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:269:1: (lv_sessions_5_0= ruleSession )
+                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:270:3: lv_sessions_5_0= ruleSession
                     	    {
                     	     
-                    	    	        newCompositeNode(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_4_2_0()); 
+                    	    	        newCompositeNode(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_3_2_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_ruleSession_in_ruleDay515);
-                    	    lv_sessions_6_0=ruleSession();
+                    	    pushFollow(FOLLOW_ruleSession_in_ruleDay489);
+                    	    lv_sessions_5_0=ruleSession();
 
                     	    state._fsp--;
 
@@ -651,7 +631,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                     	           		add(
                     	           			current, 
                     	           			"sessions",
-                    	            		lv_sessions_6_0, 
+                    	            		lv_sessions_5_0, 
                     	            		"Session");
                     	    	        afterParserOrEnumRuleCall();
                     	    	    
@@ -673,9 +653,9 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_7=(Token)match(input,18,FOLLOW_18_in_ruleDay530); 
+            otherlv_6=(Token)match(input,16,FOLLOW_16_in_ruleDay504); 
 
-                	newLeafNode(otherlv_7, grammarAccess.getDayAccess().getRightSquareBracketKeyword_5());
+                	newLeafNode(otherlv_6, grammarAccess.getDayAccess().getRightSquareBracketKeyword_4());
                 
 
             }
@@ -698,7 +678,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleSession"
-    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:306:1: entryRuleSession returns [EObject current=null] : iv_ruleSession= ruleSession EOF ;
+    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:298:1: entryRuleSession returns [EObject current=null] : iv_ruleSession= ruleSession EOF ;
     public final EObject entryRuleSession() throws RecognitionException {
         EObject current = null;
 
@@ -706,17 +686,17 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:307:2: (iv_ruleSession= ruleSession EOF )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:308:2: iv_ruleSession= ruleSession EOF
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:299:2: (iv_ruleSession= ruleSession EOF )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:300:2: iv_ruleSession= ruleSession EOF
             {
              newCompositeNode(grammarAccess.getSessionRule()); 
-            pushFollow(FOLLOW_ruleSession_in_entryRuleSession566);
+            pushFollow(FOLLOW_ruleSession_in_entryRuleSession540);
             iv_ruleSession=ruleSession();
 
             state._fsp--;
 
              current =iv_ruleSession; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleSession576); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleSession550); 
 
             }
 
@@ -734,55 +714,50 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleSession"
-    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:315:1: ruleSession returns [EObject current=null] : (otherlv_0= 'Session' otherlv_1= '[' otherlv_2= 'name:' ( (lv_name_3_0= RULE_STRING ) ) otherlv_4= 'start:' ( (lv_start_5_0= RULE_STRING ) ) otherlv_6= 'end:' ( (lv_end_7_0= RULE_STRING ) ) (otherlv_8= 'Talks:' ( (lv_talks_9_0= ruleTalk ) ) ( (lv_talks_10_0= ruleTalk ) )* )? otherlv_11= ']' ) ;
+    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:307:1: ruleSession returns [EObject current=null] : (otherlv_0= '[' otherlv_1= 'name' ( (lv_name_2_0= RULE_STRING ) ) otherlv_3= 'start' ( (lv_start_4_0= RULE_STRING ) ) otherlv_5= 'end' ( (lv_end_6_0= RULE_STRING ) ) (otherlv_7= 'Talks' ( (lv_talks_8_0= ruleTalk ) ) ( (lv_talks_9_0= ruleTalk ) )* )? otherlv_10= ']' ) ;
     public final EObject ruleSession() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
         Token otherlv_1=null;
-        Token otherlv_2=null;
-        Token lv_name_3_0=null;
-        Token otherlv_4=null;
-        Token lv_start_5_0=null;
-        Token otherlv_6=null;
-        Token lv_end_7_0=null;
-        Token otherlv_8=null;
-        Token otherlv_11=null;
-        EObject lv_talks_9_0 = null;
+        Token lv_name_2_0=null;
+        Token otherlv_3=null;
+        Token lv_start_4_0=null;
+        Token otherlv_5=null;
+        Token lv_end_6_0=null;
+        Token otherlv_7=null;
+        Token otherlv_10=null;
+        EObject lv_talks_8_0 = null;
 
-        EObject lv_talks_10_0 = null;
+        EObject lv_talks_9_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:318:28: ( (otherlv_0= 'Session' otherlv_1= '[' otherlv_2= 'name:' ( (lv_name_3_0= RULE_STRING ) ) otherlv_4= 'start:' ( (lv_start_5_0= RULE_STRING ) ) otherlv_6= 'end:' ( (lv_end_7_0= RULE_STRING ) ) (otherlv_8= 'Talks:' ( (lv_talks_9_0= ruleTalk ) ) ( (lv_talks_10_0= ruleTalk ) )* )? otherlv_11= ']' ) )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:319:1: (otherlv_0= 'Session' otherlv_1= '[' otherlv_2= 'name:' ( (lv_name_3_0= RULE_STRING ) ) otherlv_4= 'start:' ( (lv_start_5_0= RULE_STRING ) ) otherlv_6= 'end:' ( (lv_end_7_0= RULE_STRING ) ) (otherlv_8= 'Talks:' ( (lv_talks_9_0= ruleTalk ) ) ( (lv_talks_10_0= ruleTalk ) )* )? otherlv_11= ']' )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:310:28: ( (otherlv_0= '[' otherlv_1= 'name' ( (lv_name_2_0= RULE_STRING ) ) otherlv_3= 'start' ( (lv_start_4_0= RULE_STRING ) ) otherlv_5= 'end' ( (lv_end_6_0= RULE_STRING ) ) (otherlv_7= 'Talks' ( (lv_talks_8_0= ruleTalk ) ) ( (lv_talks_9_0= ruleTalk ) )* )? otherlv_10= ']' ) )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:311:1: (otherlv_0= '[' otherlv_1= 'name' ( (lv_name_2_0= RULE_STRING ) ) otherlv_3= 'start' ( (lv_start_4_0= RULE_STRING ) ) otherlv_5= 'end' ( (lv_end_6_0= RULE_STRING ) ) (otherlv_7= 'Talks' ( (lv_talks_8_0= ruleTalk ) ) ( (lv_talks_9_0= ruleTalk ) )* )? otherlv_10= ']' )
             {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:319:1: (otherlv_0= 'Session' otherlv_1= '[' otherlv_2= 'name:' ( (lv_name_3_0= RULE_STRING ) ) otherlv_4= 'start:' ( (lv_start_5_0= RULE_STRING ) ) otherlv_6= 'end:' ( (lv_end_7_0= RULE_STRING ) ) (otherlv_8= 'Talks:' ( (lv_talks_9_0= ruleTalk ) ) ( (lv_talks_10_0= ruleTalk ) )* )? otherlv_11= ']' )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:319:3: otherlv_0= 'Session' otherlv_1= '[' otherlv_2= 'name:' ( (lv_name_3_0= RULE_STRING ) ) otherlv_4= 'start:' ( (lv_start_5_0= RULE_STRING ) ) otherlv_6= 'end:' ( (lv_end_7_0= RULE_STRING ) ) (otherlv_8= 'Talks:' ( (lv_talks_9_0= ruleTalk ) ) ( (lv_talks_10_0= ruleTalk ) )* )? otherlv_11= ']'
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:311:1: (otherlv_0= '[' otherlv_1= 'name' ( (lv_name_2_0= RULE_STRING ) ) otherlv_3= 'start' ( (lv_start_4_0= RULE_STRING ) ) otherlv_5= 'end' ( (lv_end_6_0= RULE_STRING ) ) (otherlv_7= 'Talks' ( (lv_talks_8_0= ruleTalk ) ) ( (lv_talks_9_0= ruleTalk ) )* )? otherlv_10= ']' )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:311:3: otherlv_0= '[' otherlv_1= 'name' ( (lv_name_2_0= RULE_STRING ) ) otherlv_3= 'start' ( (lv_start_4_0= RULE_STRING ) ) otherlv_5= 'end' ( (lv_end_6_0= RULE_STRING ) ) (otherlv_7= 'Talks' ( (lv_talks_8_0= ruleTalk ) ) ( (lv_talks_9_0= ruleTalk ) )* )? otherlv_10= ']'
             {
-            otherlv_0=(Token)match(input,19,FOLLOW_19_in_ruleSession613); 
+            otherlv_0=(Token)match(input,13,FOLLOW_13_in_ruleSession587); 
 
-                	newLeafNode(otherlv_0, grammarAccess.getSessionAccess().getSessionKeyword_0());
+                	newLeafNode(otherlv_0, grammarAccess.getSessionAccess().getLeftSquareBracketKeyword_0());
                 
-            otherlv_1=(Token)match(input,15,FOLLOW_15_in_ruleSession625); 
+            otherlv_1=(Token)match(input,14,FOLLOW_14_in_ruleSession599); 
 
-                	newLeafNode(otherlv_1, grammarAccess.getSessionAccess().getLeftSquareBracketKeyword_1());
+                	newLeafNode(otherlv_1, grammarAccess.getSessionAccess().getNameKeyword_1());
                 
-            otherlv_2=(Token)match(input,16,FOLLOW_16_in_ruleSession637); 
-
-                	newLeafNode(otherlv_2, grammarAccess.getSessionAccess().getNameKeyword_2());
-                
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:331:1: ( (lv_name_3_0= RULE_STRING ) )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:332:1: (lv_name_3_0= RULE_STRING )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:319:1: ( (lv_name_2_0= RULE_STRING ) )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:320:1: (lv_name_2_0= RULE_STRING )
             {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:332:1: (lv_name_3_0= RULE_STRING )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:333:3: lv_name_3_0= RULE_STRING
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:320:1: (lv_name_2_0= RULE_STRING )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:321:3: lv_name_2_0= RULE_STRING
             {
-            lv_name_3_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleSession654); 
+            lv_name_2_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleSession616); 
 
-            			newLeafNode(lv_name_3_0, grammarAccess.getSessionAccess().getNameSTRINGTerminalRuleCall_3_0()); 
+            			newLeafNode(lv_name_2_0, grammarAccess.getSessionAccess().getNameSTRINGTerminalRuleCall_2_0()); 
             		
 
             	        if (current==null) {
@@ -791,7 +766,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                    		setWithLastConsumed(
                    			current, 
                    			"name",
-                    		lv_name_3_0, 
+                    		lv_name_2_0, 
                     		"STRING");
             	    
 
@@ -800,19 +775,19 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_4=(Token)match(input,20,FOLLOW_20_in_ruleSession671); 
+            otherlv_3=(Token)match(input,17,FOLLOW_17_in_ruleSession633); 
 
-                	newLeafNode(otherlv_4, grammarAccess.getSessionAccess().getStartKeyword_4());
+                	newLeafNode(otherlv_3, grammarAccess.getSessionAccess().getStartKeyword_3());
                 
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:353:1: ( (lv_start_5_0= RULE_STRING ) )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:354:1: (lv_start_5_0= RULE_STRING )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:341:1: ( (lv_start_4_0= RULE_STRING ) )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:342:1: (lv_start_4_0= RULE_STRING )
             {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:354:1: (lv_start_5_0= RULE_STRING )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:355:3: lv_start_5_0= RULE_STRING
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:342:1: (lv_start_4_0= RULE_STRING )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:343:3: lv_start_4_0= RULE_STRING
             {
-            lv_start_5_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleSession688); 
+            lv_start_4_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleSession650); 
 
-            			newLeafNode(lv_start_5_0, grammarAccess.getSessionAccess().getStartSTRINGTerminalRuleCall_5_0()); 
+            			newLeafNode(lv_start_4_0, grammarAccess.getSessionAccess().getStartSTRINGTerminalRuleCall_4_0()); 
             		
 
             	        if (current==null) {
@@ -821,7 +796,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                    		setWithLastConsumed(
                    			current, 
                    			"start",
-                    		lv_start_5_0, 
+                    		lv_start_4_0, 
                     		"STRING");
             	    
 
@@ -830,19 +805,19 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_6=(Token)match(input,21,FOLLOW_21_in_ruleSession705); 
+            otherlv_5=(Token)match(input,18,FOLLOW_18_in_ruleSession667); 
 
-                	newLeafNode(otherlv_6, grammarAccess.getSessionAccess().getEndKeyword_6());
+                	newLeafNode(otherlv_5, grammarAccess.getSessionAccess().getEndKeyword_5());
                 
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:375:1: ( (lv_end_7_0= RULE_STRING ) )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:376:1: (lv_end_7_0= RULE_STRING )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:363:1: ( (lv_end_6_0= RULE_STRING ) )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:364:1: (lv_end_6_0= RULE_STRING )
             {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:376:1: (lv_end_7_0= RULE_STRING )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:377:3: lv_end_7_0= RULE_STRING
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:364:1: (lv_end_6_0= RULE_STRING )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:365:3: lv_end_6_0= RULE_STRING
             {
-            lv_end_7_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleSession722); 
+            lv_end_6_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleSession684); 
 
-            			newLeafNode(lv_end_7_0, grammarAccess.getSessionAccess().getEndSTRINGTerminalRuleCall_7_0()); 
+            			newLeafNode(lv_end_6_0, grammarAccess.getSessionAccess().getEndSTRINGTerminalRuleCall_6_0()); 
             		
 
             	        if (current==null) {
@@ -851,7 +826,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                    		setWithLastConsumed(
                    			current, 
                    			"end",
-                    		lv_end_7_0, 
+                    		lv_end_6_0, 
                     		"STRING");
             	    
 
@@ -860,32 +835,32 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:393:2: (otherlv_8= 'Talks:' ( (lv_talks_9_0= ruleTalk ) ) ( (lv_talks_10_0= ruleTalk ) )* )?
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:381:2: (otherlv_7= 'Talks' ( (lv_talks_8_0= ruleTalk ) ) ( (lv_talks_9_0= ruleTalk ) )* )?
             int alt8=2;
             int LA8_0 = input.LA(1);
 
-            if ( (LA8_0==22) ) {
+            if ( (LA8_0==19) ) {
                 alt8=1;
             }
             switch (alt8) {
                 case 1 :
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:393:4: otherlv_8= 'Talks:' ( (lv_talks_9_0= ruleTalk ) ) ( (lv_talks_10_0= ruleTalk ) )*
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:381:4: otherlv_7= 'Talks' ( (lv_talks_8_0= ruleTalk ) ) ( (lv_talks_9_0= ruleTalk ) )*
                     {
-                    otherlv_8=(Token)match(input,22,FOLLOW_22_in_ruleSession740); 
+                    otherlv_7=(Token)match(input,19,FOLLOW_19_in_ruleSession702); 
 
-                        	newLeafNode(otherlv_8, grammarAccess.getSessionAccess().getTalksKeyword_8_0());
+                        	newLeafNode(otherlv_7, grammarAccess.getSessionAccess().getTalksKeyword_7_0());
                         
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:397:1: ( (lv_talks_9_0= ruleTalk ) )
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:398:1: (lv_talks_9_0= ruleTalk )
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:385:1: ( (lv_talks_8_0= ruleTalk ) )
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:386:1: (lv_talks_8_0= ruleTalk )
                     {
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:398:1: (lv_talks_9_0= ruleTalk )
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:399:3: lv_talks_9_0= ruleTalk
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:386:1: (lv_talks_8_0= ruleTalk )
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:387:3: lv_talks_8_0= ruleTalk
                     {
                      
-                    	        newCompositeNode(grammarAccess.getSessionAccess().getTalksTalkParserRuleCall_8_1_0()); 
+                    	        newCompositeNode(grammarAccess.getSessionAccess().getTalksTalkParserRuleCall_7_1_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleTalk_in_ruleSession761);
-                    lv_talks_9_0=ruleTalk();
+                    pushFollow(FOLLOW_ruleTalk_in_ruleSession723);
+                    lv_talks_8_0=ruleTalk();
 
                     state._fsp--;
 
@@ -896,7 +871,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                            		add(
                            			current, 
                            			"talks",
-                            		lv_talks_9_0, 
+                            		lv_talks_8_0, 
                             		"Talk");
                     	        afterParserOrEnumRuleCall();
                     	    
@@ -906,29 +881,29 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:415:2: ( (lv_talks_10_0= ruleTalk ) )*
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:403:2: ( (lv_talks_9_0= ruleTalk ) )*
                     loop7:
                     do {
                         int alt7=2;
                         int LA7_0 = input.LA(1);
 
-                        if ( (LA7_0==23) ) {
+                        if ( (LA7_0==13) ) {
                             alt7=1;
                         }
 
 
                         switch (alt7) {
                     	case 1 :
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:416:1: (lv_talks_10_0= ruleTalk )
+                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:404:1: (lv_talks_9_0= ruleTalk )
                     	    {
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:416:1: (lv_talks_10_0= ruleTalk )
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:417:3: lv_talks_10_0= ruleTalk
+                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:404:1: (lv_talks_9_0= ruleTalk )
+                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:405:3: lv_talks_9_0= ruleTalk
                     	    {
                     	     
-                    	    	        newCompositeNode(grammarAccess.getSessionAccess().getTalksTalkParserRuleCall_8_2_0()); 
+                    	    	        newCompositeNode(grammarAccess.getSessionAccess().getTalksTalkParserRuleCall_7_2_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_ruleTalk_in_ruleSession782);
-                    	    lv_talks_10_0=ruleTalk();
+                    	    pushFollow(FOLLOW_ruleTalk_in_ruleSession744);
+                    	    lv_talks_9_0=ruleTalk();
 
                     	    state._fsp--;
 
@@ -939,7 +914,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                     	           		add(
                     	           			current, 
                     	           			"talks",
-                    	            		lv_talks_10_0, 
+                    	            		lv_talks_9_0, 
                     	            		"Talk");
                     	    	        afterParserOrEnumRuleCall();
                     	    	    
@@ -961,9 +936,9 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_11=(Token)match(input,18,FOLLOW_18_in_ruleSession797); 
+            otherlv_10=(Token)match(input,16,FOLLOW_16_in_ruleSession759); 
 
-                	newLeafNode(otherlv_11, grammarAccess.getSessionAccess().getRightSquareBracketKeyword_9());
+                	newLeafNode(otherlv_10, grammarAccess.getSessionAccess().getRightSquareBracketKeyword_8());
                 
 
             }
@@ -986,7 +961,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleTalk"
-    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:445:1: entryRuleTalk returns [EObject current=null] : iv_ruleTalk= ruleTalk EOF ;
+    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:433:1: entryRuleTalk returns [EObject current=null] : iv_ruleTalk= ruleTalk EOF ;
     public final EObject entryRuleTalk() throws RecognitionException {
         EObject current = null;
 
@@ -994,17 +969,17 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:446:2: (iv_ruleTalk= ruleTalk EOF )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:447:2: iv_ruleTalk= ruleTalk EOF
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:434:2: (iv_ruleTalk= ruleTalk EOF )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:435:2: iv_ruleTalk= ruleTalk EOF
             {
              newCompositeNode(grammarAccess.getTalkRule()); 
-            pushFollow(FOLLOW_ruleTalk_in_entryRuleTalk833);
+            pushFollow(FOLLOW_ruleTalk_in_entryRuleTalk795);
             iv_ruleTalk=ruleTalk();
 
             state._fsp--;
 
              current =iv_ruleTalk; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleTalk843); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleTalk805); 
 
             }
 
@@ -1022,52 +997,47 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleTalk"
-    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:454:1: ruleTalk returns [EObject current=null] : (otherlv_0= 'Talk' otherlv_1= '[' otherlv_2= 'title:' ( (lv_tilte_3_0= RULE_STRING ) ) otherlv_4= 'room:' ( (lv_room_5_0= RULE_STRING ) ) (otherlv_6= 'speakers:' ( (lv_speakers_7_0= RULE_STRING ) ) (otherlv_8= ',' ( (lv_speakers_9_0= RULE_STRING ) ) )* )? otherlv_10= ']' ) ;
+    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:442:1: ruleTalk returns [EObject current=null] : (otherlv_0= '[' otherlv_1= 'title' ( (lv_tilte_2_0= RULE_STRING ) ) otherlv_3= 'room' ( (lv_room_4_0= RULE_STRING ) ) (otherlv_5= 'speakers' ( (lv_speakers_6_0= RULE_STRING ) ) (otherlv_7= ',' ( (lv_speakers_8_0= RULE_STRING ) ) )* )? otherlv_9= ']' ) ;
     public final EObject ruleTalk() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
         Token otherlv_1=null;
-        Token otherlv_2=null;
-        Token lv_tilte_3_0=null;
-        Token otherlv_4=null;
-        Token lv_room_5_0=null;
-        Token otherlv_6=null;
-        Token lv_speakers_7_0=null;
-        Token otherlv_8=null;
-        Token lv_speakers_9_0=null;
-        Token otherlv_10=null;
+        Token lv_tilte_2_0=null;
+        Token otherlv_3=null;
+        Token lv_room_4_0=null;
+        Token otherlv_5=null;
+        Token lv_speakers_6_0=null;
+        Token otherlv_7=null;
+        Token lv_speakers_8_0=null;
+        Token otherlv_9=null;
 
          enterRule(); 
             
         try {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:457:28: ( (otherlv_0= 'Talk' otherlv_1= '[' otherlv_2= 'title:' ( (lv_tilte_3_0= RULE_STRING ) ) otherlv_4= 'room:' ( (lv_room_5_0= RULE_STRING ) ) (otherlv_6= 'speakers:' ( (lv_speakers_7_0= RULE_STRING ) ) (otherlv_8= ',' ( (lv_speakers_9_0= RULE_STRING ) ) )* )? otherlv_10= ']' ) )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:458:1: (otherlv_0= 'Talk' otherlv_1= '[' otherlv_2= 'title:' ( (lv_tilte_3_0= RULE_STRING ) ) otherlv_4= 'room:' ( (lv_room_5_0= RULE_STRING ) ) (otherlv_6= 'speakers:' ( (lv_speakers_7_0= RULE_STRING ) ) (otherlv_8= ',' ( (lv_speakers_9_0= RULE_STRING ) ) )* )? otherlv_10= ']' )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:445:28: ( (otherlv_0= '[' otherlv_1= 'title' ( (lv_tilte_2_0= RULE_STRING ) ) otherlv_3= 'room' ( (lv_room_4_0= RULE_STRING ) ) (otherlv_5= 'speakers' ( (lv_speakers_6_0= RULE_STRING ) ) (otherlv_7= ',' ( (lv_speakers_8_0= RULE_STRING ) ) )* )? otherlv_9= ']' ) )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:446:1: (otherlv_0= '[' otherlv_1= 'title' ( (lv_tilte_2_0= RULE_STRING ) ) otherlv_3= 'room' ( (lv_room_4_0= RULE_STRING ) ) (otherlv_5= 'speakers' ( (lv_speakers_6_0= RULE_STRING ) ) (otherlv_7= ',' ( (lv_speakers_8_0= RULE_STRING ) ) )* )? otherlv_9= ']' )
             {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:458:1: (otherlv_0= 'Talk' otherlv_1= '[' otherlv_2= 'title:' ( (lv_tilte_3_0= RULE_STRING ) ) otherlv_4= 'room:' ( (lv_room_5_0= RULE_STRING ) ) (otherlv_6= 'speakers:' ( (lv_speakers_7_0= RULE_STRING ) ) (otherlv_8= ',' ( (lv_speakers_9_0= RULE_STRING ) ) )* )? otherlv_10= ']' )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:458:3: otherlv_0= 'Talk' otherlv_1= '[' otherlv_2= 'title:' ( (lv_tilte_3_0= RULE_STRING ) ) otherlv_4= 'room:' ( (lv_room_5_0= RULE_STRING ) ) (otherlv_6= 'speakers:' ( (lv_speakers_7_0= RULE_STRING ) ) (otherlv_8= ',' ( (lv_speakers_9_0= RULE_STRING ) ) )* )? otherlv_10= ']'
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:446:1: (otherlv_0= '[' otherlv_1= 'title' ( (lv_tilte_2_0= RULE_STRING ) ) otherlv_3= 'room' ( (lv_room_4_0= RULE_STRING ) ) (otherlv_5= 'speakers' ( (lv_speakers_6_0= RULE_STRING ) ) (otherlv_7= ',' ( (lv_speakers_8_0= RULE_STRING ) ) )* )? otherlv_9= ']' )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:446:3: otherlv_0= '[' otherlv_1= 'title' ( (lv_tilte_2_0= RULE_STRING ) ) otherlv_3= 'room' ( (lv_room_4_0= RULE_STRING ) ) (otherlv_5= 'speakers' ( (lv_speakers_6_0= RULE_STRING ) ) (otherlv_7= ',' ( (lv_speakers_8_0= RULE_STRING ) ) )* )? otherlv_9= ']'
             {
-            otherlv_0=(Token)match(input,23,FOLLOW_23_in_ruleTalk880); 
+            otherlv_0=(Token)match(input,13,FOLLOW_13_in_ruleTalk842); 
 
-                	newLeafNode(otherlv_0, grammarAccess.getTalkAccess().getTalkKeyword_0());
+                	newLeafNode(otherlv_0, grammarAccess.getTalkAccess().getLeftSquareBracketKeyword_0());
                 
-            otherlv_1=(Token)match(input,15,FOLLOW_15_in_ruleTalk892); 
+            otherlv_1=(Token)match(input,20,FOLLOW_20_in_ruleTalk854); 
 
-                	newLeafNode(otherlv_1, grammarAccess.getTalkAccess().getLeftSquareBracketKeyword_1());
+                	newLeafNode(otherlv_1, grammarAccess.getTalkAccess().getTitleKeyword_1());
                 
-            otherlv_2=(Token)match(input,24,FOLLOW_24_in_ruleTalk904); 
-
-                	newLeafNode(otherlv_2, grammarAccess.getTalkAccess().getTitleKeyword_2());
-                
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:470:1: ( (lv_tilte_3_0= RULE_STRING ) )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:471:1: (lv_tilte_3_0= RULE_STRING )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:454:1: ( (lv_tilte_2_0= RULE_STRING ) )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:455:1: (lv_tilte_2_0= RULE_STRING )
             {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:471:1: (lv_tilte_3_0= RULE_STRING )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:472:3: lv_tilte_3_0= RULE_STRING
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:455:1: (lv_tilte_2_0= RULE_STRING )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:456:3: lv_tilte_2_0= RULE_STRING
             {
-            lv_tilte_3_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleTalk921); 
+            lv_tilte_2_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleTalk871); 
 
-            			newLeafNode(lv_tilte_3_0, grammarAccess.getTalkAccess().getTilteSTRINGTerminalRuleCall_3_0()); 
+            			newLeafNode(lv_tilte_2_0, grammarAccess.getTalkAccess().getTilteSTRINGTerminalRuleCall_2_0()); 
             		
 
             	        if (current==null) {
@@ -1076,7 +1046,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                    		setWithLastConsumed(
                    			current, 
                    			"tilte",
-                    		lv_tilte_3_0, 
+                    		lv_tilte_2_0, 
                     		"STRING");
             	    
 
@@ -1085,19 +1055,19 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_4=(Token)match(input,25,FOLLOW_25_in_ruleTalk938); 
+            otherlv_3=(Token)match(input,21,FOLLOW_21_in_ruleTalk888); 
 
-                	newLeafNode(otherlv_4, grammarAccess.getTalkAccess().getRoomKeyword_4());
+                	newLeafNode(otherlv_3, grammarAccess.getTalkAccess().getRoomKeyword_3());
                 
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:492:1: ( (lv_room_5_0= RULE_STRING ) )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:493:1: (lv_room_5_0= RULE_STRING )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:476:1: ( (lv_room_4_0= RULE_STRING ) )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:477:1: (lv_room_4_0= RULE_STRING )
             {
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:493:1: (lv_room_5_0= RULE_STRING )
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:494:3: lv_room_5_0= RULE_STRING
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:477:1: (lv_room_4_0= RULE_STRING )
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:478:3: lv_room_4_0= RULE_STRING
             {
-            lv_room_5_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleTalk955); 
+            lv_room_4_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleTalk905); 
 
-            			newLeafNode(lv_room_5_0, grammarAccess.getTalkAccess().getRoomSTRINGTerminalRuleCall_5_0()); 
+            			newLeafNode(lv_room_4_0, grammarAccess.getTalkAccess().getRoomSTRINGTerminalRuleCall_4_0()); 
             		
 
             	        if (current==null) {
@@ -1106,7 +1076,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                    		setWithLastConsumed(
                    			current, 
                    			"room",
-                    		lv_room_5_0, 
+                    		lv_room_4_0, 
                     		"STRING");
             	    
 
@@ -1115,30 +1085,30 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:510:2: (otherlv_6= 'speakers:' ( (lv_speakers_7_0= RULE_STRING ) ) (otherlv_8= ',' ( (lv_speakers_9_0= RULE_STRING ) ) )* )?
+            // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:494:2: (otherlv_5= 'speakers' ( (lv_speakers_6_0= RULE_STRING ) ) (otherlv_7= ',' ( (lv_speakers_8_0= RULE_STRING ) ) )* )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
-            if ( (LA10_0==26) ) {
+            if ( (LA10_0==22) ) {
                 alt10=1;
             }
             switch (alt10) {
                 case 1 :
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:510:4: otherlv_6= 'speakers:' ( (lv_speakers_7_0= RULE_STRING ) ) (otherlv_8= ',' ( (lv_speakers_9_0= RULE_STRING ) ) )*
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:494:4: otherlv_5= 'speakers' ( (lv_speakers_6_0= RULE_STRING ) ) (otherlv_7= ',' ( (lv_speakers_8_0= RULE_STRING ) ) )*
                     {
-                    otherlv_6=(Token)match(input,26,FOLLOW_26_in_ruleTalk973); 
+                    otherlv_5=(Token)match(input,22,FOLLOW_22_in_ruleTalk923); 
 
-                        	newLeafNode(otherlv_6, grammarAccess.getTalkAccess().getSpeakersKeyword_6_0());
+                        	newLeafNode(otherlv_5, grammarAccess.getTalkAccess().getSpeakersKeyword_5_0());
                         
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:514:1: ( (lv_speakers_7_0= RULE_STRING ) )
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:515:1: (lv_speakers_7_0= RULE_STRING )
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:498:1: ( (lv_speakers_6_0= RULE_STRING ) )
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:499:1: (lv_speakers_6_0= RULE_STRING )
                     {
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:515:1: (lv_speakers_7_0= RULE_STRING )
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:516:3: lv_speakers_7_0= RULE_STRING
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:499:1: (lv_speakers_6_0= RULE_STRING )
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:500:3: lv_speakers_6_0= RULE_STRING
                     {
-                    lv_speakers_7_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleTalk990); 
+                    lv_speakers_6_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleTalk940); 
 
-                    			newLeafNode(lv_speakers_7_0, grammarAccess.getTalkAccess().getSpeakersSTRINGTerminalRuleCall_6_1_0()); 
+                    			newLeafNode(lv_speakers_6_0, grammarAccess.getTalkAccess().getSpeakersSTRINGTerminalRuleCall_5_1_0()); 
                     		
 
                     	        if (current==null) {
@@ -1147,7 +1117,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                            		addWithLastConsumed(
                            			current, 
                            			"speakers",
-                            		lv_speakers_7_0, 
+                            		lv_speakers_6_0, 
                             		"STRING");
                     	    
 
@@ -1156,34 +1126,34 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:532:2: (otherlv_8= ',' ( (lv_speakers_9_0= RULE_STRING ) ) )*
+                    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:516:2: (otherlv_7= ',' ( (lv_speakers_8_0= RULE_STRING ) ) )*
                     loop9:
                     do {
                         int alt9=2;
                         int LA9_0 = input.LA(1);
 
-                        if ( (LA9_0==27) ) {
+                        if ( (LA9_0==23) ) {
                             alt9=1;
                         }
 
 
                         switch (alt9) {
                     	case 1 :
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:532:4: otherlv_8= ',' ( (lv_speakers_9_0= RULE_STRING ) )
+                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:516:4: otherlv_7= ',' ( (lv_speakers_8_0= RULE_STRING ) )
                     	    {
-                    	    otherlv_8=(Token)match(input,27,FOLLOW_27_in_ruleTalk1008); 
+                    	    otherlv_7=(Token)match(input,23,FOLLOW_23_in_ruleTalk958); 
 
-                    	        	newLeafNode(otherlv_8, grammarAccess.getTalkAccess().getCommaKeyword_6_2_0());
+                    	        	newLeafNode(otherlv_7, grammarAccess.getTalkAccess().getCommaKeyword_5_2_0());
                     	        
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:536:1: ( (lv_speakers_9_0= RULE_STRING ) )
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:537:1: (lv_speakers_9_0= RULE_STRING )
+                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:520:1: ( (lv_speakers_8_0= RULE_STRING ) )
+                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:521:1: (lv_speakers_8_0= RULE_STRING )
                     	    {
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:537:1: (lv_speakers_9_0= RULE_STRING )
-                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:538:3: lv_speakers_9_0= RULE_STRING
+                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:521:1: (lv_speakers_8_0= RULE_STRING )
+                    	    // ../fr.irisa.models.program/src-gen/fr/irisa/models/program/parser/antlr/internal/InternalProgram.g:522:3: lv_speakers_8_0= RULE_STRING
                     	    {
-                    	    lv_speakers_9_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleTalk1025); 
+                    	    lv_speakers_8_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleTalk975); 
 
-                    	    			newLeafNode(lv_speakers_9_0, grammarAccess.getTalkAccess().getSpeakersSTRINGTerminalRuleCall_6_2_1_0()); 
+                    	    			newLeafNode(lv_speakers_8_0, grammarAccess.getTalkAccess().getSpeakersSTRINGTerminalRuleCall_5_2_1_0()); 
                     	    		
 
                     	    	        if (current==null) {
@@ -1192,7 +1162,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                     	           		addWithLastConsumed(
                     	           			current, 
                     	           			"speakers",
-                    	            		lv_speakers_9_0, 
+                    	            		lv_speakers_8_0, 
                     	            		"STRING");
                     	    	    
 
@@ -1216,9 +1186,9 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_10=(Token)match(input,18,FOLLOW_18_in_ruleTalk1046); 
+            otherlv_9=(Token)match(input,16,FOLLOW_16_in_ruleTalk996); 
 
-                	newLeafNode(otherlv_10, grammarAccess.getTalkAccess().getRightSquareBracketKeyword_7());
+                	newLeafNode(otherlv_9, grammarAccess.getTalkAccess().getRightSquareBracketKeyword_6());
                 
 
             }
@@ -1247,51 +1217,47 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_ruleProgram_in_entryRuleProgram75 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleProgram85 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_11_in_ruleProgram123 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleRoom_in_ruleProgram144 = new BitSet(new long[]{0x0000000000003002L});
-    public static final BitSet FOLLOW_12_in_ruleProgram157 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleRoom_in_ruleProgram178 = new BitSet(new long[]{0x0000000000003002L});
-    public static final BitSet FOLLOW_13_in_ruleProgram195 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_ruleDay_in_ruleProgram216 = new BitSet(new long[]{0x0000000000004002L});
-    public static final BitSet FOLLOW_ruleDay_in_ruleProgram237 = new BitSet(new long[]{0x0000000000004002L});
-    public static final BitSet FOLLOW_ruleRoom_in_entryRuleRoom276 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleRoom286 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleRoom327 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDay_in_entryRuleDay367 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDay377 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_ruleDay414 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_15_in_ruleDay426 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_16_in_ruleDay438 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleDay455 = new BitSet(new long[]{0x0000000000060000L});
-    public static final BitSet FOLLOW_17_in_ruleDay473 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_ruleSession_in_ruleDay494 = new BitSet(new long[]{0x00000000000C0000L});
-    public static final BitSet FOLLOW_ruleSession_in_ruleDay515 = new BitSet(new long[]{0x00000000000C0000L});
-    public static final BitSet FOLLOW_18_in_ruleDay530 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleSession_in_entryRuleSession566 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleSession576 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_ruleSession613 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_15_in_ruleSession625 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_16_in_ruleSession637 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleSession654 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_20_in_ruleSession671 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleSession688 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_21_in_ruleSession705 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleSession722 = new BitSet(new long[]{0x0000000000440000L});
-    public static final BitSet FOLLOW_22_in_ruleSession740 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_ruleTalk_in_ruleSession761 = new BitSet(new long[]{0x0000000000840000L});
-    public static final BitSet FOLLOW_ruleTalk_in_ruleSession782 = new BitSet(new long[]{0x0000000000840000L});
-    public static final BitSet FOLLOW_18_in_ruleSession797 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleTalk_in_entryRuleTalk833 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleTalk843 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_23_in_ruleTalk880 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_15_in_ruleTalk892 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_24_in_ruleTalk904 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleTalk921 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_25_in_ruleTalk938 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleTalk955 = new BitSet(new long[]{0x0000000004040000L});
-    public static final BitSet FOLLOW_26_in_ruleTalk973 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleTalk990 = new BitSet(new long[]{0x0000000008040000L});
-    public static final BitSet FOLLOW_27_in_ruleTalk1008 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleTalk1025 = new BitSet(new long[]{0x0000000008040000L});
-    public static final BitSet FOLLOW_18_in_ruleTalk1046 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleRoom_in_ruleProgram144 = new BitSet(new long[]{0x0000000000001012L});
+    public static final BitSet FOLLOW_ruleRoom_in_ruleProgram165 = new BitSet(new long[]{0x0000000000001012L});
+    public static final BitSet FOLLOW_12_in_ruleProgram181 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_ruleDay_in_ruleProgram202 = new BitSet(new long[]{0x0000000000002002L});
+    public static final BitSet FOLLOW_ruleDay_in_ruleProgram223 = new BitSet(new long[]{0x0000000000002002L});
+    public static final BitSet FOLLOW_ruleRoom_in_entryRuleRoom262 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleRoom272 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleRoom313 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDay_in_entryRuleDay353 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDay363 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_ruleDay400 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_14_in_ruleDay412 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleDay429 = new BitSet(new long[]{0x0000000000018000L});
+    public static final BitSet FOLLOW_15_in_ruleDay447 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_ruleSession_in_ruleDay468 = new BitSet(new long[]{0x0000000000012000L});
+    public static final BitSet FOLLOW_ruleSession_in_ruleDay489 = new BitSet(new long[]{0x0000000000012000L});
+    public static final BitSet FOLLOW_16_in_ruleDay504 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleSession_in_entryRuleSession540 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleSession550 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_ruleSession587 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_14_in_ruleSession599 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleSession616 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_17_in_ruleSession633 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleSession650 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleSession667 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleSession684 = new BitSet(new long[]{0x0000000000090000L});
+    public static final BitSet FOLLOW_19_in_ruleSession702 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_ruleTalk_in_ruleSession723 = new BitSet(new long[]{0x0000000000012000L});
+    public static final BitSet FOLLOW_ruleTalk_in_ruleSession744 = new BitSet(new long[]{0x0000000000012000L});
+    public static final BitSet FOLLOW_16_in_ruleSession759 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleTalk_in_entryRuleTalk795 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleTalk805 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_ruleTalk842 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_20_in_ruleTalk854 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleTalk871 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_21_in_ruleTalk888 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleTalk905 = new BitSet(new long[]{0x0000000000410000L});
+    public static final BitSet FOLLOW_22_in_ruleTalk923 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleTalk940 = new BitSet(new long[]{0x0000000000810000L});
+    public static final BitSet FOLLOW_23_in_ruleTalk958 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleTalk975 = new BitSet(new long[]{0x0000000000810000L});
+    public static final BitSet FOLLOW_16_in_ruleTalk996 = new BitSet(new long[]{0x0000000000000002L});
 
 }
