@@ -1,0 +1,29 @@
+grammar fr.irisa.models.program.Program with org.eclipse.xtext.common.Terminals
+
+generate program "http://www.irisa.fr/models/program/Program"
+
+Program:
+	('Rooms:' rooms+=Room (';' rooms+=Room)*)? ('Days:' days+=Day (days+=Day)*)? ;
+
+Room:
+	name=STRING;
+
+Day:
+	'Day' '['
+	'name:' name=STRING ('Sessions:' sessions+=Session (sessions+=Session)*)?
+	']';
+
+Session:
+	'Session' '['
+	'name:' name=STRING
+	'start:' start=STRING
+	'end:' end=STRING
+	('Talks:' talks+=Talk (talks+=Talk)*)?
+	']';
+
+Talk:
+	'Talk' '['
+	'title:' tilte=STRING
+	'room:' room=STRING
+	('speakers:' speakers+=STRING (',' speakers+=STRING)*)?
+	']';
