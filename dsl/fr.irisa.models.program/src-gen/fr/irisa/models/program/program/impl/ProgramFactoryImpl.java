@@ -5,6 +5,7 @@ package fr.irisa.models.program.program.impl;
 import fr.irisa.models.program.program.*;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -65,7 +66,6 @@ public class ProgramFactoryImpl extends EFactoryImpl implements ProgramFactory
     switch (eClass.getClassifierID())
     {
       case ProgramPackage.PROGRAM: return createProgram();
-      case ProgramPackage.ROOM: return createRoom();
       case ProgramPackage.DAY: return createDay();
       case ProgramPackage.SESSION: return createSession();
       case ProgramPackage.TALK: return createTalk();
@@ -79,10 +79,20 @@ public class ProgramFactoryImpl extends EFactoryImpl implements ProgramFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Program createProgram()
+  @Override
+  public Object createFromString(EDataType eDataType, String initialValue)
   {
-    ProgramImpl program = new ProgramImpl();
-    return program;
+    switch (eDataType.getClassifierID())
+    {
+      case ProgramPackage.TALK_TYPE:
+        return createTalkTypeFromString(eDataType, initialValue);
+      case ProgramPackage.ROOM:
+        return createRoomFromString(eDataType, initialValue);
+      case ProgramPackage.WEEK_DAY:
+        return createWeekDayFromString(eDataType, initialValue);
+      default:
+        throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+    }
   }
 
   /**
@@ -90,10 +100,31 @@ public class ProgramFactoryImpl extends EFactoryImpl implements ProgramFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Room createRoom()
+  @Override
+  public String convertToString(EDataType eDataType, Object instanceValue)
   {
-    RoomImpl room = new RoomImpl();
-    return room;
+    switch (eDataType.getClassifierID())
+    {
+      case ProgramPackage.TALK_TYPE:
+        return convertTalkTypeToString(eDataType, instanceValue);
+      case ProgramPackage.ROOM:
+        return convertRoomToString(eDataType, instanceValue);
+      case ProgramPackage.WEEK_DAY:
+        return convertWeekDayToString(eDataType, instanceValue);
+      default:
+        throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+    }
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Program createProgram()
+  {
+    ProgramImpl program = new ProgramImpl();
+    return program;
   }
 
   /**
@@ -127,6 +158,72 @@ public class ProgramFactoryImpl extends EFactoryImpl implements ProgramFactory
   {
     TalkImpl talk = new TalkImpl();
     return talk;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public TalkType createTalkTypeFromString(EDataType eDataType, String initialValue)
+  {
+    TalkType result = TalkType.get(initialValue);
+    if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+    return result;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public String convertTalkTypeToString(EDataType eDataType, Object instanceValue)
+  {
+    return instanceValue == null ? null : instanceValue.toString();
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Room createRoomFromString(EDataType eDataType, String initialValue)
+  {
+    Room result = Room.get(initialValue);
+    if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+    return result;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public String convertRoomToString(EDataType eDataType, Object instanceValue)
+  {
+    return instanceValue == null ? null : instanceValue.toString();
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public WeekDay createWeekDayFromString(EDataType eDataType, String initialValue)
+  {
+    WeekDay result = WeekDay.get(initialValue);
+    if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+    return result;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public String convertWeekDayToString(EDataType eDataType, Object instanceValue)
+  {
+    return instanceValue == null ? null : instanceValue.toString();
   }
 
   /**

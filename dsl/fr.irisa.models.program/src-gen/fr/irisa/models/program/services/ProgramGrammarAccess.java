@@ -19,142 +19,82 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	
 	
 	public class ProgramElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Program");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.irisa.models.program.Program.Program");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Group cGroup_0 = (Group)cGroup.eContents().get(0);
-		private final Keyword cRoomsKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
-		private final Assignment cRoomsAssignment_0_1 = (Assignment)cGroup_0.eContents().get(1);
-		private final RuleCall cRoomsRoomParserRuleCall_0_1_0 = (RuleCall)cRoomsAssignment_0_1.eContents().get(0);
-		private final Assignment cRoomsAssignment_0_2 = (Assignment)cGroup_0.eContents().get(2);
-		private final RuleCall cRoomsRoomParserRuleCall_0_2_0 = (RuleCall)cRoomsAssignment_0_2.eContents().get(0);
-		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
-		private final Keyword cDaysKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
-		private final Assignment cDaysAssignment_1_1 = (Assignment)cGroup_1.eContents().get(1);
-		private final RuleCall cDaysDayParserRuleCall_1_1_0 = (RuleCall)cDaysAssignment_1_1.eContents().get(0);
-		private final Assignment cDaysAssignment_1_2 = (Assignment)cGroup_1.eContents().get(2);
-		private final RuleCall cDaysDayParserRuleCall_1_2_0 = (RuleCall)cDaysAssignment_1_2.eContents().get(0);
+		private final Assignment cDaysAssignment_0 = (Assignment)cGroup.eContents().get(0);
+		private final RuleCall cDaysDayParserRuleCall_0_0 = (RuleCall)cDaysAssignment_0.eContents().get(0);
+		private final Assignment cDaysAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cDaysDayParserRuleCall_1_0 = (RuleCall)cDaysAssignment_1.eContents().get(0);
 		
 		//Program:
-		//	("Rooms" rooms+=Room rooms+=Room*)? ("Days" days+=Day days+=Day*)?;
+		//	(days+=Day days+=Day*)?;
 		@Override public ParserRule getRule() { return rule; }
 
-		//("Rooms" rooms+=Room rooms+=Room*)? ("Days" days+=Day days+=Day*)?
+		//(days+=Day days+=Day*)?
 		public Group getGroup() { return cGroup; }
 
-		//("Rooms" rooms+=Room rooms+=Room*)?
-		public Group getGroup_0() { return cGroup_0; }
-
-		//"Rooms"
-		public Keyword getRoomsKeyword_0_0() { return cRoomsKeyword_0_0; }
-
-		//rooms+=Room
-		public Assignment getRoomsAssignment_0_1() { return cRoomsAssignment_0_1; }
-
-		//Room
-		public RuleCall getRoomsRoomParserRuleCall_0_1_0() { return cRoomsRoomParserRuleCall_0_1_0; }
-
-		//rooms+=Room*
-		public Assignment getRoomsAssignment_0_2() { return cRoomsAssignment_0_2; }
-
-		//Room
-		public RuleCall getRoomsRoomParserRuleCall_0_2_0() { return cRoomsRoomParserRuleCall_0_2_0; }
-
-		//("Days" days+=Day days+=Day*)?
-		public Group getGroup_1() { return cGroup_1; }
-
-		//"Days"
-		public Keyword getDaysKeyword_1_0() { return cDaysKeyword_1_0; }
-
 		//days+=Day
-		public Assignment getDaysAssignment_1_1() { return cDaysAssignment_1_1; }
+		public Assignment getDaysAssignment_0() { return cDaysAssignment_0; }
 
 		//Day
-		public RuleCall getDaysDayParserRuleCall_1_1_0() { return cDaysDayParserRuleCall_1_1_0; }
+		public RuleCall getDaysDayParserRuleCall_0_0() { return cDaysDayParserRuleCall_0_0; }
 
 		//days+=Day*
-		public Assignment getDaysAssignment_1_2() { return cDaysAssignment_1_2; }
+		public Assignment getDaysAssignment_1() { return cDaysAssignment_1; }
 
 		//Day
-		public RuleCall getDaysDayParserRuleCall_1_2_0() { return cDaysDayParserRuleCall_1_2_0; }
-	}
-
-	public class RoomElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Room");
-		private final Assignment cNameAssignment = (Assignment)rule.eContents().get(1);
-		private final RuleCall cNameSTRINGTerminalRuleCall_0 = (RuleCall)cNameAssignment.eContents().get(0);
-		
-		//Room:
-		//	name=STRING;
-		@Override public ParserRule getRule() { return rule; }
-
-		//name=STRING
-		public Assignment getNameAssignment() { return cNameAssignment; }
-
-		//STRING
-		public RuleCall getNameSTRINGTerminalRuleCall_0() { return cNameSTRINGTerminalRuleCall_0; }
+		public RuleCall getDaysDayParserRuleCall_1_0() { return cDaysDayParserRuleCall_1_0; }
 	}
 
 	public class DayElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Day");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.irisa.models.program.Program.Day");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cLeftSquareBracketKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Keyword cNameKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Assignment cNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cNameSTRINGTerminalRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
-		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
-		private final Keyword cSessionsKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
-		private final Assignment cSessionsAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
-		private final RuleCall cSessionsSessionParserRuleCall_3_1_0 = (RuleCall)cSessionsAssignment_3_1.eContents().get(0);
-		private final Assignment cSessionsAssignment_3_2 = (Assignment)cGroup_3.eContents().get(2);
-		private final RuleCall cSessionsSessionParserRuleCall_3_2_0 = (RuleCall)cSessionsAssignment_3_2.eContents().get(0);
-		private final Keyword cRightSquareBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
+		private final Assignment cWeekDayAssignment_0 = (Assignment)cGroup.eContents().get(0);
+		private final RuleCall cWeekDayWeekDayEnumRuleCall_0_0 = (RuleCall)cWeekDayAssignment_0.eContents().get(0);
+		private final Keyword cColonKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
+		private final Assignment cSessionsAssignment_2_0 = (Assignment)cGroup_2.eContents().get(0);
+		private final RuleCall cSessionsSessionParserRuleCall_2_0_0 = (RuleCall)cSessionsAssignment_2_0.eContents().get(0);
+		private final Assignment cSessionsAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
+		private final RuleCall cSessionsSessionParserRuleCall_2_1_0 = (RuleCall)cSessionsAssignment_2_1.eContents().get(0);
 		
 		//Day:
-		//	"[" "name" name=STRING ("Sessions" sessions+=Session sessions+=Session*)? "]";
+		//	weekDay=WeekDay ':' (sessions+=Session sessions+=Session*)?;
 		@Override public ParserRule getRule() { return rule; }
 
-		//"[" "name" name=STRING ("Sessions" sessions+=Session sessions+=Session*)? "]"
+		//weekDay=WeekDay ':' (sessions+=Session sessions+=Session*)?
 		public Group getGroup() { return cGroup; }
 
-		//"["
-		public Keyword getLeftSquareBracketKeyword_0() { return cLeftSquareBracketKeyword_0; }
+		//weekDay=WeekDay
+		public Assignment getWeekDayAssignment_0() { return cWeekDayAssignment_0; }
 
-		//"name"
-		public Keyword getNameKeyword_1() { return cNameKeyword_1; }
+		//WeekDay
+		public RuleCall getWeekDayWeekDayEnumRuleCall_0_0() { return cWeekDayWeekDayEnumRuleCall_0_0; }
 
-		//name=STRING
-		public Assignment getNameAssignment_2() { return cNameAssignment_2; }
+		//':'
+		public Keyword getColonKeyword_1() { return cColonKeyword_1; }
 
-		//STRING
-		public RuleCall getNameSTRINGTerminalRuleCall_2_0() { return cNameSTRINGTerminalRuleCall_2_0; }
-
-		//("Sessions" sessions+=Session sessions+=Session*)?
-		public Group getGroup_3() { return cGroup_3; }
-
-		//"Sessions"
-		public Keyword getSessionsKeyword_3_0() { return cSessionsKeyword_3_0; }
+		//(sessions+=Session sessions+=Session*)?
+		public Group getGroup_2() { return cGroup_2; }
 
 		//sessions+=Session
-		public Assignment getSessionsAssignment_3_1() { return cSessionsAssignment_3_1; }
+		public Assignment getSessionsAssignment_2_0() { return cSessionsAssignment_2_0; }
 
 		//Session
-		public RuleCall getSessionsSessionParserRuleCall_3_1_0() { return cSessionsSessionParserRuleCall_3_1_0; }
+		public RuleCall getSessionsSessionParserRuleCall_2_0_0() { return cSessionsSessionParserRuleCall_2_0_0; }
 
 		//sessions+=Session*
-		public Assignment getSessionsAssignment_3_2() { return cSessionsAssignment_3_2; }
+		public Assignment getSessionsAssignment_2_1() { return cSessionsAssignment_2_1; }
 
 		//Session
-		public RuleCall getSessionsSessionParserRuleCall_3_2_0() { return cSessionsSessionParserRuleCall_3_2_0; }
-
-		//"]"
-		public Keyword getRightSquareBracketKeyword_4() { return cRightSquareBracketKeyword_4; }
+		public RuleCall getSessionsSessionParserRuleCall_2_1_0() { return cSessionsSessionParserRuleCall_2_1_0; }
 	}
 
 	public class SessionElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Session");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.irisa.models.program.Program.Session");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cLeftSquareBracketKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Keyword cNameKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Keyword cSessionKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Keyword cColonKeyword_1 = (Keyword)cGroup.eContents().get(1);
 		private final Assignment cNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cNameSTRINGTerminalRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
 		private final Keyword cStartKeyword_3 = (Keyword)cGroup.eContents().get(3);
@@ -164,25 +104,25 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cEndAssignment_6 = (Assignment)cGroup.eContents().get(6);
 		private final RuleCall cEndSTRINGTerminalRuleCall_6_0 = (RuleCall)cEndAssignment_6.eContents().get(0);
 		private final Group cGroup_7 = (Group)cGroup.eContents().get(7);
-		private final Keyword cTalksKeyword_7_0 = (Keyword)cGroup_7.eContents().get(0);
+		private final Assignment cTalksAssignment_7_0 = (Assignment)cGroup_7.eContents().get(0);
+		private final RuleCall cTalksTalkParserRuleCall_7_0_0 = (RuleCall)cTalksAssignment_7_0.eContents().get(0);
 		private final Assignment cTalksAssignment_7_1 = (Assignment)cGroup_7.eContents().get(1);
 		private final RuleCall cTalksTalkParserRuleCall_7_1_0 = (RuleCall)cTalksAssignment_7_1.eContents().get(0);
-		private final Assignment cTalksAssignment_7_2 = (Assignment)cGroup_7.eContents().get(2);
-		private final RuleCall cTalksTalkParserRuleCall_7_2_0 = (RuleCall)cTalksAssignment_7_2.eContents().get(0);
-		private final Keyword cRightSquareBracketKeyword_8 = (Keyword)cGroup.eContents().get(8);
 		
 		//Session:
-		//	"[" "name" name=STRING "start" start=STRING "end" end=STRING ("Talks" talks+=Talk talks+=Talk*)? "]";
+		//	'Session' ':' name=STRING
+		//	'start' start=STRING
+		//	'end' end=STRING (talks+=Talk talks+=Talk*)?;
 		@Override public ParserRule getRule() { return rule; }
 
-		//"[" "name" name=STRING "start" start=STRING "end" end=STRING ("Talks" talks+=Talk talks+=Talk*)? "]"
+		//'Session' ':' name=STRING 'start' start=STRING 'end' end=STRING (talks+=Talk talks+=Talk*)?
 		public Group getGroup() { return cGroup; }
 
-		//"["
-		public Keyword getLeftSquareBracketKeyword_0() { return cLeftSquareBracketKeyword_0; }
+		//'Session'
+		public Keyword getSessionKeyword_0() { return cSessionKeyword_0; }
 
-		//"name"
-		public Keyword getNameKeyword_1() { return cNameKeyword_1; }
+		//':'
+		public Keyword getColonKeyword_1() { return cColonKeyword_1; }
 
 		//name=STRING
 		public Assignment getNameAssignment_2() { return cNameAssignment_2; }
@@ -190,7 +130,7 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		//STRING
 		public RuleCall getNameSTRINGTerminalRuleCall_2_0() { return cNameSTRINGTerminalRuleCall_2_0; }
 
-		//"start"
+		//'start'
 		public Keyword getStartKeyword_3() { return cStartKeyword_3; }
 
 		//start=STRING
@@ -199,7 +139,7 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		//STRING
 		public RuleCall getStartSTRINGTerminalRuleCall_4_0() { return cStartSTRINGTerminalRuleCall_4_0; }
 
-		//"end"
+		//'end'
 		public Keyword getEndKeyword_5() { return cEndKeyword_5; }
 
 		//end=STRING
@@ -208,110 +148,417 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		//STRING
 		public RuleCall getEndSTRINGTerminalRuleCall_6_0() { return cEndSTRINGTerminalRuleCall_6_0; }
 
-		//("Talks" talks+=Talk talks+=Talk*)?
+		//(talks+=Talk talks+=Talk*)?
 		public Group getGroup_7() { return cGroup_7; }
 
-		//"Talks"
-		public Keyword getTalksKeyword_7_0() { return cTalksKeyword_7_0; }
-
 		//talks+=Talk
+		public Assignment getTalksAssignment_7_0() { return cTalksAssignment_7_0; }
+
+		//Talk
+		public RuleCall getTalksTalkParserRuleCall_7_0_0() { return cTalksTalkParserRuleCall_7_0_0; }
+
+		//talks+=Talk*
 		public Assignment getTalksAssignment_7_1() { return cTalksAssignment_7_1; }
 
 		//Talk
 		public RuleCall getTalksTalkParserRuleCall_7_1_0() { return cTalksTalkParserRuleCall_7_1_0; }
-
-		//talks+=Talk*
-		public Assignment getTalksAssignment_7_2() { return cTalksAssignment_7_2; }
-
-		//Talk
-		public RuleCall getTalksTalkParserRuleCall_7_2_0() { return cTalksTalkParserRuleCall_7_2_0; }
-
-		//"]"
-		public Keyword getRightSquareBracketKeyword_8() { return cRightSquareBracketKeyword_8; }
 	}
 
 	public class TalkElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Talk");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.irisa.models.program.Program.Talk");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cLeftSquareBracketKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Keyword cTitleKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Assignment cTilteAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cTilteSTRINGTerminalRuleCall_2_0 = (RuleCall)cTilteAssignment_2.eContents().get(0);
-		private final Keyword cRoomKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		private final Assignment cRoomAssignment_4 = (Assignment)cGroup.eContents().get(4);
-		private final RuleCall cRoomSTRINGTerminalRuleCall_4_0 = (RuleCall)cRoomAssignment_4.eContents().get(0);
-		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
-		private final Keyword cSpeakersKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
-		private final Assignment cSpeakersAssignment_5_1 = (Assignment)cGroup_5.eContents().get(1);
-		private final RuleCall cSpeakersSTRINGTerminalRuleCall_5_1_0 = (RuleCall)cSpeakersAssignment_5_1.eContents().get(0);
-		private final Group cGroup_5_2 = (Group)cGroup_5.eContents().get(2);
-		private final Keyword cCommaKeyword_5_2_0 = (Keyword)cGroup_5_2.eContents().get(0);
-		private final Assignment cSpeakersAssignment_5_2_1 = (Assignment)cGroup_5_2.eContents().get(1);
-		private final RuleCall cSpeakersSTRINGTerminalRuleCall_5_2_1_0 = (RuleCall)cSpeakersAssignment_5_2_1.eContents().get(0);
-		private final Keyword cRightSquareBracketKeyword_6 = (Keyword)cGroup.eContents().get(6);
+		private final Assignment cTypeAssignment_0 = (Assignment)cGroup.eContents().get(0);
+		private final RuleCall cTypeTalkTypeEnumRuleCall_0_0 = (RuleCall)cTypeAssignment_0.eContents().get(0);
+		private final Keyword cColonKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
+		private final Assignment cTilteAssignment_2_0 = (Assignment)cGroup_2.eContents().get(0);
+		private final RuleCall cTilteSTRINGTerminalRuleCall_2_0_0 = (RuleCall)cTilteAssignment_2_0.eContents().get(0);
+		private final Keyword cCommaKeyword_2_1 = (Keyword)cGroup_2.eContents().get(1);
+		private final Assignment cRoomAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cRoomRoomEnumRuleCall_3_0 = (RuleCall)cRoomAssignment_3.eContents().get(0);
+		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
+		private final Keyword cLeftParenthesisKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
+		private final Group cGroup_4_1 = (Group)cGroup_4.eContents().get(1);
+		private final Assignment cSpeakersAssignment_4_1_0 = (Assignment)cGroup_4_1.eContents().get(0);
+		private final RuleCall cSpeakersSTRINGTerminalRuleCall_4_1_0_0 = (RuleCall)cSpeakersAssignment_4_1_0.eContents().get(0);
+		private final Group cGroup_4_1_1 = (Group)cGroup_4_1.eContents().get(1);
+		private final Keyword cCommaKeyword_4_1_1_0 = (Keyword)cGroup_4_1_1.eContents().get(0);
+		private final Assignment cSpeakersAssignment_4_1_1_1 = (Assignment)cGroup_4_1_1.eContents().get(1);
+		private final RuleCall cSpeakersSTRINGTerminalRuleCall_4_1_1_1_0 = (RuleCall)cSpeakersAssignment_4_1_1_1.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_4_2 = (Keyword)cGroup_4.eContents().get(2);
 		
 		//Talk:
-		//	"[" "title" tilte=STRING "room" room=STRING ("speakers" speakers+=STRING ("," speakers+=STRING)*)? "]";
+		//	type=TalkType ':' (tilte=STRING ',')? room=Room ('(' (speakers+=STRING (',' speakers+=STRING)*)? ')')?;
 		@Override public ParserRule getRule() { return rule; }
 
-		//"[" "title" tilte=STRING "room" room=STRING ("speakers" speakers+=STRING ("," speakers+=STRING)*)? "]"
+		//type=TalkType ':' (tilte=STRING ',')? room=Room ('(' (speakers+=STRING (',' speakers+=STRING)*)? ')')?
 		public Group getGroup() { return cGroup; }
 
-		//"["
-		public Keyword getLeftSquareBracketKeyword_0() { return cLeftSquareBracketKeyword_0; }
+		//type=TalkType
+		public Assignment getTypeAssignment_0() { return cTypeAssignment_0; }
 
-		//"title"
-		public Keyword getTitleKeyword_1() { return cTitleKeyword_1; }
+		//TalkType
+		public RuleCall getTypeTalkTypeEnumRuleCall_0_0() { return cTypeTalkTypeEnumRuleCall_0_0; }
+
+		//':'
+		public Keyword getColonKeyword_1() { return cColonKeyword_1; }
+
+		//(tilte=STRING ',')?
+		public Group getGroup_2() { return cGroup_2; }
 
 		//tilte=STRING
-		public Assignment getTilteAssignment_2() { return cTilteAssignment_2; }
+		public Assignment getTilteAssignment_2_0() { return cTilteAssignment_2_0; }
 
 		//STRING
-		public RuleCall getTilteSTRINGTerminalRuleCall_2_0() { return cTilteSTRINGTerminalRuleCall_2_0; }
+		public RuleCall getTilteSTRINGTerminalRuleCall_2_0_0() { return cTilteSTRINGTerminalRuleCall_2_0_0; }
 
-		//"room"
-		public Keyword getRoomKeyword_3() { return cRoomKeyword_3; }
+		//','
+		public Keyword getCommaKeyword_2_1() { return cCommaKeyword_2_1; }
 
-		//room=STRING
-		public Assignment getRoomAssignment_4() { return cRoomAssignment_4; }
+		//room=Room
+		public Assignment getRoomAssignment_3() { return cRoomAssignment_3; }
 
-		//STRING
-		public RuleCall getRoomSTRINGTerminalRuleCall_4_0() { return cRoomSTRINGTerminalRuleCall_4_0; }
+		//Room
+		public RuleCall getRoomRoomEnumRuleCall_3_0() { return cRoomRoomEnumRuleCall_3_0; }
 
-		//("speakers" speakers+=STRING ("," speakers+=STRING)*)?
-		public Group getGroup_5() { return cGroup_5; }
+		//('(' (speakers+=STRING (',' speakers+=STRING)*)? ')')?
+		public Group getGroup_4() { return cGroup_4; }
 
-		//"speakers"
-		public Keyword getSpeakersKeyword_5_0() { return cSpeakersKeyword_5_0; }
+		//'('
+		public Keyword getLeftParenthesisKeyword_4_0() { return cLeftParenthesisKeyword_4_0; }
+
+		//(speakers+=STRING (',' speakers+=STRING)*)?
+		public Group getGroup_4_1() { return cGroup_4_1; }
 
 		//speakers+=STRING
-		public Assignment getSpeakersAssignment_5_1() { return cSpeakersAssignment_5_1; }
+		public Assignment getSpeakersAssignment_4_1_0() { return cSpeakersAssignment_4_1_0; }
 
 		//STRING
-		public RuleCall getSpeakersSTRINGTerminalRuleCall_5_1_0() { return cSpeakersSTRINGTerminalRuleCall_5_1_0; }
+		public RuleCall getSpeakersSTRINGTerminalRuleCall_4_1_0_0() { return cSpeakersSTRINGTerminalRuleCall_4_1_0_0; }
 
-		//("," speakers+=STRING)*
-		public Group getGroup_5_2() { return cGroup_5_2; }
+		//(',' speakers+=STRING)*
+		public Group getGroup_4_1_1() { return cGroup_4_1_1; }
 
-		//","
-		public Keyword getCommaKeyword_5_2_0() { return cCommaKeyword_5_2_0; }
+		//','
+		public Keyword getCommaKeyword_4_1_1_0() { return cCommaKeyword_4_1_1_0; }
 
 		//speakers+=STRING
-		public Assignment getSpeakersAssignment_5_2_1() { return cSpeakersAssignment_5_2_1; }
+		public Assignment getSpeakersAssignment_4_1_1_1() { return cSpeakersAssignment_4_1_1_1; }
 
 		//STRING
-		public RuleCall getSpeakersSTRINGTerminalRuleCall_5_2_1_0() { return cSpeakersSTRINGTerminalRuleCall_5_2_1_0; }
+		public RuleCall getSpeakersSTRINGTerminalRuleCall_4_1_1_1_0() { return cSpeakersSTRINGTerminalRuleCall_4_1_1_1_0; }
 
-		//"]"
-		public Keyword getRightSquareBracketKeyword_6() { return cRightSquareBracketKeyword_6; }
+		//')'
+		public Keyword getRightParenthesisKeyword_4_2() { return cRightParenthesisKeyword_4_2; }
 	}
 	
 	
+	public class TalkTypeElements extends AbstractEnumRuleElementFinder {
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "fr.irisa.models.program.Program.TalkType");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final EnumLiteralDeclaration cWorkshopEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
+		private final Keyword cWorkshopWorkshopKeyword_0_0 = (Keyword)cWorkshopEnumLiteralDeclaration_0.eContents().get(0);
+		private final EnumLiteralDeclaration cTutorialEnumLiteralDeclaration_1 = (EnumLiteralDeclaration)cAlternatives.eContents().get(1);
+		private final Keyword cTutorialTutorialKeyword_1_0 = (Keyword)cTutorialEnumLiteralDeclaration_1.eContents().get(0);
+		private final EnumLiteralDeclaration cSymposiumEnumLiteralDeclaration_2 = (EnumLiteralDeclaration)cAlternatives.eContents().get(2);
+		private final Keyword cSymposiumSymposiumKeyword_2_0 = (Keyword)cSymposiumEnumLiteralDeclaration_2.eContents().get(0);
+		private final EnumLiteralDeclaration cClinicEnumLiteralDeclaration_3 = (EnumLiteralDeclaration)cAlternatives.eContents().get(3);
+		private final Keyword cClinicClinicKeyword_3_0 = (Keyword)cClinicEnumLiteralDeclaration_3.eContents().get(0);
+		private final EnumLiteralDeclaration cBreakEnumLiteralDeclaration_4 = (EnumLiteralDeclaration)cAlternatives.eContents().get(4);
+		private final Keyword cBreakBreakKeyword_4_0 = (Keyword)cBreakEnumLiteralDeclaration_4.eContents().get(0);
+		private final EnumLiteralDeclaration cLunchEnumLiteralDeclaration_5 = (EnumLiteralDeclaration)cAlternatives.eContents().get(5);
+		private final Keyword cLunchLunchKeyword_5_0 = (Keyword)cLunchEnumLiteralDeclaration_5.eContents().get(0);
+		private final EnumLiteralDeclaration cPosterEnumLiteralDeclaration_6 = (EnumLiteralDeclaration)cAlternatives.eContents().get(6);
+		private final Keyword cPosterPosterKeyword_6_0 = (Keyword)cPosterEnumLiteralDeclaration_6.eContents().get(0);
+		private final EnumLiteralDeclaration cSRCEnumLiteralDeclaration_7 = (EnumLiteralDeclaration)cAlternatives.eContents().get(7);
+		private final Keyword cSRCSRCKeyword_7_0 = (Keyword)cSRCEnumLiteralDeclaration_7.eContents().get(0);
+		private final EnumLiteralDeclaration cMainEnumLiteralDeclaration_8 = (EnumLiteralDeclaration)cAlternatives.eContents().get(8);
+		private final Keyword cMainMainKeyword_8_0 = (Keyword)cMainEnumLiteralDeclaration_8.eContents().get(0);
+		
+		//enum TalkType:
+		//	Workshop | Tutorial | Symposium | Clinic |
+		//	Break | Lunch | Poster | SRC | Main;
+		public EnumRule getRule() { return rule; }
+
+		//Workshop | Tutorial | Symposium | Clinic | Break | Lunch | Poster | SRC | Main
+		public Alternatives getAlternatives() { return cAlternatives; }
+
+		//Workshop
+		public EnumLiteralDeclaration getWorkshopEnumLiteralDeclaration_0() { return cWorkshopEnumLiteralDeclaration_0; }
+
+		//'Workshop'
+		public Keyword getWorkshopWorkshopKeyword_0_0() { return cWorkshopWorkshopKeyword_0_0; }
+
+		//Tutorial
+		public EnumLiteralDeclaration getTutorialEnumLiteralDeclaration_1() { return cTutorialEnumLiteralDeclaration_1; }
+
+		//'Tutorial'
+		public Keyword getTutorialTutorialKeyword_1_0() { return cTutorialTutorialKeyword_1_0; }
+
+		//Symposium
+		public EnumLiteralDeclaration getSymposiumEnumLiteralDeclaration_2() { return cSymposiumEnumLiteralDeclaration_2; }
+
+		//'Symposium'
+		public Keyword getSymposiumSymposiumKeyword_2_0() { return cSymposiumSymposiumKeyword_2_0; }
+
+		//Clinic
+		public EnumLiteralDeclaration getClinicEnumLiteralDeclaration_3() { return cClinicEnumLiteralDeclaration_3; }
+
+		//'Clinic'
+		public Keyword getClinicClinicKeyword_3_0() { return cClinicClinicKeyword_3_0; }
+
+		//Break
+		public EnumLiteralDeclaration getBreakEnumLiteralDeclaration_4() { return cBreakEnumLiteralDeclaration_4; }
+
+		//'Break'
+		public Keyword getBreakBreakKeyword_4_0() { return cBreakBreakKeyword_4_0; }
+
+		//Lunch
+		public EnumLiteralDeclaration getLunchEnumLiteralDeclaration_5() { return cLunchEnumLiteralDeclaration_5; }
+
+		//'Lunch'
+		public Keyword getLunchLunchKeyword_5_0() { return cLunchLunchKeyword_5_0; }
+
+		//Poster
+		public EnumLiteralDeclaration getPosterEnumLiteralDeclaration_6() { return cPosterEnumLiteralDeclaration_6; }
+
+		//'Poster'
+		public Keyword getPosterPosterKeyword_6_0() { return cPosterPosterKeyword_6_0; }
+
+		//SRC
+		public EnumLiteralDeclaration getSRCEnumLiteralDeclaration_7() { return cSRCEnumLiteralDeclaration_7; }
+
+		//'SRC'
+		public Keyword getSRCSRCKeyword_7_0() { return cSRCSRCKeyword_7_0; }
+
+		//Main
+		public EnumLiteralDeclaration getMainEnumLiteralDeclaration_8() { return cMainEnumLiteralDeclaration_8; }
+
+		//'Main'
+		public Keyword getMainMainKeyword_8_0() { return cMainMainKeyword_8_0; }
+	}
+
+	public class RoomElements extends AbstractEnumRuleElementFinder {
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "fr.irisa.models.program.Program.Room");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final EnumLiteralDeclaration cBouvet1EnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
+		private final Keyword cBouvet1Bouvet1Keyword_0_0 = (Keyword)cBouvet1EnumLiteralDeclaration_0.eContents().get(0);
+		private final EnumLiteralDeclaration cBouvet2EnumLiteralDeclaration_1 = (EnumLiteralDeclaration)cAlternatives.eContents().get(1);
+		private final Keyword cBouvet2Bouvet2Keyword_1_0 = (Keyword)cBouvet2EnumLiteralDeclaration_1.eContents().get(0);
+		private final EnumLiteralDeclaration cCharcotEnumLiteralDeclaration_2 = (EnumLiteralDeclaration)cAlternatives.eContents().get(2);
+		private final Keyword cCharcotCharcotKeyword_2_0 = (Keyword)cCharcotEnumLiteralDeclaration_2.eContents().get(0);
+		private final EnumLiteralDeclaration cVauban1EnumLiteralDeclaration_3 = (EnumLiteralDeclaration)cAlternatives.eContents().get(3);
+		private final Keyword cVauban1Vauban1Keyword_3_0 = (Keyword)cVauban1EnumLiteralDeclaration_3.eContents().get(0);
+		private final EnumLiteralDeclaration cVauban2EnumLiteralDeclaration_4 = (EnumLiteralDeclaration)cAlternatives.eContents().get(4);
+		private final Keyword cVauban2Vauban2Keyword_4_0 = (Keyword)cVauban2EnumLiteralDeclaration_4.eContents().get(0);
+		private final EnumLiteralDeclaration cLamannais1EnumLiteralDeclaration_5 = (EnumLiteralDeclaration)cAlternatives.eContents().get(5);
+		private final Keyword cLamannais1Lamannais1Keyword_5_0 = (Keyword)cLamannais1EnumLiteralDeclaration_5.eContents().get(0);
+		private final EnumLiteralDeclaration cLamennais2EnumLiteralDeclaration_6 = (EnumLiteralDeclaration)cAlternatives.eContents().get(6);
+		private final Keyword cLamennais2Lamennais2Keyword_6_0 = (Keyword)cLamennais2EnumLiteralDeclaration_6.eContents().get(0);
+		private final EnumLiteralDeclaration cLamennais3EnumLiteralDeclaration_7 = (EnumLiteralDeclaration)cAlternatives.eContents().get(7);
+		private final Keyword cLamennais3Lamennais3Keyword_7_0 = (Keyword)cLamennais3EnumLiteralDeclaration_7.eContents().get(0);
+		private final EnumLiteralDeclaration cRotondeSurcoufEnumLiteralDeclaration_8 = (EnumLiteralDeclaration)cAlternatives.eContents().get(8);
+		private final Keyword cRotondeSurcoufRotondeSurcoufKeyword_8_0 = (Keyword)cRotondeSurcoufEnumLiteralDeclaration_8.eContents().get(0);
+		private final EnumLiteralDeclaration cChateaubriandEnumLiteralDeclaration_9 = (EnumLiteralDeclaration)cAlternatives.eContents().get(9);
+		private final Keyword cChateaubriandChateaubriandKeyword_9_0 = (Keyword)cChateaubriandEnumLiteralDeclaration_9.eContents().get(0);
+		private final EnumLiteralDeclaration cLamennais12EnumLiteralDeclaration_10 = (EnumLiteralDeclaration)cAlternatives.eContents().get(10);
+		private final Keyword cLamennais12Lamennais12Keyword_10_0 = (Keyword)cLamennais12EnumLiteralDeclaration_10.eContents().get(0);
+		private final EnumLiteralDeclaration cLamennais45EnumLiteralDeclaration_11 = (EnumLiteralDeclaration)cAlternatives.eContents().get(11);
+		private final Keyword cLamennais45Lamennais45Keyword_11_0 = (Keyword)cLamennais45EnumLiteralDeclaration_11.eContents().get(0);
+		private final EnumLiteralDeclaration cGrandLargeEnumLiteralDeclaration_12 = (EnumLiteralDeclaration)cAlternatives.eContents().get(12);
+		private final Keyword cGrandLargeGrandLargeKeyword_12_0 = (Keyword)cGrandLargeEnumLiteralDeclaration_12.eContents().get(0);
+		private final EnumLiteralDeclaration cRotondeJCartierEnumLiteralDeclaration_13 = (EnumLiteralDeclaration)cAlternatives.eContents().get(13);
+		private final Keyword cRotondeJCartierRotondeJCartierKeyword_13_0 = (Keyword)cRotondeJCartierEnumLiteralDeclaration_13.eContents().get(0);
+		
+		//enum Room:
+		//	Bouvet1='Bouvet 1' |
+		//	Bouvet2='Bouvet 2' |
+		//	Charcot |
+		//	Vauban1='Vauban 1' |
+		//	Vauban2='Vauban 2' |
+		//	Lamannais1='Lamannais 1' |
+		//	Lamennais2='Lamennais 2' |
+		//	Lamennais3='Lamennais 3' |
+		//	RotondeSurcouf='Rotonde Surcouf' |
+		//	Chateaubriand |
+		//	Lamennais12='Lamennais 1+2' |
+		//	Lamennais45='Lamennais 4+5' |
+		//	GrandLarge='Grand Large' |
+		//	RotondeJCartier='Rotonde J. Cartier';
+		public EnumRule getRule() { return rule; }
+
+		//Bouvet1='Bouvet 1' | Bouvet2='Bouvet 2' | Charcot | Vauban1='Vauban 1' | Vauban2='Vauban 2' | Lamannais1='Lamannais 1' |
+		//Lamennais2='Lamennais 2' | Lamennais3='Lamennais 3' | RotondeSurcouf='Rotonde Surcouf' | Chateaubriand |
+		//Lamennais12='Lamennais 1+2' | Lamennais45='Lamennais 4+5' | GrandLarge='Grand Large' |
+		//RotondeJCartier='Rotonde J. Cartier'
+		public Alternatives getAlternatives() { return cAlternatives; }
+
+		//Bouvet1='Bouvet 1'
+		public EnumLiteralDeclaration getBouvet1EnumLiteralDeclaration_0() { return cBouvet1EnumLiteralDeclaration_0; }
+
+		//'Bouvet 1'
+		public Keyword getBouvet1Bouvet1Keyword_0_0() { return cBouvet1Bouvet1Keyword_0_0; }
+
+		//Bouvet2='Bouvet 2'
+		public EnumLiteralDeclaration getBouvet2EnumLiteralDeclaration_1() { return cBouvet2EnumLiteralDeclaration_1; }
+
+		//'Bouvet 2'
+		public Keyword getBouvet2Bouvet2Keyword_1_0() { return cBouvet2Bouvet2Keyword_1_0; }
+
+		//Charcot
+		public EnumLiteralDeclaration getCharcotEnumLiteralDeclaration_2() { return cCharcotEnumLiteralDeclaration_2; }
+
+		//'Charcot'
+		public Keyword getCharcotCharcotKeyword_2_0() { return cCharcotCharcotKeyword_2_0; }
+
+		//Vauban1='Vauban 1'
+		public EnumLiteralDeclaration getVauban1EnumLiteralDeclaration_3() { return cVauban1EnumLiteralDeclaration_3; }
+
+		//'Vauban 1'
+		public Keyword getVauban1Vauban1Keyword_3_0() { return cVauban1Vauban1Keyword_3_0; }
+
+		//Vauban2='Vauban 2'
+		public EnumLiteralDeclaration getVauban2EnumLiteralDeclaration_4() { return cVauban2EnumLiteralDeclaration_4; }
+
+		//'Vauban 2'
+		public Keyword getVauban2Vauban2Keyword_4_0() { return cVauban2Vauban2Keyword_4_0; }
+
+		//Lamannais1='Lamannais 1'
+		public EnumLiteralDeclaration getLamannais1EnumLiteralDeclaration_5() { return cLamannais1EnumLiteralDeclaration_5; }
+
+		//'Lamannais 1'
+		public Keyword getLamannais1Lamannais1Keyword_5_0() { return cLamannais1Lamannais1Keyword_5_0; }
+
+		//Lamennais2='Lamennais 2'
+		public EnumLiteralDeclaration getLamennais2EnumLiteralDeclaration_6() { return cLamennais2EnumLiteralDeclaration_6; }
+
+		//'Lamennais 2'
+		public Keyword getLamennais2Lamennais2Keyword_6_0() { return cLamennais2Lamennais2Keyword_6_0; }
+
+		//Lamennais3='Lamennais 3'
+		public EnumLiteralDeclaration getLamennais3EnumLiteralDeclaration_7() { return cLamennais3EnumLiteralDeclaration_7; }
+
+		//'Lamennais 3'
+		public Keyword getLamennais3Lamennais3Keyword_7_0() { return cLamennais3Lamennais3Keyword_7_0; }
+
+		//RotondeSurcouf='Rotonde Surcouf'
+		public EnumLiteralDeclaration getRotondeSurcoufEnumLiteralDeclaration_8() { return cRotondeSurcoufEnumLiteralDeclaration_8; }
+
+		//'Rotonde Surcouf'
+		public Keyword getRotondeSurcoufRotondeSurcoufKeyword_8_0() { return cRotondeSurcoufRotondeSurcoufKeyword_8_0; }
+
+		//Chateaubriand
+		public EnumLiteralDeclaration getChateaubriandEnumLiteralDeclaration_9() { return cChateaubriandEnumLiteralDeclaration_9; }
+
+		//'Chateaubriand'
+		public Keyword getChateaubriandChateaubriandKeyword_9_0() { return cChateaubriandChateaubriandKeyword_9_0; }
+
+		//Lamennais12='Lamennais 1+2'
+		public EnumLiteralDeclaration getLamennais12EnumLiteralDeclaration_10() { return cLamennais12EnumLiteralDeclaration_10; }
+
+		//'Lamennais 1+2'
+		public Keyword getLamennais12Lamennais12Keyword_10_0() { return cLamennais12Lamennais12Keyword_10_0; }
+
+		//Lamennais45='Lamennais 4+5'
+		public EnumLiteralDeclaration getLamennais45EnumLiteralDeclaration_11() { return cLamennais45EnumLiteralDeclaration_11; }
+
+		//'Lamennais 4+5'
+		public Keyword getLamennais45Lamennais45Keyword_11_0() { return cLamennais45Lamennais45Keyword_11_0; }
+
+		//GrandLarge='Grand Large'
+		public EnumLiteralDeclaration getGrandLargeEnumLiteralDeclaration_12() { return cGrandLargeEnumLiteralDeclaration_12; }
+
+		//'Grand Large'
+		public Keyword getGrandLargeGrandLargeKeyword_12_0() { return cGrandLargeGrandLargeKeyword_12_0; }
+
+		//RotondeJCartier='Rotonde J. Cartier'
+		public EnumLiteralDeclaration getRotondeJCartierEnumLiteralDeclaration_13() { return cRotondeJCartierEnumLiteralDeclaration_13; }
+
+		//'Rotonde J. Cartier'
+		public Keyword getRotondeJCartierRotondeJCartierKeyword_13_0() { return cRotondeJCartierRotondeJCartierKeyword_13_0; }
+	}
+
+	public class WeekDayElements extends AbstractEnumRuleElementFinder {
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "fr.irisa.models.program.Program.WeekDay");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final EnumLiteralDeclaration cMondayEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
+		private final Keyword cMondayMondayKeyword_0_0 = (Keyword)cMondayEnumLiteralDeclaration_0.eContents().get(0);
+		private final EnumLiteralDeclaration cTuesdayEnumLiteralDeclaration_1 = (EnumLiteralDeclaration)cAlternatives.eContents().get(1);
+		private final Keyword cTuesdayTuesdayKeyword_1_0 = (Keyword)cTuesdayEnumLiteralDeclaration_1.eContents().get(0);
+		private final EnumLiteralDeclaration cWednesdayEnumLiteralDeclaration_2 = (EnumLiteralDeclaration)cAlternatives.eContents().get(2);
+		private final Keyword cWednesdayWednesdayKeyword_2_0 = (Keyword)cWednesdayEnumLiteralDeclaration_2.eContents().get(0);
+		private final EnumLiteralDeclaration cThursdayEnumLiteralDeclaration_3 = (EnumLiteralDeclaration)cAlternatives.eContents().get(3);
+		private final Keyword cThursdayThursdayKeyword_3_0 = (Keyword)cThursdayEnumLiteralDeclaration_3.eContents().get(0);
+		private final EnumLiteralDeclaration cFridayEnumLiteralDeclaration_4 = (EnumLiteralDeclaration)cAlternatives.eContents().get(4);
+		private final Keyword cFridayFridayKeyword_4_0 = (Keyword)cFridayEnumLiteralDeclaration_4.eContents().get(0);
+		private final EnumLiteralDeclaration cSaturdayEnumLiteralDeclaration_5 = (EnumLiteralDeclaration)cAlternatives.eContents().get(5);
+		private final Keyword cSaturdaySaturdayKeyword_5_0 = (Keyword)cSaturdayEnumLiteralDeclaration_5.eContents().get(0);
+		private final EnumLiteralDeclaration cSundayEnumLiteralDeclaration_6 = (EnumLiteralDeclaration)cAlternatives.eContents().get(6);
+		private final Keyword cSundaySundayKeyword_6_0 = (Keyword)cSundayEnumLiteralDeclaration_6.eContents().get(0);
+		
+		//enum WeekDay:
+		//	Monday |
+		//	Tuesday |
+		//	Wednesday |
+		//	Thursday |
+		//	Friday |
+		//	Saturday |
+		//	Sunday;
+		public EnumRule getRule() { return rule; }
+
+		//Monday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday
+		public Alternatives getAlternatives() { return cAlternatives; }
+
+		//Monday
+		public EnumLiteralDeclaration getMondayEnumLiteralDeclaration_0() { return cMondayEnumLiteralDeclaration_0; }
+
+		//'Monday'
+		public Keyword getMondayMondayKeyword_0_0() { return cMondayMondayKeyword_0_0; }
+
+		//Tuesday
+		public EnumLiteralDeclaration getTuesdayEnumLiteralDeclaration_1() { return cTuesdayEnumLiteralDeclaration_1; }
+
+		//'Tuesday'
+		public Keyword getTuesdayTuesdayKeyword_1_0() { return cTuesdayTuesdayKeyword_1_0; }
+
+		//Wednesday
+		public EnumLiteralDeclaration getWednesdayEnumLiteralDeclaration_2() { return cWednesdayEnumLiteralDeclaration_2; }
+
+		//'Wednesday'
+		public Keyword getWednesdayWednesdayKeyword_2_0() { return cWednesdayWednesdayKeyword_2_0; }
+
+		//Thursday
+		public EnumLiteralDeclaration getThursdayEnumLiteralDeclaration_3() { return cThursdayEnumLiteralDeclaration_3; }
+
+		//'Thursday'
+		public Keyword getThursdayThursdayKeyword_3_0() { return cThursdayThursdayKeyword_3_0; }
+
+		//Friday
+		public EnumLiteralDeclaration getFridayEnumLiteralDeclaration_4() { return cFridayEnumLiteralDeclaration_4; }
+
+		//'Friday'
+		public Keyword getFridayFridayKeyword_4_0() { return cFridayFridayKeyword_4_0; }
+
+		//Saturday
+		public EnumLiteralDeclaration getSaturdayEnumLiteralDeclaration_5() { return cSaturdayEnumLiteralDeclaration_5; }
+
+		//'Saturday'
+		public Keyword getSaturdaySaturdayKeyword_5_0() { return cSaturdaySaturdayKeyword_5_0; }
+
+		//Sunday
+		public EnumLiteralDeclaration getSundayEnumLiteralDeclaration_6() { return cSundayEnumLiteralDeclaration_6; }
+
+		//'Sunday'
+		public Keyword getSundaySundayKeyword_6_0() { return cSundaySundayKeyword_6_0; }
+	}
+	
 	private final ProgramElements pProgram;
-	private final RoomElements pRoom;
 	private final DayElements pDay;
 	private final SessionElements pSession;
 	private final TalkElements pTalk;
+	private final TalkTypeElements eTalkType;
+	private final RoomElements eRoom;
+	private final WeekDayElements eWeekDay;
 	
 	private final Grammar grammar;
 
@@ -323,10 +570,12 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		this.grammar = internalFindGrammar(grammarProvider);
 		this.gaTerminals = gaTerminals;
 		this.pProgram = new ProgramElements();
-		this.pRoom = new RoomElements();
 		this.pDay = new DayElements();
 		this.pSession = new SessionElements();
 		this.pTalk = new TalkElements();
+		this.eTalkType = new TalkTypeElements();
+		this.eRoom = new RoomElements();
+		this.eWeekDay = new WeekDayElements();
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {
@@ -357,7 +606,7 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 
 	
 	//Program:
-	//	("Rooms" rooms+=Room rooms+=Room*)? ("Days" days+=Day days+=Day*)?;
+	//	(days+=Day days+=Day*)?;
 	public ProgramElements getProgramAccess() {
 		return pProgram;
 	}
@@ -366,18 +615,8 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		return getProgramAccess().getRule();
 	}
 
-	//Room:
-	//	name=STRING;
-	public RoomElements getRoomAccess() {
-		return pRoom;
-	}
-	
-	public ParserRule getRoomRule() {
-		return getRoomAccess().getRule();
-	}
-
 	//Day:
-	//	"[" "name" name=STRING ("Sessions" sessions+=Session sessions+=Session*)? "]";
+	//	weekDay=WeekDay ':' (sessions+=Session sessions+=Session*)?;
 	public DayElements getDayAccess() {
 		return pDay;
 	}
@@ -387,7 +626,9 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Session:
-	//	"[" "name" name=STRING "start" start=STRING "end" end=STRING ("Talks" talks+=Talk talks+=Talk*)? "]";
+	//	'Session' ':' name=STRING
+	//	'start' start=STRING
+	//	'end' end=STRING (talks+=Talk talks+=Talk*)?;
 	public SessionElements getSessionAccess() {
 		return pSession;
 	}
@@ -397,7 +638,7 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Talk:
-	//	"[" "title" tilte=STRING "room" room=STRING ("speakers" speakers+=STRING ("," speakers+=STRING)*)? "]";
+	//	type=TalkType ':' (tilte=STRING ',')? room=Room ('(' (speakers+=STRING (',' speakers+=STRING)*)? ')')?;
 	public TalkElements getTalkAccess() {
 		return pTalk;
 	}
@@ -406,39 +647,89 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		return getTalkAccess().getRule();
 	}
 
+	//enum TalkType:
+	//	Workshop | Tutorial | Symposium | Clinic |
+	//	Break | Lunch | Poster | SRC | Main;
+	public TalkTypeElements getTalkTypeAccess() {
+		return eTalkType;
+	}
+	
+	public EnumRule getTalkTypeRule() {
+		return getTalkTypeAccess().getRule();
+	}
+
+	//enum Room:
+	//	Bouvet1='Bouvet 1' |
+	//	Bouvet2='Bouvet 2' |
+	//	Charcot |
+	//	Vauban1='Vauban 1' |
+	//	Vauban2='Vauban 2' |
+	//	Lamannais1='Lamannais 1' |
+	//	Lamennais2='Lamennais 2' |
+	//	Lamennais3='Lamennais 3' |
+	//	RotondeSurcouf='Rotonde Surcouf' |
+	//	Chateaubriand |
+	//	Lamennais12='Lamennais 1+2' |
+	//	Lamennais45='Lamennais 4+5' |
+	//	GrandLarge='Grand Large' |
+	//	RotondeJCartier='Rotonde J. Cartier';
+	public RoomElements getRoomAccess() {
+		return eRoom;
+	}
+	
+	public EnumRule getRoomRule() {
+		return getRoomAccess().getRule();
+	}
+
+	//enum WeekDay:
+	//	Monday |
+	//	Tuesday |
+	//	Wednesday |
+	//	Thursday |
+	//	Friday |
+	//	Saturday |
+	//	Sunday;
+	public WeekDayElements getWeekDayAccess() {
+		return eWeekDay;
+	}
+	
+	public EnumRule getWeekDayRule() {
+		return getWeekDayAccess().getRule();
+	}
+
 	//terminal ID:
-	//	"^"? ("a".."z" | "A".."Z" | "_") ("a".."z" | "A".."Z" | "_" | "0".."9")*;
+	//	'^'? ('a'..'z' | 'A'..'Z' | '_') ('a'..'z' | 'A'..'Z' | '_' | '0'..'9')*;
 	public TerminalRule getIDRule() {
 		return gaTerminals.getIDRule();
 	} 
 
 	//terminal INT returns ecore::EInt:
-	//	"0".."9"+;
+	//	'0'..'9'+;
 	public TerminalRule getINTRule() {
 		return gaTerminals.getINTRule();
 	} 
 
 	//terminal STRING:
-	//	"\"" ("\\" . / * 'b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\' * / | !("\\" | "\""))* "\"" | "\'" ("\\" .
-	//	/ * 'b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\' * / | !("\\" | "\'"))* "\'";
+	//	'"' ('\\' . | !('\\' | '"'))* '"' |
+	//	"'" ('\\' . | !('\\' | "'"))* "'";
 	public TerminalRule getSTRINGRule() {
 		return gaTerminals.getSTRINGRule();
 	} 
 
 	//terminal ML_COMMENT:
-	//	"/ *"->"* /";
+	//	'/ *'->'* /';
 	public TerminalRule getML_COMMENTRule() {
 		return gaTerminals.getML_COMMENTRule();
 	} 
 
 	//terminal SL_COMMENT:
-	//	"//" !("\n" | "\r")* ("\r"? "\n")?;
+	//	'//' !('\n' | '\r')* ('\r'? '\n')?;
 	public TerminalRule getSL_COMMENTRule() {
 		return gaTerminals.getSL_COMMENTRule();
 	} 
 
 	//terminal WS:
-	//	(" " | "\t" | "\r" | "\n")+;
+	//	' ' | '\t' | '\r' | '\n'+;
 	public TerminalRule getWSRule() {
 		return gaTerminals.getWSRule();
 	} 

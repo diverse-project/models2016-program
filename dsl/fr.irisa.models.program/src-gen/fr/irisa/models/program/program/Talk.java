@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link fr.irisa.models.program.program.Talk#getType <em>Type</em>}</li>
  *   <li>{@link fr.irisa.models.program.program.Talk#getTilte <em>Tilte</em>}</li>
  *   <li>{@link fr.irisa.models.program.program.Talk#getRoom <em>Room</em>}</li>
  *   <li>{@link fr.irisa.models.program.program.Talk#getSpeakers <em>Speakers</em>}</li>
@@ -26,6 +27,35 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Talk extends EObject
 {
+  /**
+   * Returns the value of the '<em><b>Type</b></em>' attribute.
+   * The literals are from the enumeration {@link fr.irisa.models.program.program.TalkType}.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Type</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Type</em>' attribute.
+   * @see fr.irisa.models.program.program.TalkType
+   * @see #setType(TalkType)
+   * @see fr.irisa.models.program.program.ProgramPackage#getTalk_Type()
+   * @model
+   * @generated
+   */
+  TalkType getType();
+
+  /**
+   * Sets the value of the '{@link fr.irisa.models.program.program.Talk#getType <em>Type</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Type</em>' attribute.
+   * @see fr.irisa.models.program.program.TalkType
+   * @see #getType()
+   * @generated
+   */
+  void setType(TalkType value);
+
   /**
    * Returns the value of the '<em><b>Tilte</b></em>' attribute.
    * <!-- begin-user-doc -->
@@ -54,6 +84,7 @@ public interface Talk extends EObject
 
   /**
    * Returns the value of the '<em><b>Room</b></em>' attribute.
+   * The literals are from the enumeration {@link fr.irisa.models.program.program.Room}.
    * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Room</em>' attribute isn't clear,
@@ -61,22 +92,24 @@ public interface Talk extends EObject
    * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Room</em>' attribute.
-   * @see #setRoom(String)
+   * @see fr.irisa.models.program.program.Room
+   * @see #setRoom(Room)
    * @see fr.irisa.models.program.program.ProgramPackage#getTalk_Room()
    * @model
    * @generated
    */
-  String getRoom();
+  Room getRoom();
 
   /**
    * Sets the value of the '{@link fr.irisa.models.program.program.Talk#getRoom <em>Room</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Room</em>' attribute.
+   * @see fr.irisa.models.program.program.Room
    * @see #getRoom()
    * @generated
    */
-  void setRoom(String value);
+  void setRoom(Room value);
 
   /**
    * Returns the value of the '<em><b>Speakers</b></em>' attribute list.

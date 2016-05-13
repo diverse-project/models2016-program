@@ -15,7 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link fr.irisa.models.program.program.Day#getName <em>Name</em>}</li>
+ *   <li>{@link fr.irisa.models.program.program.Day#getWeekDay <em>Week Day</em>}</li>
  *   <li>{@link fr.irisa.models.program.program.Day#getSessions <em>Sessions</em>}</li>
  * </ul>
  *
@@ -26,30 +26,33 @@ import org.eclipse.emf.ecore.EObject;
 public interface Day extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Name</b></em>' attribute.
+   * Returns the value of the '<em><b>Week Day</b></em>' attribute.
+   * The literals are from the enumeration {@link fr.irisa.models.program.program.WeekDay}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Name</em>' attribute isn't clear,
+   * If the meaning of the '<em>Week Day</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Name</em>' attribute.
-   * @see #setName(String)
-   * @see fr.irisa.models.program.program.ProgramPackage#getDay_Name()
+   * @return the value of the '<em>Week Day</em>' attribute.
+   * @see fr.irisa.models.program.program.WeekDay
+   * @see #setWeekDay(WeekDay)
+   * @see fr.irisa.models.program.program.ProgramPackage#getDay_WeekDay()
    * @model
    * @generated
    */
-  String getName();
+  WeekDay getWeekDay();
 
   /**
-   * Sets the value of the '{@link fr.irisa.models.program.program.Day#getName <em>Name</em>}' attribute.
+   * Sets the value of the '{@link fr.irisa.models.program.program.Day#getWeekDay <em>Week Day</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Name</em>' attribute.
-   * @see #getName()
+   * @param value the new value of the '<em>Week Day</em>' attribute.
+   * @see fr.irisa.models.program.program.WeekDay
+   * @see #getWeekDay()
    * @generated
    */
-  void setName(String value);
+  void setWeekDay(WeekDay value);
 
   /**
    * Returns the value of the '<em><b>Sessions</b></em>' containment reference list.

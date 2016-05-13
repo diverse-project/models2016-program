@@ -5,7 +5,6 @@ package fr.irisa.models.program.program.impl;
 import fr.irisa.models.program.program.Day;
 import fr.irisa.models.program.program.Program;
 import fr.irisa.models.program.program.ProgramPackage;
-import fr.irisa.models.program.program.Room;
 
 import java.util.Collection;
 
@@ -29,7 +28,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link fr.irisa.models.program.program.impl.ProgramImpl#getRooms <em>Rooms</em>}</li>
  *   <li>{@link fr.irisa.models.program.program.impl.ProgramImpl#getDays <em>Days</em>}</li>
  * </ul>
  *
@@ -37,16 +35,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class ProgramImpl extends MinimalEObjectImpl.Container implements Program
 {
-  /**
-   * The cached value of the '{@link #getRooms() <em>Rooms</em>}' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getRooms()
-   * @generated
-   * @ordered
-   */
-  protected EList<Room> rooms;
-
   /**
    * The cached value of the '{@link #getDays() <em>Days</em>}' containment reference list.
    * <!-- begin-user-doc -->
@@ -83,20 +71,6 @@ public class ProgramImpl extends MinimalEObjectImpl.Container implements Program
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<Room> getRooms()
-  {
-    if (rooms == null)
-    {
-      rooms = new EObjectContainmentEList<Room>(Room.class, this, ProgramPackage.PROGRAM__ROOMS);
-    }
-    return rooms;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EList<Day> getDays()
   {
     if (days == null)
@@ -116,8 +90,6 @@ public class ProgramImpl extends MinimalEObjectImpl.Container implements Program
   {
     switch (featureID)
     {
-      case ProgramPackage.PROGRAM__ROOMS:
-        return ((InternalEList<?>)getRooms()).basicRemove(otherEnd, msgs);
       case ProgramPackage.PROGRAM__DAYS:
         return ((InternalEList<?>)getDays()).basicRemove(otherEnd, msgs);
     }
@@ -134,8 +106,6 @@ public class ProgramImpl extends MinimalEObjectImpl.Container implements Program
   {
     switch (featureID)
     {
-      case ProgramPackage.PROGRAM__ROOMS:
-        return getRooms();
       case ProgramPackage.PROGRAM__DAYS:
         return getDays();
     }
@@ -153,10 +123,6 @@ public class ProgramImpl extends MinimalEObjectImpl.Container implements Program
   {
     switch (featureID)
     {
-      case ProgramPackage.PROGRAM__ROOMS:
-        getRooms().clear();
-        getRooms().addAll((Collection<? extends Room>)newValue);
-        return;
       case ProgramPackage.PROGRAM__DAYS:
         getDays().clear();
         getDays().addAll((Collection<? extends Day>)newValue);
@@ -175,9 +141,6 @@ public class ProgramImpl extends MinimalEObjectImpl.Container implements Program
   {
     switch (featureID)
     {
-      case ProgramPackage.PROGRAM__ROOMS:
-        getRooms().clear();
-        return;
       case ProgramPackage.PROGRAM__DAYS:
         getDays().clear();
         return;
@@ -195,8 +158,6 @@ public class ProgramImpl extends MinimalEObjectImpl.Container implements Program
   {
     switch (featureID)
     {
-      case ProgramPackage.PROGRAM__ROOMS:
-        return rooms != null && !rooms.isEmpty();
       case ProgramPackage.PROGRAM__DAYS:
         return days != null && !days.isEmpty();
     }

@@ -9,6 +9,7 @@ import fr.irisa.models.program.program.Day;
 import fr.irisa.models.program.program.Room;
 import fr.irisa.models.program.program.Session;
 import fr.irisa.models.program.program.Talk;
+import fr.irisa.models.program.program.WeekDay;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -45,52 +46,43 @@ public class ProgramGenerator implements IGenerator {
   
   private final Map<Session, Map<Room, List<Talk>>> talksPerRoomPerSession = new HashMap<Session, Map<Room, List<Talk>>>();
   
-  private final Map<String, Room> roomsPerName = new HashMap<String, Room>();
-  
   @Override
   public void doGenerate(final Resource resource, final IFileSystemAccess fsa) {
     this.days.clear();
     this.roomsPerDay.clear();
     this.sessionsPerDay.clear();
     this.talksPerRoomPerSession.clear();
-    this.roomsPerName.clear();
     TreeIterator<EObject> _allContents = resource.getAllContents();
     Iterator<Room> _filter = Iterators.<Room>filter(_allContents, Room.class);
     final List<Room> rooms = IteratorExtensions.<Room>toList(_filter);
-    final Consumer<Room> _function = (Room r) -> {
-      String _name = r.getName();
-      this.roomsPerName.put(_name, r);
-    };
-    rooms.forEach(_function);
     TreeIterator<EObject> _allContents_1 = resource.getAllContents();
     Iterator<Day> _filter_1 = Iterators.<Day>filter(_allContents_1, Day.class);
     List<Day> _list = IteratorExtensions.<Day>toList(_filter_1);
     this.days.addAll(_list);
-    final Consumer<Day> _function_1 = (Day d) -> {
+    final Consumer<Day> _function = (Day d) -> {
       final List<Session> sessions = d.getSessions();
       final Set<Room> roomsOfTheDay = new HashSet<Room>();
-      final Consumer<Session> _function_2 = (Session s) -> {
+      final Consumer<Session> _function_1 = (Session s) -> {
         EList<Talk> _talks = s.getTalks();
-        final Function1<Talk, Room> _function_3 = (Talk t) -> {
-          String _room = t.getRoom();
-          return this.roomsPerName.get(_room);
+        final Function1<Talk, Room> _function_2 = (Talk t) -> {
+          return t.getRoom();
         };
-        List<Room> _map = ListExtensions.<Talk, Room>map(_talks, _function_3);
+        List<Room> _map = ListExtensions.<Talk, Room>map(_talks, _function_2);
         roomsOfTheDay.addAll(_map);
       };
-      sessions.forEach(_function_2);
-      final Comparator<Room> _function_3 = (Room r1, Room r2) -> {
+      sessions.forEach(_function_1);
+      final Comparator<Room> _function_2 = (Room r1, Room r2) -> {
         int _indexOf = rooms.indexOf(r1);
         int _indexOf_1 = rooms.indexOf(r2);
         return (_indexOf - _indexOf_1);
       };
-      List<Room> _sortWith = IterableExtensions.<Room>sortWith(roomsOfTheDay, _function_3);
+      List<Room> _sortWith = IterableExtensions.<Room>sortWith(roomsOfTheDay, _function_2);
       final List<Room> result = new ArrayList<Room>(_sortWith);
       this.roomsPerDay.put(d, result);
       this.sessionsPerDay.put(d, sessions);
-      final Consumer<Session> _function_4 = (Session s) -> {
+      final Consumer<Session> _function_3 = (Session s) -> {
         final List<Talk> talks = s.getTalks();
-        final Consumer<Talk> _function_5 = (Talk t) -> {
+        final Consumer<Talk> _function_4 = (Talk t) -> {
           Map<Room, List<Talk>> talksPerRoom = this.talksPerRoomPerSession.get(s);
           boolean _equals = Objects.equal(talksPerRoom, null);
           if (_equals) {
@@ -98,24 +90,22 @@ public class ProgramGenerator implements IGenerator {
             talksPerRoom = _hashMap;
             this.talksPerRoomPerSession.put(s, talksPerRoom);
           }
-          String _room = t.getRoom();
-          Room _get = this.roomsPerName.get(_room);
-          List<Talk> talksInRoom = talksPerRoom.get(_get);
+          Room _room = t.getRoom();
+          List<Talk> talksInRoom = talksPerRoom.get(_room);
           boolean _equals_1 = Objects.equal(talksInRoom, null);
           if (_equals_1) {
             ArrayList<Talk> _arrayList = new ArrayList<Talk>();
             talksInRoom = _arrayList;
-            String _room_1 = t.getRoom();
-            Room _get_1 = this.roomsPerName.get(_room_1);
-            talksPerRoom.put(_get_1, talksInRoom);
+            Room _room_1 = t.getRoom();
+            talksPerRoom.put(_room_1, talksInRoom);
           }
           talksInRoom.add(t);
         };
-        talks.forEach(_function_5);
+        talks.forEach(_function_4);
       };
-      sessions.forEach(_function_4);
+      sessions.forEach(_function_3);
     };
-    this.days.forEach(_function_1);
+    this.days.forEach(_function);
     String _generate = this.generate();
     String _plus = ("var data = " + _generate);
     fsa.generateFile("data.js", _plus);
@@ -139,8 +129,8 @@ public class ProgramGenerator implements IGenerator {
         _builder.append("\t");
         _builder.append("\t");
         _builder.append("name : \"");
-        String _name = d.getName();
-        _builder.append(_name, "\t\t");
+        WeekDay _weekDay = d.getWeekDay();
+        _builder.append(_weekDay, "\t\t");
         _builder.append("\",");
         _builder.newLineIfNotEmpty();
         _builder.append("\t");
@@ -162,8 +152,7 @@ public class ProgramGenerator implements IGenerator {
             _builder.append("\t");
             _builder.append("\t\t");
             _builder.append("\"");
-            String _name_1 = r.getName();
-            _builder.append(_name_1, "\t\t\t");
+            _builder.append(r, "\t\t\t");
             _builder.append("\"");
             _builder.newLineIfNotEmpty();
           }
@@ -187,8 +176,8 @@ public class ProgramGenerator implements IGenerator {
             _builder.append("\t\t");
             _builder.append("\t");
             _builder.append("name : \"");
-            String _name_2 = s.getName();
-            _builder.append(_name_2, "\t\t\t\t");
+            String _name = s.getName();
+            _builder.append(_name, "\t\t\t\t");
             _builder.append("\",");
             _builder.newLineIfNotEmpty();
             _builder.append("\t");

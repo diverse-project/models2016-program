@@ -3,27 +3,46 @@ grammar fr.irisa.models.program.Program with org.eclipse.xtext.common.Terminals
 generate program "http://www.irisa.fr/models/program/Program"
 
 Program:
-	('Rooms' rooms+=Room (rooms+=Room)*)? ('Days' days+=Day (days+=Day)*)? ;
-
-Room:
-	name=STRING;
+	(days+=Day (days+=Day)*)?;
 
 Day:
-	'['
-	'name' name=STRING ('Sessions' sessions+=Session (sessions+=Session)*)?
-	']';
+	weekDay=WeekDay ':' (sessions+=Session (sessions+=Session)*)?;
 
 Session:
-	'['
-	'name' name=STRING
+	'Session' ':' name=STRING
 	'start' start=STRING
 	'end' end=STRING
-	('Talks' talks+=Talk (talks+=Talk)*)?
-	']';
+	(talks+=Talk (talks+=Talk)*)?;
 
 Talk:
-	'['
-	'title' tilte=STRING
-	'room' room=STRING
-	('speakers' speakers+=STRING (',' speakers+=STRING)*)?
-	']';
+	type=TalkType ':' (tilte=STRING ',')? room=Room
+	('(' (speakers+=STRING (',' speakers+=STRING)*)? ')')?;
+	
+enum TalkType :
+	Workshop='Workshop' | Tutorial='Tutorial' | Symposium='Symposium' | Clinic='Clinic' |
+	Break='Break' | Lunch='Lunch' | Poster='Poster' | SRC='SRC' | Main='Main';
+
+enum Room :
+	Bouvet1='Bouvet 1' |
+	Bouvet2='Bouvet 2' |
+	Charcot='Charcot' |
+	Vauban1='Vauban 1' |
+	Vauban2='Vauban 2' |
+	Lamannais1='Lamannais 1' |
+	Lamennais2='Lamennais 2' |
+	Lamennais3='Lamennais 3' |
+	RotondeSurcouf='Rotonde Surcouf' |
+	Chateaubriand='Chateaubriand' |
+	Lamennais12='Lamennais 1+2' |
+	Lamennais45='Lamennais 4+5' |
+	GrandLarge='Grand Large' |
+	RotondeJCartier='Rotonde J. Cartier';
+	
+enum WeekDay :
+	Monday='Monday' |
+	Tuesday='Tuesday' |
+	Wednesday='Wednesday' |
+	Thursday='Thursday' |
+	Friday='Friday' |
+	Saturday='Saturday' |
+	Sunday='Sunday';

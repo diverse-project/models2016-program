@@ -37,33 +37,34 @@ public class ProgramParser extends AbstractContentAssistParser {
 			nameMappings = new HashMap<AbstractElement, String>() {
 				private static final long serialVersionUID = 1L;
 				{
+					put(grammarAccess.getTalkTypeAccess().getAlternatives(), "rule__TalkType__Alternatives");
+					put(grammarAccess.getRoomAccess().getAlternatives(), "rule__Room__Alternatives");
+					put(grammarAccess.getWeekDayAccess().getAlternatives(), "rule__WeekDay__Alternatives");
 					put(grammarAccess.getProgramAccess().getGroup(), "rule__Program__Group__0");
-					put(grammarAccess.getProgramAccess().getGroup_0(), "rule__Program__Group_0__0");
-					put(grammarAccess.getProgramAccess().getGroup_1(), "rule__Program__Group_1__0");
 					put(grammarAccess.getDayAccess().getGroup(), "rule__Day__Group__0");
-					put(grammarAccess.getDayAccess().getGroup_3(), "rule__Day__Group_3__0");
+					put(grammarAccess.getDayAccess().getGroup_2(), "rule__Day__Group_2__0");
 					put(grammarAccess.getSessionAccess().getGroup(), "rule__Session__Group__0");
 					put(grammarAccess.getSessionAccess().getGroup_7(), "rule__Session__Group_7__0");
 					put(grammarAccess.getTalkAccess().getGroup(), "rule__Talk__Group__0");
-					put(grammarAccess.getTalkAccess().getGroup_5(), "rule__Talk__Group_5__0");
-					put(grammarAccess.getTalkAccess().getGroup_5_2(), "rule__Talk__Group_5_2__0");
-					put(grammarAccess.getProgramAccess().getRoomsAssignment_0_1(), "rule__Program__RoomsAssignment_0_1");
-					put(grammarAccess.getProgramAccess().getRoomsAssignment_0_2(), "rule__Program__RoomsAssignment_0_2");
-					put(grammarAccess.getProgramAccess().getDaysAssignment_1_1(), "rule__Program__DaysAssignment_1_1");
-					put(grammarAccess.getProgramAccess().getDaysAssignment_1_2(), "rule__Program__DaysAssignment_1_2");
-					put(grammarAccess.getRoomAccess().getNameAssignment(), "rule__Room__NameAssignment");
-					put(grammarAccess.getDayAccess().getNameAssignment_2(), "rule__Day__NameAssignment_2");
-					put(grammarAccess.getDayAccess().getSessionsAssignment_3_1(), "rule__Day__SessionsAssignment_3_1");
-					put(grammarAccess.getDayAccess().getSessionsAssignment_3_2(), "rule__Day__SessionsAssignment_3_2");
+					put(grammarAccess.getTalkAccess().getGroup_2(), "rule__Talk__Group_2__0");
+					put(grammarAccess.getTalkAccess().getGroup_4(), "rule__Talk__Group_4__0");
+					put(grammarAccess.getTalkAccess().getGroup_4_1(), "rule__Talk__Group_4_1__0");
+					put(grammarAccess.getTalkAccess().getGroup_4_1_1(), "rule__Talk__Group_4_1_1__0");
+					put(grammarAccess.getProgramAccess().getDaysAssignment_0(), "rule__Program__DaysAssignment_0");
+					put(grammarAccess.getProgramAccess().getDaysAssignment_1(), "rule__Program__DaysAssignment_1");
+					put(grammarAccess.getDayAccess().getWeekDayAssignment_0(), "rule__Day__WeekDayAssignment_0");
+					put(grammarAccess.getDayAccess().getSessionsAssignment_2_0(), "rule__Day__SessionsAssignment_2_0");
+					put(grammarAccess.getDayAccess().getSessionsAssignment_2_1(), "rule__Day__SessionsAssignment_2_1");
 					put(grammarAccess.getSessionAccess().getNameAssignment_2(), "rule__Session__NameAssignment_2");
 					put(grammarAccess.getSessionAccess().getStartAssignment_4(), "rule__Session__StartAssignment_4");
 					put(grammarAccess.getSessionAccess().getEndAssignment_6(), "rule__Session__EndAssignment_6");
+					put(grammarAccess.getSessionAccess().getTalksAssignment_7_0(), "rule__Session__TalksAssignment_7_0");
 					put(grammarAccess.getSessionAccess().getTalksAssignment_7_1(), "rule__Session__TalksAssignment_7_1");
-					put(grammarAccess.getSessionAccess().getTalksAssignment_7_2(), "rule__Session__TalksAssignment_7_2");
-					put(grammarAccess.getTalkAccess().getTilteAssignment_2(), "rule__Talk__TilteAssignment_2");
-					put(grammarAccess.getTalkAccess().getRoomAssignment_4(), "rule__Talk__RoomAssignment_4");
-					put(grammarAccess.getTalkAccess().getSpeakersAssignment_5_1(), "rule__Talk__SpeakersAssignment_5_1");
-					put(grammarAccess.getTalkAccess().getSpeakersAssignment_5_2_1(), "rule__Talk__SpeakersAssignment_5_2_1");
+					put(grammarAccess.getTalkAccess().getTypeAssignment_0(), "rule__Talk__TypeAssignment_0");
+					put(grammarAccess.getTalkAccess().getTilteAssignment_2_0(), "rule__Talk__TilteAssignment_2_0");
+					put(grammarAccess.getTalkAccess().getRoomAssignment_3(), "rule__Talk__RoomAssignment_3");
+					put(grammarAccess.getTalkAccess().getSpeakersAssignment_4_1_0(), "rule__Talk__SpeakersAssignment_4_1_0");
+					put(grammarAccess.getTalkAccess().getSpeakersAssignment_4_1_1_1(), "rule__Talk__SpeakersAssignment_4_1_1_1");
 				}
 			};
 		}

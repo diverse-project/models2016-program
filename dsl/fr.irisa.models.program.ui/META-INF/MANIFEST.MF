@@ -21,5 +21,6 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: fr.irisa.models.program.ui.quickfix,
  fr.irisa.models.program.ui.contentassist,
  fr.irisa.models.program.ui.internal,
- fr.irisa.models.program.ui.contentassist.antlr
+ fr.irisa.models.program.ui.contentassist.antlr,
+ fr.irisa.models.program.ui.contentassist.antlr.internal
 Bundle-Activator: fr.irisa.models.program.ui.internal.ProgramActivator

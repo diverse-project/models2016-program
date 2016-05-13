@@ -24,6 +24,7 @@ import org.eclipse.xtext.parser.*;
 import org.eclipse.xtext.parser.impl.*;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.common.util.Enumerator;
 import org.eclipse.xtext.parser.antlr.AbstractInternalAntlrParser;
 import org.eclipse.xtext.parser.antlr.XtextTokenStream;
 import org.eclipse.xtext.parser.antlr.XtextTokenStream.HiddenTokens;
@@ -77,24 +78,20 @@ ruleProgram returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-((	otherlv_0='Rooms' 
-    {
-    	newLeafNode(otherlv_0, grammarAccess.getProgramAccess().getRoomsKeyword_0_0());
-    }
-(
+((
 (
 		{ 
-	        newCompositeNode(grammarAccess.getProgramAccess().getRoomsRoomParserRuleCall_0_1_0()); 
+	        newCompositeNode(grammarAccess.getProgramAccess().getDaysDayParserRuleCall_0_0()); 
 	    }
-		lv_rooms_1_0=ruleRoom		{
+		lv_days_0_0=ruleDay		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getProgramRule());
 	        }
        		add(
        			$current, 
-       			"rooms",
-        		lv_rooms_1_0, 
-        		"Room");
+       			"days",
+        		lv_days_0_0, 
+        		"fr.irisa.models.program.Program.Day");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -102,101 +99,22 @@ ruleProgram returns [EObject current=null]
 )(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getProgramAccess().getRoomsRoomParserRuleCall_0_2_0()); 
+	        newCompositeNode(grammarAccess.getProgramAccess().getDaysDayParserRuleCall_1_0()); 
 	    }
-		lv_rooms_2_0=ruleRoom		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getProgramRule());
-	        }
-       		add(
-       			$current, 
-       			"rooms",
-        		lv_rooms_2_0, 
-        		"Room");
-	        afterParserOrEnumRuleCall();
-	    }
-
-)
-)*)?(	otherlv_3='Days' 
-    {
-    	newLeafNode(otherlv_3, grammarAccess.getProgramAccess().getDaysKeyword_1_0());
-    }
-(
-(
-		{ 
-	        newCompositeNode(grammarAccess.getProgramAccess().getDaysDayParserRuleCall_1_1_0()); 
-	    }
-		lv_days_4_0=ruleDay		{
+		lv_days_1_0=ruleDay		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getProgramRule());
 	        }
        		add(
        			$current, 
        			"days",
-        		lv_days_4_0, 
-        		"Day");
+        		lv_days_1_0, 
+        		"fr.irisa.models.program.Program.Day");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)(
-(
-		{ 
-	        newCompositeNode(grammarAccess.getProgramAccess().getDaysDayParserRuleCall_1_2_0()); 
-	    }
-		lv_days_5_0=ruleDay		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getProgramRule());
-	        }
-       		add(
-       			$current, 
-       			"days",
-        		lv_days_5_0, 
-        		"Day");
-	        afterParserOrEnumRuleCall();
-	    }
-
-)
-)*)?)
-;
-
-
-
-
-
-// Entry rule entryRuleRoom
-entryRuleRoom returns [EObject current=null] 
-	:
-	{ newCompositeNode(grammarAccess.getRoomRule()); }
-	 iv_ruleRoom=ruleRoom 
-	 { $current=$iv_ruleRoom.current; } 
-	 EOF 
-;
-
-// Rule Room
-ruleRoom returns [EObject current=null] 
-    @init { enterRule(); 
-    }
-    @after { leaveRule(); }:
-(
-(
-		lv_name_0_0=RULE_STRING
-		{
-			newLeafNode(lv_name_0_0, grammarAccess.getRoomAccess().getNameSTRINGTerminalRuleCall_0()); 
-		}
-		{
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getRoomRule());
-	        }
-       		setWithLastConsumed(
-       			$current, 
-       			"name",
-        		lv_name_0_0, 
-        		"STRING");
-	    }
-
-)
-)
+)*)?
 ;
 
 
@@ -217,50 +135,42 @@ ruleDay returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-(	otherlv_0='[' 
-    {
-    	newLeafNode(otherlv_0, grammarAccess.getDayAccess().getLeftSquareBracketKeyword_0());
-    }
-	otherlv_1='name' 
-    {
-    	newLeafNode(otherlv_1, grammarAccess.getDayAccess().getNameKeyword_1());
-    }
+((
 (
-(
-		lv_name_2_0=RULE_STRING
-		{
-			newLeafNode(lv_name_2_0, grammarAccess.getDayAccess().getNameSTRINGTerminalRuleCall_2_0()); 
-		}
-		{
+		{ 
+	        newCompositeNode(grammarAccess.getDayAccess().getWeekDayWeekDayEnumRuleCall_0_0()); 
+	    }
+		lv_weekDay_0_0=ruleWeekDay		{
 	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getDayRule());
+	            $current = createModelElementForParent(grammarAccess.getDayRule());
 	        }
-       		setWithLastConsumed(
+       		set(
        			$current, 
-       			"name",
-        		lv_name_2_0, 
-        		"STRING");
+       			"weekDay",
+        		lv_weekDay_0_0, 
+        		"fr.irisa.models.program.Program.WeekDay");
+	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)(	otherlv_3='Sessions' 
+)	otherlv_1=':' 
     {
-    	newLeafNode(otherlv_3, grammarAccess.getDayAccess().getSessionsKeyword_3_0());
+    	newLeafNode(otherlv_1, grammarAccess.getDayAccess().getColonKeyword_1());
     }
-(
+((
 (
 		{ 
-	        newCompositeNode(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_3_1_0()); 
+	        newCompositeNode(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_2_0_0()); 
 	    }
-		lv_sessions_4_0=ruleSession		{
+		lv_sessions_2_0=ruleSession		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getDayRule());
 	        }
        		add(
        			$current, 
        			"sessions",
-        		lv_sessions_4_0, 
-        		"Session");
+        		lv_sessions_2_0, 
+        		"fr.irisa.models.program.Program.Session");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -268,26 +178,22 @@ ruleDay returns [EObject current=null]
 )(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_3_2_0()); 
+	        newCompositeNode(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_2_1_0()); 
 	    }
-		lv_sessions_5_0=ruleSession		{
+		lv_sessions_3_0=ruleSession		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getDayRule());
 	        }
        		add(
        			$current, 
        			"sessions",
-        		lv_sessions_5_0, 
-        		"Session");
+        		lv_sessions_3_0, 
+        		"fr.irisa.models.program.Program.Session");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)*)?	otherlv_6=']' 
-    {
-    	newLeafNode(otherlv_6, grammarAccess.getDayAccess().getRightSquareBracketKeyword_4());
-    }
-)
+)*)?)
 ;
 
 
@@ -308,13 +214,13 @@ ruleSession returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-(	otherlv_0='[' 
+(	otherlv_0='Session' 
     {
-    	newLeafNode(otherlv_0, grammarAccess.getSessionAccess().getLeftSquareBracketKeyword_0());
+    	newLeafNode(otherlv_0, grammarAccess.getSessionAccess().getSessionKeyword_0());
     }
-	otherlv_1='name' 
+	otherlv_1=':' 
     {
-    	newLeafNode(otherlv_1, grammarAccess.getSessionAccess().getNameKeyword_1());
+    	newLeafNode(otherlv_1, grammarAccess.getSessionAccess().getColonKeyword_1());
     }
 (
 (
@@ -330,7 +236,7 @@ ruleSession returns [EObject current=null]
        			$current, 
        			"name",
         		lv_name_2_0, 
-        		"STRING");
+        		"org.eclipse.xtext.common.Terminals.STRING");
 	    }
 
 )
@@ -352,7 +258,7 @@ ruleSession returns [EObject current=null]
        			$current, 
        			"start",
         		lv_start_4_0, 
-        		"STRING");
+        		"org.eclipse.xtext.common.Terminals.STRING");
 	    }
 
 )
@@ -374,15 +280,29 @@ ruleSession returns [EObject current=null]
        			$current, 
        			"end",
         		lv_end_6_0, 
-        		"STRING");
+        		"org.eclipse.xtext.common.Terminals.STRING");
 	    }
 
 )
-)(	otherlv_7='Talks' 
-    {
-    	newLeafNode(otherlv_7, grammarAccess.getSessionAccess().getTalksKeyword_7_0());
-    }
+)((
 (
+		{ 
+	        newCompositeNode(grammarAccess.getSessionAccess().getTalksTalkParserRuleCall_7_0_0()); 
+	    }
+		lv_talks_7_0=ruleTalk		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getSessionRule());
+	        }
+       		add(
+       			$current, 
+       			"talks",
+        		lv_talks_7_0, 
+        		"fr.irisa.models.program.Program.Talk");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+)(
 (
 		{ 
 	        newCompositeNode(grammarAccess.getSessionAccess().getTalksTalkParserRuleCall_7_1_0()); 
@@ -395,34 +315,12 @@ ruleSession returns [EObject current=null]
        			$current, 
        			"talks",
         		lv_talks_8_0, 
-        		"Talk");
+        		"fr.irisa.models.program.Program.Talk");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)(
-(
-		{ 
-	        newCompositeNode(grammarAccess.getSessionAccess().getTalksTalkParserRuleCall_7_2_0()); 
-	    }
-		lv_talks_9_0=ruleTalk		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getSessionRule());
-	        }
-       		add(
-       			$current, 
-       			"talks",
-        		lv_talks_9_0, 
-        		"Talk");
-	        afterParserOrEnumRuleCall();
-	    }
-
-)
-)*)?	otherlv_10=']' 
-    {
-    	newLeafNode(otherlv_10, grammarAccess.getSessionAccess().getRightSquareBracketKeyword_8());
-    }
-)
+)*)?)
 ;
 
 
@@ -443,19 +341,33 @@ ruleTalk returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-(	otherlv_0='[' 
-    {
-    	newLeafNode(otherlv_0, grammarAccess.getTalkAccess().getLeftSquareBracketKeyword_0());
-    }
-	otherlv_1='title' 
-    {
-    	newLeafNode(otherlv_1, grammarAccess.getTalkAccess().getTitleKeyword_1());
-    }
+((
 (
+		{ 
+	        newCompositeNode(grammarAccess.getTalkAccess().getTypeTalkTypeEnumRuleCall_0_0()); 
+	    }
+		lv_type_0_0=ruleTalkType		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getTalkRule());
+	        }
+       		set(
+       			$current, 
+       			"type",
+        		lv_type_0_0, 
+        		"fr.irisa.models.program.Program.TalkType");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+)	otherlv_1=':' 
+    {
+    	newLeafNode(otherlv_1, grammarAccess.getTalkAccess().getColonKeyword_1());
+    }
+((
 (
 		lv_tilte_2_0=RULE_STRING
 		{
-			newLeafNode(lv_tilte_2_0, grammarAccess.getTalkAccess().getTilteSTRINGTerminalRuleCall_2_0()); 
+			newLeafNode(lv_tilte_2_0, grammarAccess.getTalkAccess().getTilteSTRINGTerminalRuleCall_2_0_0()); 
 		}
 		{
 	        if ($current==null) {
@@ -465,41 +377,41 @@ ruleTalk returns [EObject current=null]
        			$current, 
        			"tilte",
         		lv_tilte_2_0, 
-        		"STRING");
+        		"org.eclipse.xtext.common.Terminals.STRING");
 	    }
 
 )
-)	otherlv_3='room' 
+)	otherlv_3=',' 
     {
-    	newLeafNode(otherlv_3, grammarAccess.getTalkAccess().getRoomKeyword_3());
+    	newLeafNode(otherlv_3, grammarAccess.getTalkAccess().getCommaKeyword_2_1());
     }
+)?(
 (
-(
-		lv_room_4_0=RULE_STRING
-		{
-			newLeafNode(lv_room_4_0, grammarAccess.getTalkAccess().getRoomSTRINGTerminalRuleCall_4_0()); 
-		}
-		{
+		{ 
+	        newCompositeNode(grammarAccess.getTalkAccess().getRoomRoomEnumRuleCall_3_0()); 
+	    }
+		lv_room_4_0=ruleRoom		{
 	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getTalkRule());
+	            $current = createModelElementForParent(grammarAccess.getTalkRule());
 	        }
-       		setWithLastConsumed(
+       		set(
        			$current, 
        			"room",
         		lv_room_4_0, 
-        		"STRING");
+        		"fr.irisa.models.program.Program.Room");
+	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)(	otherlv_5='speakers' 
+)(	otherlv_5='(' 
     {
-    	newLeafNode(otherlv_5, grammarAccess.getTalkAccess().getSpeakersKeyword_5_0());
+    	newLeafNode(otherlv_5, grammarAccess.getTalkAccess().getLeftParenthesisKeyword_4_0());
     }
-(
+((
 (
 		lv_speakers_6_0=RULE_STRING
 		{
-			newLeafNode(lv_speakers_6_0, grammarAccess.getTalkAccess().getSpeakersSTRINGTerminalRuleCall_5_1_0()); 
+			newLeafNode(lv_speakers_6_0, grammarAccess.getTalkAccess().getSpeakersSTRINGTerminalRuleCall_4_1_0_0()); 
 		}
 		{
 	        if ($current==null) {
@@ -509,19 +421,19 @@ ruleTalk returns [EObject current=null]
        			$current, 
        			"speakers",
         		lv_speakers_6_0, 
-        		"STRING");
+        		"org.eclipse.xtext.common.Terminals.STRING");
 	    }
 
 )
 )(	otherlv_7=',' 
     {
-    	newLeafNode(otherlv_7, grammarAccess.getTalkAccess().getCommaKeyword_5_2_0());
+    	newLeafNode(otherlv_7, grammarAccess.getTalkAccess().getCommaKeyword_4_1_1_0());
     }
 (
 (
 		lv_speakers_8_0=RULE_STRING
 		{
-			newLeafNode(lv_speakers_8_0, grammarAccess.getTalkAccess().getSpeakersSTRINGTerminalRuleCall_5_2_1_0()); 
+			newLeafNode(lv_speakers_8_0, grammarAccess.getTalkAccess().getSpeakersSTRINGTerminalRuleCall_4_1_1_1_0()); 
 		}
 		{
 	        if ($current==null) {
@@ -531,18 +443,219 @@ ruleTalk returns [EObject current=null]
        			$current, 
        			"speakers",
         		lv_speakers_8_0, 
-        		"STRING");
+        		"org.eclipse.xtext.common.Terminals.STRING");
 	    }
 
 )
-))*)?	otherlv_9=']' 
+))*)?	otherlv_9=')' 
     {
-    	newLeafNode(otherlv_9, grammarAccess.getTalkAccess().getRightSquareBracketKeyword_6());
+    	newLeafNode(otherlv_9, grammarAccess.getTalkAccess().getRightParenthesisKeyword_4_2());
     }
-)
+)?)
 ;
 
 
+
+
+
+// Rule TalkType
+ruleTalkType returns [Enumerator current=null] 
+    @init { enterRule(); }
+    @after { leaveRule(); }:
+((	enumLiteral_0='Workshop' 
+	{
+        $current = grammarAccess.getTalkTypeAccess().getWorkshopEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_0, grammarAccess.getTalkTypeAccess().getWorkshopEnumLiteralDeclaration_0()); 
+    }
+)
+    |(	enumLiteral_1='Tutorial' 
+	{
+        $current = grammarAccess.getTalkTypeAccess().getTutorialEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_1, grammarAccess.getTalkTypeAccess().getTutorialEnumLiteralDeclaration_1()); 
+    }
+)
+    |(	enumLiteral_2='Symposium' 
+	{
+        $current = grammarAccess.getTalkTypeAccess().getSymposiumEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_2, grammarAccess.getTalkTypeAccess().getSymposiumEnumLiteralDeclaration_2()); 
+    }
+)
+    |(	enumLiteral_3='Clinic' 
+	{
+        $current = grammarAccess.getTalkTypeAccess().getClinicEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_3, grammarAccess.getTalkTypeAccess().getClinicEnumLiteralDeclaration_3()); 
+    }
+)
+    |(	enumLiteral_4='Break' 
+	{
+        $current = grammarAccess.getTalkTypeAccess().getBreakEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_4, grammarAccess.getTalkTypeAccess().getBreakEnumLiteralDeclaration_4()); 
+    }
+)
+    |(	enumLiteral_5='Lunch' 
+	{
+        $current = grammarAccess.getTalkTypeAccess().getLunchEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_5, grammarAccess.getTalkTypeAccess().getLunchEnumLiteralDeclaration_5()); 
+    }
+)
+    |(	enumLiteral_6='Poster' 
+	{
+        $current = grammarAccess.getTalkTypeAccess().getPosterEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_6, grammarAccess.getTalkTypeAccess().getPosterEnumLiteralDeclaration_6()); 
+    }
+)
+    |(	enumLiteral_7='SRC' 
+	{
+        $current = grammarAccess.getTalkTypeAccess().getSRCEnumLiteralDeclaration_7().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_7, grammarAccess.getTalkTypeAccess().getSRCEnumLiteralDeclaration_7()); 
+    }
+)
+    |(	enumLiteral_8='Main' 
+	{
+        $current = grammarAccess.getTalkTypeAccess().getMainEnumLiteralDeclaration_8().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_8, grammarAccess.getTalkTypeAccess().getMainEnumLiteralDeclaration_8()); 
+    }
+));
+
+
+
+// Rule Room
+ruleRoom returns [Enumerator current=null] 
+    @init { enterRule(); }
+    @after { leaveRule(); }:
+((	enumLiteral_0='Bouvet 1' 
+	{
+        $current = grammarAccess.getRoomAccess().getBouvet1EnumLiteralDeclaration_0().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_0, grammarAccess.getRoomAccess().getBouvet1EnumLiteralDeclaration_0()); 
+    }
+)
+    |(	enumLiteral_1='Bouvet 2' 
+	{
+        $current = grammarAccess.getRoomAccess().getBouvet2EnumLiteralDeclaration_1().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_1, grammarAccess.getRoomAccess().getBouvet2EnumLiteralDeclaration_1()); 
+    }
+)
+    |(	enumLiteral_2='Charcot' 
+	{
+        $current = grammarAccess.getRoomAccess().getCharcotEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_2, grammarAccess.getRoomAccess().getCharcotEnumLiteralDeclaration_2()); 
+    }
+)
+    |(	enumLiteral_3='Vauban 1' 
+	{
+        $current = grammarAccess.getRoomAccess().getVauban1EnumLiteralDeclaration_3().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_3, grammarAccess.getRoomAccess().getVauban1EnumLiteralDeclaration_3()); 
+    }
+)
+    |(	enumLiteral_4='Vauban 2' 
+	{
+        $current = grammarAccess.getRoomAccess().getVauban2EnumLiteralDeclaration_4().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_4, grammarAccess.getRoomAccess().getVauban2EnumLiteralDeclaration_4()); 
+    }
+)
+    |(	enumLiteral_5='Lamannais 1' 
+	{
+        $current = grammarAccess.getRoomAccess().getLamannais1EnumLiteralDeclaration_5().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_5, grammarAccess.getRoomAccess().getLamannais1EnumLiteralDeclaration_5()); 
+    }
+)
+    |(	enumLiteral_6='Lamennais 2' 
+	{
+        $current = grammarAccess.getRoomAccess().getLamennais2EnumLiteralDeclaration_6().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_6, grammarAccess.getRoomAccess().getLamennais2EnumLiteralDeclaration_6()); 
+    }
+)
+    |(	enumLiteral_7='Lamennais 3' 
+	{
+        $current = grammarAccess.getRoomAccess().getLamennais3EnumLiteralDeclaration_7().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_7, grammarAccess.getRoomAccess().getLamennais3EnumLiteralDeclaration_7()); 
+    }
+)
+    |(	enumLiteral_8='Rotonde Surcouf' 
+	{
+        $current = grammarAccess.getRoomAccess().getRotondeSurcoufEnumLiteralDeclaration_8().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_8, grammarAccess.getRoomAccess().getRotondeSurcoufEnumLiteralDeclaration_8()); 
+    }
+)
+    |(	enumLiteral_9='Chateaubriand' 
+	{
+        $current = grammarAccess.getRoomAccess().getChateaubriandEnumLiteralDeclaration_9().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_9, grammarAccess.getRoomAccess().getChateaubriandEnumLiteralDeclaration_9()); 
+    }
+)
+    |(	enumLiteral_10='Lamennais 1+2' 
+	{
+        $current = grammarAccess.getRoomAccess().getLamennais12EnumLiteralDeclaration_10().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_10, grammarAccess.getRoomAccess().getLamennais12EnumLiteralDeclaration_10()); 
+    }
+)
+    |(	enumLiteral_11='Lamennais 4+5' 
+	{
+        $current = grammarAccess.getRoomAccess().getLamennais45EnumLiteralDeclaration_11().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_11, grammarAccess.getRoomAccess().getLamennais45EnumLiteralDeclaration_11()); 
+    }
+)
+    |(	enumLiteral_12='Grand Large' 
+	{
+        $current = grammarAccess.getRoomAccess().getGrandLargeEnumLiteralDeclaration_12().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_12, grammarAccess.getRoomAccess().getGrandLargeEnumLiteralDeclaration_12()); 
+    }
+)
+    |(	enumLiteral_13='Rotonde J. Cartier' 
+	{
+        $current = grammarAccess.getRoomAccess().getRotondeJCartierEnumLiteralDeclaration_13().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_13, grammarAccess.getRoomAccess().getRotondeJCartierEnumLiteralDeclaration_13()); 
+    }
+));
+
+
+
+// Rule WeekDay
+ruleWeekDay returns [Enumerator current=null] 
+    @init { enterRule(); }
+    @after { leaveRule(); }:
+((	enumLiteral_0='Monday' 
+	{
+        $current = grammarAccess.getWeekDayAccess().getMondayEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_0, grammarAccess.getWeekDayAccess().getMondayEnumLiteralDeclaration_0()); 
+    }
+)
+    |(	enumLiteral_1='Tuesday' 
+	{
+        $current = grammarAccess.getWeekDayAccess().getTuesdayEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_1, grammarAccess.getWeekDayAccess().getTuesdayEnumLiteralDeclaration_1()); 
+    }
+)
+    |(	enumLiteral_2='Wednesday' 
+	{
+        $current = grammarAccess.getWeekDayAccess().getWednesdayEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_2, grammarAccess.getWeekDayAccess().getWednesdayEnumLiteralDeclaration_2()); 
+    }
+)
+    |(	enumLiteral_3='Thursday' 
+	{
+        $current = grammarAccess.getWeekDayAccess().getThursdayEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_3, grammarAccess.getWeekDayAccess().getThursdayEnumLiteralDeclaration_3()); 
+    }
+)
+    |(	enumLiteral_4='Friday' 
+	{
+        $current = grammarAccess.getWeekDayAccess().getFridayEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_4, grammarAccess.getWeekDayAccess().getFridayEnumLiteralDeclaration_4()); 
+    }
+)
+    |(	enumLiteral_5='Saturday' 
+	{
+        $current = grammarAccess.getWeekDayAccess().getSaturdayEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_5, grammarAccess.getWeekDayAccess().getSaturdayEnumLiteralDeclaration_5()); 
+    }
+)
+    |(	enumLiteral_6='Sunday' 
+	{
+        $current = grammarAccess.getWeekDayAccess().getSundayEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_6, grammarAccess.getWeekDayAccess().getSundayEnumLiteralDeclaration_6()); 
+    }
+));
 
 
 

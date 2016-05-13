@@ -4,6 +4,7 @@ package fr.irisa.models.program.program;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -67,22 +68,13 @@ public interface ProgramPackage extends EPackage
   int PROGRAM = 0;
 
   /**
-   * The feature id for the '<em><b>Rooms</b></em>' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PROGRAM__ROOMS = 0;
-
-  /**
    * The feature id for the '<em><b>Days</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PROGRAM__DAYS = 1;
+  int PROGRAM__DAYS = 0;
 
   /**
    * The number of structural features of the '<em>Program</em>' class.
@@ -91,35 +83,7 @@ public interface ProgramPackage extends EPackage
    * @generated
    * @ordered
    */
-  int PROGRAM_FEATURE_COUNT = 2;
-
-  /**
-   * The meta object id for the '{@link fr.irisa.models.program.program.impl.RoomImpl <em>Room</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see fr.irisa.models.program.program.impl.RoomImpl
-   * @see fr.irisa.models.program.program.impl.ProgramPackageImpl#getRoom()
-   * @generated
-   */
-  int ROOM = 1;
-
-  /**
-   * The feature id for the '<em><b>Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int ROOM__NAME = 0;
-
-  /**
-   * The number of structural features of the '<em>Room</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int ROOM_FEATURE_COUNT = 1;
+  int PROGRAM_FEATURE_COUNT = 1;
 
   /**
    * The meta object id for the '{@link fr.irisa.models.program.program.impl.DayImpl <em>Day</em>}' class.
@@ -129,16 +93,16 @@ public interface ProgramPackage extends EPackage
    * @see fr.irisa.models.program.program.impl.ProgramPackageImpl#getDay()
    * @generated
    */
-  int DAY = 2;
+  int DAY = 1;
 
   /**
-   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * The feature id for the '<em><b>Week Day</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int DAY__NAME = 0;
+  int DAY__WEEK_DAY = 0;
 
   /**
    * The feature id for the '<em><b>Sessions</b></em>' containment reference list.
@@ -166,7 +130,7 @@ public interface ProgramPackage extends EPackage
    * @see fr.irisa.models.program.program.impl.ProgramPackageImpl#getSession()
    * @generated
    */
-  int SESSION = 3;
+  int SESSION = 2;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -221,7 +185,16 @@ public interface ProgramPackage extends EPackage
    * @see fr.irisa.models.program.program.impl.ProgramPackageImpl#getTalk()
    * @generated
    */
-  int TALK = 4;
+  int TALK = 3;
+
+  /**
+   * The feature id for the '<em><b>Type</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TALK__TYPE = 0;
 
   /**
    * The feature id for the '<em><b>Tilte</b></em>' attribute.
@@ -230,7 +203,7 @@ public interface ProgramPackage extends EPackage
    * @generated
    * @ordered
    */
-  int TALK__TILTE = 0;
+  int TALK__TILTE = 1;
 
   /**
    * The feature id for the '<em><b>Room</b></em>' attribute.
@@ -239,7 +212,7 @@ public interface ProgramPackage extends EPackage
    * @generated
    * @ordered
    */
-  int TALK__ROOM = 1;
+  int TALK__ROOM = 2;
 
   /**
    * The feature id for the '<em><b>Speakers</b></em>' attribute list.
@@ -248,7 +221,7 @@ public interface ProgramPackage extends EPackage
    * @generated
    * @ordered
    */
-  int TALK__SPEAKERS = 2;
+  int TALK__SPEAKERS = 3;
 
   /**
    * The number of structural features of the '<em>Talk</em>' class.
@@ -257,7 +230,37 @@ public interface ProgramPackage extends EPackage
    * @generated
    * @ordered
    */
-  int TALK_FEATURE_COUNT = 3;
+  int TALK_FEATURE_COUNT = 4;
+
+  /**
+   * The meta object id for the '{@link fr.irisa.models.program.program.TalkType <em>Talk Type</em>}' enum.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see fr.irisa.models.program.program.TalkType
+   * @see fr.irisa.models.program.program.impl.ProgramPackageImpl#getTalkType()
+   * @generated
+   */
+  int TALK_TYPE = 4;
+
+  /**
+   * The meta object id for the '{@link fr.irisa.models.program.program.Room <em>Room</em>}' enum.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see fr.irisa.models.program.program.Room
+   * @see fr.irisa.models.program.program.impl.ProgramPackageImpl#getRoom()
+   * @generated
+   */
+  int ROOM = 5;
+
+  /**
+   * The meta object id for the '{@link fr.irisa.models.program.program.WeekDay <em>Week Day</em>}' enum.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see fr.irisa.models.program.program.WeekDay
+   * @see fr.irisa.models.program.program.impl.ProgramPackageImpl#getWeekDay()
+   * @generated
+   */
+  int WEEK_DAY = 6;
 
 
   /**
@@ -271,17 +274,6 @@ public interface ProgramPackage extends EPackage
   EClass getProgram();
 
   /**
-   * Returns the meta object for the containment reference list '{@link fr.irisa.models.program.program.Program#getRooms <em>Rooms</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Rooms</em>'.
-   * @see fr.irisa.models.program.program.Program#getRooms()
-   * @see #getProgram()
-   * @generated
-   */
-  EReference getProgram_Rooms();
-
-  /**
    * Returns the meta object for the containment reference list '{@link fr.irisa.models.program.program.Program#getDays <em>Days</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -291,27 +283,6 @@ public interface ProgramPackage extends EPackage
    * @generated
    */
   EReference getProgram_Days();
-
-  /**
-   * Returns the meta object for class '{@link fr.irisa.models.program.program.Room <em>Room</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Room</em>'.
-   * @see fr.irisa.models.program.program.Room
-   * @generated
-   */
-  EClass getRoom();
-
-  /**
-   * Returns the meta object for the attribute '{@link fr.irisa.models.program.program.Room#getName <em>Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name</em>'.
-   * @see fr.irisa.models.program.program.Room#getName()
-   * @see #getRoom()
-   * @generated
-   */
-  EAttribute getRoom_Name();
 
   /**
    * Returns the meta object for class '{@link fr.irisa.models.program.program.Day <em>Day</em>}'.
@@ -324,15 +295,15 @@ public interface ProgramPackage extends EPackage
   EClass getDay();
 
   /**
-   * Returns the meta object for the attribute '{@link fr.irisa.models.program.program.Day#getName <em>Name</em>}'.
+   * Returns the meta object for the attribute '{@link fr.irisa.models.program.program.Day#getWeekDay <em>Week Day</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name</em>'.
-   * @see fr.irisa.models.program.program.Day#getName()
+   * @return the meta object for the attribute '<em>Week Day</em>'.
+   * @see fr.irisa.models.program.program.Day#getWeekDay()
    * @see #getDay()
    * @generated
    */
-  EAttribute getDay_Name();
+  EAttribute getDay_WeekDay();
 
   /**
    * Returns the meta object for the containment reference list '{@link fr.irisa.models.program.program.Day#getSessions <em>Sessions</em>}'.
@@ -410,6 +381,17 @@ public interface ProgramPackage extends EPackage
   EClass getTalk();
 
   /**
+   * Returns the meta object for the attribute '{@link fr.irisa.models.program.program.Talk#getType <em>Type</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Type</em>'.
+   * @see fr.irisa.models.program.program.Talk#getType()
+   * @see #getTalk()
+   * @generated
+   */
+  EAttribute getTalk_Type();
+
+  /**
    * Returns the meta object for the attribute '{@link fr.irisa.models.program.program.Talk#getTilte <em>Tilte</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -441,6 +423,36 @@ public interface ProgramPackage extends EPackage
    * @generated
    */
   EAttribute getTalk_Speakers();
+
+  /**
+   * Returns the meta object for enum '{@link fr.irisa.models.program.program.TalkType <em>Talk Type</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for enum '<em>Talk Type</em>'.
+   * @see fr.irisa.models.program.program.TalkType
+   * @generated
+   */
+  EEnum getTalkType();
+
+  /**
+   * Returns the meta object for enum '{@link fr.irisa.models.program.program.Room <em>Room</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for enum '<em>Room</em>'.
+   * @see fr.irisa.models.program.program.Room
+   * @generated
+   */
+  EEnum getRoom();
+
+  /**
+   * Returns the meta object for enum '{@link fr.irisa.models.program.program.WeekDay <em>Week Day</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for enum '<em>Week Day</em>'.
+   * @see fr.irisa.models.program.program.WeekDay
+   * @generated
+   */
+  EEnum getWeekDay();
 
   /**
    * Returns the factory that creates the instances of the model.
@@ -476,38 +488,12 @@ public interface ProgramPackage extends EPackage
     EClass PROGRAM = eINSTANCE.getProgram();
 
     /**
-     * The meta object literal for the '<em><b>Rooms</b></em>' containment reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference PROGRAM__ROOMS = eINSTANCE.getProgram_Rooms();
-
-    /**
      * The meta object literal for the '<em><b>Days</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
     EReference PROGRAM__DAYS = eINSTANCE.getProgram_Days();
-
-    /**
-     * The meta object literal for the '{@link fr.irisa.models.program.program.impl.RoomImpl <em>Room</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see fr.irisa.models.program.program.impl.RoomImpl
-     * @see fr.irisa.models.program.program.impl.ProgramPackageImpl#getRoom()
-     * @generated
-     */
-    EClass ROOM = eINSTANCE.getRoom();
-
-    /**
-     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute ROOM__NAME = eINSTANCE.getRoom_Name();
 
     /**
      * The meta object literal for the '{@link fr.irisa.models.program.program.impl.DayImpl <em>Day</em>}' class.
@@ -520,12 +506,12 @@ public interface ProgramPackage extends EPackage
     EClass DAY = eINSTANCE.getDay();
 
     /**
-     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Week Day</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute DAY__NAME = eINSTANCE.getDay_Name();
+    EAttribute DAY__WEEK_DAY = eINSTANCE.getDay_WeekDay();
 
     /**
      * The meta object literal for the '<em><b>Sessions</b></em>' containment reference list feature.
@@ -588,6 +574,14 @@ public interface ProgramPackage extends EPackage
     EClass TALK = eINSTANCE.getTalk();
 
     /**
+     * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute TALK__TYPE = eINSTANCE.getTalk_Type();
+
+    /**
      * The meta object literal for the '<em><b>Tilte</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -610,6 +604,36 @@ public interface ProgramPackage extends EPackage
      * @generated
      */
     EAttribute TALK__SPEAKERS = eINSTANCE.getTalk_Speakers();
+
+    /**
+     * The meta object literal for the '{@link fr.irisa.models.program.program.TalkType <em>Talk Type</em>}' enum.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see fr.irisa.models.program.program.TalkType
+     * @see fr.irisa.models.program.program.impl.ProgramPackageImpl#getTalkType()
+     * @generated
+     */
+    EEnum TALK_TYPE = eINSTANCE.getTalkType();
+
+    /**
+     * The meta object literal for the '{@link fr.irisa.models.program.program.Room <em>Room</em>}' enum.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see fr.irisa.models.program.program.Room
+     * @see fr.irisa.models.program.program.impl.ProgramPackageImpl#getRoom()
+     * @generated
+     */
+    EEnum ROOM = eINSTANCE.getRoom();
+
+    /**
+     * The meta object literal for the '{@link fr.irisa.models.program.program.WeekDay <em>Week Day</em>}' enum.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see fr.irisa.models.program.program.WeekDay
+     * @see fr.irisa.models.program.program.impl.ProgramPackageImpl#getWeekDay()
+     * @generated
+     */
+    EEnum WEEK_DAY = eINSTANCE.getWeekDay();
 
   }
 

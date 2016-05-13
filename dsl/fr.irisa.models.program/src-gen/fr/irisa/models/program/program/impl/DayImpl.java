@@ -5,6 +5,7 @@ package fr.irisa.models.program.program.impl;
 import fr.irisa.models.program.program.Day;
 import fr.irisa.models.program.program.ProgramPackage;
 import fr.irisa.models.program.program.Session;
+import fr.irisa.models.program.program.WeekDay;
 
 import java.util.Collection;
 
@@ -30,7 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link fr.irisa.models.program.program.impl.DayImpl#getName <em>Name</em>}</li>
+ *   <li>{@link fr.irisa.models.program.program.impl.DayImpl#getWeekDay <em>Week Day</em>}</li>
  *   <li>{@link fr.irisa.models.program.program.impl.DayImpl#getSessions <em>Sessions</em>}</li>
  * </ul>
  *
@@ -39,24 +40,24 @@ import org.eclipse.emf.ecore.util.InternalEList;
 public class DayImpl extends MinimalEObjectImpl.Container implements Day
 {
   /**
-   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+   * The default value of the '{@link #getWeekDay() <em>Week Day</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
+   * @see #getWeekDay()
    * @generated
    * @ordered
    */
-  protected static final String NAME_EDEFAULT = null;
+  protected static final WeekDay WEEK_DAY_EDEFAULT = WeekDay.MONDAY;
 
   /**
-   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * The cached value of the '{@link #getWeekDay() <em>Week Day</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
+   * @see #getWeekDay()
    * @generated
    * @ordered
    */
-  protected String name = NAME_EDEFAULT;
+  protected WeekDay weekDay = WEEK_DAY_EDEFAULT;
 
   /**
    * The cached value of the '{@link #getSessions() <em>Sessions</em>}' containment reference list.
@@ -94,9 +95,9 @@ public class DayImpl extends MinimalEObjectImpl.Container implements Day
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getName()
+  public WeekDay getWeekDay()
   {
-    return name;
+    return weekDay;
   }
 
   /**
@@ -104,12 +105,12 @@ public class DayImpl extends MinimalEObjectImpl.Container implements Day
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setName(String newName)
+  public void setWeekDay(WeekDay newWeekDay)
   {
-    String oldName = name;
-    name = newName;
+    WeekDay oldWeekDay = weekDay;
+    weekDay = newWeekDay == null ? WEEK_DAY_EDEFAULT : newWeekDay;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ProgramPackage.DAY__NAME, oldName, name));
+      eNotify(new ENotificationImpl(this, Notification.SET, ProgramPackage.DAY__WEEK_DAY, oldWeekDay, weekDay));
   }
 
   /**
@@ -152,8 +153,8 @@ public class DayImpl extends MinimalEObjectImpl.Container implements Day
   {
     switch (featureID)
     {
-      case ProgramPackage.DAY__NAME:
-        return getName();
+      case ProgramPackage.DAY__WEEK_DAY:
+        return getWeekDay();
       case ProgramPackage.DAY__SESSIONS:
         return getSessions();
     }
@@ -171,8 +172,8 @@ public class DayImpl extends MinimalEObjectImpl.Container implements Day
   {
     switch (featureID)
     {
-      case ProgramPackage.DAY__NAME:
-        setName((String)newValue);
+      case ProgramPackage.DAY__WEEK_DAY:
+        setWeekDay((WeekDay)newValue);
         return;
       case ProgramPackage.DAY__SESSIONS:
         getSessions().clear();
@@ -192,8 +193,8 @@ public class DayImpl extends MinimalEObjectImpl.Container implements Day
   {
     switch (featureID)
     {
-      case ProgramPackage.DAY__NAME:
-        setName(NAME_EDEFAULT);
+      case ProgramPackage.DAY__WEEK_DAY:
+        setWeekDay(WEEK_DAY_EDEFAULT);
         return;
       case ProgramPackage.DAY__SESSIONS:
         getSessions().clear();
@@ -212,8 +213,8 @@ public class DayImpl extends MinimalEObjectImpl.Container implements Day
   {
     switch (featureID)
     {
-      case ProgramPackage.DAY__NAME:
-        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+      case ProgramPackage.DAY__WEEK_DAY:
+        return weekDay != WEEK_DAY_EDEFAULT;
       case ProgramPackage.DAY__SESSIONS:
         return sessions != null && !sessions.isEmpty();
     }
@@ -231,8 +232,8 @@ public class DayImpl extends MinimalEObjectImpl.Container implements Day
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (name: ");
-    result.append(name);
+    result.append(" (weekDay: ");
+    result.append(weekDay);
     result.append(')');
     return result.toString();
   }

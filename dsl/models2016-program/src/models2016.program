@@ -1,46 +1,13 @@
-Rooms
-	"Bouvet 1"
-	"Bouvet 2"
-	"Charcot"
-	"Vauban 1"
-	"Vauban 2"
-	"Lamannais 1"
-	"Lamennais 2"
-	"Lamennais 3"
-	"Rotonde Surcouf"
-	"Chateaubriand"
-	"Lamennais 1+2"
-	"Lamennais 4+5"
-	"Grand Large"
-	"Rotonde J. Cartier"
-	
-Days
-	[
-		name "Monday"	
-		Sessions
-			[
-				name "Farming session"
-				start "9h" end "10h30"
-				Talks
-					[
-						title "MDE for cows"
-						room "Bouvet 1"
-					]
-					[
-						title "MDE for bulls"
-						room "Bouvet 1"
-					]
-					[
-						title "MDE for me"
-						room "Bouvet 1"
-					]
-					[
-						title "MDE for pigs"
-						room "Bouvet 2"
-					]
-					[
-						title "MDE or not MDE?"
-						room "Bouvet 2"
-					]
-			]
-	]
+Monday :
+	Session : "Farming session 1"
+		start "9h" end "10h30"
+		Tutorial : "MDE for cows", Bouvet 1
+		Tutorial : "MDE for bulls", Bouvet 2
+		Tutorial : "MDE for pigs", Bouvet 2
+		Tutorial : "MDE or not MDE?", Bouvet 1
+	Session : "Farming session 2"
+		start "11h" end "12h30"
+		Tutorial : "MDE for cows", Bouvet 1
+		Tutorial : "MDE for bulls", Charcot
+		Tutorial : "MDE for pigs", Charcot
+		Tutorial : "MDE or not MDE?", Bouvet 1

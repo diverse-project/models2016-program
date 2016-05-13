@@ -28,21 +28,18 @@ class ProgramGenerator implements IGenerator {
 	private val Map<Day,List<Room>> roomsPerDay = new HashMap
 	private val Map<Day,List<Session>> sessionsPerDay = new HashMap
 	private val Map<Session,Map<Room,List<Talk>>> talksPerRoomPerSession = new HashMap
-	private val Map<String,Room> roomsPerName = new HashMap
 	
 	override void doGenerate(Resource resource, IFileSystemAccess fsa) {
 		days.clear
 		roomsPerDay.clear
 		sessionsPerDay.clear
 		talksPerRoomPerSession.clear
-		roomsPerName.clear
 		val List<Room> rooms = resource.allContents.filter(typeof(Room)).toList
-		rooms.forEach[r|roomsPerName.put(r.name,r)]
 		days.addAll(resource.allContents.filter(typeof(Day)).toList)
 		days.forEach[d|
 			val List<Session> sessions = d.sessions
 			val Set<Room> roomsOfTheDay = new HashSet
-			sessions.forEach[s|roomsOfTheDay.addAll(s.talks.map[t|roomsPerName.get(t.room)])]
+			sessions.forEach[s|roomsOfTheDay.addAll(s.talks.map[t|t.room])]
 			val List<Room> result = new ArrayList(roomsOfTheDay.sortWith([r1,r2|
 				return rooms.indexOf(r1) - rooms.indexOf(r2)
 			]))
@@ -56,10 +53,10 @@ class ProgramGenerator implements IGenerator {
 						talksPerRoom = new HashMap
 						talksPerRoomPerSession.put(s,talksPerRoom)
 					}
-					var List<Talk> talksInRoom = talksPerRoom.get(roomsPerName.get(t.room))
+					var List<Talk> talksInRoom = talksPerRoom.get(t.room)
 					if (talksInRoom == null) {
 						talksInRoom = new ArrayList
-						talksPerRoom.put(roomsPerName.get(t.room), talksInRoom)
+						talksPerRoom.put(t.room, talksInRoom)
 					}
 					talksInRoom.add(t)
 				]
@@ -71,51 +68,53 @@ class ProgramGenerator implements IGenerator {
 	def String generate() {
 		return
 				'''
-					«FOR d : days»
-					{
-						name : "«d.name»",
-						rooms : [
-							«val roomsOfDay = roomsPerDay.get(d)»
-							«FOR r : roomsOfDay SEPARATOR ","»
-							«r.name»
-							«ENDFOR»
-						],
-						sessions : [
-							«FOR s : d.sessions»
-							{
-								name : "«s.name»",
-								start : "«s.start»",
-								end : "«s.end»",
-								talkGroups : [
-									«val talksPerRoom = talksPerRoomPerSession.get(s)»
-									«IF talksPerRoom == null»
-									[]
-									«ELSE»
-									«FOR r : roomsOfDay»
-									[
-										«val talksInRoom = talksPerRoom.get(r)»
-										«IF talksInRoom == null»
-										{}
+					[
+						«FOR d : days SEPARATOR ","»
+						{
+							name : "«d.weekDay»",
+							rooms : [
+								«val roomsOfDay = roomsPerDay.get(d)»
+								«FOR r : roomsOfDay SEPARATOR ","»
+								"«r»"
+								«ENDFOR»
+							],
+							sessions : [
+								«FOR s : d.sessions»
+								{
+									name : "«s.name»",
+									start : "«s.start»",
+									end : "«s.end»",
+									talkGroups : [
+										«val talksPerRoom = talksPerRoomPerSession.get(s)»
+										«IF talksPerRoom == null»
+										[]
 										«ELSE»
-										«FOR t : talksInRoom SEPARATOR ","»
-										{
-											«val hasSpeakers = t.speakers != null && !t.speakers.empty»
-											title: "«t.tilte»"«IF hasSpeakers»,«ENDIF»
-											«IF hasSpeakers»
-											speakers: «FOR sp : t.speakers SEPARATOR ","»"«sp»"«ENDFOR»
+										«FOR r : roomsOfDay SEPARATOR ","»
+										[
+											«val talksInRoom = talksPerRoom.get(r)»
+											«IF talksInRoom == null»
+											{}
+											«ELSE»
+											«FOR t : talksInRoom SEPARATOR ","»
+											{
+												«val hasSpeakers = t.speakers != null && !t.speakers.empty»
+												title: "«t.tilte»"«IF hasSpeakers»,«ENDIF»
+												«IF hasSpeakers»
+												speakers: «FOR sp : t.speakers SEPARATOR ","»"«sp»"«ENDFOR»
+												«ENDIF»
+											}
+											«ENDFOR»
 											«ENDIF»
-										}
+										]
 										«ENDFOR»
 										«ENDIF»
 									]
-									«ENDFOR»
-									«ENDIF»
-								]
-							}
-							«ENDFOR»
-						]
-					}
-					«ENDFOR»
+								}
+								«ENDFOR»
+							]
+						}
+						«ENDFOR»
+					]
 				'''
 	}
 }

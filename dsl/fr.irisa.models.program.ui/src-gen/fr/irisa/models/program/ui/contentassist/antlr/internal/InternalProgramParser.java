@@ -22,10 +22,8 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalProgramParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'Rooms'", "'Days'", "'['", "'name'", "']'", "'Sessions'", "'start'", "'end'", "'Talks'", "'title'", "'room'", "'speakers'", "','"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'Workshop'", "'Tutorial'", "'Symposium'", "'Clinic'", "'Break'", "'Lunch'", "'Poster'", "'SRC'", "'Main'", "'Bouvet 1'", "'Bouvet 2'", "'Charcot'", "'Vauban 1'", "'Vauban 2'", "'Lamannais 1'", "'Lamennais 2'", "'Lamennais 3'", "'Rotonde Surcouf'", "'Chateaubriand'", "'Lamennais 1+2'", "'Lamennais 4+5'", "'Grand Large'", "'Rotonde J. Cartier'", "'Monday'", "'Tuesday'", "'Wednesday'", "'Thursday'", "'Friday'", "'Saturday'", "'Sunday'", "':'", "'Session'", "'start'", "'end'", "','", "'('", "')'"
     };
-    public static final int RULE_STRING=4;
-    public static final int RULE_SL_COMMENT=8;
     public static final int T__19=19;
     public static final int T__15=15;
     public static final int T__16=16;
@@ -35,16 +33,42 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
     public static final int T__12=12;
     public static final int T__13=13;
     public static final int T__14=14;
-    public static final int EOF=-1;
     public static final int RULE_ID=5;
-    public static final int RULE_WS=9;
-    public static final int RULE_ANY_OTHER=10;
+    public static final int T__26=26;
+    public static final int T__27=27;
+    public static final int T__28=28;
     public static final int RULE_INT=6;
+    public static final int T__29=29;
     public static final int T__22=22;
     public static final int RULE_ML_COMMENT=7;
     public static final int T__23=23;
+    public static final int T__24=24;
+    public static final int T__25=25;
     public static final int T__20=20;
     public static final int T__21=21;
+    public static final int RULE_STRING=4;
+    public static final int RULE_SL_COMMENT=8;
+    public static final int T__37=37;
+    public static final int T__38=38;
+    public static final int T__39=39;
+    public static final int T__33=33;
+    public static final int T__34=34;
+    public static final int T__35=35;
+    public static final int T__36=36;
+    public static final int EOF=-1;
+    public static final int T__30=30;
+    public static final int T__31=31;
+    public static final int T__32=32;
+    public static final int RULE_WS=9;
+    public static final int RULE_ANY_OTHER=10;
+    public static final int T__44=44;
+    public static final int T__45=45;
+    public static final int T__46=46;
+    public static final int T__47=47;
+    public static final int T__40=40;
+    public static final int T__41=41;
+    public static final int T__42=42;
+    public static final int T__43=43;
 
     // delegates
     // delegators
@@ -60,7 +84,7 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         
 
     public String[] getTokenNames() { return InternalProgramParser.tokenNames; }
-    public String getGrammarFileName() { return "../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g"; }
+    public String getGrammarFileName() { return "InternalProgram.g"; }
 
 
      
@@ -84,20 +108,20 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "entryRuleProgram"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:60:1: entryRuleProgram : ruleProgram EOF ;
+    // InternalProgram.g:60:1: entryRuleProgram : ruleProgram EOF ;
     public final void entryRuleProgram() throws RecognitionException {
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:61:1: ( ruleProgram EOF )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:62:1: ruleProgram EOF
+            // InternalProgram.g:61:1: ( ruleProgram EOF )
+            // InternalProgram.g:62:1: ruleProgram EOF
             {
              before(grammarAccess.getProgramRule()); 
-            pushFollow(FOLLOW_ruleProgram_in_entryRuleProgram61);
+            pushFollow(FOLLOW_1);
             ruleProgram();
 
             state._fsp--;
 
              after(grammarAccess.getProgramRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleProgram68); 
+            match(input,EOF,FOLLOW_2); 
 
             }
 
@@ -114,27 +138,38 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleProgram"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:69:1: ruleProgram : ( ( rule__Program__Group__0 ) ) ;
+    // InternalProgram.g:69:1: ruleProgram : ( ( rule__Program__Group__0 )? ) ;
     public final void ruleProgram() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:73:2: ( ( ( rule__Program__Group__0 ) ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:74:1: ( ( rule__Program__Group__0 ) )
+            // InternalProgram.g:73:2: ( ( ( rule__Program__Group__0 )? ) )
+            // InternalProgram.g:74:1: ( ( rule__Program__Group__0 )? )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:74:1: ( ( rule__Program__Group__0 ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:75:1: ( rule__Program__Group__0 )
+            // InternalProgram.g:74:1: ( ( rule__Program__Group__0 )? )
+            // InternalProgram.g:75:1: ( rule__Program__Group__0 )?
             {
              before(grammarAccess.getProgramAccess().getGroup()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:76:1: ( rule__Program__Group__0 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:76:2: rule__Program__Group__0
-            {
-            pushFollow(FOLLOW_rule__Program__Group__0_in_ruleProgram94);
-            rule__Program__Group__0();
+            // InternalProgram.g:76:1: ( rule__Program__Group__0 )?
+            int alt1=2;
+            int LA1_0 = input.LA(1);
 
-            state._fsp--;
+            if ( ((LA1_0>=34 && LA1_0<=40)) ) {
+                alt1=1;
+            }
+            switch (alt1) {
+                case 1 :
+                    // InternalProgram.g:76:2: rule__Program__Group__0
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__Program__Group__0();
 
+                    state._fsp--;
+
+
+                    }
+                    break;
 
             }
 
@@ -160,98 +195,21 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "ruleProgram"
 
 
-    // $ANTLR start "entryRuleRoom"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:88:1: entryRuleRoom : ruleRoom EOF ;
-    public final void entryRuleRoom() throws RecognitionException {
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:89:1: ( ruleRoom EOF )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:90:1: ruleRoom EOF
-            {
-             before(grammarAccess.getRoomRule()); 
-            pushFollow(FOLLOW_ruleRoom_in_entryRuleRoom121);
-            ruleRoom();
-
-            state._fsp--;
-
-             after(grammarAccess.getRoomRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleRoom128); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleRoom"
-
-
-    // $ANTLR start "ruleRoom"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:97:1: ruleRoom : ( ( rule__Room__NameAssignment ) ) ;
-    public final void ruleRoom() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:101:2: ( ( ( rule__Room__NameAssignment ) ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:102:1: ( ( rule__Room__NameAssignment ) )
-            {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:102:1: ( ( rule__Room__NameAssignment ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:103:1: ( rule__Room__NameAssignment )
-            {
-             before(grammarAccess.getRoomAccess().getNameAssignment()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:104:1: ( rule__Room__NameAssignment )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:104:2: rule__Room__NameAssignment
-            {
-            pushFollow(FOLLOW_rule__Room__NameAssignment_in_ruleRoom154);
-            rule__Room__NameAssignment();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getRoomAccess().getNameAssignment()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "ruleRoom"
-
-
     // $ANTLR start "entryRuleDay"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:116:1: entryRuleDay : ruleDay EOF ;
+    // InternalProgram.g:88:1: entryRuleDay : ruleDay EOF ;
     public final void entryRuleDay() throws RecognitionException {
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:117:1: ( ruleDay EOF )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:118:1: ruleDay EOF
+            // InternalProgram.g:89:1: ( ruleDay EOF )
+            // InternalProgram.g:90:1: ruleDay EOF
             {
              before(grammarAccess.getDayRule()); 
-            pushFollow(FOLLOW_ruleDay_in_entryRuleDay181);
+            pushFollow(FOLLOW_1);
             ruleDay();
 
             state._fsp--;
 
              after(grammarAccess.getDayRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDay188); 
+            match(input,EOF,FOLLOW_2); 
 
             }
 
@@ -268,23 +226,23 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleDay"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:125:1: ruleDay : ( ( rule__Day__Group__0 ) ) ;
+    // InternalProgram.g:97:1: ruleDay : ( ( rule__Day__Group__0 ) ) ;
     public final void ruleDay() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:129:2: ( ( ( rule__Day__Group__0 ) ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:130:1: ( ( rule__Day__Group__0 ) )
+            // InternalProgram.g:101:2: ( ( ( rule__Day__Group__0 ) ) )
+            // InternalProgram.g:102:1: ( ( rule__Day__Group__0 ) )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:130:1: ( ( rule__Day__Group__0 ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:131:1: ( rule__Day__Group__0 )
+            // InternalProgram.g:102:1: ( ( rule__Day__Group__0 ) )
+            // InternalProgram.g:103:1: ( rule__Day__Group__0 )
             {
              before(grammarAccess.getDayAccess().getGroup()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:132:1: ( rule__Day__Group__0 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:132:2: rule__Day__Group__0
+            // InternalProgram.g:104:1: ( rule__Day__Group__0 )
+            // InternalProgram.g:104:2: rule__Day__Group__0
             {
-            pushFollow(FOLLOW_rule__Day__Group__0_in_ruleDay214);
+            pushFollow(FOLLOW_2);
             rule__Day__Group__0();
 
             state._fsp--;
@@ -315,20 +273,20 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "entryRuleSession"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:144:1: entryRuleSession : ruleSession EOF ;
+    // InternalProgram.g:116:1: entryRuleSession : ruleSession EOF ;
     public final void entryRuleSession() throws RecognitionException {
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:145:1: ( ruleSession EOF )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:146:1: ruleSession EOF
+            // InternalProgram.g:117:1: ( ruleSession EOF )
+            // InternalProgram.g:118:1: ruleSession EOF
             {
              before(grammarAccess.getSessionRule()); 
-            pushFollow(FOLLOW_ruleSession_in_entryRuleSession241);
+            pushFollow(FOLLOW_1);
             ruleSession();
 
             state._fsp--;
 
              after(grammarAccess.getSessionRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleSession248); 
+            match(input,EOF,FOLLOW_2); 
 
             }
 
@@ -345,23 +303,23 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleSession"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:153:1: ruleSession : ( ( rule__Session__Group__0 ) ) ;
+    // InternalProgram.g:125:1: ruleSession : ( ( rule__Session__Group__0 ) ) ;
     public final void ruleSession() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:157:2: ( ( ( rule__Session__Group__0 ) ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:158:1: ( ( rule__Session__Group__0 ) )
+            // InternalProgram.g:129:2: ( ( ( rule__Session__Group__0 ) ) )
+            // InternalProgram.g:130:1: ( ( rule__Session__Group__0 ) )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:158:1: ( ( rule__Session__Group__0 ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:159:1: ( rule__Session__Group__0 )
+            // InternalProgram.g:130:1: ( ( rule__Session__Group__0 ) )
+            // InternalProgram.g:131:1: ( rule__Session__Group__0 )
             {
              before(grammarAccess.getSessionAccess().getGroup()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:160:1: ( rule__Session__Group__0 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:160:2: rule__Session__Group__0
+            // InternalProgram.g:132:1: ( rule__Session__Group__0 )
+            // InternalProgram.g:132:2: rule__Session__Group__0
             {
-            pushFollow(FOLLOW_rule__Session__Group__0_in_ruleSession274);
+            pushFollow(FOLLOW_2);
             rule__Session__Group__0();
 
             state._fsp--;
@@ -392,20 +350,20 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "entryRuleTalk"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:172:1: entryRuleTalk : ruleTalk EOF ;
+    // InternalProgram.g:144:1: entryRuleTalk : ruleTalk EOF ;
     public final void entryRuleTalk() throws RecognitionException {
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:173:1: ( ruleTalk EOF )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:174:1: ruleTalk EOF
+            // InternalProgram.g:145:1: ( ruleTalk EOF )
+            // InternalProgram.g:146:1: ruleTalk EOF
             {
              before(grammarAccess.getTalkRule()); 
-            pushFollow(FOLLOW_ruleTalk_in_entryRuleTalk301);
+            pushFollow(FOLLOW_1);
             ruleTalk();
 
             state._fsp--;
 
              after(grammarAccess.getTalkRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleTalk308); 
+            match(input,EOF,FOLLOW_2); 
 
             }
 
@@ -422,23 +380,23 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleTalk"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:181:1: ruleTalk : ( ( rule__Talk__Group__0 ) ) ;
+    // InternalProgram.g:153:1: ruleTalk : ( ( rule__Talk__Group__0 ) ) ;
     public final void ruleTalk() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:185:2: ( ( ( rule__Talk__Group__0 ) ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:186:1: ( ( rule__Talk__Group__0 ) )
+            // InternalProgram.g:157:2: ( ( ( rule__Talk__Group__0 ) ) )
+            // InternalProgram.g:158:1: ( ( rule__Talk__Group__0 ) )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:186:1: ( ( rule__Talk__Group__0 ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:187:1: ( rule__Talk__Group__0 )
+            // InternalProgram.g:158:1: ( ( rule__Talk__Group__0 ) )
+            // InternalProgram.g:159:1: ( rule__Talk__Group__0 )
             {
              before(grammarAccess.getTalkAccess().getGroup()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:188:1: ( rule__Talk__Group__0 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:188:2: rule__Talk__Group__0
+            // InternalProgram.g:160:1: ( rule__Talk__Group__0 )
+            // InternalProgram.g:160:2: rule__Talk__Group__0
             {
-            pushFollow(FOLLOW_rule__Talk__Group__0_in_ruleTalk334);
+            pushFollow(FOLLOW_2);
             rule__Talk__Group__0();
 
             state._fsp--;
@@ -468,22 +426,1048 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "ruleTalk"
 
 
+    // $ANTLR start "ruleTalkType"
+    // InternalProgram.g:173:1: ruleTalkType : ( ( rule__TalkType__Alternatives ) ) ;
+    public final void ruleTalkType() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalProgram.g:177:1: ( ( ( rule__TalkType__Alternatives ) ) )
+            // InternalProgram.g:178:1: ( ( rule__TalkType__Alternatives ) )
+            {
+            // InternalProgram.g:178:1: ( ( rule__TalkType__Alternatives ) )
+            // InternalProgram.g:179:1: ( rule__TalkType__Alternatives )
+            {
+             before(grammarAccess.getTalkTypeAccess().getAlternatives()); 
+            // InternalProgram.g:180:1: ( rule__TalkType__Alternatives )
+            // InternalProgram.g:180:2: rule__TalkType__Alternatives
+            {
+            pushFollow(FOLLOW_2);
+            rule__TalkType__Alternatives();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getTalkTypeAccess().getAlternatives()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "ruleTalkType"
+
+
+    // $ANTLR start "ruleRoom"
+    // InternalProgram.g:192:1: ruleRoom : ( ( rule__Room__Alternatives ) ) ;
+    public final void ruleRoom() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalProgram.g:196:1: ( ( ( rule__Room__Alternatives ) ) )
+            // InternalProgram.g:197:1: ( ( rule__Room__Alternatives ) )
+            {
+            // InternalProgram.g:197:1: ( ( rule__Room__Alternatives ) )
+            // InternalProgram.g:198:1: ( rule__Room__Alternatives )
+            {
+             before(grammarAccess.getRoomAccess().getAlternatives()); 
+            // InternalProgram.g:199:1: ( rule__Room__Alternatives )
+            // InternalProgram.g:199:2: rule__Room__Alternatives
+            {
+            pushFollow(FOLLOW_2);
+            rule__Room__Alternatives();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getRoomAccess().getAlternatives()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "ruleRoom"
+
+
+    // $ANTLR start "ruleWeekDay"
+    // InternalProgram.g:211:1: ruleWeekDay : ( ( rule__WeekDay__Alternatives ) ) ;
+    public final void ruleWeekDay() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalProgram.g:215:1: ( ( ( rule__WeekDay__Alternatives ) ) )
+            // InternalProgram.g:216:1: ( ( rule__WeekDay__Alternatives ) )
+            {
+            // InternalProgram.g:216:1: ( ( rule__WeekDay__Alternatives ) )
+            // InternalProgram.g:217:1: ( rule__WeekDay__Alternatives )
+            {
+             before(grammarAccess.getWeekDayAccess().getAlternatives()); 
+            // InternalProgram.g:218:1: ( rule__WeekDay__Alternatives )
+            // InternalProgram.g:218:2: rule__WeekDay__Alternatives
+            {
+            pushFollow(FOLLOW_2);
+            rule__WeekDay__Alternatives();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getWeekDayAccess().getAlternatives()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "ruleWeekDay"
+
+
+    // $ANTLR start "rule__TalkType__Alternatives"
+    // InternalProgram.g:229:1: rule__TalkType__Alternatives : ( ( ( 'Workshop' ) ) | ( ( 'Tutorial' ) ) | ( ( 'Symposium' ) ) | ( ( 'Clinic' ) ) | ( ( 'Break' ) ) | ( ( 'Lunch' ) ) | ( ( 'Poster' ) ) | ( ( 'SRC' ) ) | ( ( 'Main' ) ) );
+    public final void rule__TalkType__Alternatives() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalProgram.g:233:1: ( ( ( 'Workshop' ) ) | ( ( 'Tutorial' ) ) | ( ( 'Symposium' ) ) | ( ( 'Clinic' ) ) | ( ( 'Break' ) ) | ( ( 'Lunch' ) ) | ( ( 'Poster' ) ) | ( ( 'SRC' ) ) | ( ( 'Main' ) ) )
+            int alt2=9;
+            switch ( input.LA(1) ) {
+            case 11:
+                {
+                alt2=1;
+                }
+                break;
+            case 12:
+                {
+                alt2=2;
+                }
+                break;
+            case 13:
+                {
+                alt2=3;
+                }
+                break;
+            case 14:
+                {
+                alt2=4;
+                }
+                break;
+            case 15:
+                {
+                alt2=5;
+                }
+                break;
+            case 16:
+                {
+                alt2=6;
+                }
+                break;
+            case 17:
+                {
+                alt2=7;
+                }
+                break;
+            case 18:
+                {
+                alt2=8;
+                }
+                break;
+            case 19:
+                {
+                alt2=9;
+                }
+                break;
+            default:
+                NoViableAltException nvae =
+                    new NoViableAltException("", 2, 0, input);
+
+                throw nvae;
+            }
+
+            switch (alt2) {
+                case 1 :
+                    // InternalProgram.g:234:1: ( ( 'Workshop' ) )
+                    {
+                    // InternalProgram.g:234:1: ( ( 'Workshop' ) )
+                    // InternalProgram.g:235:1: ( 'Workshop' )
+                    {
+                     before(grammarAccess.getTalkTypeAccess().getWorkshopEnumLiteralDeclaration_0()); 
+                    // InternalProgram.g:236:1: ( 'Workshop' )
+                    // InternalProgram.g:236:3: 'Workshop'
+                    {
+                    match(input,11,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getTalkTypeAccess().getWorkshopEnumLiteralDeclaration_0()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 2 :
+                    // InternalProgram.g:241:6: ( ( 'Tutorial' ) )
+                    {
+                    // InternalProgram.g:241:6: ( ( 'Tutorial' ) )
+                    // InternalProgram.g:242:1: ( 'Tutorial' )
+                    {
+                     before(grammarAccess.getTalkTypeAccess().getTutorialEnumLiteralDeclaration_1()); 
+                    // InternalProgram.g:243:1: ( 'Tutorial' )
+                    // InternalProgram.g:243:3: 'Tutorial'
+                    {
+                    match(input,12,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getTalkTypeAccess().getTutorialEnumLiteralDeclaration_1()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 3 :
+                    // InternalProgram.g:248:6: ( ( 'Symposium' ) )
+                    {
+                    // InternalProgram.g:248:6: ( ( 'Symposium' ) )
+                    // InternalProgram.g:249:1: ( 'Symposium' )
+                    {
+                     before(grammarAccess.getTalkTypeAccess().getSymposiumEnumLiteralDeclaration_2()); 
+                    // InternalProgram.g:250:1: ( 'Symposium' )
+                    // InternalProgram.g:250:3: 'Symposium'
+                    {
+                    match(input,13,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getTalkTypeAccess().getSymposiumEnumLiteralDeclaration_2()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 4 :
+                    // InternalProgram.g:255:6: ( ( 'Clinic' ) )
+                    {
+                    // InternalProgram.g:255:6: ( ( 'Clinic' ) )
+                    // InternalProgram.g:256:1: ( 'Clinic' )
+                    {
+                     before(grammarAccess.getTalkTypeAccess().getClinicEnumLiteralDeclaration_3()); 
+                    // InternalProgram.g:257:1: ( 'Clinic' )
+                    // InternalProgram.g:257:3: 'Clinic'
+                    {
+                    match(input,14,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getTalkTypeAccess().getClinicEnumLiteralDeclaration_3()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 5 :
+                    // InternalProgram.g:262:6: ( ( 'Break' ) )
+                    {
+                    // InternalProgram.g:262:6: ( ( 'Break' ) )
+                    // InternalProgram.g:263:1: ( 'Break' )
+                    {
+                     before(grammarAccess.getTalkTypeAccess().getBreakEnumLiteralDeclaration_4()); 
+                    // InternalProgram.g:264:1: ( 'Break' )
+                    // InternalProgram.g:264:3: 'Break'
+                    {
+                    match(input,15,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getTalkTypeAccess().getBreakEnumLiteralDeclaration_4()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 6 :
+                    // InternalProgram.g:269:6: ( ( 'Lunch' ) )
+                    {
+                    // InternalProgram.g:269:6: ( ( 'Lunch' ) )
+                    // InternalProgram.g:270:1: ( 'Lunch' )
+                    {
+                     before(grammarAccess.getTalkTypeAccess().getLunchEnumLiteralDeclaration_5()); 
+                    // InternalProgram.g:271:1: ( 'Lunch' )
+                    // InternalProgram.g:271:3: 'Lunch'
+                    {
+                    match(input,16,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getTalkTypeAccess().getLunchEnumLiteralDeclaration_5()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 7 :
+                    // InternalProgram.g:276:6: ( ( 'Poster' ) )
+                    {
+                    // InternalProgram.g:276:6: ( ( 'Poster' ) )
+                    // InternalProgram.g:277:1: ( 'Poster' )
+                    {
+                     before(grammarAccess.getTalkTypeAccess().getPosterEnumLiteralDeclaration_6()); 
+                    // InternalProgram.g:278:1: ( 'Poster' )
+                    // InternalProgram.g:278:3: 'Poster'
+                    {
+                    match(input,17,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getTalkTypeAccess().getPosterEnumLiteralDeclaration_6()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 8 :
+                    // InternalProgram.g:283:6: ( ( 'SRC' ) )
+                    {
+                    // InternalProgram.g:283:6: ( ( 'SRC' ) )
+                    // InternalProgram.g:284:1: ( 'SRC' )
+                    {
+                     before(grammarAccess.getTalkTypeAccess().getSRCEnumLiteralDeclaration_7()); 
+                    // InternalProgram.g:285:1: ( 'SRC' )
+                    // InternalProgram.g:285:3: 'SRC'
+                    {
+                    match(input,18,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getTalkTypeAccess().getSRCEnumLiteralDeclaration_7()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 9 :
+                    // InternalProgram.g:290:6: ( ( 'Main' ) )
+                    {
+                    // InternalProgram.g:290:6: ( ( 'Main' ) )
+                    // InternalProgram.g:291:1: ( 'Main' )
+                    {
+                     before(grammarAccess.getTalkTypeAccess().getMainEnumLiteralDeclaration_8()); 
+                    // InternalProgram.g:292:1: ( 'Main' )
+                    // InternalProgram.g:292:3: 'Main'
+                    {
+                    match(input,19,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getTalkTypeAccess().getMainEnumLiteralDeclaration_8()); 
+
+                    }
+
+
+                    }
+                    break;
+
+            }
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__TalkType__Alternatives"
+
+
+    // $ANTLR start "rule__Room__Alternatives"
+    // InternalProgram.g:302:1: rule__Room__Alternatives : ( ( ( 'Bouvet 1' ) ) | ( ( 'Bouvet 2' ) ) | ( ( 'Charcot' ) ) | ( ( 'Vauban 1' ) ) | ( ( 'Vauban 2' ) ) | ( ( 'Lamannais 1' ) ) | ( ( 'Lamennais 2' ) ) | ( ( 'Lamennais 3' ) ) | ( ( 'Rotonde Surcouf' ) ) | ( ( 'Chateaubriand' ) ) | ( ( 'Lamennais 1+2' ) ) | ( ( 'Lamennais 4+5' ) ) | ( ( 'Grand Large' ) ) | ( ( 'Rotonde J. Cartier' ) ) );
+    public final void rule__Room__Alternatives() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalProgram.g:306:1: ( ( ( 'Bouvet 1' ) ) | ( ( 'Bouvet 2' ) ) | ( ( 'Charcot' ) ) | ( ( 'Vauban 1' ) ) | ( ( 'Vauban 2' ) ) | ( ( 'Lamannais 1' ) ) | ( ( 'Lamennais 2' ) ) | ( ( 'Lamennais 3' ) ) | ( ( 'Rotonde Surcouf' ) ) | ( ( 'Chateaubriand' ) ) | ( ( 'Lamennais 1+2' ) ) | ( ( 'Lamennais 4+5' ) ) | ( ( 'Grand Large' ) ) | ( ( 'Rotonde J. Cartier' ) ) )
+            int alt3=14;
+            switch ( input.LA(1) ) {
+            case 20:
+                {
+                alt3=1;
+                }
+                break;
+            case 21:
+                {
+                alt3=2;
+                }
+                break;
+            case 22:
+                {
+                alt3=3;
+                }
+                break;
+            case 23:
+                {
+                alt3=4;
+                }
+                break;
+            case 24:
+                {
+                alt3=5;
+                }
+                break;
+            case 25:
+                {
+                alt3=6;
+                }
+                break;
+            case 26:
+                {
+                alt3=7;
+                }
+                break;
+            case 27:
+                {
+                alt3=8;
+                }
+                break;
+            case 28:
+                {
+                alt3=9;
+                }
+                break;
+            case 29:
+                {
+                alt3=10;
+                }
+                break;
+            case 30:
+                {
+                alt3=11;
+                }
+                break;
+            case 31:
+                {
+                alt3=12;
+                }
+                break;
+            case 32:
+                {
+                alt3=13;
+                }
+                break;
+            case 33:
+                {
+                alt3=14;
+                }
+                break;
+            default:
+                NoViableAltException nvae =
+                    new NoViableAltException("", 3, 0, input);
+
+                throw nvae;
+            }
+
+            switch (alt3) {
+                case 1 :
+                    // InternalProgram.g:307:1: ( ( 'Bouvet 1' ) )
+                    {
+                    // InternalProgram.g:307:1: ( ( 'Bouvet 1' ) )
+                    // InternalProgram.g:308:1: ( 'Bouvet 1' )
+                    {
+                     before(grammarAccess.getRoomAccess().getBouvet1EnumLiteralDeclaration_0()); 
+                    // InternalProgram.g:309:1: ( 'Bouvet 1' )
+                    // InternalProgram.g:309:3: 'Bouvet 1'
+                    {
+                    match(input,20,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getRoomAccess().getBouvet1EnumLiteralDeclaration_0()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 2 :
+                    // InternalProgram.g:314:6: ( ( 'Bouvet 2' ) )
+                    {
+                    // InternalProgram.g:314:6: ( ( 'Bouvet 2' ) )
+                    // InternalProgram.g:315:1: ( 'Bouvet 2' )
+                    {
+                     before(grammarAccess.getRoomAccess().getBouvet2EnumLiteralDeclaration_1()); 
+                    // InternalProgram.g:316:1: ( 'Bouvet 2' )
+                    // InternalProgram.g:316:3: 'Bouvet 2'
+                    {
+                    match(input,21,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getRoomAccess().getBouvet2EnumLiteralDeclaration_1()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 3 :
+                    // InternalProgram.g:321:6: ( ( 'Charcot' ) )
+                    {
+                    // InternalProgram.g:321:6: ( ( 'Charcot' ) )
+                    // InternalProgram.g:322:1: ( 'Charcot' )
+                    {
+                     before(grammarAccess.getRoomAccess().getCharcotEnumLiteralDeclaration_2()); 
+                    // InternalProgram.g:323:1: ( 'Charcot' )
+                    // InternalProgram.g:323:3: 'Charcot'
+                    {
+                    match(input,22,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getRoomAccess().getCharcotEnumLiteralDeclaration_2()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 4 :
+                    // InternalProgram.g:328:6: ( ( 'Vauban 1' ) )
+                    {
+                    // InternalProgram.g:328:6: ( ( 'Vauban 1' ) )
+                    // InternalProgram.g:329:1: ( 'Vauban 1' )
+                    {
+                     before(grammarAccess.getRoomAccess().getVauban1EnumLiteralDeclaration_3()); 
+                    // InternalProgram.g:330:1: ( 'Vauban 1' )
+                    // InternalProgram.g:330:3: 'Vauban 1'
+                    {
+                    match(input,23,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getRoomAccess().getVauban1EnumLiteralDeclaration_3()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 5 :
+                    // InternalProgram.g:335:6: ( ( 'Vauban 2' ) )
+                    {
+                    // InternalProgram.g:335:6: ( ( 'Vauban 2' ) )
+                    // InternalProgram.g:336:1: ( 'Vauban 2' )
+                    {
+                     before(grammarAccess.getRoomAccess().getVauban2EnumLiteralDeclaration_4()); 
+                    // InternalProgram.g:337:1: ( 'Vauban 2' )
+                    // InternalProgram.g:337:3: 'Vauban 2'
+                    {
+                    match(input,24,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getRoomAccess().getVauban2EnumLiteralDeclaration_4()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 6 :
+                    // InternalProgram.g:342:6: ( ( 'Lamannais 1' ) )
+                    {
+                    // InternalProgram.g:342:6: ( ( 'Lamannais 1' ) )
+                    // InternalProgram.g:343:1: ( 'Lamannais 1' )
+                    {
+                     before(grammarAccess.getRoomAccess().getLamannais1EnumLiteralDeclaration_5()); 
+                    // InternalProgram.g:344:1: ( 'Lamannais 1' )
+                    // InternalProgram.g:344:3: 'Lamannais 1'
+                    {
+                    match(input,25,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getRoomAccess().getLamannais1EnumLiteralDeclaration_5()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 7 :
+                    // InternalProgram.g:349:6: ( ( 'Lamennais 2' ) )
+                    {
+                    // InternalProgram.g:349:6: ( ( 'Lamennais 2' ) )
+                    // InternalProgram.g:350:1: ( 'Lamennais 2' )
+                    {
+                     before(grammarAccess.getRoomAccess().getLamennais2EnumLiteralDeclaration_6()); 
+                    // InternalProgram.g:351:1: ( 'Lamennais 2' )
+                    // InternalProgram.g:351:3: 'Lamennais 2'
+                    {
+                    match(input,26,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getRoomAccess().getLamennais2EnumLiteralDeclaration_6()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 8 :
+                    // InternalProgram.g:356:6: ( ( 'Lamennais 3' ) )
+                    {
+                    // InternalProgram.g:356:6: ( ( 'Lamennais 3' ) )
+                    // InternalProgram.g:357:1: ( 'Lamennais 3' )
+                    {
+                     before(grammarAccess.getRoomAccess().getLamennais3EnumLiteralDeclaration_7()); 
+                    // InternalProgram.g:358:1: ( 'Lamennais 3' )
+                    // InternalProgram.g:358:3: 'Lamennais 3'
+                    {
+                    match(input,27,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getRoomAccess().getLamennais3EnumLiteralDeclaration_7()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 9 :
+                    // InternalProgram.g:363:6: ( ( 'Rotonde Surcouf' ) )
+                    {
+                    // InternalProgram.g:363:6: ( ( 'Rotonde Surcouf' ) )
+                    // InternalProgram.g:364:1: ( 'Rotonde Surcouf' )
+                    {
+                     before(grammarAccess.getRoomAccess().getRotondeSurcoufEnumLiteralDeclaration_8()); 
+                    // InternalProgram.g:365:1: ( 'Rotonde Surcouf' )
+                    // InternalProgram.g:365:3: 'Rotonde Surcouf'
+                    {
+                    match(input,28,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getRoomAccess().getRotondeSurcoufEnumLiteralDeclaration_8()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 10 :
+                    // InternalProgram.g:370:6: ( ( 'Chateaubriand' ) )
+                    {
+                    // InternalProgram.g:370:6: ( ( 'Chateaubriand' ) )
+                    // InternalProgram.g:371:1: ( 'Chateaubriand' )
+                    {
+                     before(grammarAccess.getRoomAccess().getChateaubriandEnumLiteralDeclaration_9()); 
+                    // InternalProgram.g:372:1: ( 'Chateaubriand' )
+                    // InternalProgram.g:372:3: 'Chateaubriand'
+                    {
+                    match(input,29,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getRoomAccess().getChateaubriandEnumLiteralDeclaration_9()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 11 :
+                    // InternalProgram.g:377:6: ( ( 'Lamennais 1+2' ) )
+                    {
+                    // InternalProgram.g:377:6: ( ( 'Lamennais 1+2' ) )
+                    // InternalProgram.g:378:1: ( 'Lamennais 1+2' )
+                    {
+                     before(grammarAccess.getRoomAccess().getLamennais12EnumLiteralDeclaration_10()); 
+                    // InternalProgram.g:379:1: ( 'Lamennais 1+2' )
+                    // InternalProgram.g:379:3: 'Lamennais 1+2'
+                    {
+                    match(input,30,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getRoomAccess().getLamennais12EnumLiteralDeclaration_10()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 12 :
+                    // InternalProgram.g:384:6: ( ( 'Lamennais 4+5' ) )
+                    {
+                    // InternalProgram.g:384:6: ( ( 'Lamennais 4+5' ) )
+                    // InternalProgram.g:385:1: ( 'Lamennais 4+5' )
+                    {
+                     before(grammarAccess.getRoomAccess().getLamennais45EnumLiteralDeclaration_11()); 
+                    // InternalProgram.g:386:1: ( 'Lamennais 4+5' )
+                    // InternalProgram.g:386:3: 'Lamennais 4+5'
+                    {
+                    match(input,31,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getRoomAccess().getLamennais45EnumLiteralDeclaration_11()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 13 :
+                    // InternalProgram.g:391:6: ( ( 'Grand Large' ) )
+                    {
+                    // InternalProgram.g:391:6: ( ( 'Grand Large' ) )
+                    // InternalProgram.g:392:1: ( 'Grand Large' )
+                    {
+                     before(grammarAccess.getRoomAccess().getGrandLargeEnumLiteralDeclaration_12()); 
+                    // InternalProgram.g:393:1: ( 'Grand Large' )
+                    // InternalProgram.g:393:3: 'Grand Large'
+                    {
+                    match(input,32,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getRoomAccess().getGrandLargeEnumLiteralDeclaration_12()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 14 :
+                    // InternalProgram.g:398:6: ( ( 'Rotonde J. Cartier' ) )
+                    {
+                    // InternalProgram.g:398:6: ( ( 'Rotonde J. Cartier' ) )
+                    // InternalProgram.g:399:1: ( 'Rotonde J. Cartier' )
+                    {
+                     before(grammarAccess.getRoomAccess().getRotondeJCartierEnumLiteralDeclaration_13()); 
+                    // InternalProgram.g:400:1: ( 'Rotonde J. Cartier' )
+                    // InternalProgram.g:400:3: 'Rotonde J. Cartier'
+                    {
+                    match(input,33,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getRoomAccess().getRotondeJCartierEnumLiteralDeclaration_13()); 
+
+                    }
+
+
+                    }
+                    break;
+
+            }
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Room__Alternatives"
+
+
+    // $ANTLR start "rule__WeekDay__Alternatives"
+    // InternalProgram.g:410:1: rule__WeekDay__Alternatives : ( ( ( 'Monday' ) ) | ( ( 'Tuesday' ) ) | ( ( 'Wednesday' ) ) | ( ( 'Thursday' ) ) | ( ( 'Friday' ) ) | ( ( 'Saturday' ) ) | ( ( 'Sunday' ) ) );
+    public final void rule__WeekDay__Alternatives() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalProgram.g:414:1: ( ( ( 'Monday' ) ) | ( ( 'Tuesday' ) ) | ( ( 'Wednesday' ) ) | ( ( 'Thursday' ) ) | ( ( 'Friday' ) ) | ( ( 'Saturday' ) ) | ( ( 'Sunday' ) ) )
+            int alt4=7;
+            switch ( input.LA(1) ) {
+            case 34:
+                {
+                alt4=1;
+                }
+                break;
+            case 35:
+                {
+                alt4=2;
+                }
+                break;
+            case 36:
+                {
+                alt4=3;
+                }
+                break;
+            case 37:
+                {
+                alt4=4;
+                }
+                break;
+            case 38:
+                {
+                alt4=5;
+                }
+                break;
+            case 39:
+                {
+                alt4=6;
+                }
+                break;
+            case 40:
+                {
+                alt4=7;
+                }
+                break;
+            default:
+                NoViableAltException nvae =
+                    new NoViableAltException("", 4, 0, input);
+
+                throw nvae;
+            }
+
+            switch (alt4) {
+                case 1 :
+                    // InternalProgram.g:415:1: ( ( 'Monday' ) )
+                    {
+                    // InternalProgram.g:415:1: ( ( 'Monday' ) )
+                    // InternalProgram.g:416:1: ( 'Monday' )
+                    {
+                     before(grammarAccess.getWeekDayAccess().getMondayEnumLiteralDeclaration_0()); 
+                    // InternalProgram.g:417:1: ( 'Monday' )
+                    // InternalProgram.g:417:3: 'Monday'
+                    {
+                    match(input,34,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getWeekDayAccess().getMondayEnumLiteralDeclaration_0()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 2 :
+                    // InternalProgram.g:422:6: ( ( 'Tuesday' ) )
+                    {
+                    // InternalProgram.g:422:6: ( ( 'Tuesday' ) )
+                    // InternalProgram.g:423:1: ( 'Tuesday' )
+                    {
+                     before(grammarAccess.getWeekDayAccess().getTuesdayEnumLiteralDeclaration_1()); 
+                    // InternalProgram.g:424:1: ( 'Tuesday' )
+                    // InternalProgram.g:424:3: 'Tuesday'
+                    {
+                    match(input,35,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getWeekDayAccess().getTuesdayEnumLiteralDeclaration_1()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 3 :
+                    // InternalProgram.g:429:6: ( ( 'Wednesday' ) )
+                    {
+                    // InternalProgram.g:429:6: ( ( 'Wednesday' ) )
+                    // InternalProgram.g:430:1: ( 'Wednesday' )
+                    {
+                     before(grammarAccess.getWeekDayAccess().getWednesdayEnumLiteralDeclaration_2()); 
+                    // InternalProgram.g:431:1: ( 'Wednesday' )
+                    // InternalProgram.g:431:3: 'Wednesday'
+                    {
+                    match(input,36,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getWeekDayAccess().getWednesdayEnumLiteralDeclaration_2()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 4 :
+                    // InternalProgram.g:436:6: ( ( 'Thursday' ) )
+                    {
+                    // InternalProgram.g:436:6: ( ( 'Thursday' ) )
+                    // InternalProgram.g:437:1: ( 'Thursday' )
+                    {
+                     before(grammarAccess.getWeekDayAccess().getThursdayEnumLiteralDeclaration_3()); 
+                    // InternalProgram.g:438:1: ( 'Thursday' )
+                    // InternalProgram.g:438:3: 'Thursday'
+                    {
+                    match(input,37,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getWeekDayAccess().getThursdayEnumLiteralDeclaration_3()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 5 :
+                    // InternalProgram.g:443:6: ( ( 'Friday' ) )
+                    {
+                    // InternalProgram.g:443:6: ( ( 'Friday' ) )
+                    // InternalProgram.g:444:1: ( 'Friday' )
+                    {
+                     before(grammarAccess.getWeekDayAccess().getFridayEnumLiteralDeclaration_4()); 
+                    // InternalProgram.g:445:1: ( 'Friday' )
+                    // InternalProgram.g:445:3: 'Friday'
+                    {
+                    match(input,38,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getWeekDayAccess().getFridayEnumLiteralDeclaration_4()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 6 :
+                    // InternalProgram.g:450:6: ( ( 'Saturday' ) )
+                    {
+                    // InternalProgram.g:450:6: ( ( 'Saturday' ) )
+                    // InternalProgram.g:451:1: ( 'Saturday' )
+                    {
+                     before(grammarAccess.getWeekDayAccess().getSaturdayEnumLiteralDeclaration_5()); 
+                    // InternalProgram.g:452:1: ( 'Saturday' )
+                    // InternalProgram.g:452:3: 'Saturday'
+                    {
+                    match(input,39,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getWeekDayAccess().getSaturdayEnumLiteralDeclaration_5()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 7 :
+                    // InternalProgram.g:457:6: ( ( 'Sunday' ) )
+                    {
+                    // InternalProgram.g:457:6: ( ( 'Sunday' ) )
+                    // InternalProgram.g:458:1: ( 'Sunday' )
+                    {
+                     before(grammarAccess.getWeekDayAccess().getSundayEnumLiteralDeclaration_6()); 
+                    // InternalProgram.g:459:1: ( 'Sunday' )
+                    // InternalProgram.g:459:3: 'Sunday'
+                    {
+                    match(input,40,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getWeekDayAccess().getSundayEnumLiteralDeclaration_6()); 
+
+                    }
+
+
+                    }
+                    break;
+
+            }
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__WeekDay__Alternatives"
+
+
     // $ANTLR start "rule__Program__Group__0"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:202:1: rule__Program__Group__0 : rule__Program__Group__0__Impl rule__Program__Group__1 ;
+    // InternalProgram.g:471:1: rule__Program__Group__0 : rule__Program__Group__0__Impl rule__Program__Group__1 ;
     public final void rule__Program__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:206:1: ( rule__Program__Group__0__Impl rule__Program__Group__1 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:207:2: rule__Program__Group__0__Impl rule__Program__Group__1
+            // InternalProgram.g:475:1: ( rule__Program__Group__0__Impl rule__Program__Group__1 )
+            // InternalProgram.g:476:2: rule__Program__Group__0__Impl rule__Program__Group__1
             {
-            pushFollow(FOLLOW_rule__Program__Group__0__Impl_in_rule__Program__Group__0368);
+            pushFollow(FOLLOW_3);
             rule__Program__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Program__Group__1_in_rule__Program__Group__0371);
+            pushFollow(FOLLOW_2);
             rule__Program__Group__1();
 
             state._fsp--;
@@ -507,42 +1491,31 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Program__Group__0__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:214:1: rule__Program__Group__0__Impl : ( ( rule__Program__Group_0__0 )? ) ;
+    // InternalProgram.g:483:1: rule__Program__Group__0__Impl : ( ( rule__Program__DaysAssignment_0 ) ) ;
     public final void rule__Program__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:218:1: ( ( ( rule__Program__Group_0__0 )? ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:219:1: ( ( rule__Program__Group_0__0 )? )
+            // InternalProgram.g:487:1: ( ( ( rule__Program__DaysAssignment_0 ) ) )
+            // InternalProgram.g:488:1: ( ( rule__Program__DaysAssignment_0 ) )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:219:1: ( ( rule__Program__Group_0__0 )? )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:220:1: ( rule__Program__Group_0__0 )?
+            // InternalProgram.g:488:1: ( ( rule__Program__DaysAssignment_0 ) )
+            // InternalProgram.g:489:1: ( rule__Program__DaysAssignment_0 )
             {
-             before(grammarAccess.getProgramAccess().getGroup_0()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:221:1: ( rule__Program__Group_0__0 )?
-            int alt1=2;
-            int LA1_0 = input.LA(1);
+             before(grammarAccess.getProgramAccess().getDaysAssignment_0()); 
+            // InternalProgram.g:490:1: ( rule__Program__DaysAssignment_0 )
+            // InternalProgram.g:490:2: rule__Program__DaysAssignment_0
+            {
+            pushFollow(FOLLOW_2);
+            rule__Program__DaysAssignment_0();
 
-            if ( (LA1_0==11) ) {
-                alt1=1;
-            }
-            switch (alt1) {
-                case 1 :
-                    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:221:2: rule__Program__Group_0__0
-                    {
-                    pushFollow(FOLLOW_rule__Program__Group_0__0_in_rule__Program__Group__0__Impl398);
-                    rule__Program__Group_0__0();
+            state._fsp--;
 
-                    state._fsp--;
-
-
-                    }
-                    break;
 
             }
 
-             after(grammarAccess.getProgramAccess().getGroup_0()); 
+             after(grammarAccess.getProgramAccess().getDaysAssignment_0()); 
 
             }
 
@@ -565,16 +1538,16 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Program__Group__1"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:231:1: rule__Program__Group__1 : rule__Program__Group__1__Impl ;
+    // InternalProgram.g:500:1: rule__Program__Group__1 : rule__Program__Group__1__Impl ;
     public final void rule__Program__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:235:1: ( rule__Program__Group__1__Impl )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:236:2: rule__Program__Group__1__Impl
+            // InternalProgram.g:504:1: ( rule__Program__Group__1__Impl )
+            // InternalProgram.g:505:2: rule__Program__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__Program__Group__1__Impl_in_rule__Program__Group__1429);
+            pushFollow(FOLLOW_2);
             rule__Program__Group__1__Impl();
 
             state._fsp--;
@@ -598,42 +1571,49 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Program__Group__1__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:242:1: rule__Program__Group__1__Impl : ( ( rule__Program__Group_1__0 )? ) ;
+    // InternalProgram.g:511:1: rule__Program__Group__1__Impl : ( ( rule__Program__DaysAssignment_1 )* ) ;
     public final void rule__Program__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:246:1: ( ( ( rule__Program__Group_1__0 )? ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:247:1: ( ( rule__Program__Group_1__0 )? )
+            // InternalProgram.g:515:1: ( ( ( rule__Program__DaysAssignment_1 )* ) )
+            // InternalProgram.g:516:1: ( ( rule__Program__DaysAssignment_1 )* )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:247:1: ( ( rule__Program__Group_1__0 )? )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:248:1: ( rule__Program__Group_1__0 )?
+            // InternalProgram.g:516:1: ( ( rule__Program__DaysAssignment_1 )* )
+            // InternalProgram.g:517:1: ( rule__Program__DaysAssignment_1 )*
             {
-             before(grammarAccess.getProgramAccess().getGroup_1()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:249:1: ( rule__Program__Group_1__0 )?
-            int alt2=2;
-            int LA2_0 = input.LA(1);
+             before(grammarAccess.getProgramAccess().getDaysAssignment_1()); 
+            // InternalProgram.g:518:1: ( rule__Program__DaysAssignment_1 )*
+            loop5:
+            do {
+                int alt5=2;
+                int LA5_0 = input.LA(1);
 
-            if ( (LA2_0==12) ) {
-                alt2=1;
-            }
-            switch (alt2) {
-                case 1 :
-                    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:249:2: rule__Program__Group_1__0
-                    {
-                    pushFollow(FOLLOW_rule__Program__Group_1__0_in_rule__Program__Group__1__Impl456);
-                    rule__Program__Group_1__0();
-
-                    state._fsp--;
+                if ( ((LA5_0>=34 && LA5_0<=40)) ) {
+                    alt5=1;
+                }
 
 
-                    }
-                    break;
+                switch (alt5) {
+            	case 1 :
+            	    // InternalProgram.g:518:2: rule__Program__DaysAssignment_1
+            	    {
+            	    pushFollow(FOLLOW_4);
+            	    rule__Program__DaysAssignment_1();
 
-            }
+            	    state._fsp--;
 
-             after(grammarAccess.getProgramAccess().getGroup_1()); 
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop5;
+                }
+            } while (true);
+
+             after(grammarAccess.getProgramAccess().getDaysAssignment_1()); 
 
             }
 
@@ -655,538 +1635,22 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Program__Group__1__Impl"
 
 
-    // $ANTLR start "rule__Program__Group_0__0"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:263:1: rule__Program__Group_0__0 : rule__Program__Group_0__0__Impl rule__Program__Group_0__1 ;
-    public final void rule__Program__Group_0__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:267:1: ( rule__Program__Group_0__0__Impl rule__Program__Group_0__1 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:268:2: rule__Program__Group_0__0__Impl rule__Program__Group_0__1
-            {
-            pushFollow(FOLLOW_rule__Program__Group_0__0__Impl_in_rule__Program__Group_0__0491);
-            rule__Program__Group_0__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__Program__Group_0__1_in_rule__Program__Group_0__0494);
-            rule__Program__Group_0__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Program__Group_0__0"
-
-
-    // $ANTLR start "rule__Program__Group_0__0__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:275:1: rule__Program__Group_0__0__Impl : ( 'Rooms' ) ;
-    public final void rule__Program__Group_0__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:279:1: ( ( 'Rooms' ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:280:1: ( 'Rooms' )
-            {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:280:1: ( 'Rooms' )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:281:1: 'Rooms'
-            {
-             before(grammarAccess.getProgramAccess().getRoomsKeyword_0_0()); 
-            match(input,11,FOLLOW_11_in_rule__Program__Group_0__0__Impl522); 
-             after(grammarAccess.getProgramAccess().getRoomsKeyword_0_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Program__Group_0__0__Impl"
-
-
-    // $ANTLR start "rule__Program__Group_0__1"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:294:1: rule__Program__Group_0__1 : rule__Program__Group_0__1__Impl rule__Program__Group_0__2 ;
-    public final void rule__Program__Group_0__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:298:1: ( rule__Program__Group_0__1__Impl rule__Program__Group_0__2 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:299:2: rule__Program__Group_0__1__Impl rule__Program__Group_0__2
-            {
-            pushFollow(FOLLOW_rule__Program__Group_0__1__Impl_in_rule__Program__Group_0__1553);
-            rule__Program__Group_0__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__Program__Group_0__2_in_rule__Program__Group_0__1556);
-            rule__Program__Group_0__2();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Program__Group_0__1"
-
-
-    // $ANTLR start "rule__Program__Group_0__1__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:306:1: rule__Program__Group_0__1__Impl : ( ( rule__Program__RoomsAssignment_0_1 ) ) ;
-    public final void rule__Program__Group_0__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:310:1: ( ( ( rule__Program__RoomsAssignment_0_1 ) ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:311:1: ( ( rule__Program__RoomsAssignment_0_1 ) )
-            {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:311:1: ( ( rule__Program__RoomsAssignment_0_1 ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:312:1: ( rule__Program__RoomsAssignment_0_1 )
-            {
-             before(grammarAccess.getProgramAccess().getRoomsAssignment_0_1()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:313:1: ( rule__Program__RoomsAssignment_0_1 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:313:2: rule__Program__RoomsAssignment_0_1
-            {
-            pushFollow(FOLLOW_rule__Program__RoomsAssignment_0_1_in_rule__Program__Group_0__1__Impl583);
-            rule__Program__RoomsAssignment_0_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getProgramAccess().getRoomsAssignment_0_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Program__Group_0__1__Impl"
-
-
-    // $ANTLR start "rule__Program__Group_0__2"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:323:1: rule__Program__Group_0__2 : rule__Program__Group_0__2__Impl ;
-    public final void rule__Program__Group_0__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:327:1: ( rule__Program__Group_0__2__Impl )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:328:2: rule__Program__Group_0__2__Impl
-            {
-            pushFollow(FOLLOW_rule__Program__Group_0__2__Impl_in_rule__Program__Group_0__2613);
-            rule__Program__Group_0__2__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Program__Group_0__2"
-
-
-    // $ANTLR start "rule__Program__Group_0__2__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:334:1: rule__Program__Group_0__2__Impl : ( ( rule__Program__RoomsAssignment_0_2 )* ) ;
-    public final void rule__Program__Group_0__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:338:1: ( ( ( rule__Program__RoomsAssignment_0_2 )* ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:339:1: ( ( rule__Program__RoomsAssignment_0_2 )* )
-            {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:339:1: ( ( rule__Program__RoomsAssignment_0_2 )* )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:340:1: ( rule__Program__RoomsAssignment_0_2 )*
-            {
-             before(grammarAccess.getProgramAccess().getRoomsAssignment_0_2()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:341:1: ( rule__Program__RoomsAssignment_0_2 )*
-            loop3:
-            do {
-                int alt3=2;
-                int LA3_0 = input.LA(1);
-
-                if ( (LA3_0==RULE_STRING) ) {
-                    alt3=1;
-                }
-
-
-                switch (alt3) {
-            	case 1 :
-            	    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:341:2: rule__Program__RoomsAssignment_0_2
-            	    {
-            	    pushFollow(FOLLOW_rule__Program__RoomsAssignment_0_2_in_rule__Program__Group_0__2__Impl640);
-            	    rule__Program__RoomsAssignment_0_2();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop3;
-                }
-            } while (true);
-
-             after(grammarAccess.getProgramAccess().getRoomsAssignment_0_2()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Program__Group_0__2__Impl"
-
-
-    // $ANTLR start "rule__Program__Group_1__0"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:357:1: rule__Program__Group_1__0 : rule__Program__Group_1__0__Impl rule__Program__Group_1__1 ;
-    public final void rule__Program__Group_1__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:361:1: ( rule__Program__Group_1__0__Impl rule__Program__Group_1__1 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:362:2: rule__Program__Group_1__0__Impl rule__Program__Group_1__1
-            {
-            pushFollow(FOLLOW_rule__Program__Group_1__0__Impl_in_rule__Program__Group_1__0677);
-            rule__Program__Group_1__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__Program__Group_1__1_in_rule__Program__Group_1__0680);
-            rule__Program__Group_1__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Program__Group_1__0"
-
-
-    // $ANTLR start "rule__Program__Group_1__0__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:369:1: rule__Program__Group_1__0__Impl : ( 'Days' ) ;
-    public final void rule__Program__Group_1__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:373:1: ( ( 'Days' ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:374:1: ( 'Days' )
-            {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:374:1: ( 'Days' )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:375:1: 'Days'
-            {
-             before(grammarAccess.getProgramAccess().getDaysKeyword_1_0()); 
-            match(input,12,FOLLOW_12_in_rule__Program__Group_1__0__Impl708); 
-             after(grammarAccess.getProgramAccess().getDaysKeyword_1_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Program__Group_1__0__Impl"
-
-
-    // $ANTLR start "rule__Program__Group_1__1"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:388:1: rule__Program__Group_1__1 : rule__Program__Group_1__1__Impl rule__Program__Group_1__2 ;
-    public final void rule__Program__Group_1__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:392:1: ( rule__Program__Group_1__1__Impl rule__Program__Group_1__2 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:393:2: rule__Program__Group_1__1__Impl rule__Program__Group_1__2
-            {
-            pushFollow(FOLLOW_rule__Program__Group_1__1__Impl_in_rule__Program__Group_1__1739);
-            rule__Program__Group_1__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__Program__Group_1__2_in_rule__Program__Group_1__1742);
-            rule__Program__Group_1__2();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Program__Group_1__1"
-
-
-    // $ANTLR start "rule__Program__Group_1__1__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:400:1: rule__Program__Group_1__1__Impl : ( ( rule__Program__DaysAssignment_1_1 ) ) ;
-    public final void rule__Program__Group_1__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:404:1: ( ( ( rule__Program__DaysAssignment_1_1 ) ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:405:1: ( ( rule__Program__DaysAssignment_1_1 ) )
-            {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:405:1: ( ( rule__Program__DaysAssignment_1_1 ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:406:1: ( rule__Program__DaysAssignment_1_1 )
-            {
-             before(grammarAccess.getProgramAccess().getDaysAssignment_1_1()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:407:1: ( rule__Program__DaysAssignment_1_1 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:407:2: rule__Program__DaysAssignment_1_1
-            {
-            pushFollow(FOLLOW_rule__Program__DaysAssignment_1_1_in_rule__Program__Group_1__1__Impl769);
-            rule__Program__DaysAssignment_1_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getProgramAccess().getDaysAssignment_1_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Program__Group_1__1__Impl"
-
-
-    // $ANTLR start "rule__Program__Group_1__2"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:417:1: rule__Program__Group_1__2 : rule__Program__Group_1__2__Impl ;
-    public final void rule__Program__Group_1__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:421:1: ( rule__Program__Group_1__2__Impl )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:422:2: rule__Program__Group_1__2__Impl
-            {
-            pushFollow(FOLLOW_rule__Program__Group_1__2__Impl_in_rule__Program__Group_1__2799);
-            rule__Program__Group_1__2__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Program__Group_1__2"
-
-
-    // $ANTLR start "rule__Program__Group_1__2__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:428:1: rule__Program__Group_1__2__Impl : ( ( rule__Program__DaysAssignment_1_2 )* ) ;
-    public final void rule__Program__Group_1__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:432:1: ( ( ( rule__Program__DaysAssignment_1_2 )* ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:433:1: ( ( rule__Program__DaysAssignment_1_2 )* )
-            {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:433:1: ( ( rule__Program__DaysAssignment_1_2 )* )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:434:1: ( rule__Program__DaysAssignment_1_2 )*
-            {
-             before(grammarAccess.getProgramAccess().getDaysAssignment_1_2()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:435:1: ( rule__Program__DaysAssignment_1_2 )*
-            loop4:
-            do {
-                int alt4=2;
-                int LA4_0 = input.LA(1);
-
-                if ( (LA4_0==13) ) {
-                    alt4=1;
-                }
-
-
-                switch (alt4) {
-            	case 1 :
-            	    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:435:2: rule__Program__DaysAssignment_1_2
-            	    {
-            	    pushFollow(FOLLOW_rule__Program__DaysAssignment_1_2_in_rule__Program__Group_1__2__Impl826);
-            	    rule__Program__DaysAssignment_1_2();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop4;
-                }
-            } while (true);
-
-             after(grammarAccess.getProgramAccess().getDaysAssignment_1_2()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Program__Group_1__2__Impl"
-
-
     // $ANTLR start "rule__Day__Group__0"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:451:1: rule__Day__Group__0 : rule__Day__Group__0__Impl rule__Day__Group__1 ;
+    // InternalProgram.g:532:1: rule__Day__Group__0 : rule__Day__Group__0__Impl rule__Day__Group__1 ;
     public final void rule__Day__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:455:1: ( rule__Day__Group__0__Impl rule__Day__Group__1 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:456:2: rule__Day__Group__0__Impl rule__Day__Group__1
+            // InternalProgram.g:536:1: ( rule__Day__Group__0__Impl rule__Day__Group__1 )
+            // InternalProgram.g:537:2: rule__Day__Group__0__Impl rule__Day__Group__1
             {
-            pushFollow(FOLLOW_rule__Day__Group__0__Impl_in_rule__Day__Group__0863);
+            pushFollow(FOLLOW_5);
             rule__Day__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Day__Group__1_in_rule__Day__Group__0866);
+            pushFollow(FOLLOW_2);
             rule__Day__Group__1();
 
             state._fsp--;
@@ -1210,21 +1674,31 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Day__Group__0__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:463:1: rule__Day__Group__0__Impl : ( '[' ) ;
+    // InternalProgram.g:544:1: rule__Day__Group__0__Impl : ( ( rule__Day__WeekDayAssignment_0 ) ) ;
     public final void rule__Day__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:467:1: ( ( '[' ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:468:1: ( '[' )
+            // InternalProgram.g:548:1: ( ( ( rule__Day__WeekDayAssignment_0 ) ) )
+            // InternalProgram.g:549:1: ( ( rule__Day__WeekDayAssignment_0 ) )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:468:1: ( '[' )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:469:1: '['
+            // InternalProgram.g:549:1: ( ( rule__Day__WeekDayAssignment_0 ) )
+            // InternalProgram.g:550:1: ( rule__Day__WeekDayAssignment_0 )
             {
-             before(grammarAccess.getDayAccess().getLeftSquareBracketKeyword_0()); 
-            match(input,13,FOLLOW_13_in_rule__Day__Group__0__Impl894); 
-             after(grammarAccess.getDayAccess().getLeftSquareBracketKeyword_0()); 
+             before(grammarAccess.getDayAccess().getWeekDayAssignment_0()); 
+            // InternalProgram.g:551:1: ( rule__Day__WeekDayAssignment_0 )
+            // InternalProgram.g:551:2: rule__Day__WeekDayAssignment_0
+            {
+            pushFollow(FOLLOW_2);
+            rule__Day__WeekDayAssignment_0();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getDayAccess().getWeekDayAssignment_0()); 
 
             }
 
@@ -1247,21 +1721,21 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Day__Group__1"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:482:1: rule__Day__Group__1 : rule__Day__Group__1__Impl rule__Day__Group__2 ;
+    // InternalProgram.g:561:1: rule__Day__Group__1 : rule__Day__Group__1__Impl rule__Day__Group__2 ;
     public final void rule__Day__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:486:1: ( rule__Day__Group__1__Impl rule__Day__Group__2 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:487:2: rule__Day__Group__1__Impl rule__Day__Group__2
+            // InternalProgram.g:565:1: ( rule__Day__Group__1__Impl rule__Day__Group__2 )
+            // InternalProgram.g:566:2: rule__Day__Group__1__Impl rule__Day__Group__2
             {
-            pushFollow(FOLLOW_rule__Day__Group__1__Impl_in_rule__Day__Group__1925);
+            pushFollow(FOLLOW_6);
             rule__Day__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Day__Group__2_in_rule__Day__Group__1928);
+            pushFollow(FOLLOW_2);
             rule__Day__Group__2();
 
             state._fsp--;
@@ -1285,21 +1759,21 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Day__Group__1__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:494:1: rule__Day__Group__1__Impl : ( 'name' ) ;
+    // InternalProgram.g:573:1: rule__Day__Group__1__Impl : ( ':' ) ;
     public final void rule__Day__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:498:1: ( ( 'name' ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:499:1: ( 'name' )
+            // InternalProgram.g:577:1: ( ( ':' ) )
+            // InternalProgram.g:578:1: ( ':' )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:499:1: ( 'name' )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:500:1: 'name'
+            // InternalProgram.g:578:1: ( ':' )
+            // InternalProgram.g:579:1: ':'
             {
-             before(grammarAccess.getDayAccess().getNameKeyword_1()); 
-            match(input,14,FOLLOW_14_in_rule__Day__Group__1__Impl956); 
-             after(grammarAccess.getDayAccess().getNameKeyword_1()); 
+             before(grammarAccess.getDayAccess().getColonKeyword_1()); 
+            match(input,41,FOLLOW_2); 
+             after(grammarAccess.getDayAccess().getColonKeyword_1()); 
 
             }
 
@@ -1322,22 +1796,17 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Day__Group__2"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:513:1: rule__Day__Group__2 : rule__Day__Group__2__Impl rule__Day__Group__3 ;
+    // InternalProgram.g:592:1: rule__Day__Group__2 : rule__Day__Group__2__Impl ;
     public final void rule__Day__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:517:1: ( rule__Day__Group__2__Impl rule__Day__Group__3 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:518:2: rule__Day__Group__2__Impl rule__Day__Group__3
+            // InternalProgram.g:596:1: ( rule__Day__Group__2__Impl )
+            // InternalProgram.g:597:2: rule__Day__Group__2__Impl
             {
-            pushFollow(FOLLOW_rule__Day__Group__2__Impl_in_rule__Day__Group__2987);
+            pushFollow(FOLLOW_2);
             rule__Day__Group__2__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__Day__Group__3_in_rule__Day__Group__2990);
-            rule__Day__Group__3();
 
             state._fsp--;
 
@@ -1360,31 +1829,42 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Day__Group__2__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:525:1: rule__Day__Group__2__Impl : ( ( rule__Day__NameAssignment_2 ) ) ;
+    // InternalProgram.g:603:1: rule__Day__Group__2__Impl : ( ( rule__Day__Group_2__0 )? ) ;
     public final void rule__Day__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:529:1: ( ( ( rule__Day__NameAssignment_2 ) ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:530:1: ( ( rule__Day__NameAssignment_2 ) )
+            // InternalProgram.g:607:1: ( ( ( rule__Day__Group_2__0 )? ) )
+            // InternalProgram.g:608:1: ( ( rule__Day__Group_2__0 )? )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:530:1: ( ( rule__Day__NameAssignment_2 ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:531:1: ( rule__Day__NameAssignment_2 )
+            // InternalProgram.g:608:1: ( ( rule__Day__Group_2__0 )? )
+            // InternalProgram.g:609:1: ( rule__Day__Group_2__0 )?
             {
-             before(grammarAccess.getDayAccess().getNameAssignment_2()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:532:1: ( rule__Day__NameAssignment_2 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:532:2: rule__Day__NameAssignment_2
-            {
-            pushFollow(FOLLOW_rule__Day__NameAssignment_2_in_rule__Day__Group__2__Impl1017);
-            rule__Day__NameAssignment_2();
+             before(grammarAccess.getDayAccess().getGroup_2()); 
+            // InternalProgram.g:610:1: ( rule__Day__Group_2__0 )?
+            int alt6=2;
+            int LA6_0 = input.LA(1);
 
-            state._fsp--;
+            if ( (LA6_0==42) ) {
+                alt6=1;
+            }
+            switch (alt6) {
+                case 1 :
+                    // InternalProgram.g:610:2: rule__Day__Group_2__0
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__Day__Group_2__0();
 
+                    state._fsp--;
+
+
+                    }
+                    break;
 
             }
 
-             after(grammarAccess.getDayAccess().getNameAssignment_2()); 
+             after(grammarAccess.getDayAccess().getGroup_2()); 
 
             }
 
@@ -1406,114 +1886,23 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Day__Group__2__Impl"
 
 
-    // $ANTLR start "rule__Day__Group__3"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:542:1: rule__Day__Group__3 : rule__Day__Group__3__Impl rule__Day__Group__4 ;
-    public final void rule__Day__Group__3() throws RecognitionException {
+    // $ANTLR start "rule__Day__Group_2__0"
+    // InternalProgram.g:626:1: rule__Day__Group_2__0 : rule__Day__Group_2__0__Impl rule__Day__Group_2__1 ;
+    public final void rule__Day__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:546:1: ( rule__Day__Group__3__Impl rule__Day__Group__4 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:547:2: rule__Day__Group__3__Impl rule__Day__Group__4
+            // InternalProgram.g:630:1: ( rule__Day__Group_2__0__Impl rule__Day__Group_2__1 )
+            // InternalProgram.g:631:2: rule__Day__Group_2__0__Impl rule__Day__Group_2__1
             {
-            pushFollow(FOLLOW_rule__Day__Group__3__Impl_in_rule__Day__Group__31047);
-            rule__Day__Group__3__Impl();
+            pushFollow(FOLLOW_6);
+            rule__Day__Group_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Day__Group__4_in_rule__Day__Group__31050);
-            rule__Day__Group__4();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Day__Group__3"
-
-
-    // $ANTLR start "rule__Day__Group__3__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:554:1: rule__Day__Group__3__Impl : ( ( rule__Day__Group_3__0 )? ) ;
-    public final void rule__Day__Group__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:558:1: ( ( ( rule__Day__Group_3__0 )? ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:559:1: ( ( rule__Day__Group_3__0 )? )
-            {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:559:1: ( ( rule__Day__Group_3__0 )? )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:560:1: ( rule__Day__Group_3__0 )?
-            {
-             before(grammarAccess.getDayAccess().getGroup_3()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:561:1: ( rule__Day__Group_3__0 )?
-            int alt5=2;
-            int LA5_0 = input.LA(1);
-
-            if ( (LA5_0==16) ) {
-                alt5=1;
-            }
-            switch (alt5) {
-                case 1 :
-                    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:561:2: rule__Day__Group_3__0
-                    {
-                    pushFollow(FOLLOW_rule__Day__Group_3__0_in_rule__Day__Group__3__Impl1077);
-                    rule__Day__Group_3__0();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getDayAccess().getGroup_3()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Day__Group__3__Impl"
-
-
-    // $ANTLR start "rule__Day__Group__4"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:571:1: rule__Day__Group__4 : rule__Day__Group__4__Impl ;
-    public final void rule__Day__Group__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:575:1: ( rule__Day__Group__4__Impl )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:576:2: rule__Day__Group__4__Impl
-            {
-            pushFollow(FOLLOW_rule__Day__Group__4__Impl_in_rule__Day__Group__41108);
-            rule__Day__Group__4__Impl();
+            pushFollow(FOLLOW_2);
+            rule__Day__Group_2__1();
 
             state._fsp--;
 
@@ -1532,25 +1921,35 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Day__Group__4"
+    // $ANTLR end "rule__Day__Group_2__0"
 
 
-    // $ANTLR start "rule__Day__Group__4__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:582:1: rule__Day__Group__4__Impl : ( ']' ) ;
-    public final void rule__Day__Group__4__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Day__Group_2__0__Impl"
+    // InternalProgram.g:638:1: rule__Day__Group_2__0__Impl : ( ( rule__Day__SessionsAssignment_2_0 ) ) ;
+    public final void rule__Day__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:586:1: ( ( ']' ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:587:1: ( ']' )
+            // InternalProgram.g:642:1: ( ( ( rule__Day__SessionsAssignment_2_0 ) ) )
+            // InternalProgram.g:643:1: ( ( rule__Day__SessionsAssignment_2_0 ) )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:587:1: ( ']' )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:588:1: ']'
+            // InternalProgram.g:643:1: ( ( rule__Day__SessionsAssignment_2_0 ) )
+            // InternalProgram.g:644:1: ( rule__Day__SessionsAssignment_2_0 )
             {
-             before(grammarAccess.getDayAccess().getRightSquareBracketKeyword_4()); 
-            match(input,15,FOLLOW_15_in_rule__Day__Group__4__Impl1136); 
-             after(grammarAccess.getDayAccess().getRightSquareBracketKeyword_4()); 
+             before(grammarAccess.getDayAccess().getSessionsAssignment_2_0()); 
+            // InternalProgram.g:645:1: ( rule__Day__SessionsAssignment_2_0 )
+            // InternalProgram.g:645:2: rule__Day__SessionsAssignment_2_0
+            {
+            pushFollow(FOLLOW_2);
+            rule__Day__SessionsAssignment_2_0();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getDayAccess().getSessionsAssignment_2_0()); 
 
             }
 
@@ -1569,26 +1968,21 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Day__Group__4__Impl"
+    // $ANTLR end "rule__Day__Group_2__0__Impl"
 
 
-    // $ANTLR start "rule__Day__Group_3__0"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:611:1: rule__Day__Group_3__0 : rule__Day__Group_3__0__Impl rule__Day__Group_3__1 ;
-    public final void rule__Day__Group_3__0() throws RecognitionException {
+    // $ANTLR start "rule__Day__Group_2__1"
+    // InternalProgram.g:655:1: rule__Day__Group_2__1 : rule__Day__Group_2__1__Impl ;
+    public final void rule__Day__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:615:1: ( rule__Day__Group_3__0__Impl rule__Day__Group_3__1 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:616:2: rule__Day__Group_3__0__Impl rule__Day__Group_3__1
+            // InternalProgram.g:659:1: ( rule__Day__Group_2__1__Impl )
+            // InternalProgram.g:660:2: rule__Day__Group_2__1__Impl
             {
-            pushFollow(FOLLOW_rule__Day__Group_3__0__Impl_in_rule__Day__Group_3__01177);
-            rule__Day__Group_3__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__Day__Group_3__1_in_rule__Day__Group_3__01180);
-            rule__Day__Group_3__1();
+            pushFollow(FOLLOW_2);
+            rule__Day__Group_2__1__Impl();
 
             state._fsp--;
 
@@ -1607,195 +2001,40 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Day__Group_3__0"
+    // $ANTLR end "rule__Day__Group_2__1"
 
 
-    // $ANTLR start "rule__Day__Group_3__0__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:623:1: rule__Day__Group_3__0__Impl : ( 'Sessions' ) ;
-    public final void rule__Day__Group_3__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:627:1: ( ( 'Sessions' ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:628:1: ( 'Sessions' )
-            {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:628:1: ( 'Sessions' )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:629:1: 'Sessions'
-            {
-             before(grammarAccess.getDayAccess().getSessionsKeyword_3_0()); 
-            match(input,16,FOLLOW_16_in_rule__Day__Group_3__0__Impl1208); 
-             after(grammarAccess.getDayAccess().getSessionsKeyword_3_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Day__Group_3__0__Impl"
-
-
-    // $ANTLR start "rule__Day__Group_3__1"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:642:1: rule__Day__Group_3__1 : rule__Day__Group_3__1__Impl rule__Day__Group_3__2 ;
-    public final void rule__Day__Group_3__1() throws RecognitionException {
+    // $ANTLR start "rule__Day__Group_2__1__Impl"
+    // InternalProgram.g:666:1: rule__Day__Group_2__1__Impl : ( ( rule__Day__SessionsAssignment_2_1 )* ) ;
+    public final void rule__Day__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:646:1: ( rule__Day__Group_3__1__Impl rule__Day__Group_3__2 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:647:2: rule__Day__Group_3__1__Impl rule__Day__Group_3__2
+            // InternalProgram.g:670:1: ( ( ( rule__Day__SessionsAssignment_2_1 )* ) )
+            // InternalProgram.g:671:1: ( ( rule__Day__SessionsAssignment_2_1 )* )
             {
-            pushFollow(FOLLOW_rule__Day__Group_3__1__Impl_in_rule__Day__Group_3__11239);
-            rule__Day__Group_3__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__Day__Group_3__2_in_rule__Day__Group_3__11242);
-            rule__Day__Group_3__2();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Day__Group_3__1"
-
-
-    // $ANTLR start "rule__Day__Group_3__1__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:654:1: rule__Day__Group_3__1__Impl : ( ( rule__Day__SessionsAssignment_3_1 ) ) ;
-    public final void rule__Day__Group_3__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:658:1: ( ( ( rule__Day__SessionsAssignment_3_1 ) ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:659:1: ( ( rule__Day__SessionsAssignment_3_1 ) )
+            // InternalProgram.g:671:1: ( ( rule__Day__SessionsAssignment_2_1 )* )
+            // InternalProgram.g:672:1: ( rule__Day__SessionsAssignment_2_1 )*
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:659:1: ( ( rule__Day__SessionsAssignment_3_1 ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:660:1: ( rule__Day__SessionsAssignment_3_1 )
-            {
-             before(grammarAccess.getDayAccess().getSessionsAssignment_3_1()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:661:1: ( rule__Day__SessionsAssignment_3_1 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:661:2: rule__Day__SessionsAssignment_3_1
-            {
-            pushFollow(FOLLOW_rule__Day__SessionsAssignment_3_1_in_rule__Day__Group_3__1__Impl1269);
-            rule__Day__SessionsAssignment_3_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getDayAccess().getSessionsAssignment_3_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Day__Group_3__1__Impl"
-
-
-    // $ANTLR start "rule__Day__Group_3__2"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:671:1: rule__Day__Group_3__2 : rule__Day__Group_3__2__Impl ;
-    public final void rule__Day__Group_3__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:675:1: ( rule__Day__Group_3__2__Impl )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:676:2: rule__Day__Group_3__2__Impl
-            {
-            pushFollow(FOLLOW_rule__Day__Group_3__2__Impl_in_rule__Day__Group_3__21299);
-            rule__Day__Group_3__2__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Day__Group_3__2"
-
-
-    // $ANTLR start "rule__Day__Group_3__2__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:682:1: rule__Day__Group_3__2__Impl : ( ( rule__Day__SessionsAssignment_3_2 )* ) ;
-    public final void rule__Day__Group_3__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:686:1: ( ( ( rule__Day__SessionsAssignment_3_2 )* ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:687:1: ( ( rule__Day__SessionsAssignment_3_2 )* )
-            {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:687:1: ( ( rule__Day__SessionsAssignment_3_2 )* )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:688:1: ( rule__Day__SessionsAssignment_3_2 )*
-            {
-             before(grammarAccess.getDayAccess().getSessionsAssignment_3_2()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:689:1: ( rule__Day__SessionsAssignment_3_2 )*
-            loop6:
+             before(grammarAccess.getDayAccess().getSessionsAssignment_2_1()); 
+            // InternalProgram.g:673:1: ( rule__Day__SessionsAssignment_2_1 )*
+            loop7:
             do {
-                int alt6=2;
-                int LA6_0 = input.LA(1);
+                int alt7=2;
+                int LA7_0 = input.LA(1);
 
-                if ( (LA6_0==13) ) {
-                    alt6=1;
+                if ( (LA7_0==42) ) {
+                    alt7=1;
                 }
 
 
-                switch (alt6) {
+                switch (alt7) {
             	case 1 :
-            	    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:689:2: rule__Day__SessionsAssignment_3_2
+            	    // InternalProgram.g:673:2: rule__Day__SessionsAssignment_2_1
             	    {
-            	    pushFollow(FOLLOW_rule__Day__SessionsAssignment_3_2_in_rule__Day__Group_3__2__Impl1326);
-            	    rule__Day__SessionsAssignment_3_2();
+            	    pushFollow(FOLLOW_7);
+            	    rule__Day__SessionsAssignment_2_1();
 
             	    state._fsp--;
 
@@ -1804,11 +2043,11 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop6;
+            	    break loop7;
                 }
             } while (true);
 
-             after(grammarAccess.getDayAccess().getSessionsAssignment_3_2()); 
+             after(grammarAccess.getDayAccess().getSessionsAssignment_2_1()); 
 
             }
 
@@ -1827,25 +2066,25 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Day__Group_3__2__Impl"
+    // $ANTLR end "rule__Day__Group_2__1__Impl"
 
 
     // $ANTLR start "rule__Session__Group__0"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:705:1: rule__Session__Group__0 : rule__Session__Group__0__Impl rule__Session__Group__1 ;
+    // InternalProgram.g:687:1: rule__Session__Group__0 : rule__Session__Group__0__Impl rule__Session__Group__1 ;
     public final void rule__Session__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:709:1: ( rule__Session__Group__0__Impl rule__Session__Group__1 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:710:2: rule__Session__Group__0__Impl rule__Session__Group__1
+            // InternalProgram.g:691:1: ( rule__Session__Group__0__Impl rule__Session__Group__1 )
+            // InternalProgram.g:692:2: rule__Session__Group__0__Impl rule__Session__Group__1
             {
-            pushFollow(FOLLOW_rule__Session__Group__0__Impl_in_rule__Session__Group__01363);
+            pushFollow(FOLLOW_5);
             rule__Session__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Session__Group__1_in_rule__Session__Group__01366);
+            pushFollow(FOLLOW_2);
             rule__Session__Group__1();
 
             state._fsp--;
@@ -1869,21 +2108,21 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__Group__0__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:717:1: rule__Session__Group__0__Impl : ( '[' ) ;
+    // InternalProgram.g:699:1: rule__Session__Group__0__Impl : ( 'Session' ) ;
     public final void rule__Session__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:721:1: ( ( '[' ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:722:1: ( '[' )
+            // InternalProgram.g:703:1: ( ( 'Session' ) )
+            // InternalProgram.g:704:1: ( 'Session' )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:722:1: ( '[' )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:723:1: '['
+            // InternalProgram.g:704:1: ( 'Session' )
+            // InternalProgram.g:705:1: 'Session'
             {
-             before(grammarAccess.getSessionAccess().getLeftSquareBracketKeyword_0()); 
-            match(input,13,FOLLOW_13_in_rule__Session__Group__0__Impl1394); 
-             after(grammarAccess.getSessionAccess().getLeftSquareBracketKeyword_0()); 
+             before(grammarAccess.getSessionAccess().getSessionKeyword_0()); 
+            match(input,42,FOLLOW_2); 
+             after(grammarAccess.getSessionAccess().getSessionKeyword_0()); 
 
             }
 
@@ -1906,21 +2145,21 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__Group__1"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:736:1: rule__Session__Group__1 : rule__Session__Group__1__Impl rule__Session__Group__2 ;
+    // InternalProgram.g:718:1: rule__Session__Group__1 : rule__Session__Group__1__Impl rule__Session__Group__2 ;
     public final void rule__Session__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:740:1: ( rule__Session__Group__1__Impl rule__Session__Group__2 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:741:2: rule__Session__Group__1__Impl rule__Session__Group__2
+            // InternalProgram.g:722:1: ( rule__Session__Group__1__Impl rule__Session__Group__2 )
+            // InternalProgram.g:723:2: rule__Session__Group__1__Impl rule__Session__Group__2
             {
-            pushFollow(FOLLOW_rule__Session__Group__1__Impl_in_rule__Session__Group__11425);
+            pushFollow(FOLLOW_8);
             rule__Session__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Session__Group__2_in_rule__Session__Group__11428);
+            pushFollow(FOLLOW_2);
             rule__Session__Group__2();
 
             state._fsp--;
@@ -1944,21 +2183,21 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__Group__1__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:748:1: rule__Session__Group__1__Impl : ( 'name' ) ;
+    // InternalProgram.g:730:1: rule__Session__Group__1__Impl : ( ':' ) ;
     public final void rule__Session__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:752:1: ( ( 'name' ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:753:1: ( 'name' )
+            // InternalProgram.g:734:1: ( ( ':' ) )
+            // InternalProgram.g:735:1: ( ':' )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:753:1: ( 'name' )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:754:1: 'name'
+            // InternalProgram.g:735:1: ( ':' )
+            // InternalProgram.g:736:1: ':'
             {
-             before(grammarAccess.getSessionAccess().getNameKeyword_1()); 
-            match(input,14,FOLLOW_14_in_rule__Session__Group__1__Impl1456); 
-             after(grammarAccess.getSessionAccess().getNameKeyword_1()); 
+             before(grammarAccess.getSessionAccess().getColonKeyword_1()); 
+            match(input,41,FOLLOW_2); 
+             after(grammarAccess.getSessionAccess().getColonKeyword_1()); 
 
             }
 
@@ -1981,21 +2220,21 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__Group__2"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:767:1: rule__Session__Group__2 : rule__Session__Group__2__Impl rule__Session__Group__3 ;
+    // InternalProgram.g:749:1: rule__Session__Group__2 : rule__Session__Group__2__Impl rule__Session__Group__3 ;
     public final void rule__Session__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:771:1: ( rule__Session__Group__2__Impl rule__Session__Group__3 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:772:2: rule__Session__Group__2__Impl rule__Session__Group__3
+            // InternalProgram.g:753:1: ( rule__Session__Group__2__Impl rule__Session__Group__3 )
+            // InternalProgram.g:754:2: rule__Session__Group__2__Impl rule__Session__Group__3
             {
-            pushFollow(FOLLOW_rule__Session__Group__2__Impl_in_rule__Session__Group__21487);
+            pushFollow(FOLLOW_9);
             rule__Session__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Session__Group__3_in_rule__Session__Group__21490);
+            pushFollow(FOLLOW_2);
             rule__Session__Group__3();
 
             state._fsp--;
@@ -2019,23 +2258,23 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__Group__2__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:779:1: rule__Session__Group__2__Impl : ( ( rule__Session__NameAssignment_2 ) ) ;
+    // InternalProgram.g:761:1: rule__Session__Group__2__Impl : ( ( rule__Session__NameAssignment_2 ) ) ;
     public final void rule__Session__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:783:1: ( ( ( rule__Session__NameAssignment_2 ) ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:784:1: ( ( rule__Session__NameAssignment_2 ) )
+            // InternalProgram.g:765:1: ( ( ( rule__Session__NameAssignment_2 ) ) )
+            // InternalProgram.g:766:1: ( ( rule__Session__NameAssignment_2 ) )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:784:1: ( ( rule__Session__NameAssignment_2 ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:785:1: ( rule__Session__NameAssignment_2 )
+            // InternalProgram.g:766:1: ( ( rule__Session__NameAssignment_2 ) )
+            // InternalProgram.g:767:1: ( rule__Session__NameAssignment_2 )
             {
              before(grammarAccess.getSessionAccess().getNameAssignment_2()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:786:1: ( rule__Session__NameAssignment_2 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:786:2: rule__Session__NameAssignment_2
+            // InternalProgram.g:768:1: ( rule__Session__NameAssignment_2 )
+            // InternalProgram.g:768:2: rule__Session__NameAssignment_2
             {
-            pushFollow(FOLLOW_rule__Session__NameAssignment_2_in_rule__Session__Group__2__Impl1517);
+            pushFollow(FOLLOW_2);
             rule__Session__NameAssignment_2();
 
             state._fsp--;
@@ -2066,21 +2305,21 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__Group__3"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:796:1: rule__Session__Group__3 : rule__Session__Group__3__Impl rule__Session__Group__4 ;
+    // InternalProgram.g:778:1: rule__Session__Group__3 : rule__Session__Group__3__Impl rule__Session__Group__4 ;
     public final void rule__Session__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:800:1: ( rule__Session__Group__3__Impl rule__Session__Group__4 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:801:2: rule__Session__Group__3__Impl rule__Session__Group__4
+            // InternalProgram.g:782:1: ( rule__Session__Group__3__Impl rule__Session__Group__4 )
+            // InternalProgram.g:783:2: rule__Session__Group__3__Impl rule__Session__Group__4
             {
-            pushFollow(FOLLOW_rule__Session__Group__3__Impl_in_rule__Session__Group__31547);
+            pushFollow(FOLLOW_8);
             rule__Session__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Session__Group__4_in_rule__Session__Group__31550);
+            pushFollow(FOLLOW_2);
             rule__Session__Group__4();
 
             state._fsp--;
@@ -2104,20 +2343,20 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__Group__3__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:808:1: rule__Session__Group__3__Impl : ( 'start' ) ;
+    // InternalProgram.g:790:1: rule__Session__Group__3__Impl : ( 'start' ) ;
     public final void rule__Session__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:812:1: ( ( 'start' ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:813:1: ( 'start' )
+            // InternalProgram.g:794:1: ( ( 'start' ) )
+            // InternalProgram.g:795:1: ( 'start' )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:813:1: ( 'start' )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:814:1: 'start'
+            // InternalProgram.g:795:1: ( 'start' )
+            // InternalProgram.g:796:1: 'start'
             {
              before(grammarAccess.getSessionAccess().getStartKeyword_3()); 
-            match(input,17,FOLLOW_17_in_rule__Session__Group__3__Impl1578); 
+            match(input,43,FOLLOW_2); 
              after(grammarAccess.getSessionAccess().getStartKeyword_3()); 
 
             }
@@ -2141,21 +2380,21 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__Group__4"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:827:1: rule__Session__Group__4 : rule__Session__Group__4__Impl rule__Session__Group__5 ;
+    // InternalProgram.g:809:1: rule__Session__Group__4 : rule__Session__Group__4__Impl rule__Session__Group__5 ;
     public final void rule__Session__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:831:1: ( rule__Session__Group__4__Impl rule__Session__Group__5 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:832:2: rule__Session__Group__4__Impl rule__Session__Group__5
+            // InternalProgram.g:813:1: ( rule__Session__Group__4__Impl rule__Session__Group__5 )
+            // InternalProgram.g:814:2: rule__Session__Group__4__Impl rule__Session__Group__5
             {
-            pushFollow(FOLLOW_rule__Session__Group__4__Impl_in_rule__Session__Group__41609);
+            pushFollow(FOLLOW_10);
             rule__Session__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Session__Group__5_in_rule__Session__Group__41612);
+            pushFollow(FOLLOW_2);
             rule__Session__Group__5();
 
             state._fsp--;
@@ -2179,23 +2418,23 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__Group__4__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:839:1: rule__Session__Group__4__Impl : ( ( rule__Session__StartAssignment_4 ) ) ;
+    // InternalProgram.g:821:1: rule__Session__Group__4__Impl : ( ( rule__Session__StartAssignment_4 ) ) ;
     public final void rule__Session__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:843:1: ( ( ( rule__Session__StartAssignment_4 ) ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:844:1: ( ( rule__Session__StartAssignment_4 ) )
+            // InternalProgram.g:825:1: ( ( ( rule__Session__StartAssignment_4 ) ) )
+            // InternalProgram.g:826:1: ( ( rule__Session__StartAssignment_4 ) )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:844:1: ( ( rule__Session__StartAssignment_4 ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:845:1: ( rule__Session__StartAssignment_4 )
+            // InternalProgram.g:826:1: ( ( rule__Session__StartAssignment_4 ) )
+            // InternalProgram.g:827:1: ( rule__Session__StartAssignment_4 )
             {
              before(grammarAccess.getSessionAccess().getStartAssignment_4()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:846:1: ( rule__Session__StartAssignment_4 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:846:2: rule__Session__StartAssignment_4
+            // InternalProgram.g:828:1: ( rule__Session__StartAssignment_4 )
+            // InternalProgram.g:828:2: rule__Session__StartAssignment_4
             {
-            pushFollow(FOLLOW_rule__Session__StartAssignment_4_in_rule__Session__Group__4__Impl1639);
+            pushFollow(FOLLOW_2);
             rule__Session__StartAssignment_4();
 
             state._fsp--;
@@ -2226,21 +2465,21 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__Group__5"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:856:1: rule__Session__Group__5 : rule__Session__Group__5__Impl rule__Session__Group__6 ;
+    // InternalProgram.g:838:1: rule__Session__Group__5 : rule__Session__Group__5__Impl rule__Session__Group__6 ;
     public final void rule__Session__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:860:1: ( rule__Session__Group__5__Impl rule__Session__Group__6 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:861:2: rule__Session__Group__5__Impl rule__Session__Group__6
+            // InternalProgram.g:842:1: ( rule__Session__Group__5__Impl rule__Session__Group__6 )
+            // InternalProgram.g:843:2: rule__Session__Group__5__Impl rule__Session__Group__6
             {
-            pushFollow(FOLLOW_rule__Session__Group__5__Impl_in_rule__Session__Group__51669);
+            pushFollow(FOLLOW_8);
             rule__Session__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Session__Group__6_in_rule__Session__Group__51672);
+            pushFollow(FOLLOW_2);
             rule__Session__Group__6();
 
             state._fsp--;
@@ -2264,20 +2503,20 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__Group__5__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:868:1: rule__Session__Group__5__Impl : ( 'end' ) ;
+    // InternalProgram.g:850:1: rule__Session__Group__5__Impl : ( 'end' ) ;
     public final void rule__Session__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:872:1: ( ( 'end' ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:873:1: ( 'end' )
+            // InternalProgram.g:854:1: ( ( 'end' ) )
+            // InternalProgram.g:855:1: ( 'end' )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:873:1: ( 'end' )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:874:1: 'end'
+            // InternalProgram.g:855:1: ( 'end' )
+            // InternalProgram.g:856:1: 'end'
             {
              before(grammarAccess.getSessionAccess().getEndKeyword_5()); 
-            match(input,18,FOLLOW_18_in_rule__Session__Group__5__Impl1700); 
+            match(input,44,FOLLOW_2); 
              after(grammarAccess.getSessionAccess().getEndKeyword_5()); 
 
             }
@@ -2301,21 +2540,21 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__Group__6"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:887:1: rule__Session__Group__6 : rule__Session__Group__6__Impl rule__Session__Group__7 ;
+    // InternalProgram.g:869:1: rule__Session__Group__6 : rule__Session__Group__6__Impl rule__Session__Group__7 ;
     public final void rule__Session__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:891:1: ( rule__Session__Group__6__Impl rule__Session__Group__7 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:892:2: rule__Session__Group__6__Impl rule__Session__Group__7
+            // InternalProgram.g:873:1: ( rule__Session__Group__6__Impl rule__Session__Group__7 )
+            // InternalProgram.g:874:2: rule__Session__Group__6__Impl rule__Session__Group__7
             {
-            pushFollow(FOLLOW_rule__Session__Group__6__Impl_in_rule__Session__Group__61731);
+            pushFollow(FOLLOW_11);
             rule__Session__Group__6__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Session__Group__7_in_rule__Session__Group__61734);
+            pushFollow(FOLLOW_2);
             rule__Session__Group__7();
 
             state._fsp--;
@@ -2339,23 +2578,23 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__Group__6__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:899:1: rule__Session__Group__6__Impl : ( ( rule__Session__EndAssignment_6 ) ) ;
+    // InternalProgram.g:881:1: rule__Session__Group__6__Impl : ( ( rule__Session__EndAssignment_6 ) ) ;
     public final void rule__Session__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:903:1: ( ( ( rule__Session__EndAssignment_6 ) ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:904:1: ( ( rule__Session__EndAssignment_6 ) )
+            // InternalProgram.g:885:1: ( ( ( rule__Session__EndAssignment_6 ) ) )
+            // InternalProgram.g:886:1: ( ( rule__Session__EndAssignment_6 ) )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:904:1: ( ( rule__Session__EndAssignment_6 ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:905:1: ( rule__Session__EndAssignment_6 )
+            // InternalProgram.g:886:1: ( ( rule__Session__EndAssignment_6 ) )
+            // InternalProgram.g:887:1: ( rule__Session__EndAssignment_6 )
             {
              before(grammarAccess.getSessionAccess().getEndAssignment_6()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:906:1: ( rule__Session__EndAssignment_6 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:906:2: rule__Session__EndAssignment_6
+            // InternalProgram.g:888:1: ( rule__Session__EndAssignment_6 )
+            // InternalProgram.g:888:2: rule__Session__EndAssignment_6
             {
-            pushFollow(FOLLOW_rule__Session__EndAssignment_6_in_rule__Session__Group__6__Impl1761);
+            pushFollow(FOLLOW_2);
             rule__Session__EndAssignment_6();
 
             state._fsp--;
@@ -2386,22 +2625,17 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__Group__7"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:916:1: rule__Session__Group__7 : rule__Session__Group__7__Impl rule__Session__Group__8 ;
+    // InternalProgram.g:898:1: rule__Session__Group__7 : rule__Session__Group__7__Impl ;
     public final void rule__Session__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:920:1: ( rule__Session__Group__7__Impl rule__Session__Group__8 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:921:2: rule__Session__Group__7__Impl rule__Session__Group__8
+            // InternalProgram.g:902:1: ( rule__Session__Group__7__Impl )
+            // InternalProgram.g:903:2: rule__Session__Group__7__Impl
             {
-            pushFollow(FOLLOW_rule__Session__Group__7__Impl_in_rule__Session__Group__71791);
+            pushFollow(FOLLOW_2);
             rule__Session__Group__7__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__Session__Group__8_in_rule__Session__Group__71794);
-            rule__Session__Group__8();
 
             state._fsp--;
 
@@ -2424,31 +2658,31 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__Group__7__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:928:1: rule__Session__Group__7__Impl : ( ( rule__Session__Group_7__0 )? ) ;
+    // InternalProgram.g:909:1: rule__Session__Group__7__Impl : ( ( rule__Session__Group_7__0 )? ) ;
     public final void rule__Session__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:932:1: ( ( ( rule__Session__Group_7__0 )? ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:933:1: ( ( rule__Session__Group_7__0 )? )
+            // InternalProgram.g:913:1: ( ( ( rule__Session__Group_7__0 )? ) )
+            // InternalProgram.g:914:1: ( ( rule__Session__Group_7__0 )? )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:933:1: ( ( rule__Session__Group_7__0 )? )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:934:1: ( rule__Session__Group_7__0 )?
+            // InternalProgram.g:914:1: ( ( rule__Session__Group_7__0 )? )
+            // InternalProgram.g:915:1: ( rule__Session__Group_7__0 )?
             {
              before(grammarAccess.getSessionAccess().getGroup_7()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:935:1: ( rule__Session__Group_7__0 )?
-            int alt7=2;
-            int LA7_0 = input.LA(1);
+            // InternalProgram.g:916:1: ( rule__Session__Group_7__0 )?
+            int alt8=2;
+            int LA8_0 = input.LA(1);
 
-            if ( (LA7_0==19) ) {
-                alt7=1;
+            if ( ((LA8_0>=11 && LA8_0<=19)) ) {
+                alt8=1;
             }
-            switch (alt7) {
+            switch (alt8) {
                 case 1 :
-                    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:935:2: rule__Session__Group_7__0
+                    // InternalProgram.g:916:2: rule__Session__Group_7__0
                     {
-                    pushFollow(FOLLOW_rule__Session__Group_7__0_in_rule__Session__Group__7__Impl1821);
+                    pushFollow(FOLLOW_2);
                     rule__Session__Group_7__0();
 
                     state._fsp--;
@@ -2481,92 +2715,22 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Session__Group__7__Impl"
 
 
-    // $ANTLR start "rule__Session__Group__8"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:945:1: rule__Session__Group__8 : rule__Session__Group__8__Impl ;
-    public final void rule__Session__Group__8() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:949:1: ( rule__Session__Group__8__Impl )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:950:2: rule__Session__Group__8__Impl
-            {
-            pushFollow(FOLLOW_rule__Session__Group__8__Impl_in_rule__Session__Group__81852);
-            rule__Session__Group__8__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Session__Group__8"
-
-
-    // $ANTLR start "rule__Session__Group__8__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:956:1: rule__Session__Group__8__Impl : ( ']' ) ;
-    public final void rule__Session__Group__8__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:960:1: ( ( ']' ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:961:1: ( ']' )
-            {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:961:1: ( ']' )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:962:1: ']'
-            {
-             before(grammarAccess.getSessionAccess().getRightSquareBracketKeyword_8()); 
-            match(input,15,FOLLOW_15_in_rule__Session__Group__8__Impl1880); 
-             after(grammarAccess.getSessionAccess().getRightSquareBracketKeyword_8()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Session__Group__8__Impl"
-
-
     // $ANTLR start "rule__Session__Group_7__0"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:993:1: rule__Session__Group_7__0 : rule__Session__Group_7__0__Impl rule__Session__Group_7__1 ;
+    // InternalProgram.g:942:1: rule__Session__Group_7__0 : rule__Session__Group_7__0__Impl rule__Session__Group_7__1 ;
     public final void rule__Session__Group_7__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:997:1: ( rule__Session__Group_7__0__Impl rule__Session__Group_7__1 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:998:2: rule__Session__Group_7__0__Impl rule__Session__Group_7__1
+            // InternalProgram.g:946:1: ( rule__Session__Group_7__0__Impl rule__Session__Group_7__1 )
+            // InternalProgram.g:947:2: rule__Session__Group_7__0__Impl rule__Session__Group_7__1
             {
-            pushFollow(FOLLOW_rule__Session__Group_7__0__Impl_in_rule__Session__Group_7__01929);
+            pushFollow(FOLLOW_11);
             rule__Session__Group_7__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Session__Group_7__1_in_rule__Session__Group_7__01932);
+            pushFollow(FOLLOW_2);
             rule__Session__Group_7__1();
 
             state._fsp--;
@@ -2590,21 +2754,31 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__Group_7__0__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1005:1: rule__Session__Group_7__0__Impl : ( 'Talks' ) ;
+    // InternalProgram.g:954:1: rule__Session__Group_7__0__Impl : ( ( rule__Session__TalksAssignment_7_0 ) ) ;
     public final void rule__Session__Group_7__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1009:1: ( ( 'Talks' ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1010:1: ( 'Talks' )
+            // InternalProgram.g:958:1: ( ( ( rule__Session__TalksAssignment_7_0 ) ) )
+            // InternalProgram.g:959:1: ( ( rule__Session__TalksAssignment_7_0 ) )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1010:1: ( 'Talks' )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1011:1: 'Talks'
+            // InternalProgram.g:959:1: ( ( rule__Session__TalksAssignment_7_0 ) )
+            // InternalProgram.g:960:1: ( rule__Session__TalksAssignment_7_0 )
             {
-             before(grammarAccess.getSessionAccess().getTalksKeyword_7_0()); 
-            match(input,19,FOLLOW_19_in_rule__Session__Group_7__0__Impl1960); 
-             after(grammarAccess.getSessionAccess().getTalksKeyword_7_0()); 
+             before(grammarAccess.getSessionAccess().getTalksAssignment_7_0()); 
+            // InternalProgram.g:961:1: ( rule__Session__TalksAssignment_7_0 )
+            // InternalProgram.g:961:2: rule__Session__TalksAssignment_7_0
+            {
+            pushFollow(FOLLOW_2);
+            rule__Session__TalksAssignment_7_0();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getSessionAccess().getTalksAssignment_7_0()); 
 
             }
 
@@ -2627,22 +2801,17 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__Group_7__1"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1024:1: rule__Session__Group_7__1 : rule__Session__Group_7__1__Impl rule__Session__Group_7__2 ;
+    // InternalProgram.g:971:1: rule__Session__Group_7__1 : rule__Session__Group_7__1__Impl ;
     public final void rule__Session__Group_7__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1028:1: ( rule__Session__Group_7__1__Impl rule__Session__Group_7__2 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1029:2: rule__Session__Group_7__1__Impl rule__Session__Group_7__2
+            // InternalProgram.g:975:1: ( rule__Session__Group_7__1__Impl )
+            // InternalProgram.g:976:2: rule__Session__Group_7__1__Impl
             {
-            pushFollow(FOLLOW_rule__Session__Group_7__1__Impl_in_rule__Session__Group_7__11991);
+            pushFollow(FOLLOW_2);
             rule__Session__Group_7__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__Session__Group_7__2_in_rule__Session__Group_7__11994);
-            rule__Session__Group_7__2();
 
             state._fsp--;
 
@@ -2665,29 +2834,47 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__Group_7__1__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1036:1: rule__Session__Group_7__1__Impl : ( ( rule__Session__TalksAssignment_7_1 ) ) ;
+    // InternalProgram.g:982:1: rule__Session__Group_7__1__Impl : ( ( rule__Session__TalksAssignment_7_1 )* ) ;
     public final void rule__Session__Group_7__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1040:1: ( ( ( rule__Session__TalksAssignment_7_1 ) ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1041:1: ( ( rule__Session__TalksAssignment_7_1 ) )
+            // InternalProgram.g:986:1: ( ( ( rule__Session__TalksAssignment_7_1 )* ) )
+            // InternalProgram.g:987:1: ( ( rule__Session__TalksAssignment_7_1 )* )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1041:1: ( ( rule__Session__TalksAssignment_7_1 ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1042:1: ( rule__Session__TalksAssignment_7_1 )
+            // InternalProgram.g:987:1: ( ( rule__Session__TalksAssignment_7_1 )* )
+            // InternalProgram.g:988:1: ( rule__Session__TalksAssignment_7_1 )*
             {
              before(grammarAccess.getSessionAccess().getTalksAssignment_7_1()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1043:1: ( rule__Session__TalksAssignment_7_1 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1043:2: rule__Session__TalksAssignment_7_1
-            {
-            pushFollow(FOLLOW_rule__Session__TalksAssignment_7_1_in_rule__Session__Group_7__1__Impl2021);
-            rule__Session__TalksAssignment_7_1();
+            // InternalProgram.g:989:1: ( rule__Session__TalksAssignment_7_1 )*
+            loop9:
+            do {
+                int alt9=2;
+                int LA9_0 = input.LA(1);
 
-            state._fsp--;
+                if ( ((LA9_0>=11 && LA9_0<=19)) ) {
+                    alt9=1;
+                }
 
 
-            }
+                switch (alt9) {
+            	case 1 :
+            	    // InternalProgram.g:989:2: rule__Session__TalksAssignment_7_1
+            	    {
+            	    pushFollow(FOLLOW_12);
+            	    rule__Session__TalksAssignment_7_1();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop9;
+                }
+            } while (true);
 
              after(grammarAccess.getSessionAccess().getTalksAssignment_7_1()); 
 
@@ -2711,120 +2898,22 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Session__Group_7__1__Impl"
 
 
-    // $ANTLR start "rule__Session__Group_7__2"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1053:1: rule__Session__Group_7__2 : rule__Session__Group_7__2__Impl ;
-    public final void rule__Session__Group_7__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1057:1: ( rule__Session__Group_7__2__Impl )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1058:2: rule__Session__Group_7__2__Impl
-            {
-            pushFollow(FOLLOW_rule__Session__Group_7__2__Impl_in_rule__Session__Group_7__22051);
-            rule__Session__Group_7__2__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Session__Group_7__2"
-
-
-    // $ANTLR start "rule__Session__Group_7__2__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1064:1: rule__Session__Group_7__2__Impl : ( ( rule__Session__TalksAssignment_7_2 )* ) ;
-    public final void rule__Session__Group_7__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1068:1: ( ( ( rule__Session__TalksAssignment_7_2 )* ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1069:1: ( ( rule__Session__TalksAssignment_7_2 )* )
-            {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1069:1: ( ( rule__Session__TalksAssignment_7_2 )* )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1070:1: ( rule__Session__TalksAssignment_7_2 )*
-            {
-             before(grammarAccess.getSessionAccess().getTalksAssignment_7_2()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1071:1: ( rule__Session__TalksAssignment_7_2 )*
-            loop8:
-            do {
-                int alt8=2;
-                int LA8_0 = input.LA(1);
-
-                if ( (LA8_0==13) ) {
-                    alt8=1;
-                }
-
-
-                switch (alt8) {
-            	case 1 :
-            	    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1071:2: rule__Session__TalksAssignment_7_2
-            	    {
-            	    pushFollow(FOLLOW_rule__Session__TalksAssignment_7_2_in_rule__Session__Group_7__2__Impl2078);
-            	    rule__Session__TalksAssignment_7_2();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop8;
-                }
-            } while (true);
-
-             after(grammarAccess.getSessionAccess().getTalksAssignment_7_2()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Session__Group_7__2__Impl"
-
-
     // $ANTLR start "rule__Talk__Group__0"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1087:1: rule__Talk__Group__0 : rule__Talk__Group__0__Impl rule__Talk__Group__1 ;
+    // InternalProgram.g:1003:1: rule__Talk__Group__0 : rule__Talk__Group__0__Impl rule__Talk__Group__1 ;
     public final void rule__Talk__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1091:1: ( rule__Talk__Group__0__Impl rule__Talk__Group__1 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1092:2: rule__Talk__Group__0__Impl rule__Talk__Group__1
+            // InternalProgram.g:1007:1: ( rule__Talk__Group__0__Impl rule__Talk__Group__1 )
+            // InternalProgram.g:1008:2: rule__Talk__Group__0__Impl rule__Talk__Group__1
             {
-            pushFollow(FOLLOW_rule__Talk__Group__0__Impl_in_rule__Talk__Group__02115);
+            pushFollow(FOLLOW_5);
             rule__Talk__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Talk__Group__1_in_rule__Talk__Group__02118);
+            pushFollow(FOLLOW_2);
             rule__Talk__Group__1();
 
             state._fsp--;
@@ -2848,21 +2937,31 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Talk__Group__0__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1099:1: rule__Talk__Group__0__Impl : ( '[' ) ;
+    // InternalProgram.g:1015:1: rule__Talk__Group__0__Impl : ( ( rule__Talk__TypeAssignment_0 ) ) ;
     public final void rule__Talk__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1103:1: ( ( '[' ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1104:1: ( '[' )
+            // InternalProgram.g:1019:1: ( ( ( rule__Talk__TypeAssignment_0 ) ) )
+            // InternalProgram.g:1020:1: ( ( rule__Talk__TypeAssignment_0 ) )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1104:1: ( '[' )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1105:1: '['
+            // InternalProgram.g:1020:1: ( ( rule__Talk__TypeAssignment_0 ) )
+            // InternalProgram.g:1021:1: ( rule__Talk__TypeAssignment_0 )
             {
-             before(grammarAccess.getTalkAccess().getLeftSquareBracketKeyword_0()); 
-            match(input,13,FOLLOW_13_in_rule__Talk__Group__0__Impl2146); 
-             after(grammarAccess.getTalkAccess().getLeftSquareBracketKeyword_0()); 
+             before(grammarAccess.getTalkAccess().getTypeAssignment_0()); 
+            // InternalProgram.g:1022:1: ( rule__Talk__TypeAssignment_0 )
+            // InternalProgram.g:1022:2: rule__Talk__TypeAssignment_0
+            {
+            pushFollow(FOLLOW_2);
+            rule__Talk__TypeAssignment_0();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getTalkAccess().getTypeAssignment_0()); 
 
             }
 
@@ -2885,21 +2984,21 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Talk__Group__1"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1118:1: rule__Talk__Group__1 : rule__Talk__Group__1__Impl rule__Talk__Group__2 ;
+    // InternalProgram.g:1032:1: rule__Talk__Group__1 : rule__Talk__Group__1__Impl rule__Talk__Group__2 ;
     public final void rule__Talk__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1122:1: ( rule__Talk__Group__1__Impl rule__Talk__Group__2 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1123:2: rule__Talk__Group__1__Impl rule__Talk__Group__2
+            // InternalProgram.g:1036:1: ( rule__Talk__Group__1__Impl rule__Talk__Group__2 )
+            // InternalProgram.g:1037:2: rule__Talk__Group__1__Impl rule__Talk__Group__2
             {
-            pushFollow(FOLLOW_rule__Talk__Group__1__Impl_in_rule__Talk__Group__12177);
+            pushFollow(FOLLOW_13);
             rule__Talk__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Talk__Group__2_in_rule__Talk__Group__12180);
+            pushFollow(FOLLOW_2);
             rule__Talk__Group__2();
 
             state._fsp--;
@@ -2923,21 +3022,21 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Talk__Group__1__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1130:1: rule__Talk__Group__1__Impl : ( 'title' ) ;
+    // InternalProgram.g:1044:1: rule__Talk__Group__1__Impl : ( ':' ) ;
     public final void rule__Talk__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1134:1: ( ( 'title' ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1135:1: ( 'title' )
+            // InternalProgram.g:1048:1: ( ( ':' ) )
+            // InternalProgram.g:1049:1: ( ':' )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1135:1: ( 'title' )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1136:1: 'title'
+            // InternalProgram.g:1049:1: ( ':' )
+            // InternalProgram.g:1050:1: ':'
             {
-             before(grammarAccess.getTalkAccess().getTitleKeyword_1()); 
-            match(input,20,FOLLOW_20_in_rule__Talk__Group__1__Impl2208); 
-             after(grammarAccess.getTalkAccess().getTitleKeyword_1()); 
+             before(grammarAccess.getTalkAccess().getColonKeyword_1()); 
+            match(input,41,FOLLOW_2); 
+             after(grammarAccess.getTalkAccess().getColonKeyword_1()); 
 
             }
 
@@ -2960,21 +3059,21 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Talk__Group__2"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1149:1: rule__Talk__Group__2 : rule__Talk__Group__2__Impl rule__Talk__Group__3 ;
+    // InternalProgram.g:1063:1: rule__Talk__Group__2 : rule__Talk__Group__2__Impl rule__Talk__Group__3 ;
     public final void rule__Talk__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1153:1: ( rule__Talk__Group__2__Impl rule__Talk__Group__3 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1154:2: rule__Talk__Group__2__Impl rule__Talk__Group__3
+            // InternalProgram.g:1067:1: ( rule__Talk__Group__2__Impl rule__Talk__Group__3 )
+            // InternalProgram.g:1068:2: rule__Talk__Group__2__Impl rule__Talk__Group__3
             {
-            pushFollow(FOLLOW_rule__Talk__Group__2__Impl_in_rule__Talk__Group__22239);
+            pushFollow(FOLLOW_13);
             rule__Talk__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Talk__Group__3_in_rule__Talk__Group__22242);
+            pushFollow(FOLLOW_2);
             rule__Talk__Group__3();
 
             state._fsp--;
@@ -2998,31 +3097,42 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Talk__Group__2__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1161:1: rule__Talk__Group__2__Impl : ( ( rule__Talk__TilteAssignment_2 ) ) ;
+    // InternalProgram.g:1075:1: rule__Talk__Group__2__Impl : ( ( rule__Talk__Group_2__0 )? ) ;
     public final void rule__Talk__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1165:1: ( ( ( rule__Talk__TilteAssignment_2 ) ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1166:1: ( ( rule__Talk__TilteAssignment_2 ) )
+            // InternalProgram.g:1079:1: ( ( ( rule__Talk__Group_2__0 )? ) )
+            // InternalProgram.g:1080:1: ( ( rule__Talk__Group_2__0 )? )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1166:1: ( ( rule__Talk__TilteAssignment_2 ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1167:1: ( rule__Talk__TilteAssignment_2 )
+            // InternalProgram.g:1080:1: ( ( rule__Talk__Group_2__0 )? )
+            // InternalProgram.g:1081:1: ( rule__Talk__Group_2__0 )?
             {
-             before(grammarAccess.getTalkAccess().getTilteAssignment_2()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1168:1: ( rule__Talk__TilteAssignment_2 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1168:2: rule__Talk__TilteAssignment_2
-            {
-            pushFollow(FOLLOW_rule__Talk__TilteAssignment_2_in_rule__Talk__Group__2__Impl2269);
-            rule__Talk__TilteAssignment_2();
+             before(grammarAccess.getTalkAccess().getGroup_2()); 
+            // InternalProgram.g:1082:1: ( rule__Talk__Group_2__0 )?
+            int alt10=2;
+            int LA10_0 = input.LA(1);
 
-            state._fsp--;
+            if ( (LA10_0==RULE_STRING) ) {
+                alt10=1;
+            }
+            switch (alt10) {
+                case 1 :
+                    // InternalProgram.g:1082:2: rule__Talk__Group_2__0
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__Talk__Group_2__0();
 
+                    state._fsp--;
+
+
+                    }
+                    break;
 
             }
 
-             after(grammarAccess.getTalkAccess().getTilteAssignment_2()); 
+             after(grammarAccess.getTalkAccess().getGroup_2()); 
 
             }
 
@@ -3045,21 +3155,21 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Talk__Group__3"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1178:1: rule__Talk__Group__3 : rule__Talk__Group__3__Impl rule__Talk__Group__4 ;
+    // InternalProgram.g:1092:1: rule__Talk__Group__3 : rule__Talk__Group__3__Impl rule__Talk__Group__4 ;
     public final void rule__Talk__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1182:1: ( rule__Talk__Group__3__Impl rule__Talk__Group__4 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1183:2: rule__Talk__Group__3__Impl rule__Talk__Group__4
+            // InternalProgram.g:1096:1: ( rule__Talk__Group__3__Impl rule__Talk__Group__4 )
+            // InternalProgram.g:1097:2: rule__Talk__Group__3__Impl rule__Talk__Group__4
             {
-            pushFollow(FOLLOW_rule__Talk__Group__3__Impl_in_rule__Talk__Group__32299);
+            pushFollow(FOLLOW_14);
             rule__Talk__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Talk__Group__4_in_rule__Talk__Group__32302);
+            pushFollow(FOLLOW_2);
             rule__Talk__Group__4();
 
             state._fsp--;
@@ -3083,21 +3193,31 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Talk__Group__3__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1190:1: rule__Talk__Group__3__Impl : ( 'room' ) ;
+    // InternalProgram.g:1104:1: rule__Talk__Group__3__Impl : ( ( rule__Talk__RoomAssignment_3 ) ) ;
     public final void rule__Talk__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1194:1: ( ( 'room' ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1195:1: ( 'room' )
+            // InternalProgram.g:1108:1: ( ( ( rule__Talk__RoomAssignment_3 ) ) )
+            // InternalProgram.g:1109:1: ( ( rule__Talk__RoomAssignment_3 ) )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1195:1: ( 'room' )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1196:1: 'room'
+            // InternalProgram.g:1109:1: ( ( rule__Talk__RoomAssignment_3 ) )
+            // InternalProgram.g:1110:1: ( rule__Talk__RoomAssignment_3 )
             {
-             before(grammarAccess.getTalkAccess().getRoomKeyword_3()); 
-            match(input,21,FOLLOW_21_in_rule__Talk__Group__3__Impl2330); 
-             after(grammarAccess.getTalkAccess().getRoomKeyword_3()); 
+             before(grammarAccess.getTalkAccess().getRoomAssignment_3()); 
+            // InternalProgram.g:1111:1: ( rule__Talk__RoomAssignment_3 )
+            // InternalProgram.g:1111:2: rule__Talk__RoomAssignment_3
+            {
+            pushFollow(FOLLOW_2);
+            rule__Talk__RoomAssignment_3();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getTalkAccess().getRoomAssignment_3()); 
 
             }
 
@@ -3120,22 +3240,17 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Talk__Group__4"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1209:1: rule__Talk__Group__4 : rule__Talk__Group__4__Impl rule__Talk__Group__5 ;
+    // InternalProgram.g:1121:1: rule__Talk__Group__4 : rule__Talk__Group__4__Impl ;
     public final void rule__Talk__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1213:1: ( rule__Talk__Group__4__Impl rule__Talk__Group__5 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1214:2: rule__Talk__Group__4__Impl rule__Talk__Group__5
+            // InternalProgram.g:1125:1: ( rule__Talk__Group__4__Impl )
+            // InternalProgram.g:1126:2: rule__Talk__Group__4__Impl
             {
-            pushFollow(FOLLOW_rule__Talk__Group__4__Impl_in_rule__Talk__Group__42361);
+            pushFollow(FOLLOW_2);
             rule__Talk__Group__4__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__Talk__Group__5_in_rule__Talk__Group__42364);
-            rule__Talk__Group__5();
 
             state._fsp--;
 
@@ -3158,31 +3273,42 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Talk__Group__4__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1221:1: rule__Talk__Group__4__Impl : ( ( rule__Talk__RoomAssignment_4 ) ) ;
+    // InternalProgram.g:1132:1: rule__Talk__Group__4__Impl : ( ( rule__Talk__Group_4__0 )? ) ;
     public final void rule__Talk__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1225:1: ( ( ( rule__Talk__RoomAssignment_4 ) ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1226:1: ( ( rule__Talk__RoomAssignment_4 ) )
+            // InternalProgram.g:1136:1: ( ( ( rule__Talk__Group_4__0 )? ) )
+            // InternalProgram.g:1137:1: ( ( rule__Talk__Group_4__0 )? )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1226:1: ( ( rule__Talk__RoomAssignment_4 ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1227:1: ( rule__Talk__RoomAssignment_4 )
+            // InternalProgram.g:1137:1: ( ( rule__Talk__Group_4__0 )? )
+            // InternalProgram.g:1138:1: ( rule__Talk__Group_4__0 )?
             {
-             before(grammarAccess.getTalkAccess().getRoomAssignment_4()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1228:1: ( rule__Talk__RoomAssignment_4 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1228:2: rule__Talk__RoomAssignment_4
-            {
-            pushFollow(FOLLOW_rule__Talk__RoomAssignment_4_in_rule__Talk__Group__4__Impl2391);
-            rule__Talk__RoomAssignment_4();
+             before(grammarAccess.getTalkAccess().getGroup_4()); 
+            // InternalProgram.g:1139:1: ( rule__Talk__Group_4__0 )?
+            int alt11=2;
+            int LA11_0 = input.LA(1);
 
-            state._fsp--;
+            if ( (LA11_0==46) ) {
+                alt11=1;
+            }
+            switch (alt11) {
+                case 1 :
+                    // InternalProgram.g:1139:2: rule__Talk__Group_4__0
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__Talk__Group_4__0();
 
+                    state._fsp--;
+
+
+                    }
+                    break;
 
             }
 
-             after(grammarAccess.getTalkAccess().getRoomAssignment_4()); 
+             after(grammarAccess.getTalkAccess().getGroup_4()); 
 
             }
 
@@ -3204,23 +3330,23 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Talk__Group__4__Impl"
 
 
-    // $ANTLR start "rule__Talk__Group__5"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1238:1: rule__Talk__Group__5 : rule__Talk__Group__5__Impl rule__Talk__Group__6 ;
-    public final void rule__Talk__Group__5() throws RecognitionException {
+    // $ANTLR start "rule__Talk__Group_2__0"
+    // InternalProgram.g:1159:1: rule__Talk__Group_2__0 : rule__Talk__Group_2__0__Impl rule__Talk__Group_2__1 ;
+    public final void rule__Talk__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1242:1: ( rule__Talk__Group__5__Impl rule__Talk__Group__6 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1243:2: rule__Talk__Group__5__Impl rule__Talk__Group__6
+            // InternalProgram.g:1163:1: ( rule__Talk__Group_2__0__Impl rule__Talk__Group_2__1 )
+            // InternalProgram.g:1164:2: rule__Talk__Group_2__0__Impl rule__Talk__Group_2__1
             {
-            pushFollow(FOLLOW_rule__Talk__Group__5__Impl_in_rule__Talk__Group__52421);
-            rule__Talk__Group__5__Impl();
+            pushFollow(FOLLOW_15);
+            rule__Talk__Group_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Talk__Group__6_in_rule__Talk__Group__52424);
-            rule__Talk__Group__6();
+            pushFollow(FOLLOW_2);
+            rule__Talk__Group_2__1();
 
             state._fsp--;
 
@@ -3239,36 +3365,266 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Talk__Group__5"
+    // $ANTLR end "rule__Talk__Group_2__0"
 
 
-    // $ANTLR start "rule__Talk__Group__5__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1250:1: rule__Talk__Group__5__Impl : ( ( rule__Talk__Group_5__0 )? ) ;
-    public final void rule__Talk__Group__5__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Talk__Group_2__0__Impl"
+    // InternalProgram.g:1171:1: rule__Talk__Group_2__0__Impl : ( ( rule__Talk__TilteAssignment_2_0 ) ) ;
+    public final void rule__Talk__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1254:1: ( ( ( rule__Talk__Group_5__0 )? ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1255:1: ( ( rule__Talk__Group_5__0 )? )
+            // InternalProgram.g:1175:1: ( ( ( rule__Talk__TilteAssignment_2_0 ) ) )
+            // InternalProgram.g:1176:1: ( ( rule__Talk__TilteAssignment_2_0 ) )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1255:1: ( ( rule__Talk__Group_5__0 )? )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1256:1: ( rule__Talk__Group_5__0 )?
+            // InternalProgram.g:1176:1: ( ( rule__Talk__TilteAssignment_2_0 ) )
+            // InternalProgram.g:1177:1: ( rule__Talk__TilteAssignment_2_0 )
             {
-             before(grammarAccess.getTalkAccess().getGroup_5()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1257:1: ( rule__Talk__Group_5__0 )?
-            int alt9=2;
-            int LA9_0 = input.LA(1);
+             before(grammarAccess.getTalkAccess().getTilteAssignment_2_0()); 
+            // InternalProgram.g:1178:1: ( rule__Talk__TilteAssignment_2_0 )
+            // InternalProgram.g:1178:2: rule__Talk__TilteAssignment_2_0
+            {
+            pushFollow(FOLLOW_2);
+            rule__Talk__TilteAssignment_2_0();
 
-            if ( (LA9_0==22) ) {
-                alt9=1;
+            state._fsp--;
+
+
             }
-            switch (alt9) {
+
+             after(grammarAccess.getTalkAccess().getTilteAssignment_2_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Talk__Group_2__0__Impl"
+
+
+    // $ANTLR start "rule__Talk__Group_2__1"
+    // InternalProgram.g:1188:1: rule__Talk__Group_2__1 : rule__Talk__Group_2__1__Impl ;
+    public final void rule__Talk__Group_2__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalProgram.g:1192:1: ( rule__Talk__Group_2__1__Impl )
+            // InternalProgram.g:1193:2: rule__Talk__Group_2__1__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__Talk__Group_2__1__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Talk__Group_2__1"
+
+
+    // $ANTLR start "rule__Talk__Group_2__1__Impl"
+    // InternalProgram.g:1199:1: rule__Talk__Group_2__1__Impl : ( ',' ) ;
+    public final void rule__Talk__Group_2__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalProgram.g:1203:1: ( ( ',' ) )
+            // InternalProgram.g:1204:1: ( ',' )
+            {
+            // InternalProgram.g:1204:1: ( ',' )
+            // InternalProgram.g:1205:1: ','
+            {
+             before(grammarAccess.getTalkAccess().getCommaKeyword_2_1()); 
+            match(input,45,FOLLOW_2); 
+             after(grammarAccess.getTalkAccess().getCommaKeyword_2_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Talk__Group_2__1__Impl"
+
+
+    // $ANTLR start "rule__Talk__Group_4__0"
+    // InternalProgram.g:1222:1: rule__Talk__Group_4__0 : rule__Talk__Group_4__0__Impl rule__Talk__Group_4__1 ;
+    public final void rule__Talk__Group_4__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalProgram.g:1226:1: ( rule__Talk__Group_4__0__Impl rule__Talk__Group_4__1 )
+            // InternalProgram.g:1227:2: rule__Talk__Group_4__0__Impl rule__Talk__Group_4__1
+            {
+            pushFollow(FOLLOW_16);
+            rule__Talk__Group_4__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__Talk__Group_4__1();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Talk__Group_4__0"
+
+
+    // $ANTLR start "rule__Talk__Group_4__0__Impl"
+    // InternalProgram.g:1234:1: rule__Talk__Group_4__0__Impl : ( '(' ) ;
+    public final void rule__Talk__Group_4__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalProgram.g:1238:1: ( ( '(' ) )
+            // InternalProgram.g:1239:1: ( '(' )
+            {
+            // InternalProgram.g:1239:1: ( '(' )
+            // InternalProgram.g:1240:1: '('
+            {
+             before(grammarAccess.getTalkAccess().getLeftParenthesisKeyword_4_0()); 
+            match(input,46,FOLLOW_2); 
+             after(grammarAccess.getTalkAccess().getLeftParenthesisKeyword_4_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Talk__Group_4__0__Impl"
+
+
+    // $ANTLR start "rule__Talk__Group_4__1"
+    // InternalProgram.g:1253:1: rule__Talk__Group_4__1 : rule__Talk__Group_4__1__Impl rule__Talk__Group_4__2 ;
+    public final void rule__Talk__Group_4__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalProgram.g:1257:1: ( rule__Talk__Group_4__1__Impl rule__Talk__Group_4__2 )
+            // InternalProgram.g:1258:2: rule__Talk__Group_4__1__Impl rule__Talk__Group_4__2
+            {
+            pushFollow(FOLLOW_16);
+            rule__Talk__Group_4__1__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__Talk__Group_4__2();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Talk__Group_4__1"
+
+
+    // $ANTLR start "rule__Talk__Group_4__1__Impl"
+    // InternalProgram.g:1265:1: rule__Talk__Group_4__1__Impl : ( ( rule__Talk__Group_4_1__0 )? ) ;
+    public final void rule__Talk__Group_4__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalProgram.g:1269:1: ( ( ( rule__Talk__Group_4_1__0 )? ) )
+            // InternalProgram.g:1270:1: ( ( rule__Talk__Group_4_1__0 )? )
+            {
+            // InternalProgram.g:1270:1: ( ( rule__Talk__Group_4_1__0 )? )
+            // InternalProgram.g:1271:1: ( rule__Talk__Group_4_1__0 )?
+            {
+             before(grammarAccess.getTalkAccess().getGroup_4_1()); 
+            // InternalProgram.g:1272:1: ( rule__Talk__Group_4_1__0 )?
+            int alt12=2;
+            int LA12_0 = input.LA(1);
+
+            if ( (LA12_0==RULE_STRING) ) {
+                alt12=1;
+            }
+            switch (alt12) {
                 case 1 :
-                    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1257:2: rule__Talk__Group_5__0
+                    // InternalProgram.g:1272:2: rule__Talk__Group_4_1__0
                     {
-                    pushFollow(FOLLOW_rule__Talk__Group_5__0_in_rule__Talk__Group__5__Impl2451);
-                    rule__Talk__Group_5__0();
+                    pushFollow(FOLLOW_2);
+                    rule__Talk__Group_4_1__0();
 
                     state._fsp--;
 
@@ -3278,7 +3634,7 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
             }
 
-             after(grammarAccess.getTalkAccess().getGroup_5()); 
+             after(grammarAccess.getTalkAccess().getGroup_4_1()); 
 
             }
 
@@ -3297,21 +3653,21 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Talk__Group__5__Impl"
+    // $ANTLR end "rule__Talk__Group_4__1__Impl"
 
 
-    // $ANTLR start "rule__Talk__Group__6"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1267:1: rule__Talk__Group__6 : rule__Talk__Group__6__Impl ;
-    public final void rule__Talk__Group__6() throws RecognitionException {
+    // $ANTLR start "rule__Talk__Group_4__2"
+    // InternalProgram.g:1282:1: rule__Talk__Group_4__2 : rule__Talk__Group_4__2__Impl ;
+    public final void rule__Talk__Group_4__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1271:1: ( rule__Talk__Group__6__Impl )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1272:2: rule__Talk__Group__6__Impl
+            // InternalProgram.g:1286:1: ( rule__Talk__Group_4__2__Impl )
+            // InternalProgram.g:1287:2: rule__Talk__Group_4__2__Impl
             {
-            pushFollow(FOLLOW_rule__Talk__Group__6__Impl_in_rule__Talk__Group__62482);
-            rule__Talk__Group__6__Impl();
+            pushFollow(FOLLOW_2);
+            rule__Talk__Group_4__2__Impl();
 
             state._fsp--;
 
@@ -3330,25 +3686,25 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Talk__Group__6"
+    // $ANTLR end "rule__Talk__Group_4__2"
 
 
-    // $ANTLR start "rule__Talk__Group__6__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1278:1: rule__Talk__Group__6__Impl : ( ']' ) ;
-    public final void rule__Talk__Group__6__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Talk__Group_4__2__Impl"
+    // InternalProgram.g:1293:1: rule__Talk__Group_4__2__Impl : ( ')' ) ;
+    public final void rule__Talk__Group_4__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1282:1: ( ( ']' ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1283:1: ( ']' )
+            // InternalProgram.g:1297:1: ( ( ')' ) )
+            // InternalProgram.g:1298:1: ( ')' )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1283:1: ( ']' )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1284:1: ']'
+            // InternalProgram.g:1298:1: ( ')' )
+            // InternalProgram.g:1299:1: ')'
             {
-             before(grammarAccess.getTalkAccess().getRightSquareBracketKeyword_6()); 
-            match(input,15,FOLLOW_15_in_rule__Talk__Group__6__Impl2510); 
-             after(grammarAccess.getTalkAccess().getRightSquareBracketKeyword_6()); 
+             before(grammarAccess.getTalkAccess().getRightParenthesisKeyword_4_2()); 
+            match(input,47,FOLLOW_2); 
+             after(grammarAccess.getTalkAccess().getRightParenthesisKeyword_4_2()); 
 
             }
 
@@ -3367,101 +3723,26 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Talk__Group__6__Impl"
+    // $ANTLR end "rule__Talk__Group_4__2__Impl"
 
 
-    // $ANTLR start "rule__Talk__Group_5__0"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1311:1: rule__Talk__Group_5__0 : rule__Talk__Group_5__0__Impl rule__Talk__Group_5__1 ;
-    public final void rule__Talk__Group_5__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1315:1: ( rule__Talk__Group_5__0__Impl rule__Talk__Group_5__1 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1316:2: rule__Talk__Group_5__0__Impl rule__Talk__Group_5__1
-            {
-            pushFollow(FOLLOW_rule__Talk__Group_5__0__Impl_in_rule__Talk__Group_5__02555);
-            rule__Talk__Group_5__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__Talk__Group_5__1_in_rule__Talk__Group_5__02558);
-            rule__Talk__Group_5__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Talk__Group_5__0"
-
-
-    // $ANTLR start "rule__Talk__Group_5__0__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1323:1: rule__Talk__Group_5__0__Impl : ( 'speakers' ) ;
-    public final void rule__Talk__Group_5__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Talk__Group_4_1__0"
+    // InternalProgram.g:1318:1: rule__Talk__Group_4_1__0 : rule__Talk__Group_4_1__0__Impl rule__Talk__Group_4_1__1 ;
+    public final void rule__Talk__Group_4_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1327:1: ( ( 'speakers' ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1328:1: ( 'speakers' )
+            // InternalProgram.g:1322:1: ( rule__Talk__Group_4_1__0__Impl rule__Talk__Group_4_1__1 )
+            // InternalProgram.g:1323:2: rule__Talk__Group_4_1__0__Impl rule__Talk__Group_4_1__1
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1328:1: ( 'speakers' )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1329:1: 'speakers'
-            {
-             before(grammarAccess.getTalkAccess().getSpeakersKeyword_5_0()); 
-            match(input,22,FOLLOW_22_in_rule__Talk__Group_5__0__Impl2586); 
-             after(grammarAccess.getTalkAccess().getSpeakersKeyword_5_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Talk__Group_5__0__Impl"
-
-
-    // $ANTLR start "rule__Talk__Group_5__1"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1342:1: rule__Talk__Group_5__1 : rule__Talk__Group_5__1__Impl rule__Talk__Group_5__2 ;
-    public final void rule__Talk__Group_5__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1346:1: ( rule__Talk__Group_5__1__Impl rule__Talk__Group_5__2 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1347:2: rule__Talk__Group_5__1__Impl rule__Talk__Group_5__2
-            {
-            pushFollow(FOLLOW_rule__Talk__Group_5__1__Impl_in_rule__Talk__Group_5__12617);
-            rule__Talk__Group_5__1__Impl();
+            pushFollow(FOLLOW_15);
+            rule__Talk__Group_4_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Talk__Group_5__2_in_rule__Talk__Group_5__12620);
-            rule__Talk__Group_5__2();
+            pushFollow(FOLLOW_2);
+            rule__Talk__Group_4_1__1();
 
             state._fsp--;
 
@@ -3480,35 +3761,35 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Talk__Group_5__1"
+    // $ANTLR end "rule__Talk__Group_4_1__0"
 
 
-    // $ANTLR start "rule__Talk__Group_5__1__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1354:1: rule__Talk__Group_5__1__Impl : ( ( rule__Talk__SpeakersAssignment_5_1 ) ) ;
-    public final void rule__Talk__Group_5__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Talk__Group_4_1__0__Impl"
+    // InternalProgram.g:1330:1: rule__Talk__Group_4_1__0__Impl : ( ( rule__Talk__SpeakersAssignment_4_1_0 ) ) ;
+    public final void rule__Talk__Group_4_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1358:1: ( ( ( rule__Talk__SpeakersAssignment_5_1 ) ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1359:1: ( ( rule__Talk__SpeakersAssignment_5_1 ) )
+            // InternalProgram.g:1334:1: ( ( ( rule__Talk__SpeakersAssignment_4_1_0 ) ) )
+            // InternalProgram.g:1335:1: ( ( rule__Talk__SpeakersAssignment_4_1_0 ) )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1359:1: ( ( rule__Talk__SpeakersAssignment_5_1 ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1360:1: ( rule__Talk__SpeakersAssignment_5_1 )
+            // InternalProgram.g:1335:1: ( ( rule__Talk__SpeakersAssignment_4_1_0 ) )
+            // InternalProgram.g:1336:1: ( rule__Talk__SpeakersAssignment_4_1_0 )
             {
-             before(grammarAccess.getTalkAccess().getSpeakersAssignment_5_1()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1361:1: ( rule__Talk__SpeakersAssignment_5_1 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1361:2: rule__Talk__SpeakersAssignment_5_1
+             before(grammarAccess.getTalkAccess().getSpeakersAssignment_4_1_0()); 
+            // InternalProgram.g:1337:1: ( rule__Talk__SpeakersAssignment_4_1_0 )
+            // InternalProgram.g:1337:2: rule__Talk__SpeakersAssignment_4_1_0
             {
-            pushFollow(FOLLOW_rule__Talk__SpeakersAssignment_5_1_in_rule__Talk__Group_5__1__Impl2647);
-            rule__Talk__SpeakersAssignment_5_1();
+            pushFollow(FOLLOW_2);
+            rule__Talk__SpeakersAssignment_4_1_0();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getTalkAccess().getSpeakersAssignment_5_1()); 
+             after(grammarAccess.getTalkAccess().getSpeakersAssignment_4_1_0()); 
 
             }
 
@@ -3527,21 +3808,21 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Talk__Group_5__1__Impl"
+    // $ANTLR end "rule__Talk__Group_4_1__0__Impl"
 
 
-    // $ANTLR start "rule__Talk__Group_5__2"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1371:1: rule__Talk__Group_5__2 : rule__Talk__Group_5__2__Impl ;
-    public final void rule__Talk__Group_5__2() throws RecognitionException {
+    // $ANTLR start "rule__Talk__Group_4_1__1"
+    // InternalProgram.g:1347:1: rule__Talk__Group_4_1__1 : rule__Talk__Group_4_1__1__Impl ;
+    public final void rule__Talk__Group_4_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1375:1: ( rule__Talk__Group_5__2__Impl )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1376:2: rule__Talk__Group_5__2__Impl
+            // InternalProgram.g:1351:1: ( rule__Talk__Group_4_1__1__Impl )
+            // InternalProgram.g:1352:2: rule__Talk__Group_4_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__Talk__Group_5__2__Impl_in_rule__Talk__Group_5__22677);
-            rule__Talk__Group_5__2__Impl();
+            pushFollow(FOLLOW_2);
+            rule__Talk__Group_4_1__1__Impl();
 
             state._fsp--;
 
@@ -3560,40 +3841,40 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Talk__Group_5__2"
+    // $ANTLR end "rule__Talk__Group_4_1__1"
 
 
-    // $ANTLR start "rule__Talk__Group_5__2__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1382:1: rule__Talk__Group_5__2__Impl : ( ( rule__Talk__Group_5_2__0 )* ) ;
-    public final void rule__Talk__Group_5__2__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Talk__Group_4_1__1__Impl"
+    // InternalProgram.g:1358:1: rule__Talk__Group_4_1__1__Impl : ( ( rule__Talk__Group_4_1_1__0 )* ) ;
+    public final void rule__Talk__Group_4_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1386:1: ( ( ( rule__Talk__Group_5_2__0 )* ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1387:1: ( ( rule__Talk__Group_5_2__0 )* )
+            // InternalProgram.g:1362:1: ( ( ( rule__Talk__Group_4_1_1__0 )* ) )
+            // InternalProgram.g:1363:1: ( ( rule__Talk__Group_4_1_1__0 )* )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1387:1: ( ( rule__Talk__Group_5_2__0 )* )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1388:1: ( rule__Talk__Group_5_2__0 )*
+            // InternalProgram.g:1363:1: ( ( rule__Talk__Group_4_1_1__0 )* )
+            // InternalProgram.g:1364:1: ( rule__Talk__Group_4_1_1__0 )*
             {
-             before(grammarAccess.getTalkAccess().getGroup_5_2()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1389:1: ( rule__Talk__Group_5_2__0 )*
-            loop10:
+             before(grammarAccess.getTalkAccess().getGroup_4_1_1()); 
+            // InternalProgram.g:1365:1: ( rule__Talk__Group_4_1_1__0 )*
+            loop13:
             do {
-                int alt10=2;
-                int LA10_0 = input.LA(1);
+                int alt13=2;
+                int LA13_0 = input.LA(1);
 
-                if ( (LA10_0==23) ) {
-                    alt10=1;
+                if ( (LA13_0==45) ) {
+                    alt13=1;
                 }
 
 
-                switch (alt10) {
+                switch (alt13) {
             	case 1 :
-            	    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1389:2: rule__Talk__Group_5_2__0
+            	    // InternalProgram.g:1365:2: rule__Talk__Group_4_1_1__0
             	    {
-            	    pushFollow(FOLLOW_rule__Talk__Group_5_2__0_in_rule__Talk__Group_5__2__Impl2704);
-            	    rule__Talk__Group_5_2__0();
+            	    pushFollow(FOLLOW_17);
+            	    rule__Talk__Group_4_1_1__0();
 
             	    state._fsp--;
 
@@ -3602,11 +3883,11 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop10;
+            	    break loop13;
                 }
             } while (true);
 
-             after(grammarAccess.getTalkAccess().getGroup_5_2()); 
+             after(grammarAccess.getTalkAccess().getGroup_4_1_1()); 
 
             }
 
@@ -3625,96 +3906,26 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Talk__Group_5__2__Impl"
+    // $ANTLR end "rule__Talk__Group_4_1__1__Impl"
 
 
-    // $ANTLR start "rule__Talk__Group_5_2__0"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1405:1: rule__Talk__Group_5_2__0 : rule__Talk__Group_5_2__0__Impl rule__Talk__Group_5_2__1 ;
-    public final void rule__Talk__Group_5_2__0() throws RecognitionException {
+    // $ANTLR start "rule__Talk__Group_4_1_1__0"
+    // InternalProgram.g:1379:1: rule__Talk__Group_4_1_1__0 : rule__Talk__Group_4_1_1__0__Impl rule__Talk__Group_4_1_1__1 ;
+    public final void rule__Talk__Group_4_1_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1409:1: ( rule__Talk__Group_5_2__0__Impl rule__Talk__Group_5_2__1 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1410:2: rule__Talk__Group_5_2__0__Impl rule__Talk__Group_5_2__1
+            // InternalProgram.g:1383:1: ( rule__Talk__Group_4_1_1__0__Impl rule__Talk__Group_4_1_1__1 )
+            // InternalProgram.g:1384:2: rule__Talk__Group_4_1_1__0__Impl rule__Talk__Group_4_1_1__1
             {
-            pushFollow(FOLLOW_rule__Talk__Group_5_2__0__Impl_in_rule__Talk__Group_5_2__02741);
-            rule__Talk__Group_5_2__0__Impl();
+            pushFollow(FOLLOW_8);
+            rule__Talk__Group_4_1_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Talk__Group_5_2__1_in_rule__Talk__Group_5_2__02744);
-            rule__Talk__Group_5_2__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Talk__Group_5_2__0"
-
-
-    // $ANTLR start "rule__Talk__Group_5_2__0__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1417:1: rule__Talk__Group_5_2__0__Impl : ( ',' ) ;
-    public final void rule__Talk__Group_5_2__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1421:1: ( ( ',' ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1422:1: ( ',' )
-            {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1422:1: ( ',' )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1423:1: ','
-            {
-             before(grammarAccess.getTalkAccess().getCommaKeyword_5_2_0()); 
-            match(input,23,FOLLOW_23_in_rule__Talk__Group_5_2__0__Impl2772); 
-             after(grammarAccess.getTalkAccess().getCommaKeyword_5_2_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Talk__Group_5_2__0__Impl"
-
-
-    // $ANTLR start "rule__Talk__Group_5_2__1"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1436:1: rule__Talk__Group_5_2__1 : rule__Talk__Group_5_2__1__Impl ;
-    public final void rule__Talk__Group_5_2__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1440:1: ( rule__Talk__Group_5_2__1__Impl )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1441:2: rule__Talk__Group_5_2__1__Impl
-            {
-            pushFollow(FOLLOW_rule__Talk__Group_5_2__1__Impl_in_rule__Talk__Group_5_2__12803);
-            rule__Talk__Group_5_2__1__Impl();
+            pushFollow(FOLLOW_2);
+            rule__Talk__Group_4_1_1__1();
 
             state._fsp--;
 
@@ -3733,35 +3944,25 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Talk__Group_5_2__1"
+    // $ANTLR end "rule__Talk__Group_4_1_1__0"
 
 
-    // $ANTLR start "rule__Talk__Group_5_2__1__Impl"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1447:1: rule__Talk__Group_5_2__1__Impl : ( ( rule__Talk__SpeakersAssignment_5_2_1 ) ) ;
-    public final void rule__Talk__Group_5_2__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Talk__Group_4_1_1__0__Impl"
+    // InternalProgram.g:1391:1: rule__Talk__Group_4_1_1__0__Impl : ( ',' ) ;
+    public final void rule__Talk__Group_4_1_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1451:1: ( ( ( rule__Talk__SpeakersAssignment_5_2_1 ) ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1452:1: ( ( rule__Talk__SpeakersAssignment_5_2_1 ) )
+            // InternalProgram.g:1395:1: ( ( ',' ) )
+            // InternalProgram.g:1396:1: ( ',' )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1452:1: ( ( rule__Talk__SpeakersAssignment_5_2_1 ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1453:1: ( rule__Talk__SpeakersAssignment_5_2_1 )
+            // InternalProgram.g:1396:1: ( ',' )
+            // InternalProgram.g:1397:1: ','
             {
-             before(grammarAccess.getTalkAccess().getSpeakersAssignment_5_2_1()); 
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1454:1: ( rule__Talk__SpeakersAssignment_5_2_1 )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1454:2: rule__Talk__SpeakersAssignment_5_2_1
-            {
-            pushFollow(FOLLOW_rule__Talk__SpeakersAssignment_5_2_1_in_rule__Talk__Group_5_2__1__Impl2830);
-            rule__Talk__SpeakersAssignment_5_2_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getTalkAccess().getSpeakersAssignment_5_2_1()); 
+             before(grammarAccess.getTalkAccess().getCommaKeyword_4_1_1_0()); 
+            match(input,45,FOLLOW_2); 
+             after(grammarAccess.getTalkAccess().getCommaKeyword_4_1_1_0()); 
 
             }
 
@@ -3780,29 +3981,68 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Talk__Group_5_2__1__Impl"
+    // $ANTLR end "rule__Talk__Group_4_1_1__0__Impl"
 
 
-    // $ANTLR start "rule__Program__RoomsAssignment_0_1"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1469:1: rule__Program__RoomsAssignment_0_1 : ( ruleRoom ) ;
-    public final void rule__Program__RoomsAssignment_0_1() throws RecognitionException {
+    // $ANTLR start "rule__Talk__Group_4_1_1__1"
+    // InternalProgram.g:1410:1: rule__Talk__Group_4_1_1__1 : rule__Talk__Group_4_1_1__1__Impl ;
+    public final void rule__Talk__Group_4_1_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1473:1: ( ( ruleRoom ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1474:1: ( ruleRoom )
+            // InternalProgram.g:1414:1: ( rule__Talk__Group_4_1_1__1__Impl )
+            // InternalProgram.g:1415:2: rule__Talk__Group_4_1_1__1__Impl
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1474:1: ( ruleRoom )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1475:1: ruleRoom
-            {
-             before(grammarAccess.getProgramAccess().getRoomsRoomParserRuleCall_0_1_0()); 
-            pushFollow(FOLLOW_ruleRoom_in_rule__Program__RoomsAssignment_0_12869);
-            ruleRoom();
+            pushFollow(FOLLOW_2);
+            rule__Talk__Group_4_1_1__1__Impl();
 
             state._fsp--;
 
-             after(grammarAccess.getProgramAccess().getRoomsRoomParserRuleCall_0_1_0()); 
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Talk__Group_4_1_1__1"
+
+
+    // $ANTLR start "rule__Talk__Group_4_1_1__1__Impl"
+    // InternalProgram.g:1421:1: rule__Talk__Group_4_1_1__1__Impl : ( ( rule__Talk__SpeakersAssignment_4_1_1_1 ) ) ;
+    public final void rule__Talk__Group_4_1_1__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalProgram.g:1425:1: ( ( ( rule__Talk__SpeakersAssignment_4_1_1_1 ) ) )
+            // InternalProgram.g:1426:1: ( ( rule__Talk__SpeakersAssignment_4_1_1_1 ) )
+            {
+            // InternalProgram.g:1426:1: ( ( rule__Talk__SpeakersAssignment_4_1_1_1 ) )
+            // InternalProgram.g:1427:1: ( rule__Talk__SpeakersAssignment_4_1_1_1 )
+            {
+             before(grammarAccess.getTalkAccess().getSpeakersAssignment_4_1_1_1()); 
+            // InternalProgram.g:1428:1: ( rule__Talk__SpeakersAssignment_4_1_1_1 )
+            // InternalProgram.g:1428:2: rule__Talk__SpeakersAssignment_4_1_1_1
+            {
+            pushFollow(FOLLOW_2);
+            rule__Talk__SpeakersAssignment_4_1_1_1();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getTalkAccess().getSpeakersAssignment_4_1_1_1()); 
 
             }
 
@@ -3821,70 +4061,29 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Program__RoomsAssignment_0_1"
+    // $ANTLR end "rule__Talk__Group_4_1_1__1__Impl"
 
 
-    // $ANTLR start "rule__Program__RoomsAssignment_0_2"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1484:1: rule__Program__RoomsAssignment_0_2 : ( ruleRoom ) ;
-    public final void rule__Program__RoomsAssignment_0_2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1488:1: ( ( ruleRoom ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1489:1: ( ruleRoom )
-            {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1489:1: ( ruleRoom )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1490:1: ruleRoom
-            {
-             before(grammarAccess.getProgramAccess().getRoomsRoomParserRuleCall_0_2_0()); 
-            pushFollow(FOLLOW_ruleRoom_in_rule__Program__RoomsAssignment_0_22900);
-            ruleRoom();
-
-            state._fsp--;
-
-             after(grammarAccess.getProgramAccess().getRoomsRoomParserRuleCall_0_2_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Program__RoomsAssignment_0_2"
-
-
-    // $ANTLR start "rule__Program__DaysAssignment_1_1"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1499:1: rule__Program__DaysAssignment_1_1 : ( ruleDay ) ;
-    public final void rule__Program__DaysAssignment_1_1() throws RecognitionException {
+    // $ANTLR start "rule__Program__DaysAssignment_0"
+    // InternalProgram.g:1443:1: rule__Program__DaysAssignment_0 : ( ruleDay ) ;
+    public final void rule__Program__DaysAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1503:1: ( ( ruleDay ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1504:1: ( ruleDay )
+            // InternalProgram.g:1447:1: ( ( ruleDay ) )
+            // InternalProgram.g:1448:1: ( ruleDay )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1504:1: ( ruleDay )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1505:1: ruleDay
+            // InternalProgram.g:1448:1: ( ruleDay )
+            // InternalProgram.g:1449:1: ruleDay
             {
-             before(grammarAccess.getProgramAccess().getDaysDayParserRuleCall_1_1_0()); 
-            pushFollow(FOLLOW_ruleDay_in_rule__Program__DaysAssignment_1_12931);
+             before(grammarAccess.getProgramAccess().getDaysDayParserRuleCall_0_0()); 
+            pushFollow(FOLLOW_2);
             ruleDay();
 
             state._fsp--;
 
-             after(grammarAccess.getProgramAccess().getDaysDayParserRuleCall_1_1_0()); 
+             after(grammarAccess.getProgramAccess().getDaysDayParserRuleCall_0_0()); 
 
             }
 
@@ -3903,29 +4102,29 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Program__DaysAssignment_1_1"
+    // $ANTLR end "rule__Program__DaysAssignment_0"
 
 
-    // $ANTLR start "rule__Program__DaysAssignment_1_2"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1514:1: rule__Program__DaysAssignment_1_2 : ( ruleDay ) ;
-    public final void rule__Program__DaysAssignment_1_2() throws RecognitionException {
+    // $ANTLR start "rule__Program__DaysAssignment_1"
+    // InternalProgram.g:1458:1: rule__Program__DaysAssignment_1 : ( ruleDay ) ;
+    public final void rule__Program__DaysAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1518:1: ( ( ruleDay ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1519:1: ( ruleDay )
+            // InternalProgram.g:1462:1: ( ( ruleDay ) )
+            // InternalProgram.g:1463:1: ( ruleDay )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1519:1: ( ruleDay )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1520:1: ruleDay
+            // InternalProgram.g:1463:1: ( ruleDay )
+            // InternalProgram.g:1464:1: ruleDay
             {
-             before(grammarAccess.getProgramAccess().getDaysDayParserRuleCall_1_2_0()); 
-            pushFollow(FOLLOW_ruleDay_in_rule__Program__DaysAssignment_1_22962);
+             before(grammarAccess.getProgramAccess().getDaysDayParserRuleCall_1_0()); 
+            pushFollow(FOLLOW_2);
             ruleDay();
 
             state._fsp--;
 
-             after(grammarAccess.getProgramAccess().getDaysDayParserRuleCall_1_2_0()); 
+             after(grammarAccess.getProgramAccess().getDaysDayParserRuleCall_1_0()); 
 
             }
 
@@ -3944,25 +4143,29 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Program__DaysAssignment_1_2"
+    // $ANTLR end "rule__Program__DaysAssignment_1"
 
 
-    // $ANTLR start "rule__Room__NameAssignment"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1529:1: rule__Room__NameAssignment : ( RULE_STRING ) ;
-    public final void rule__Room__NameAssignment() throws RecognitionException {
+    // $ANTLR start "rule__Day__WeekDayAssignment_0"
+    // InternalProgram.g:1473:1: rule__Day__WeekDayAssignment_0 : ( ruleWeekDay ) ;
+    public final void rule__Day__WeekDayAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1533:1: ( ( RULE_STRING ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1534:1: ( RULE_STRING )
+            // InternalProgram.g:1477:1: ( ( ruleWeekDay ) )
+            // InternalProgram.g:1478:1: ( ruleWeekDay )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1534:1: ( RULE_STRING )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1535:1: RULE_STRING
+            // InternalProgram.g:1478:1: ( ruleWeekDay )
+            // InternalProgram.g:1479:1: ruleWeekDay
             {
-             before(grammarAccess.getRoomAccess().getNameSTRINGTerminalRuleCall_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Room__NameAssignment2993); 
-             after(grammarAccess.getRoomAccess().getNameSTRINGTerminalRuleCall_0()); 
+             before(grammarAccess.getDayAccess().getWeekDayWeekDayEnumRuleCall_0_0()); 
+            pushFollow(FOLLOW_2);
+            ruleWeekDay();
+
+            state._fsp--;
+
+             after(grammarAccess.getDayAccess().getWeekDayWeekDayEnumRuleCall_0_0()); 
 
             }
 
@@ -3981,66 +4184,29 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Room__NameAssignment"
+    // $ANTLR end "rule__Day__WeekDayAssignment_0"
 
 
-    // $ANTLR start "rule__Day__NameAssignment_2"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1544:1: rule__Day__NameAssignment_2 : ( RULE_STRING ) ;
-    public final void rule__Day__NameAssignment_2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1548:1: ( ( RULE_STRING ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1549:1: ( RULE_STRING )
-            {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1549:1: ( RULE_STRING )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1550:1: RULE_STRING
-            {
-             before(grammarAccess.getDayAccess().getNameSTRINGTerminalRuleCall_2_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Day__NameAssignment_23024); 
-             after(grammarAccess.getDayAccess().getNameSTRINGTerminalRuleCall_2_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Day__NameAssignment_2"
-
-
-    // $ANTLR start "rule__Day__SessionsAssignment_3_1"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1559:1: rule__Day__SessionsAssignment_3_1 : ( ruleSession ) ;
-    public final void rule__Day__SessionsAssignment_3_1() throws RecognitionException {
+    // $ANTLR start "rule__Day__SessionsAssignment_2_0"
+    // InternalProgram.g:1488:1: rule__Day__SessionsAssignment_2_0 : ( ruleSession ) ;
+    public final void rule__Day__SessionsAssignment_2_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1563:1: ( ( ruleSession ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1564:1: ( ruleSession )
+            // InternalProgram.g:1492:1: ( ( ruleSession ) )
+            // InternalProgram.g:1493:1: ( ruleSession )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1564:1: ( ruleSession )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1565:1: ruleSession
+            // InternalProgram.g:1493:1: ( ruleSession )
+            // InternalProgram.g:1494:1: ruleSession
             {
-             before(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_3_1_0()); 
-            pushFollow(FOLLOW_ruleSession_in_rule__Day__SessionsAssignment_3_13055);
+             before(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_2_0_0()); 
+            pushFollow(FOLLOW_2);
             ruleSession();
 
             state._fsp--;
 
-             after(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_3_1_0()); 
+             after(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_2_0_0()); 
 
             }
 
@@ -4059,29 +4225,29 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Day__SessionsAssignment_3_1"
+    // $ANTLR end "rule__Day__SessionsAssignment_2_0"
 
 
-    // $ANTLR start "rule__Day__SessionsAssignment_3_2"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1574:1: rule__Day__SessionsAssignment_3_2 : ( ruleSession ) ;
-    public final void rule__Day__SessionsAssignment_3_2() throws RecognitionException {
+    // $ANTLR start "rule__Day__SessionsAssignment_2_1"
+    // InternalProgram.g:1503:1: rule__Day__SessionsAssignment_2_1 : ( ruleSession ) ;
+    public final void rule__Day__SessionsAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1578:1: ( ( ruleSession ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1579:1: ( ruleSession )
+            // InternalProgram.g:1507:1: ( ( ruleSession ) )
+            // InternalProgram.g:1508:1: ( ruleSession )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1579:1: ( ruleSession )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1580:1: ruleSession
+            // InternalProgram.g:1508:1: ( ruleSession )
+            // InternalProgram.g:1509:1: ruleSession
             {
-             before(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_3_2_0()); 
-            pushFollow(FOLLOW_ruleSession_in_rule__Day__SessionsAssignment_3_23086);
+             before(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_2_1_0()); 
+            pushFollow(FOLLOW_2);
             ruleSession();
 
             state._fsp--;
 
-             after(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_3_2_0()); 
+             after(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_2_1_0()); 
 
             }
 
@@ -4100,24 +4266,24 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Day__SessionsAssignment_3_2"
+    // $ANTLR end "rule__Day__SessionsAssignment_2_1"
 
 
     // $ANTLR start "rule__Session__NameAssignment_2"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1589:1: rule__Session__NameAssignment_2 : ( RULE_STRING ) ;
+    // InternalProgram.g:1518:1: rule__Session__NameAssignment_2 : ( RULE_STRING ) ;
     public final void rule__Session__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1593:1: ( ( RULE_STRING ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1594:1: ( RULE_STRING )
+            // InternalProgram.g:1522:1: ( ( RULE_STRING ) )
+            // InternalProgram.g:1523:1: ( RULE_STRING )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1594:1: ( RULE_STRING )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1595:1: RULE_STRING
+            // InternalProgram.g:1523:1: ( RULE_STRING )
+            // InternalProgram.g:1524:1: RULE_STRING
             {
              before(grammarAccess.getSessionAccess().getNameSTRINGTerminalRuleCall_2_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Session__NameAssignment_23117); 
+            match(input,RULE_STRING,FOLLOW_2); 
              after(grammarAccess.getSessionAccess().getNameSTRINGTerminalRuleCall_2_0()); 
 
             }
@@ -4141,20 +4307,20 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__StartAssignment_4"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1604:1: rule__Session__StartAssignment_4 : ( RULE_STRING ) ;
+    // InternalProgram.g:1533:1: rule__Session__StartAssignment_4 : ( RULE_STRING ) ;
     public final void rule__Session__StartAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1608:1: ( ( RULE_STRING ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1609:1: ( RULE_STRING )
+            // InternalProgram.g:1537:1: ( ( RULE_STRING ) )
+            // InternalProgram.g:1538:1: ( RULE_STRING )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1609:1: ( RULE_STRING )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1610:1: RULE_STRING
+            // InternalProgram.g:1538:1: ( RULE_STRING )
+            // InternalProgram.g:1539:1: RULE_STRING
             {
              before(grammarAccess.getSessionAccess().getStartSTRINGTerminalRuleCall_4_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Session__StartAssignment_43148); 
+            match(input,RULE_STRING,FOLLOW_2); 
              after(grammarAccess.getSessionAccess().getStartSTRINGTerminalRuleCall_4_0()); 
 
             }
@@ -4178,20 +4344,20 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Session__EndAssignment_6"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1619:1: rule__Session__EndAssignment_6 : ( RULE_STRING ) ;
+    // InternalProgram.g:1548:1: rule__Session__EndAssignment_6 : ( RULE_STRING ) ;
     public final void rule__Session__EndAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1623:1: ( ( RULE_STRING ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1624:1: ( RULE_STRING )
+            // InternalProgram.g:1552:1: ( ( RULE_STRING ) )
+            // InternalProgram.g:1553:1: ( RULE_STRING )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1624:1: ( RULE_STRING )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1625:1: RULE_STRING
+            // InternalProgram.g:1553:1: ( RULE_STRING )
+            // InternalProgram.g:1554:1: RULE_STRING
             {
              before(grammarAccess.getSessionAccess().getEndSTRINGTerminalRuleCall_6_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Session__EndAssignment_63179); 
+            match(input,RULE_STRING,FOLLOW_2); 
              after(grammarAccess.getSessionAccess().getEndSTRINGTerminalRuleCall_6_0()); 
 
             }
@@ -4214,21 +4380,62 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Session__EndAssignment_6"
 
 
+    // $ANTLR start "rule__Session__TalksAssignment_7_0"
+    // InternalProgram.g:1563:1: rule__Session__TalksAssignment_7_0 : ( ruleTalk ) ;
+    public final void rule__Session__TalksAssignment_7_0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalProgram.g:1567:1: ( ( ruleTalk ) )
+            // InternalProgram.g:1568:1: ( ruleTalk )
+            {
+            // InternalProgram.g:1568:1: ( ruleTalk )
+            // InternalProgram.g:1569:1: ruleTalk
+            {
+             before(grammarAccess.getSessionAccess().getTalksTalkParserRuleCall_7_0_0()); 
+            pushFollow(FOLLOW_2);
+            ruleTalk();
+
+            state._fsp--;
+
+             after(grammarAccess.getSessionAccess().getTalksTalkParserRuleCall_7_0_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Session__TalksAssignment_7_0"
+
+
     // $ANTLR start "rule__Session__TalksAssignment_7_1"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1634:1: rule__Session__TalksAssignment_7_1 : ( ruleTalk ) ;
+    // InternalProgram.g:1578:1: rule__Session__TalksAssignment_7_1 : ( ruleTalk ) ;
     public final void rule__Session__TalksAssignment_7_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1638:1: ( ( ruleTalk ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1639:1: ( ruleTalk )
+            // InternalProgram.g:1582:1: ( ( ruleTalk ) )
+            // InternalProgram.g:1583:1: ( ruleTalk )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1639:1: ( ruleTalk )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1640:1: ruleTalk
+            // InternalProgram.g:1583:1: ( ruleTalk )
+            // InternalProgram.g:1584:1: ruleTalk
             {
              before(grammarAccess.getSessionAccess().getTalksTalkParserRuleCall_7_1_0()); 
-            pushFollow(FOLLOW_ruleTalk_in_rule__Session__TalksAssignment_7_13210);
+            pushFollow(FOLLOW_2);
             ruleTalk();
 
             state._fsp--;
@@ -4255,26 +4462,26 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Session__TalksAssignment_7_1"
 
 
-    // $ANTLR start "rule__Session__TalksAssignment_7_2"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1649:1: rule__Session__TalksAssignment_7_2 : ( ruleTalk ) ;
-    public final void rule__Session__TalksAssignment_7_2() throws RecognitionException {
+    // $ANTLR start "rule__Talk__TypeAssignment_0"
+    // InternalProgram.g:1593:1: rule__Talk__TypeAssignment_0 : ( ruleTalkType ) ;
+    public final void rule__Talk__TypeAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1653:1: ( ( ruleTalk ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1654:1: ( ruleTalk )
+            // InternalProgram.g:1597:1: ( ( ruleTalkType ) )
+            // InternalProgram.g:1598:1: ( ruleTalkType )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1654:1: ( ruleTalk )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1655:1: ruleTalk
+            // InternalProgram.g:1598:1: ( ruleTalkType )
+            // InternalProgram.g:1599:1: ruleTalkType
             {
-             before(grammarAccess.getSessionAccess().getTalksTalkParserRuleCall_7_2_0()); 
-            pushFollow(FOLLOW_ruleTalk_in_rule__Session__TalksAssignment_7_23241);
-            ruleTalk();
+             before(grammarAccess.getTalkAccess().getTypeTalkTypeEnumRuleCall_0_0()); 
+            pushFollow(FOLLOW_2);
+            ruleTalkType();
 
             state._fsp--;
 
-             after(grammarAccess.getSessionAccess().getTalksTalkParserRuleCall_7_2_0()); 
+             after(grammarAccess.getTalkAccess().getTypeTalkTypeEnumRuleCall_0_0()); 
 
             }
 
@@ -4293,25 +4500,25 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Session__TalksAssignment_7_2"
+    // $ANTLR end "rule__Talk__TypeAssignment_0"
 
 
-    // $ANTLR start "rule__Talk__TilteAssignment_2"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1664:1: rule__Talk__TilteAssignment_2 : ( RULE_STRING ) ;
-    public final void rule__Talk__TilteAssignment_2() throws RecognitionException {
+    // $ANTLR start "rule__Talk__TilteAssignment_2_0"
+    // InternalProgram.g:1608:1: rule__Talk__TilteAssignment_2_0 : ( RULE_STRING ) ;
+    public final void rule__Talk__TilteAssignment_2_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1668:1: ( ( RULE_STRING ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1669:1: ( RULE_STRING )
+            // InternalProgram.g:1612:1: ( ( RULE_STRING ) )
+            // InternalProgram.g:1613:1: ( RULE_STRING )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1669:1: ( RULE_STRING )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1670:1: RULE_STRING
+            // InternalProgram.g:1613:1: ( RULE_STRING )
+            // InternalProgram.g:1614:1: RULE_STRING
             {
-             before(grammarAccess.getTalkAccess().getTilteSTRINGTerminalRuleCall_2_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Talk__TilteAssignment_23272); 
-             after(grammarAccess.getTalkAccess().getTilteSTRINGTerminalRuleCall_2_0()); 
+             before(grammarAccess.getTalkAccess().getTilteSTRINGTerminalRuleCall_2_0_0()); 
+            match(input,RULE_STRING,FOLLOW_2); 
+             after(grammarAccess.getTalkAccess().getTilteSTRINGTerminalRuleCall_2_0_0()); 
 
             }
 
@@ -4330,25 +4537,29 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Talk__TilteAssignment_2"
+    // $ANTLR end "rule__Talk__TilteAssignment_2_0"
 
 
-    // $ANTLR start "rule__Talk__RoomAssignment_4"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1679:1: rule__Talk__RoomAssignment_4 : ( RULE_STRING ) ;
-    public final void rule__Talk__RoomAssignment_4() throws RecognitionException {
+    // $ANTLR start "rule__Talk__RoomAssignment_3"
+    // InternalProgram.g:1623:1: rule__Talk__RoomAssignment_3 : ( ruleRoom ) ;
+    public final void rule__Talk__RoomAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1683:1: ( ( RULE_STRING ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1684:1: ( RULE_STRING )
+            // InternalProgram.g:1627:1: ( ( ruleRoom ) )
+            // InternalProgram.g:1628:1: ( ruleRoom )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1684:1: ( RULE_STRING )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1685:1: RULE_STRING
+            // InternalProgram.g:1628:1: ( ruleRoom )
+            // InternalProgram.g:1629:1: ruleRoom
             {
-             before(grammarAccess.getTalkAccess().getRoomSTRINGTerminalRuleCall_4_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Talk__RoomAssignment_43303); 
-             after(grammarAccess.getTalkAccess().getRoomSTRINGTerminalRuleCall_4_0()); 
+             before(grammarAccess.getTalkAccess().getRoomRoomEnumRuleCall_3_0()); 
+            pushFollow(FOLLOW_2);
+            ruleRoom();
+
+            state._fsp--;
+
+             after(grammarAccess.getTalkAccess().getRoomRoomEnumRuleCall_3_0()); 
 
             }
 
@@ -4367,25 +4578,25 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Talk__RoomAssignment_4"
+    // $ANTLR end "rule__Talk__RoomAssignment_3"
 
 
-    // $ANTLR start "rule__Talk__SpeakersAssignment_5_1"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1694:1: rule__Talk__SpeakersAssignment_5_1 : ( RULE_STRING ) ;
-    public final void rule__Talk__SpeakersAssignment_5_1() throws RecognitionException {
+    // $ANTLR start "rule__Talk__SpeakersAssignment_4_1_0"
+    // InternalProgram.g:1638:1: rule__Talk__SpeakersAssignment_4_1_0 : ( RULE_STRING ) ;
+    public final void rule__Talk__SpeakersAssignment_4_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1698:1: ( ( RULE_STRING ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1699:1: ( RULE_STRING )
+            // InternalProgram.g:1642:1: ( ( RULE_STRING ) )
+            // InternalProgram.g:1643:1: ( RULE_STRING )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1699:1: ( RULE_STRING )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1700:1: RULE_STRING
+            // InternalProgram.g:1643:1: ( RULE_STRING )
+            // InternalProgram.g:1644:1: RULE_STRING
             {
-             before(grammarAccess.getTalkAccess().getSpeakersSTRINGTerminalRuleCall_5_1_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Talk__SpeakersAssignment_5_13334); 
-             after(grammarAccess.getTalkAccess().getSpeakersSTRINGTerminalRuleCall_5_1_0()); 
+             before(grammarAccess.getTalkAccess().getSpeakersSTRINGTerminalRuleCall_4_1_0_0()); 
+            match(input,RULE_STRING,FOLLOW_2); 
+             after(grammarAccess.getTalkAccess().getSpeakersSTRINGTerminalRuleCall_4_1_0_0()); 
 
             }
 
@@ -4404,25 +4615,25 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Talk__SpeakersAssignment_5_1"
+    // $ANTLR end "rule__Talk__SpeakersAssignment_4_1_0"
 
 
-    // $ANTLR start "rule__Talk__SpeakersAssignment_5_2_1"
-    // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1709:1: rule__Talk__SpeakersAssignment_5_2_1 : ( RULE_STRING ) ;
-    public final void rule__Talk__SpeakersAssignment_5_2_1() throws RecognitionException {
+    // $ANTLR start "rule__Talk__SpeakersAssignment_4_1_1_1"
+    // InternalProgram.g:1653:1: rule__Talk__SpeakersAssignment_4_1_1_1 : ( RULE_STRING ) ;
+    public final void rule__Talk__SpeakersAssignment_4_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1713:1: ( ( RULE_STRING ) )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1714:1: ( RULE_STRING )
+            // InternalProgram.g:1657:1: ( ( RULE_STRING ) )
+            // InternalProgram.g:1658:1: ( RULE_STRING )
             {
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1714:1: ( RULE_STRING )
-            // ../fr.irisa.models.program.ui/src-gen/fr/irisa/models/program/ui/contentassist/antlr/internal/InternalProgram.g:1715:1: RULE_STRING
+            // InternalProgram.g:1658:1: ( RULE_STRING )
+            // InternalProgram.g:1659:1: RULE_STRING
             {
-             before(grammarAccess.getTalkAccess().getSpeakersSTRINGTerminalRuleCall_5_2_1_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Talk__SpeakersAssignment_5_2_13365); 
-             after(grammarAccess.getTalkAccess().getSpeakersSTRINGTerminalRuleCall_5_2_1_0()); 
+             before(grammarAccess.getTalkAccess().getSpeakersSTRINGTerminalRuleCall_4_1_1_1_0()); 
+            match(input,RULE_STRING,FOLLOW_2); 
+             after(grammarAccess.getTalkAccess().getSpeakersSTRINGTerminalRuleCall_4_1_1_1_0()); 
 
             }
 
@@ -4441,154 +4652,29 @@ public class InternalProgramParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Talk__SpeakersAssignment_5_2_1"
+    // $ANTLR end "rule__Talk__SpeakersAssignment_4_1_1_1"
 
     // Delegated rules
 
 
  
 
-    public static final BitSet FOLLOW_ruleProgram_in_entryRuleProgram61 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleProgram68 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Program__Group__0_in_ruleProgram94 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRoom_in_entryRuleRoom121 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleRoom128 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Room__NameAssignment_in_ruleRoom154 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDay_in_entryRuleDay181 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDay188 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Day__Group__0_in_ruleDay214 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleSession_in_entryRuleSession241 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleSession248 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Session__Group__0_in_ruleSession274 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleTalk_in_entryRuleTalk301 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleTalk308 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Talk__Group__0_in_ruleTalk334 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Program__Group__0__Impl_in_rule__Program__Group__0368 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_rule__Program__Group__1_in_rule__Program__Group__0371 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Program__Group_0__0_in_rule__Program__Group__0__Impl398 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Program__Group__1__Impl_in_rule__Program__Group__1429 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Program__Group_1__0_in_rule__Program__Group__1__Impl456 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Program__Group_0__0__Impl_in_rule__Program__Group_0__0491 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Program__Group_0__1_in_rule__Program__Group_0__0494 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_11_in_rule__Program__Group_0__0__Impl522 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Program__Group_0__1__Impl_in_rule__Program__Group_0__1553 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Program__Group_0__2_in_rule__Program__Group_0__1556 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Program__RoomsAssignment_0_1_in_rule__Program__Group_0__1__Impl583 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Program__Group_0__2__Impl_in_rule__Program__Group_0__2613 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Program__RoomsAssignment_0_2_in_rule__Program__Group_0__2__Impl640 = new BitSet(new long[]{0x0000000000000012L});
-    public static final BitSet FOLLOW_rule__Program__Group_1__0__Impl_in_rule__Program__Group_1__0677 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_rule__Program__Group_1__1_in_rule__Program__Group_1__0680 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_12_in_rule__Program__Group_1__0__Impl708 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Program__Group_1__1__Impl_in_rule__Program__Group_1__1739 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_rule__Program__Group_1__2_in_rule__Program__Group_1__1742 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Program__DaysAssignment_1_1_in_rule__Program__Group_1__1__Impl769 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Program__Group_1__2__Impl_in_rule__Program__Group_1__2799 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Program__DaysAssignment_1_2_in_rule__Program__Group_1__2__Impl826 = new BitSet(new long[]{0x0000000000002002L});
-    public static final BitSet FOLLOW_rule__Day__Group__0__Impl_in_rule__Day__Group__0863 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_rule__Day__Group__1_in_rule__Day__Group__0866 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__Day__Group__0__Impl894 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Day__Group__1__Impl_in_rule__Day__Group__1925 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Day__Group__2_in_rule__Day__Group__1928 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_rule__Day__Group__1__Impl956 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Day__Group__2__Impl_in_rule__Day__Group__2987 = new BitSet(new long[]{0x0000000000018000L});
-    public static final BitSet FOLLOW_rule__Day__Group__3_in_rule__Day__Group__2990 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Day__NameAssignment_2_in_rule__Day__Group__2__Impl1017 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Day__Group__3__Impl_in_rule__Day__Group__31047 = new BitSet(new long[]{0x0000000000018000L});
-    public static final BitSet FOLLOW_rule__Day__Group__4_in_rule__Day__Group__31050 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Day__Group_3__0_in_rule__Day__Group__3__Impl1077 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Day__Group__4__Impl_in_rule__Day__Group__41108 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_rule__Day__Group__4__Impl1136 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Day__Group_3__0__Impl_in_rule__Day__Group_3__01177 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_rule__Day__Group_3__1_in_rule__Day__Group_3__01180 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__Day__Group_3__0__Impl1208 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Day__Group_3__1__Impl_in_rule__Day__Group_3__11239 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_rule__Day__Group_3__2_in_rule__Day__Group_3__11242 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Day__SessionsAssignment_3_1_in_rule__Day__Group_3__1__Impl1269 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Day__Group_3__2__Impl_in_rule__Day__Group_3__21299 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Day__SessionsAssignment_3_2_in_rule__Day__Group_3__2__Impl1326 = new BitSet(new long[]{0x0000000000002002L});
-    public static final BitSet FOLLOW_rule__Session__Group__0__Impl_in_rule__Session__Group__01363 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_rule__Session__Group__1_in_rule__Session__Group__01366 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__Session__Group__0__Impl1394 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Session__Group__1__Impl_in_rule__Session__Group__11425 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Session__Group__2_in_rule__Session__Group__11428 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_rule__Session__Group__1__Impl1456 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Session__Group__2__Impl_in_rule__Session__Group__21487 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_rule__Session__Group__3_in_rule__Session__Group__21490 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Session__NameAssignment_2_in_rule__Session__Group__2__Impl1517 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Session__Group__3__Impl_in_rule__Session__Group__31547 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Session__Group__4_in_rule__Session__Group__31550 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__Session__Group__3__Impl1578 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Session__Group__4__Impl_in_rule__Session__Group__41609 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_rule__Session__Group__5_in_rule__Session__Group__41612 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Session__StartAssignment_4_in_rule__Session__Group__4__Impl1639 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Session__Group__5__Impl_in_rule__Session__Group__51669 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Session__Group__6_in_rule__Session__Group__51672 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_rule__Session__Group__5__Impl1700 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Session__Group__6__Impl_in_rule__Session__Group__61731 = new BitSet(new long[]{0x0000000000088000L});
-    public static final BitSet FOLLOW_rule__Session__Group__7_in_rule__Session__Group__61734 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Session__EndAssignment_6_in_rule__Session__Group__6__Impl1761 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Session__Group__7__Impl_in_rule__Session__Group__71791 = new BitSet(new long[]{0x0000000000088000L});
-    public static final BitSet FOLLOW_rule__Session__Group__8_in_rule__Session__Group__71794 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Session__Group_7__0_in_rule__Session__Group__7__Impl1821 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Session__Group__8__Impl_in_rule__Session__Group__81852 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_rule__Session__Group__8__Impl1880 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Session__Group_7__0__Impl_in_rule__Session__Group_7__01929 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_rule__Session__Group_7__1_in_rule__Session__Group_7__01932 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__Session__Group_7__0__Impl1960 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Session__Group_7__1__Impl_in_rule__Session__Group_7__11991 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_rule__Session__Group_7__2_in_rule__Session__Group_7__11994 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Session__TalksAssignment_7_1_in_rule__Session__Group_7__1__Impl2021 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Session__Group_7__2__Impl_in_rule__Session__Group_7__22051 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Session__TalksAssignment_7_2_in_rule__Session__Group_7__2__Impl2078 = new BitSet(new long[]{0x0000000000002002L});
-    public static final BitSet FOLLOW_rule__Talk__Group__0__Impl_in_rule__Talk__Group__02115 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_rule__Talk__Group__1_in_rule__Talk__Group__02118 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__Talk__Group__0__Impl2146 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Talk__Group__1__Impl_in_rule__Talk__Group__12177 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Talk__Group__2_in_rule__Talk__Group__12180 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__Talk__Group__1__Impl2208 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Talk__Group__2__Impl_in_rule__Talk__Group__22239 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_rule__Talk__Group__3_in_rule__Talk__Group__22242 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Talk__TilteAssignment_2_in_rule__Talk__Group__2__Impl2269 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Talk__Group__3__Impl_in_rule__Talk__Group__32299 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Talk__Group__4_in_rule__Talk__Group__32302 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__Talk__Group__3__Impl2330 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Talk__Group__4__Impl_in_rule__Talk__Group__42361 = new BitSet(new long[]{0x0000000000408000L});
-    public static final BitSet FOLLOW_rule__Talk__Group__5_in_rule__Talk__Group__42364 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Talk__RoomAssignment_4_in_rule__Talk__Group__4__Impl2391 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Talk__Group__5__Impl_in_rule__Talk__Group__52421 = new BitSet(new long[]{0x0000000000408000L});
-    public static final BitSet FOLLOW_rule__Talk__Group__6_in_rule__Talk__Group__52424 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Talk__Group_5__0_in_rule__Talk__Group__5__Impl2451 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Talk__Group__6__Impl_in_rule__Talk__Group__62482 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_rule__Talk__Group__6__Impl2510 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Talk__Group_5__0__Impl_in_rule__Talk__Group_5__02555 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Talk__Group_5__1_in_rule__Talk__Group_5__02558 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_rule__Talk__Group_5__0__Impl2586 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Talk__Group_5__1__Impl_in_rule__Talk__Group_5__12617 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_rule__Talk__Group_5__2_in_rule__Talk__Group_5__12620 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Talk__SpeakersAssignment_5_1_in_rule__Talk__Group_5__1__Impl2647 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Talk__Group_5__2__Impl_in_rule__Talk__Group_5__22677 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Talk__Group_5_2__0_in_rule__Talk__Group_5__2__Impl2704 = new BitSet(new long[]{0x0000000000800002L});
-    public static final BitSet FOLLOW_rule__Talk__Group_5_2__0__Impl_in_rule__Talk__Group_5_2__02741 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Talk__Group_5_2__1_in_rule__Talk__Group_5_2__02744 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_23_in_rule__Talk__Group_5_2__0__Impl2772 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Talk__Group_5_2__1__Impl_in_rule__Talk__Group_5_2__12803 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Talk__SpeakersAssignment_5_2_1_in_rule__Talk__Group_5_2__1__Impl2830 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRoom_in_rule__Program__RoomsAssignment_0_12869 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRoom_in_rule__Program__RoomsAssignment_0_22900 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDay_in_rule__Program__DaysAssignment_1_12931 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDay_in_rule__Program__DaysAssignment_1_22962 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Room__NameAssignment2993 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Day__NameAssignment_23024 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleSession_in_rule__Day__SessionsAssignment_3_13055 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleSession_in_rule__Day__SessionsAssignment_3_23086 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Session__NameAssignment_23117 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Session__StartAssignment_43148 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Session__EndAssignment_63179 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleTalk_in_rule__Session__TalksAssignment_7_13210 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleTalk_in_rule__Session__TalksAssignment_7_23241 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Talk__TilteAssignment_23272 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Talk__RoomAssignment_43303 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Talk__SpeakersAssignment_5_13334 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Talk__SpeakersAssignment_5_2_13365 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_1 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_2 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_3 = new BitSet(new long[]{0x000001FC00000000L});
+    public static final BitSet FOLLOW_4 = new BitSet(new long[]{0x000001FC00000002L});
+    public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x0000020000000000L});
+    public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0000040000000000L});
+    public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0000040000000002L});
+    public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000080000000000L});
+    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000100000000000L});
+    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x00000000000FF800L});
+    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x00000000000FF802L});
+    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x00000003FFF00010L});
+    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000400000000000L});
+    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000200000000000L});
+    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x0000800000000010L});
+    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x0000200000000002L});
 
 }

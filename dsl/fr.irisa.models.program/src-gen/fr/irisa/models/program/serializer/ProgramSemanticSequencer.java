@@ -4,25 +4,20 @@
 package fr.irisa.models.program.serializer;
 
 import com.google.inject.Inject;
-import com.google.inject.Provider;
 import fr.irisa.models.program.program.Day;
 import fr.irisa.models.program.program.Program;
 import fr.irisa.models.program.program.ProgramPackage;
-import fr.irisa.models.program.program.Room;
 import fr.irisa.models.program.program.Session;
 import fr.irisa.models.program.program.Talk;
 import fr.irisa.models.program.services.ProgramGrammarAccess;
+import java.util.Set;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.xtext.serializer.acceptor.ISemanticSequenceAcceptor;
-import org.eclipse.xtext.serializer.acceptor.SequenceFeeder;
-import org.eclipse.xtext.serializer.diagnostic.ISemanticSequencerDiagnosticProvider;
-import org.eclipse.xtext.serializer.diagnostic.ISerializationDiagnostic.Acceptor;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.xtext.Action;
+import org.eclipse.xtext.Parameter;
+import org.eclipse.xtext.ParserRule;
+import org.eclipse.xtext.serializer.ISerializationContext;
 import org.eclipse.xtext.serializer.sequencer.AbstractDelegatingSemanticSequencer;
-import org.eclipse.xtext.serializer.sequencer.GenericSequencer;
-import org.eclipse.xtext.serializer.sequencer.ISemanticNodeProvider.INodesForEObjectProvider;
-import org.eclipse.xtext.serializer.sequencer.ISemanticSequencer;
-import org.eclipse.xtext.serializer.sequencer.ITransientValueService;
-import org.eclipse.xtext.serializer.sequencer.ITransientValueService.ValueTransient;
 
 @SuppressWarnings("all")
 public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequencer {
@@ -31,16 +26,18 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	private ProgramGrammarAccess grammarAccess;
 	
 	@Override
-	public void createSequence(EObject context, EObject semanticObject) {
-		if(semanticObject.eClass().getEPackage() == ProgramPackage.eINSTANCE) switch(semanticObject.eClass().getClassifierID()) {
+	public void sequence(ISerializationContext context, EObject semanticObject) {
+		EPackage epackage = semanticObject.eClass().getEPackage();
+		ParserRule rule = context.getParserRule();
+		Action action = context.getAssignedAction();
+		Set<Parameter> parameters = context.getEnabledBooleanParameters();
+		if (epackage == ProgramPackage.eINSTANCE)
+			switch (semanticObject.eClass().getClassifierID()) {
 			case ProgramPackage.DAY:
 				sequence_Day(context, (Day) semanticObject); 
 				return; 
 			case ProgramPackage.PROGRAM:
 				sequence_Program(context, (Program) semanticObject); 
-				return; 
-			case ProgramPackage.ROOM:
-				sequence_Room(context, (Room) semanticObject); 
 				return; 
 			case ProgramPackage.SESSION:
 				sequence_Session(context, (Session) semanticObject); 
@@ -49,57 +46,56 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 				sequence_Talk(context, (Talk) semanticObject); 
 				return; 
 			}
-		if (errorAcceptor != null) errorAcceptor.accept(diagnosticProvider.createInvalidContextOrTypeDiagnostic(semanticObject, context));
+		if (errorAcceptor != null)
+			errorAcceptor.accept(diagnosticProvider.createInvalidContextOrTypeDiagnostic(semanticObject, context));
 	}
 	
 	/**
+	 * Contexts:
+	 *     Day returns Day
+	 *
 	 * Constraint:
-	 *     (name=STRING (sessions+=Session sessions+=Session*)?)
+	 *     (weekDay=WeekDay (sessions+=Session sessions+=Session*)?)
 	 */
-	protected void sequence_Day(EObject context, Day semanticObject) {
+	protected void sequence_Day(ISerializationContext context, Day semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
 	/**
+	 * Contexts:
+	 *     Program returns Program
+	 *
 	 * Constraint:
-	 *     ((rooms+=Room rooms+=Room*)? (days+=Day days+=Day*)?)
+	 *     (days+=Day days+=Day*)
 	 */
-	protected void sequence_Program(EObject context, Program semanticObject) {
+	protected void sequence_Program(ISerializationContext context, Program semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
 	/**
-	 * Constraint:
-	 *     name=STRING
-	 */
-	protected void sequence_Room(EObject context, Room semanticObject) {
-		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, ProgramPackage.Literals.ROOM__NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ProgramPackage.Literals.ROOM__NAME));
-		}
-		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
-		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getRoomAccess().getNameSTRINGTerminalRuleCall_0(), semanticObject.getName());
-		feeder.finish();
-	}
-	
-	
-	/**
+	 * Contexts:
+	 *     Session returns Session
+	 *
 	 * Constraint:
 	 *     (name=STRING start=STRING end=STRING (talks+=Talk talks+=Talk*)?)
 	 */
-	protected void sequence_Session(EObject context, Session semanticObject) {
+	protected void sequence_Session(ISerializationContext context, Session semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
 	/**
+	 * Contexts:
+	 *     Talk returns Talk
+	 *
 	 * Constraint:
-	 *     (tilte=STRING room=STRING (speakers+=STRING speakers+=STRING*)?)
+	 *     (type=TalkType tilte=STRING? room=Room (speakers+=STRING speakers+=STRING*)?)
 	 */
-	protected void sequence_Talk(EObject context, Talk semanticObject) {
+	protected void sequence_Talk(ISerializationContext context, Talk semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
+	
+	
 }

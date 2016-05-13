@@ -9,9 +9,12 @@ import fr.irisa.models.program.program.ProgramPackage;
 import fr.irisa.models.program.program.Room;
 import fr.irisa.models.program.program.Session;
 import fr.irisa.models.program.program.Talk;
+import fr.irisa.models.program.program.TalkType;
+import fr.irisa.models.program.program.WeekDay;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -37,13 +40,6 @@ public class ProgramPackageImpl extends EPackageImpl implements ProgramPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass roomEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   private EClass dayEClass = null;
 
   /**
@@ -59,6 +55,27 @@ public class ProgramPackageImpl extends EPackageImpl implements ProgramPackage
    * @generated
    */
   private EClass talkEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EEnum talkTypeEEnum = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EEnum roomEEnum = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EEnum weekDayEEnum = null;
 
   /**
    * Creates an instance of the model <b>Package</b>, registered with
@@ -138,39 +155,9 @@ public class ProgramPackageImpl extends EPackageImpl implements ProgramPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getProgram_Rooms()
-  {
-    return (EReference)programEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EReference getProgram_Days()
   {
-    return (EReference)programEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getRoom()
-  {
-    return roomEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getRoom_Name()
-  {
-    return (EAttribute)roomEClass.getEStructuralFeatures().get(0);
+    return (EReference)programEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -188,7 +175,7 @@ public class ProgramPackageImpl extends EPackageImpl implements ProgramPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getDay_Name()
+  public EAttribute getDay_WeekDay()
   {
     return (EAttribute)dayEClass.getEStructuralFeatures().get(0);
   }
@@ -268,7 +255,7 @@ public class ProgramPackageImpl extends EPackageImpl implements ProgramPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getTalk_Tilte()
+  public EAttribute getTalk_Type()
   {
     return (EAttribute)talkEClass.getEStructuralFeatures().get(0);
   }
@@ -278,7 +265,7 @@ public class ProgramPackageImpl extends EPackageImpl implements ProgramPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getTalk_Room()
+  public EAttribute getTalk_Tilte()
   {
     return (EAttribute)talkEClass.getEStructuralFeatures().get(1);
   }
@@ -288,9 +275,49 @@ public class ProgramPackageImpl extends EPackageImpl implements ProgramPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getTalk_Speakers()
+  public EAttribute getTalk_Room()
   {
     return (EAttribute)talkEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getTalk_Speakers()
+  {
+    return (EAttribute)talkEClass.getEStructuralFeatures().get(3);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EEnum getTalkType()
+  {
+    return talkTypeEEnum;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EEnum getRoom()
+  {
+    return roomEEnum;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EEnum getWeekDay()
+  {
+    return weekDayEEnum;
   }
 
   /**
@@ -324,14 +351,10 @@ public class ProgramPackageImpl extends EPackageImpl implements ProgramPackage
 
     // Create classes and their features
     programEClass = createEClass(PROGRAM);
-    createEReference(programEClass, PROGRAM__ROOMS);
     createEReference(programEClass, PROGRAM__DAYS);
 
-    roomEClass = createEClass(ROOM);
-    createEAttribute(roomEClass, ROOM__NAME);
-
     dayEClass = createEClass(DAY);
-    createEAttribute(dayEClass, DAY__NAME);
+    createEAttribute(dayEClass, DAY__WEEK_DAY);
     createEReference(dayEClass, DAY__SESSIONS);
 
     sessionEClass = createEClass(SESSION);
@@ -341,9 +364,15 @@ public class ProgramPackageImpl extends EPackageImpl implements ProgramPackage
     createEReference(sessionEClass, SESSION__TALKS);
 
     talkEClass = createEClass(TALK);
+    createEAttribute(talkEClass, TALK__TYPE);
     createEAttribute(talkEClass, TALK__TILTE);
     createEAttribute(talkEClass, TALK__ROOM);
     createEAttribute(talkEClass, TALK__SPEAKERS);
+
+    // Create enums
+    talkTypeEEnum = createEEnum(TALK_TYPE);
+    roomEEnum = createEEnum(ROOM);
+    weekDayEEnum = createEEnum(WEEK_DAY);
   }
 
   /**
@@ -378,14 +407,10 @@ public class ProgramPackageImpl extends EPackageImpl implements ProgramPackage
 
     // Initialize classes and features; add operations and parameters
     initEClass(programEClass, Program.class, "Program", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getProgram_Rooms(), this.getRoom(), null, "rooms", null, 0, -1, Program.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getProgram_Days(), this.getDay(), null, "days", null, 0, -1, Program.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(roomEClass, Room.class, "Room", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getRoom_Name(), ecorePackage.getEString(), "name", null, 0, 1, Room.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
     initEClass(dayEClass, Day.class, "Day", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getDay_Name(), ecorePackage.getEString(), "name", null, 0, 1, Day.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getDay_WeekDay(), this.getWeekDay(), "weekDay", null, 0, 1, Day.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getDay_Sessions(), this.getSession(), null, "sessions", null, 0, -1, Day.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(sessionEClass, Session.class, "Session", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -395,9 +420,47 @@ public class ProgramPackageImpl extends EPackageImpl implements ProgramPackage
     initEReference(getSession_Talks(), this.getTalk(), null, "talks", null, 0, -1, Session.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(talkEClass, Talk.class, "Talk", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getTalk_Type(), this.getTalkType(), "type", null, 0, 1, Talk.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getTalk_Tilte(), ecorePackage.getEString(), "tilte", null, 0, 1, Talk.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getTalk_Room(), ecorePackage.getEString(), "room", null, 0, 1, Talk.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getTalk_Room(), this.getRoom(), "room", null, 0, 1, Talk.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getTalk_Speakers(), ecorePackage.getEString(), "speakers", null, 0, -1, Talk.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    // Initialize enums and add enum literals
+    initEEnum(talkTypeEEnum, TalkType.class, "TalkType");
+    addEEnumLiteral(talkTypeEEnum, TalkType.WORKSHOP);
+    addEEnumLiteral(talkTypeEEnum, TalkType.TUTORIAL);
+    addEEnumLiteral(talkTypeEEnum, TalkType.SYMPOSIUM);
+    addEEnumLiteral(talkTypeEEnum, TalkType.CLINIC);
+    addEEnumLiteral(talkTypeEEnum, TalkType.BREAK);
+    addEEnumLiteral(talkTypeEEnum, TalkType.LUNCH);
+    addEEnumLiteral(talkTypeEEnum, TalkType.POSTER);
+    addEEnumLiteral(talkTypeEEnum, TalkType.SRC);
+    addEEnumLiteral(talkTypeEEnum, TalkType.MAIN);
+
+    initEEnum(roomEEnum, Room.class, "Room");
+    addEEnumLiteral(roomEEnum, Room.BOUVET1);
+    addEEnumLiteral(roomEEnum, Room.BOUVET2);
+    addEEnumLiteral(roomEEnum, Room.CHARCOT);
+    addEEnumLiteral(roomEEnum, Room.VAUBAN1);
+    addEEnumLiteral(roomEEnum, Room.VAUBAN2);
+    addEEnumLiteral(roomEEnum, Room.LAMANNAIS1);
+    addEEnumLiteral(roomEEnum, Room.LAMENNAIS2);
+    addEEnumLiteral(roomEEnum, Room.LAMENNAIS3);
+    addEEnumLiteral(roomEEnum, Room.ROTONDE_SURCOUF);
+    addEEnumLiteral(roomEEnum, Room.CHATEAUBRIAND);
+    addEEnumLiteral(roomEEnum, Room.LAMENNAIS12);
+    addEEnumLiteral(roomEEnum, Room.LAMENNAIS45);
+    addEEnumLiteral(roomEEnum, Room.GRAND_LARGE);
+    addEEnumLiteral(roomEEnum, Room.ROTONDE_JCARTIER);
+
+    initEEnum(weekDayEEnum, WeekDay.class, "WeekDay");
+    addEEnumLiteral(weekDayEEnum, WeekDay.MONDAY);
+    addEEnumLiteral(weekDayEEnum, WeekDay.TUESDAY);
+    addEEnumLiteral(weekDayEEnum, WeekDay.WEDNESDAY);
+    addEEnumLiteral(weekDayEEnum, WeekDay.THURSDAY);
+    addEEnumLiteral(weekDayEEnum, WeekDay.FRIDAY);
+    addEEnumLiteral(weekDayEEnum, WeekDay.SATURDAY);
+    addEEnumLiteral(weekDayEEnum, WeekDay.SUNDAY);
 
     // Create resource
     createResource(eNS_URI);

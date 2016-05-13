@@ -80,11 +80,6 @@ public class ProgramAdapterFactory extends AdapterFactoryImpl
         return createProgramAdapter();
       }
       @Override
-      public Adapter caseRoom(Room object)
-      {
-        return createRoomAdapter();
-      }
-      @Override
       public Adapter caseDay(Day object)
       {
         return createDayAdapter();
@@ -132,21 +127,6 @@ public class ProgramAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createProgramAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.irisa.models.program.program.Room <em>Room</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.irisa.models.program.program.Room
-   * @generated
-   */
-  public Adapter createRoomAdapter()
   {
     return null;
   }
