@@ -167,7 +167,13 @@ public class ProgramGenerator implements IGenerator {
         _builder.newLine();
         {
           EList<Session> _sessions = d.getSessions();
+          boolean _hasElements_2 = false;
           for(final Session s : _sessions) {
+            if (!_hasElements_2) {
+              _hasElements_2 = true;
+            } else {
+              _builder.appendImmediate(",", "\t\t\t");
+            }
             _builder.append("\t");
             _builder.append("\t\t");
             _builder.append("{");
@@ -216,10 +222,10 @@ public class ProgramGenerator implements IGenerator {
                 _builder.newLine();
               } else {
                 {
-                  boolean _hasElements_2 = false;
+                  boolean _hasElements_3 = false;
                   for(final Room r_1 : roomsOfDay) {
-                    if (!_hasElements_2) {
-                      _hasElements_2 = true;
+                    if (!_hasElements_3) {
+                      _hasElements_3 = true;
                     } else {
                       _builder.appendImmediate(",", "\t\t\t\t\t");
                     }
@@ -245,10 +251,10 @@ public class ProgramGenerator implements IGenerator {
                         _builder.newLine();
                       } else {
                         {
-                          boolean _hasElements_3 = false;
+                          boolean _hasElements_4 = false;
                           for(final Talk t : talksInRoom) {
-                            if (!_hasElements_3) {
-                              _hasElements_3 = true;
+                            if (!_hasElements_4) {
+                              _hasElements_4 = true;
                             } else {
                               _builder.appendImmediate(",", "\t\t\t\t\t\t");
                             }
@@ -301,10 +307,10 @@ public class ProgramGenerator implements IGenerator {
                                 _builder.append("speakers: ");
                                 {
                                   EList<String> _speakers_2 = t.getSpeakers();
-                                  boolean _hasElements_4 = false;
+                                  boolean _hasElements_5 = false;
                                   for(final String sp : _speakers_2) {
-                                    if (!_hasElements_4) {
-                                      _hasElements_4 = true;
+                                    if (!_hasElements_5) {
+                                      _hasElements_5 = true;
                                     } else {
                                       _builder.appendImmediate(",", "\t\t\t\t\t\t\t");
                                     }

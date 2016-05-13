@@ -79,7 +79,7 @@ class ProgramGenerator implements IGenerator {
 								«ENDFOR»
 							],
 							sessions : [
-								«FOR s : d.sessions»
+								«FOR s : d.sessions SEPARATOR ","»
 								{
 									name : "«s.name»",
 									start : "«s.start»",

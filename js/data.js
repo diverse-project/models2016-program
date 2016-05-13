@@ -2,8 +2,8 @@ var data = [
 	{
 		name : "Monday",
 		rooms : [
-			"Bouvet 2",
 			"Bouvet 1",
+			"Bouvet 2",
 			"Charcot"
 		],
 		sessions : [
@@ -14,6 +14,14 @@ var data = [
 				talkGroups : [
 					[
 						{
+							title: "MDE for cows"
+						},
+						{
+							title: "MDE or not MDE?"
+						}
+					],
+					[
+						{
 							title: "MDE for bulls"
 						},
 						{
@@ -21,33 +29,25 @@ var data = [
 						}
 					],
 					[
-						{
-							title: "MDE for cows"
-						},
-						{
-							title: "MDE or not MDE?"
-						}
-					],
-					[
 						{}
 					]
 				]
-			}
+			},
 			{
 				name : "Farming session 2",
 				start : "11h",
 				end : "12h30",
 				talkGroups : [
 					[
-						{}
-					],
-					[
 						{
 							title: "MDE for cows"
 						},
 						{
 							title: "MDE or not MDE?"
 						}
+					],
+					[
+						{}
 					],
 					[
 						{
