@@ -1,0 +1,71 @@
+Rooms:
+	"Bouvet 1";
+	"Bouvet 2";
+	"Charcot";
+	"Vauban 1";
+	"Vauban 2";
+	"Lamannais 1";
+	"Lamennais 2";
+	"Lamennais 3";
+	"Rotonde Surcouf";
+	"Chateaubriand";
+	"Lamennais 1+2";
+	"Lamennais 4+5";
+	"Grand Large";
+	"Rotonde J. Cartier"
+	
+Days:
+	Day [
+		name:"Sunday"
+		Sessions:
+			Session [
+				name: "bleh"
+				start: "9h00" end: "11h45"
+				Talks:
+					Talk [
+						title: "bleh"
+						room: "Vauban 1"
+					]
+				]
+	]
+	Day [
+		name:"Monday"
+		Sessions:
+			Session [
+				name: "Farming session"
+				start: "9h" end: "10h30"
+				Talks:
+					Talk [
+						title: "MDE for cows"
+						room: "Bouvet 1"
+					]
+					Talk [
+						title: "MDE for bulls"
+						room: "Bouvet 1"
+					]
+					Talk [
+						title: "MDE for me"
+						room: "Bouvet 1"
+					]
+					Talk [
+						title: "MDE for pigs"
+						room: "Bouvet 2"
+					]
+					Talk [
+						title: "MDE or not MDE?"
+						room: "Bouvet 2"
+					]
+			]
+	]
+	Day [
+		name:"Tuesday"
+	]
+	Day [
+		name:"Wednesday"
+	]
+	Day [
+		name:"Thursday"
+	]
+	Day [
+		name:"Friday"
+	]
