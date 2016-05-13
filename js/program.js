@@ -2,7 +2,17 @@ var modelsApp = angular.module("models-app", []);
 
 modelsApp.controller("ProgramController", function($scope) {
 
-    $scope.rooms = [
+    $scope.saved = "titi";
+
+    $scope.saveSession = function () {
+        if(typeof(Storage) !== "undefined") {
+            localStorage.setItem("room", "toto");
+            $scope.saved = localStorage.getItem("room");
+            console.log($scope.saved);
+        }
+    }
+
+    $scope.roomsWorkshop = [
         {
             name: "Bouvet 1"
         },
@@ -14,8 +24,44 @@ modelsApp.controller("ProgramController", function($scope) {
         },
         {
             name: "Vauban 1"
+        },
+        {
+            name: "Vauban 2"
+        },
+        {
+            name: "Lamannais 1"
+        },
+        {
+            name: "Lamannais 2"
+        },
+        {
+            name: "Lamannais 3"
+        },
+        {
+            name: "Rotonde Surcouf"
+        },
+        {
+            name: "Rotonde J. Cartier"
         }
     ];
+
+    $scope.roomsConference = [
+            {
+                name: "Chateaubriand"
+            },
+            {
+                name: "Lamannais 1+2"
+            },
+            {
+                name: "Lamannais 4+5"
+            },
+            {
+                name: "Grand large"
+            },
+            {
+                name: "Rotonde J. Cartier"
+            }
+        ];
 
     $scope.days = [
         {
@@ -28,57 +74,38 @@ modelsApp.controller("ProgramController", function($scope) {
                         {
                             name : "Bouvet 1",
                             talks: [
-                                {
-                                    title: "MDE for cows",
-                                    speakers: [
-                                        "Pierre",
-                                        "Pôl",
-                                        "Jacques"
-                                    ]
-                                },
-                                {
-                                    title: "MDE for cows",
-                                    speakers: [
-                                        "Pierre",
-                                        "Pôl",
-                                        "Jacques"
-                                    ]
-                                },
-                                {
-                                    title: "MDE for cows",
-                                    speakers: [
-                                        "Pierre",
-                                        "Pôl",
-                                        "Jacques"
-                                    ]
-                                }
+
+                            ]
+                        },
+                        {
+                            name : "Bouvet 2",
+                            talks: [
+
+                            ]
+                        },
+
+                    ]
+                },
+                {
+                    start: "11h15",
+                    end: "13h",
+                    rooms: [
+                        {
+                            name : "Bouvet 1",
+                            talks: [
+
                             ]
                         },
                         {
                             name : "Bouvet 2",
                             talks: [
                                 {
-                                    title: "MDE for bulls",
+                                    title: "International Models and Evolution Workshop",
                                     speakers: [
-                                        "Pierre",
-                                        "Pôl",
-                                        "Jacques"
-                                    ]
-                                },
-                                {
-                                    title: "MDE for bulls",
-                                    speakers: [
-                                        "Pierre",
-                                        "Pôl",
-                                        "Jacques"
-                                    ]
-                                },
-                                {
-                                    title: "MDE for bulls",
-                                    speakers: [
-                                        "Pierre",
-                                        "Pôl",
-                                        "Jacques"
+                                        "Dalila Tamzalit",
+                                        "Alfonso Pierantonio",
+                                        "Bernhard Schaetz",
+                                        "Tanja Mayerhofer"
                                     ]
                                 }
                             ]

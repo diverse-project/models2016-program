@@ -9,14 +9,13 @@
 <body ng-app="models-app">
 
 <div ng-controller="ProgramController">
-
     <div ng-repeat="day in days" class="table-responsive">
         {{day.name}}
-        <table class="table">
+        <table class="table table-bordered">
             <thead>
             <tr>
                 <th>Sessions</th>
-                <th ng-repeat="room in rooms">{{room.name}}</th>
+                <th ng-repeat="room in roomsWorkshop">{{room.name}}</th>
             </tr>
             </thead>
 
@@ -30,13 +29,14 @@
                                 <td>{{talk.title}}</td>
                             </tr>
                         </table>
+                        <a class="btn" ng-click="saveSession"><span class="glyphicon glyphicon-star-empty"></span></a>
                     </td>
-
                 </tr>
             </tbody>
         </table>
+        <a class="btn btn-default" href="#" role="button">Export to iCal</a>
+        {{saved}}
     </div>
-
 </div>
 
 <script src="js/jquery-2.2.3.min.js"></script>
