@@ -21,5 +21,24 @@ modelsApp.controller("ProgramController", function($scope) {
     $scope.toggleFavoriteTalk = function(talk) {
         talk.selected=!talk.selected;
     };
+    
+    $scope.exportToCal = function(favoritesOnly) {
+        var cal = ics();
+
+        // USAGE : cal.addEvent("subject", "description", "location", "2/10/2016 8:30 am", "2/10/2016 10:00 am");
+
+        $scope.data.forEach(function(day) {
+           day.sessions.forEach(function(session) {
+               session.talkGroups.forEach(function (talkGroup, roomIndex) {
+                   talkGroup.forEach(function(talk) {
+                       if (!favoritesOnly || ((typeof talk.selected !== "undefined") && talk.selected === true))
+                        cal.addEvent(talk.title, "", day.rooms[roomIndex], "2/10/2016 8:30 am", "2/10/2016 10:00 am");
+                   });
+               });
+           });
+        });
+
+        cal.download("calendar");
+    }
 
 });
