@@ -29,7 +29,7 @@
                     <tbody>
                     <tr ng-repeat="session in day.sessions">
                         <td>{{session.name}} : {{session.start}} - {{session.end}}</td>
-
+                        
                         <td ng-repeat="talkGroup in session.talkGroups">
                             <table>
                                 <tr ng-repeat="talk in talkGroup">
@@ -64,7 +64,6 @@
 <script src="js/jquery-2.2.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/angular.min.js"></script>
-<script src="js/ics.deps.min.js"></script>
 <script src="js/data.js"></script>
 <script src="js/program.js"></script>
 
