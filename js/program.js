@@ -6,13 +6,25 @@ modelsApp.controller("ProgramController", function($scope) {
 
     $scope.showFavorites = localStorage.getItem("showFavorites") === "true";
 
-    $scope.saveSession = function () {
-        if(typeof(Storage) !== "undefined") {
-            localStorage.setItem("myCalendar", JSON.stringify($scope.days));
-            var myCalendar = JSON.parse(localStorage.getItem("myCalendar"));
-            console.log(myCalendar);
+    // Retrieve favorite talks from local storage
+    if(typeof(Storage) !== "undefined") {
+        $scope.favoriteTalks = JSON.parse(localStorage.getItem("favoriteTalks"));
+        if ($scope.favoriteTalks === null) {
+            $scope.favoriteTalks = {};
         }
-    };
+    } else {
+        $scope.favoriteTalks = {};
+    }
+
+    $scope.data.forEach(function(day) {
+        day.sessions.forEach(function(session) {
+            session.talkGroups.forEach(function (talkGroup, roomIndex) {
+                talkGroup.forEach(function(talk) {
+                    talk.selected = $scope.favoriteTalks[talk.title];
+                });
+            });
+        });
+    });
 
     $scope.toggleFavorites = function() {
         localStorage.setItem("showFavorites", $scope.showFavorites);
@@ -20,6 +32,12 @@ modelsApp.controller("ProgramController", function($scope) {
 
     $scope.toggleFavoriteTalk = function(talk) {
         talk.selected=!talk.selected;
+        $scope.favoriteTalks[talk.title] = talk.selected;
+
+        if(typeof(Storage) !== "undefined") {
+            localStorage.setItem("favoriteTalks", JSON.stringify($scope.favoriteTalks));
+
+        }
     };
     
     $scope.exportToCal = function(favoritesOnly) {
