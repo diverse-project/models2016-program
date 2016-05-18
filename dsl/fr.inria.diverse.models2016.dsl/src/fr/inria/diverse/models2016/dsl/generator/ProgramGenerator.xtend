@@ -160,8 +160,10 @@ class ProgramGenerator extends AbstractGenerator {
 						papers : [
 							«FOR p : talkSession.papers SEPARATOR ","»
 							{
-								title : «p.name»
-								abstract : «p.abstract»
+								title : «p.name»,
+								«IF p.abstract != null && p.abstract.length > 0»
+								abstract : «p.abstract»,
+								«ENDIF»
 								authors : [
 									«FOR a : p.authors SEPARATOR ","»
 									«a.name»
