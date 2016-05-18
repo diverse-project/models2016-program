@@ -118,15 +118,13 @@ var data = [
 							chair : "John Doe",
 							papers : [
 								{
-									title : "MDE for cows"
-									abstract : 
+									title : "MDE for cows",
 									authors : [
 										"Jane Doe"
 									]
 								},
 								{
-									title : "MDE for pigs"
-									abstract : 
+									title : "MDE for pigs",
 									authors : [
 										"Pierre",
 										"Paul",
@@ -259,15 +257,13 @@ var data = [
 							chair : "John Doe",
 							papers : [
 								{
-									title : "MDE for cows"
-									abstract : 
+									title : "MDE for cows",
 									authors : [
 										"Jane Doe"
 									]
 								},
 								{
-									title : "MDE for pigs"
-									abstract : 
+									title : "MDE for pigs",
 									authors : [
 										"Pierre",
 										"Paul",
