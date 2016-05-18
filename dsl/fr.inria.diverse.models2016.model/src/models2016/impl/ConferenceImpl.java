@@ -7,9 +7,9 @@ import java.util.Collection;
 import models2016.Conference;
 import models2016.Event;
 import models2016.Models2016Package;
+import models2016.Paper;
 import models2016.Program;
-import models2016.Ressource;
-
+import models2016.Resource;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
@@ -33,9 +33,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link models2016.impl.ConferenceImpl#getName <em>Name</em>}</li>
- *   <li>{@link models2016.impl.ConferenceImpl#getRessources <em>Ressources</em>}</li>
+ *   <li>{@link models2016.impl.ConferenceImpl#getResources <em>Resources</em>}</li>
  *   <li>{@link models2016.impl.ConferenceImpl#getProgram <em>Program</em>}</li>
  *   <li>{@link models2016.impl.ConferenceImpl#getEvents <em>Events</em>}</li>
+ *   <li>{@link models2016.impl.ConferenceImpl#getPapers <em>Papers</em>}</li>
  * </ul>
  *
  * @generated
@@ -62,14 +63,14 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getRessources() <em>Ressources</em>}' containment reference list.
+	 * The cached value of the '{@link #getResources() <em>Resources</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRessources()
+	 * @see #getResources()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Ressource> ressources;
+	protected EList<Resource> resources;
 
 	/**
 	 * The cached value of the '{@link #getProgram() <em>Program</em>}' containment reference.
@@ -90,6 +91,16 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 	 * @ordered
 	 */
 	protected EList<Event> events;
+
+	/**
+	 * The cached value of the '{@link #getPapers() <em>Papers</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPapers()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Paper> papers;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -136,11 +147,11 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Ressource> getRessources() {
-		if (ressources == null) {
-			ressources = new EObjectContainmentEList<Ressource>(Ressource.class, this, Models2016Package.CONFERENCE__RESSOURCES);
+	public EList<Resource> getResources() {
+		if (resources == null) {
+			resources = new EObjectContainmentEList<Resource>(Resource.class, this, Models2016Package.CONFERENCE__RESOURCES);
 		}
-		return ressources;
+		return resources;
 	}
 
 	/**
@@ -203,15 +214,29 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<Paper> getPapers() {
+		if (papers == null) {
+			papers = new EObjectContainmentEList<Paper>(Paper.class, this, Models2016Package.CONFERENCE__PAPERS);
+		}
+		return papers;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case Models2016Package.CONFERENCE__RESSOURCES:
-				return ((InternalEList<?>)getRessources()).basicRemove(otherEnd, msgs);
+			case Models2016Package.CONFERENCE__RESOURCES:
+				return ((InternalEList<?>)getResources()).basicRemove(otherEnd, msgs);
 			case Models2016Package.CONFERENCE__PROGRAM:
 				return basicSetProgram(null, msgs);
 			case Models2016Package.CONFERENCE__EVENTS:
 				return ((InternalEList<?>)getEvents()).basicRemove(otherEnd, msgs);
+			case Models2016Package.CONFERENCE__PAPERS:
+				return ((InternalEList<?>)getPapers()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -226,12 +251,14 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 		switch (featureID) {
 			case Models2016Package.CONFERENCE__NAME:
 				return getName();
-			case Models2016Package.CONFERENCE__RESSOURCES:
-				return getRessources();
+			case Models2016Package.CONFERENCE__RESOURCES:
+				return getResources();
 			case Models2016Package.CONFERENCE__PROGRAM:
 				return getProgram();
 			case Models2016Package.CONFERENCE__EVENTS:
 				return getEvents();
+			case Models2016Package.CONFERENCE__PAPERS:
+				return getPapers();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -248,9 +275,9 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 			case Models2016Package.CONFERENCE__NAME:
 				setName((String)newValue);
 				return;
-			case Models2016Package.CONFERENCE__RESSOURCES:
-				getRessources().clear();
-				getRessources().addAll((Collection<? extends Ressource>)newValue);
+			case Models2016Package.CONFERENCE__RESOURCES:
+				getResources().clear();
+				getResources().addAll((Collection<? extends Resource>)newValue);
 				return;
 			case Models2016Package.CONFERENCE__PROGRAM:
 				setProgram((Program)newValue);
@@ -258,6 +285,10 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 			case Models2016Package.CONFERENCE__EVENTS:
 				getEvents().clear();
 				getEvents().addAll((Collection<? extends Event>)newValue);
+				return;
+			case Models2016Package.CONFERENCE__PAPERS:
+				getPapers().clear();
+				getPapers().addAll((Collection<? extends Paper>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -274,14 +305,17 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 			case Models2016Package.CONFERENCE__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case Models2016Package.CONFERENCE__RESSOURCES:
-				getRessources().clear();
+			case Models2016Package.CONFERENCE__RESOURCES:
+				getResources().clear();
 				return;
 			case Models2016Package.CONFERENCE__PROGRAM:
 				setProgram((Program)null);
 				return;
 			case Models2016Package.CONFERENCE__EVENTS:
 				getEvents().clear();
+				return;
+			case Models2016Package.CONFERENCE__PAPERS:
+				getPapers().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -297,12 +331,14 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 		switch (featureID) {
 			case Models2016Package.CONFERENCE__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case Models2016Package.CONFERENCE__RESSOURCES:
-				return ressources != null && !ressources.isEmpty();
+			case Models2016Package.CONFERENCE__RESOURCES:
+				return resources != null && !resources.isEmpty();
 			case Models2016Package.CONFERENCE__PROGRAM:
 				return program != null;
 			case Models2016Package.CONFERENCE__EVENTS:
 				return events != null && !events.isEmpty();
+			case Models2016Package.CONFERENCE__PAPERS:
+				return papers != null && !papers.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

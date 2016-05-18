@@ -14,38 +14,15 @@ import org.eclipse.xtext.nodemodel.INode;
 import org.eclipse.xtext.util.Strings;
 
 public class ProgramValueConverter extends DefaultTerminalConverters {
-	@ValueConverter(rule = "EDate")
-	public IValueConverter<Date> EDate() {
+	
+	@ValueConverter(rule = "HourDataType")
+	public IValueConverter<Date> HourDataType() {
 		return new IValueConverter<Date>() {
-			private final DateFormat dayDateFormat = new SimpleDateFormat("yy.MM.dd");
 			private final DateFormat hourDateFormat = new SimpleDateFormat("HH:mm");
 			@Override
 			public Date toValue(String string, INode node) throws ValueConverterException {
 				if (Strings.isEmpty(string)) {
-					throw new ValueConverterException("Couldn't convert empty string to date or hour", node, null);
-				} else if (string.indexOf(".") != -1) {
-					try {
-						List<String> strings = Strings.split(string, ".");
-						if (strings.size() != 3) {
-							throw new ValueConverterException("Couldn't convert '"+string+"' to date", node, null);
-						} else {
-							try {
-								int y = Integer.parseInt(strings.get(0));
-								int m = Integer.parseInt(strings.get(1));
-								int d = Integer.parseInt(strings.get(2));
-								if (y > -1 && y < 100 && m > 0 && m < 13 && d > 0 && d < 32) {
-									Date date = dayDateFormat.parse(string);
-									return date;
-								} else {
-									throw new ValueConverterException("Couldn't convert '"+string+"' to date", node, null);
-								}
-							} catch (NumberFormatException e) {
-								throw new ValueConverterException("Couldn't convert '"+string+"' to date", node, e);
-							}
-						}
-					} catch (ParseException e) {
-						throw new ValueConverterException("Couldn't convert '"+string+"' to date", node, e);
-					}
+					throw new ValueConverterException("Couldn't convert empty string to hour", node, null);
 				} else if (string.indexOf(":") != -1) {
 					try {
 						List<String> strings = Strings.split(string, ":");
@@ -73,15 +50,55 @@ public class ProgramValueConverter extends DefaultTerminalConverters {
 						throw new ValueConverterException("Couldn't convert '"+string+"' to hour", node, e);
 					}
 				} else {
-					throw new ValueConverterException("Couldn't convert '"+string+"' to date or hour", node, null);
+					throw new ValueConverterException("Couldn't convert '"+string+"' to hour", node, null);
 				}
 			}
 			
 			@Override
 			public String toString(Date value) throws ValueConverterException {
-				if (value.getYear() == 70) {
-					return hourDateFormat.format(value);
+				return hourDateFormat.format(value);
+			}
+		};
+	}
+	
+	@ValueConverter(rule = "DayDataType")
+	public IValueConverter<Date> DayDataType() {
+		return new IValueConverter<Date>() {
+			private final DateFormat dayDateFormat = new SimpleDateFormat("yy.MM.dd");
+			@Override
+			public Date toValue(String string, INode node) throws ValueConverterException {
+				if (Strings.isEmpty(string)) {
+					throw new ValueConverterException("Couldn't convert empty string to date", node, null);
+				} else if (string.indexOf(".") != -1) {
+					try {
+						List<String> strings = Strings.split(string, ".");
+						if (strings.size() != 3) {
+							throw new ValueConverterException("Couldn't convert '"+string+"' to date", node, null);
+						} else {
+							try {
+								int y = Integer.parseInt(strings.get(0));
+								int m = Integer.parseInt(strings.get(1));
+								int d = Integer.parseInt(strings.get(2));
+								if (y > -1 && y < 100 && m > 0 && m < 13 && d > 0 && d < 32) {
+									Date date = dayDateFormat.parse(string);
+									return date;
+								} else {
+									throw new ValueConverterException("Couldn't convert '"+string+"' to date", node, null);
+								}
+							} catch (NumberFormatException e) {
+								throw new ValueConverterException("Couldn't convert '"+string+"' to date", node, e);
+							}
+						}
+					} catch (ParseException e) {
+						throw new ValueConverterException("Couldn't convert '"+string+"' to date", node, e);
+					}
+				} else {
+					throw new ValueConverterException("Couldn't convert '"+string+"' to date", node, null);
 				}
+			}
+			
+			@Override
+			public String toString(Date value) throws ValueConverterException {
 				return dayDateFormat.format(value);
 			}
 		};

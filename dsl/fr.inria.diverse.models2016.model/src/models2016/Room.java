@@ -20,7 +20,7 @@ package models2016;
  * @model
  * @generated
  */
-public interface Room extends Ressource {
+public interface Room extends Resource {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

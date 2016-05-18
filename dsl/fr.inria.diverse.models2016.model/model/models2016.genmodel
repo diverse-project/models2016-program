@@ -19,6 +19,8 @@
       <genEnumLiterals ecoreEnumLiteral="models2016.ecore#//Track/PracticeAndInnovation"/>
       <genEnumLiterals ecoreEnumLiteral="models2016.ecore#//Track/Research"/>
     </genEnums>
+    <genDataTypes ecoreDataType="models2016.ecore#//HourDataType"/>
+    <genDataTypes ecoreDataType="models2016.ecore#//DayDataType"/>
     <genClasses ecoreClass="models2016.ecore#//Day">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Day/weekday"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Day/date"/>
@@ -38,8 +40,8 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Event/abstract"/>
     </genClasses>
     <genClasses ecoreClass="models2016.ecore#//TalkSession">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//TalkSession/papers"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//TalkSession/chair"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference models2016.ecore#//TalkSession/papers"/>
     </genClasses>
     <genClasses ecoreClass="models2016.ecore#//Panel">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//Panel/panelists"/>
@@ -60,7 +62,7 @@
     <genClasses ecoreClass="models2016.ecore#//EducatorSymposium">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//EducatorSymposium/organizers"/>
     </genClasses>
-    <genClasses ecoreClass="models2016.ecore#//Ressource"/>
+    <genClasses ecoreClass="models2016.ecore#//Resource"/>
     <genClasses ecoreClass="models2016.ecore#//Room">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Room/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Room/capacity"/>
@@ -69,19 +71,22 @@
     <genClasses ecoreClass="models2016.ecore#//Clinic"/>
     <genClasses ecoreClass="models2016.ecore#//Conference">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Conference/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//Conference/ressources"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//Conference/resources"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//Conference/program"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//Conference/events"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//Conference/papers"/>
     </genClasses>
     <genClasses ecoreClass="models2016.ecore#//Person">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Person/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Person/email"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Person/homepage"/>
     </genClasses>
-    <genClasses ecoreClass="models2016.ecore#//Talk">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//Talk/authors"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Talk/preprint"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Talk/kind"/>
+    <genClasses ecoreClass="models2016.ecore#//Paper">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//Paper/authors"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Paper/preprint"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Paper/kind"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Paper/abstract"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Paper/name"/>
     </genClasses>
     <genClasses ecoreClass="models2016.ecore#//Lunch"/>
     <genClasses ecoreClass="models2016.ecore#//CoffeeBreak"/>

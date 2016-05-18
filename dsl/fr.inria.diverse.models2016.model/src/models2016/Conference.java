@@ -16,9 +16,10 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link models2016.Conference#getName <em>Name</em>}</li>
- *   <li>{@link models2016.Conference#getRessources <em>Ressources</em>}</li>
+ *   <li>{@link models2016.Conference#getResources <em>Resources</em>}</li>
  *   <li>{@link models2016.Conference#getProgram <em>Program</em>}</li>
  *   <li>{@link models2016.Conference#getEvents <em>Events</em>}</li>
+ *   <li>{@link models2016.Conference#getPapers <em>Papers</em>}</li>
  * </ul>
  *
  * @see models2016.Models2016Package#getConference()
@@ -53,20 +54,20 @@ public interface Conference extends EObject {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Ressources</b></em>' containment reference list.
-	 * The list contents are of type {@link models2016.Ressource}.
+	 * Returns the value of the '<em><b>Resources</b></em>' containment reference list.
+	 * The list contents are of type {@link models2016.Resource}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Ressources</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Resources</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Ressources</em>' containment reference list.
-	 * @see models2016.Models2016Package#getConference_Ressources()
+	 * @return the value of the '<em>Resources</em>' containment reference list.
+	 * @see models2016.Models2016Package#getConference_Resources()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<Ressource> getRessources();
+	EList<Resource> getResources();
 
 	/**
 	 * Returns the value of the '<em><b>Program</b></em>' containment reference.
@@ -109,5 +110,21 @@ public interface Conference extends EObject {
 	 * @generated
 	 */
 	EList<Event> getEvents();
+
+	/**
+	 * Returns the value of the '<em><b>Papers</b></em>' containment reference list.
+	 * The list contents are of type {@link models2016.Paper}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Papers</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Papers</em>' containment reference list.
+	 * @see models2016.Models2016Package#getConference_Papers()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Paper> getPapers();
 
 } // Conference

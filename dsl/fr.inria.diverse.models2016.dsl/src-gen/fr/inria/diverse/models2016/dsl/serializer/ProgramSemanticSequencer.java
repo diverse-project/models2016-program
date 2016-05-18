@@ -15,12 +15,12 @@ import models2016.EducatorSymposium;
 import models2016.Lunch;
 import models2016.Models2016Package;
 import models2016.Panel;
+import models2016.Paper;
 import models2016.Person;
 import models2016.Program;
 import models2016.Reception;
 import models2016.Room;
 import models2016.Session;
-import models2016.Talk;
 import models2016.TalkSession;
 import models2016.Tutorial;
 import models2016.Workshop;
@@ -70,6 +70,9 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 			case Models2016Package.PANEL:
 				sequence_Panel(context, (Panel) semanticObject); 
 				return; 
+			case Models2016Package.PAPER:
+				sequence_Paper(context, (Paper) semanticObject); 
+				return; 
 			case Models2016Package.PERSON:
 				sequence_Person(context, (Person) semanticObject); 
 				return; 
@@ -84,9 +87,6 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 				return; 
 			case Models2016Package.SESSION:
 				sequence_Session(context, (Session) semanticObject); 
-				return; 
-			case Models2016Package.TALK:
-				sequence_Talk(context, (Talk) semanticObject); 
 				return; 
 			case Models2016Package.TALK_SESSION:
 				sequence_TalkSession(context, (TalkSession) semanticObject); 
@@ -117,6 +117,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Contexts:
+	 *     Event returns CoffeeBreak
 	 *     CoffeeBreak returns CoffeeBreak
 	 *
 	 * Constraint:
@@ -132,7 +133,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Conference returns Conference
 	 *
 	 * Constraint:
-	 *     (name=EString (ressources+=Ressource ressources+=Ressource*)? (events+=Event events+=Event*)? program=Program?)
+	 *     (name=EString (resources+=Resource resources+=Resource*)? (papers+=Paper papers+=Paper*)? (events+=Event events+=Event*)? program=Program?)
 	 */
 	protected void sequence_Conference(ISerializationContext context, Conference semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -144,7 +145,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Day returns Day
 	 *
 	 * Constraint:
-	 *     (weekday=WeekDay date=EDate? (sessions+=Session sessions+=Session*)?)
+	 *     (weekday=WeekDay date=DayDataType? (sessions+=Session sessions+=Session*)?)
 	 */
 	protected void sequence_Day(ISerializationContext context, Day semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -205,6 +206,25 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Contexts:
+	 *     Paper returns Paper
+	 *
+	 * Constraint:
+	 *     (
+	 *         name=EString 
+	 *         authors+=Person 
+	 *         authors+=Person* 
+	 *         abstract=EString? 
+	 *         preprint=EString? 
+	 *         kind=Track?
+	 *     )
+	 */
+	protected void sequence_Paper(ISerializationContext context, Paper semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Contexts:
 	 *     Person returns Person
 	 *
 	 * Constraint:
@@ -242,7 +262,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Contexts:
-	 *     Ressource returns Room
+	 *     Resource returns Room
 	 *     Room returns Room
 	 *
 	 * Constraint:
@@ -258,7 +278,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Session returns Session
 	 *
 	 * Constraint:
-	 *     (startingTime=EDate? endingTime=EDate? (events+=[Event|EString] events+=[Event|EString]*)? room=[Room|EString]?)
+	 *     (startingTime=HourDataType endingTime=HourDataType room=[Room|EString] events+=[Event|EString] events+=[Event|EString]*)
 	 */
 	protected void sequence_Session(ISerializationContext context, Session semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -271,21 +291,9 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     TalkSession returns TalkSession
 	 *
 	 * Constraint:
-	 *     (name=EString abstract=EString? (papers+=Talk papers+=Talk*)? chair=Person?)
+	 *     (name=EString chair=Person? abstract=EString? (papers+=[Paper|EString] papers+=[Paper|EString]*)?)
 	 */
 	protected void sequence_TalkSession(ISerializationContext context, TalkSession semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
-	}
-	
-	
-	/**
-	 * Contexts:
-	 *     Talk returns Talk
-	 *
-	 * Constraint:
-	 *     (preprint=EString? kind=Track? (authors+=Person authors+=Person*)?)
-	 */
-	protected void sequence_Talk(ISerializationContext context, Talk semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	

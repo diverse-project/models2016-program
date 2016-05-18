@@ -132,16 +132,16 @@ public class Models2016Switch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case Models2016Package.RESSOURCE: {
-				Ressource ressource = (Ressource)theEObject;
-				T result = caseRessource(ressource);
+			case Models2016Package.RESOURCE: {
+				Resource resource = (Resource)theEObject;
+				T result = caseResource(resource);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case Models2016Package.ROOM: {
 				Room room = (Room)theEObject;
 				T result = caseRoom(room);
-				if (result == null) result = caseRessource(room);
+				if (result == null) result = caseResource(room);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -171,9 +171,9 @@ public class Models2016Switch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case Models2016Package.TALK: {
-				Talk talk = (Talk)theEObject;
-				T result = caseTalk(talk);
+			case Models2016Package.PAPER: {
+				Paper paper = (Paper)theEObject;
+				T result = casePaper(paper);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -346,17 +346,17 @@ public class Models2016Switch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Ressource</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Resource</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Ressource</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Resource</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRessource(Ressource object) {
+	public T caseResource(Resource object) {
 		return null;
 	}
 
@@ -436,17 +436,17 @@ public class Models2016Switch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Talk</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Paper</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Talk</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Paper</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTalk(Talk object) {
+	public T casePaper(Paper object) {
 		return null;
 	}
 

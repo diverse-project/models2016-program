@@ -13,8 +13,8 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link models2016.TalkSession#getPapers <em>Papers</em>}</li>
  *   <li>{@link models2016.TalkSession#getChair <em>Chair</em>}</li>
+ *   <li>{@link models2016.TalkSession#getPapers <em>Papers</em>}</li>
  * </ul>
  *
  * @see models2016.Models2016Package#getTalkSession()
@@ -23,20 +23,20 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface TalkSession extends Event {
 	/**
-	 * Returns the value of the '<em><b>Papers</b></em>' containment reference list.
-	 * The list contents are of type {@link models2016.Talk}.
+	 * Returns the value of the '<em><b>Papers</b></em>' reference list.
+	 * The list contents are of type {@link models2016.Paper}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Papers</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Papers</em>' containment reference list.
+	 * @return the value of the '<em>Papers</em>' reference list.
 	 * @see models2016.Models2016Package#getTalkSession_Papers()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
-	EList<Talk> getPapers();
+	EList<Paper> getPapers();
 
 	/**
 	 * Returns the value of the '<em><b>Chair</b></em>' containment reference.

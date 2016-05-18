@@ -2,6 +2,7 @@
  */
 package models2016.impl;
 
+import java.util.Date;
 import models2016.Clinic;
 import models2016.CoffeeBreak;
 import models2016.Conference;
@@ -13,13 +14,13 @@ import models2016.Lunch;
 import models2016.Models2016Factory;
 import models2016.Models2016Package;
 import models2016.Panel;
+import models2016.Paper;
 import models2016.Person;
 import models2016.Program;
 import models2016.Reception;
-import models2016.Ressource;
+import models2016.Resource;
 import models2016.Room;
 import models2016.Session;
-import models2016.Talk;
 import models2016.TalkSession;
 import models2016.Track;
 import models2016.Tutorial;
@@ -28,6 +29,7 @@ import models2016.Workshop;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -116,7 +118,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass ressourceEClass = null;
+	private EClass resourceEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -158,7 +160,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass talkEClass = null;
+	private EClass paperEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -187,6 +189,20 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * @generated
 	 */
 	private EEnum trackEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EDataType hourDataTypeEDataType = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EDataType dayDataTypeEDataType = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -390,7 +406,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * @generated
 	 */
 	public EReference getTalkSession_Papers() {
-		return (EReference)talkSessionEClass.getEStructuralFeatures().get(0);
+		return (EReference)talkSessionEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -399,7 +415,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * @generated
 	 */
 	public EReference getTalkSession_Chair() {
-		return (EReference)talkSessionEClass.getEStructuralFeatures().get(1);
+		return (EReference)talkSessionEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -533,8 +549,8 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getRessource() {
-		return ressourceEClass;
+	public EClass getResource() {
+		return resourceEClass;
 	}
 
 	/**
@@ -605,7 +621,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getConference_Ressources() {
+	public EReference getConference_Resources() {
 		return (EReference)conferenceEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -625,6 +641,15 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 */
 	public EReference getConference_Events() {
 		return (EReference)conferenceEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getConference_Papers() {
+		return (EReference)conferenceEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -668,8 +693,8 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getTalk() {
-		return talkEClass;
+	public EClass getPaper() {
+		return paperEClass;
 	}
 
 	/**
@@ -677,8 +702,8 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getTalk_Authors() {
-		return (EReference)talkEClass.getEStructuralFeatures().get(0);
+	public EReference getPaper_Authors() {
+		return (EReference)paperEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -686,8 +711,8 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTalk_Preprint() {
-		return (EAttribute)talkEClass.getEStructuralFeatures().get(1);
+	public EAttribute getPaper_Preprint() {
+		return (EAttribute)paperEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -695,8 +720,26 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTalk_Kind() {
-		return (EAttribute)talkEClass.getEStructuralFeatures().get(2);
+	public EAttribute getPaper_Kind() {
+		return (EAttribute)paperEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPaper_Abstract() {
+		return (EAttribute)paperEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPaper_Name() {
+		return (EAttribute)paperEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -733,6 +776,24 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 */
 	public EEnum getTrack() {
 		return trackEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EDataType getHourDataType() {
+		return hourDataTypeEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EDataType getDayDataType() {
+		return dayDataTypeEDataType;
 	}
 
 	/**
@@ -782,8 +843,8 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		createEAttribute(eventEClass, EVENT__ABSTRACT);
 
 		talkSessionEClass = createEClass(TALK_SESSION);
-		createEReference(talkSessionEClass, TALK_SESSION__PAPERS);
 		createEReference(talkSessionEClass, TALK_SESSION__CHAIR);
+		createEReference(talkSessionEClass, TALK_SESSION__PAPERS);
 
 		panelEClass = createEClass(PANEL);
 		createEReference(panelEClass, PANEL__PANELISTS);
@@ -804,7 +865,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		educatorSymposiumEClass = createEClass(EDUCATOR_SYMPOSIUM);
 		createEReference(educatorSymposiumEClass, EDUCATOR_SYMPOSIUM__ORGANIZERS);
 
-		ressourceEClass = createEClass(RESSOURCE);
+		resourceEClass = createEClass(RESOURCE);
 
 		roomEClass = createEClass(ROOM);
 		createEAttribute(roomEClass, ROOM__NAME);
@@ -816,19 +877,22 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 
 		conferenceEClass = createEClass(CONFERENCE);
 		createEAttribute(conferenceEClass, CONFERENCE__NAME);
-		createEReference(conferenceEClass, CONFERENCE__RESSOURCES);
+		createEReference(conferenceEClass, CONFERENCE__RESOURCES);
 		createEReference(conferenceEClass, CONFERENCE__PROGRAM);
 		createEReference(conferenceEClass, CONFERENCE__EVENTS);
+		createEReference(conferenceEClass, CONFERENCE__PAPERS);
 
 		personEClass = createEClass(PERSON);
 		createEAttribute(personEClass, PERSON__NAME);
 		createEAttribute(personEClass, PERSON__EMAIL);
 		createEAttribute(personEClass, PERSON__HOMEPAGE);
 
-		talkEClass = createEClass(TALK);
-		createEReference(talkEClass, TALK__AUTHORS);
-		createEAttribute(talkEClass, TALK__PREPRINT);
-		createEAttribute(talkEClass, TALK__KIND);
+		paperEClass = createEClass(PAPER);
+		createEReference(paperEClass, PAPER__AUTHORS);
+		createEAttribute(paperEClass, PAPER__PREPRINT);
+		createEAttribute(paperEClass, PAPER__KIND);
+		createEAttribute(paperEClass, PAPER__ABSTRACT);
+		createEAttribute(paperEClass, PAPER__NAME);
 
 		lunchEClass = createEClass(LUNCH);
 
@@ -837,6 +901,10 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		// Create enums
 		weekDayEEnum = createEEnum(WEEK_DAY);
 		trackEEnum = createEEnum(TRACK);
+
+		// Create data types
+		hourDataTypeEDataType = createEDataType(HOUR_DATA_TYPE);
+		dayDataTypeEDataType = createEDataType(DAY_DATA_TYPE);
 	}
 
 	/**
@@ -873,7 +941,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		tutorialEClass.getESuperTypes().add(this.getEvent());
 		doctoralSymposiumEClass.getESuperTypes().add(this.getEvent());
 		educatorSymposiumEClass.getESuperTypes().add(this.getEvent());
-		roomEClass.getESuperTypes().add(this.getRessource());
+		roomEClass.getESuperTypes().add(this.getResource());
 		receptionEClass.getESuperTypes().add(this.getEvent());
 		clinicEClass.getESuperTypes().add(this.getEvent());
 		lunchEClass.getESuperTypes().add(this.getEvent());
@@ -882,7 +950,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		// Initialize classes, features, and operations; add parameters
 		initEClass(dayEClass, Day.class, "Day", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDay_Weekday(), this.getWeekDay(), "weekday", null, 1, 1, Day.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getDay_Date(), ecorePackage.getEDate(), "date", null, 0, 1, Day.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDay_Date(), this.getDayDataType(), "date", null, 0, 1, Day.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDay_Sessions(), this.getSession(), null, "sessions", null, 0, -1, Day.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(programEClass, Program.class, "Program", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -891,16 +959,16 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		initEClass(sessionEClass, Session.class, "Session", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getSession_Events(), this.getEvent(), null, "events", null, 0, -1, Session.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSession_Room(), this.getRoom(), null, "room", null, 0, 1, Session.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getSession_StartingTime(), ecorePackage.getEDate(), "startingTime", null, 0, 1, Session.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getSession_EndingTime(), ecorePackage.getEDate(), "endingTime", null, 0, 1, Session.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSession_StartingTime(), this.getHourDataType(), "startingTime", null, 0, 1, Session.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSession_EndingTime(), this.getHourDataType(), "endingTime", null, 0, 1, Session.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(eventEClass, Event.class, "Event", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getEvent_Name(), ecorePackage.getEString(), "name", null, 1, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEvent_Abstract(), ecorePackage.getEString(), "abstract", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(talkSessionEClass, TalkSession.class, "TalkSession", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTalkSession_Papers(), this.getTalk(), null, "papers", null, 0, -1, TalkSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getTalkSession_Chair(), this.getPerson(), null, "chair", null, 0, 1, TalkSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTalkSession_Papers(), this.getPaper(), null, "papers", null, 0, -1, TalkSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(panelEClass, Panel.class, "Panel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPanel_Panelists(), this.getPerson(), null, "panelists", null, 0, -1, Panel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -921,7 +989,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		initEClass(educatorSymposiumEClass, EducatorSymposium.class, "EducatorSymposium", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEducatorSymposium_Organizers(), this.getPerson(), null, "organizers", null, 0, -1, EducatorSymposium.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(ressourceEClass, Ressource.class, "Ressource", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(resourceEClass, Resource.class, "Resource", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(roomEClass, Room.class, "Room", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getRoom_Name(), ecorePackage.getEString(), "name", null, 1, 1, Room.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -933,19 +1001,22 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 
 		initEClass(conferenceEClass, Conference.class, "Conference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getConference_Name(), ecorePackage.getEString(), "name", null, 1, 1, Conference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getConference_Ressources(), this.getRessource(), null, "ressources", null, 0, -1, Conference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getConference_Resources(), this.getResource(), null, "resources", null, 0, -1, Conference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getConference_Program(), this.getProgram(), null, "program", null, 0, 1, Conference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getConference_Events(), this.getEvent(), null, "events", null, 0, -1, Conference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getConference_Papers(), this.getPaper(), null, "papers", null, 0, -1, Conference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(personEClass, Person.class, "Person", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPerson_Name(), ecorePackage.getEString(), "name", null, 1, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerson_Email(), ecorePackage.getEString(), "email", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerson_Homepage(), ecorePackage.getEString(), "homepage", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(talkEClass, Talk.class, "Talk", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTalk_Authors(), this.getPerson(), null, "authors", null, 0, -1, Talk.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getTalk_Preprint(), ecorePackage.getEString(), "preprint", null, 0, 1, Talk.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getTalk_Kind(), this.getTrack(), "kind", null, 0, 1, Talk.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(paperEClass, Paper.class, "Paper", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getPaper_Authors(), this.getPerson(), null, "authors", null, 0, -1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPaper_Preprint(), ecorePackage.getEString(), "preprint", null, 0, 1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPaper_Kind(), this.getTrack(), "kind", null, 0, 1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPaper_Abstract(), ecorePackage.getEString(), "abstract", null, 0, 1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPaper_Name(), ecorePackage.getEString(), "name", null, 0, 1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(lunchEClass, Lunch.class, "Lunch", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -964,6 +1035,10 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		initEEnum(trackEEnum, Track.class, "Track");
 		addEEnumLiteral(trackEEnum, Track.PRACTICE_AND_INNOVATION);
 		addEEnumLiteral(trackEEnum, Track.RESEARCH);
+
+		// Initialize data types
+		initEDataType(hourDataTypeEDataType, Date.class, "HourDataType", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
+		initEDataType(dayDataTypeEDataType, Date.class, "DayDataType", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

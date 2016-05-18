@@ -4,6 +4,7 @@ package models2016;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -288,22 +289,22 @@ public interface Models2016Package extends EPackage {
 	int TALK_SESSION__ABSTRACT = EVENT__ABSTRACT;
 
 	/**
-	 * The feature id for the '<em><b>Papers</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TALK_SESSION__PAPERS = EVENT_FEATURE_COUNT + 0;
-
-	/**
 	 * The feature id for the '<em><b>Chair</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TALK_SESSION__CHAIR = EVENT_FEATURE_COUNT + 1;
+	int TALK_SESSION__CHAIR = EVENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Papers</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TALK_SESSION__PAPERS = EVENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Talk Session</em>' class.
@@ -635,32 +636,32 @@ public interface Models2016Package extends EPackage {
 	int EDUCATOR_SYMPOSIUM_OPERATION_COUNT = EVENT_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link models2016.impl.RessourceImpl <em>Ressource</em>}' class.
+	 * The meta object id for the '{@link models2016.impl.ResourceImpl <em>Resource</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see models2016.impl.RessourceImpl
-	 * @see models2016.impl.Models2016PackageImpl#getRessource()
+	 * @see models2016.impl.ResourceImpl
+	 * @see models2016.impl.Models2016PackageImpl#getResource()
 	 * @generated
 	 */
-	int RESSOURCE = 10;
+	int RESOURCE = 10;
 
 	/**
-	 * The number of structural features of the '<em>Ressource</em>' class.
+	 * The number of structural features of the '<em>Resource</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESSOURCE_FEATURE_COUNT = 0;
+	int RESOURCE_FEATURE_COUNT = 0;
 
 	/**
-	 * The number of operations of the '<em>Ressource</em>' class.
+	 * The number of operations of the '<em>Resource</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESSOURCE_OPERATION_COUNT = 0;
+	int RESOURCE_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link models2016.impl.RoomImpl <em>Room</em>}' class.
@@ -679,7 +680,7 @@ public interface Models2016Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOM__NAME = RESSOURCE_FEATURE_COUNT + 0;
+	int ROOM__NAME = RESOURCE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Capacity</b></em>' attribute.
@@ -688,7 +689,7 @@ public interface Models2016Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOM__CAPACITY = RESSOURCE_FEATURE_COUNT + 1;
+	int ROOM__CAPACITY = RESOURCE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Room</em>' class.
@@ -697,7 +698,7 @@ public interface Models2016Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOM_FEATURE_COUNT = RESSOURCE_FEATURE_COUNT + 2;
+	int ROOM_FEATURE_COUNT = RESOURCE_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Room</em>' class.
@@ -706,7 +707,7 @@ public interface Models2016Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOM_OPERATION_COUNT = RESSOURCE_OPERATION_COUNT + 0;
+	int ROOM_OPERATION_COUNT = RESOURCE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link models2016.impl.ReceptionImpl <em>Reception</em>}' class.
@@ -820,13 +821,13 @@ public interface Models2016Package extends EPackage {
 	int CONFERENCE__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Ressources</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Resources</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONFERENCE__RESSOURCES = 1;
+	int CONFERENCE__RESOURCES = 1;
 
 	/**
 	 * The feature id for the '<em><b>Program</b></em>' containment reference.
@@ -847,13 +848,22 @@ public interface Models2016Package extends EPackage {
 	int CONFERENCE__EVENTS = 3;
 
 	/**
+	 * The feature id for the '<em><b>Papers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONFERENCE__PAPERS = 4;
+
+	/**
 	 * The number of structural features of the '<em>Conference</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONFERENCE_FEATURE_COUNT = 4;
+	int CONFERENCE_FEATURE_COUNT = 5;
 
 	/**
 	 * The number of operations of the '<em>Conference</em>' class.
@@ -920,14 +930,14 @@ public interface Models2016Package extends EPackage {
 	int PERSON_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link models2016.impl.TalkImpl <em>Talk</em>}' class.
+	 * The meta object id for the '{@link models2016.impl.PaperImpl <em>Paper</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see models2016.impl.TalkImpl
-	 * @see models2016.impl.Models2016PackageImpl#getTalk()
+	 * @see models2016.impl.PaperImpl
+	 * @see models2016.impl.Models2016PackageImpl#getPaper()
 	 * @generated
 	 */
-	int TALK = 16;
+	int PAPER = 16;
 
 	/**
 	 * The feature id for the '<em><b>Authors</b></em>' containment reference list.
@@ -936,7 +946,7 @@ public interface Models2016Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TALK__AUTHORS = 0;
+	int PAPER__AUTHORS = 0;
 
 	/**
 	 * The feature id for the '<em><b>Preprint</b></em>' attribute.
@@ -945,7 +955,7 @@ public interface Models2016Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TALK__PREPRINT = 1;
+	int PAPER__PREPRINT = 1;
 
 	/**
 	 * The feature id for the '<em><b>Kind</b></em>' attribute.
@@ -954,25 +964,43 @@ public interface Models2016Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TALK__KIND = 2;
+	int PAPER__KIND = 2;
 
 	/**
-	 * The number of structural features of the '<em>Talk</em>' class.
+	 * The feature id for the '<em><b>Abstract</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TALK_FEATURE_COUNT = 3;
+	int PAPER__ABSTRACT = 3;
 
 	/**
-	 * The number of operations of the '<em>Talk</em>' class.
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TALK_OPERATION_COUNT = 0;
+	int PAPER__NAME = 4;
+
+	/**
+	 * The number of structural features of the '<em>Paper</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAPER_FEATURE_COUNT = 5;
+
+	/**
+	 * The number of operations of the '<em>Paper</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAPER_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link models2016.impl.LunchImpl <em>Lunch</em>}' class.
@@ -1085,6 +1113,26 @@ public interface Models2016Package extends EPackage {
 	 * @generated
 	 */
 	int TRACK = 20;
+
+	/**
+	 * The meta object id for the '<em>Hour Data Type</em>' data type.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see java.util.Date
+	 * @see models2016.impl.Models2016PackageImpl#getHourDataType()
+	 * @generated
+	 */
+	int HOUR_DATA_TYPE = 21;
+
+	/**
+	 * The meta object id for the '<em>Day Data Type</em>' data type.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see java.util.Date
+	 * @see models2016.impl.Models2016PackageImpl#getDayDataType()
+	 * @generated
+	 */
+	int DAY_DATA_TYPE = 22;
 
 	/**
 	 * Returns the meta object for class '{@link models2016.Day <em>Day</em>}'.
@@ -1247,10 +1295,10 @@ public interface Models2016Package extends EPackage {
 	EClass getTalkSession();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link models2016.TalkSession#getPapers <em>Papers</em>}'.
+	 * Returns the meta object for the reference list '{@link models2016.TalkSession#getPapers <em>Papers</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Papers</em>'.
+	 * @return the meta object for the reference list '<em>Papers</em>'.
 	 * @see models2016.TalkSession#getPapers()
 	 * @see #getTalkSession()
 	 * @generated
@@ -1418,14 +1466,14 @@ public interface Models2016Package extends EPackage {
 	EReference getEducatorSymposium_Organizers();
 
 	/**
-	 * Returns the meta object for class '{@link models2016.Ressource <em>Ressource</em>}'.
+	 * Returns the meta object for class '{@link models2016.Resource <em>Resource</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Ressource</em>'.
-	 * @see models2016.Ressource
+	 * @return the meta object for class '<em>Resource</em>'.
+	 * @see models2016.Resource
 	 * @generated
 	 */
-	EClass getRessource();
+	EClass getResource();
 
 	/**
 	 * Returns the meta object for class '{@link models2016.Room <em>Room</em>}'.
@@ -1501,15 +1549,15 @@ public interface Models2016Package extends EPackage {
 	EAttribute getConference_Name();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link models2016.Conference#getRessources <em>Ressources</em>}'.
+	 * Returns the meta object for the containment reference list '{@link models2016.Conference#getResources <em>Resources</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Ressources</em>'.
-	 * @see models2016.Conference#getRessources()
+	 * @return the meta object for the containment reference list '<em>Resources</em>'.
+	 * @see models2016.Conference#getResources()
 	 * @see #getConference()
 	 * @generated
 	 */
-	EReference getConference_Ressources();
+	EReference getConference_Resources();
 
 	/**
 	 * Returns the meta object for the containment reference '{@link models2016.Conference#getProgram <em>Program</em>}'.
@@ -1532,6 +1580,17 @@ public interface Models2016Package extends EPackage {
 	 * @generated
 	 */
 	EReference getConference_Events();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link models2016.Conference#getPapers <em>Papers</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Papers</em>'.
+	 * @see models2016.Conference#getPapers()
+	 * @see #getConference()
+	 * @generated
+	 */
+	EReference getConference_Papers();
 
 	/**
 	 * Returns the meta object for class '{@link models2016.Person <em>Person</em>}'.
@@ -1577,47 +1636,69 @@ public interface Models2016Package extends EPackage {
 	EAttribute getPerson_Homepage();
 
 	/**
-	 * Returns the meta object for class '{@link models2016.Talk <em>Talk</em>}'.
+	 * Returns the meta object for class '{@link models2016.Paper <em>Paper</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Talk</em>'.
-	 * @see models2016.Talk
+	 * @return the meta object for class '<em>Paper</em>'.
+	 * @see models2016.Paper
 	 * @generated
 	 */
-	EClass getTalk();
+	EClass getPaper();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link models2016.Talk#getAuthors <em>Authors</em>}'.
+	 * Returns the meta object for the containment reference list '{@link models2016.Paper#getAuthors <em>Authors</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Authors</em>'.
-	 * @see models2016.Talk#getAuthors()
-	 * @see #getTalk()
+	 * @see models2016.Paper#getAuthors()
+	 * @see #getPaper()
 	 * @generated
 	 */
-	EReference getTalk_Authors();
+	EReference getPaper_Authors();
 
 	/**
-	 * Returns the meta object for the attribute '{@link models2016.Talk#getPreprint <em>Preprint</em>}'.
+	 * Returns the meta object for the attribute '{@link models2016.Paper#getPreprint <em>Preprint</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Preprint</em>'.
-	 * @see models2016.Talk#getPreprint()
-	 * @see #getTalk()
+	 * @see models2016.Paper#getPreprint()
+	 * @see #getPaper()
 	 * @generated
 	 */
-	EAttribute getTalk_Preprint();
+	EAttribute getPaper_Preprint();
 
 	/**
-	 * Returns the meta object for the attribute '{@link models2016.Talk#getKind <em>Kind</em>}'.
+	 * Returns the meta object for the attribute '{@link models2016.Paper#getKind <em>Kind</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Kind</em>'.
-	 * @see models2016.Talk#getKind()
-	 * @see #getTalk()
+	 * @see models2016.Paper#getKind()
+	 * @see #getPaper()
 	 * @generated
 	 */
-	EAttribute getTalk_Kind();
+	EAttribute getPaper_Kind();
+
+	/**
+	 * Returns the meta object for the attribute '{@link models2016.Paper#getAbstract <em>Abstract</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Abstract</em>'.
+	 * @see models2016.Paper#getAbstract()
+	 * @see #getPaper()
+	 * @generated
+	 */
+	EAttribute getPaper_Abstract();
+
+	/**
+	 * Returns the meta object for the attribute '{@link models2016.Paper#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see models2016.Paper#getName()
+	 * @see #getPaper()
+	 * @generated
+	 */
+	EAttribute getPaper_Name();
 
 	/**
 	 * Returns the meta object for class '{@link models2016.Lunch <em>Lunch</em>}'.
@@ -1658,6 +1739,28 @@ public interface Models2016Package extends EPackage {
 	 * @generated
 	 */
 	EEnum getTrack();
+
+	/**
+	 * Returns the meta object for data type '{@link java.util.Date <em>Hour Data Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for data type '<em>Hour Data Type</em>'.
+	 * @see java.util.Date
+	 * @model instanceClass="java.util.Date"
+	 * @generated
+	 */
+	EDataType getHourDataType();
+
+	/**
+	 * Returns the meta object for data type '{@link java.util.Date <em>Day Data Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for data type '<em>Day Data Type</em>'.
+	 * @see java.util.Date
+	 * @model instanceClass="java.util.Date"
+	 * @generated
+	 */
+	EDataType getDayDataType();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1813,7 +1916,7 @@ public interface Models2016Package extends EPackage {
 		EClass TALK_SESSION = eINSTANCE.getTalkSession();
 
 		/**
-		 * The meta object literal for the '<em><b>Papers</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Papers</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1951,14 +2054,14 @@ public interface Models2016Package extends EPackage {
 		EReference EDUCATOR_SYMPOSIUM__ORGANIZERS = eINSTANCE.getEducatorSymposium_Organizers();
 
 		/**
-		 * The meta object literal for the '{@link models2016.impl.RessourceImpl <em>Ressource</em>}' class.
+		 * The meta object literal for the '{@link models2016.impl.ResourceImpl <em>Resource</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see models2016.impl.RessourceImpl
-		 * @see models2016.impl.Models2016PackageImpl#getRessource()
+		 * @see models2016.impl.ResourceImpl
+		 * @see models2016.impl.Models2016PackageImpl#getResource()
 		 * @generated
 		 */
-		EClass RESSOURCE = eINSTANCE.getRessource();
+		EClass RESOURCE = eINSTANCE.getResource();
 
 		/**
 		 * The meta object literal for the '{@link models2016.impl.RoomImpl <em>Room</em>}' class.
@@ -2025,12 +2128,12 @@ public interface Models2016Package extends EPackage {
 		EAttribute CONFERENCE__NAME = eINSTANCE.getConference_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Ressources</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Resources</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CONFERENCE__RESSOURCES = eINSTANCE.getConference_Ressources();
+		EReference CONFERENCE__RESOURCES = eINSTANCE.getConference_Resources();
 
 		/**
 		 * The meta object literal for the '<em><b>Program</b></em>' containment reference feature.
@@ -2047,6 +2150,14 @@ public interface Models2016Package extends EPackage {
 		 * @generated
 		 */
 		EReference CONFERENCE__EVENTS = eINSTANCE.getConference_Events();
+
+		/**
+		 * The meta object literal for the '<em><b>Papers</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONFERENCE__PAPERS = eINSTANCE.getConference_Papers();
 
 		/**
 		 * The meta object literal for the '{@link models2016.impl.PersonImpl <em>Person</em>}' class.
@@ -2083,14 +2194,14 @@ public interface Models2016Package extends EPackage {
 		EAttribute PERSON__HOMEPAGE = eINSTANCE.getPerson_Homepage();
 
 		/**
-		 * The meta object literal for the '{@link models2016.impl.TalkImpl <em>Talk</em>}' class.
+		 * The meta object literal for the '{@link models2016.impl.PaperImpl <em>Paper</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see models2016.impl.TalkImpl
-		 * @see models2016.impl.Models2016PackageImpl#getTalk()
+		 * @see models2016.impl.PaperImpl
+		 * @see models2016.impl.Models2016PackageImpl#getPaper()
 		 * @generated
 		 */
-		EClass TALK = eINSTANCE.getTalk();
+		EClass PAPER = eINSTANCE.getPaper();
 
 		/**
 		 * The meta object literal for the '<em><b>Authors</b></em>' containment reference list feature.
@@ -2098,7 +2209,7 @@ public interface Models2016Package extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TALK__AUTHORS = eINSTANCE.getTalk_Authors();
+		EReference PAPER__AUTHORS = eINSTANCE.getPaper_Authors();
 
 		/**
 		 * The meta object literal for the '<em><b>Preprint</b></em>' attribute feature.
@@ -2106,7 +2217,7 @@ public interface Models2016Package extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute TALK__PREPRINT = eINSTANCE.getTalk_Preprint();
+		EAttribute PAPER__PREPRINT = eINSTANCE.getPaper_Preprint();
 
 		/**
 		 * The meta object literal for the '<em><b>Kind</b></em>' attribute feature.
@@ -2114,7 +2225,23 @@ public interface Models2016Package extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute TALK__KIND = eINSTANCE.getTalk_Kind();
+		EAttribute PAPER__KIND = eINSTANCE.getPaper_Kind();
+
+		/**
+		 * The meta object literal for the '<em><b>Abstract</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PAPER__ABSTRACT = eINSTANCE.getPaper_Abstract();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PAPER__NAME = eINSTANCE.getPaper_Name();
 
 		/**
 		 * The meta object literal for the '{@link models2016.impl.LunchImpl <em>Lunch</em>}' class.
@@ -2155,6 +2282,26 @@ public interface Models2016Package extends EPackage {
 		 * @generated
 		 */
 		EEnum TRACK = eINSTANCE.getTrack();
+
+		/**
+		 * The meta object literal for the '<em>Hour Data Type</em>' data type.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see java.util.Date
+		 * @see models2016.impl.Models2016PackageImpl#getHourDataType()
+		 * @generated
+		 */
+		EDataType HOUR_DATA_TYPE = eINSTANCE.getHourDataType();
+
+		/**
+		 * The meta object literal for the '<em>Day Data Type</em>' data type.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see java.util.Date
+		 * @see models2016.impl.Models2016PackageImpl#getDayDataType()
+		 * @generated
+		 */
+		EDataType DAY_DATA_TYPE = eINSTANCE.getDayDataType();
 
 	}
 

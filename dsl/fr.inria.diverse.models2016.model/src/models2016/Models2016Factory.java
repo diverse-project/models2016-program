@@ -148,13 +148,13 @@ public interface Models2016Factory extends EFactory {
 	Person createPerson();
 
 	/**
-	 * Returns a new object of class '<em>Talk</em>'.
+	 * Returns a new object of class '<em>Paper</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Talk</em>'.
+	 * @return a new object of class '<em>Paper</em>'.
 	 * @generated
 	 */
-	Talk createTalk();
+	Paper createPaper();
 
 	/**
 	 * Returns a new object of class '<em>Lunch</em>'.

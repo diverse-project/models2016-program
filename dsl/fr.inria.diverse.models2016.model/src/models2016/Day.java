@@ -67,7 +67,7 @@ public interface Day extends EObject {
 	 * @return the value of the '<em>Date</em>' attribute.
 	 * @see #setDate(Date)
 	 * @see models2016.Models2016Package#getDay_Date()
-	 * @model
+	 * @model dataType="models2016.DayDataType"
 	 * @generated
 	 */
 	Date getDate();

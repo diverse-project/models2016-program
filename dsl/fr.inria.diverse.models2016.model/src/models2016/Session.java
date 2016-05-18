@@ -79,7 +79,7 @@ public interface Session extends EObject {
 	 * @return the value of the '<em>Starting Time</em>' attribute.
 	 * @see #setStartingTime(Date)
 	 * @see models2016.Models2016Package#getSession_StartingTime()
-	 * @model
+	 * @model dataType="models2016.HourDataType"
 	 * @generated
 	 */
 	Date getStartingTime();
@@ -105,7 +105,7 @@ public interface Session extends EObject {
 	 * @return the value of the '<em>Ending Time</em>' attribute.
 	 * @see #setEndingTime(Date)
 	 * @see models2016.Models2016Package#getSession_EndingTime()
-	 * @model
+	 * @model dataType="models2016.HourDataType"
 	 * @generated
 	 */
 	Date getEndingTime();

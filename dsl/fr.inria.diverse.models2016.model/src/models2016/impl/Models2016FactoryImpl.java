@@ -2,6 +2,7 @@
  */
 package models2016.impl;
 
+import java.util.Date;
 import models2016.*;
 
 import org.eclipse.emf.ecore.EClass;
@@ -71,7 +72,7 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 			case Models2016Package.CLINIC: return createClinic();
 			case Models2016Package.CONFERENCE: return createConference();
 			case Models2016Package.PERSON: return createPerson();
-			case Models2016Package.TALK: return createTalk();
+			case Models2016Package.PAPER: return createPaper();
 			case Models2016Package.LUNCH: return createLunch();
 			case Models2016Package.COFFEE_BREAK: return createCoffeeBreak();
 			default:
@@ -91,6 +92,10 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 				return createWeekDayFromString(eDataType, initialValue);
 			case Models2016Package.TRACK:
 				return createTrackFromString(eDataType, initialValue);
+			case Models2016Package.HOUR_DATA_TYPE:
+				return createHourDataTypeFromString(eDataType, initialValue);
+			case Models2016Package.DAY_DATA_TYPE:
+				return createDayDataTypeFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -108,6 +113,10 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 				return convertWeekDayToString(eDataType, instanceValue);
 			case Models2016Package.TRACK:
 				return convertTrackToString(eDataType, instanceValue);
+			case Models2016Package.HOUR_DATA_TYPE:
+				return convertHourDataTypeToString(eDataType, instanceValue);
+			case Models2016Package.DAY_DATA_TYPE:
+				return convertDayDataTypeToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -258,9 +267,9 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Talk createTalk() {
-		TalkImpl talk = new TalkImpl();
-		return talk;
+	public Paper createPaper() {
+		PaperImpl paper = new PaperImpl();
+		return paper;
 	}
 
 	/**
@@ -321,6 +330,42 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 	 */
 	public String convertTrackToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Date createHourDataTypeFromString(EDataType eDataType, String initialValue) {
+		return (Date)super.createFromString(eDataType, initialValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertHourDataTypeToString(EDataType eDataType, Object instanceValue) {
+		return super.convertToString(eDataType, instanceValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Date createDayDataTypeFromString(EDataType eDataType, String initialValue) {
+		return (Date)super.createFromString(eDataType, initialValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertDayDataTypeToString(EDataType eDataType, Object instanceValue) {
+		return super.convertToString(eDataType, instanceValue);
 	}
 
 	/**

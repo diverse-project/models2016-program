@@ -84,16 +84,12 @@ ruleConference returns [EObject current=null]
 					$current);
 			}
 		)
-		otherlv_1='Conference'
-		{
-			newLeafNode(otherlv_1, grammarAccess.getConferenceAccess().getConferenceKeyword_1());
-		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getConferenceAccess().getNameEStringParserRuleCall_2_0());
+					newCompositeNode(grammarAccess.getConferenceAccess().getNameEStringParserRuleCall_1_0());
 				}
-				lv_name_2_0=ruleEString
+				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getConferenceRule());
@@ -101,89 +97,129 @@ ruleConference returns [EObject current=null]
 					set(
 						$current,
 						"name",
-						lv_name_2_0,
+						lv_name_1_0,
 						"fr.inria.diverse.models2016.dsl.Program.EString");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		otherlv_3='{'
-		{
-			newLeafNode(otherlv_3, grammarAccess.getConferenceAccess().getLeftCurlyBracketKeyword_3());
-		}
 		(
-			otherlv_4='ressources'
+			otherlv_2='resources'
 			{
-				newLeafNode(otherlv_4, grammarAccess.getConferenceAccess().getRessourcesKeyword_4_0());
-			}
-			otherlv_5='{'
-			{
-				newLeafNode(otherlv_5, grammarAccess.getConferenceAccess().getLeftCurlyBracketKeyword_4_1());
+				newLeafNode(otherlv_2, grammarAccess.getConferenceAccess().getResourcesKeyword_2_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConferenceAccess().getRessourcesRessourceParserRuleCall_4_2_0());
+						newCompositeNode(grammarAccess.getConferenceAccess().getResourcesResourceParserRuleCall_2_1_0());
 					}
-					lv_ressources_6_0=ruleRessource
+					lv_resources_3_0=ruleResource
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConferenceRule());
 						}
 						add(
 							$current,
-							"ressources",
-							lv_ressources_6_0,
-							"fr.inria.diverse.models2016.dsl.Program.Ressource");
+							"resources",
+							lv_resources_3_0,
+							"fr.inria.diverse.models2016.dsl.Program.Resource");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 			(
-				otherlv_7=','
+				(
+					{
+						newCompositeNode(grammarAccess.getConferenceAccess().getResourcesResourceParserRuleCall_2_2_0());
+					}
+					lv_resources_4_0=ruleResource
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getConferenceRule());
+						}
+						add(
+							$current,
+							"resources",
+							lv_resources_4_0,
+							"fr.inria.diverse.models2016.dsl.Program.Resource");
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)*
+		)?
+		(
+			otherlv_5='papers'
+			{
+				newLeafNode(otherlv_5, grammarAccess.getConferenceAccess().getPapersKeyword_3_0());
+			}
+			otherlv_6='{'
+			{
+				newLeafNode(otherlv_6, grammarAccess.getConferenceAccess().getLeftCurlyBracketKeyword_3_1());
+			}
+			(
+				(
+					{
+						newCompositeNode(grammarAccess.getConferenceAccess().getPapersPaperParserRuleCall_3_2_0());
+					}
+					lv_papers_7_0=rulePaper
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getConferenceRule());
+						}
+						add(
+							$current,
+							"papers",
+							lv_papers_7_0,
+							"fr.inria.diverse.models2016.dsl.Program.Paper");
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)
+			(
+				otherlv_8=';'
 				{
-					newLeafNode(otherlv_7, grammarAccess.getConferenceAccess().getCommaKeyword_4_3_0());
+					newLeafNode(otherlv_8, grammarAccess.getConferenceAccess().getSemicolonKeyword_3_3_0());
 				}
 				(
 					(
 						{
-							newCompositeNode(grammarAccess.getConferenceAccess().getRessourcesRessourceParserRuleCall_4_3_1_0());
+							newCompositeNode(grammarAccess.getConferenceAccess().getPapersPaperParserRuleCall_3_3_1_0());
 						}
-						lv_ressources_8_0=ruleRessource
+						lv_papers_9_0=rulePaper
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getConferenceRule());
 							}
 							add(
 								$current,
-								"ressources",
-								lv_ressources_8_0,
-								"fr.inria.diverse.models2016.dsl.Program.Ressource");
+								"papers",
+								lv_papers_9_0,
+								"fr.inria.diverse.models2016.dsl.Program.Paper");
 							afterParserOrEnumRuleCall();
 						}
 					)
 				)
 			)*
-			otherlv_9='}'
-			{
-				newLeafNode(otherlv_9, grammarAccess.getConferenceAccess().getRightCurlyBracketKeyword_4_4());
-			}
 		)?
+		otherlv_10='}'
+		{
+			newLeafNode(otherlv_10, grammarAccess.getConferenceAccess().getRightCurlyBracketKeyword_4());
+		}
 		(
-			otherlv_10='events'
+			otherlv_11='events'
 			{
-				newLeafNode(otherlv_10, grammarAccess.getConferenceAccess().getEventsKeyword_5_0());
+				newLeafNode(otherlv_11, grammarAccess.getConferenceAccess().getEventsKeyword_5_0());
 			}
-			otherlv_11='{'
+			otherlv_12='{'
 			{
-				newLeafNode(otherlv_11, grammarAccess.getConferenceAccess().getLeftCurlyBracketKeyword_5_1());
+				newLeafNode(otherlv_12, grammarAccess.getConferenceAccess().getLeftCurlyBracketKeyword_5_1());
 			}
 			(
 				(
 					{
 						newCompositeNode(grammarAccess.getConferenceAccess().getEventsEventParserRuleCall_5_2_0());
 					}
-					lv_events_12_0=ruleEvent
+					lv_events_13_0=ruleEvent
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConferenceRule());
@@ -191,23 +227,23 @@ ruleConference returns [EObject current=null]
 						add(
 							$current,
 							"events",
-							lv_events_12_0,
+							lv_events_13_0,
 							"fr.inria.diverse.models2016.dsl.Program.Event");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 			(
-				otherlv_13=','
+				otherlv_14=';'
 				{
-					newLeafNode(otherlv_13, grammarAccess.getConferenceAccess().getCommaKeyword_5_3_0());
+					newLeafNode(otherlv_14, grammarAccess.getConferenceAccess().getSemicolonKeyword_5_3_0());
 				}
 				(
 					(
 						{
 							newCompositeNode(grammarAccess.getConferenceAccess().getEventsEventParserRuleCall_5_3_1_0());
 						}
-						lv_events_14_0=ruleEvent
+						lv_events_15_0=ruleEvent
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getConferenceRule());
@@ -215,29 +251,29 @@ ruleConference returns [EObject current=null]
 							add(
 								$current,
 								"events",
-								lv_events_14_0,
+								lv_events_15_0,
 								"fr.inria.diverse.models2016.dsl.Program.Event");
 							afterParserOrEnumRuleCall();
 						}
 					)
 				)
 			)*
-			otherlv_15='}'
-			{
-				newLeafNode(otherlv_15, grammarAccess.getConferenceAccess().getRightCurlyBracketKeyword_5_4());
-			}
 		)?
+		otherlv_16='}'
+		{
+			newLeafNode(otherlv_16, grammarAccess.getConferenceAccess().getRightCurlyBracketKeyword_6());
+		}
 		(
-			otherlv_16='program'
+			otherlv_17='program'
 			{
-				newLeafNode(otherlv_16, grammarAccess.getConferenceAccess().getProgramKeyword_6_0());
+				newLeafNode(otherlv_17, grammarAccess.getConferenceAccess().getProgramKeyword_7_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConferenceAccess().getProgramProgramParserRuleCall_6_1_0());
+						newCompositeNode(grammarAccess.getConferenceAccess().getProgramProgramParserRuleCall_7_1_0());
 					}
-					lv_program_17_0=ruleProgram
+					lv_program_18_0=ruleProgram
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConferenceRule());
@@ -245,29 +281,25 @@ ruleConference returns [EObject current=null]
 						set(
 							$current,
 							"program",
-							lv_program_17_0,
+							lv_program_18_0,
 							"fr.inria.diverse.models2016.dsl.Program.Program");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 		)?
-		otherlv_18='}'
-		{
-			newLeafNode(otherlv_18, grammarAccess.getConferenceAccess().getRightCurlyBracketKeyword_7());
-		}
 	)
 ;
 
-// Entry rule entryRuleRessource
-entryRuleRessource returns [EObject current=null]:
-	{ newCompositeNode(grammarAccess.getRessourceRule()); }
-	iv_ruleRessource=ruleRessource
-	{ $current=$iv_ruleRessource.current; }
+// Entry rule entryRuleResource
+entryRuleResource returns [EObject current=null]:
+	{ newCompositeNode(grammarAccess.getResourceRule()); }
+	iv_ruleResource=ruleResource
+	{ $current=$iv_ruleResource.current; }
 	EOF;
 
-// Rule Ressource
-ruleRessource returns [EObject current=null]
+// Rule Resource
+ruleResource returns [EObject current=null]
 @init {
 	enterRule();
 }
@@ -275,7 +307,7 @@ ruleRessource returns [EObject current=null]
 	leaveRule();
 }:
 	{
-		newCompositeNode(grammarAccess.getRessourceAccess().getRoomParserRuleCall());
+		newCompositeNode(grammarAccess.getResourceAccess().getRoomParserRuleCall());
 	}
 	this_Room_0=ruleRoom
 	{
@@ -380,6 +412,15 @@ ruleEvent returns [EObject current=null]
 			$current = $this_Lunch_8.current;
 			afterParserOrEnumRuleCall();
 		}
+		    |
+		{
+			newCompositeNode(grammarAccess.getEventAccess().getCoffeeBreakParserRuleCall_9());
+		}
+		this_CoffeeBreak_9=ruleCoffeeBreak
+		{
+			$current = $this_CoffeeBreak_9.current;
+			afterParserOrEnumRuleCall();
+		}
 	)
 ;
 
@@ -430,29 +471,17 @@ ruleProgram returns [EObject current=null]
 					$current);
 			}
 		)
-		otherlv_1='Program'
+		otherlv_1='{'
 		{
-			newLeafNode(otherlv_1, grammarAccess.getProgramAccess().getProgramKeyword_1());
-		}
-		otherlv_2='{'
-		{
-			newLeafNode(otherlv_2, grammarAccess.getProgramAccess().getLeftCurlyBracketKeyword_2());
+			newLeafNode(otherlv_1, grammarAccess.getProgramAccess().getLeftCurlyBracketKeyword_1());
 		}
 		(
-			otherlv_3='days'
-			{
-				newLeafNode(otherlv_3, grammarAccess.getProgramAccess().getDaysKeyword_3_0());
-			}
-			otherlv_4='{'
-			{
-				newLeafNode(otherlv_4, grammarAccess.getProgramAccess().getLeftCurlyBracketKeyword_3_1());
-			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getProgramAccess().getDaysDayParserRuleCall_3_2_0());
+						newCompositeNode(grammarAccess.getProgramAccess().getDaysDayParserRuleCall_2_0_0());
 					}
-					lv_days_5_0=ruleDay
+					lv_days_2_0=ruleDay
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getProgramRule());
@@ -460,45 +489,35 @@ ruleProgram returns [EObject current=null]
 						add(
 							$current,
 							"days",
-							lv_days_5_0,
+							lv_days_2_0,
 							"fr.inria.diverse.models2016.dsl.Program.Day");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 			(
-				otherlv_6=','
-				{
-					newLeafNode(otherlv_6, grammarAccess.getProgramAccess().getCommaKeyword_3_3_0());
-				}
 				(
-					(
-						{
-							newCompositeNode(grammarAccess.getProgramAccess().getDaysDayParserRuleCall_3_3_1_0());
+					{
+						newCompositeNode(grammarAccess.getProgramAccess().getDaysDayParserRuleCall_2_1_0());
+					}
+					lv_days_3_0=ruleDay
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getProgramRule());
 						}
-						lv_days_7_0=ruleDay
-						{
-							if ($current==null) {
-								$current = createModelElementForParent(grammarAccess.getProgramRule());
-							}
-							add(
-								$current,
-								"days",
-								lv_days_7_0,
-								"fr.inria.diverse.models2016.dsl.Program.Day");
-							afterParserOrEnumRuleCall();
-						}
-					)
+						add(
+							$current,
+							"days",
+							lv_days_3_0,
+							"fr.inria.diverse.models2016.dsl.Program.Day");
+						afterParserOrEnumRuleCall();
+					}
 				)
 			)*
-			otherlv_8='}'
-			{
-				newLeafNode(otherlv_8, grammarAccess.getProgramAccess().getRightCurlyBracketKeyword_3_4());
-			}
 		)?
-		otherlv_9='}'
+		otherlv_4='}'
 		{
-			newLeafNode(otherlv_9, grammarAccess.getProgramAccess().getRightCurlyBracketKeyword_4());
+			newLeafNode(otherlv_4, grammarAccess.getProgramAccess().getRightCurlyBracketKeyword_3());
 		}
 	)
 ;
@@ -526,7 +545,7 @@ ruleRoom returns [EObject current=null]
 					$current);
 			}
 		)
-		otherlv_1='Room'
+		otherlv_1='room'
 		{
 			newLeafNode(otherlv_1, grammarAccess.getRoomAccess().getRoomKeyword_1());
 		}
@@ -549,21 +568,17 @@ ruleRoom returns [EObject current=null]
 				}
 			)
 		)
-		otherlv_3='{'
-		{
-			newLeafNode(otherlv_3, grammarAccess.getRoomAccess().getLeftCurlyBracketKeyword_3());
-		}
 		(
-			otherlv_4='capacity'
+			otherlv_3='capacity'
 			{
-				newLeafNode(otherlv_4, grammarAccess.getRoomAccess().getCapacityKeyword_4_0());
+				newLeafNode(otherlv_3, grammarAccess.getRoomAccess().getCapacityKeyword_3_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getRoomAccess().getCapacityEIntegerObjectParserRuleCall_4_1_0());
+						newCompositeNode(grammarAccess.getRoomAccess().getCapacityEIntegerObjectParserRuleCall_3_1_0());
 					}
-					lv_capacity_5_0=ruleEIntegerObject
+					lv_capacity_4_0=ruleEIntegerObject
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getRoomRule());
@@ -571,17 +586,13 @@ ruleRoom returns [EObject current=null]
 						set(
 							$current,
 							"capacity",
-							lv_capacity_5_0,
+							lv_capacity_4_0,
 							"fr.inria.diverse.models2016.dsl.Program.EIntegerObject");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 		)?
-		otherlv_6='}'
-		{
-			newLeafNode(otherlv_6, grammarAccess.getRoomAccess().getRightCurlyBracketKeyword_5());
-		}
 	)
 ;
 
@@ -600,22 +611,13 @@ ruleEIntegerObject returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRule
 @after {
 	leaveRule();
 }:
-	(
-		(
-			kw='-'
-			{
-				$current.merge(kw);
-				newLeafNode(kw, grammarAccess.getEIntegerObjectAccess().getHyphenMinusKeyword_0());
-			}
-		)?
-		this_INT_1=RULE_INT
-		{
-			$current.merge(this_INT_1);
-		}
-		{
-			newLeafNode(this_INT_1, grammarAccess.getEIntegerObjectAccess().getINTTerminalRuleCall_1());
-		}
-	)
+	this_INT_0=RULE_INT
+	{
+		$current.merge(this_INT_0);
+	}
+	{
+		newLeafNode(this_INT_0, grammarAccess.getEIntegerObjectAccess().getINTTerminalRuleCall());
+	}
 ;
 
 // Entry rule entryRuleDay
@@ -634,24 +636,12 @@ ruleDay returns [EObject current=null]
 	leaveRule();
 }:
 	(
-		otherlv_0='Day'
-		{
-			newLeafNode(otherlv_0, grammarAccess.getDayAccess().getDayKeyword_0());
-		}
-		otherlv_1='{'
-		{
-			newLeafNode(otherlv_1, grammarAccess.getDayAccess().getLeftCurlyBracketKeyword_1());
-		}
-		otherlv_2='weekday'
-		{
-			newLeafNode(otherlv_2, grammarAccess.getDayAccess().getWeekdayKeyword_2());
-		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getDayAccess().getWeekdayWeekDayEnumRuleCall_3_0());
+					newCompositeNode(grammarAccess.getDayAccess().getWeekdayWeekDayEnumRuleCall_0_0());
 				}
-				lv_weekday_3_0=ruleWeekDay
+				lv_weekday_0_0=ruleWeekDay
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getDayRule());
@@ -659,23 +649,23 @@ ruleDay returns [EObject current=null]
 					set(
 						$current,
 						"weekday",
-						lv_weekday_3_0,
+						lv_weekday_0_0,
 						"fr.inria.diverse.models2016.dsl.Program.WeekDay");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
 		(
-			otherlv_4='date'
+			otherlv_1='date'
 			{
-				newLeafNode(otherlv_4, grammarAccess.getDayAccess().getDateKeyword_4_0());
+				newLeafNode(otherlv_1, grammarAccess.getDayAccess().getDateKeyword_1_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getDayAccess().getDateEDateParserRuleCall_4_1_0());
+						newCompositeNode(grammarAccess.getDayAccess().getDateDayDataTypeParserRuleCall_1_1_0());
 					}
-					lv_date_5_0=ruleEDate
+					lv_date_2_0=ruleDayDataType
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getDayRule());
@@ -683,28 +673,20 @@ ruleDay returns [EObject current=null]
 						set(
 							$current,
 							"date",
-							lv_date_5_0,
-							"fr.inria.diverse.models2016.dsl.Program.EDate");
+							lv_date_2_0,
+							"fr.inria.diverse.models2016.dsl.Program.DayDataType");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 		)?
 		(
-			otherlv_6='sessions'
-			{
-				newLeafNode(otherlv_6, grammarAccess.getDayAccess().getSessionsKeyword_5_0());
-			}
-			otherlv_7='{'
-			{
-				newLeafNode(otherlv_7, grammarAccess.getDayAccess().getLeftCurlyBracketKeyword_5_1());
-			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_5_2_0());
+						newCompositeNode(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_2_0_0());
 					}
-					lv_sessions_8_0=ruleSession
+					lv_sessions_3_0=ruleSession
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getDayRule());
@@ -712,58 +694,44 @@ ruleDay returns [EObject current=null]
 						add(
 							$current,
 							"sessions",
-							lv_sessions_8_0,
+							lv_sessions_3_0,
 							"fr.inria.diverse.models2016.dsl.Program.Session");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 			(
-				otherlv_9=','
-				{
-					newLeafNode(otherlv_9, grammarAccess.getDayAccess().getCommaKeyword_5_3_0());
-				}
 				(
-					(
-						{
-							newCompositeNode(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_5_3_1_0());
+					{
+						newCompositeNode(grammarAccess.getDayAccess().getSessionsSessionParserRuleCall_2_1_0());
+					}
+					lv_sessions_4_0=ruleSession
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getDayRule());
 						}
-						lv_sessions_10_0=ruleSession
-						{
-							if ($current==null) {
-								$current = createModelElementForParent(grammarAccess.getDayRule());
-							}
-							add(
-								$current,
-								"sessions",
-								lv_sessions_10_0,
-								"fr.inria.diverse.models2016.dsl.Program.Session");
-							afterParserOrEnumRuleCall();
-						}
-					)
+						add(
+							$current,
+							"sessions",
+							lv_sessions_4_0,
+							"fr.inria.diverse.models2016.dsl.Program.Session");
+						afterParserOrEnumRuleCall();
+					}
 				)
 			)*
-			otherlv_11='}'
-			{
-				newLeafNode(otherlv_11, grammarAccess.getDayAccess().getRightCurlyBracketKeyword_5_4());
-			}
 		)?
-		otherlv_12='}'
-		{
-			newLeafNode(otherlv_12, grammarAccess.getDayAccess().getRightCurlyBracketKeyword_6());
-		}
 	)
 ;
 
-// Entry rule entryRuleEDate
-entryRuleEDate returns [String current=null]:
-	{ newCompositeNode(grammarAccess.getEDateRule()); }
-	iv_ruleEDate=ruleEDate
-	{ $current=$iv_ruleEDate.current.getText(); }
+// Entry rule entryRuleDayDataType
+entryRuleDayDataType returns [String current=null]:
+	{ newCompositeNode(grammarAccess.getDayDataTypeRule()); }
+	iv_ruleDayDataType=ruleDayDataType
+	{ $current=$iv_ruleDayDataType.current.getText(); }
 	EOF;
 
-// Rule EDate
-ruleEDate returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+// Rule DayDataType
+ruleDayDataType returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
 @init {
 	enterRule();
 }
@@ -771,61 +739,75 @@ ruleEDate returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
 	leaveRule();
 }:
 	(
-		(
-			this_INT_0=RULE_INT
-			{
-				$current.merge(this_INT_0);
-			}
-			{
-				newLeafNode(this_INT_0, grammarAccess.getEDateAccess().getINTTerminalRuleCall_0_0());
-			}
-			kw='.'
-			{
-				$current.merge(kw);
-				newLeafNode(kw, grammarAccess.getEDateAccess().getFullStopKeyword_0_1());
-			}
-			this_INT_2=RULE_INT
-			{
-				$current.merge(this_INT_2);
-			}
-			{
-				newLeafNode(this_INT_2, grammarAccess.getEDateAccess().getINTTerminalRuleCall_0_2());
-			}
-			kw='.'
-			{
-				$current.merge(kw);
-				newLeafNode(kw, grammarAccess.getEDateAccess().getFullStopKeyword_0_3());
-			}
-			this_INT_4=RULE_INT
-			{
-				$current.merge(this_INT_4);
-			}
-			{
-				newLeafNode(this_INT_4, grammarAccess.getEDateAccess().getINTTerminalRuleCall_0_4());
-			}
-		)
-		    |
-		(
-			this_INT_5=RULE_INT
-			{
-				$current.merge(this_INT_5);
-			}
-			{
-				newLeafNode(this_INT_5, grammarAccess.getEDateAccess().getINTTerminalRuleCall_1_0());
-			}
-			kw=':'
-			{
-				$current.merge(kw);
-				newLeafNode(kw, grammarAccess.getEDateAccess().getColonKeyword_1_1());
-			}
-			this_INT_7=RULE_INT
-			{
-				$current.merge(this_INT_7);
-			}
-			{
-				newLeafNode(this_INT_7, grammarAccess.getEDateAccess().getINTTerminalRuleCall_1_2());
-			}
-		)
+		this_INT_0=RULE_INT
+		{
+			$current.merge(this_INT_0);
+		}
+		{
+			newLeafNode(this_INT_0, grammarAccess.getDayDataTypeAccess().getINTTerminalRuleCall_0());
+		}
+		kw='.'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getDayDataTypeAccess().getFullStopKeyword_1());
+		}
+		this_INT_2=RULE_INT
+		{
+			$current.merge(this_INT_2);
+		}
+		{
+			newLeafNode(this_INT_2, grammarAccess.getDayDataTypeAccess().getINTTerminalRuleCall_2());
+		}
+		kw='.'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getDayDataTypeAccess().getFullStopKeyword_3());
+		}
+		this_INT_4=RULE_INT
+		{
+			$current.merge(this_INT_4);
+		}
+		{
+			newLeafNode(this_INT_4, grammarAccess.getDayDataTypeAccess().getINTTerminalRuleCall_4());
+		}
+	)
+;
+
+// Entry rule entryRuleHourDataType
+entryRuleHourDataType returns [String current=null]:
+	{ newCompositeNode(grammarAccess.getHourDataTypeRule()); }
+	iv_ruleHourDataType=ruleHourDataType
+	{ $current=$iv_ruleHourDataType.current.getText(); }
+	EOF;
+
+// Rule HourDataType
+ruleHourDataType returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		this_INT_0=RULE_INT
+		{
+			$current.merge(this_INT_0);
+		}
+		{
+			newLeafNode(this_INT_0, grammarAccess.getHourDataTypeAccess().getINTTerminalRuleCall_0());
+		}
+		kw=':'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getHourDataTypeAccess().getColonKeyword_1());
+		}
+		this_INT_2=RULE_INT
+		{
+			$current.merge(this_INT_2);
+		}
+		{
+			newLeafNode(this_INT_2, grammarAccess.getHourDataTypeAccess().getINTTerminalRuleCall_2());
+		}
 	)
 ;
 
@@ -852,120 +834,92 @@ ruleSession returns [EObject current=null]
 					$current);
 			}
 		)
-		otherlv_1='Session'
-		{
-			newLeafNode(otherlv_1, grammarAccess.getSessionAccess().getSessionKeyword_1());
-		}
-		otherlv_2='{'
-		{
-			newLeafNode(otherlv_2, grammarAccess.getSessionAccess().getLeftCurlyBracketKeyword_2());
-		}
 		(
-			otherlv_3='startingTime'
-			{
-				newLeafNode(otherlv_3, grammarAccess.getSessionAccess().getStartingTimeKeyword_3_0());
-			}
 			(
-				(
-					{
-						newCompositeNode(grammarAccess.getSessionAccess().getStartingTimeEDateParserRuleCall_3_1_0());
-					}
-					lv_startingTime_4_0=ruleEDate
-					{
-						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getSessionRule());
-						}
-						set(
-							$current,
-							"startingTime",
-							lv_startingTime_4_0,
-							"fr.inria.diverse.models2016.dsl.Program.EDate");
-						afterParserOrEnumRuleCall();
-					}
-				)
-			)
-		)?
-		(
-			otherlv_5='endingTime'
-			{
-				newLeafNode(otherlv_5, grammarAccess.getSessionAccess().getEndingTimeKeyword_4_0());
-			}
-			(
-				(
-					{
-						newCompositeNode(grammarAccess.getSessionAccess().getEndingTimeEDateParserRuleCall_4_1_0());
-					}
-					lv_endingTime_6_0=ruleEDate
-					{
-						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getSessionRule());
-						}
-						set(
-							$current,
-							"endingTime",
-							lv_endingTime_6_0,
-							"fr.inria.diverse.models2016.dsl.Program.EDate");
-						afterParserOrEnumRuleCall();
-					}
-				)
-			)
-		)?
-		(
-			otherlv_7='events'
-			{
-				newLeafNode(otherlv_7, grammarAccess.getSessionAccess().getEventsKeyword_5_0());
-			}
-			otherlv_8='('
-			{
-				newLeafNode(otherlv_8, grammarAccess.getSessionAccess().getLeftParenthesisKeyword_5_1());
-			}
-			(
-				(
-					{
-						if ($current==null) {
-							$current = createModelElement(grammarAccess.getSessionRule());
-						}
-					}
-					{
-						newCompositeNode(grammarAccess.getSessionAccess().getEventsEventCrossReference_5_2_0());
-					}
-					ruleEString
-					{
-						afterParserOrEnumRuleCall();
-					}
-				)
-			)
-			(
-				otherlv_10=','
 				{
-					newLeafNode(otherlv_10, grammarAccess.getSessionAccess().getCommaKeyword_5_3_0());
+					newCompositeNode(grammarAccess.getSessionAccess().getStartingTimeHourDataTypeParserRuleCall_1_0());
 				}
-				(
-					(
-						{
-							if ($current==null) {
-								$current = createModelElement(grammarAccess.getSessionRule());
-							}
-						}
-						{
-							newCompositeNode(grammarAccess.getSessionAccess().getEventsEventCrossReference_5_3_1_0());
-						}
-						ruleEString
-						{
-							afterParserOrEnumRuleCall();
-						}
-					)
-				)
-			)*
-			otherlv_12=')'
-			{
-				newLeafNode(otherlv_12, grammarAccess.getSessionAccess().getRightParenthesisKeyword_5_4());
-			}
-		)?
+				lv_startingTime_1_0=ruleHourDataType
+				{
+					if ($current==null) {
+						$current = createModelElementForParent(grammarAccess.getSessionRule());
+					}
+					set(
+						$current,
+						"startingTime",
+						lv_startingTime_1_0,
+						"fr.inria.diverse.models2016.dsl.Program.HourDataType");
+					afterParserOrEnumRuleCall();
+				}
+			)
+		)
+		otherlv_2='-'
+		{
+			newLeafNode(otherlv_2, grammarAccess.getSessionAccess().getHyphenMinusKeyword_2());
+		}
 		(
-			otherlv_13='room'
+			(
+				{
+					newCompositeNode(grammarAccess.getSessionAccess().getEndingTimeHourDataTypeParserRuleCall_3_0());
+				}
+				lv_endingTime_3_0=ruleHourDataType
+				{
+					if ($current==null) {
+						$current = createModelElementForParent(grammarAccess.getSessionRule());
+					}
+					set(
+						$current,
+						"endingTime",
+						lv_endingTime_3_0,
+						"fr.inria.diverse.models2016.dsl.Program.HourDataType");
+					afterParserOrEnumRuleCall();
+				}
+			)
+		)
+		otherlv_4='in'
+		{
+			newLeafNode(otherlv_4, grammarAccess.getSessionAccess().getInKeyword_4());
+		}
+		(
+			(
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getSessionRule());
+					}
+				}
+				{
+					newCompositeNode(grammarAccess.getSessionAccess().getRoomRoomCrossReference_5_0());
+				}
+				ruleEString
+				{
+					afterParserOrEnumRuleCall();
+				}
+			)
+		)
+		otherlv_6=':'
+		{
+			newLeafNode(otherlv_6, grammarAccess.getSessionAccess().getColonKeyword_6());
+		}
+		(
+			(
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getSessionRule());
+					}
+				}
+				{
+					newCompositeNode(grammarAccess.getSessionAccess().getEventsEventCrossReference_7_0());
+				}
+				ruleEString
+				{
+					afterParserOrEnumRuleCall();
+				}
+			)
+		)
+		(
+			otherlv_8=','
 			{
-				newLeafNode(otherlv_13, grammarAccess.getSessionAccess().getRoomKeyword_6_0());
+				newLeafNode(otherlv_8, grammarAccess.getSessionAccess().getCommaKeyword_8_0());
 			}
 			(
 				(
@@ -975,7 +929,7 @@ ruleSession returns [EObject current=null]
 						}
 					}
 					{
-						newCompositeNode(grammarAccess.getSessionAccess().getRoomRoomCrossReference_6_1_0());
+						newCompositeNode(grammarAccess.getSessionAccess().getEventsEventCrossReference_8_1_0());
 					}
 					ruleEString
 					{
@@ -983,11 +937,7 @@ ruleSession returns [EObject current=null]
 					}
 				)
 			)
-		)?
-		otherlv_15='}'
-		{
-			newLeafNode(otherlv_15, grammarAccess.getSessionAccess().getRightCurlyBracketKeyword_7());
-		}
+		)*
 	)
 ;
 
@@ -1011,20 +961,12 @@ ruleTalkSession returns [EObject current=null]
 		{
 			newLeafNode(otherlv_0, grammarAccess.getTalkSessionAccess().getTalkSessionKeyword_0());
 		}
-		otherlv_1='{'
-		{
-			newLeafNode(otherlv_1, grammarAccess.getTalkSessionAccess().getLeftCurlyBracketKeyword_1());
-		}
-		otherlv_2='title'
-		{
-			newLeafNode(otherlv_2, grammarAccess.getTalkSessionAccess().getTitleKeyword_2());
-		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getTalkSessionAccess().getNameEStringParserRuleCall_3_0());
+					newCompositeNode(grammarAccess.getTalkSessionAccess().getNameEStringParserRuleCall_1_0());
 				}
-				lv_name_3_0=ruleEString
+				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getTalkSessionRule());
@@ -1032,21 +974,46 @@ ruleTalkSession returns [EObject current=null]
 					set(
 						$current,
 						"name",
-						lv_name_3_0,
+						lv_name_1_0,
 						"fr.inria.diverse.models2016.dsl.Program.EString");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
 		(
-			otherlv_4='abstract'
+			otherlv_2='chair'
 			{
-				newLeafNode(otherlv_4, grammarAccess.getTalkSessionAccess().getAbstractKeyword_4_0());
+				newLeafNode(otherlv_2, grammarAccess.getTalkSessionAccess().getChairKeyword_2_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getTalkSessionAccess().getAbstractEStringParserRuleCall_4_1_0());
+						newCompositeNode(grammarAccess.getTalkSessionAccess().getChairPersonParserRuleCall_2_1_0());
+					}
+					lv_chair_3_0=rulePerson
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getTalkSessionRule());
+						}
+						set(
+							$current,
+							"chair",
+							lv_chair_3_0,
+							"fr.inria.diverse.models2016.dsl.Program.Person");
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)
+		)?
+		(
+			otherlv_4='abstract'
+			{
+				newLeafNode(otherlv_4, grammarAccess.getTalkSessionAccess().getAbstractKeyword_3_0());
+			}
+			(
+				(
+					{
+						newCompositeNode(grammarAccess.getTalkSessionAccess().getAbstractEStringParserRuleCall_3_1_0());
 					}
 					lv_abstract_5_0=ruleEString
 					{
@@ -1066,90 +1033,47 @@ ruleTalkSession returns [EObject current=null]
 		(
 			otherlv_6='papers'
 			{
-				newLeafNode(otherlv_6, grammarAccess.getTalkSessionAccess().getPapersKeyword_5_0());
-			}
-			otherlv_7='{'
-			{
-				newLeafNode(otherlv_7, grammarAccess.getTalkSessionAccess().getLeftCurlyBracketKeyword_5_1());
+				newLeafNode(otherlv_6, grammarAccess.getTalkSessionAccess().getPapersKeyword_4_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getTalkSessionAccess().getPapersTalkParserRuleCall_5_2_0());
-					}
-					lv_papers_8_0=ruleTalk
-					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getTalkSessionRule());
+							$current = createModelElement(grammarAccess.getTalkSessionRule());
 						}
-						add(
-							$current,
-							"papers",
-							lv_papers_8_0,
-							"fr.inria.diverse.models2016.dsl.Program.Talk");
+					}
+					{
+						newCompositeNode(grammarAccess.getTalkSessionAccess().getPapersPaperCrossReference_4_1_0());
+					}
+					ruleEString
+					{
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 			(
-				otherlv_9=','
+				otherlv_8=','
 				{
-					newLeafNode(otherlv_9, grammarAccess.getTalkSessionAccess().getCommaKeyword_5_3_0());
+					newLeafNode(otherlv_8, grammarAccess.getTalkSessionAccess().getCommaKeyword_4_2_0());
 				}
 				(
 					(
 						{
-							newCompositeNode(grammarAccess.getTalkSessionAccess().getPapersTalkParserRuleCall_5_3_1_0());
-						}
-						lv_papers_10_0=ruleTalk
-						{
 							if ($current==null) {
-								$current = createModelElementForParent(grammarAccess.getTalkSessionRule());
+								$current = createModelElement(grammarAccess.getTalkSessionRule());
 							}
-							add(
-								$current,
-								"papers",
-								lv_papers_10_0,
-								"fr.inria.diverse.models2016.dsl.Program.Talk");
+						}
+						{
+							newCompositeNode(grammarAccess.getTalkSessionAccess().getPapersPaperCrossReference_4_2_1_0());
+						}
+						ruleEString
+						{
 							afterParserOrEnumRuleCall();
 						}
 					)
 				)
 			)*
-			otherlv_11='}'
-			{
-				newLeafNode(otherlv_11, grammarAccess.getTalkSessionAccess().getRightCurlyBracketKeyword_5_4());
-			}
 		)?
-		(
-			otherlv_12='chair'
-			{
-				newLeafNode(otherlv_12, grammarAccess.getTalkSessionAccess().getChairKeyword_6_0());
-			}
-			(
-				(
-					{
-						newCompositeNode(grammarAccess.getTalkSessionAccess().getChairPersonParserRuleCall_6_1_0());
-					}
-					lv_chair_13_0=rulePerson
-					{
-						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getTalkSessionRule());
-						}
-						set(
-							$current,
-							"chair",
-							lv_chair_13_0,
-							"fr.inria.diverse.models2016.dsl.Program.Person");
-						afterParserOrEnumRuleCall();
-					}
-				)
-			)
-		)?
-		otherlv_14='}'
-		{
-			newLeafNode(otherlv_14, grammarAccess.getTalkSessionAccess().getRightCurlyBracketKeyword_7());
-		}
 	)
 ;
 
@@ -1173,20 +1097,12 @@ rulePanel returns [EObject current=null]
 		{
 			newLeafNode(otherlv_0, grammarAccess.getPanelAccess().getPanelKeyword_0());
 		}
-		otherlv_1='{'
-		{
-			newLeafNode(otherlv_1, grammarAccess.getPanelAccess().getLeftCurlyBracketKeyword_1());
-		}
-		otherlv_2='title'
-		{
-			newLeafNode(otherlv_2, grammarAccess.getPanelAccess().getTitleKeyword_2());
-		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getPanelAccess().getNameEStringParserRuleCall_3_0());
+					newCompositeNode(grammarAccess.getPanelAccess().getNameEStringParserRuleCall_1_0());
 				}
-				lv_name_3_0=ruleEString
+				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getPanelRule());
@@ -1194,23 +1110,23 @@ rulePanel returns [EObject current=null]
 					set(
 						$current,
 						"name",
-						lv_name_3_0,
+						lv_name_1_0,
 						"fr.inria.diverse.models2016.dsl.Program.EString");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
 		(
-			otherlv_4='abstract'
+			otherlv_2='abstract'
 			{
-				newLeafNode(otherlv_4, grammarAccess.getPanelAccess().getAbstractKeyword_4_0());
+				newLeafNode(otherlv_2, grammarAccess.getPanelAccess().getAbstractKeyword_2_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getPanelAccess().getAbstractEStringParserRuleCall_4_1_0());
+						newCompositeNode(grammarAccess.getPanelAccess().getAbstractEStringParserRuleCall_2_1_0());
 					}
-					lv_abstract_5_0=ruleEString
+					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getPanelRule());
@@ -1218,7 +1134,7 @@ rulePanel returns [EObject current=null]
 						set(
 							$current,
 							"abstract",
-							lv_abstract_5_0,
+							lv_abstract_3_0,
 							"fr.inria.diverse.models2016.dsl.Program.EString");
 						afterParserOrEnumRuleCall();
 					}
@@ -1226,20 +1142,16 @@ rulePanel returns [EObject current=null]
 			)
 		)?
 		(
-			otherlv_6='panelists'
+			otherlv_4='panelists'
 			{
-				newLeafNode(otherlv_6, grammarAccess.getPanelAccess().getPanelistsKeyword_5_0());
-			}
-			otherlv_7='{'
-			{
-				newLeafNode(otherlv_7, grammarAccess.getPanelAccess().getLeftCurlyBracketKeyword_5_1());
+				newLeafNode(otherlv_4, grammarAccess.getPanelAccess().getPanelistsKeyword_3_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getPanelAccess().getPanelistsPersonParserRuleCall_5_2_0());
+						newCompositeNode(grammarAccess.getPanelAccess().getPanelistsPersonParserRuleCall_3_1_0());
 					}
-					lv_panelists_8_0=rulePerson
+					lv_panelists_5_0=rulePerson
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getPanelRule());
@@ -1247,23 +1159,23 @@ rulePanel returns [EObject current=null]
 						add(
 							$current,
 							"panelists",
-							lv_panelists_8_0,
+							lv_panelists_5_0,
 							"fr.inria.diverse.models2016.dsl.Program.Person");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 			(
-				otherlv_9=','
+				otherlv_6=','
 				{
-					newLeafNode(otherlv_9, grammarAccess.getPanelAccess().getCommaKeyword_5_3_0());
+					newLeafNode(otherlv_6, grammarAccess.getPanelAccess().getCommaKeyword_3_2_0());
 				}
 				(
 					(
 						{
-							newCompositeNode(grammarAccess.getPanelAccess().getPanelistsPersonParserRuleCall_5_3_1_0());
+							newCompositeNode(grammarAccess.getPanelAccess().getPanelistsPersonParserRuleCall_3_2_1_0());
 						}
-						lv_panelists_10_0=rulePerson
+						lv_panelists_7_0=rulePerson
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getPanelRule());
@@ -1271,33 +1183,25 @@ rulePanel returns [EObject current=null]
 							add(
 								$current,
 								"panelists",
-								lv_panelists_10_0,
+								lv_panelists_7_0,
 								"fr.inria.diverse.models2016.dsl.Program.Person");
 							afterParserOrEnumRuleCall();
 						}
 					)
 				)
 			)*
-			otherlv_11='}'
-			{
-				newLeafNode(otherlv_11, grammarAccess.getPanelAccess().getRightCurlyBracketKeyword_5_4());
-			}
 		)?
 		(
-			otherlv_12='moderators'
+			otherlv_8='moderators'
 			{
-				newLeafNode(otherlv_12, grammarAccess.getPanelAccess().getModeratorsKeyword_6_0());
-			}
-			otherlv_13='{'
-			{
-				newLeafNode(otherlv_13, grammarAccess.getPanelAccess().getLeftCurlyBracketKeyword_6_1());
+				newLeafNode(otherlv_8, grammarAccess.getPanelAccess().getModeratorsKeyword_4_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getPanelAccess().getModeratorsPersonParserRuleCall_6_2_0());
+						newCompositeNode(grammarAccess.getPanelAccess().getModeratorsPersonParserRuleCall_4_1_0());
 					}
-					lv_moderators_14_0=rulePerson
+					lv_moderators_9_0=rulePerson
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getPanelRule());
@@ -1305,23 +1209,23 @@ rulePanel returns [EObject current=null]
 						add(
 							$current,
 							"moderators",
-							lv_moderators_14_0,
+							lv_moderators_9_0,
 							"fr.inria.diverse.models2016.dsl.Program.Person");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 			(
-				otherlv_15=','
+				otherlv_10=','
 				{
-					newLeafNode(otherlv_15, grammarAccess.getPanelAccess().getCommaKeyword_6_3_0());
+					newLeafNode(otherlv_10, grammarAccess.getPanelAccess().getCommaKeyword_4_2_0());
 				}
 				(
 					(
 						{
-							newCompositeNode(grammarAccess.getPanelAccess().getModeratorsPersonParserRuleCall_6_3_1_0());
+							newCompositeNode(grammarAccess.getPanelAccess().getModeratorsPersonParserRuleCall_4_2_1_0());
 						}
-						lv_moderators_16_0=rulePerson
+						lv_moderators_11_0=rulePerson
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getPanelRule());
@@ -1329,22 +1233,14 @@ rulePanel returns [EObject current=null]
 							add(
 								$current,
 								"moderators",
-								lv_moderators_16_0,
+								lv_moderators_11_0,
 								"fr.inria.diverse.models2016.dsl.Program.Person");
 							afterParserOrEnumRuleCall();
 						}
 					)
 				)
 			)*
-			otherlv_17='}'
-			{
-				newLeafNode(otherlv_17, grammarAccess.getPanelAccess().getRightCurlyBracketKeyword_6_4());
-			}
 		)?
-		otherlv_18='}'
-		{
-			newLeafNode(otherlv_18, grammarAccess.getPanelAccess().getRightCurlyBracketKeyword_7());
-		}
 	)
 ;
 
@@ -1368,20 +1264,12 @@ ruleWorkshop returns [EObject current=null]
 		{
 			newLeafNode(otherlv_0, grammarAccess.getWorkshopAccess().getWorkshopKeyword_0());
 		}
-		otherlv_1='{'
-		{
-			newLeafNode(otherlv_1, grammarAccess.getWorkshopAccess().getLeftCurlyBracketKeyword_1());
-		}
-		otherlv_2='title'
-		{
-			newLeafNode(otherlv_2, grammarAccess.getWorkshopAccess().getTitleKeyword_2());
-		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getWorkshopAccess().getNameEStringParserRuleCall_3_0());
+					newCompositeNode(grammarAccess.getWorkshopAccess().getNameEStringParserRuleCall_1_0());
 				}
-				lv_name_3_0=ruleEString
+				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getWorkshopRule());
@@ -1389,23 +1277,23 @@ ruleWorkshop returns [EObject current=null]
 					set(
 						$current,
 						"name",
-						lv_name_3_0,
+						lv_name_1_0,
 						"fr.inria.diverse.models2016.dsl.Program.EString");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
 		(
-			otherlv_4='abstract'
+			otherlv_2='abstract'
 			{
-				newLeafNode(otherlv_4, grammarAccess.getWorkshopAccess().getAbstractKeyword_4_0());
+				newLeafNode(otherlv_2, grammarAccess.getWorkshopAccess().getAbstractKeyword_2_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getWorkshopAccess().getAbstractEStringParserRuleCall_4_1_0());
+						newCompositeNode(grammarAccess.getWorkshopAccess().getAbstractEStringParserRuleCall_2_1_0());
 					}
-					lv_abstract_5_0=ruleEString
+					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getWorkshopRule());
@@ -1413,7 +1301,7 @@ ruleWorkshop returns [EObject current=null]
 						set(
 							$current,
 							"abstract",
-							lv_abstract_5_0,
+							lv_abstract_3_0,
 							"fr.inria.diverse.models2016.dsl.Program.EString");
 						afterParserOrEnumRuleCall();
 					}
@@ -1421,16 +1309,16 @@ ruleWorkshop returns [EObject current=null]
 			)
 		)?
 		(
-			otherlv_6='url'
+			otherlv_4='url'
 			{
-				newLeafNode(otherlv_6, grammarAccess.getWorkshopAccess().getUrlKeyword_5_0());
+				newLeafNode(otherlv_4, grammarAccess.getWorkshopAccess().getUrlKeyword_3_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getWorkshopAccess().getUrlEStringParserRuleCall_5_1_0());
+						newCompositeNode(grammarAccess.getWorkshopAccess().getUrlEStringParserRuleCall_3_1_0());
 					}
-					lv_url_7_0=ruleEString
+					lv_url_5_0=ruleEString
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getWorkshopRule());
@@ -1438,7 +1326,7 @@ ruleWorkshop returns [EObject current=null]
 						set(
 							$current,
 							"url",
-							lv_url_7_0,
+							lv_url_5_0,
 							"fr.inria.diverse.models2016.dsl.Program.EString");
 						afterParserOrEnumRuleCall();
 					}
@@ -1446,16 +1334,16 @@ ruleWorkshop returns [EObject current=null]
 			)
 		)?
 		(
-			otherlv_8='id'
+			otherlv_6='id'
 			{
-				newLeafNode(otherlv_8, grammarAccess.getWorkshopAccess().getIdKeyword_6_0());
+				newLeafNode(otherlv_6, grammarAccess.getWorkshopAccess().getIdKeyword_4_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getWorkshopAccess().getIdEStringParserRuleCall_6_1_0());
+						newCompositeNode(grammarAccess.getWorkshopAccess().getIdEStringParserRuleCall_4_1_0());
 					}
-					lv_id_9_0=ruleEString
+					lv_id_7_0=ruleEString
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getWorkshopRule());
@@ -1463,7 +1351,7 @@ ruleWorkshop returns [EObject current=null]
 						set(
 							$current,
 							"id",
-							lv_id_9_0,
+							lv_id_7_0,
 							"fr.inria.diverse.models2016.dsl.Program.EString");
 						afterParserOrEnumRuleCall();
 					}
@@ -1471,20 +1359,16 @@ ruleWorkshop returns [EObject current=null]
 			)
 		)?
 		(
-			otherlv_10='organizers'
+			otherlv_8='organizers'
 			{
-				newLeafNode(otherlv_10, grammarAccess.getWorkshopAccess().getOrganizersKeyword_7_0());
-			}
-			otherlv_11='{'
-			{
-				newLeafNode(otherlv_11, grammarAccess.getWorkshopAccess().getLeftCurlyBracketKeyword_7_1());
+				newLeafNode(otherlv_8, grammarAccess.getWorkshopAccess().getOrganizersKeyword_5_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getWorkshopAccess().getOrganizersPersonParserRuleCall_7_2_0());
+						newCompositeNode(grammarAccess.getWorkshopAccess().getOrganizersPersonParserRuleCall_5_1_0());
 					}
-					lv_organizers_12_0=rulePerson
+					lv_organizers_9_0=rulePerson
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getWorkshopRule());
@@ -1492,23 +1376,23 @@ ruleWorkshop returns [EObject current=null]
 						add(
 							$current,
 							"organizers",
-							lv_organizers_12_0,
+							lv_organizers_9_0,
 							"fr.inria.diverse.models2016.dsl.Program.Person");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 			(
-				otherlv_13=','
+				otherlv_10=','
 				{
-					newLeafNode(otherlv_13, grammarAccess.getWorkshopAccess().getCommaKeyword_7_3_0());
+					newLeafNode(otherlv_10, grammarAccess.getWorkshopAccess().getCommaKeyword_5_2_0());
 				}
 				(
 					(
 						{
-							newCompositeNode(grammarAccess.getWorkshopAccess().getOrganizersPersonParserRuleCall_7_3_1_0());
+							newCompositeNode(grammarAccess.getWorkshopAccess().getOrganizersPersonParserRuleCall_5_2_1_0());
 						}
-						lv_organizers_14_0=rulePerson
+						lv_organizers_11_0=rulePerson
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getWorkshopRule());
@@ -1516,22 +1400,14 @@ ruleWorkshop returns [EObject current=null]
 							add(
 								$current,
 								"organizers",
-								lv_organizers_14_0,
+								lv_organizers_11_0,
 								"fr.inria.diverse.models2016.dsl.Program.Person");
 							afterParserOrEnumRuleCall();
 						}
 					)
 				)
 			)*
-			otherlv_15='}'
-			{
-				newLeafNode(otherlv_15, grammarAccess.getWorkshopAccess().getRightCurlyBracketKeyword_7_4());
-			}
 		)?
-		otherlv_16='}'
-		{
-			newLeafNode(otherlv_16, grammarAccess.getWorkshopAccess().getRightCurlyBracketKeyword_8());
-		}
 	)
 ;
 
@@ -1555,20 +1431,12 @@ ruleTutorial returns [EObject current=null]
 		{
 			newLeafNode(otherlv_0, grammarAccess.getTutorialAccess().getTutorialKeyword_0());
 		}
-		otherlv_1='{'
-		{
-			newLeafNode(otherlv_1, grammarAccess.getTutorialAccess().getLeftCurlyBracketKeyword_1());
-		}
-		otherlv_2='title'
-		{
-			newLeafNode(otherlv_2, grammarAccess.getTutorialAccess().getTitleKeyword_2());
-		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getTutorialAccess().getNameEStringParserRuleCall_3_0());
+					newCompositeNode(grammarAccess.getTutorialAccess().getNameEStringParserRuleCall_1_0());
 				}
-				lv_name_3_0=ruleEString
+				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getTutorialRule());
@@ -1576,23 +1444,23 @@ ruleTutorial returns [EObject current=null]
 					set(
 						$current,
 						"name",
-						lv_name_3_0,
+						lv_name_1_0,
 						"fr.inria.diverse.models2016.dsl.Program.EString");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
 		(
-			otherlv_4='abstract'
+			otherlv_2='abstract'
 			{
-				newLeafNode(otherlv_4, grammarAccess.getTutorialAccess().getAbstractKeyword_4_0());
+				newLeafNode(otherlv_2, grammarAccess.getTutorialAccess().getAbstractKeyword_2_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getTutorialAccess().getAbstractEStringParserRuleCall_4_1_0());
+						newCompositeNode(grammarAccess.getTutorialAccess().getAbstractEStringParserRuleCall_2_1_0());
 					}
-					lv_abstract_5_0=ruleEString
+					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getTutorialRule());
@@ -1600,7 +1468,7 @@ ruleTutorial returns [EObject current=null]
 						set(
 							$current,
 							"abstract",
-							lv_abstract_5_0,
+							lv_abstract_3_0,
 							"fr.inria.diverse.models2016.dsl.Program.EString");
 						afterParserOrEnumRuleCall();
 					}
@@ -1608,16 +1476,16 @@ ruleTutorial returns [EObject current=null]
 			)
 		)?
 		(
-			otherlv_6='id'
+			otherlv_4='id'
 			{
-				newLeafNode(otherlv_6, grammarAccess.getTutorialAccess().getIdKeyword_5_0());
+				newLeafNode(otherlv_4, grammarAccess.getTutorialAccess().getIdKeyword_3_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getTutorialAccess().getIdEStringParserRuleCall_5_1_0());
+						newCompositeNode(grammarAccess.getTutorialAccess().getIdEStringParserRuleCall_3_1_0());
 					}
-					lv_id_7_0=ruleEString
+					lv_id_5_0=ruleEString
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getTutorialRule());
@@ -1625,7 +1493,7 @@ ruleTutorial returns [EObject current=null]
 						set(
 							$current,
 							"id",
-							lv_id_7_0,
+							lv_id_5_0,
 							"fr.inria.diverse.models2016.dsl.Program.EString");
 						afterParserOrEnumRuleCall();
 					}
@@ -1633,20 +1501,16 @@ ruleTutorial returns [EObject current=null]
 			)
 		)?
 		(
-			otherlv_8='organizers'
+			otherlv_6='organizers'
 			{
-				newLeafNode(otherlv_8, grammarAccess.getTutorialAccess().getOrganizersKeyword_6_0());
-			}
-			otherlv_9='{'
-			{
-				newLeafNode(otherlv_9, grammarAccess.getTutorialAccess().getLeftCurlyBracketKeyword_6_1());
+				newLeafNode(otherlv_6, grammarAccess.getTutorialAccess().getOrganizersKeyword_4_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getTutorialAccess().getOrganizersPersonParserRuleCall_6_2_0());
+						newCompositeNode(grammarAccess.getTutorialAccess().getOrganizersPersonParserRuleCall_4_1_0());
 					}
-					lv_organizers_10_0=rulePerson
+					lv_organizers_7_0=rulePerson
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getTutorialRule());
@@ -1654,23 +1518,23 @@ ruleTutorial returns [EObject current=null]
 						add(
 							$current,
 							"organizers",
-							lv_organizers_10_0,
+							lv_organizers_7_0,
 							"fr.inria.diverse.models2016.dsl.Program.Person");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 			(
-				otherlv_11=','
+				otherlv_8=','
 				{
-					newLeafNode(otherlv_11, grammarAccess.getTutorialAccess().getCommaKeyword_6_3_0());
+					newLeafNode(otherlv_8, grammarAccess.getTutorialAccess().getCommaKeyword_4_2_0());
 				}
 				(
 					(
 						{
-							newCompositeNode(grammarAccess.getTutorialAccess().getOrganizersPersonParserRuleCall_6_3_1_0());
+							newCompositeNode(grammarAccess.getTutorialAccess().getOrganizersPersonParserRuleCall_4_2_1_0());
 						}
-						lv_organizers_12_0=rulePerson
+						lv_organizers_9_0=rulePerson
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getTutorialRule());
@@ -1678,22 +1542,14 @@ ruleTutorial returns [EObject current=null]
 							add(
 								$current,
 								"organizers",
-								lv_organizers_12_0,
+								lv_organizers_9_0,
 								"fr.inria.diverse.models2016.dsl.Program.Person");
 							afterParserOrEnumRuleCall();
 						}
 					)
 				)
 			)*
-			otherlv_13='}'
-			{
-				newLeafNode(otherlv_13, grammarAccess.getTutorialAccess().getRightCurlyBracketKeyword_6_4());
-			}
 		)?
-		otherlv_14='}'
-		{
-			newLeafNode(otherlv_14, grammarAccess.getTutorialAccess().getRightCurlyBracketKeyword_7());
-		}
 	)
 ;
 
@@ -1717,20 +1573,12 @@ ruleDoctoralSymposium returns [EObject current=null]
 		{
 			newLeafNode(otherlv_0, grammarAccess.getDoctoralSymposiumAccess().getDoctoralSymposiumKeyword_0());
 		}
-		otherlv_1='{'
-		{
-			newLeafNode(otherlv_1, grammarAccess.getDoctoralSymposiumAccess().getLeftCurlyBracketKeyword_1());
-		}
-		otherlv_2='title'
-		{
-			newLeafNode(otherlv_2, grammarAccess.getDoctoralSymposiumAccess().getTitleKeyword_2());
-		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getDoctoralSymposiumAccess().getNameEStringParserRuleCall_3_0());
+					newCompositeNode(grammarAccess.getDoctoralSymposiumAccess().getNameEStringParserRuleCall_1_0());
 				}
-				lv_name_3_0=ruleEString
+				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getDoctoralSymposiumRule());
@@ -1738,23 +1586,23 @@ ruleDoctoralSymposium returns [EObject current=null]
 					set(
 						$current,
 						"name",
-						lv_name_3_0,
+						lv_name_1_0,
 						"fr.inria.diverse.models2016.dsl.Program.EString");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
 		(
-			otherlv_4='abstract'
+			otherlv_2='abstract'
 			{
-				newLeafNode(otherlv_4, grammarAccess.getDoctoralSymposiumAccess().getAbstractKeyword_4_0());
+				newLeafNode(otherlv_2, grammarAccess.getDoctoralSymposiumAccess().getAbstractKeyword_2_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getDoctoralSymposiumAccess().getAbstractEStringParserRuleCall_4_1_0());
+						newCompositeNode(grammarAccess.getDoctoralSymposiumAccess().getAbstractEStringParserRuleCall_2_1_0());
 					}
-					lv_abstract_5_0=ruleEString
+					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getDoctoralSymposiumRule());
@@ -1762,7 +1610,7 @@ ruleDoctoralSymposium returns [EObject current=null]
 						set(
 							$current,
 							"abstract",
-							lv_abstract_5_0,
+							lv_abstract_3_0,
 							"fr.inria.diverse.models2016.dsl.Program.EString");
 						afterParserOrEnumRuleCall();
 					}
@@ -1770,20 +1618,16 @@ ruleDoctoralSymposium returns [EObject current=null]
 			)
 		)?
 		(
-			otherlv_6='organizers'
+			otherlv_4='organizers'
 			{
-				newLeafNode(otherlv_6, grammarAccess.getDoctoralSymposiumAccess().getOrganizersKeyword_5_0());
-			}
-			otherlv_7='{'
-			{
-				newLeafNode(otherlv_7, grammarAccess.getDoctoralSymposiumAccess().getLeftCurlyBracketKeyword_5_1());
+				newLeafNode(otherlv_4, grammarAccess.getDoctoralSymposiumAccess().getOrganizersKeyword_3_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getDoctoralSymposiumAccess().getOrganizersPersonParserRuleCall_5_2_0());
+						newCompositeNode(grammarAccess.getDoctoralSymposiumAccess().getOrganizersPersonParserRuleCall_3_1_0());
 					}
-					lv_organizers_8_0=rulePerson
+					lv_organizers_5_0=rulePerson
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getDoctoralSymposiumRule());
@@ -1791,23 +1635,23 @@ ruleDoctoralSymposium returns [EObject current=null]
 						add(
 							$current,
 							"organizers",
-							lv_organizers_8_0,
+							lv_organizers_5_0,
 							"fr.inria.diverse.models2016.dsl.Program.Person");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 			(
-				otherlv_9=','
+				otherlv_6=','
 				{
-					newLeafNode(otherlv_9, grammarAccess.getDoctoralSymposiumAccess().getCommaKeyword_5_3_0());
+					newLeafNode(otherlv_6, grammarAccess.getDoctoralSymposiumAccess().getCommaKeyword_3_2_0());
 				}
 				(
 					(
 						{
-							newCompositeNode(grammarAccess.getDoctoralSymposiumAccess().getOrganizersPersonParserRuleCall_5_3_1_0());
+							newCompositeNode(grammarAccess.getDoctoralSymposiumAccess().getOrganizersPersonParserRuleCall_3_2_1_0());
 						}
-						lv_organizers_10_0=rulePerson
+						lv_organizers_7_0=rulePerson
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getDoctoralSymposiumRule());
@@ -1815,22 +1659,14 @@ ruleDoctoralSymposium returns [EObject current=null]
 							add(
 								$current,
 								"organizers",
-								lv_organizers_10_0,
+								lv_organizers_7_0,
 								"fr.inria.diverse.models2016.dsl.Program.Person");
 							afterParserOrEnumRuleCall();
 						}
 					)
 				)
 			)*
-			otherlv_11='}'
-			{
-				newLeafNode(otherlv_11, grammarAccess.getDoctoralSymposiumAccess().getRightCurlyBracketKeyword_5_4());
-			}
 		)?
-		otherlv_12='}'
-		{
-			newLeafNode(otherlv_12, grammarAccess.getDoctoralSymposiumAccess().getRightCurlyBracketKeyword_6());
-		}
 	)
 ;
 
@@ -1854,20 +1690,12 @@ ruleEducatorSymposium returns [EObject current=null]
 		{
 			newLeafNode(otherlv_0, grammarAccess.getEducatorSymposiumAccess().getEducatorSymposiumKeyword_0());
 		}
-		otherlv_1='{'
-		{
-			newLeafNode(otherlv_1, grammarAccess.getEducatorSymposiumAccess().getLeftCurlyBracketKeyword_1());
-		}
-		otherlv_2='title'
-		{
-			newLeafNode(otherlv_2, grammarAccess.getEducatorSymposiumAccess().getTitleKeyword_2());
-		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getEducatorSymposiumAccess().getNameEStringParserRuleCall_3_0());
+					newCompositeNode(grammarAccess.getEducatorSymposiumAccess().getNameEStringParserRuleCall_1_0());
 				}
-				lv_name_3_0=ruleEString
+				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getEducatorSymposiumRule());
@@ -1875,23 +1703,23 @@ ruleEducatorSymposium returns [EObject current=null]
 					set(
 						$current,
 						"name",
-						lv_name_3_0,
+						lv_name_1_0,
 						"fr.inria.diverse.models2016.dsl.Program.EString");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
 		(
-			otherlv_4='abstract'
+			otherlv_2='abstract'
 			{
-				newLeafNode(otherlv_4, grammarAccess.getEducatorSymposiumAccess().getAbstractKeyword_4_0());
+				newLeafNode(otherlv_2, grammarAccess.getEducatorSymposiumAccess().getAbstractKeyword_2_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getEducatorSymposiumAccess().getAbstractEStringParserRuleCall_4_1_0());
+						newCompositeNode(grammarAccess.getEducatorSymposiumAccess().getAbstractEStringParserRuleCall_2_1_0());
 					}
-					lv_abstract_5_0=ruleEString
+					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getEducatorSymposiumRule());
@@ -1899,7 +1727,7 @@ ruleEducatorSymposium returns [EObject current=null]
 						set(
 							$current,
 							"abstract",
-							lv_abstract_5_0,
+							lv_abstract_3_0,
 							"fr.inria.diverse.models2016.dsl.Program.EString");
 						afterParserOrEnumRuleCall();
 					}
@@ -1907,20 +1735,16 @@ ruleEducatorSymposium returns [EObject current=null]
 			)
 		)?
 		(
-			otherlv_6='organizers'
+			otherlv_4='organizers'
 			{
-				newLeafNode(otherlv_6, grammarAccess.getEducatorSymposiumAccess().getOrganizersKeyword_5_0());
-			}
-			otherlv_7='{'
-			{
-				newLeafNode(otherlv_7, grammarAccess.getEducatorSymposiumAccess().getLeftCurlyBracketKeyword_5_1());
+				newLeafNode(otherlv_4, grammarAccess.getEducatorSymposiumAccess().getOrganizersKeyword_3_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getEducatorSymposiumAccess().getOrganizersPersonParserRuleCall_5_2_0());
+						newCompositeNode(grammarAccess.getEducatorSymposiumAccess().getOrganizersPersonParserRuleCall_3_1_0());
 					}
-					lv_organizers_8_0=rulePerson
+					lv_organizers_5_0=rulePerson
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getEducatorSymposiumRule());
@@ -1928,23 +1752,23 @@ ruleEducatorSymposium returns [EObject current=null]
 						add(
 							$current,
 							"organizers",
-							lv_organizers_8_0,
+							lv_organizers_5_0,
 							"fr.inria.diverse.models2016.dsl.Program.Person");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 			(
-				otherlv_9=','
+				otherlv_6=','
 				{
-					newLeafNode(otherlv_9, grammarAccess.getEducatorSymposiumAccess().getCommaKeyword_5_3_0());
+					newLeafNode(otherlv_6, grammarAccess.getEducatorSymposiumAccess().getCommaKeyword_3_2_0());
 				}
 				(
 					(
 						{
-							newCompositeNode(grammarAccess.getEducatorSymposiumAccess().getOrganizersPersonParserRuleCall_5_3_1_0());
+							newCompositeNode(grammarAccess.getEducatorSymposiumAccess().getOrganizersPersonParserRuleCall_3_2_1_0());
 						}
-						lv_organizers_10_0=rulePerson
+						lv_organizers_7_0=rulePerson
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getEducatorSymposiumRule());
@@ -1952,22 +1776,14 @@ ruleEducatorSymposium returns [EObject current=null]
 							add(
 								$current,
 								"organizers",
-								lv_organizers_10_0,
+								lv_organizers_7_0,
 								"fr.inria.diverse.models2016.dsl.Program.Person");
 							afterParserOrEnumRuleCall();
 						}
 					)
 				)
 			)*
-			otherlv_11='}'
-			{
-				newLeafNode(otherlv_11, grammarAccess.getEducatorSymposiumAccess().getRightCurlyBracketKeyword_5_4());
-			}
 		)?
-		otherlv_12='}'
-		{
-			newLeafNode(otherlv_12, grammarAccess.getEducatorSymposiumAccess().getRightCurlyBracketKeyword_6());
-		}
 	)
 ;
 
@@ -1991,20 +1807,12 @@ ruleReception returns [EObject current=null]
 		{
 			newLeafNode(otherlv_0, grammarAccess.getReceptionAccess().getReceptionKeyword_0());
 		}
-		otherlv_1='{'
-		{
-			newLeafNode(otherlv_1, grammarAccess.getReceptionAccess().getLeftCurlyBracketKeyword_1());
-		}
-		otherlv_2='title'
-		{
-			newLeafNode(otherlv_2, grammarAccess.getReceptionAccess().getTitleKeyword_2());
-		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getReceptionAccess().getNameEStringParserRuleCall_3_0());
+					newCompositeNode(grammarAccess.getReceptionAccess().getNameEStringParserRuleCall_1_0());
 				}
-				lv_name_3_0=ruleEString
+				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getReceptionRule());
@@ -2012,23 +1820,23 @@ ruleReception returns [EObject current=null]
 					set(
 						$current,
 						"name",
-						lv_name_3_0,
+						lv_name_1_0,
 						"fr.inria.diverse.models2016.dsl.Program.EString");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
 		(
-			otherlv_4='abstract'
+			otherlv_2='abstract'
 			{
-				newLeafNode(otherlv_4, grammarAccess.getReceptionAccess().getAbstractKeyword_4_0());
+				newLeafNode(otherlv_2, grammarAccess.getReceptionAccess().getAbstractKeyword_2_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getReceptionAccess().getAbstractEStringParserRuleCall_4_1_0());
+						newCompositeNode(grammarAccess.getReceptionAccess().getAbstractEStringParserRuleCall_2_1_0());
 					}
-					lv_abstract_5_0=ruleEString
+					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getReceptionRule());
@@ -2036,17 +1844,13 @@ ruleReception returns [EObject current=null]
 						set(
 							$current,
 							"abstract",
-							lv_abstract_5_0,
+							lv_abstract_3_0,
 							"fr.inria.diverse.models2016.dsl.Program.EString");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 		)?
-		otherlv_6='}'
-		{
-			newLeafNode(otherlv_6, grammarAccess.getReceptionAccess().getRightCurlyBracketKeyword_5());
-		}
 	)
 ;
 
@@ -2070,20 +1874,12 @@ ruleClinic returns [EObject current=null]
 		{
 			newLeafNode(otherlv_0, grammarAccess.getClinicAccess().getClinicKeyword_0());
 		}
-		otherlv_1='{'
-		{
-			newLeafNode(otherlv_1, grammarAccess.getClinicAccess().getLeftCurlyBracketKeyword_1());
-		}
-		otherlv_2='title'
-		{
-			newLeafNode(otherlv_2, grammarAccess.getClinicAccess().getTitleKeyword_2());
-		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getClinicAccess().getNameEStringParserRuleCall_3_0());
+					newCompositeNode(grammarAccess.getClinicAccess().getNameEStringParserRuleCall_1_0());
 				}
-				lv_name_3_0=ruleEString
+				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getClinicRule());
@@ -2091,23 +1887,23 @@ ruleClinic returns [EObject current=null]
 					set(
 						$current,
 						"name",
-						lv_name_3_0,
+						lv_name_1_0,
 						"fr.inria.diverse.models2016.dsl.Program.EString");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
 		(
-			otherlv_4='abstract'
+			otherlv_2='abstract'
 			{
-				newLeafNode(otherlv_4, grammarAccess.getClinicAccess().getAbstractKeyword_4_0());
+				newLeafNode(otherlv_2, grammarAccess.getClinicAccess().getAbstractKeyword_2_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getClinicAccess().getAbstractEStringParserRuleCall_4_1_0());
+						newCompositeNode(grammarAccess.getClinicAccess().getAbstractEStringParserRuleCall_2_1_0());
 					}
-					lv_abstract_5_0=ruleEString
+					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getClinicRule());
@@ -2115,17 +1911,13 @@ ruleClinic returns [EObject current=null]
 						set(
 							$current,
 							"abstract",
-							lv_abstract_5_0,
+							lv_abstract_3_0,
 							"fr.inria.diverse.models2016.dsl.Program.EString");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 		)?
-		otherlv_6='}'
-		{
-			newLeafNode(otherlv_6, grammarAccess.getClinicAccess().getRightCurlyBracketKeyword_5());
-		}
 	)
 ;
 
@@ -2149,20 +1941,12 @@ ruleLunch returns [EObject current=null]
 		{
 			newLeafNode(otherlv_0, grammarAccess.getLunchAccess().getLunchKeyword_0());
 		}
-		otherlv_1='{'
-		{
-			newLeafNode(otherlv_1, grammarAccess.getLunchAccess().getLeftCurlyBracketKeyword_1());
-		}
-		otherlv_2='title'
-		{
-			newLeafNode(otherlv_2, grammarAccess.getLunchAccess().getTitleKeyword_2());
-		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getLunchAccess().getNameEStringParserRuleCall_3_0());
+					newCompositeNode(grammarAccess.getLunchAccess().getNameEStringParserRuleCall_1_0());
 				}
-				lv_name_3_0=ruleEString
+				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getLunchRule());
@@ -2170,23 +1954,23 @@ ruleLunch returns [EObject current=null]
 					set(
 						$current,
 						"name",
-						lv_name_3_0,
+						lv_name_1_0,
 						"fr.inria.diverse.models2016.dsl.Program.EString");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
 		(
-			otherlv_4='abstract'
+			otherlv_2='abstract'
 			{
-				newLeafNode(otherlv_4, grammarAccess.getLunchAccess().getAbstractKeyword_4_0());
+				newLeafNode(otherlv_2, grammarAccess.getLunchAccess().getAbstractKeyword_2_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getLunchAccess().getAbstractEStringParserRuleCall_4_1_0());
+						newCompositeNode(grammarAccess.getLunchAccess().getAbstractEStringParserRuleCall_2_1_0());
 					}
-					lv_abstract_5_0=ruleEString
+					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getLunchRule());
@@ -2194,29 +1978,92 @@ ruleLunch returns [EObject current=null]
 						set(
 							$current,
 							"abstract",
-							lv_abstract_5_0,
+							lv_abstract_3_0,
 							"fr.inria.diverse.models2016.dsl.Program.EString");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 		)?
-		otherlv_6='}'
-		{
-			newLeafNode(otherlv_6, grammarAccess.getLunchAccess().getRightCurlyBracketKeyword_5());
-		}
 	)
 ;
 
-// Entry rule entryRuleTalk
-entryRuleTalk returns [EObject current=null]:
-	{ newCompositeNode(grammarAccess.getTalkRule()); }
-	iv_ruleTalk=ruleTalk
-	{ $current=$iv_ruleTalk.current; }
+// Entry rule entryRuleCoffeeBreak
+entryRuleCoffeeBreak returns [EObject current=null]:
+	{ newCompositeNode(grammarAccess.getCoffeeBreakRule()); }
+	iv_ruleCoffeeBreak=ruleCoffeeBreak
+	{ $current=$iv_ruleCoffeeBreak.current; }
 	EOF;
 
-// Rule Talk
-ruleTalk returns [EObject current=null]
+// Rule CoffeeBreak
+ruleCoffeeBreak returns [EObject current=null]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		otherlv_0='CoffeeBreak'
+		{
+			newLeafNode(otherlv_0, grammarAccess.getCoffeeBreakAccess().getCoffeeBreakKeyword_0());
+		}
+		(
+			(
+				{
+					newCompositeNode(grammarAccess.getCoffeeBreakAccess().getNameEStringParserRuleCall_1_0());
+				}
+				lv_name_1_0=ruleEString
+				{
+					if ($current==null) {
+						$current = createModelElementForParent(grammarAccess.getCoffeeBreakRule());
+					}
+					set(
+						$current,
+						"name",
+						lv_name_1_0,
+						"fr.inria.diverse.models2016.dsl.Program.EString");
+					afterParserOrEnumRuleCall();
+				}
+			)
+		)
+		(
+			otherlv_2='abstract'
+			{
+				newLeafNode(otherlv_2, grammarAccess.getCoffeeBreakAccess().getAbstractKeyword_2_0());
+			}
+			(
+				(
+					{
+						newCompositeNode(grammarAccess.getCoffeeBreakAccess().getAbstractEStringParserRuleCall_2_1_0());
+					}
+					lv_abstract_3_0=ruleEString
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getCoffeeBreakRule());
+						}
+						set(
+							$current,
+							"abstract",
+							lv_abstract_3_0,
+							"fr.inria.diverse.models2016.dsl.Program.EString");
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)
+		)?
+	)
+;
+
+// Entry rule entryRulePaper
+entryRulePaper returns [EObject current=null]:
+	{ newCompositeNode(grammarAccess.getPaperRule()); }
+	iv_rulePaper=rulePaper
+	{ $current=$iv_rulePaper.current; }
+	EOF;
+
+// Rule Paper
+rulePaper returns [EObject current=null]
 @init {
 	enterRule();
 }
@@ -2227,37 +2074,96 @@ ruleTalk returns [EObject current=null]
 		(
 			{
 				$current = forceCreateModelElement(
-					grammarAccess.getTalkAccess().getTalkAction_0(),
+					grammarAccess.getPaperAccess().getPaperAction_0(),
 					$current);
 			}
 		)
-		otherlv_1='Talk'
+		(
+			(
+				{
+					newCompositeNode(grammarAccess.getPaperAccess().getNameEStringParserRuleCall_1_0());
+				}
+				lv_name_1_0=ruleEString
+				{
+					if ($current==null) {
+						$current = createModelElementForParent(grammarAccess.getPaperRule());
+					}
+					set(
+						$current,
+						"name",
+						lv_name_1_0,
+						"fr.inria.diverse.models2016.dsl.Program.EString");
+					afterParserOrEnumRuleCall();
+				}
+			)
+		)
+		otherlv_2='authors'
 		{
-			newLeafNode(otherlv_1, grammarAccess.getTalkAccess().getTalkKeyword_1());
-		}
-		otherlv_2='{'
-		{
-			newLeafNode(otherlv_2, grammarAccess.getTalkAccess().getLeftCurlyBracketKeyword_2());
+			newLeafNode(otherlv_2, grammarAccess.getPaperAccess().getAuthorsKeyword_2());
 		}
 		(
-			otherlv_3='preprint'
+			(
+				{
+					newCompositeNode(grammarAccess.getPaperAccess().getAuthorsPersonParserRuleCall_3_0());
+				}
+				lv_authors_3_0=rulePerson
+				{
+					if ($current==null) {
+						$current = createModelElementForParent(grammarAccess.getPaperRule());
+					}
+					add(
+						$current,
+						"authors",
+						lv_authors_3_0,
+						"fr.inria.diverse.models2016.dsl.Program.Person");
+					afterParserOrEnumRuleCall();
+				}
+			)
+		)
+		(
+			otherlv_4=','
 			{
-				newLeafNode(otherlv_3, grammarAccess.getTalkAccess().getPreprintKeyword_3_0());
+				newLeafNode(otherlv_4, grammarAccess.getPaperAccess().getCommaKeyword_4_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getTalkAccess().getPreprintEStringParserRuleCall_3_1_0());
+						newCompositeNode(grammarAccess.getPaperAccess().getAuthorsPersonParserRuleCall_4_1_0());
 					}
-					lv_preprint_4_0=ruleEString
+					lv_authors_5_0=rulePerson
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getTalkRule());
+							$current = createModelElementForParent(grammarAccess.getPaperRule());
+						}
+						add(
+							$current,
+							"authors",
+							lv_authors_5_0,
+							"fr.inria.diverse.models2016.dsl.Program.Person");
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)
+		)*
+		(
+			otherlv_6='abstract'
+			{
+				newLeafNode(otherlv_6, grammarAccess.getPaperAccess().getAbstractKeyword_5_0());
+			}
+			(
+				(
+					{
+						newCompositeNode(grammarAccess.getPaperAccess().getAbstractEStringParserRuleCall_5_1_0());
+					}
+					lv_abstract_7_0=ruleEString
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getPaperRule());
 						}
 						set(
 							$current,
-							"preprint",
-							lv_preprint_4_0,
+							"abstract",
+							lv_abstract_7_0,
 							"fr.inria.diverse.models2016.dsl.Program.EString");
 						afterParserOrEnumRuleCall();
 					}
@@ -2265,92 +2171,55 @@ ruleTalk returns [EObject current=null]
 			)
 		)?
 		(
-			otherlv_5='kind'
+			otherlv_8='preprint'
 			{
-				newLeafNode(otherlv_5, grammarAccess.getTalkAccess().getKindKeyword_4_0());
+				newLeafNode(otherlv_8, grammarAccess.getPaperAccess().getPreprintKeyword_6_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getTalkAccess().getKindTrackEnumRuleCall_4_1_0());
+						newCompositeNode(grammarAccess.getPaperAccess().getPreprintEStringParserRuleCall_6_1_0());
 					}
-					lv_kind_6_0=ruleTrack
+					lv_preprint_9_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getTalkRule());
+							$current = createModelElementForParent(grammarAccess.getPaperRule());
 						}
 						set(
 							$current,
-							"kind",
-							lv_kind_6_0,
-							"fr.inria.diverse.models2016.dsl.Program.Track");
+							"preprint",
+							lv_preprint_9_0,
+							"fr.inria.diverse.models2016.dsl.Program.EString");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 		)?
 		(
-			otherlv_7='authors'
+			otherlv_10='kind'
 			{
-				newLeafNode(otherlv_7, grammarAccess.getTalkAccess().getAuthorsKeyword_5_0());
-			}
-			otherlv_8='{'
-			{
-				newLeafNode(otherlv_8, grammarAccess.getTalkAccess().getLeftCurlyBracketKeyword_5_1());
+				newLeafNode(otherlv_10, grammarAccess.getPaperAccess().getKindKeyword_7_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getTalkAccess().getAuthorsPersonParserRuleCall_5_2_0());
+						newCompositeNode(grammarAccess.getPaperAccess().getKindTrackEnumRuleCall_7_1_0());
 					}
-					lv_authors_9_0=rulePerson
+					lv_kind_11_0=ruleTrack
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getTalkRule());
+							$current = createModelElementForParent(grammarAccess.getPaperRule());
 						}
-						add(
+						set(
 							$current,
-							"authors",
-							lv_authors_9_0,
-							"fr.inria.diverse.models2016.dsl.Program.Person");
+							"kind",
+							lv_kind_11_0,
+							"fr.inria.diverse.models2016.dsl.Program.Track");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
-			(
-				otherlv_10=','
-				{
-					newLeafNode(otherlv_10, grammarAccess.getTalkAccess().getCommaKeyword_5_3_0());
-				}
-				(
-					(
-						{
-							newCompositeNode(grammarAccess.getTalkAccess().getAuthorsPersonParserRuleCall_5_3_1_0());
-						}
-						lv_authors_11_0=rulePerson
-						{
-							if ($current==null) {
-								$current = createModelElementForParent(grammarAccess.getTalkRule());
-							}
-							add(
-								$current,
-								"authors",
-								lv_authors_11_0,
-								"fr.inria.diverse.models2016.dsl.Program.Person");
-							afterParserOrEnumRuleCall();
-						}
-					)
-				)
-			)*
-			otherlv_12='}'
-			{
-				newLeafNode(otherlv_12, grammarAccess.getTalkAccess().getRightCurlyBracketKeyword_5_4());
-			}
 		)?
-		otherlv_13='}'
-		{
-			newLeafNode(otherlv_13, grammarAccess.getTalkAccess().getRightCurlyBracketKeyword_6());
-		}
 	)
 ;
 
@@ -2377,16 +2246,12 @@ rulePerson returns [EObject current=null]
 					$current);
 			}
 		)
-		otherlv_1='Person'
-		{
-			newLeafNode(otherlv_1, grammarAccess.getPersonAccess().getPersonKeyword_1());
-		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getPersonAccess().getNameEStringParserRuleCall_2_0());
+					newCompositeNode(grammarAccess.getPersonAccess().getNameEStringParserRuleCall_1_0());
 				}
-				lv_name_2_0=ruleEString
+				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getPersonRule());
@@ -2394,27 +2259,23 @@ rulePerson returns [EObject current=null]
 					set(
 						$current,
 						"name",
-						lv_name_2_0,
+						lv_name_1_0,
 						"fr.inria.diverse.models2016.dsl.Program.EString");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		otherlv_3='{'
-		{
-			newLeafNode(otherlv_3, grammarAccess.getPersonAccess().getLeftCurlyBracketKeyword_3());
-		}
 		(
-			otherlv_4='email'
+			otherlv_2='email'
 			{
-				newLeafNode(otherlv_4, grammarAccess.getPersonAccess().getEmailKeyword_4_0());
+				newLeafNode(otherlv_2, grammarAccess.getPersonAccess().getEmailKeyword_2_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getPersonAccess().getEmailEStringParserRuleCall_4_1_0());
+						newCompositeNode(grammarAccess.getPersonAccess().getEmailEStringParserRuleCall_2_1_0());
 					}
-					lv_email_5_0=ruleEString
+					lv_email_3_0=ruleEString
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getPersonRule());
@@ -2422,7 +2283,7 @@ rulePerson returns [EObject current=null]
 						set(
 							$current,
 							"email",
-							lv_email_5_0,
+							lv_email_3_0,
 							"fr.inria.diverse.models2016.dsl.Program.EString");
 						afterParserOrEnumRuleCall();
 					}
@@ -2430,16 +2291,16 @@ rulePerson returns [EObject current=null]
 			)
 		)?
 		(
-			otherlv_6='homepage'
+			otherlv_4='homepage'
 			{
-				newLeafNode(otherlv_6, grammarAccess.getPersonAccess().getHomepageKeyword_5_0());
+				newLeafNode(otherlv_4, grammarAccess.getPersonAccess().getHomepageKeyword_3_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getPersonAccess().getHomepageEStringParserRuleCall_5_1_0());
+						newCompositeNode(grammarAccess.getPersonAccess().getHomepageEStringParserRuleCall_3_1_0());
 					}
-					lv_homepage_7_0=ruleEString
+					lv_homepage_5_0=ruleEString
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getPersonRule());
@@ -2447,17 +2308,13 @@ rulePerson returns [EObject current=null]
 						set(
 							$current,
 							"homepage",
-							lv_homepage_7_0,
+							lv_homepage_5_0,
 							"fr.inria.diverse.models2016.dsl.Program.EString");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 		)?
-		otherlv_8='}'
-		{
-			newLeafNode(otherlv_8, grammarAccess.getPersonAccess().getRightCurlyBracketKeyword_6());
-		}
 	)
 ;
 
@@ -2538,7 +2395,7 @@ ruleTrack returns [Enumerator current=null]
 }:
 	(
 		(
-			enumLiteral_0='PracticeAndInnovation'
+			enumLiteral_0='Practice and Innovation'
 			{
 				$current = grammarAccess.getTrackAccess().getPracticeAndInnovationEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
 				newLeafNode(enumLiteral_0, grammarAccess.getTrackAccess().getPracticeAndInnovationEnumLiteralDeclaration_0());

@@ -54,7 +54,7 @@ class ProgramGenerator extends AbstractGenerator {
 		sessionsPerRoomPerDay.clear
 		conference = input.allContents.filter(typeof(Conference)).findFirst[true]
 		if (conference != null) {
-			val List<Room> rooms = conference.ressources.filter(typeof(Room)).toList
+			val List<Room> rooms = conference.resources.filter(typeof(Room)).toList
 			conference.program.days.forEach[d|
 				val List<Session> sessions = d.sessions
 				val Set<Room> roomsOfTheDay = new HashSet
@@ -160,6 +160,8 @@ class ProgramGenerator extends AbstractGenerator {
 						papers : [
 							«FOR p : talkSession.papers SEPARATOR ","»
 							{
+								title : «p.name»
+								abstract : «p.abstract»
 								authors : [
 									«FOR a : p.authors SEPARATOR ","»
 									«a.name»
@@ -322,7 +324,7 @@ class ProgramGenerator extends AbstractGenerator {
 					[
 						«FOR d : conference.program.days SEPARATOR ","»
 						{
-							name : "«d.weekday»",
+							name : "«d.weekday.getName»",
 							date : "«dateFormat.format(d.date)»",
 							rooms : [
 								«val roomsOfDay = roomsPerDay.get(d)»

@@ -5,8 +5,8 @@ package models2016.impl;
 import java.util.Collection;
 
 import models2016.Models2016Package;
+import models2016.Paper;
 import models2016.Person;
-import models2016.Talk;
 import models2016.TalkSession;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -18,9 +18,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,23 +28,13 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link models2016.impl.TalkSessionImpl#getPapers <em>Papers</em>}</li>
  *   <li>{@link models2016.impl.TalkSessionImpl#getChair <em>Chair</em>}</li>
+ *   <li>{@link models2016.impl.TalkSessionImpl#getPapers <em>Papers</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class TalkSessionImpl extends EventImpl implements TalkSession {
-	/**
-	 * The cached value of the '{@link #getPapers() <em>Papers</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPapers()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Talk> papers;
-
 	/**
 	 * The cached value of the '{@link #getChair() <em>Chair</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -56,6 +44,16 @@ public class TalkSessionImpl extends EventImpl implements TalkSession {
 	 * @ordered
 	 */
 	protected Person chair;
+
+	/**
+	 * The cached value of the '{@link #getPapers() <em>Papers</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPapers()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Paper> papers;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,9 +79,9 @@ public class TalkSessionImpl extends EventImpl implements TalkSession {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Talk> getPapers() {
+	public EList<Paper> getPapers() {
 		if (papers == null) {
-			papers = new EObjectContainmentEList<Talk>(Talk.class, this, Models2016Package.TALK_SESSION__PAPERS);
+			papers = new EObjectResolvingEList<Paper>(Paper.class, this, Models2016Package.TALK_SESSION__PAPERS);
 		}
 		return papers;
 	}
@@ -139,8 +137,6 @@ public class TalkSessionImpl extends EventImpl implements TalkSession {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case Models2016Package.TALK_SESSION__PAPERS:
-				return ((InternalEList<?>)getPapers()).basicRemove(otherEnd, msgs);
 			case Models2016Package.TALK_SESSION__CHAIR:
 				return basicSetChair(null, msgs);
 		}
@@ -155,10 +151,10 @@ public class TalkSessionImpl extends EventImpl implements TalkSession {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case Models2016Package.TALK_SESSION__PAPERS:
-				return getPapers();
 			case Models2016Package.TALK_SESSION__CHAIR:
 				return getChair();
+			case Models2016Package.TALK_SESSION__PAPERS:
+				return getPapers();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -172,12 +168,12 @@ public class TalkSessionImpl extends EventImpl implements TalkSession {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case Models2016Package.TALK_SESSION__PAPERS:
-				getPapers().clear();
-				getPapers().addAll((Collection<? extends Talk>)newValue);
-				return;
 			case Models2016Package.TALK_SESSION__CHAIR:
 				setChair((Person)newValue);
+				return;
+			case Models2016Package.TALK_SESSION__PAPERS:
+				getPapers().clear();
+				getPapers().addAll((Collection<? extends Paper>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -191,11 +187,11 @@ public class TalkSessionImpl extends EventImpl implements TalkSession {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case Models2016Package.TALK_SESSION__PAPERS:
-				getPapers().clear();
-				return;
 			case Models2016Package.TALK_SESSION__CHAIR:
 				setChair((Person)null);
+				return;
+			case Models2016Package.TALK_SESSION__PAPERS:
+				getPapers().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -209,10 +205,10 @@ public class TalkSessionImpl extends EventImpl implements TalkSession {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case Models2016Package.TALK_SESSION__PAPERS:
-				return papers != null && !papers.isEmpty();
 			case Models2016Package.TALK_SESSION__CHAIR:
 				return chair != null;
+			case Models2016Package.TALK_SESSION__PAPERS:
+				return papers != null && !papers.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

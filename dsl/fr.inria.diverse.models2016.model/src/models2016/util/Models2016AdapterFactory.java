@@ -108,8 +108,8 @@ public class Models2016AdapterFactory extends AdapterFactoryImpl {
 				return createEducatorSymposiumAdapter();
 			}
 			@Override
-			public Adapter caseRessource(Ressource object) {
-				return createRessourceAdapter();
+			public Adapter caseResource(Resource object) {
+				return createResourceAdapter();
 			}
 			@Override
 			public Adapter caseRoom(Room object) {
@@ -132,8 +132,8 @@ public class Models2016AdapterFactory extends AdapterFactoryImpl {
 				return createPersonAdapter();
 			}
 			@Override
-			public Adapter caseTalk(Talk object) {
-				return createTalkAdapter();
+			public Adapter casePaper(Paper object) {
+				return createPaperAdapter();
 			}
 			@Override
 			public Adapter caseLunch(Lunch object) {
@@ -304,16 +304,16 @@ public class Models2016AdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link models2016.Ressource <em>Ressource</em>}'.
+	 * Creates a new adapter for an object of class '{@link models2016.Resource <em>Resource</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see models2016.Ressource
+	 * @see models2016.Resource
 	 * @generated
 	 */
-	public Adapter createRessourceAdapter() {
+	public Adapter createResourceAdapter() {
 		return null;
 	}
 
@@ -388,16 +388,16 @@ public class Models2016AdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link models2016.Talk <em>Talk</em>}'.
+	 * Creates a new adapter for an object of class '{@link models2016.Paper <em>Paper</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see models2016.Talk
+	 * @see models2016.Paper
 	 * @generated
 	 */
-	public Adapter createTalkAdapter() {
+	public Adapter createPaperAdapter() {
 		return null;
 	}
 
