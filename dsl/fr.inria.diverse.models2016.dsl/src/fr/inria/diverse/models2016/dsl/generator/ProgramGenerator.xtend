@@ -41,7 +41,7 @@ class ProgramGenerator extends AbstractGenerator {
 
 	private val Map<Day,List<Room>> roomsPerDay = new HashMap
 	private val Map<Day,Map<Room,List<Session>>> sessionsPerRoomPerDay = new HashMap
-	private val List<Session[]> sessionGroups = new ArrayList
+	private val Map<Day,List<Session[]>> sessionGroupsPerDay = new HashMap
 	
 	private val DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd")
 	private val DateFormat hourFormat = new SimpleDateFormat("HH:mm")
@@ -81,15 +81,17 @@ class ProgramGenerator extends AbstractGenerator {
 				val toBeSorted = new HashMap(sessionsPerRoom)
 				toBeSorted.forEach[r, s|
 					val sortedList = s.sortWith([s1,s2|
-						return s1.startingTime.compareTo(s2.startingTime)
+						return s2.startingTime.compareTo(s1.startingTime)
 					])
 					sessionsPerRoom.put(r, sortedList)
 				]
 			]
 			
-			sessionGroups.clear()
+			sessionGroupsPerDay.clear()
 			
 			sessionsPerRoomPerDay.forEach[d, sessionsPerRoom|
+				val sessionGroups = new ArrayList
+				sessionGroupsPerDay.put(d,sessionGroups)
 				val tmp = new HashMap(sessionsPerRoom)
 				val roomsOfDay = roomsPerDay.get(d)
 				var malformed = false
@@ -107,7 +109,7 @@ class ProgramGenerator extends AbstractGenerator {
 					if (tmpStart != null) {
 						val earliestStart = tmpStart
 						val Session[] sessionGroup = newArrayOfSize(roomsOfDay.size)
-						sessionGroups.add(sessionGroup)
+						sessionGroups.add(0,sessionGroup)
 						tmp.forEach[r, l|
 							val i = roomsOfDay.indexOf(r)
 							if (l.empty || l.get(0).startingTime.compareTo(earliestStart) != 0) {
@@ -341,7 +343,7 @@ class ProgramGenerator extends AbstractGenerator {
 								«ENDFOR»
 							],
 							sessionGroups : [
-								«FOR g : sessionGroups SEPARATOR ","»
+								«FOR g : sessionGroupsPerDay.get(d) SEPARATOR ","»
 								[
 									«FOR s : g SEPARATOR ","»
 									«IF s == null»
