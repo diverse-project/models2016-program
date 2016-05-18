@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: fr.inria.diverse.models2016.dsl
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: fr.inria.diverse.models2016.dsl; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: fr.inria.diverse.models2016.model,
+ org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.xtext.xbase.lib,
+ org.antlr.runtime,
+ org.eclipse.xtext.util,
+ org.eclipse.xtend.lib
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: fr.inria.diverse.models2016.dsl.parser.antlr.internal,
+ fr.inria.diverse.models2016.dsl.generator,
+ fr.inria.diverse.models2016.dsl.parser.antlr,
+ fr.inria.diverse.models2016.dsl.serializer,
+ fr.inria.diverse.models2016.dsl.services,
+ fr.inria.diverse.models2016.dsl,
+ fr.inria.diverse.models2016.dsl.validation,
+ fr.inria.diverse.models2016.dsl.scoping,
+ fr.inria.diverse.models2016.dsl.formatting
+Import-Package: org.apache.log4j
