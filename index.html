@@ -29,27 +29,27 @@
                     <thead>
                     <tr>
                         <th>Sessions</th>
-                        <th ng-repeat="room in day.rooms">{{room}}</th>
+                        <th ng-repeat="room in day.rooms">{{room.name}}</th>
                     </tr>
                     </thead>
 
                     <tbody>
-                    <tr ng-repeat="session in day.sessions">
-                        <td>
-                            <strong>{{session.name}}</strong><br/>
-                            {{session.start}} - {{session.end}}
+                    <tr ng-repeat="sessionGroup in day.sessionGroups">
+
+                        <td ng-if="sessionGroup.length > 0">
+                            {{getStartOfSessionGroup(sessionGroup)}}
                         </td>
 
-                        <td ng-repeat="talkGroup in session.talkGroups">
+                        <td ng-if="sessionGroup.length > 0" ng-repeat="session in sessionGroup" rowspan="{{session.length}}">
                             <table>
-                                <tr ng-repeat="talk in talkGroup">
-                                    <td ng-if="talk.title">
+                                <tr ng-repeat="event in session.events">
+                                    <td ng-if="event.title">
                                         <div ng-show="!showFavorites || (showFavorites && talk.selected)">
                                             <button class="btn btn-link" ng-click="toggleFavoriteTalk(talk)">
                                                 <span ng-if="talk.selected" class="glyphicon glyphicon-star"></span>
                                                 <span ng-if="!talk.selected" class="glyphicon glyphicon-star-empty"></span>
                                             </button>
-                                            {{talk.title}}
+                                            {{event.title}}
                                         </div>
                                     </td>
                                 </tr>
