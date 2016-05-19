@@ -1,0 +1,137 @@
+"Models 2016"
+	resources
+		room "Broussais"
+		room "Rotonde Surcouf"
+		room "Rotonde J. Cartier"
+		room "Bouvet 1" capacity 45
+		room "Bouvet 2" capacity 45
+		room "Charcot" capacity 54
+		room "Vauban 1" capacity 50
+		room "Vauban 2" capacity 60
+		room "Lamennais 1" capacity 80
+		room "Lamennais 2" capacity 80
+		room "Lamennais 3" capacity 80
+		room "Grand Large"
+		room "Chateaubriand" capacity 400
+		room "Lamennais 1+2" capacity 180
+		room "Lamennais 4+5" capacity 150
+	
+	papers {
+		"MDE for cows"
+			authors "Jane Doe"
+			kind Practice and Innovation;
+		"MDE for pigs"
+			authors "Pierre", "Paul", "Jacques"
+	}
+	
+	events {
+		
+		CoffeeBreak "Coffee Break";
+		
+		Lunch "Lunch";
+		
+		DoctoralSymposium "Doctoral Symposium";
+		
+		Tutorial "Advanced Model Management with Epsilon"
+			organizers "Richard Paige", "Dimitris Kolovos", "Antonio Garcia-Dominguez", "Nicholas Matragkas", "Horacio Hoyos";
+		Tutorial "ARCADIA in a nutshell"
+			organizers "Pascal Roques";
+		Tutorial "Hybrid Graphical/Textual Modelling and Code Generation with PapyrusRT"
+			organizers "Ernesto Posse", "Nicolas Hili";
+		Tutorial "Modeling Reactive Systems with the Scenario Modeling Language and ScenarioTools"
+			organizers "Joel Greenyer", "Daniel Gritzner";
+		Tutorial "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies"
+			organizers "Frédéric Madiot", "Cedric Brun";
+		Tutorial "Technologies and Design Patterns for Model-based Development of Cyber-physical Systems"
+			organizers "Bran Selic";
+		
+		Workshop "International Models and Evolution Workshop"
+			organizers "Dalila Tamzalit", "Alfonso Pierantonio", "Bernhard Schaetz", "Tanja Mayerhofer";
+		Workshop "ModComp'16: 3rd International Workshop on Model-Driven Engineering for Component-Based Software Systems"
+			organizers "Federico Ciccozzi", "Ivano Malavolta";
+		Workshop "MoDeVVa’16: Model Driven Engineering, Verification and Validation - Integrating Verification and Validation in MDE"
+			organizers "Gehan M. K. Selim", "Michalis Famelis", "Daniel Ratiu";
+		Workshop "Workshop on Executable Modeling (EXE)"
+			organizers "Tanja Mayerhofer", "Philip Langer", "Ed Seidewitz", "Jeff Gray";
+		Workshop "Open Source Software for Model-Driven Engineering (OSS4MDE’16): Creating Buzz and Building a Community"
+			organizers "Francis Bordeleau", "Jean-Michel Bruel", "Juergen Dingel", "Sebastien Gerard", "Sebastian Voss";
+		Workshop "Flexible MDE 2016 (FlexMDE 2016)"
+			organizers "Davide Di Ruscio", "Alfonso Pierantonio", "Juan De Lara";
+		Workshop "Patterns in Model Engineering Workshop PAME 2016"
+			organizers "Eugene Syriani", "Richard Paige", "Steffen Zschaler", "Huseyin Ergin";
+		Workshop "Full-Day Workshop on OCL and Textual Modeling"
+			organizers "Achim Brucker", "Jordi Cabot", "Adolfo Sánchez-Barbudo Herrera";
+		Workshop "GEMOC 2016: 4th Workshop On the Globalization of Modeling Languages"
+			organizers "Julien Deantoni", "Jeff Gray";
+		Workshop "International Workshop on Multi-Level Modelling (MULTI 2016)"
+			organizers "Colin Atkinson", "Tony Clark", "Georg Grossmann";
+		Workshop "Collaborative Modelling in MDE (COMMitMDE)"
+			organizers "Sébastien Gérard", "Dimitrios S. Kolovos", "Ivano Malavolta", "Henry Muccini";
+		Workshop "Human Factors in Modeling"
+			organizers "Harald Störrle", "Chaudron Michel", "Vlad Acretoaie";
+		Workshop "11th International Workshop on Models@run.time: Workshop Proposal"
+			organizers "Nelly Bencomo", "Sebastian Götz";
+		Workshop "Verification Of Model Transformations VOLT 2016"
+			organizers "Eugene Syriani", "Moussa Amrani";
+		
+		TalkSession "Stuff"
+				chair "John Doe"
+				papers "MDE for cows", "MDE for pigs"
+	}
+	
+	program {
+		Sunday
+			date 16.10.02
+			
+			09:00 - 10:30 in "Bouvet 1" : "Doctoral Symposium"
+			// Tutorials
+			09:00 - 10:30 in "Bouvet 2" : "Advanced Model Management with Epsilon"
+			09:00 - 10:30 in "Charcot" : "ARCADIA in a nutshell"
+			09:00 - 10:30 in "Vauban 1" : "Hybrid Graphical/Textual Modelling and Code Generation with PapyrusRT"
+			// Workshops
+			09:00 - 10:30 in "Vauban 2" : "International Models and Evolution Workshop"
+			09:00 - 10:30 in "Lamennais 1" : "Full-Day Workshop on OCL and Textual Modeling"
+			09:00 - 10:30 in "Lamennais 2" : "Flexible MDE 2016 (FlexMDE 2016)"
+			09:00 - 10:30 in "Lamennais 3" : "Verification Of Model Transformations VOLT 2016"
+			
+			10:30 - 11:00 in "Rotonde Surcouf" : "Coffee Break"
+			
+			11:00 - 12:30 in "Bouvet 1" : "Doctoral Symposium"
+			// Tutorials
+			11:00 - 12:30 in "Bouvet 2" : "Advanced Model Management with Epsilon"
+			11:00 - 12:30 in "Charcot" : "ARCADIA in a nutshell"
+			11:00 - 12:30 in "Vauban 1" : "Hybrid Graphical/Textual Modelling and Code Generation with PapyrusRT"
+			//Workshops
+			11:00 - 12:30 in "Vauban 2" : "International Models and Evolution Workshop"
+			11:00 - 12:30 in "Lamennais 1" : "Full-Day Workshop on OCL and Textual Modeling"
+			11:00 - 12:30 in "Lamennais 2" : "Flexible MDE 2016 (FlexMDE 2016)"
+			11:00 - 12:30 in "Lamennais 3" : "Verification Of Model Transformations VOLT 2016"
+			
+			12:30 - 14:00 in "Rotonde J. Cartier" : "Lunch"
+			
+			14:00 - 15:30 in "Bouvet 1" : "Doctoral Symposium"
+			// Tutorials
+			14:00 - 15:30 in "Bouvet 2" : "Modeling Reactive Systems with the Scenario Modeling Language and ScenarioTools"
+			14:00 - 15:30 in "Charcot" : "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies"
+			14:00 - 15:30 in "Vauban 1" : "Technologies and Design Patterns for Model-based Development of Cyber-physical Systems"
+			//Workshops
+			14:00 - 15:30 in "Vauban 2" : "International Models and Evolution Workshop"
+			14:00 - 15:30 in "Lamennais 1" : "Full-Day Workshop on OCL and Textual Modeling"
+			14:00 - 15:30 in "Lamennais 2" : "Flexible MDE 2016 (FlexMDE 2016)"
+			14:00 - 15:30 in "Lamennais 3" : "Verification Of Model Transformations VOLT 2016"
+			
+			15:30 - 16:00 in "Rotonde Surcouf" : "Coffee Break"
+			
+			16:00 - 17:30 in "Bouvet 1" : "Doctoral Symposium"
+			// Tutorials
+			16:00 - 17:30 in "Bouvet 2" : "Modeling Reactive Systems with the Scenario Modeling Language and ScenarioTools"
+			16:00 - 17:30 in "Charcot" : "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies"
+			16:00 - 17:30 in "Vauban 1" : "Technologies and Design Patterns for Model-based Development of Cyber-physical Systems"
+			//Workshops
+			16:00 - 17:30 in "Vauban 2" : "International Models and Evolution Workshop"
+			16:00 - 17:30 in "Lamennais 1" : "Full-Day Workshop on OCL and Textual Modeling"
+			16:00 - 17:30 in "Lamennais 2" : "Flexible MDE 2016 (FlexMDE 2016)"
+			16:00 - 17:30 in "Lamennais 3" : "Verification Of Model Transformations VOLT 2016"
+			16:00 - 17:30 in "Rotonde Surcouf" : "Stuff"
+			
+	}

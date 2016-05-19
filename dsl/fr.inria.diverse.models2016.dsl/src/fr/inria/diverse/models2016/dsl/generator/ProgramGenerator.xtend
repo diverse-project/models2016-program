@@ -81,7 +81,7 @@ class ProgramGenerator extends AbstractGenerator {
 				val toBeSorted = new HashMap(sessionsPerRoom)
 				toBeSorted.forEach[r, s|
 					val sortedList = s.sortWith([s1,s2|
-						return s2.startingTime.compareTo(s1.startingTime)
+						return s1.startingTime.compareTo(s2.startingTime)
 					])
 					sessionsPerRoom.put(r, sortedList)
 				]
@@ -101,7 +101,7 @@ class ProgramGenerator extends AbstractGenerator {
 						val l = tmp.get(r)
 						if (l != null && !l.empty) {
 							val start = l.get(0).startingTime
-							if (tmpStart == null || tmpStart.compareTo(start) == 0) {
+							if (tmpStart == null || tmpStart.compareTo(start) > 0) {
 								tmpStart = start
 							}
 						}
@@ -109,7 +109,7 @@ class ProgramGenerator extends AbstractGenerator {
 					if (tmpStart != null) {
 						val earliestStart = tmpStart
 						val Session[] sessionGroup = newArrayOfSize(roomsOfDay.size)
-						sessionGroups.add(0,sessionGroup)
+						sessionGroups.add(sessionGroup)
 						tmp.forEach[r, l|
 							val i = roomsOfDay.indexOf(r)
 							if (l.empty || l.get(0).startingTime.compareTo(earliestStart) != 0) {

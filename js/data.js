@@ -180,6 +180,29 @@ var data = [
 				}
 			],
 			[
+				{
+					start : "10:30",
+					end : "11:00",
+					length : "2",
+					date : "20161002T103000Z",
+					events : [
+						{
+							type : "CoffeeBreak",
+							title : "Coffee Break"
+						}
+					]
+				},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			],
+			[
 				{},
 				{},
 				{
@@ -317,272 +340,6 @@ var data = [
 			],
 			[
 				{},
-				{},
-				{
-					start : "14:00",
-					end : "15:30",
-					length : "6",
-					date : "20161002T140000Z",
-					events : [
-						{
-							type : "DoctoralSymposium",
-							title : "Doctoral Symposium",
-							organizers : [
-							]
-						}
-					]
-				},
-				{
-					start : "14:00",
-					end : "15:30",
-					length : "6",
-					date : "20161002T140000Z",
-					events : [
-						{
-							type : "Tutorial",
-							title : "Modeling Reactive Systems with the Scenario Modeling Language and ScenarioTools",
-							organizers : [
-								"Joel Greenyer",
-								"Daniel Gritzner"
-							]
-						}
-					]
-				},
-				{
-					start : "14:00",
-					end : "15:30",
-					length : "6",
-					date : "20161002T140000Z",
-					events : [
-						{
-							type : "Tutorial",
-							title : "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies",
-							organizers : [
-								"Frédéric Madiot",
-								"Cedric Brun"
-							]
-						}
-					]
-				},
-				{
-					start : "14:00",
-					end : "15:30",
-					length : "6",
-					date : "20161002T140000Z",
-					events : [
-						{
-							type : "Tutorial",
-							title : "Technologies and Design Patterns for Model-based Development of Cyber-physical Systems",
-							organizers : [
-								"Bran Selic"
-							]
-						}
-					]
-				},
-				{
-					start : "14:00",
-					end : "15:30",
-					length : "6",
-					date : "20161002T140000Z",
-					events : [
-						{
-							type : "Workshop",
-							title : "International Models and Evolution Workshop",
-							organizers : [
-								"Dalila Tamzalit",
-								"Alfonso Pierantonio",
-								"Bernhard Schaetz",
-								"Tanja Mayerhofer"
-							]
-						}
-					]
-				},
-				{
-					start : "14:00",
-					end : "15:30",
-					length : "6",
-					date : "20161002T140000Z",
-					events : [
-						{
-							type : "Workshop",
-							title : "Full-Day Workshop on OCL and Textual Modeling",
-							organizers : [
-								"Achim Brucker",
-								"Jordi Cabot",
-								"Adolfo Sánchez-Barbudo Herrera"
-							]
-						}
-					]
-				},
-				{
-					start : "14:00",
-					end : "15:30",
-					length : "6",
-					date : "20161002T140000Z",
-					events : [
-						{
-							type : "Workshop",
-							title : "Flexible MDE 2016 (FlexMDE 2016)",
-							organizers : [
-								"Davide Di Ruscio",
-								"Alfonso Pierantonio",
-								"Juan De Lara"
-							]
-						}
-					]
-				},
-				{
-					start : "14:00",
-					end : "15:30",
-					length : "6",
-					date : "20161002T140000Z",
-					events : [
-						{
-							type : "Workshop",
-							title : "Verification Of Model Transformations VOLT 2016",
-							organizers : [
-								"Eugene Syriani",
-								"Moussa Amrani"
-							]
-						}
-					]
-				}
-			],
-			[
-				{},
-				{},
-				{
-					start : "16:00",
-					end : "17:30",
-					length : "6",
-					date : "20161002T160000Z",
-					events : [
-						{
-							type : "DoctoralSymposium",
-							title : "Doctoral Symposium",
-							organizers : [
-							]
-						}
-					]
-				},
-				{
-					start : "16:00",
-					end : "17:30",
-					length : "6",
-					date : "20161002T160000Z",
-					events : [
-						{
-							type : "Tutorial",
-							title : "Modeling Reactive Systems with the Scenario Modeling Language and ScenarioTools",
-							organizers : [
-								"Joel Greenyer",
-								"Daniel Gritzner"
-							]
-						}
-					]
-				},
-				{
-					start : "16:00",
-					end : "17:30",
-					length : "6",
-					date : "20161002T160000Z",
-					events : [
-						{
-							type : "Tutorial",
-							title : "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies",
-							organizers : [
-								"Frédéric Madiot",
-								"Cedric Brun"
-							]
-						}
-					]
-				},
-				{
-					start : "16:00",
-					end : "17:30",
-					length : "6",
-					date : "20161002T160000Z",
-					events : [
-						{
-							type : "Tutorial",
-							title : "Technologies and Design Patterns for Model-based Development of Cyber-physical Systems",
-							organizers : [
-								"Bran Selic"
-							]
-						}
-					]
-				},
-				{
-					start : "16:00",
-					end : "17:30",
-					length : "6",
-					date : "20161002T160000Z",
-					events : [
-						{
-							type : "Workshop",
-							title : "International Models and Evolution Workshop",
-							organizers : [
-								"Dalila Tamzalit",
-								"Alfonso Pierantonio",
-								"Bernhard Schaetz",
-								"Tanja Mayerhofer"
-							]
-						}
-					]
-				},
-				{
-					start : "16:00",
-					end : "17:30",
-					length : "6",
-					date : "20161002T160000Z",
-					events : [
-						{
-							type : "Workshop",
-							title : "Full-Day Workshop on OCL and Textual Modeling",
-							organizers : [
-								"Achim Brucker",
-								"Jordi Cabot",
-								"Adolfo Sánchez-Barbudo Herrera"
-							]
-						}
-					]
-				},
-				{
-					start : "16:00",
-					end : "17:30",
-					length : "6",
-					date : "20161002T160000Z",
-					events : [
-						{
-							type : "Workshop",
-							title : "Flexible MDE 2016 (FlexMDE 2016)",
-							organizers : [
-								"Davide Di Ruscio",
-								"Alfonso Pierantonio",
-								"Juan De Lara"
-							]
-						}
-					]
-				},
-				{
-					start : "16:00",
-					end : "17:30",
-					length : "6",
-					date : "20161002T160000Z",
-					events : [
-						{
-							type : "Workshop",
-							title : "Verification Of Model Transformations VOLT 2016",
-							organizers : [
-								"Eugene Syriani",
-								"Moussa Amrani"
-							]
-						}
-					]
-				}
-			],
-			[
-				{},
 				{
 					start : "12:30",
 					end : "14:00",
@@ -605,27 +362,137 @@ var data = [
 				{}
 			],
 			[
+				{},
+				{},
 				{
-					start : "10:30",
-					end : "11:00",
-					length : "2",
-					date : "20161002T103000Z",
+					start : "14:00",
+					end : "15:30",
+					length : "6",
+					date : "20161002T140000Z",
 					events : [
 						{
-							type : "CoffeeBreak",
-							title : "Coffee Break"
+							type : "DoctoralSymposium",
+							title : "Doctoral Symposium",
+							organizers : [
+							]
 						}
 					]
 				},
-				{},
-				{},
-				{},
-				{},
-				{},
-				{},
-				{},
-				{},
-				{}
+				{
+					start : "14:00",
+					end : "15:30",
+					length : "6",
+					date : "20161002T140000Z",
+					events : [
+						{
+							type : "Tutorial",
+							title : "Modeling Reactive Systems with the Scenario Modeling Language and ScenarioTools",
+							organizers : [
+								"Joel Greenyer",
+								"Daniel Gritzner"
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					length : "6",
+					date : "20161002T140000Z",
+					events : [
+						{
+							type : "Tutorial",
+							title : "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies",
+							organizers : [
+								"Frédéric Madiot",
+								"Cedric Brun"
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					length : "6",
+					date : "20161002T140000Z",
+					events : [
+						{
+							type : "Tutorial",
+							title : "Technologies and Design Patterns for Model-based Development of Cyber-physical Systems",
+							organizers : [
+								"Bran Selic"
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					length : "6",
+					date : "20161002T140000Z",
+					events : [
+						{
+							type : "Workshop",
+							title : "International Models and Evolution Workshop",
+							organizers : [
+								"Dalila Tamzalit",
+								"Alfonso Pierantonio",
+								"Bernhard Schaetz",
+								"Tanja Mayerhofer"
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					length : "6",
+					date : "20161002T140000Z",
+					events : [
+						{
+							type : "Workshop",
+							title : "Full-Day Workshop on OCL and Textual Modeling",
+							organizers : [
+								"Achim Brucker",
+								"Jordi Cabot",
+								"Adolfo Sánchez-Barbudo Herrera"
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					length : "6",
+					date : "20161002T140000Z",
+					events : [
+						{
+							type : "Workshop",
+							title : "Flexible MDE 2016 (FlexMDE 2016)",
+							organizers : [
+								"Davide Di Ruscio",
+								"Alfonso Pierantonio",
+								"Juan De Lara"
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					length : "6",
+					date : "20161002T140000Z",
+					events : [
+						{
+							type : "Workshop",
+							title : "Verification Of Model Transformations VOLT 2016",
+							organizers : [
+								"Eugene Syriani",
+								"Moussa Amrani"
+							]
+						}
+					]
+				}
 			],
 			[
 				{
@@ -649,6 +516,167 @@ var data = [
 				{},
 				{},
 				{}
+			],
+			[
+				{
+					start : "16:00",
+					end : "17:30",
+					length : "6",
+					date : "20161002T160000Z",
+					events : [
+						{
+							type : "TalkSession",
+							title : "Stuff",
+							chair : "John Doe",
+							papers : [
+								{
+									title : "MDE for cows",
+									authors : [
+										"Jane Doe"
+									]
+								},
+								{
+									title : "MDE for pigs",
+									authors : [
+										"Pierre",
+										"Paul",
+										"Jacques"
+									]
+								}
+							]
+						}
+					]
+				},
+				{},
+				{
+					start : "16:00",
+					end : "17:30",
+					length : "6",
+					date : "20161002T160000Z",
+					events : [
+						{
+							type : "DoctoralSymposium",
+							title : "Doctoral Symposium",
+							organizers : [
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					length : "6",
+					date : "20161002T160000Z",
+					events : [
+						{
+							type : "Tutorial",
+							title : "Modeling Reactive Systems with the Scenario Modeling Language and ScenarioTools",
+							organizers : [
+								"Joel Greenyer",
+								"Daniel Gritzner"
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					length : "6",
+					date : "20161002T160000Z",
+					events : [
+						{
+							type : "Tutorial",
+							title : "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies",
+							organizers : [
+								"Frédéric Madiot",
+								"Cedric Brun"
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					length : "6",
+					date : "20161002T160000Z",
+					events : [
+						{
+							type : "Tutorial",
+							title : "Technologies and Design Patterns for Model-based Development of Cyber-physical Systems",
+							organizers : [
+								"Bran Selic"
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					length : "6",
+					date : "20161002T160000Z",
+					events : [
+						{
+							type : "Workshop",
+							title : "International Models and Evolution Workshop",
+							organizers : [
+								"Dalila Tamzalit",
+								"Alfonso Pierantonio",
+								"Bernhard Schaetz",
+								"Tanja Mayerhofer"
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					length : "6",
+					date : "20161002T160000Z",
+					events : [
+						{
+							type : "Workshop",
+							title : "Full-Day Workshop on OCL and Textual Modeling",
+							organizers : [
+								"Achim Brucker",
+								"Jordi Cabot",
+								"Adolfo Sánchez-Barbudo Herrera"
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					length : "6",
+					date : "20161002T160000Z",
+					events : [
+						{
+							type : "Workshop",
+							title : "Flexible MDE 2016 (FlexMDE 2016)",
+							organizers : [
+								"Davide Di Ruscio",
+								"Alfonso Pierantonio",
+								"Juan De Lara"
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					length : "6",
+					date : "20161002T160000Z",
+					events : [
+						{
+							type : "Workshop",
+							title : "Verification Of Model Transformations VOLT 2016",
+							organizers : [
+								"Eugene Syriani",
+								"Moussa Amrani"
+							]
+						}
+					]
+				}
 			]
 		]
 	}
