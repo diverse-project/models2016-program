@@ -22,8 +22,7 @@ EString returns ecore::EString:
 	STRING;
 
 Program returns Program:
-	{Program}
-		'{' (days+=Day (days+=Day)*)? '}';
+	{Program} '{' (days+=Day (days+=Day)*)? '}';
 
 Room returns Room:
 	{Room} 'room' name=EString ('capacity' capacity=EIntegerObject)?;

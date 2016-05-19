@@ -6,6 +6,7 @@ package fr.inria.diverse.models2016.dsl.generator
 import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.util.ArrayList
+import java.util.Collections
 import java.util.Date
 import java.util.HashMap
 import java.util.HashSet
@@ -31,6 +32,7 @@ import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.xtext.generator.AbstractGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess2
 import org.eclipse.xtext.generator.IGeneratorContext
+import com.google.common.collect.Maps
 
 /**
  * Generates code from your model files on save.
@@ -92,35 +94,56 @@ class ProgramGenerator extends AbstractGenerator {
 			sessionsPerRoomPerDay.forEach[d, sessionsPerRoom|
 				val sessionGroups = new ArrayList
 				sessionGroupsPerDay.put(d,sessionGroups)
-				val tmp = new HashMap(sessionsPerRoom)
+				val Map<Room,List<Session>> tmp = new HashMap
+				sessionsPerRoom.forEach[r, l|
+					tmp.put(r,new ArrayList(l))
+				]
 				val roomsOfDay = roomsPerDay.get(d)
-				var malformed = false
-				while (getTotalLength(sessionsPerRoom) > 0 && !malformed) {
-					var Date tmpStart = null
-					for (Room r : roomsOfDay) {
-						val l = tmp.get(r)
-						if (l != null && !l.empty) {
-							val start = l.get(0).startingTime
-							if (tmpStart == null || tmpStart.compareTo(start) > 0) {
-								tmpStart = start
-							}
+				var Date start = null
+				for (Room r : roomsOfDay) {
+					val l = tmp.get(r)
+					if (l != null && !l.empty) {
+						val tmpStart = l.get(0).startingTime
+						if (start == null || start.compareTo(tmpStart) > 0) {
+							start = new Date(0)
+							start.minutes = tmpStart.minutes
+							start.hours = tmpStart.hours
 						}
 					}
-					if (tmpStart != null) {
-						val earliestStart = tmpStart
-						val Session[] sessionGroup = newArrayOfSize(roomsOfDay.size)
-						sessionGroups.add(sessionGroup)
-						tmp.forEach[r, l|
-							val i = roomsOfDay.indexOf(r)
-							if (l.empty || l.get(0).startingTime.compareTo(earliestStart) != 0) {
-								sessionGroup.set(i, null)
+				}
+				if (start != null) {
+					val Map<Room,Date> ongoingSessionPerRoom = new HashMap
+					while (getTotalLength(tmp) > 0) {
+						val sessionGroup = new ArrayList
+						for (Room r : roomsOfDay) {
+							val l = tmp.get(r)
+							if (l.empty || l.get(0).startingTime.compareTo(start) != 0) {
+								if (ongoingSessionPerRoom.get(r) == null) {
+									sessionGroup.add(null)
+								}
 							} else {
 								val s = l.remove(0)
-								sessionGroup.set(i, s)
+								ongoingSessionPerRoom.put(r,s.endingTime)
+								sessionGroup.add(s)
 							}
-						]
-					} else {
-						malformed = true
+						}
+						sessionGroups.add(sessionGroup)
+						if (start.minutes == 45) {
+							start.minutes = 0
+							if (start.hours == 23) {
+								start.hours == 0
+							} else {
+								start.hours = start.hours + 1
+							}
+						} else {
+							start.minutes = start.minutes + 15
+						}
+						for (Room r : roomsOfDay) {
+							val t = ongoingSessionPerRoom.get(r)
+							if (t != null && t.compareTo(start) == 0) {
+								ongoingSessionPerRoom.remove(r)
+							}
+						}
 					}
 				}
 			]
