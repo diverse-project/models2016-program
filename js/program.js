@@ -107,9 +107,7 @@ modelsApp.controller("ProgramController", function($scope) {
 
 
 
-
-
-    // Export to iCal
+    ///// Export to iCal /////
 
     $scope.exportToCal = function(favoritesOnly) {
         var calendar = [];
@@ -117,24 +115,47 @@ modelsApp.controller("ProgramController", function($scope) {
         calendar.push("VERSION:2.0");
 
         $scope.data.forEach(function(day) {
-           day.sessionGroups.forEach(function(sessionGroups) {
-               sessionGroups.forEach(function (session, roomIndex) {
-                   if (typeof session.events !== "undefined") {
-                       session.events.forEach(function (talk) {
-                           if (!favoritesOnly || ((typeof talk.selected !== "undefined") && talk.selected === true)) {
-                               calendar.push("BEGIN:VEVENT");
-                               calendar.push("DTSTAMP:" + "20161002T080000Z");
-                               calendar.push("ORGANIZER:CN=Models");
-                               calendar.push("DTSTART:" + "20161002T080000Z");
-                               calendar.push("DTEND:" + "20161002T103000Z");
-                               calendar.push("SUMMARY:" + talk.title);
-                               calendar.push("DESCRIPTION:" + talk.title);
-                               calendar.push("LOCATION:" + day.rooms[roomIndex]);
-                               calendar.push("END:VEVENT");
-                           }
-                       });
-                   }
-               });
+
+            var dayDate = day.date;
+
+           day.sessionGroups.forEach(function(sessionGroup) {
+               if (sessionGroup.length > 0) {
+                   sessionGroup.forEach(function (session, roomIndex) {
+                       if (typeof session.events !== "undefined") {
+
+                           var durationOfTalk = session.length / session.events.length;
+                           var startTime = parseTime(session.start);
+                           var endTime = parseTime(session.end);
+
+                           console.log(durationOfTalk);
+
+                           session.events.forEach(function (talk, talkIndex) {
+                               if (!favoritesOnly || ((typeof talk.selected !== "undefined") && talk.selected === true)) {
+                                   // Compute date of event
+                                   var startHour = Math.floor(startTime.hour + (durationOfTalk / 4) * talkIndex) - 2;
+                                   var endHour =  Math.floor(startHour + (durationOfTalk / 4));
+                                   var startMinutes = Math.floor(startTime.minutes + (durationOfTalk % 4) * talkIndex) * 15;
+                                   var endMinutes =  Math.floor(startMinutes + (durationOfTalk % 4)) * 15;
+
+                                   // TODO : hour < 10 must have two digits
+
+                                   var startDate = dayDate + "T" + startHour + startMinutes + "00Z";
+                                   var endDate = dayDate + "T" + endHour + endMinutes + "00Z";
+                                   // Generate event
+                                   calendar.push("BEGIN:VEVENT");
+                                   calendar.push("DTSTAMP:" + startDate);
+                                   calendar.push("ORGANIZER:CN=Models");
+                                   calendar.push("DTSTART:" + startDate);
+                                   calendar.push("DTEND:" + endDate);
+                                   calendar.push("SUMMARY:" + talk.title);
+                                   calendar.push("DESCRIPTION:" + talk.title);
+                                   calendar.push("LOCATION:" + day.rooms[roomIndex].name);
+                                   calendar.push("END:VEVENT");
+                               }
+                           });
+                       }
+                   });
+               }
            });
         });
 

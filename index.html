@@ -17,12 +17,12 @@
             <h1 class="title">MODELS 2016 - Program</h1>
         </div>
 
+        <div class="checkbox">
+            <label><input type="checkbox" ng-model="showFavorites" ng-change="toggleFavorites()"> Show only <span class="glyphicon glyphicon-star"></span></label>
+        </div>
+
         <div ng-repeat="day in data" class="row">
             <h3 class="day">{{day.name}}</h3>
-
-            <div class="checkbox">
-                <label><input type="checkbox" ng-model="showFavorites" ng-change="toggleFavorites()"> Show only <span class="glyphicon glyphicon-star"></span></label>
-            </div>
 
             <div class="table-responsive">
                 <table class="table table-bordered table-hover table-condensed">
@@ -42,14 +42,14 @@
 
                         <td ng-if="sessionGroup.length > 0" ng-repeat="session in sessionGroup" rowspan="{{session.length}}">
                             <table>
-                                <tr ng-repeat="event in session.events">
-                                    <td ng-if="event.title">
+                                <tr ng-repeat="talk in session.events">
+                                    <td ng-if="talk.title">
                                         <div ng-show="!showFavorites || (showFavorites && talk.selected)">
                                             <button class="btn btn-link" ng-click="toggleFavoriteTalk(talk)">
                                                 <span ng-if="talk.selected" class="glyphicon glyphicon-star"></span>
                                                 <span ng-if="!talk.selected" class="glyphicon glyphicon-star-empty"></span>
                                             </button>
-                                            {{event.title}}
+                                            {{talk.title}}
                                         </div>
                                     </td>
                                 </tr>
