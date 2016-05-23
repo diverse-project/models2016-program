@@ -97,7 +97,7 @@ modelsApp.controller("ProgramController", function($scope) {
 
     $scope.toggleFavoriteTalk = function(talk) {
         talk.selected=!talk.selected;
-        $scope.favoriteTalks[talk.title] = talk.selected;
+        $scope.favoriteTalks[talk.title] = talk.selected; // FIXME : duplicated titles
 
         if(typeof(Storage) !== "undefined") {
             localStorage.setItem("favoriteTalks", JSON.stringify($scope.favoriteTalks));
@@ -196,6 +196,10 @@ modelsApp.controller("ProgramController", function($scope) {
             elem.click();
             document.body.removeChild(elem);
         }
-    }
+    };
 
+    ///// Info on talk /////
+    $scope.getInfo = function(talk) {
+        $scope.selectedTalk = talk;
+    }
 });

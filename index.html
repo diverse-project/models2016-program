@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>MODELS 2016 Program</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/program.css" />
 </head>
@@ -19,6 +21,26 @@
 
         <div class="checkbox">
             <label><input type="checkbox" ng-model="showFavorites" ng-change="toggleFavorites()"> Show only <span class="glyphicon glyphicon-star"></span></label>
+        </div>
+
+        <!-- Modal for more info on talk -->
+        <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">{{selectedTalk.title}}</h4>
+                    </div>
+                    <div class="modal-body">
+                        {{selectedTalk.authors}}
+                        {{selectedTalk.abstract}}
+                        {{selectedTalk.type}}
+                        {{selectedTalk.organizers}}
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div ng-repeat="day in data" class="row">
@@ -41,19 +63,42 @@
                         </td>
 
                         <td ng-if="sessionGroup.length > 0" ng-repeat="session in sessionGroup" rowspan="{{session.length}}">
-                            <table>
-                                <tr ng-repeat="talk in session.events">
-                                    <td ng-if="talk.title">
-                                        <div ng-show="!showFavorites || (showFavorites && talk.selected)">
-                                            <button class="btn btn-link" ng-click="toggleFavoriteTalk(talk)">
-                                                <span ng-if="talk.selected" class="glyphicon glyphicon-star"></span>
-                                                <span ng-if="!talk.selected" class="glyphicon glyphicon-star-empty"></span>
-                                            </button>
-                                            {{talk.title}}
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
+
+                            <div ng-repeat="talk in session.events">
+                                <div ng-if="talk.title" ng-class="talk.type">
+                                    <div ng-show="!showFavorites || (showFavorites && talk.selected)">
+
+                                        <!-- Talk info -->
+
+                                        <button class="btn btn-link btn-sm" ng-click="toggleFavoriteTalk(talk)">
+                                            <span ng-if="talk.selected" class="glyphicon glyphicon-star"></span>
+                                            <span ng-if="!talk.selected" class="glyphicon glyphicon-star-empty"></span>
+                                        </button>
+
+                                        <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(talk)">{{talk.title}}</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--<table class="table table-condensed">-->
+                                <!--<tr ng-repeat="talk in session.events">-->
+                                    <!--<td ng-if="talk.title" ng-class="talk.type">-->
+                                        <!--<div ng-show="!showFavorites || (showFavorites && talk.selected)">-->
+
+                                            <!--&lt;!&ndash; Talk info &ndash;&gt;-->
+
+                                            <!--<button class="btn btn-link btn-sm" ng-click="toggleFavoriteTalk(talk)">-->
+                                                <!--<span ng-if="talk.selected" class="glyphicon glyphicon-star"></span>-->
+                                                <!--<span ng-if="!talk.selected" class="glyphicon glyphicon-star-empty"></span>-->
+                                            <!--</button>-->
+
+                                            <!--<a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(talk)">{{talk.title}}</a>-->
+
+                                        <!--</div>-->
+                                    <!--</td>-->
+                                <!--</tr>-->
+                            <!--</table>-->
                         </td>
                     </tr>
                     </tbody>

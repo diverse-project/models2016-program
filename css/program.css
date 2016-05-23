@@ -18,3 +18,34 @@ body {
 footer {
     text-align: right;
 }
+
+td {
+    max-width: 150px;
+    word-wrap: break-word;
+    padding: 0px !important;
+    height: 5px;
+}
+
+td div {
+    height: 100%;
+}
+
+.Workshop {
+    background-color: yellow;
+}
+
+.DoctoralSymposium {
+    background-color: deepskyblue;
+}
+
+.Tutorial {
+    background-color: orangered;
+}
+
+.CoffeeBreak {
+
+}
+
+.Lunch {
+
+}
