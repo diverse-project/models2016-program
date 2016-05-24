@@ -1,6 +1,8 @@
-th {
-    background-color: #588fb3;
-    color: white;
+/* Text style */
+
+body {
+    color: #555555;
+    font-size: small;
 }
 
 .title {
@@ -11,33 +13,70 @@ th {
     color: #588fb3;
 }
 
-body {
-    color: #555555;
+
+
+
+/* Table style */
+
+.table {
+    table-layout: fixed;
 }
 
-footer {
-    text-align: right;
+th {
+    background-color: #588fb3;
+    color: white;
+    text-align: center;
 }
 
 td {
-    max-width: 150px;
-    /*word-wrap: break-word;*/
-    padding: 0px !important;
+    /*min-width: 100px;*/
+    /*max-width: 150px;*/
+    word-wrap: break-word;
+    padding: 2px !important;
+    height: 100%;
 }
 
+tr {
+    min-height: 20px;
+}
+
+.table .table {
+    background-color: transparent;
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+.table .table td {
+    border: none;
+    padding: 2px;
+}
+
+.table .table td:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+
+
+
+
+/* Other styles */
+
+.star {
+    text-align: center;
+}
 
 .eventType {
     height: 5px;
     width: 100%;
 }
 
-.table .table {
-  background-color: transparent;
+footer {
+    text-align: right;
 }
 
-.table-inner {
 
-}
+
+
+/* Type of events */
 
 .TalkSession {
     background-color: lightgrey;
@@ -72,10 +111,9 @@ td {
 }
 
 .Lunch {
-    background-color: lightgrey;
+    /*background-color: lightgrey;*/
 }
 
 .CoffeeBreak {
-    background-color: lightgrey;
+    /*background-color: lightgrey;*/
 }
-

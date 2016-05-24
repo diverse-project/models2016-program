@@ -26,37 +26,6 @@ modelsApp.controller("ProgramController", function($scope) {
 
     $scope.data = data;
 
-
-    var size = {};
-
-    $scope.data.forEach(function(day) {
-        day.sessionGroups.forEach(function(sessionGroup) {
-
-            sessionGroup.forEach(function (session, roomIndex) {
-                if (typeof size[roomIndex] === "undefined") {
-                    size[roomIndex] = 0;
-                }
-
-                size[roomIndex] += session.rowSpan;
-
-                console.log(session.rowSpan);
-
-                if (typeof session.events !== "undefined") {
-                    session.events.forEach(function(event) {
-                        if (typeof event.papers === "undefined") {
-                        } else {
-                            event.papers.forEach(function(talk) {
-
-                            });
-                        }
-                    });
-                }
-            });
-        });
-    });
-
-    console.log(size);
-
     ////// Favorites /////
 
     $scope.showFavorites = localStorage.getItem("showFavorites") === "true";
@@ -143,8 +112,8 @@ modelsApp.controller("ProgramController", function($scope) {
            day.sessionGroups.forEach(function(sessionGroup) {
                if (sessionGroup.length > 0) {
                    sessionGroup.forEach(function (session, roomIndex) {
-                       var location = day.rooms[roomIndex].name;
                        if (typeof session.events !== "undefined") {
+                           var location = day.rooms[roomIndex - 1].name; // FIXME : not working
 
                            session.events.forEach(function (event, eventIndex) {
 
@@ -184,13 +153,13 @@ modelsApp.controller("ProgramController", function($scope) {
             elem.download = filename;
             document.body.appendChild(elem);
             elem.click();
-            console.log(elem);
             document.body.removeChild(elem);
         }
     };
 
     ///// Info on talk /////
-    $scope.getInfo = function(talk) {
+    $scope.getInfo = function(talk, date) {
         $scope.selectedTalk = talk;
+        $scope.selectedTalkDate = date;
     }
 });
