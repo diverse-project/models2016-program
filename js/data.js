@@ -439,6 +439,10 @@ var data = [
 						{
 							type : "Lunch",
 							title : "Lunch"
+						},
+						{
+							type : "CoffeeBreak",
+							title : "Coffee Break"
 						}
 					]
 				},
