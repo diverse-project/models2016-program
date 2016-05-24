@@ -35,22 +35,44 @@ td div {
     width: 100%;
 }
 
-.Workshop {
-    background-color: yellow;
+
+.TalkSession {
+    background-color: lightgrey;
 }
 
-.DoctoralSymposium {
-    background-color: deepskyblue;
+.Panel {
+    background-color: lightgrey;
+}
+
+.Workshop {
+    background-color: yellow;
 }
 
 .Tutorial {
     background-color: orangered;
 }
 
-.CoffeeBreak {
+.DoctoralSymposium {
+    background-color: deepskyblue;
+}
 
+.EducatorSymposium {
+    background-color: lightgrey;
+}
+
+.Reception {
+    background-color: lightgrey;
+}
+
+.Clinic {
+    background-color: lightgrey;
 }
 
 .Lunch {
-
+    background-color: lightgrey;
 }
+
+.CoffeeBreak {
+    background-color: lightgrey;
+}
+

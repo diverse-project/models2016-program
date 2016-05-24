@@ -57,19 +57,16 @@ modelsApp.controller("ProgramController", function($scope) {
         });
     });
 
-    console.log($scope.favoriteTalks);
-
     $scope.toggleFavorites = function() {
         localStorage.setItem("showFavorites", $scope.showFavorites);
     };
 
     $scope.toggleFavoriteTalk = function(talk, date) {
         talk.selected=!talk.selected;
-        $scope.favoriteTalks[talk.title + date] = talk.selected; // FIXME : duplicated titles
+        $scope.favoriteTalks[talk.title + date] = talk.selected;
 
         if(typeof(Storage) !== "undefined") {
             localStorage.setItem("favoriteTalks", JSON.stringify($scope.favoriteTalks));
-            console.log($scope.favoriteTalks);
         }
     };
 
