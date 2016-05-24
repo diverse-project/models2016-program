@@ -46,20 +46,18 @@ var data = [
 			[
 				{
 					start : "09:00",
-					length : "4"
+					rowSpan : 4
 				},
 				{
-					length : "6"
+					rowSpan : 6
 				},
-				
 				{
-					length : "4"
+					rowSpan : 4
 				},
-				
 				{
 					start : "09:00",
 					end : "10:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T070000Z",
 					icalEnd : "20161002T083000Z",
 					events : [
@@ -71,11 +69,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "09:00",
 					end : "10:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T070000Z",
 					icalEnd : "20161002T083000Z",
 					events : [
@@ -92,11 +89,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "09:00",
 					end : "10:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T070000Z",
 					icalEnd : "20161002T083000Z",
 					events : [
@@ -109,11 +105,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "09:00",
 					end : "10:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T070000Z",
 					icalEnd : "20161002T083000Z",
 					events : [
@@ -127,11 +122,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "09:00",
 					end : "10:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T070000Z",
 					icalEnd : "20161002T083000Z",
 					events : [
@@ -147,11 +141,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "09:00",
 					end : "10:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T070000Z",
 					icalEnd : "20161002T083000Z",
 					events : [
@@ -166,11 +159,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "09:00",
 					end : "10:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T070000Z",
 					icalEnd : "20161002T083000Z",
 					events : [
@@ -185,11 +177,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "09:00",
 					end : "10:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T070000Z",
 					icalEnd : "20161002T083000Z",
 					events : [
@@ -203,21 +194,19 @@ var data = [
 						}
 					]
 				}
-				
 			],
-			[],
 			[],
 			[],
 			[],
 			[
 				{
 					start : "10:00",
-					length : "2"
+					rowSpan : 2
 				},
 				{
 					start : "10:00",
 					end : "12:00",
-					length : "8",
+					rowSpan : 8,
 					icalStart : "20161002T080000Z",
 					icalEnd : "20161002T100000Z",
 					events : [
@@ -227,19 +216,17 @@ var data = [
 						}
 					]
 				}
-				
 			],
-			[],
 			[],
 			[
 				{
 					start : "10:30",
-					length : "2"
+					rowSpan : 2
 				},
 				{
 					start : "10:30",
 					end : "11:00",
-					length : "2",
+					rowSpan : 2,
 					icalStart : "20161002T083000Z",
 					icalEnd : "20161002T090000Z",
 					events : [
@@ -249,55 +236,44 @@ var data = [
 						}
 					]
 				},
-				
 				{
-					length : "2"
+					rowSpan : 2
 				},
-				
 				{
-					length : "2"
+					rowSpan : 2
 				},
-				
 				{
-					length : "2"
+					rowSpan : 2
 				},
-				
 				{
-					length : "2"
+					rowSpan : 2
 				},
-				
 				{
-					length : "2"
+					rowSpan : 2
 				},
-				
 				{
-					length : "2"
+					rowSpan : 2
 				},
-				
 				{
-					length : "2"
+					rowSpan : 2
 				},
-				
 				{
-					length : "2"
+					rowSpan : 2
 				}
-				
 			],
-			[],
 			[],
 			[
 				{
 					start : "11:00",
-					length : "6"
+					rowSpan : 6
 				},
 				{
-					length : "18"
+					rowSpan : 18
 				},
-				
 				{
 					start : "11:00",
 					end : "12:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T090000Z",
 					icalEnd : "20161002T103000Z",
 					events : [
@@ -309,11 +285,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "11:00",
 					end : "12:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T090000Z",
 					icalEnd : "20161002T103000Z",
 					events : [
@@ -330,11 +305,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "11:00",
 					end : "12:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T090000Z",
 					icalEnd : "20161002T103000Z",
 					events : [
@@ -347,11 +321,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "11:00",
 					end : "12:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T090000Z",
 					icalEnd : "20161002T103000Z",
 					events : [
@@ -365,11 +338,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "11:00",
 					end : "12:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T090000Z",
 					icalEnd : "20161002T103000Z",
 					events : [
@@ -385,11 +357,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "11:00",
 					end : "12:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T090000Z",
 					icalEnd : "20161002T103000Z",
 					events : [
@@ -404,11 +375,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "11:00",
 					end : "12:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T090000Z",
 					icalEnd : "20161002T103000Z",
 					events : [
@@ -423,11 +393,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "11:00",
 					end : "12:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T090000Z",
 					icalEnd : "20161002T103000Z",
 					events : [
@@ -441,29 +410,26 @@ var data = [
 						}
 					]
 				}
-				
 			],
 			[],
 			[],
 			[],
 			[],
 			[],
-			[],
 			[
 				{
-					length : "2"
+					rowSpan : 2
 				}
-				
 			],			
 			[
 				{
 					start : "12:30",
-					length : "6"
+					rowSpan : 6
 				},
 				{
 					start : "12:30",
 					end : "14:00",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T103000Z",
 					icalEnd : "20161002T120000Z",
 					events : [
@@ -473,41 +439,31 @@ var data = [
 						}
 					]
 				},
-				
 				{
-					length : "6"
+					rowSpan : 6
 				},
-				
 				{
-					length : "6"
+					rowSpan : 6
 				},
-				
 				{
-					length : "6"
+					rowSpan : 6
 				},
-				
 				{
-					length : "6"
+					rowSpan : 6
 				},
-				
 				{
-					length : "6"
+					rowSpan : 6
 				},
-				
 				{
-					length : "6"
+					rowSpan : 6
 				},
-				
 				{
-					length : "6"
+					rowSpan : 6
 				},
-				
 				{
-					length : "6"
+					rowSpan : 6
 				}
-				
 			],
-			[],
 			[],
 			[],
 			[],
@@ -516,12 +472,12 @@ var data = [
 			[
 				{
 					start : "14:00",
-					length : "6"
+					rowSpan : 6
 				},
 				{
 					start : "14:00",
 					end : "15:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T120000Z",
 					icalEnd : "20161002T133000Z",
 					events : [
@@ -533,11 +489,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "14:00",
 					end : "15:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T120000Z",
 					icalEnd : "20161002T133000Z",
 					events : [
@@ -551,11 +506,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "14:00",
 					end : "15:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T120000Z",
 					icalEnd : "20161002T133000Z",
 					events : [
@@ -569,11 +523,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "14:00",
 					end : "15:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T120000Z",
 					icalEnd : "20161002T133000Z",
 					events : [
@@ -586,11 +539,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "14:00",
 					end : "15:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T120000Z",
 					icalEnd : "20161002T133000Z",
 					events : [
@@ -606,11 +558,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "14:00",
 					end : "15:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T120000Z",
 					icalEnd : "20161002T133000Z",
 					events : [
@@ -625,11 +576,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "14:00",
 					end : "15:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T120000Z",
 					icalEnd : "20161002T133000Z",
 					events : [
@@ -644,11 +594,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "14:00",
 					end : "15:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T120000Z",
 					icalEnd : "20161002T133000Z",
 					events : [
@@ -662,9 +611,7 @@ var data = [
 						}
 					]
 				}
-				
 			],
-			[],
 			[],
 			[],
 			[],
@@ -673,12 +620,12 @@ var data = [
 			[
 				{
 					start : "15:30",
-					length : "2"
+					rowSpan : 2
 				},
 				{
 					start : "15:30",
 					end : "16:00",
-					length : "2",
+					rowSpan : 2,
 					icalStart : "20161002T133000Z",
 					icalEnd : "20161002T140000Z",
 					events : [
@@ -688,51 +635,41 @@ var data = [
 						}
 					]
 				},
-				
 				{
-					length : "2"
+					rowSpan : 2
 				},
-				
 				{
-					length : "2"
+					rowSpan : 2
 				},
-				
 				{
-					length : "2"
+					rowSpan : 2
 				},
-				
 				{
-					length : "2"
+					rowSpan : 2
 				},
-				
 				{
-					length : "2"
+					rowSpan : 2
 				},
-				
 				{
-					length : "2"
+					rowSpan : 2
 				},
-				
 				{
-					length : "2"
+					rowSpan : 2
 				},
-				
 				{
-					length : "2"
+					rowSpan : 2
 				}
-				
 			],
-			[],
 			[],
 			[
 				{
 					start : "16:00",
-					length : "-22"
+					rowSpan : -22
 				},
 				{
 					start : "16:00",
 					end : "17:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T140000Z",
 					icalEnd : "20161002T153000Z",
 					events : [
@@ -765,11 +702,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "16:00",
 					end : "17:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T140000Z",
 					icalEnd : "20161002T153000Z",
 					events : [
@@ -781,11 +717,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "16:00",
 					end : "17:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T140000Z",
 					icalEnd : "20161002T153000Z",
 					events : [
@@ -799,11 +734,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "16:00",
 					end : "17:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T140000Z",
 					icalEnd : "20161002T153000Z",
 					events : [
@@ -817,11 +751,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "16:00",
 					end : "17:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T140000Z",
 					icalEnd : "20161002T153000Z",
 					events : [
@@ -834,11 +767,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "16:00",
 					end : "17:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T140000Z",
 					icalEnd : "20161002T153000Z",
 					events : [
@@ -854,11 +786,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "16:00",
 					end : "17:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T140000Z",
 					icalEnd : "20161002T153000Z",
 					events : [
@@ -873,11 +804,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "16:00",
 					end : "17:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T140000Z",
 					icalEnd : "20161002T153000Z",
 					events : [
@@ -892,11 +822,10 @@ var data = [
 						}
 					]
 				},
-				
 				{
 					start : "16:00",
 					end : "17:30",
-					length : "6",
+					rowSpan : 6,
 					icalStart : "20161002T140000Z",
 					icalEnd : "20161002T153000Z",
 					events : [
@@ -910,7 +839,6 @@ var data = [
 						}
 					]
 				}
-				
 			]			
 		]
 	}
