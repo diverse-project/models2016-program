@@ -59,14 +59,14 @@
 
                     <tbody>
                     <tr ng-repeat="sessionGroup in day.sessionGroups">
-
-                        <td ng-if="sessionGroup.length > 0">
-                            {{getStartOfSessionGroup(sessionGroup)}}
-                        </td>
-
                         <td ng-if="sessionGroup.length > 0" ng-repeat="session in sessionGroup" rowspan="{{session.length}}">
+                            {{$index}}
 
-                            <table class="table table-condensed">
+                            <div ng-if="$index == 0">
+                                {{getStartOfSessionGroup(sessionGroup)}}
+                            </div>
+
+                            <table class="table table-condensed" ng-if="$index > 0">
                                 <tr ng-repeat="event in session.events">
 
                                     <!-- Event -->

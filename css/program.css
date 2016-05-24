@@ -21,14 +21,10 @@ footer {
 
 td {
     max-width: 150px;
-    word-wrap: break-word;
+    /*word-wrap: break-word;*/
     padding: 0px !important;
-    height: 5px;
 }
 
-td div {
-    height: 100%;
-}
 
 .eventType {
     height: 5px;
