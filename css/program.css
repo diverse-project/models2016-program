@@ -30,22 +30,49 @@ td div {
     height: 100%;
 }
 
-.Workshop {
-    background-color: yellow;
+.eventType {
+    height: 5px;
+    width: 100%;
 }
 
-.DoctoralSymposium {
-    background-color: deepskyblue;
+
+.TalkSession {
+    background-color: lightgrey;
+}
+
+.Panel {
+    background-color: lightgrey;
+}
+
+.Workshop {
+    background-color: yellow;
 }
 
 .Tutorial {
     background-color: orangered;
 }
 
-.CoffeeBreak {
+.DoctoralSymposium {
+    background-color: deepskyblue;
+}
 
+.EducatorSymposium {
+    background-color: lightgrey;
+}
+
+.Reception {
+    background-color: lightgrey;
+}
+
+.Clinic {
+    background-color: lightgrey;
 }
 
 .Lunch {
-
+    background-color: lightgrey;
 }
+
+.CoffeeBreak {
+    background-color: lightgrey;
+}
+
