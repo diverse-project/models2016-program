@@ -21,6 +21,8 @@
 
         <div class="checkbox">
             <label><input type="checkbox" ng-model="showFavorites" ng-change="toggleFavorites()"> Show only <span class="glyphicon glyphicon-star"></span></label>
+            <button class="btn btn-default" ng-click="exportToCal(true)">Export <span class="glyphicon glyphicon-star"></span> to iCal</button>
+            <button class="btn btn-default" ng-click="exportToCal(false)">Export all to iCal</button>
         </div>
 
         <!-- Modal for more info on talk -->
@@ -64,51 +66,46 @@
 
                         <td ng-if="sessionGroup.length > 0" ng-repeat="session in sessionGroup" rowspan="{{session.length}}">
 
-                            <div ng-repeat="talk in session.events">
-                                <div ng-if="talk.title" ng-class="talk.type">
-                                    <div ng-show="!showFavorites || (showFavorites && talk.selected)">
+                            <table class="table table-condensed">
+                                <tr ng-repeat="event in session.events">
+                                    <td ng-if="event.title && !event.papers" >
+                                        <div ng-show="!showFavorites || (showFavorites && talk.selected)">
 
-                                        <!-- Talk info -->
+                                            <!-- Talk info -->
 
-                                        <button class="btn btn-link btn-sm" ng-click="toggleFavoriteTalk(talk)">
-                                            <span ng-if="talk.selected" class="glyphicon glyphicon-star"></span>
-                                            <span ng-if="!talk.selected" class="glyphicon glyphicon-star-empty"></span>
-                                        </button>
+                                            <div class="eventType" ng-class="event.type"></div>
 
-                                        <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(talk)">{{talk.title}}</a>
+                                            <button class="btn btn-link btn-sm" ng-click="toggleFavoriteTalk(talk)">
+                                                <span ng-if="event.selected" class="glyphicon glyphicon-star"></span>
+                                                <span ng-if="!event.selected" class="glyphicon glyphicon-star-empty"></span>
+                                            </button>
 
-                                    </div>
-                                </div>
-                            </div>
+                                            <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(event)">{{event.title}}</a>
 
-                            <!--<table class="table table-condensed">-->
-                                <!--<tr ng-repeat="talk in session.events">-->
-                                    <!--<td ng-if="talk.title" ng-class="talk.type">-->
-                                        <!--<div ng-show="!showFavorites || (showFavorites && talk.selected)">-->
+                                        </div>
+                                    </td>
 
-                                            <!--&lt;!&ndash; Talk info &ndash;&gt;-->
+                                    <td ng-if="event.title && event.papers">
+                                        <div ng-show="!showFavorites || (showFavorites && talk.selected)" ng-repeat="talk in event.papers">
 
-                                            <!--<button class="btn btn-link btn-sm" ng-click="toggleFavoriteTalk(talk)">-->
-                                                <!--<span ng-if="talk.selected" class="glyphicon glyphicon-star"></span>-->
-                                                <!--<span ng-if="!talk.selected" class="glyphicon glyphicon-star-empty"></span>-->
-                                            <!--</button>-->
+                                            <!-- Talk info -->
 
-                                            <!--<a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(talk)">{{talk.title}}</a>-->
+                                            <button class="btn btn-link btn-sm" ng-click="toggleFavoriteTalk(talk)">
+                                                <span ng-if="talk.selected" class="glyphicon glyphicon-star"></span>
+                                                <span ng-if="!talk.selected" class="glyphicon glyphicon-star-empty"></span>
+                                            </button>
 
-                                        <!--</div>-->
-                                    <!--</td>-->
-                                <!--</tr>-->
-                            <!--</table>-->
+                                            <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(talk)">{{talk.title}}</a>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                     </tbody>
                 </table>
             </div>
-        </div>
-
-        <div class="row">
-            <button class="btn btn-default" ng-click="exportToCal(true)">Export <span class="glyphicon glyphicon-star"></span> to iCal</button>
-            <button class="btn btn-default" ng-click="exportToCal(false)">Export all to iCal</button>
         </div>
 
         <footer class="row">

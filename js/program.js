@@ -21,49 +21,9 @@ modelsApp.controller("ProgramController", function($scope) {
         }
     }
 
-    // function getSessionGroupsPerQuarter(day) {
-    //     var sessionGroupsPerQuarter = [];
-    //     var previousStart = {
-    //         hour: 24,
-    //         minutes: 00
-    //     };
-    //
-    //     // Get first start
-    //     day.sessionGroups.forEach(function(sessionGroup) {
-    //         var startOfSessionGroup = parseTime($scope.getStartOfSessionGroup(sessionGroup));
-    //         if (startOfSessionGroup.hour < previousStart.hour
-    //             || (startOfSessionGroup.hour == previousStart.hour && startOfSessionGroup.minutes < previousStart.minutes)) {
-    //             previousStart = startOfSessionGroup;
-    //         }
-    //     });
-    //
-    //     // Get session groups per quarter
-    //     day.sessionGroups.forEach(function(sessionGroup) {
-    //         var startOfSessionGroup = parseTime($scope.getStartOfSessionGroup(sessionGroup));
-    //         var quartersSincePreviousStart = (startOfSessionGroup.hour - previousStart.hour) * 4 + (startOfSessionGroup.minutes / 4) - (previousStart.minutes / 4);
-    //
-    //         // Offset
-    //         for (var i = 0; i < quartersSincePreviousStart; i++) {
-    //             sessionGroupsPerQuarter.push([]);
-    //         }
-    //
-    //         // Add session group
-    //         sessionGroupsPerQuarter.push(sessionGroup);
-    //
-    //         previousStart = startOfSessionGroup;
-    //     });
-    //
-    //     return sessionGroupsPerQuarter;
-    // }
-
-
     ////// Preprocess data //////
 
     $scope.data = data;
-    // $scope.data.forEach(function(day) {
-    //     day.sessionGroups = getSessionGroupsPerQuarter(day);
-    // });
-
 
     ////// Favorites /////
 
@@ -109,20 +69,6 @@ modelsApp.controller("ProgramController", function($scope) {
 
     ///// Export to iCal /////
 
-    function formatDate(date) {
-        return "" +
-            date.getUTCFullYear() +
-            "" +
-            (date.getUTCMonth() < 10 ? "0" : "") + date.getUTCMonth() +
-            "" +
-            (date.getUTCDay() < 10 ? "0" : "") + date.getUTCDay() +
-            "T" +
-            (date.getUTCHours() < 10 ? "0" : "") + date.getUTCHours() +
-            "" +
-            (date.getUTCMinutes() < 10 ? "0" : "") + date.getUTCMinutes() +
-            "00Z";
-    }
-
     $scope.exportToCal = function(favoritesOnly) {
 
         // Create calendar
@@ -132,41 +78,20 @@ modelsApp.controller("ProgramController", function($scope) {
 
         $scope.data.forEach(function(day) {
 
-            var yearDate = day.date.substring(0, 4);
-            var monthDate = day.date.substring(4, 6) - 1;
-            var dayDate = day.date.substring(6, 8);
-
            day.sessionGroups.forEach(function(sessionGroup) {
                if (sessionGroup.length > 0) {
                    sessionGroup.forEach(function (session, roomIndex) {
                        if (typeof session.events !== "undefined") {
 
-                           var durationOfTalk = session.length / session.events.length;
-                           var startTime = parseTime(session.start);
-
                            session.events.forEach(function (talk, talkIndex) {
                                if (!favoritesOnly || ((typeof talk.selected !== "undefined") && talk.selected === true)) {
-                                   // Compute date of event
-                                   var startHour = Math.floor(startTime.hour + (durationOfTalk / 4) * talkIndex) - 2; // Events will be in UTC+2
-                                   var startMinutes = Math.floor(startTime.minutes + (durationOfTalk % 4) * talkIndex) * 15;
-                                   var startDate = new Date(yearDate, monthDate, dayDate);
-                                   startDate.setUTCHours(startHour);
-                                   startDate.setUTCMinutes(startMinutes);
-                                   startDate.setUTCSeconds(0);
-
-                                   var endHour =  Math.floor(startHour + (durationOfTalk / 4));
-                                   var endMinutes =  Math.floor(startMinutes + (durationOfTalk % 4)) * 15;
-                                   var endDate = new Date(yearDate, monthDate, dayDate, endHour - 2, endMinutes, 0);
-
-                                   console.log(startDate);
-                                   console.log(endDate);
-
                                    // Generate event
                                    calendar.push("BEGIN:VEVENT");
-                                   calendar.push("DTSTAMP:" + formatDate(startDate));
-                                   calendar.push("ORGANIZER:CN=Models");
-                                   calendar.push("DTSTART:" + formatDate(startDate));
-                                   calendar.push("DTEND:" + formatDate(endDate));
+                                   // calendar.push("UID:" + formatDate(startDate) + "-"  + roomIndex + "-" +  talkIndex + "@models.irisa.fr"); // FIXME : experimental
+                                   calendar.push("DTSTAMP:" + session.icalStart);
+                                   calendar.push("ORGANIZER;CN=Models");
+                                   calendar.push("DTSTART:" + session.icalStart);
+                                   calendar.push("DTEND:" + session.icalEnd);
                                    calendar.push("SUMMARY:" + talk.title);
                                    calendar.push("DESCRIPTION:" + talk.title);
                                    calendar.push("LOCATION:" + day.rooms[roomIndex].name);
@@ -183,7 +108,7 @@ modelsApp.controller("ProgramController", function($scope) {
         var file = calendar.join("\n");
 
         // Download file
-        var blob = new Blob([file], {type: 'text/plain'});
+        var blob = new Blob([file], {type: 'text/calendar'});
         var filename = "models.ics";
         if(window.navigator.msSaveOrOpenBlob) {
             window.navigator.msSaveBlob(blob, filename);
@@ -194,6 +119,7 @@ modelsApp.controller("ProgramController", function($scope) {
             elem.download = filename;
             document.body.appendChild(elem);
             elem.click();
+            console.log(elem);
             document.body.removeChild(elem);
         }
     };

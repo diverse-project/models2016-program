@@ -30,6 +30,11 @@ td div {
     height: 100%;
 }
 
+.eventType {
+    height: 5px;
+    width: 100%;
+}
+
 .Workshop {
     background-color: yellow;
 }
