@@ -362,7 +362,6 @@ class ProgramGenerator extends AbstractGenerator {
 								«FOR row : scheduleOfDay.getRows(roomComparator) SEPARATOR ","»
 								[
 									«{debugRowNb++ null}»
-									«IF row.exists[e|e.data instanceof Session]»
 									{
 										«val startDate = startingDates.get(i++)»
 										«val endDate = if (i < startingDates.size) {
@@ -374,7 +373,6 @@ class ProgramGenerator extends AbstractGenerator {
 										«{rowSpan = computeSessionLength(startDate,endDate) null}»
 										rowSpan : «rowSpan»
 									},
-									«ENDIF»
 									«FOR s : row SEPARATOR ","»
 									«IF s.data == null»
 									{

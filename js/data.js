@@ -265,7 +265,7 @@ var data = [
 			[
 				{
 					start : "11:00",
-					rowSpan : 6
+					rowSpan : 4
 				},
 				{
 					rowSpan : 18
@@ -414,13 +414,16 @@ var data = [
 			[],
 			[],
 			[],
-			[],
-			[],
 			[
+				{
+					start : "12:00",
+					rowSpan : 2
+				},
 				{
 					rowSpan : 2
 				}
-			],			
+			],
+			[],
 			[
 				{
 					start : "12:30",

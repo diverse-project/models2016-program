@@ -55,8 +55,9 @@ public class Schedule<K> {
 	}
 	
 	public List<Date> getAllStartingDates() {
+		final Schedule<K> filledSchedule = fillSchedule();
 		final List<Date> dates = new ArrayList<>();
-		columns.forEach(c->dates.addAll(c.getEvents().stream().map(e->e.startDate).collect(Collectors.toList())));
+		filledSchedule.columns.forEach(c->dates.addAll(c.getEvents().stream().map(e->e.startDate).collect(Collectors.toList())));
 		final List<Date> result = new ArrayList<>();
 		dates.forEach(d->{
 			if (!result.stream().filter(a->a.getTime() == d.getTime()).findFirst().isPresent()) {
@@ -215,5 +216,25 @@ public class Schedule<K> {
 				}
 			}
 		}
+		
+//		@Override
+//		public String toString() {
+//			final StringBuilder builder = new StringBuilder();
+//			for (ScheduleEvent event : events) {
+//				final int length = 4 * (event.endDate.getHours() - event.startDate.getHours()) +
+//						(event.endDate.getMinutes() - event.startDate.getMinutes()) / 15;
+//				for (int i = 0; i < length; i++) {
+//					builder.append(event);
+//					builder.append("\n");
+//				}
+//			}
+//			return builder.toString();
+//		}
 	}
+	
+//	@Override
+//	public String toString() {
+//		
+//		return ;
+//	}
 }
