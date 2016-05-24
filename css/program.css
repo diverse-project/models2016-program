@@ -19,6 +19,13 @@ footer {
     text-align: right;
 }
 
+
+tr {
+    min-height: 50px;
+    height: 50px;
+}
+
+
 td {
     max-width: 150px;
     /*word-wrap: break-word;*/

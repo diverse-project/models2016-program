@@ -59,7 +59,7 @@
 
                     <tbody>
                     <tr ng-repeat="sessionGroup in day.sessionGroups">
-                        <td ng-if="sessionGroup.length > 0" ng-repeat="session in sessionGroup" rowspan="{{session.length}}">
+                            <td ng-if="sessionGroup.length > 0" ng-repeat="session in sessionGroup" rowspan="{{session.rowSpan}}">
                             {{$index}}
 
                             <div ng-if="$index == 0">

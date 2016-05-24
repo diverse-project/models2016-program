@@ -265,7 +265,7 @@ var data = [
 			[
 				{
 					start : "11:00",
-					rowSpan : 4
+					rowSpan : 6
 				},
 				{
 					rowSpan : 18
@@ -670,7 +670,7 @@ var data = [
 			[
 				{
 					start : "16:00",
-					rowSpan : 6
+					rowSpan : -22
 				},
 				{
 					start : "16:00",
