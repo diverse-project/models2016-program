@@ -406,7 +406,6 @@ class ProgramGenerator extends AbstractGenerator {
 								«ENDFOR»
 								«ENDIF»
 								«{emptyRows = 0 null}»
-							]
 							«ENDFOR»
 						}
 						«ENDFOR»
