@@ -56,8 +56,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					length : "6",
-					icalStart : "20161002T090000Z",
-					icalEnd : "20161002T103000Z",
+					icalStart : "20161002T070000Z",
+					icalEnd : "20161002T083000Z",
 					events : [
 						{
 							type : "DoctoralSymposium",
@@ -72,8 +72,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					length : "6",
-					icalStart : "20161002T090000Z",
-					icalEnd : "20161002T103000Z",
+					icalStart : "20161002T070000Z",
+					icalEnd : "20161002T083000Z",
 					events : [
 						{
 							type : "Tutorial",
@@ -93,8 +93,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					length : "6",
-					icalStart : "20161002T090000Z",
-					icalEnd : "20161002T103000Z",
+					icalStart : "20161002T070000Z",
+					icalEnd : "20161002T083000Z",
 					events : [
 						{
 							type : "Tutorial",
@@ -110,8 +110,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					length : "6",
-					icalStart : "20161002T090000Z",
-					icalEnd : "20161002T103000Z",
+					icalStart : "20161002T070000Z",
+					icalEnd : "20161002T083000Z",
 					events : [
 						{
 							type : "Tutorial",
@@ -128,8 +128,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					length : "6",
-					icalStart : "20161002T090000Z",
-					icalEnd : "20161002T103000Z",
+					icalStart : "20161002T070000Z",
+					icalEnd : "20161002T083000Z",
 					events : [
 						{
 							type : "Workshop",
@@ -148,8 +148,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					length : "6",
-					icalStart : "20161002T090000Z",
-					icalEnd : "20161002T103000Z",
+					icalStart : "20161002T070000Z",
+					icalEnd : "20161002T083000Z",
 					events : [
 						{
 							type : "Workshop",
@@ -167,8 +167,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					length : "6",
-					icalStart : "20161002T090000Z",
-					icalEnd : "20161002T103000Z",
+					icalStart : "20161002T070000Z",
+					icalEnd : "20161002T083000Z",
 					events : [
 						{
 							type : "Workshop",
@@ -186,8 +186,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					length : "6",
-					icalStart : "20161002T090000Z",
-					icalEnd : "20161002T103000Z",
+					icalStart : "20161002T070000Z",
+					icalEnd : "20161002T083000Z",
 					events : [
 						{
 							type : "Workshop",
@@ -206,8 +206,8 @@ var data = [
 					start : "10:30",
 					end : "11:00",
 					length : "2",
-					icalStart : "20161002T103000Z",
-					icalEnd : "20161002T110000Z",
+					icalStart : "20161002T083000Z",
+					icalEnd : "20161002T090000Z",
 					events : [
 						{
 							type : "CoffeeBreak",
@@ -258,8 +258,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					length : "6",
-					icalStart : "20161002T110000Z",
-					icalEnd : "20161002T123000Z",
+					icalStart : "20161002T090000Z",
+					icalEnd : "20161002T103000Z",
 					events : [
 						{
 							type : "DoctoralSymposium",
@@ -274,8 +274,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					length : "6",
-					icalStart : "20161002T110000Z",
-					icalEnd : "20161002T123000Z",
+					icalStart : "20161002T090000Z",
+					icalEnd : "20161002T103000Z",
 					events : [
 						{
 							type : "Tutorial",
@@ -295,8 +295,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					length : "6",
-					icalStart : "20161002T110000Z",
-					icalEnd : "20161002T123000Z",
+					icalStart : "20161002T090000Z",
+					icalEnd : "20161002T103000Z",
 					events : [
 						{
 							type : "Tutorial",
@@ -312,8 +312,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					length : "6",
-					icalStart : "20161002T110000Z",
-					icalEnd : "20161002T123000Z",
+					icalStart : "20161002T090000Z",
+					icalEnd : "20161002T103000Z",
 					events : [
 						{
 							type : "Tutorial",
@@ -330,8 +330,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					length : "6",
-					icalStart : "20161002T110000Z",
-					icalEnd : "20161002T123000Z",
+					icalStart : "20161002T090000Z",
+					icalEnd : "20161002T103000Z",
 					events : [
 						{
 							type : "Workshop",
@@ -350,8 +350,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					length : "6",
-					icalStart : "20161002T110000Z",
-					icalEnd : "20161002T123000Z",
+					icalStart : "20161002T090000Z",
+					icalEnd : "20161002T103000Z",
 					events : [
 						{
 							type : "Workshop",
@@ -369,8 +369,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					length : "6",
-					icalStart : "20161002T110000Z",
-					icalEnd : "20161002T123000Z",
+					icalStart : "20161002T090000Z",
+					icalEnd : "20161002T103000Z",
 					events : [
 						{
 							type : "Workshop",
@@ -388,8 +388,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					length : "6",
-					icalStart : "20161002T110000Z",
-					icalEnd : "20161002T123000Z",
+					icalStart : "20161002T090000Z",
+					icalEnd : "20161002T103000Z",
 					events : [
 						{
 							type : "Workshop",
@@ -408,8 +408,8 @@ var data = [
 					start : "12:30",
 					end : "14:00",
 					length : "6",
-					icalStart : "20161002T123000Z",
-					icalEnd : "20161002T140000Z",
+					icalStart : "20161002T103000Z",
+					icalEnd : "20161002T120000Z",
 					events : [
 						{
 							type : "Lunch",
@@ -456,8 +456,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					length : "6",
-					icalStart : "20161002T140000Z",
-					icalEnd : "20161002T153000Z",
+					icalStart : "20161002T120000Z",
+					icalEnd : "20161002T133000Z",
 					events : [
 						{
 							type : "DoctoralSymposium",
@@ -472,8 +472,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					length : "6",
-					icalStart : "20161002T140000Z",
-					icalEnd : "20161002T153000Z",
+					icalStart : "20161002T120000Z",
+					icalEnd : "20161002T133000Z",
 					events : [
 						{
 							type : "Tutorial",
@@ -490,8 +490,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					length : "6",
-					icalStart : "20161002T140000Z",
-					icalEnd : "20161002T153000Z",
+					icalStart : "20161002T120000Z",
+					icalEnd : "20161002T133000Z",
 					events : [
 						{
 							type : "Tutorial",
@@ -508,8 +508,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					length : "6",
-					icalStart : "20161002T140000Z",
-					icalEnd : "20161002T153000Z",
+					icalStart : "20161002T120000Z",
+					icalEnd : "20161002T133000Z",
 					events : [
 						{
 							type : "Tutorial",
@@ -525,8 +525,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					length : "6",
-					icalStart : "20161002T140000Z",
-					icalEnd : "20161002T153000Z",
+					icalStart : "20161002T120000Z",
+					icalEnd : "20161002T133000Z",
 					events : [
 						{
 							type : "Workshop",
@@ -545,8 +545,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					length : "6",
-					icalStart : "20161002T140000Z",
-					icalEnd : "20161002T153000Z",
+					icalStart : "20161002T120000Z",
+					icalEnd : "20161002T133000Z",
 					events : [
 						{
 							type : "Workshop",
@@ -564,8 +564,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					length : "6",
-					icalStart : "20161002T140000Z",
-					icalEnd : "20161002T153000Z",
+					icalStart : "20161002T120000Z",
+					icalEnd : "20161002T133000Z",
 					events : [
 						{
 							type : "Workshop",
@@ -583,8 +583,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					length : "6",
-					icalStart : "20161002T140000Z",
-					icalEnd : "20161002T153000Z",
+					icalStart : "20161002T120000Z",
+					icalEnd : "20161002T133000Z",
 					events : [
 						{
 							type : "Workshop",
@@ -603,8 +603,8 @@ var data = [
 					start : "15:30",
 					end : "16:00",
 					length : "2",
-					icalStart : "20161002T153000Z",
-					icalEnd : "20161002T160000Z",
+					icalStart : "20161002T133000Z",
+					icalEnd : "20161002T140000Z",
 					events : [
 						{
 							type : "CoffeeBreak",
@@ -651,8 +651,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					length : "6",
-					icalStart : "20161002T160000Z",
-					icalEnd : "20161002T173000Z",
+					icalStart : "20161002T140000Z",
+					icalEnd : "20161002T153000Z",
 					events : [
 						{
 							type : "TalkSession",
@@ -662,8 +662,8 @@ var data = [
 								{
 									title : "MDE for cows",
 									start : "16:00",
-									icalStart : "20161002T160000Z",
-									icalEnd : "20161002T162500Z",
+									icalStart : "20161002T140000Z",
+									icalEnd : "20161002T142500Z",
 									authors : [
 										"Jane Doe"
 									]
@@ -671,8 +671,8 @@ var data = [
 								{
 									title : "MDE for pigs",
 									start : "16:25",
-									icalStart : "20161002T162500Z",
-									icalEnd : "20161002T165000Z",
+									icalStart : "20161002T142500Z",
+									icalEnd : "20161002T145000Z",
 									authors : [
 										"Pierre",
 										"Paul",
@@ -688,8 +688,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					length : "6",
-					icalStart : "20161002T160000Z",
-					icalEnd : "20161002T173000Z",
+					icalStart : "20161002T140000Z",
+					icalEnd : "20161002T153000Z",
 					events : [
 						{
 							type : "DoctoralSymposium",
@@ -704,8 +704,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					length : "6",
-					icalStart : "20161002T160000Z",
-					icalEnd : "20161002T173000Z",
+					icalStart : "20161002T140000Z",
+					icalEnd : "20161002T153000Z",
 					events : [
 						{
 							type : "Tutorial",
@@ -722,8 +722,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					length : "6",
-					icalStart : "20161002T160000Z",
-					icalEnd : "20161002T173000Z",
+					icalStart : "20161002T140000Z",
+					icalEnd : "20161002T153000Z",
 					events : [
 						{
 							type : "Tutorial",
@@ -740,8 +740,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					length : "6",
-					icalStart : "20161002T160000Z",
-					icalEnd : "20161002T173000Z",
+					icalStart : "20161002T140000Z",
+					icalEnd : "20161002T153000Z",
 					events : [
 						{
 							type : "Tutorial",
@@ -757,8 +757,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					length : "6",
-					icalStart : "20161002T160000Z",
-					icalEnd : "20161002T173000Z",
+					icalStart : "20161002T140000Z",
+					icalEnd : "20161002T153000Z",
 					events : [
 						{
 							type : "Workshop",
@@ -777,8 +777,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					length : "6",
-					icalStart : "20161002T160000Z",
-					icalEnd : "20161002T173000Z",
+					icalStart : "20161002T140000Z",
+					icalEnd : "20161002T153000Z",
 					events : [
 						{
 							type : "Workshop",
@@ -796,8 +796,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					length : "6",
-					icalStart : "20161002T160000Z",
-					icalEnd : "20161002T173000Z",
+					icalStart : "20161002T140000Z",
+					icalEnd : "20161002T153000Z",
 					events : [
 						{
 							type : "Workshop",
@@ -815,8 +815,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					length : "6",
-					icalStart : "20161002T160000Z",
-					icalEnd : "20161002T173000Z",
+					icalStart : "20161002T140000Z",
+					icalEnd : "20161002T153000Z",
 					events : [
 						{
 							type : "Workshop",

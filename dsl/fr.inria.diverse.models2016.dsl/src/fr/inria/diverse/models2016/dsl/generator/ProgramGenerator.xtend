@@ -3,10 +3,13 @@
  */
 package fr.inria.diverse.models2016.dsl.generator
 
+import fr.inria.diverse.models2016.dsl.schedule.Schedule
+import fr.inria.diverse.models2016.dsl.schedule.Schedule.ScheduleEvent
 import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.util.ArrayList
 import java.util.Calendar
+import java.util.Comparator
 import java.util.Date
 import java.util.GregorianCalendar
 import java.util.HashMap
@@ -33,10 +36,8 @@ import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.xtext.generator.AbstractGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess2
 import org.eclipse.xtext.generator.IGeneratorContext
-import java.util.concurrent.ScheduledExecutorService
-import fr.inria.diverse.models2016.dsl.schedule.Schedule
-import fr.inria.diverse.models2016.dsl.schedule.Schedule.ScheduleEvent
-import java.util.Comparator
+import java.util.Locale
+import java.util.TimeZone
 
 /**
  * Generates code from your model files on save.
@@ -53,11 +54,15 @@ class ProgramGenerator extends AbstractGenerator {
 	
 	private val DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd")
 	private val DateFormat hourFormat = new SimpleDateFormat("HH:mm")
-	private val DateFormat icalFormat = new SimpleDateFormat("yyyyMMdd'T'HHmmss'Z'")
+	private val DateFormat icalFormat = new SimpleDateFormat("yyyyMMdd'T'HHmmss'Z'",Locale.UK)
 	
 	private var int talkDuration = 25
 	
 	private var Conference conference
+	
+	new() {
+		icalFormat.timeZone = TimeZone.getTimeZone("UTC")
+	}
 	
 	override doGenerate(Resource input, IFileSystemAccess2 fsa, IGeneratorContext context) {
 		rooms.clear
