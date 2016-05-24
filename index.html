@@ -59,19 +59,16 @@
 
                     <tbody>
                     <tr ng-repeat="sessionGroup in day.sessionGroups">
-                            <td ng-if="sessionGroup.length > 0" ng-repeat="session in sessionGroup" rowspan="{{session.rowSpan}}">
-                            {{$index}}
-
+                        <td ng-if="sessionGroup.length > 0" ng-repeat="session in sessionGroup" rowspan="{{session.rowSpan}}">
                             <div ng-if="$index == 0">
                                 {{getStartOfSessionGroup(sessionGroup)}}
                             </div>
 
                             <table class="table table-condensed" ng-if="$index > 0">
-                                <tr ng-repeat="event in session.events">
-
-                                    <!-- Event -->
-                                    <td ng-if="event.title && !event.papers" >
-                                        <div ng-show="!showFavorites || (showFavorites && talk.selected)">
+                                <tr>
+                                    <td ng-repeat="event in session.events">
+                                        <!-- Event -->
+                                        <div ng-show="!showFavorites || (showFavorites && talk.selected)" ng-if="event.title && !event.papers" >
 
                                             <div class="eventType" ng-class="event.type"></div>
 
@@ -83,11 +80,9 @@
                                             <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(event)">{{event.title}}</a>
 
                                         </div>
-                                    </td>
 
-                                    <!-- Talk -->
-                                    <td ng-if="event.title && event.papers">
-                                        <div ng-show="!showFavorites || (showFavorites && talk.selected)" ng-repeat="talk in event.papers">
+                                        <!-- Talk -->
+                                        <div ng-show="!showFavorites || (showFavorites && talk.selected)" ng-if="event.title && event.papers"  ng-repeat="talk in event.papers" >
 
                                             <div class="eventType" ng-class="event.type"></div>
 
