@@ -357,9 +357,11 @@ class ProgramGenerator extends AbstractGenerator {
 								«val scheduleOfDay = schedulePerDay.get(d)»
 								«val startingDates = scheduleOfDay.allStartingDates»
 								«var i = 0»
-								«var emptyRows = 0»
+								«var rowSpan = 0»
+								«var debugRowNb = 0»
 								«FOR row : scheduleOfDay.getRows(roomComparator) SEPARATOR ","»
 								[
+									«{debugRowNb++ null}»
 									«IF row.exists[e|e.data instanceof Session]»
 									{
 										«val startDate = startingDates.get(i++)»
@@ -369,14 +371,14 @@ class ProgramGenerator extends AbstractGenerator {
 											scheduleOfDay.lastDate
 										}»
 										start : "«hourFormat.format(startDate)»",
-										«{emptyRows = computeSessionLength(startDate,endDate) null}»
-										length : "«emptyRows»"
+										«{rowSpan = computeSessionLength(startDate,endDate) null}»
+										rowSpan : «rowSpan»
 									},
 									«ENDIF»
 									«FOR s : row SEPARATOR ","»
 									«IF s.data == null»
 									{
-										length : "«computeSessionLength(s.startDate, s.endDate)»"
+										rowSpan : «computeSessionLength(s.startDate, s.endDate)»
 									}
 									«ELSEIF s.data instanceof Session»
 									{
@@ -385,7 +387,7 @@ class ProgramGenerator extends AbstractGenerator {
 										«val endingDate = computeDate(d.date,s.endDate)»
 										start : "«hourFormat.format(startingDate)»",
 										end : "«hourFormat.format(endingDate)»",
-										length : "«computeSessionLength(s.startDate, s.endDate)»",
+										rowSpan : «computeSessionLength(s.startDate, s.endDate)»,
 										icalStart : "«icalFormat.format(startingDate)»",
 										icalEnd : "«icalFormat.format(endingDate)»",
 										events : [
@@ -398,15 +400,18 @@ class ProgramGenerator extends AbstractGenerator {
 										]
 									}
 									«ENDIF»
-									
 									«ENDFOR»
-								]«IF emptyRows > 1»,
-								«FOR _ : newArrayOfSize(emptyRows-1) SEPARATOR ","»
+								]«IF rowSpan > 1»,
+								«FOR _ : newArrayOfSize(rowSpan - 1) SEPARATOR ","»
+								«{debugRowNb++ null}»
 								[]
 								«ENDFOR»
 								«ENDIF»
-								«{emptyRows = 0 null}»
-							«ENDFOR»
+								«{rowSpan = 0 null}»
+								«ENDFOR»
+							]
+							«{println("Number of rows : " + debugRowNb) null}»
+							«{debugRowNb = 0 null}»	
 						}
 						«ENDFOR»
 					]

@@ -45,7 +45,7 @@ public class Schedule<K> {
 	
 	public Date getLastDate() {
 		final List<Date> dates = new ArrayList<>();
-		columns.forEach(c->dates.add(c.getColStartingDate()));
+		columns.forEach(c->dates.add(c.getColEndingDate()));
 		if (!dates.isEmpty()) {
 			dates.sort((d1,d2)->{return d2.compareTo(d1);});
 			return dates.get(0);

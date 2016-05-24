@@ -475,6 +475,9 @@ var data = [
 					rowSpan : 6
 				},
 				{
+					rowSpan : 14
+				},
+				{
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
@@ -664,7 +667,7 @@ var data = [
 			[
 				{
 					start : "16:00",
-					rowSpan : -22
+					rowSpan : 6
 				},
 				{
 					start : "16:00",
@@ -839,7 +842,12 @@ var data = [
 						}
 					]
 				}
-			]			
+			],
+			[],
+			[],
+			[],
+			[],
+			[]
 		]
 	}
 ]
