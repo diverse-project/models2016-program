@@ -857,13 +857,22 @@ public interface Models2016Package extends EPackage {
 	int CONFERENCE__PAPERS = 4;
 
 	/**
+	 * The feature id for the '<em><b>Talk Duration</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONFERENCE__TALK_DURATION = 5;
+
+	/**
 	 * The number of structural features of the '<em>Conference</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONFERENCE_FEATURE_COUNT = 5;
+	int CONFERENCE_FEATURE_COUNT = 6;
 
 	/**
 	 * The number of operations of the '<em>Conference</em>' class.
@@ -1593,6 +1602,17 @@ public interface Models2016Package extends EPackage {
 	EReference getConference_Papers();
 
 	/**
+	 * Returns the meta object for the attribute '{@link models2016.Conference#getTalkDuration <em>Talk Duration</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Talk Duration</em>'.
+	 * @see models2016.Conference#getTalkDuration()
+	 * @see #getConference()
+	 * @generated
+	 */
+	EAttribute getConference_TalkDuration();
+
+	/**
 	 * Returns the meta object for class '{@link models2016.Person <em>Person</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2158,6 +2178,14 @@ public interface Models2016Package extends EPackage {
 		 * @generated
 		 */
 		EReference CONFERENCE__PAPERS = eINSTANCE.getConference_Papers();
+
+		/**
+		 * The meta object literal for the '<em><b>Talk Duration</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CONFERENCE__TALK_DURATION = eINSTANCE.getConference_TalkDuration();
 
 		/**
 		 * The meta object literal for the '{@link models2016.impl.PersonImpl <em>Person</em>}' class.

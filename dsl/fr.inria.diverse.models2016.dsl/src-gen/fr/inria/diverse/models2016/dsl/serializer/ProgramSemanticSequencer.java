@@ -133,7 +133,14 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Conference returns Conference
 	 *
 	 * Constraint:
-	 *     (name=EString (resources+=Resource resources+=Resource*)? (papers+=Paper papers+=Paper*)? (events+=Event events+=Event*)? program=Program?)
+	 *     (
+	 *         name=EString 
+	 *         talkDuration=EIntegerObject 
+	 *         (resources+=Resource resources+=Resource*)? 
+	 *         (papers+=Paper papers+=Paper*)? 
+	 *         (events+=Event events+=Event*)? 
+	 *         program=Program?
+	 *     )
 	 */
 	protected void sequence_Conference(ISerializationContext context, Conference semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

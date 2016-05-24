@@ -37,6 +37,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link models2016.impl.ConferenceImpl#getProgram <em>Program</em>}</li>
  *   <li>{@link models2016.impl.ConferenceImpl#getEvents <em>Events</em>}</li>
  *   <li>{@link models2016.impl.ConferenceImpl#getPapers <em>Papers</em>}</li>
+ *   <li>{@link models2016.impl.ConferenceImpl#getTalkDuration <em>Talk Duration</em>}</li>
  * </ul>
  *
  * @generated
@@ -101,6 +102,26 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 	 * @ordered
 	 */
 	protected EList<Paper> papers;
+
+	/**
+	 * The default value of the '{@link #getTalkDuration() <em>Talk Duration</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTalkDuration()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Integer TALK_DURATION_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getTalkDuration() <em>Talk Duration</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTalkDuration()
+	 * @generated
+	 * @ordered
+	 */
+	protected Integer talkDuration = TALK_DURATION_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -226,6 +247,27 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Integer getTalkDuration() {
+		return talkDuration;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTalkDuration(Integer newTalkDuration) {
+		Integer oldTalkDuration = talkDuration;
+		talkDuration = newTalkDuration;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Models2016Package.CONFERENCE__TALK_DURATION, oldTalkDuration, talkDuration));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -259,6 +301,8 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 				return getEvents();
 			case Models2016Package.CONFERENCE__PAPERS:
 				return getPapers();
+			case Models2016Package.CONFERENCE__TALK_DURATION:
+				return getTalkDuration();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -290,6 +334,9 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 				getPapers().clear();
 				getPapers().addAll((Collection<? extends Paper>)newValue);
 				return;
+			case Models2016Package.CONFERENCE__TALK_DURATION:
+				setTalkDuration((Integer)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -317,6 +364,9 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 			case Models2016Package.CONFERENCE__PAPERS:
 				getPapers().clear();
 				return;
+			case Models2016Package.CONFERENCE__TALK_DURATION:
+				setTalkDuration(TALK_DURATION_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -339,6 +389,8 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 				return events != null && !events.isEmpty();
 			case Models2016Package.CONFERENCE__PAPERS:
 				return papers != null && !papers.isEmpty();
+			case Models2016Package.CONFERENCE__TALK_DURATION:
+				return TALK_DURATION_EDEFAULT == null ? talkDuration != null : !TALK_DURATION_EDEFAULT.equals(talkDuration);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -355,6 +407,8 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (name: ");
 		result.append(name);
+		result.append(", talkDuration: ");
+		result.append(talkDuration);
 		result.append(')');
 		return result.toString();
 	}

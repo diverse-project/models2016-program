@@ -13,8 +13,6 @@ import models2016.Models2016Package
 import models2016.Room
 import models2016.Session
 import org.eclipse.xtext.validation.Check
-import org.eclipse.emf.ecore.EStructuralFeature
-import org.eclipse.emf.ecore.EReference
 
 /**
  * This class contains custom validation rules. 

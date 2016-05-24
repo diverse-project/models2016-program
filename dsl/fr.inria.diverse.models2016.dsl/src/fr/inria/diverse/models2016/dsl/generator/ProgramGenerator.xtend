@@ -6,8 +6,9 @@ package fr.inria.diverse.models2016.dsl.generator
 import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.util.ArrayList
-import java.util.Collections
+import java.util.Calendar
 import java.util.Date
+import java.util.GregorianCalendar
 import java.util.HashMap
 import java.util.HashSet
 import java.util.List
@@ -32,7 +33,10 @@ import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.xtext.generator.AbstractGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess2
 import org.eclipse.xtext.generator.IGeneratorContext
-import com.google.common.collect.Maps
+import java.util.concurrent.ScheduledExecutorService
+import fr.inria.diverse.models2016.dsl.schedule.Schedule
+import fr.inria.diverse.models2016.dsl.schedule.Schedule.ScheduleEvent
+import java.util.Comparator
 
 /**
  * Generates code from your model files on save.
@@ -43,20 +47,31 @@ class ProgramGenerator extends AbstractGenerator {
 
 	private val Map<Day,List<Room>> roomsPerDay = new HashMap
 	private val Map<Day,Map<Room,List<Session>>> sessionsPerRoomPerDay = new HashMap
-	private val Map<Day,List<Session[]>> sessionGroupsPerDay = new HashMap
+	private val Map<Day,Schedule<Room>> schedulePerDay = new HashMap
+	private val List<Room> rooms = new ArrayList
+	private val Comparator<Room> roomComparator = [r1,r2|rooms.indexOf(r1) - rooms.indexOf(r2)]
 	
 	private val DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd")
 	private val DateFormat hourFormat = new SimpleDateFormat("HH:mm")
 	private val DateFormat icalFormat = new SimpleDateFormat("yyyyMMdd'T'HHmmss'Z'")
 	
+	private var int talkDuration = 25
+	
 	private var Conference conference
 	
 	override doGenerate(Resource input, IFileSystemAccess2 fsa, IGeneratorContext context) {
+		rooms.clear
 		roomsPerDay.clear
 		sessionsPerRoomPerDay.clear
+		schedulePerDay.clear
 		conference = input.allContents.filter(typeof(Conference)).findFirst[true]
 		if (conference != null) {
-			val List<Room> rooms = conference.resources.filter(typeof(Room)).toList
+			if (conference.talkDuration != 0) {
+				talkDuration = conference.talkDuration
+			}
+			
+			rooms.addAll(conference.resources.filter(typeof(Room)).toList)
+			
 			conference.program.days.forEach[d|
 				val List<Session> sessions = d.sessions
 				val Set<Room> roomsOfTheDay = new HashSet
@@ -74,11 +89,10 @@ class ProgramGenerator extends AbstractGenerator {
 							sessionsOfRoom.add(s)
 						}
 				]
-				val List<Room> result = new ArrayList(roomsOfTheDay.sortWith([r1,r2|
-					return rooms.indexOf(r1) - rooms.indexOf(r2)
-				]))
+				val List<Room> result = new ArrayList(roomsOfTheDay.sortWith(roomComparator))
 				roomsPerDay.put(d,result)
 			]
+			
 			sessionsPerRoomPerDay.forEach[d, sessionsPerRoom|
 				val toBeSorted = new HashMap(sessionsPerRoom)
 				toBeSorted.forEach[r, s|
@@ -89,63 +103,15 @@ class ProgramGenerator extends AbstractGenerator {
 				]
 			]
 			
-			sessionGroupsPerDay.clear()
-			
 			sessionsPerRoomPerDay.forEach[d, sessionsPerRoom|
-				val sessionGroups = new ArrayList
-				sessionGroupsPerDay.put(d,sessionGroups)
-				val Map<Room,List<Session>> tmp = new HashMap
+				val schedule = new Schedule<Room>
+				schedulePerDay.put(d,schedule)
 				sessionsPerRoom.forEach[r, l|
-					tmp.put(r,new ArrayList(l))
+					schedule.addColumn(r)
+					l.forEach[s|
+						schedule.addEventToColumn(r,new ScheduleEvent(s.startingTime,s.endingTime,s))
+					]
 				]
-				val roomsOfDay = roomsPerDay.get(d)
-				var Date start = null
-				for (Room r : roomsOfDay) {
-					val l = tmp.get(r)
-					if (l != null && !l.empty) {
-						val tmpStart = l.get(0).startingTime
-						if (start == null || start.compareTo(tmpStart) > 0) {
-							start = new Date(0)
-							start.minutes = tmpStart.minutes
-							start.hours = tmpStart.hours
-						}
-					}
-				}
-				if (start != null) {
-					val Map<Room,Date> ongoingSessionPerRoom = new HashMap
-					while (getTotalLength(tmp) > 0) {
-						val sessionGroup = new ArrayList
-						for (Room r : roomsOfDay) {
-							val l = tmp.get(r)
-							if (l.empty || l.get(0).startingTime.compareTo(start) != 0) {
-								if (ongoingSessionPerRoom.get(r) == null) {
-									sessionGroup.add(null)
-								}
-							} else {
-								val s = l.remove(0)
-								ongoingSessionPerRoom.put(r,s.endingTime)
-								sessionGroup.add(s)
-							}
-						}
-						sessionGroups.add(sessionGroup)
-						if (start.minutes == 45) {
-							start.minutes = 0
-							if (start.hours == 23) {
-								start.hours == 0
-							} else {
-								start.hours = start.hours + 1
-							}
-						} else {
-							start.minutes = start.minutes + 15
-						}
-						for (Room r : roomsOfDay) {
-							val t = ongoingSessionPerRoom.get(r)
-							if (t != null && t.compareTo(start) == 0) {
-								ongoingSessionPerRoom.remove(r)
-							}
-						}
-					}
-				}
 			]
 			
 			fsa.generateFile('data.js', 'var data = ' + generate)
@@ -162,18 +128,29 @@ class ProgramGenerator extends AbstractGenerator {
 		return 4 * (end.hours - start.hours) + (end.minutes - start.minutes) / 15
 	}
 	
-	def private String computeSessionDate(Date day, Date hour) {
-		val date = new Date
-		date.year = day.year
-		date.month = day.month
-		date.date = day.date
-		date.hours = hour.hours
-		date.minutes = hour.minutes
-		date.seconds = 0;
-		return icalFormat.format(date)
+	def private Date computeDate(Date dayDate, Date hourDate) {
+		val dayCal = GregorianCalendar.instance
+		val hourCal = GregorianCalendar.instance
+		val cal = GregorianCalendar.instance
+		cal.clear
+		dayCal.time = dayDate
+		hourCal.time = hourDate
+		
+		val year = dayCal.get(Calendar.YEAR)
+		val month = dayCal.get(Calendar.MONTH)
+		val day = dayCal.get(Calendar.DAY_OF_MONTH)
+		val hour = hourCal.get(Calendar.HOUR_OF_DAY)
+		val minute = hourCal.get(Calendar.MINUTE)
+		
+		cal.set(year, month, day, hour, minute)
+		return cal.time
 	}
 	
-	def private String getTalkSession(TalkSession talkSession) {
+	def private Date computeTalkStart(Date start, int i) {
+		return new Date(start.time + i * talkDuration * 60 * 1000)
+	}
+	
+	def private String getTalkSession(TalkSession talkSession, Date start) {
 		return
 				'''
 					{
@@ -183,12 +160,18 @@ class ProgramGenerator extends AbstractGenerator {
 						chair : «talkSession.chair.name»,
 						«ENDIF»
 						papers : [
+							«var i = 0»
 							«FOR p : talkSession.papers SEPARATOR ","»
 							{
 								title : «p.name»,
 								«IF p.abstract != null && p.abstract.length > 0»
 								abstract : «p.abstract»,
 								«ENDIF»
+								«val talkStart = computeTalkStart(start,i++)»
+								«val talkEnd = computeTalkStart(start,i)»
+								start : "«hourFormat.format(talkStart)»",
+								icalStart : "«icalFormat.format(talkStart)»",
+								icalEnd : "«icalFormat.format(talkEnd)»",
 								authors : [
 									«FOR a : p.authors SEPARATOR ","»
 									«a.name»
@@ -321,9 +304,9 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 	}
 	
-	def String getEvent(Event event) {
+	def String getEvent(Event event, Date start) {
 		if (event instanceof TalkSession) {
-			return getTalkSession(event as TalkSession)
+			return getTalkSession(event as TalkSession, start)
 		} else if (event instanceof Workshop) {
 			return getWorkshop(event as Workshop)
 		} else if (event instanceof Tutorial) {
@@ -366,27 +349,34 @@ class ProgramGenerator extends AbstractGenerator {
 								«ENDFOR»
 							],
 							sessionGroups : [
-								«FOR g : sessionGroupsPerDay.get(d) SEPARATOR ","»
+								«FOR row : schedulePerDay.get(d).getRows(roomComparator) SEPARATOR ","»
 								[
-									«FOR s : g SEPARATOR ","»
-									«IF s == null»
-									{}
-									«ELSE»
+									«FOR s : row SEPARATOR ","»
+									«IF s.data == null»
 									{
-										start : "«hourFormat.format(s.startingTime)»",
-										end : "«hourFormat.format(s.endingTime)»",
-										length : "«computeSessionLength(s.startingTime, s.endingTime)»",
-										date : "«computeSessionDate(d.date,s.startingTime)»",
+										length : "«computeSessionLength(s.startDate, s.endDate)»"
+									}
+									«ELSEIF s.data instanceof Session»
+									{
+										«val s_cast = s.data as Session»
+										«val startingDate = computeDate(d.date,s.startDate)»
+										«val endingDate = computeDate(d.date,s.endDate)»
+										start : "«hourFormat.format(startingDate)»",
+										end : "«hourFormat.format(endingDate)»",
+										length : "«computeSessionLength(s.startDate, s.endDate)»",
+										icalStart : "«icalFormat.format(startingDate)»",
+										icalEnd : "«icalFormat.format(endingDate)»",
 										events : [
-											«val events = s.events»
+											«val events = s_cast.events»
 											«IF events != null»
 											«FOR e : events SEPARATOR ","»
-											«getEvent(e)»
+											«getEvent(e, startingDate)»
 											«ENDFOR»
 											«ENDIF»
 										]
 									}
 									«ENDIF»
+									
 									«ENDFOR»
 								]
 								«ENDFOR»

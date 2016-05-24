@@ -75,6 +75,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//Conference/program"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//Conference/events"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//Conference/papers"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Conference/talkDuration"/>
     </genClasses>
     <genClasses ecoreClass="models2016.ecore#//Person">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Person/name"/>

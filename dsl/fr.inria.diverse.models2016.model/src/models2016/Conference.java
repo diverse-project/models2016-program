@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link models2016.Conference#getProgram <em>Program</em>}</li>
  *   <li>{@link models2016.Conference#getEvents <em>Events</em>}</li>
  *   <li>{@link models2016.Conference#getPapers <em>Papers</em>}</li>
+ *   <li>{@link models2016.Conference#getTalkDuration <em>Talk Duration</em>}</li>
  * </ul>
  *
  * @see models2016.Models2016Package#getConference()
@@ -126,5 +127,31 @@ public interface Conference extends EObject {
 	 * @generated
 	 */
 	EList<Paper> getPapers();
+
+	/**
+	 * Returns the value of the '<em><b>Talk Duration</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Talk Duration</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Talk Duration</em>' attribute.
+	 * @see #setTalkDuration(Integer)
+	 * @see models2016.Models2016Package#getConference_TalkDuration()
+	 * @model
+	 * @generated
+	 */
+	Integer getTalkDuration();
+
+	/**
+	 * Sets the value of the '{@link models2016.Conference#getTalkDuration <em>Talk Duration</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Talk Duration</em>' attribute.
+	 * @see #getTalkDuration()
+	 * @generated
+	 */
+	void setTalkDuration(Integer value);
 
 } // Conference

@@ -71,6 +71,7 @@
         eType="#//Event" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="papers" upperBound="-1"
         eType="#//Paper" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="talkDuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="WeekDay">
     <eLiterals name="Monday" literal="MONDAY"/>

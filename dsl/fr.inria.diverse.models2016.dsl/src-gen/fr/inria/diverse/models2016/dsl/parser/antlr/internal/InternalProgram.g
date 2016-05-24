@@ -103,17 +103,40 @@ ruleConference returns [EObject current=null]
 				}
 			)
 		)
+		otherlv_2='talk duration'
+		{
+			newLeafNode(otherlv_2, grammarAccess.getConferenceAccess().getTalkDurationKeyword_2());
+		}
 		(
-			otherlv_2='resources'
+			(
+				{
+					newCompositeNode(grammarAccess.getConferenceAccess().getTalkDurationEIntegerObjectParserRuleCall_3_0());
+				}
+				lv_talkDuration_3_0=ruleEIntegerObject
+				{
+					if ($current==null) {
+						$current = createModelElementForParent(grammarAccess.getConferenceRule());
+					}
+					set(
+						$current,
+						"talkDuration",
+						lv_talkDuration_3_0,
+						"fr.inria.diverse.models2016.dsl.Program.EIntegerObject");
+					afterParserOrEnumRuleCall();
+				}
+			)
+		)
+		(
+			otherlv_4='resources'
 			{
-				newLeafNode(otherlv_2, grammarAccess.getConferenceAccess().getResourcesKeyword_2_0());
+				newLeafNode(otherlv_4, grammarAccess.getConferenceAccess().getResourcesKeyword_4_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConferenceAccess().getResourcesResourceParserRuleCall_2_1_0());
+						newCompositeNode(grammarAccess.getConferenceAccess().getResourcesResourceParserRuleCall_4_1_0());
 					}
-					lv_resources_3_0=ruleResource
+					lv_resources_5_0=ruleResource
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConferenceRule());
@@ -121,7 +144,7 @@ ruleConference returns [EObject current=null]
 						add(
 							$current,
 							"resources",
-							lv_resources_3_0,
+							lv_resources_5_0,
 							"fr.inria.diverse.models2016.dsl.Program.Resource");
 						afterParserOrEnumRuleCall();
 					}
@@ -130,9 +153,9 @@ ruleConference returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConferenceAccess().getResourcesResourceParserRuleCall_2_2_0());
+						newCompositeNode(grammarAccess.getConferenceAccess().getResourcesResourceParserRuleCall_4_2_0());
 					}
-					lv_resources_4_0=ruleResource
+					lv_resources_6_0=ruleResource
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConferenceRule());
@@ -140,7 +163,7 @@ ruleConference returns [EObject current=null]
 						add(
 							$current,
 							"resources",
-							lv_resources_4_0,
+							lv_resources_6_0,
 							"fr.inria.diverse.models2016.dsl.Program.Resource");
 						afterParserOrEnumRuleCall();
 					}
@@ -148,20 +171,20 @@ ruleConference returns [EObject current=null]
 			)*
 		)?
 		(
-			otherlv_5='papers'
+			otherlv_7='papers'
 			{
-				newLeafNode(otherlv_5, grammarAccess.getConferenceAccess().getPapersKeyword_3_0());
+				newLeafNode(otherlv_7, grammarAccess.getConferenceAccess().getPapersKeyword_5_0());
 			}
-			otherlv_6='{'
+			otherlv_8='{'
 			{
-				newLeafNode(otherlv_6, grammarAccess.getConferenceAccess().getLeftCurlyBracketKeyword_3_1());
+				newLeafNode(otherlv_8, grammarAccess.getConferenceAccess().getLeftCurlyBracketKeyword_5_1());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConferenceAccess().getPapersPaperParserRuleCall_3_2_0());
+						newCompositeNode(grammarAccess.getConferenceAccess().getPapersPaperParserRuleCall_5_2_0());
 					}
-					lv_papers_7_0=rulePaper
+					lv_papers_9_0=rulePaper
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConferenceRule());
@@ -169,23 +192,23 @@ ruleConference returns [EObject current=null]
 						add(
 							$current,
 							"papers",
-							lv_papers_7_0,
+							lv_papers_9_0,
 							"fr.inria.diverse.models2016.dsl.Program.Paper");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 			(
-				otherlv_8=';'
+				otherlv_10=';'
 				{
-					newLeafNode(otherlv_8, grammarAccess.getConferenceAccess().getSemicolonKeyword_3_3_0());
+					newLeafNode(otherlv_10, grammarAccess.getConferenceAccess().getSemicolonKeyword_5_3_0());
 				}
 				(
 					(
 						{
-							newCompositeNode(grammarAccess.getConferenceAccess().getPapersPaperParserRuleCall_3_3_1_0());
+							newCompositeNode(grammarAccess.getConferenceAccess().getPapersPaperParserRuleCall_5_3_1_0());
 						}
-						lv_papers_9_0=rulePaper
+						lv_papers_11_0=rulePaper
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getConferenceRule());
@@ -193,7 +216,7 @@ ruleConference returns [EObject current=null]
 							add(
 								$current,
 								"papers",
-								lv_papers_9_0,
+								lv_papers_11_0,
 								"fr.inria.diverse.models2016.dsl.Program.Paper");
 							afterParserOrEnumRuleCall();
 						}
@@ -201,25 +224,25 @@ ruleConference returns [EObject current=null]
 				)
 			)*
 		)?
-		otherlv_10='}'
+		otherlv_12='}'
 		{
-			newLeafNode(otherlv_10, grammarAccess.getConferenceAccess().getRightCurlyBracketKeyword_4());
+			newLeafNode(otherlv_12, grammarAccess.getConferenceAccess().getRightCurlyBracketKeyword_6());
 		}
 		(
-			otherlv_11='events'
+			otherlv_13='events'
 			{
-				newLeafNode(otherlv_11, grammarAccess.getConferenceAccess().getEventsKeyword_5_0());
+				newLeafNode(otherlv_13, grammarAccess.getConferenceAccess().getEventsKeyword_7_0());
 			}
-			otherlv_12='{'
+			otherlv_14='{'
 			{
-				newLeafNode(otherlv_12, grammarAccess.getConferenceAccess().getLeftCurlyBracketKeyword_5_1());
+				newLeafNode(otherlv_14, grammarAccess.getConferenceAccess().getLeftCurlyBracketKeyword_7_1());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConferenceAccess().getEventsEventParserRuleCall_5_2_0());
+						newCompositeNode(grammarAccess.getConferenceAccess().getEventsEventParserRuleCall_7_2_0());
 					}
-					lv_events_13_0=ruleEvent
+					lv_events_15_0=ruleEvent
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConferenceRule());
@@ -227,23 +250,23 @@ ruleConference returns [EObject current=null]
 						add(
 							$current,
 							"events",
-							lv_events_13_0,
+							lv_events_15_0,
 							"fr.inria.diverse.models2016.dsl.Program.Event");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 			(
-				otherlv_14=';'
+				otherlv_16=';'
 				{
-					newLeafNode(otherlv_14, grammarAccess.getConferenceAccess().getSemicolonKeyword_5_3_0());
+					newLeafNode(otherlv_16, grammarAccess.getConferenceAccess().getSemicolonKeyword_7_3_0());
 				}
 				(
 					(
 						{
-							newCompositeNode(grammarAccess.getConferenceAccess().getEventsEventParserRuleCall_5_3_1_0());
+							newCompositeNode(grammarAccess.getConferenceAccess().getEventsEventParserRuleCall_7_3_1_0());
 						}
-						lv_events_15_0=ruleEvent
+						lv_events_17_0=ruleEvent
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getConferenceRule());
@@ -251,7 +274,7 @@ ruleConference returns [EObject current=null]
 							add(
 								$current,
 								"events",
-								lv_events_15_0,
+								lv_events_17_0,
 								"fr.inria.diverse.models2016.dsl.Program.Event");
 							afterParserOrEnumRuleCall();
 						}
@@ -259,21 +282,21 @@ ruleConference returns [EObject current=null]
 				)
 			)*
 		)?
-		otherlv_16='}'
+		otherlv_18='}'
 		{
-			newLeafNode(otherlv_16, grammarAccess.getConferenceAccess().getRightCurlyBracketKeyword_6());
+			newLeafNode(otherlv_18, grammarAccess.getConferenceAccess().getRightCurlyBracketKeyword_8());
 		}
 		(
-			otherlv_17='program'
+			otherlv_19='program'
 			{
-				newLeafNode(otherlv_17, grammarAccess.getConferenceAccess().getProgramKeyword_7_0());
+				newLeafNode(otherlv_19, grammarAccess.getConferenceAccess().getProgramKeyword_9_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConferenceAccess().getProgramProgramParserRuleCall_7_1_0());
+						newCompositeNode(grammarAccess.getConferenceAccess().getProgramProgramParserRuleCall_9_1_0());
 					}
-					lv_program_18_0=ruleProgram
+					lv_program_20_0=ruleProgram
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConferenceRule());
@@ -281,7 +304,7 @@ ruleConference returns [EObject current=null]
 						set(
 							$current,
 							"program",
-							lv_program_18_0,
+							lv_program_20_0,
 							"fr.inria.diverse.models2016.dsl.Program.Program");
 						afterParserOrEnumRuleCall();
 					}
