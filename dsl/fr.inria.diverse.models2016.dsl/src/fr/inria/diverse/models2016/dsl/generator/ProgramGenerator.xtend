@@ -369,7 +369,7 @@ class ProgramGenerator extends AbstractGenerator {
 											scheduleOfDay.lastDate
 										}»
 										start : "«hourFormat.format(startDate)»",
-										«emptyRows = computeSessionLength(startDate,endDate)»
+										«{emptyRows = computeSessionLength(startDate,endDate) null}»
 										length : "«emptyRows»"
 									},
 									«ENDIF»
@@ -405,11 +405,7 @@ class ProgramGenerator extends AbstractGenerator {
 								[]
 								«ENDFOR»
 								«ENDIF»
-								«{
-									emptyRows = 0
-									null
-									}
-								»
+								«{emptyRows = 0 null}»
 							]
 							«ENDFOR»
 						}

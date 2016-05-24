@@ -46,7 +46,6 @@ var data = [
 	[
 		{
 			start : "09:00",
-			4
 			length : "4"
 		},
 		{
@@ -213,7 +212,6 @@ var data = [
 	[
 		{
 			start : "10:00",
-			2
 			length : "2"
 		},
 		{
@@ -236,7 +234,6 @@ var data = [
 	[
 		{
 			start : "10:30",
-			2
 			length : "2"
 		},
 		{
@@ -291,7 +288,6 @@ var data = [
 	[
 		{
 			start : "11:00",
-			6
 			length : "6"
 		},
 		{
@@ -463,7 +459,6 @@ var data = [
 	[
 		{
 			start : "12:30",
-			6
 			length : "6"
 		},
 		{
@@ -522,7 +517,6 @@ var data = [
 	[
 		{
 			start : "14:00",
-			6
 			length : "6"
 		},
 		{
@@ -680,7 +674,6 @@ var data = [
 	[
 		{
 			start : "15:30",
-			2
 			length : "2"
 		},
 		{
@@ -735,7 +728,6 @@ var data = [
 	[
 		{
 			start : "16:00",
-			-22
 			length : "-22"
 		},
 		{
