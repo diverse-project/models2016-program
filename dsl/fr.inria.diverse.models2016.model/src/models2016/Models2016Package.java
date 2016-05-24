@@ -1104,6 +1104,52 @@ public interface Models2016Package extends EPackage {
 	int COFFEE_BREAK_OPERATION_COUNT = EVENT_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link models2016.impl.MeetingImpl <em>Meeting</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see models2016.impl.MeetingImpl
+	 * @see models2016.impl.Models2016PackageImpl#getMeeting()
+	 * @generated
+	 */
+	int MEETING = 19;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEETING__NAME = EVENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Abstract</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEETING__ABSTRACT = EVENT__ABSTRACT;
+
+	/**
+	 * The number of structural features of the '<em>Meeting</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEETING_FEATURE_COUNT = EVENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Meeting</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEETING_OPERATION_COUNT = EVENT_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link models2016.WeekDay <em>Week Day</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1111,7 +1157,7 @@ public interface Models2016Package extends EPackage {
 	 * @see models2016.impl.Models2016PackageImpl#getWeekDay()
 	 * @generated
 	 */
-	int WEEK_DAY = 19;
+	int WEEK_DAY = 20;
 
 	/**
 	 * The meta object id for the '{@link models2016.Track <em>Track</em>}' enum.
@@ -1121,7 +1167,7 @@ public interface Models2016Package extends EPackage {
 	 * @see models2016.impl.Models2016PackageImpl#getTrack()
 	 * @generated
 	 */
-	int TRACK = 20;
+	int TRACK = 21;
 
 	/**
 	 * The meta object id for the '<em>Hour Data Type</em>' data type.
@@ -1131,7 +1177,7 @@ public interface Models2016Package extends EPackage {
 	 * @see models2016.impl.Models2016PackageImpl#getHourDataType()
 	 * @generated
 	 */
-	int HOUR_DATA_TYPE = 21;
+	int HOUR_DATA_TYPE = 22;
 
 	/**
 	 * The meta object id for the '<em>Day Data Type</em>' data type.
@@ -1141,7 +1187,7 @@ public interface Models2016Package extends EPackage {
 	 * @see models2016.impl.Models2016PackageImpl#getDayDataType()
 	 * @generated
 	 */
-	int DAY_DATA_TYPE = 22;
+	int DAY_DATA_TYPE = 23;
 
 	/**
 	 * Returns the meta object for class '{@link models2016.Day <em>Day</em>}'.
@@ -1741,6 +1787,16 @@ public interface Models2016Package extends EPackage {
 	EClass getCoffeeBreak();
 
 	/**
+	 * Returns the meta object for class '{@link models2016.Meeting <em>Meeting</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Meeting</em>'.
+	 * @see models2016.Meeting
+	 * @generated
+	 */
+	EClass getMeeting();
+
+	/**
 	 * Returns the meta object for enum '{@link models2016.WeekDay <em>Week Day</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2290,6 +2346,16 @@ public interface Models2016Package extends EPackage {
 		 * @generated
 		 */
 		EClass COFFEE_BREAK = eINSTANCE.getCoffeeBreak();
+
+		/**
+		 * The meta object literal for the '{@link models2016.impl.MeetingImpl <em>Meeting</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see models2016.impl.MeetingImpl
+		 * @see models2016.impl.Models2016PackageImpl#getMeeting()
+		 * @generated
+		 */
+		EClass MEETING = eINSTANCE.getMeeting();
 
 		/**
 		 * The meta object literal for the '{@link models2016.WeekDay <em>Week Day</em>}' enum.

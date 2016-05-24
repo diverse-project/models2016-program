@@ -91,5 +91,6 @@
     </genClasses>
     <genClasses ecoreClass="models2016.ecore#//Lunch"/>
     <genClasses ecoreClass="models2016.ecore#//CoffeeBreak"/>
+    <genClasses ecoreClass="models2016.ecore#//Meeting"/>
   </genPackages>
 </genmodel:GenModel>

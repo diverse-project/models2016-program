@@ -13,6 +13,7 @@ import models2016.Day;
 import models2016.DoctoralSymposium;
 import models2016.EducatorSymposium;
 import models2016.Lunch;
+import models2016.Meeting;
 import models2016.Models2016Package;
 import models2016.Panel;
 import models2016.Paper;
@@ -66,6 +67,9 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 				return; 
 			case Models2016Package.LUNCH:
 				sequence_Lunch(context, (Lunch) semanticObject); 
+				return; 
+			case Models2016Package.MEETING:
+				sequence_Meeting(context, (Meeting) semanticObject); 
 				return; 
 			case Models2016Package.PANEL:
 				sequence_Panel(context, (Panel) semanticObject); 
@@ -194,6 +198,19 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     (name=EString abstract=EString?)
 	 */
 	protected void sequence_Lunch(ISerializationContext context, Lunch semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Contexts:
+	 *     Event returns Meeting
+	 *     Meeting returns Meeting
+	 *
+	 * Constraint:
+	 *     (name=EString abstract=EString?)
+	 */
+	protected void sequence_Meeting(ISerializationContext context, Meeting semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	

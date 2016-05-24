@@ -144,6 +144,10 @@ public class Models2016AdapterFactory extends AdapterFactoryImpl {
 				return createCoffeeBreakAdapter();
 			}
 			@Override
+			public Adapter caseMeeting(Meeting object) {
+				return createMeetingAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -426,6 +430,20 @@ public class Models2016AdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createCoffeeBreakAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link models2016.Meeting <em>Meeting</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see models2016.Meeting
+	 * @generated
+	 */
+	public Adapter createMeetingAdapter() {
 		return null;
 	}
 

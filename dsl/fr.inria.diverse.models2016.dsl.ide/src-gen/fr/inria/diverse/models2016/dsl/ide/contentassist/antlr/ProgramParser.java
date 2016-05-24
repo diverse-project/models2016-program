@@ -94,6 +94,8 @@ public class ProgramParser extends AbstractContentAssistParser {
 					put(grammarAccess.getLunchAccess().getGroup_2(), "rule__Lunch__Group_2__0");
 					put(grammarAccess.getCoffeeBreakAccess().getGroup(), "rule__CoffeeBreak__Group__0");
 					put(grammarAccess.getCoffeeBreakAccess().getGroup_2(), "rule__CoffeeBreak__Group_2__0");
+					put(grammarAccess.getMeetingAccess().getGroup(), "rule__Meeting__Group__0");
+					put(grammarAccess.getMeetingAccess().getGroup_2(), "rule__Meeting__Group_2__0");
 					put(grammarAccess.getPaperAccess().getGroup(), "rule__Paper__Group__0");
 					put(grammarAccess.getPaperAccess().getGroup_4(), "rule__Paper__Group_4__0");
 					put(grammarAccess.getPaperAccess().getGroup_5(), "rule__Paper__Group_5__0");
@@ -162,6 +164,8 @@ public class ProgramParser extends AbstractContentAssistParser {
 					put(grammarAccess.getLunchAccess().getAbstractAssignment_2_1(), "rule__Lunch__AbstractAssignment_2_1");
 					put(grammarAccess.getCoffeeBreakAccess().getNameAssignment_1(), "rule__CoffeeBreak__NameAssignment_1");
 					put(grammarAccess.getCoffeeBreakAccess().getAbstractAssignment_2_1(), "rule__CoffeeBreak__AbstractAssignment_2_1");
+					put(grammarAccess.getMeetingAccess().getNameAssignment_1(), "rule__Meeting__NameAssignment_1");
+					put(grammarAccess.getMeetingAccess().getAbstractAssignment_2_1(), "rule__Meeting__AbstractAssignment_2_1");
 					put(grammarAccess.getPaperAccess().getNameAssignment_1(), "rule__Paper__NameAssignment_1");
 					put(grammarAccess.getPaperAccess().getAuthorsAssignment_3(), "rule__Paper__AuthorsAssignment_3");
 					put(grammarAccess.getPaperAccess().getAuthorsAssignment_4_1(), "rule__Paper__AuthorsAssignment_4_1");

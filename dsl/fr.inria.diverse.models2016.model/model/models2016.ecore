@@ -103,4 +103,5 @@
   <eClassifiers xsi:type="ecore:EClass" name="CoffeeBreak" eSuperTypes="#//Event"/>
   <eClassifiers xsi:type="ecore:EDataType" name="HourDataType" instanceClassName="java.util.Date"/>
   <eClassifiers xsi:type="ecore:EDataType" name="DayDataType" instanceClassName="java.util.Date"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Meeting" eSuperTypes="#//Event"/>
 </ecore:EPackage>

@@ -354,8 +354,25 @@ class ProgramGenerator extends AbstractGenerator {
 								«ENDFOR»
 							],
 							sessionGroups : [
-								«FOR row : schedulePerDay.get(d).getRows(roomComparator) SEPARATOR ","»
+								«val scheduleOfDay = schedulePerDay.get(d)»
+								«val startingDates = scheduleOfDay.allStartingDates»
+								«var i = 0»
+								«var emptyRows = 0»
+								«FOR row : scheduleOfDay.getRows(roomComparator) SEPARATOR ","»
 								[
+									«IF row.exists[e|e.data instanceof Session]»
+									{
+										«val startDate = startingDates.get(i++)»
+										«val endDate = if (i < startingDates.size) {
+											startingDates.get(i)
+										} else {
+											scheduleOfDay.lastDate
+										}»
+										start : "«hourFormat.format(startDate)»",
+										«emptyRows = computeSessionLength(startDate,endDate)»
+										length : "«emptyRows»"
+									},
+									«ENDIF»
 									«FOR s : row SEPARATOR ","»
 									«IF s.data == null»
 									{
@@ -383,9 +400,18 @@ class ProgramGenerator extends AbstractGenerator {
 									«ENDIF»
 									
 									«ENDFOR»
-								]
+								]«IF emptyRows > 1»,
+								«FOR _ : newArrayOfSize(emptyRows-1) SEPARATOR ","»
+								[]
 								«ENDFOR»
+								«ENDIF»
+								«{
+									emptyRows = 0
+									null
+									}
+								»
 							]
+							«ENDFOR»
 						}
 						«ENDFOR»
 					]

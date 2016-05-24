@@ -444,6 +444,15 @@ ruleEvent returns [EObject current=null]
 			$current = $this_CoffeeBreak_9.current;
 			afterParserOrEnumRuleCall();
 		}
+		    |
+		{
+			newCompositeNode(grammarAccess.getEventAccess().getMeetingParserRuleCall_10());
+		}
+		this_Meeting_10=ruleMeeting
+		{
+			$current = $this_Meeting_10.current;
+			afterParserOrEnumRuleCall();
+		}
 	)
 ;
 
@@ -2064,6 +2073,73 @@ ruleCoffeeBreak returns [EObject current=null]
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getCoffeeBreakRule());
+						}
+						set(
+							$current,
+							"abstract",
+							lv_abstract_3_0,
+							"fr.inria.diverse.models2016.dsl.Program.EString");
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)
+		)?
+	)
+;
+
+// Entry rule entryRuleMeeting
+entryRuleMeeting returns [EObject current=null]:
+	{ newCompositeNode(grammarAccess.getMeetingRule()); }
+	iv_ruleMeeting=ruleMeeting
+	{ $current=$iv_ruleMeeting.current; }
+	EOF;
+
+// Rule Meeting
+ruleMeeting returns [EObject current=null]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		otherlv_0='Meeting'
+		{
+			newLeafNode(otherlv_0, grammarAccess.getMeetingAccess().getMeetingKeyword_0());
+		}
+		(
+			(
+				{
+					newCompositeNode(grammarAccess.getMeetingAccess().getNameEStringParserRuleCall_1_0());
+				}
+				lv_name_1_0=ruleEString
+				{
+					if ($current==null) {
+						$current = createModelElementForParent(grammarAccess.getMeetingRule());
+					}
+					set(
+						$current,
+						"name",
+						lv_name_1_0,
+						"fr.inria.diverse.models2016.dsl.Program.EString");
+					afterParserOrEnumRuleCall();
+				}
+			)
+		)
+		(
+			otherlv_2='abstract'
+			{
+				newLeafNode(otherlv_2, grammarAccess.getMeetingAccess().getAbstractKeyword_2_0());
+			}
+			(
+				(
+					{
+						newCompositeNode(grammarAccess.getMeetingAccess().getAbstractEStringParserRuleCall_2_1_0());
+					}
+					lv_abstract_3_0=ruleEString
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getMeetingRule());
 						}
 						set(
 							$current,

@@ -75,6 +75,7 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 			case Models2016Package.PAPER: return createPaper();
 			case Models2016Package.LUNCH: return createLunch();
 			case Models2016Package.COFFEE_BREAK: return createCoffeeBreak();
+			case Models2016Package.MEETING: return createMeeting();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -290,6 +291,16 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 	public CoffeeBreak createCoffeeBreak() {
 		CoffeeBreakImpl coffeeBreak = new CoffeeBreakImpl();
 		return coffeeBreak;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Meeting createMeeting() {
+		MeetingImpl meeting = new MeetingImpl();
+		return meeting;
 	}
 
 	/**

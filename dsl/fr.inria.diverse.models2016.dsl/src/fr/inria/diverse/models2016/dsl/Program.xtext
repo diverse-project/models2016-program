@@ -17,7 +17,7 @@ Resource returns Resource:
 	Room;
 
 Event returns Event:
-	TalkSession | Panel | Workshop | Tutorial | DoctoralSymposium | EducatorSymposium | Reception | Clinic | Lunch | CoffeeBreak;
+	TalkSession | Panel | Workshop | Tutorial | DoctoralSymposium | EducatorSymposium | Reception | Clinic | Lunch | CoffeeBreak | Meeting;
 
 EString returns ecore::EString:
 	STRING;
@@ -111,6 +111,11 @@ Lunch returns Lunch:
 
 CoffeeBreak returns CoffeeBreak:
 	'CoffeeBreak'
+		name=EString
+		('abstract' abstract=EString)?;
+
+Meeting returns Meeting:
+	'Meeting'
 		name=EString
 		('abstract' abstract=EString)?;
 

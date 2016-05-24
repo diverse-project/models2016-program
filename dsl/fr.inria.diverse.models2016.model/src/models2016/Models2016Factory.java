@@ -175,6 +175,15 @@ public interface Models2016Factory extends EFactory {
 	CoffeeBreak createCoffeeBreak();
 
 	/**
+	 * Returns a new object of class '<em>Meeting</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Meeting</em>'.
+	 * @generated
+	 */
+	Meeting createMeeting();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

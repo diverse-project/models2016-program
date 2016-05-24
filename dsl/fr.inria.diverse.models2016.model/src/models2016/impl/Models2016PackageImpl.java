@@ -11,6 +11,7 @@ import models2016.DoctoralSymposium;
 import models2016.EducatorSymposium;
 import models2016.Event;
 import models2016.Lunch;
+import models2016.Meeting;
 import models2016.Models2016Factory;
 import models2016.Models2016Package;
 import models2016.Panel;
@@ -175,6 +176,13 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * @generated
 	 */
 	private EClass coffeeBreakEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass meetingEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -774,6 +782,15 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getMeeting() {
+		return meetingEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getWeekDay() {
 		return weekDayEEnum;
 	}
@@ -908,6 +925,8 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 
 		coffeeBreakEClass = createEClass(COFFEE_BREAK);
 
+		meetingEClass = createEClass(MEETING);
+
 		// Create enums
 		weekDayEEnum = createEEnum(WEEK_DAY);
 		trackEEnum = createEEnum(TRACK);
@@ -956,6 +975,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		clinicEClass.getESuperTypes().add(this.getEvent());
 		lunchEClass.getESuperTypes().add(this.getEvent());
 		coffeeBreakEClass.getESuperTypes().add(this.getEvent());
+		meetingEClass.getESuperTypes().add(this.getEvent());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(dayEClass, Day.class, "Day", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1032,6 +1052,8 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		initEClass(lunchEClass, Lunch.class, "Lunch", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(coffeeBreakEClass, CoffeeBreak.class, "CoffeeBreak", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(meetingEClass, Meeting.class, "Meeting", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Initialize enums and add enum literals
 		initEEnum(weekDayEEnum, WeekDay.class, "WeekDay");
