@@ -75,7 +75,7 @@
 
                                             <div class="eventType" ng-class="event.type"></div>
 
-                                            <button class="btn btn-link btn-sm" ng-click="toggleFavoriteTalk(talk)">
+                                            <button class="btn btn-link btn-sm" ng-click="toggleFavoriteTalk(event, session.icalStart)">
                                                 <span ng-if="event.selected" class="glyphicon glyphicon-star"></span>
                                                 <span ng-if="!event.selected" class="glyphicon glyphicon-star-empty"></span>
                                             </button>
@@ -90,7 +90,7 @@
 
                                             <!-- Talk info -->
 
-                                            <button class="btn btn-link btn-sm" ng-click="toggleFavoriteTalk(talk)">
+                                            <button class="btn btn-link btn-sm" ng-click="toggleFavoriteTalk(talk, talk.icalStart)">
                                                 <span ng-if="talk.selected" class="glyphicon glyphicon-star"></span>
                                                 <span ng-if="!talk.selected" class="glyphicon glyphicon-star-empty"></span>
                                             </button>

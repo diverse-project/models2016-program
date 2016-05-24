@@ -43,25 +43,33 @@ modelsApp.controller("ProgramController", function($scope) {
         day.sessionGroups.forEach(function(sessionGroup) {
             sessionGroup.forEach(function (session, roomIndex) {
                 if (typeof session.events !== "undefined") {
-                    session.events.forEach(function(talk) {
-                        talk.selected = $scope.favoriteTalks[talk.title];
+                    session.events.forEach(function(event) {
+                        if (typeof event.papers === "undefined") {
+                            event.selected = $scope.favoriteTalks[event.title + session.icalStart];
+                        } else {
+                            event.papers.forEach(function(talk) {
+                                talk.selected = $scope.favoriteTalks[talk.title + talk.icalStart];
+                            });
+                        }
                     });
                 }
             });
         });
     });
 
+    console.log($scope.favoriteTalks);
+
     $scope.toggleFavorites = function() {
         localStorage.setItem("showFavorites", $scope.showFavorites);
     };
 
-    $scope.toggleFavoriteTalk = function(talk) {
+    $scope.toggleFavoriteTalk = function(talk, date) {
         talk.selected=!talk.selected;
-        $scope.favoriteTalks[talk.title] = talk.selected; // FIXME : duplicated titles
+        $scope.favoriteTalks[talk.title + date] = talk.selected; // FIXME : duplicated titles
 
         if(typeof(Storage) !== "undefined") {
             localStorage.setItem("favoriteTalks", JSON.stringify($scope.favoriteTalks));
-
+            console.log($scope.favoriteTalks);
         }
     };
 
@@ -86,7 +94,7 @@ modelsApp.controller("ProgramController", function($scope) {
         calendar.push("DTEND:" + end);
         calendar.push("DTSTAMP:" + start);
         calendar.push("ORGANIZER;CN=models2016-gc@inria.fr:mailto:models2016-gc@inria.fr");
-        calendar.push("UID:" + start + "-"  + hash(title) + "@models.irisa.fr"); // FIXME : experimental
+        calendar.push("UID:" + start + "-"  + hash(title) + "@models.irisa.fr");
         calendar.push("DESCRIPTION:" + description); // TODO : max line is 75 characters
         calendar.push("LOCATION:" + location);
         calendar.push("SUMMARY:" + title); // TODO : max line is 75 characters
