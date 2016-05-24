@@ -31,6 +31,13 @@ td {
     width: 100%;
 }
 
+.table .table {
+  background-color: transparent;
+}
+
+.table-inner {
+
+}
 
 .TalkSession {
     background-color: lightgrey;
