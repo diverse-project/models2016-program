@@ -68,6 +68,30 @@ modelsApp.controller("ProgramController", function($scope) {
 
 
     ///// Export to iCal /////
+    function hash(string) {
+        var hash = 0;
+        if (string.length == 0) return hash;
+        for (i = 0; i < string.length; i++) {
+            var charI = string.charCodeAt(i);
+            hash = ((hash<<5)-hash)+charI;
+            hash = hash & hash;
+        }
+        return hash;
+    }
+
+
+    function createEvent(calendar, start, end, title, description, location) {
+        calendar.push("BEGIN:VEVENT");
+        calendar.push("DTSTART:" + start);
+        calendar.push("DTEND:" + end);
+        calendar.push("DTSTAMP:" + start);
+        calendar.push("ORGANIZER;CN=models2016-gc@inria.fr:mailto:models2016-gc@inria.fr");
+        calendar.push("UID:" + start + "-"  + hash(title) + "@models.irisa.fr"); // FIXME : experimental
+        calendar.push("DESCRIPTION:" + description); // TODO : max line is 75 characters
+        calendar.push("LOCATION:" + location);
+        calendar.push("SUMMARY:" + title); // TODO : max line is 75 characters
+        calendar.push("END:VEVENT");
+    }
 
     $scope.exportToCal = function(favoritesOnly) {
 
@@ -75,28 +99,32 @@ modelsApp.controller("ProgramController", function($scope) {
         var calendar = [];
         calendar.push("BEGIN:VCALENDAR");
         calendar.push("VERSION:2.0");
+        calendar.push("PRODID:-//MODELS2016//Program");
 
         $scope.data.forEach(function(day) {
 
            day.sessionGroups.forEach(function(sessionGroup) {
                if (sessionGroup.length > 0) {
                    sessionGroup.forEach(function (session, roomIndex) {
+                       var location = day.rooms[roomIndex].name;
                        if (typeof session.events !== "undefined") {
 
-                           session.events.forEach(function (talk, talkIndex) {
-                               if (!favoritesOnly || ((typeof talk.selected !== "undefined") && talk.selected === true)) {
-                                   // Generate event
-                                   calendar.push("BEGIN:VEVENT");
-                                   // calendar.push("UID:" + formatDate(startDate) + "-"  + roomIndex + "-" +  talkIndex + "@models.irisa.fr"); // FIXME : experimental
-                                   calendar.push("DTSTAMP:" + session.icalStart);
-                                   calendar.push("ORGANIZER;CN=Models");
-                                   calendar.push("DTSTART:" + session.icalStart);
-                                   calendar.push("DTEND:" + session.icalEnd);
-                                   calendar.push("SUMMARY:" + talk.title);
-                                   calendar.push("DESCRIPTION:" + talk.title);
-                                   calendar.push("LOCATION:" + day.rooms[roomIndex].name);
-                                   calendar.push("END:VEVENT");
+                           session.events.forEach(function (event, eventIndex) {
+
+                               if (typeof event.papers === "undefined") {
+
+                                   if (!favoritesOnly || ((typeof event.selected !== "undefined") && event.selected === true)) {
+                                        createEvent(calendar, session.icalStart, session.icalEnd, event.title, event.title, location);
+                                   }
+                               } else {
+                                   event.papers.forEach(function(talk, talkIndex) {
+                                       if (!favoritesOnly || ((typeof talk.selected !== "undefined") && talk.selected === true)) {
+                                           createEvent(calendar, talk.icalStart, talk.icalEnd, talk.title, talk.title, location);
+                                       }
+                                   });
                                }
+
+
                            });
                        }
                    });
