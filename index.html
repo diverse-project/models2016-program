@@ -42,11 +42,14 @@
                         </h4>
                     </div>
                     <div class="modal-body">
-                        <div>
+                        <div ng-if="selectedTalk.organizers">
                             <strong>Organizers:</strong> <span ng-repeat="organizer in selectedTalk.organizers"><span ng-if="$index > 0">, </span>{{organizer}}</span>
                         </div>
-                        <div>
-                            {{selectedTalk.abstract}}
+                        <div ng-if="selectedTalk.authors">
+                            <strong>Authors:</strong> <span ng-repeat="author in selectedTalk.authors"><span ng-if="$index > 0">, </span>{{author}}</span>
+                        </div>
+                        <div ng-if="selectedTalk.abstract">
+                            <strong>Abstract:</strong>{{selectedTalk.abstract}}
                         </div>
 
 
