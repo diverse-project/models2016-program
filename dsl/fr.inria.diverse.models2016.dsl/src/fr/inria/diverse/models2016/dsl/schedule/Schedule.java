@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -101,6 +102,10 @@ public class Schedule<K> {
 		result.columns.forEach(c-> {
 			c.fillColumn(start, end);
 		});
+		final List<Date> dates = result.getAllStartingDates();
+		result.columns.forEach(c-> {
+			c.splitEmptyEvents(dates);
+		});
 		return result;
 	}
 	
@@ -109,7 +114,7 @@ public class Schedule<K> {
 		public final Date endDate;
 		public Object data;
 		
-		public ScheduleEvent(Date startDate, Date endDate, Object data) {
+		public ScheduleEvent(final Date startDate, final Date endDate, final Object data) {
 			if (!startDate.before(endDate)) {
 				throw new IllegalArgumentException("Starting date cannot be after ending date");
 			}
@@ -118,7 +123,7 @@ public class Schedule<K> {
 			this.data = data;
 		}
 		
-		public ScheduleEvent(Date startDate, Date endDate) {
+		public ScheduleEvent(final Date startDate, final Date endDate) {
 			if (!startDate.before(endDate)) {
 				throw new IllegalArgumentException("Starting date cannot be after ending date");
 			}
@@ -131,11 +136,7 @@ public class Schedule<K> {
 	private static class Col {
 		private final List<ScheduleEvent> events = new ArrayList<>();
 		
-		public boolean removeScheduleEvent(ScheduleEvent e) {
-			return events.remove(e);
-		}
-		
-		public boolean addScheduleEvent(ScheduleEvent e) {
+		public boolean addScheduleEvent(final ScheduleEvent e) {
 			if (events.isEmpty()) {
 				events.add(e);
 				return true;
@@ -189,7 +190,7 @@ public class Schedule<K> {
 			return new ArrayList<>(events);
 		}
 		
-		public void fillColumn(Date start, Date end) {
+		public void fillColumn(final Date start, final Date end) {
 			if (events.isEmpty()) {
 				addScheduleEvent(new ScheduleEvent(start, end));
 			} else {
@@ -217,24 +218,24 @@ public class Schedule<K> {
 			}
 		}
 		
-//		@Override
-//		public String toString() {
-//			final StringBuilder builder = new StringBuilder();
-//			for (ScheduleEvent event : events) {
-//				final int length = 4 * (event.endDate.getHours() - event.startDate.getHours()) +
-//						(event.endDate.getMinutes() - event.startDate.getMinutes()) / 15;
-//				for (int i = 0; i < length; i++) {
-//					builder.append(event);
-//					builder.append("\n");
-//				}
-//			}
-//			return builder.toString();
-//		}
+		public void splitEmptyEvents(final List<Date> startingDates) {
+			int i = 0;
+			for (int j = 0; j < events.size(); j++) {
+				final ScheduleEvent event = events.get(j);
+				if (event.data == null) {
+					while (i < startingDates.size() && startingDates.get(i).compareTo(event.startDate) <= 0) {
+						i++;
+					}
+					if (i < startingDates.size()) {
+						final Date date = startingDates.get(i);
+						if (date.compareTo(event.endDate) < 0) {
+							events.remove(event);
+							events.add(j++,new ScheduleEvent(event.startDate, date));
+							events.add(j,new ScheduleEvent(date, event.endDate));
+						}
+					}
+				}
+			}
+		}
 	}
-	
-//	@Override
-//	public String toString() {
-//		
-//		return ;
-//	}
 }
