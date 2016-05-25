@@ -113,19 +113,17 @@ modelsApp.controller("ProgramController", function($scope) {
                if (sessionGroup.length > 0) {
                    sessionGroup.forEach(function (session, roomIndex) {
                        if (typeof session.events !== "undefined") {
-                           var location = day.rooms[roomIndex - 1].name; // FIXME : not working
-
                            session.events.forEach(function (event, eventIndex) {
 
                                if (typeof event.papers === "undefined") {
 
                                    if (!favoritesOnly || ((typeof event.selected !== "undefined") && event.selected === true)) {
-                                        createEvent(calendar, session.icalStart, session.icalEnd, event.title, event.title, location);
+                                        createEvent(calendar, session.icalStart, session.icalEnd, event.title, event.title, session.room);
                                    }
                                } else {
                                    event.papers.forEach(function(talk, talkIndex) {
                                        if (!favoritesOnly || ((typeof talk.selected !== "undefined") && talk.selected === true)) {
-                                           createEvent(calendar, talk.icalStart, talk.icalEnd, talk.title, talk.title, location);
+                                           createEvent(calendar, talk.icalStart, talk.icalEnd, talk.title, talk.title, session.room);
                                        }
                                    });
                                }
