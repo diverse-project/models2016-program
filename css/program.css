@@ -77,13 +77,18 @@ footer {
     text-align: right;
 }
 
+/* Modal style */
+.abstract {
+    text-align: justify;
+}
 
 
 
 /* Type of events */
 
 .TalkSession {
-    background-color: lightgrey;
+    background-color: greenyellow;
+
 }
 
 .Panel {
@@ -123,3 +128,4 @@ footer {
     background-color: lightgrey;
     text-align: center;
 }
+

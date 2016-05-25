@@ -4,13 +4,6 @@ modelsApp.controller("ProgramController", function($scope) {
 
     // Utils
     $scope.getStartOfSessionGroup = function(sessionGroup) {
-        // var start = "";
-        // sessionGroup.forEach(function(session) {
-        //     if (typeof session.start !== "undefined") {
-        //         start = session.start;
-        //     }
-        // });
-        // return start;
         return sessionGroup[0].start;
     };
 
