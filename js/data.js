@@ -46,13 +46,13 @@ var data = [
 			[
 				{
 					start : "09:00",
-					rowSpan : 4
+					rowSpan : 6
 				},
 				{
 					rowSpan : 6
 				},
 				{
-					rowSpan : 4
+					rowSpan : 14
 				},
 				{
 					start : "09:00",
@@ -60,6 +60,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T070000Z",
 					icalEnd : "20161002T083000Z",
+					room : "Bouvet 1",
 					events : [
 						{
 							type : "DoctoralSymposium",
@@ -75,6 +76,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T070000Z",
 					icalEnd : "20161002T083000Z",
+					room : "Bouvet 2",
 					events : [
 						{
 							type : "Tutorial",
@@ -95,6 +97,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T070000Z",
 					icalEnd : "20161002T083000Z",
+					room : "Charcot",
 					events : [
 						{
 							type : "Tutorial",
@@ -111,6 +114,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T070000Z",
 					icalEnd : "20161002T083000Z",
+					room : "Vauban 1",
 					events : [
 						{
 							type : "Tutorial",
@@ -128,6 +132,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T070000Z",
 					icalEnd : "20161002T083000Z",
+					room : "Vauban 2",
 					events : [
 						{
 							type : "Workshop",
@@ -147,6 +152,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T070000Z",
 					icalEnd : "20161002T083000Z",
+					room : "Lamennais 1",
 					events : [
 						{
 							type : "Workshop",
@@ -165,6 +171,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T070000Z",
 					icalEnd : "20161002T083000Z",
+					room : "Lamennais 2",
 					events : [
 						{
 							type : "Workshop",
@@ -183,6 +190,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T070000Z",
 					icalEnd : "20161002T083000Z",
+					room : "Lamennais 3",
 					events : [
 						{
 							type : "Workshop",
@@ -198,25 +206,7 @@ var data = [
 			[],
 			[],
 			[],
-			[
-				{
-					start : "10:00",
-					rowSpan : 2
-				},
-				{
-					start : "10:00",
-					end : "12:00",
-					rowSpan : 8,
-					icalStart : "20161002T080000Z",
-					icalEnd : "20161002T100000Z",
-					events : [
-						{
-							type : "CoffeeBreak",
-							title : "Coffee Break"
-						}
-					]
-				}
-			],
+			[],
 			[],
 			[
 				{
@@ -229,6 +219,7 @@ var data = [
 					rowSpan : 2,
 					icalStart : "20161002T083000Z",
 					icalEnd : "20161002T090000Z",
+					room : "Rotonde Surcouf",
 					events : [
 						{
 							type : "CoffeeBreak",
@@ -265,7 +256,7 @@ var data = [
 			[
 				{
 					start : "11:00",
-					rowSpan : 4
+					rowSpan : 6
 				},
 				{
 					rowSpan : 18
@@ -276,6 +267,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T090000Z",
 					icalEnd : "20161002T103000Z",
+					room : "Bouvet 1",
 					events : [
 						{
 							type : "DoctoralSymposium",
@@ -291,6 +283,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T090000Z",
 					icalEnd : "20161002T103000Z",
+					room : "Bouvet 2",
 					events : [
 						{
 							type : "Tutorial",
@@ -311,6 +304,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T090000Z",
 					icalEnd : "20161002T103000Z",
+					room : "Charcot",
 					events : [
 						{
 							type : "Tutorial",
@@ -327,6 +321,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T090000Z",
 					icalEnd : "20161002T103000Z",
+					room : "Vauban 1",
 					events : [
 						{
 							type : "Tutorial",
@@ -344,6 +339,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T090000Z",
 					icalEnd : "20161002T103000Z",
+					room : "Vauban 2",
 					events : [
 						{
 							type : "Workshop",
@@ -363,6 +359,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T090000Z",
 					icalEnd : "20161002T103000Z",
+					room : "Lamennais 1",
 					events : [
 						{
 							type : "Workshop",
@@ -381,6 +378,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T090000Z",
 					icalEnd : "20161002T103000Z",
+					room : "Lamennais 2",
 					events : [
 						{
 							type : "Workshop",
@@ -399,6 +397,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T090000Z",
 					icalEnd : "20161002T103000Z",
+					room : "Lamennais 3",
 					events : [
 						{
 							type : "Workshop",
@@ -414,15 +413,7 @@ var data = [
 			[],
 			[],
 			[],
-			[
-				{
-					start : "12:00",
-					rowSpan : 2
-				},
-				{
-					rowSpan : 2
-				}
-			],
+			[],
 			[],
 			[
 				{
@@ -435,14 +426,11 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T103000Z",
 					icalEnd : "20161002T120000Z",
+					room : "Rotonde J. Cartier",
 					events : [
 						{
 							type : "Lunch",
 							title : "Lunch"
-						},
-						{
-							type : "CoffeeBreak",
-							title : "Coffee Break"
 						}
 					]
 				},
@@ -490,6 +478,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T120000Z",
 					icalEnd : "20161002T133000Z",
+					room : "Bouvet 1",
 					events : [
 						{
 							type : "DoctoralSymposium",
@@ -505,6 +494,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T120000Z",
 					icalEnd : "20161002T133000Z",
+					room : "Bouvet 2",
 					events : [
 						{
 							type : "Tutorial",
@@ -522,6 +512,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T120000Z",
 					icalEnd : "20161002T133000Z",
+					room : "Charcot",
 					events : [
 						{
 							type : "Tutorial",
@@ -539,6 +530,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T120000Z",
 					icalEnd : "20161002T133000Z",
+					room : "Vauban 1",
 					events : [
 						{
 							type : "Tutorial",
@@ -555,6 +547,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T120000Z",
 					icalEnd : "20161002T133000Z",
+					room : "Vauban 2",
 					events : [
 						{
 							type : "Workshop",
@@ -574,6 +567,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T120000Z",
 					icalEnd : "20161002T133000Z",
+					room : "Lamennais 1",
 					events : [
 						{
 							type : "Workshop",
@@ -592,6 +586,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T120000Z",
 					icalEnd : "20161002T133000Z",
+					room : "Lamennais 2",
 					events : [
 						{
 							type : "Workshop",
@@ -610,6 +605,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T120000Z",
 					icalEnd : "20161002T133000Z",
+					room : "Lamennais 3",
 					events : [
 						{
 							type : "Workshop",
@@ -638,6 +634,7 @@ var data = [
 					rowSpan : 2,
 					icalStart : "20161002T133000Z",
 					icalEnd : "20161002T140000Z",
+					room : "Rotonde Surcouf",
 					events : [
 						{
 							type : "CoffeeBreak",
@@ -682,6 +679,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T140000Z",
 					icalEnd : "20161002T153000Z",
+					room : "Rotonde Surcouf",
 					events : [
 						{
 							type : "TalkSession",
@@ -718,6 +716,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T140000Z",
 					icalEnd : "20161002T153000Z",
+					room : "Bouvet 1",
 					events : [
 						{
 							type : "DoctoralSymposium",
@@ -733,6 +732,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T140000Z",
 					icalEnd : "20161002T153000Z",
+					room : "Bouvet 2",
 					events : [
 						{
 							type : "Tutorial",
@@ -750,6 +750,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T140000Z",
 					icalEnd : "20161002T153000Z",
+					room : "Charcot",
 					events : [
 						{
 							type : "Tutorial",
@@ -767,6 +768,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T140000Z",
 					icalEnd : "20161002T153000Z",
+					room : "Vauban 1",
 					events : [
 						{
 							type : "Tutorial",
@@ -783,6 +785,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T140000Z",
 					icalEnd : "20161002T153000Z",
+					room : "Vauban 2",
 					events : [
 						{
 							type : "Workshop",
@@ -802,6 +805,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T140000Z",
 					icalEnd : "20161002T153000Z",
+					room : "Lamennais 1",
 					events : [
 						{
 							type : "Workshop",
@@ -820,6 +824,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T140000Z",
 					icalEnd : "20161002T153000Z",
+					room : "Lamennais 2",
 					events : [
 						{
 							type : "Workshop",
@@ -838,6 +843,7 @@ var data = [
 					rowSpan : 6,
 					icalStart : "20161002T140000Z",
 					icalEnd : "20161002T153000Z",
+					room : "Lamennais 3",
 					events : [
 						{
 							type : "Workshop",

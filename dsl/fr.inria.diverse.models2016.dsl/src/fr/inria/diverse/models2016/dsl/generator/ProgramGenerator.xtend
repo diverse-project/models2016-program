@@ -358,10 +358,8 @@ class ProgramGenerator extends AbstractGenerator {
 								«val startingDates = scheduleOfDay.allStartingDates»
 								«var i = 0»
 								«var rowSpan = 0»
-								«var debugRowNb = 0»
 								«FOR row : scheduleOfDay.getRows(roomComparator) SEPARATOR ","»
 								[
-									«{debugRowNb++ null}»
 									{
 										«val startDate = startingDates.get(i++)»
 										«val endDate = if (i < startingDates.size) {
@@ -388,6 +386,7 @@ class ProgramGenerator extends AbstractGenerator {
 										rowSpan : «computeSessionLength(s.startDate, s.endDate)»,
 										icalStart : "«icalFormat.format(startingDate)»",
 										icalEnd : "«icalFormat.format(endingDate)»",
+										room : «s_cast.room.name»,
 										events : [
 											«val events = s_cast.events»
 											«IF events != null»
@@ -401,15 +400,12 @@ class ProgramGenerator extends AbstractGenerator {
 									«ENDFOR»
 								]«IF rowSpan > 1»,
 								«FOR _ : newArrayOfSize(rowSpan - 1) SEPARATOR ","»
-								«{debugRowNb++ null}»
 								[]
 								«ENDFOR»
 								«ENDIF»
 								«{rowSpan = 0 null}»
 								«ENDFOR»
 							]
-							«{println("Number of rows : " + debugRowNb) null}»
-							«{debugRowNb = 0 null}»	
 						}
 						«ENDFOR»
 					]
