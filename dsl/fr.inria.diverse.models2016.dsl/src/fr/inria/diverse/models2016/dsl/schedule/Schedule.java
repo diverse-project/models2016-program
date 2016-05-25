@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -73,6 +72,7 @@ public class Schedule<K> {
 		final List<List<ScheduleEvent>> rows = new ArrayList<>();
 		final Schedule<K> filledSchedule = fillSchedule();
 		final List<Date> startingDates = filledSchedule.getAllStartingDates();
+		filledSchedule.splitEmptyEvents(startingDates);
 		for (Date d : startingDates) {
 			final List<ScheduleEvent> row = new ArrayList<>();
 			final List<K> keys = filledSchedule.keyToCol.keySet().stream().sorted(keyOrdering).collect(Collectors.toList());
@@ -91,6 +91,12 @@ public class Schedule<K> {
 		return rows;
 	}
 	
+	private void splitEmptyEvents(List<Date> dates) {
+		columns.forEach(c-> {
+			c.splitEmptyEvents(dates);
+		});
+	}
+	
 	private Schedule<K> fillSchedule() {
 		final Schedule<K> result = new Schedule<>();
 		keyToCol.forEach((k,v)->{
@@ -101,10 +107,6 @@ public class Schedule<K> {
 		final Date end = result.getLastDate();
 		result.columns.forEach(c-> {
 			c.fillColumn(start, end);
-		});
-		final List<Date> dates = result.getAllStartingDates();
-		result.columns.forEach(c-> {
-			c.splitEmptyEvents(dates);
 		});
 		return result;
 	}
@@ -230,8 +232,8 @@ public class Schedule<K> {
 						final Date date = startingDates.get(i);
 						if (date.compareTo(event.endDate) < 0) {
 							events.remove(event);
-							events.add(j++,new ScheduleEvent(event.startDate, date));
 							events.add(j,new ScheduleEvent(date, event.endDate));
+							events.add(j,new ScheduleEvent(event.startDate, date));
 						}
 					}
 				}

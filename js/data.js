@@ -52,7 +52,7 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 14
+					rowSpan : 6
 				},
 				{
 					start : "09:00",
@@ -250,6 +250,9 @@ var data = [
 				},
 				{
 					rowSpan : 2
+				},
+				{
+					rowSpan : 2
 				}
 			],
 			[],
@@ -259,7 +262,10 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 18
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
 				},
 				{
 					start : "11:00",
@@ -421,6 +427,9 @@ var data = [
 					rowSpan : 6
 				},
 				{
+					rowSpan : 6
+				},
+				{
 					start : "12:30",
 					end : "14:00",
 					rowSpan : 6,
@@ -470,7 +479,10 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 14
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
 				},
 				{
 					start : "14:00",
@@ -665,12 +677,18 @@ var data = [
 				},
 				{
 					rowSpan : 2
+				},
+				{
+					rowSpan : 2
 				}
 			],
 			[],
 			[
 				{
 					start : "16:00",
+					rowSpan : 6
+				},
+				{
 					rowSpan : 6
 				},
 				{
@@ -862,7 +880,7 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 14
+					rowSpan : 6
 				},
 				{
 					start : "09:00",
@@ -1080,6 +1098,9 @@ var data = [
 				},
 				{
 					rowSpan : 2
+				},
+				{
+					rowSpan : 2
 				}
 			],
 			[],
@@ -1089,7 +1110,10 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 18
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
 				},
 				{
 					start : "11:00",
@@ -1283,6 +1307,9 @@ var data = [
 					rowSpan : 6
 				},
 				{
+					rowSpan : 6
+				},
+				{
 					start : "12:30",
 					end : "14:00",
 					rowSpan : 6,
@@ -1317,7 +1344,10 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 14
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
 				},
 				{
 					start : "14:00",
@@ -1529,12 +1559,18 @@ var data = [
 				},
 				{
 					rowSpan : 2
+				},
+				{
+					rowSpan : 2
 				}
 			],
 			[],
 			[
 				{
 					start : "16:00",
+					rowSpan : 6
+				},
+				{
 					rowSpan : 6
 				},
 				{
@@ -1761,7 +1797,7 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 14
+					rowSpan : 6
 				},
 				{
 					start : "09:00",
@@ -1977,6 +2013,9 @@ var data = [
 				},
 				{
 					rowSpan : 2
+				},
+				{
+					rowSpan : 2
 				}
 			],
 			[],
@@ -1986,7 +2025,10 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 18
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
 				},
 				{
 					start : "11:00",
@@ -2168,6 +2210,9 @@ var data = [
 					rowSpan : 6
 				},
 				{
+					rowSpan : 6
+				},
+				{
 					start : "12:30",
 					end : "14:00",
 					rowSpan : 6,
@@ -2202,7 +2247,10 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 14
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
 				},
 				{
 					start : "14:00",
@@ -2416,12 +2464,18 @@ var data = [
 				},
 				{
 					rowSpan : 2
+				},
+				{
+					rowSpan : 2
 				}
 			],
 			[],
 			[
 				{
 					start : "16:00",
+					rowSpan : 6
+				},
+				{
 					rowSpan : 6
 				},
 				{
@@ -2641,7 +2695,7 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 14
+					rowSpan : 6
 				},
 				{
 					start : "09:00",
@@ -2866,6 +2920,9 @@ var data = [
 				},
 				{
 					rowSpan : 2
+				},
+				{
+					rowSpan : 2
 				}
 			],
 			[],
@@ -2875,7 +2932,10 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 18
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
 				},
 				{
 					start : "11:00",
@@ -3061,6 +3121,9 @@ var data = [
 					rowSpan : 6
 				},
 				{
+					rowSpan : 6
+				},
+				{
 					start : "12:30",
 					end : "14:00",
 					rowSpan : 6,
@@ -3095,7 +3158,10 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 14
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
 				},
 				{
 					start : "14:00",
@@ -3304,12 +3370,18 @@ var data = [
 				},
 				{
 					rowSpan : 2
+				},
+				{
+					rowSpan : 2
 				}
 			],
 			[],
 			[
 				{
 					start : "16:00",
+					rowSpan : 6
+				},
+				{
 					rowSpan : 6
 				},
 				{

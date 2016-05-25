@@ -123,12 +123,6 @@ class ProgramGenerator extends AbstractGenerator {
 		}
 	}
 	
-	def private <K,V> int getTotalLength(Map<K,List<V>> map) {
-		val acc = new ArrayList
-		map.forEach[k, l|acc.addAll(l)]
-		return acc.size()
-	}
-	
 	def private int computeSessionLength(Date start, Date end) {
 		return 4 * (end.hours - start.hours) + (end.minutes - start.minutes) / 15
 	}
