@@ -119,7 +119,7 @@ class ProgramGenerator extends AbstractGenerator {
 				]
 			]
 			
-			fsa.generateFile('data.js', 'var data = ' + generate)
+			fsa.generateFile(conference.name.substring(1,conference.name.length-1) + '-data.js', 'var data = ' + generate)
 		}
 	}
 	

@@ -9,8 +9,8 @@ Conference returns Conference:
 	name=EString
 		'talk duration' talkDuration=EIntegerObject
 		('resources' resources+=Resource (resources+=Resource)* )?
-		('papers' '{' papers+=Paper (';' papers+=Paper)*)? '}'
-		('events' '{' events+=Event (';' events+=Event)*)? '}'
+		('papers' '{' papers+=Paper (';' papers+=Paper)* '}')?
+		('events' '{' events+=Event (';' events+=Event)* '}')?
 		('program' program=Program)?;
 
 Resource returns Resource:

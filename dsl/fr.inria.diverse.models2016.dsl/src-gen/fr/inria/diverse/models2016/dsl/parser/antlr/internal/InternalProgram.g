@@ -223,24 +223,24 @@ ruleConference returns [EObject current=null]
 					)
 				)
 			)*
+			otherlv_12='}'
+			{
+				newLeafNode(otherlv_12, grammarAccess.getConferenceAccess().getRightCurlyBracketKeyword_5_4());
+			}
 		)?
-		otherlv_12='}'
-		{
-			newLeafNode(otherlv_12, grammarAccess.getConferenceAccess().getRightCurlyBracketKeyword_6());
-		}
 		(
 			otherlv_13='events'
 			{
-				newLeafNode(otherlv_13, grammarAccess.getConferenceAccess().getEventsKeyword_7_0());
+				newLeafNode(otherlv_13, grammarAccess.getConferenceAccess().getEventsKeyword_6_0());
 			}
 			otherlv_14='{'
 			{
-				newLeafNode(otherlv_14, grammarAccess.getConferenceAccess().getLeftCurlyBracketKeyword_7_1());
+				newLeafNode(otherlv_14, grammarAccess.getConferenceAccess().getLeftCurlyBracketKeyword_6_1());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConferenceAccess().getEventsEventParserRuleCall_7_2_0());
+						newCompositeNode(grammarAccess.getConferenceAccess().getEventsEventParserRuleCall_6_2_0());
 					}
 					lv_events_15_0=ruleEvent
 					{
@@ -259,12 +259,12 @@ ruleConference returns [EObject current=null]
 			(
 				otherlv_16=';'
 				{
-					newLeafNode(otherlv_16, grammarAccess.getConferenceAccess().getSemicolonKeyword_7_3_0());
+					newLeafNode(otherlv_16, grammarAccess.getConferenceAccess().getSemicolonKeyword_6_3_0());
 				}
 				(
 					(
 						{
-							newCompositeNode(grammarAccess.getConferenceAccess().getEventsEventParserRuleCall_7_3_1_0());
+							newCompositeNode(grammarAccess.getConferenceAccess().getEventsEventParserRuleCall_6_3_1_0());
 						}
 						lv_events_17_0=ruleEvent
 						{
@@ -281,20 +281,20 @@ ruleConference returns [EObject current=null]
 					)
 				)
 			)*
+			otherlv_18='}'
+			{
+				newLeafNode(otherlv_18, grammarAccess.getConferenceAccess().getRightCurlyBracketKeyword_6_4());
+			}
 		)?
-		otherlv_18='}'
-		{
-			newLeafNode(otherlv_18, grammarAccess.getConferenceAccess().getRightCurlyBracketKeyword_8());
-		}
 		(
 			otherlv_19='program'
 			{
-				newLeafNode(otherlv_19, grammarAccess.getConferenceAccess().getProgramKeyword_9_0());
+				newLeafNode(otherlv_19, grammarAccess.getConferenceAccess().getProgramKeyword_7_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConferenceAccess().getProgramProgramParserRuleCall_9_1_0());
+						newCompositeNode(grammarAccess.getConferenceAccess().getProgramProgramParserRuleCall_7_1_0());
 					}
 					lv_program_20_0=ruleProgram
 					{

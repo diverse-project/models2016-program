@@ -17,15 +17,7 @@
 		room "Lamennais 1+2" capacity 180
 		room "Lamennais 4+5" capacity 150
 	
-	papers {
-		"MDE for cows"
-			authors "Jane Doe"
-			kind Practice and Innovation;
-		"MDE for pigs"
-			authors "Pierre", "Paul", "Jacques"
-	}
-	
-	events {
+	events {	
 		
 		CoffeeBreak "Coffee Break";
 		
@@ -73,11 +65,8 @@
 		Workshop "11th International Workshop on Models@run.time: Workshop Proposal"
 			organizers "Nelly Bencomo", "Sebastian Götz";
 		Workshop "Verification Of Model Transformations VOLT 2016"
-			organizers "Eugene Syriani", "Moussa Amrani";
+			organizers "Eugene Syriani", "Moussa Amrani"
 		
-		TalkSession "Stuff"
-				chair "John Doe"
-				papers "MDE for cows", "MDE for pigs"
 	}
 	
 	program {
@@ -133,6 +122,5 @@
 			16:00 - 17:30 in "Lamennais 1" : "Full-Day Workshop on OCL and Textual Modeling"
 			16:00 - 17:30 in "Lamennais 2" : "Flexible MDE 2016 (FlexMDE 2016)"
 			16:00 - 17:30 in "Lamennais 3" : "Verification Of Model Transformations VOLT 2016"
-			16:00 - 17:30 in "Rotonde Surcouf" : "Stuff"
 			
 	}

@@ -157,7 +157,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleConference"
-    // InternalProgram.g:72:1: ruleConference returns [EObject current=null] : ( () ( (lv_name_1_0= ruleEString ) ) otherlv_2= 'talk duration' ( (lv_talkDuration_3_0= ruleEIntegerObject ) ) (otherlv_4= 'resources' ( (lv_resources_5_0= ruleResource ) ) ( (lv_resources_6_0= ruleResource ) )* )? (otherlv_7= 'papers' otherlv_8= '{' ( (lv_papers_9_0= rulePaper ) ) (otherlv_10= ';' ( (lv_papers_11_0= rulePaper ) ) )* )? otherlv_12= '}' (otherlv_13= 'events' otherlv_14= '{' ( (lv_events_15_0= ruleEvent ) ) (otherlv_16= ';' ( (lv_events_17_0= ruleEvent ) ) )* )? otherlv_18= '}' (otherlv_19= 'program' ( (lv_program_20_0= ruleProgram ) ) )? ) ;
+    // InternalProgram.g:72:1: ruleConference returns [EObject current=null] : ( () ( (lv_name_1_0= ruleEString ) ) otherlv_2= 'talk duration' ( (lv_talkDuration_3_0= ruleEIntegerObject ) ) (otherlv_4= 'resources' ( (lv_resources_5_0= ruleResource ) ) ( (lv_resources_6_0= ruleResource ) )* )? (otherlv_7= 'papers' otherlv_8= '{' ( (lv_papers_9_0= rulePaper ) ) (otherlv_10= ';' ( (lv_papers_11_0= rulePaper ) ) )* otherlv_12= '}' )? (otherlv_13= 'events' otherlv_14= '{' ( (lv_events_15_0= ruleEvent ) ) (otherlv_16= ';' ( (lv_events_17_0= ruleEvent ) ) )* otherlv_18= '}' )? (otherlv_19= 'program' ( (lv_program_20_0= ruleProgram ) ) )? ) ;
     public final EObject ruleConference() throws RecognitionException {
         EObject current = null;
 
@@ -195,11 +195,11 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalProgram.g:78:2: ( ( () ( (lv_name_1_0= ruleEString ) ) otherlv_2= 'talk duration' ( (lv_talkDuration_3_0= ruleEIntegerObject ) ) (otherlv_4= 'resources' ( (lv_resources_5_0= ruleResource ) ) ( (lv_resources_6_0= ruleResource ) )* )? (otherlv_7= 'papers' otherlv_8= '{' ( (lv_papers_9_0= rulePaper ) ) (otherlv_10= ';' ( (lv_papers_11_0= rulePaper ) ) )* )? otherlv_12= '}' (otherlv_13= 'events' otherlv_14= '{' ( (lv_events_15_0= ruleEvent ) ) (otherlv_16= ';' ( (lv_events_17_0= ruleEvent ) ) )* )? otherlv_18= '}' (otherlv_19= 'program' ( (lv_program_20_0= ruleProgram ) ) )? ) )
-            // InternalProgram.g:79:2: ( () ( (lv_name_1_0= ruleEString ) ) otherlv_2= 'talk duration' ( (lv_talkDuration_3_0= ruleEIntegerObject ) ) (otherlv_4= 'resources' ( (lv_resources_5_0= ruleResource ) ) ( (lv_resources_6_0= ruleResource ) )* )? (otherlv_7= 'papers' otherlv_8= '{' ( (lv_papers_9_0= rulePaper ) ) (otherlv_10= ';' ( (lv_papers_11_0= rulePaper ) ) )* )? otherlv_12= '}' (otherlv_13= 'events' otherlv_14= '{' ( (lv_events_15_0= ruleEvent ) ) (otherlv_16= ';' ( (lv_events_17_0= ruleEvent ) ) )* )? otherlv_18= '}' (otherlv_19= 'program' ( (lv_program_20_0= ruleProgram ) ) )? )
+            // InternalProgram.g:78:2: ( ( () ( (lv_name_1_0= ruleEString ) ) otherlv_2= 'talk duration' ( (lv_talkDuration_3_0= ruleEIntegerObject ) ) (otherlv_4= 'resources' ( (lv_resources_5_0= ruleResource ) ) ( (lv_resources_6_0= ruleResource ) )* )? (otherlv_7= 'papers' otherlv_8= '{' ( (lv_papers_9_0= rulePaper ) ) (otherlv_10= ';' ( (lv_papers_11_0= rulePaper ) ) )* otherlv_12= '}' )? (otherlv_13= 'events' otherlv_14= '{' ( (lv_events_15_0= ruleEvent ) ) (otherlv_16= ';' ( (lv_events_17_0= ruleEvent ) ) )* otherlv_18= '}' )? (otherlv_19= 'program' ( (lv_program_20_0= ruleProgram ) ) )? ) )
+            // InternalProgram.g:79:2: ( () ( (lv_name_1_0= ruleEString ) ) otherlv_2= 'talk duration' ( (lv_talkDuration_3_0= ruleEIntegerObject ) ) (otherlv_4= 'resources' ( (lv_resources_5_0= ruleResource ) ) ( (lv_resources_6_0= ruleResource ) )* )? (otherlv_7= 'papers' otherlv_8= '{' ( (lv_papers_9_0= rulePaper ) ) (otherlv_10= ';' ( (lv_papers_11_0= rulePaper ) ) )* otherlv_12= '}' )? (otherlv_13= 'events' otherlv_14= '{' ( (lv_events_15_0= ruleEvent ) ) (otherlv_16= ';' ( (lv_events_17_0= ruleEvent ) ) )* otherlv_18= '}' )? (otherlv_19= 'program' ( (lv_program_20_0= ruleProgram ) ) )? )
             {
-            // InternalProgram.g:79:2: ( () ( (lv_name_1_0= ruleEString ) ) otherlv_2= 'talk duration' ( (lv_talkDuration_3_0= ruleEIntegerObject ) ) (otherlv_4= 'resources' ( (lv_resources_5_0= ruleResource ) ) ( (lv_resources_6_0= ruleResource ) )* )? (otherlv_7= 'papers' otherlv_8= '{' ( (lv_papers_9_0= rulePaper ) ) (otherlv_10= ';' ( (lv_papers_11_0= rulePaper ) ) )* )? otherlv_12= '}' (otherlv_13= 'events' otherlv_14= '{' ( (lv_events_15_0= ruleEvent ) ) (otherlv_16= ';' ( (lv_events_17_0= ruleEvent ) ) )* )? otherlv_18= '}' (otherlv_19= 'program' ( (lv_program_20_0= ruleProgram ) ) )? )
-            // InternalProgram.g:80:3: () ( (lv_name_1_0= ruleEString ) ) otherlv_2= 'talk duration' ( (lv_talkDuration_3_0= ruleEIntegerObject ) ) (otherlv_4= 'resources' ( (lv_resources_5_0= ruleResource ) ) ( (lv_resources_6_0= ruleResource ) )* )? (otherlv_7= 'papers' otherlv_8= '{' ( (lv_papers_9_0= rulePaper ) ) (otherlv_10= ';' ( (lv_papers_11_0= rulePaper ) ) )* )? otherlv_12= '}' (otherlv_13= 'events' otherlv_14= '{' ( (lv_events_15_0= ruleEvent ) ) (otherlv_16= ';' ( (lv_events_17_0= ruleEvent ) ) )* )? otherlv_18= '}' (otherlv_19= 'program' ( (lv_program_20_0= ruleProgram ) ) )?
+            // InternalProgram.g:79:2: ( () ( (lv_name_1_0= ruleEString ) ) otherlv_2= 'talk duration' ( (lv_talkDuration_3_0= ruleEIntegerObject ) ) (otherlv_4= 'resources' ( (lv_resources_5_0= ruleResource ) ) ( (lv_resources_6_0= ruleResource ) )* )? (otherlv_7= 'papers' otherlv_8= '{' ( (lv_papers_9_0= rulePaper ) ) (otherlv_10= ';' ( (lv_papers_11_0= rulePaper ) ) )* otherlv_12= '}' )? (otherlv_13= 'events' otherlv_14= '{' ( (lv_events_15_0= ruleEvent ) ) (otherlv_16= ';' ( (lv_events_17_0= ruleEvent ) ) )* otherlv_18= '}' )? (otherlv_19= 'program' ( (lv_program_20_0= ruleProgram ) ) )? )
+            // InternalProgram.g:80:3: () ( (lv_name_1_0= ruleEString ) ) otherlv_2= 'talk duration' ( (lv_talkDuration_3_0= ruleEIntegerObject ) ) (otherlv_4= 'resources' ( (lv_resources_5_0= ruleResource ) ) ( (lv_resources_6_0= ruleResource ) )* )? (otherlv_7= 'papers' otherlv_8= '{' ( (lv_papers_9_0= rulePaper ) ) (otherlv_10= ';' ( (lv_papers_11_0= rulePaper ) ) )* otherlv_12= '}' )? (otherlv_13= 'events' otherlv_14= '{' ( (lv_events_15_0= ruleEvent ) ) (otherlv_16= ';' ( (lv_events_17_0= ruleEvent ) ) )* otherlv_18= '}' )? (otherlv_19= 'program' ( (lv_program_20_0= ruleProgram ) ) )?
             {
             // InternalProgram.g:80:3: ()
             // InternalProgram.g:81:4: 
@@ -379,7 +379,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalProgram.g:173:3: (otherlv_7= 'papers' otherlv_8= '{' ( (lv_papers_9_0= rulePaper ) ) (otherlv_10= ';' ( (lv_papers_11_0= rulePaper ) ) )* )?
+            // InternalProgram.g:173:3: (otherlv_7= 'papers' otherlv_8= '{' ( (lv_papers_9_0= rulePaper ) ) (otherlv_10= ';' ( (lv_papers_11_0= rulePaper ) ) )* otherlv_12= '}' )?
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -388,7 +388,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
             }
             switch (alt4) {
                 case 1 :
-                    // InternalProgram.g:174:4: otherlv_7= 'papers' otherlv_8= '{' ( (lv_papers_9_0= rulePaper ) ) (otherlv_10= ';' ( (lv_papers_11_0= rulePaper ) ) )*
+                    // InternalProgram.g:174:4: otherlv_7= 'papers' otherlv_8= '{' ( (lv_papers_9_0= rulePaper ) ) (otherlv_10= ';' ( (lv_papers_11_0= rulePaper ) ) )* otherlv_12= '}'
                     {
                     otherlv_7=(Token)match(input,13,FOLLOW_8); 
 
@@ -488,17 +488,17 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
+                    otherlv_12=(Token)match(input,16,FOLLOW_11); 
+
+                    				newLeafNode(otherlv_12, grammarAccess.getConferenceAccess().getRightCurlyBracketKeyword_5_4());
+                    			
 
                     }
                     break;
 
             }
 
-            otherlv_12=(Token)match(input,16,FOLLOW_11); 
-
-            			newLeafNode(otherlv_12, grammarAccess.getConferenceAccess().getRightCurlyBracketKeyword_6());
-            		
-            // InternalProgram.g:231:3: (otherlv_13= 'events' otherlv_14= '{' ( (lv_events_15_0= ruleEvent ) ) (otherlv_16= ';' ( (lv_events_17_0= ruleEvent ) ) )* )?
+            // InternalProgram.g:231:3: (otherlv_13= 'events' otherlv_14= '{' ( (lv_events_15_0= ruleEvent ) ) (otherlv_16= ';' ( (lv_events_17_0= ruleEvent ) ) )* otherlv_18= '}' )?
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -507,15 +507,15 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
             }
             switch (alt6) {
                 case 1 :
-                    // InternalProgram.g:232:4: otherlv_13= 'events' otherlv_14= '{' ( (lv_events_15_0= ruleEvent ) ) (otherlv_16= ';' ( (lv_events_17_0= ruleEvent ) ) )*
+                    // InternalProgram.g:232:4: otherlv_13= 'events' otherlv_14= '{' ( (lv_events_15_0= ruleEvent ) ) (otherlv_16= ';' ( (lv_events_17_0= ruleEvent ) ) )* otherlv_18= '}'
                     {
                     otherlv_13=(Token)match(input,17,FOLLOW_8); 
 
-                    				newLeafNode(otherlv_13, grammarAccess.getConferenceAccess().getEventsKeyword_7_0());
+                    				newLeafNode(otherlv_13, grammarAccess.getConferenceAccess().getEventsKeyword_6_0());
                     			
                     otherlv_14=(Token)match(input,14,FOLLOW_12); 
 
-                    				newLeafNode(otherlv_14, grammarAccess.getConferenceAccess().getLeftCurlyBracketKeyword_7_1());
+                    				newLeafNode(otherlv_14, grammarAccess.getConferenceAccess().getLeftCurlyBracketKeyword_6_1());
                     			
                     // InternalProgram.g:240:4: ( (lv_events_15_0= ruleEvent ) )
                     // InternalProgram.g:241:5: (lv_events_15_0= ruleEvent )
@@ -524,7 +524,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                     // InternalProgram.g:242:6: lv_events_15_0= ruleEvent
                     {
 
-                    						newCompositeNode(grammarAccess.getConferenceAccess().getEventsEventParserRuleCall_7_2_0());
+                    						newCompositeNode(grammarAccess.getConferenceAccess().getEventsEventParserRuleCall_6_2_0());
                     					
                     pushFollow(FOLLOW_10);
                     lv_events_15_0=ruleEvent();
@@ -565,7 +565,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                     	    {
                     	    otherlv_16=(Token)match(input,15,FOLLOW_12); 
 
-                    	    					newLeafNode(otherlv_16, grammarAccess.getConferenceAccess().getSemicolonKeyword_7_3_0());
+                    	    					newLeafNode(otherlv_16, grammarAccess.getConferenceAccess().getSemicolonKeyword_6_3_0());
                     	    				
                     	    // InternalProgram.g:264:5: ( (lv_events_17_0= ruleEvent ) )
                     	    // InternalProgram.g:265:6: (lv_events_17_0= ruleEvent )
@@ -574,7 +574,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                     	    // InternalProgram.g:266:7: lv_events_17_0= ruleEvent
                     	    {
 
-                    	    							newCompositeNode(grammarAccess.getConferenceAccess().getEventsEventParserRuleCall_7_3_1_0());
+                    	    							newCompositeNode(grammarAccess.getConferenceAccess().getEventsEventParserRuleCall_6_3_1_0());
                     	    						
                     	    pushFollow(FOLLOW_10);
                     	    lv_events_17_0=ruleEvent();
@@ -607,16 +607,16 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
+                    otherlv_18=(Token)match(input,16,FOLLOW_13); 
+
+                    				newLeafNode(otherlv_18, grammarAccess.getConferenceAccess().getRightCurlyBracketKeyword_6_4());
+                    			
 
                     }
                     break;
 
             }
 
-            otherlv_18=(Token)match(input,16,FOLLOW_13); 
-
-            			newLeafNode(otherlv_18, grammarAccess.getConferenceAccess().getRightCurlyBracketKeyword_8());
-            		
             // InternalProgram.g:289:3: (otherlv_19= 'program' ( (lv_program_20_0= ruleProgram ) ) )?
             int alt7=2;
             int LA7_0 = input.LA(1);
@@ -630,7 +630,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                     {
                     otherlv_19=(Token)match(input,18,FOLLOW_8); 
 
-                    				newLeafNode(otherlv_19, grammarAccess.getConferenceAccess().getProgramKeyword_9_0());
+                    				newLeafNode(otherlv_19, grammarAccess.getConferenceAccess().getProgramKeyword_7_0());
                     			
                     // InternalProgram.g:294:4: ( (lv_program_20_0= ruleProgram ) )
                     // InternalProgram.g:295:5: (lv_program_20_0= ruleProgram )
@@ -639,7 +639,7 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
                     // InternalProgram.g:296:6: lv_program_20_0= ruleProgram
                     {
 
-                    						newCompositeNode(grammarAccess.getConferenceAccess().getProgramProgramParserRuleCall_9_1_0());
+                    						newCompositeNode(grammarAccess.getConferenceAccess().getProgramProgramParserRuleCall_7_1_0());
                     					
                     pushFollow(FOLLOW_2);
                     lv_program_20_0=ruleProgram();
@@ -6183,13 +6183,13 @@ public class InternalProgramParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_2 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_3 = new BitSet(new long[]{0x0000000000000800L});
     public static final BitSet FOLLOW_4 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x0000000000013000L});
+    public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x0000000000063002L});
     public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0000000000092000L});
+    public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x00000000000E2002L});
     public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000004000L});
     public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000018000L});
-    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000000030000L});
+    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000000060002L});
     public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x00001FE248000000L});
     public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000040002L});
     public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x01FC000000010000L});
