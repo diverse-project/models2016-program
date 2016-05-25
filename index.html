@@ -38,14 +38,18 @@
                                 <span ng-if="selectedTalk.selected" class="glyphicon glyphicon-star"></span>
                                 <span ng-if="!selectedTalk.selected" class="glyphicon glyphicon-star-empty"></span>
                             </button>
-                            {{selectedTalk.title}}
+                            <strong ng-if="selectedTalk.type">{{selectedTalk.type}}:</strong> {{selectedTalk.title}}
                         </h4>
                     </div>
                     <div class="modal-body">
-                        {{selectedTalk.authors}}
-                        {{selectedTalk.abstract}}
-                        {{selectedTalk.type}}
-                        {{selectedTalk.organizers}}
+                        <div>
+                            <strong>Organizers:</strong> <span ng-repeat="organizer in selectedTalk.organizers"><span ng-if="$index > 0">, </span>{{organizer}}</span>
+                        </div>
+                        <div>
+                            {{selectedTalk.abstract}}
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -86,7 +90,8 @@
 
 
 
-                                            <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(event, session.icalStart)">{{event.title}}</a>
+                                            <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(event, session.icalStart)" ng-if="event.type != 'CoffeeBreak' && event.type != 'Lunch' ">{{event.title}}</a>
+                                            <span ng-if="event.type == 'CoffeeBreak' || event.type == 'Lunch' ">{{event.title}}</span>
 
                                         </div>
 
