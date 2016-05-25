@@ -20,8 +20,7 @@ body {
 /* Table style */
 
 .table tr {
-    min-height: 20px;
-    height: 1px;
+    height: 30px;
 }
 
 .table th {
@@ -82,50 +81,53 @@ footer {
     text-align: justify;
 }
 
-
+hr {
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
 
 /* Type of events */
 
 .TalkSession {
-    background-color: greenyellow;
-
+    background-color: rgba(173, 255, 47, 0.5);
+    /*background-color: greenyellow;*/
 }
 
 .Panel {
-    background-color: lightgrey;
+    background-color: rgba(255, 249, 40, 0.5);
 }
 
 .Workshop {
-    background-color: yellow;
+    background-color: rgba(255, 167, 45, 0.5);
 }
 
 .Tutorial {
-    background-color: orangered;
+    background-color: rgba(255, 46, 51, 0.5);
 }
 
 .DoctoralSymposium {
-    background-color: deepskyblue;
+    background-color: rgba(162, 53, 255, 0.5);
 }
 
 .EducatorSymposium {
-    background-color: lightgrey;
+    background-color: rgba(119, 61, 255, 0.5);
 }
 
 .Reception {
-    background-color: lightgrey;
+    background-color: rgba(61, 188, 255, 0.5);
 }
 
 .Clinic {
-    background-color: lightgrey;
+    background-color: rgba(54, 255, 225, 0.5);
 }
 
 .Lunch {
-    background-color: lightgrey;
+    background-color: rgba(176, 180, 178, 0.5);
     text-align: center;
 }
 
 .CoffeeBreak {
-    background-color: lightgrey;
+    background-color: rgba(176, 180, 178, 0.5);
     text-align: center;
 }
 

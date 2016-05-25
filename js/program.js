@@ -64,6 +64,19 @@ modelsApp.controller("ProgramController", function($scope) {
         }
     };
 
+    $scope.showColor = function(event) {
+        var atLeastOneSelected = false;
+        if (typeof event.papers !== 'undefined') {
+            event.papers.forEach(function(talk) {
+                atLeastOneSelected = atLeastOneSelected || talk.selected;
+            });
+        } else {
+            atLeastOneSelected = event.selected;
+        }
+
+        return !$scope.showFavorites || ($scope.showFavorites && atLeastOneSelected);
+    };
+
 
 
     ///// Export to iCal /////

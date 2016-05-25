@@ -79,41 +79,31 @@
 
                             <table class="table table-condensed" ng-if="$index > 0 && session.events">
                                 <tr>
-                                    <td ng-repeat="event in session.events" class="table-inner" ng-class="event.type">
+                                    <td ng-repeat="event in session.events" class="table-inner" ng-class="showColor(event)?event.type:''">
                                         <!-- Event -->
                                         <div ng-if="event.title && !event.papers" ng-show="!showFavorites || (showFavorites && event.selected)"  >
-
-                                            <div class="eventType" ng-class="event.type"></div>
-                                            <div class="star" ng-if="event.type != 'CoffeeBreak' && event.type != 'Lunch' ">
-                                                <button class="btn btn-link btn-sm" ng-click="toggleFavoriteTalk(event, session.icalStart)">
-                                                    <span ng-if="event.selected" class="glyphicon glyphicon-star"></span>
-                                                    <span ng-if="!event.selected" class="glyphicon glyphicon-star-empty"></span>
-                                                </button>
-                                            </div>
-
 
 
                                             <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(event, session.icalStart)" ng-if="event.type != 'CoffeeBreak' && event.type != 'Lunch' ">{{event.title}}</a>
                                             <span ng-if="event.type == 'CoffeeBreak' || event.type == 'Lunch' ">{{event.title}}</span>
+                                            <button class="start btn btn-link btn-xs" ng-click="toggleFavoriteTalk(event, session.icalStart)" ng-if="event.type != 'CoffeeBreak' && event.type != 'Lunch' ">
+                                                <span ng-if="event.selected" class="glyphicon glyphicon-star"></span>
+                                                <span ng-if="!event.selected" class="glyphicon glyphicon-star-empty"></span>
+                                            </button>
 
                                         </div>
 
                                         <!-- Talk -->
                                         <div ng-if="event.title && event.papers">
-                                            <div class="eventType" ng-class="event.type"></div>
-
                                             <div ng-repeat="talk in event.papers" ng-show="!showFavorites || (showFavorites && talk.selected)">
-
-
-
-                                                <div class="star">
-                                                    <button class="btn btn-link btn-sm" ng-click="toggleFavoriteTalk(talk, talk.icalStart)">
-                                                        <span ng-if="talk.selected" class="glyphicon glyphicon-star"></span>
-                                                        <span ng-if="!talk.selected" class="glyphicon glyphicon-star-empty"></span>
-                                                    </button>
-                                                </div>
+                                                <hr ng-if="$index > 0"/>
 
                                                 <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(talk, talk.icalStart)">{{talk.title}}</a>
+
+                                                <button class="start btn btn-link btn-xs" ng-click="toggleFavoriteTalk(talk, talk.icalStart)">
+                                                    <span ng-if="talk.selected" class="glyphicon glyphicon-star"></span>
+                                                    <span ng-if="!talk.selected" class="glyphicon glyphicon-star-empty"></span>
+                                                </button>
 
                                             </div>
                                         </div>
@@ -129,7 +119,7 @@
         </div>
 
         <footer class="row">
-            <p>Proudly powered by MDE techniques, including Xtext, Xtend and the GEMOC studio.</p>
+            <p>Proudly powered by MDE techniques, including EMF, Xtext, Xtend and the GEMOC studio.</p>
         </footer>
     </div>
 
