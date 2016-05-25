@@ -3,6 +3,7 @@
 body {
     color: #555555;
     font-size: small;
+
 }
 
 .title {
@@ -37,6 +38,7 @@ body {
     padding: 2px !important;
     white-space: normal !important;
     height: inherit;
+    border: none !important;
 }
 
 
@@ -113,9 +115,11 @@ footer {
 }
 
 .Lunch {
-    /*background-color: lightgrey;*/
+    background-color: lightgrey;
+    text-align: center;
 }
 
 .CoffeeBreak {
-    /*background-color: lightgrey;*/
+    background-color: lightgrey;
+    text-align: center;
 }
