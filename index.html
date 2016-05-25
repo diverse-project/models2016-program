@@ -70,9 +70,9 @@
                                 {{getStartOfSessionGroup(sessionGroup)}}
                             </div>
 
-                            <table class="table table-condensed" ng-if="$index > 0">
+                            <table class="table table-condensed" ng-if="$index > 0 && session.events">
                                 <tr>
-                                    <td ng-repeat="event in session.events" class="table-inner">
+                                    <td ng-repeat="event in session.events" class="table-inner" ng-class="event.type">
                                         <!-- Event -->
                                         <div ng-if="event.title && !event.papers" ng-show="!showFavorites || (showFavorites && event.selected)"  >
 

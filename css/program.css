@@ -18,6 +18,11 @@ body {
 
 /* Table style */
 
+.table tr {
+    min-height: 20px;
+    height: 1px;
+}
+
 .table th {
     background-color: #588fb3;
     color: white;
@@ -25,18 +30,16 @@ body {
     vertical-align: middle !important;
 }
 
-td {
+.table td {
     min-width: 100px;
     max-width: 300px;
     word-wrap: break-word;
     padding: 2px !important;
-    height: 100%;
     white-space: normal !important;
+    height: inherit;
 }
 
-tr {
-    min-height: 20px;
-}
+
 
 .table .table {
     background-color: transparent;
@@ -47,6 +50,7 @@ tr {
 .table .table td {
     border: none;
     padding: 2px;
+    border-radius: 6px;
 }
 
 .table .table td:not(:last-child) {
