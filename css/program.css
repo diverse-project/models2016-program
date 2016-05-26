@@ -18,6 +18,10 @@ body {
 
 /* Table style */
 
+.table {
+
+}
+
 .table tr {
     min-height: 30px;
     height: 1px;
@@ -31,7 +35,7 @@ body {
 }
 
 .table td {
-    min-width: 150px;
+    min-width: 100px;
     max-width: 300px;
     word-wrap: break-word;
     padding: 2px !important;
@@ -58,7 +62,9 @@ body {
     border-right: 1px solid #ddd;
 }
 
+.sessionColumn {
 
+}
 
 
 /* Other styles */
@@ -131,3 +137,18 @@ hr {
     text-align: center;
 }
 
+.SRC {
+    background-color: rgba(41, 150, 180, 0.5);
+}
+
+.Poster {
+    background-color: rgba(41, 150, 180, 0.5);
+}
+
+.Keynote {
+    background-color: rgba(41, 150, 180, 0.5);
+}
+
+.Meeting {
+    background-color: rgba(41, 150, 180, 0.5);
+}
