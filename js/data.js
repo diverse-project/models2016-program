@@ -1340,7 +1340,6 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							url : ,
 							organizers : [
 							]
 						}
@@ -1625,7 +1624,6 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							url : ,
 							organizers : [
 							]
 						}
@@ -1910,7 +1908,6 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							url : ,
 							organizers : [
 							]
 						}
@@ -2195,7 +2192,6 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							url : ,
 							organizers : [
 							]
 						}
@@ -2553,7 +2549,6 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							url : ,
 							organizers : [
 							]
 						}
@@ -2814,7 +2809,6 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							url : ,
 							organizers : [
 							]
 						}
@@ -3090,7 +3084,6 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							url : ,
 							organizers : [
 							]
 						}
@@ -3362,7 +3355,6 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							url : ,
 							organizers : [
 							]
 						}
