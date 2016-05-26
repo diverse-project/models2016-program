@@ -82,11 +82,26 @@ var data = [
 							type : "Tutorial",
 							title : "Advanced Model Management with Epsilon",
 							organizers : [
-								"Richard Paige",
-								"Dimitris Kolovos",
-								"Antonio Garcia-Dominguez",
-								"Nicholas Matragkas",
-								"Horacio Hoyos"
+								{
+									name : "Richard Paige",
+									email : 
+								},
+								{
+									name : "Dimitris Kolovos",
+									email : 
+								},
+								{
+									name : "Antonio Garcia-Dominguez",
+									email : 
+								},
+								{
+									name : "Nicholas Matragkas",
+									email : 
+								},
+								{
+									name : "Horacio Hoyos",
+									email : 
+								}
 							]
 						}
 					]
@@ -103,7 +118,10 @@ var data = [
 							type : "Tutorial",
 							title : "ARCADIA in a Nutshell",
 							organizers : [
-								"Pascal Roques"
+								{
+									name : "Pascal Roques",
+									email : 
+								}
 							]
 						}
 					]
@@ -120,8 +138,14 @@ var data = [
 							type : "Tutorial",
 							title : "Hybrid Graphical/Textual Modelling and Code Generation with PapyrusRT",
 							organizers : [
-								"Ernesto Posse",
-								"Nicolas Hili"
+								{
+									name : "Ernesto Posse",
+									email : 
+								},
+								{
+									name : "Nicolas Hili",
+									email : 
+								}
 							]
 						}
 					]
@@ -137,11 +161,27 @@ var data = [
 						{
 							type : "Workshop",
 							title : "ME",
+							abstract : "Software artefacts constantly increase in complexity, variety and novelty. Environment and business constraints, user requirements and new insights put additional pressure on their adaptability, availability, reliability and quality: they continuously need to be up to date and up to level. However, evolution issues are critical, complex and costly to manage. They concern requirements, architecture, design, source code, documentation, integration as well as deployment. They also typically affect various kinds of models (data, behavioural, domain, source code or goal models). Addressing and managing these varieties of changes is essential. Models and meta-models, the cornerstone of complex software systems’ abstraction, represent a powerful mean for facing software evolution challenges by ensuring a more abstract and expressive modelling of software evolution. They can help and guide software evolution, and can enforce and reduce critical risks and important involved resources. The workshop puts the focus on Models and Evolution by considering two main sides:
+							(1) Managing software evolution needs by relying on the high-level abstraction power of models and meta-models.
+							(2) Managing models and metamodels evolution needs by putting attention to their increasing evolution issues as they become primary artefacts and to the need of co-evolution of all related software artefacts.",
+							url : "http://www.models-and-evolution.com/"
 							organizers : [
-								"Dalila Tamzalit",
-								"Alfonso Pierantonio",
-								"Bernhard Schätz",
-								"Tanja Mayerhofer"
+								{
+									name : "Dalila Tamzalit",
+									email : "Dalila.Tamzalit@univnantes.fr"
+								},
+								{
+									name : "Alfonso Pierantonio",
+									email : "alfonso.pierantonio@univaq.it"
+								},
+								{
+									name : "Bernhard Schätz",
+									email : "schaetz@fortiss.org"
+								},
+								{
+									name : "Tanja Mayerhofer",
+									email : "mayerhofer@big.tuwien.ac.at"
+								}
 							]
 						}
 					]
@@ -157,10 +197,21 @@ var data = [
 						{
 							type : "Workshop",
 							title : "OCL",
+							abstract : "Limitations of graphical notations encourage the development of text-based modeling languages that either integrate with or replace graphical notations for modeling. Typical examples of such languages are OCL, textual MOF, Epsilon, and Alloy. The goal of this workshop is to create a forum where researchers and practitioners interested in building models using OCL or other kinds of textual languages can directly interact, report advances, share results, discuss appropriate standards and showcase tools on any aspect of textual modeling and analysis.",
+							url : "http://oclworkshop.github.io/2016/"
 							organizers : [
-								"Achim D. Brucker",
-								"Jordi Cabot",
-								"Adolfo Sanchez-Barbudo Herrera"
+								{
+									name : "Achim D. Brucker",
+									email : "a.brucker@sheffield.ac.uk"
+								},
+								{
+									name : "Jordi Cabot",
+									email : "jordi.cabot@icrea.cat"
+								},
+								{
+									name : "Adolfo Sanchez-Barbudo Herrera",
+									email : "asbh500@cs.york.uk"
+								}
 							]
 						}
 					]
@@ -176,10 +227,21 @@ var data = [
 						{
 							type : "Workshop",
 							title : "FlexMDE",
+							abstract : "Over the last years, numerous modeling platforms have been developed to simplify and automate many steps of Model Driven Engineering (MDE) processes. However, still several challenges have to be solved for enabling a wider adoption of MDE. One of the most important impediments in adopting MDE tools is related to the reduced flexibility of existing modeling platforms that do not permit to relax or enforce their rigidity depending on the stages of the applied development process. For instance, EMF does not permit to enter models which are not conforming to a metamodel. On one hand this allows only valid models to be defined, but on the other, it makes the corresponding pragmatics more difficult. Thus there is an increasing need for techniques supporting flexibility in a wide range of modeling activities, including metamodel, model, and model transformation development and reuse. The workshop aims at identifying the difficulties in the current practice of MDE related to the lack of flexibility, and soliciting contributions of ideas, concepts, and techniques also from other areas of software development which could be useful to revise certain MDE fundamental typing concepts, to facilitate flexible reuse of MDE artefacts, and to define agile model sketching techniques.",
+							url : "http://www.di.univaq.it/flexmde/"
 							organizers : [
-								"Davide Di Ruscio",
-								"Alfonso Pierantonio",
-								"Juan De Lara"
+								{
+									name : "Davide Di Ruscio",
+									email : "davide.diruscio@univaq.it"
+								},
+								{
+									name : "Alfonso Pierantonio",
+									email : "alfonso.pierantonio@univaq.it"
+								},
+								{
+									name : "Juan De Lara",
+									email : "Juan.deLara@uam.es"
+								}
 							]
 						}
 					]
@@ -195,9 +257,17 @@ var data = [
 						{
 							type : "Workshop",
 							title : "VOLT",
+							abstract : "Model transformations are everywhere in software development, implicitly or explicitly. They have been described as “the heart and soul of Model-Driven Development (MDD)”. Several experts have identified the verification of model transformations as one of the grand challenges of MDD. Despite some recent activity in the field, the work on the verification of model transformations remains scattered and a clear perspective on the subject is still not in sight. Furthermore, current model transformation tools most often lack verification techniques to support such activities. The Fifth International Workshop on the Verification Of modeL Transformation is one of the most accurate venues to offer researchers a dedicated forum to classify, discuss, propose, and advance verification techniques dedicated to model transformations. VOLT promotes discussions between theoreticians and practitioners from academy and industry, given its ideal co-location with MODELS. VOLT’s interest spans both to academic and industrial practices. One of the goals of the forum is to collect enough industrial case studies so that those problems can be stated at a theoretical level.",
+							url : "http://www-ens.iro.umontreal.ca/~syriani/volt2016/"
 							organizers : [
-								"Moussa Amrani",
-								"Eugene Syriani"
+								{
+									name : "Moussa Amrani",
+									email : "moussa.amrani@unamur.be"
+								},
+								{
+									name : "Eugene Syriani",
+									email : "syriani@iro.umontreal.ca"
+								}
 							]
 						}
 					]
@@ -295,11 +365,26 @@ var data = [
 							type : "Tutorial",
 							title : "Advanced Model Management with Epsilon",
 							organizers : [
-								"Richard Paige",
-								"Dimitris Kolovos",
-								"Antonio Garcia-Dominguez",
-								"Nicholas Matragkas",
-								"Horacio Hoyos"
+								{
+									name : "Richard Paige",
+									email : 
+								},
+								{
+									name : "Dimitris Kolovos",
+									email : 
+								},
+								{
+									name : "Antonio Garcia-Dominguez",
+									email : 
+								},
+								{
+									name : "Nicholas Matragkas",
+									email : 
+								},
+								{
+									name : "Horacio Hoyos",
+									email : 
+								}
 							]
 						}
 					]
@@ -316,7 +401,10 @@ var data = [
 							type : "Tutorial",
 							title : "ARCADIA in a Nutshell",
 							organizers : [
-								"Pascal Roques"
+								{
+									name : "Pascal Roques",
+									email : 
+								}
 							]
 						}
 					]
@@ -333,8 +421,14 @@ var data = [
 							type : "Tutorial",
 							title : "Hybrid Graphical/Textual Modelling and Code Generation with PapyrusRT",
 							organizers : [
-								"Ernesto Posse",
-								"Nicolas Hili"
+								{
+									name : "Ernesto Posse",
+									email : 
+								},
+								{
+									name : "Nicolas Hili",
+									email : 
+								}
 							]
 						}
 					]
@@ -350,11 +444,27 @@ var data = [
 						{
 							type : "Workshop",
 							title : "ME",
+							abstract : "Software artefacts constantly increase in complexity, variety and novelty. Environment and business constraints, user requirements and new insights put additional pressure on their adaptability, availability, reliability and quality: they continuously need to be up to date and up to level. However, evolution issues are critical, complex and costly to manage. They concern requirements, architecture, design, source code, documentation, integration as well as deployment. They also typically affect various kinds of models (data, behavioural, domain, source code or goal models). Addressing and managing these varieties of changes is essential. Models and meta-models, the cornerstone of complex software systems’ abstraction, represent a powerful mean for facing software evolution challenges by ensuring a more abstract and expressive modelling of software evolution. They can help and guide software evolution, and can enforce and reduce critical risks and important involved resources. The workshop puts the focus on Models and Evolution by considering two main sides:
+							(1) Managing software evolution needs by relying on the high-level abstraction power of models and meta-models.
+							(2) Managing models and metamodels evolution needs by putting attention to their increasing evolution issues as they become primary artefacts and to the need of co-evolution of all related software artefacts.",
+							url : "http://www.models-and-evolution.com/"
 							organizers : [
-								"Dalila Tamzalit",
-								"Alfonso Pierantonio",
-								"Bernhard Schätz",
-								"Tanja Mayerhofer"
+								{
+									name : "Dalila Tamzalit",
+									email : "Dalila.Tamzalit@univnantes.fr"
+								},
+								{
+									name : "Alfonso Pierantonio",
+									email : "alfonso.pierantonio@univaq.it"
+								},
+								{
+									name : "Bernhard Schätz",
+									email : "schaetz@fortiss.org"
+								},
+								{
+									name : "Tanja Mayerhofer",
+									email : "mayerhofer@big.tuwien.ac.at"
+								}
 							]
 						}
 					]
@@ -370,10 +480,21 @@ var data = [
 						{
 							type : "Workshop",
 							title : "OCL",
+							abstract : "Limitations of graphical notations encourage the development of text-based modeling languages that either integrate with or replace graphical notations for modeling. Typical examples of such languages are OCL, textual MOF, Epsilon, and Alloy. The goal of this workshop is to create a forum where researchers and practitioners interested in building models using OCL or other kinds of textual languages can directly interact, report advances, share results, discuss appropriate standards and showcase tools on any aspect of textual modeling and analysis.",
+							url : "http://oclworkshop.github.io/2016/"
 							organizers : [
-								"Achim D. Brucker",
-								"Jordi Cabot",
-								"Adolfo Sanchez-Barbudo Herrera"
+								{
+									name : "Achim D. Brucker",
+									email : "a.brucker@sheffield.ac.uk"
+								},
+								{
+									name : "Jordi Cabot",
+									email : "jordi.cabot@icrea.cat"
+								},
+								{
+									name : "Adolfo Sanchez-Barbudo Herrera",
+									email : "asbh500@cs.york.uk"
+								}
 							]
 						}
 					]
@@ -389,10 +510,21 @@ var data = [
 						{
 							type : "Workshop",
 							title : "FlexMDE",
+							abstract : "Over the last years, numerous modeling platforms have been developed to simplify and automate many steps of Model Driven Engineering (MDE) processes. However, still several challenges have to be solved for enabling a wider adoption of MDE. One of the most important impediments in adopting MDE tools is related to the reduced flexibility of existing modeling platforms that do not permit to relax or enforce their rigidity depending on the stages of the applied development process. For instance, EMF does not permit to enter models which are not conforming to a metamodel. On one hand this allows only valid models to be defined, but on the other, it makes the corresponding pragmatics more difficult. Thus there is an increasing need for techniques supporting flexibility in a wide range of modeling activities, including metamodel, model, and model transformation development and reuse. The workshop aims at identifying the difficulties in the current practice of MDE related to the lack of flexibility, and soliciting contributions of ideas, concepts, and techniques also from other areas of software development which could be useful to revise certain MDE fundamental typing concepts, to facilitate flexible reuse of MDE artefacts, and to define agile model sketching techniques.",
+							url : "http://www.di.univaq.it/flexmde/"
 							organizers : [
-								"Davide Di Ruscio",
-								"Alfonso Pierantonio",
-								"Juan De Lara"
+								{
+									name : "Davide Di Ruscio",
+									email : "davide.diruscio@univaq.it"
+								},
+								{
+									name : "Alfonso Pierantonio",
+									email : "alfonso.pierantonio@univaq.it"
+								},
+								{
+									name : "Juan De Lara",
+									email : "Juan.deLara@uam.es"
+								}
 							]
 						}
 					]
@@ -408,9 +540,17 @@ var data = [
 						{
 							type : "Workshop",
 							title : "VOLT",
+							abstract : "Model transformations are everywhere in software development, implicitly or explicitly. They have been described as “the heart and soul of Model-Driven Development (MDD)”. Several experts have identified the verification of model transformations as one of the grand challenges of MDD. Despite some recent activity in the field, the work on the verification of model transformations remains scattered and a clear perspective on the subject is still not in sight. Furthermore, current model transformation tools most often lack verification techniques to support such activities. The Fifth International Workshop on the Verification Of modeL Transformation is one of the most accurate venues to offer researchers a dedicated forum to classify, discuss, propose, and advance verification techniques dedicated to model transformations. VOLT promotes discussions between theoreticians and practitioners from academy and industry, given its ideal co-location with MODELS. VOLT’s interest spans both to academic and industrial practices. One of the goals of the forum is to collect enough industrial case studies so that those problems can be stated at a theoretical level.",
+							url : "http://www-ens.iro.umontreal.ca/~syriani/volt2016/"
 							organizers : [
-								"Moussa Amrani",
-								"Eugene Syriani"
+								{
+									name : "Moussa Amrani",
+									email : "moussa.amrani@unamur.be"
+								},
+								{
+									name : "Eugene Syriani",
+									email : "syriani@iro.umontreal.ca"
+								}
 							]
 						}
 					]
@@ -512,8 +652,14 @@ var data = [
 							type : "Tutorial",
 							title : "Modeling Reactive Systems with the Scenario Modeling Language and ScenarioTools",
 							organizers : [
-								"Joel Greenyer",
-								"Daniel Gritzner"
+								{
+									name : "Joel Greenyer",
+									email : 
+								},
+								{
+									name : "Daniel Gritzner",
+									email : 
+								}
 							]
 						}
 					]
@@ -530,8 +676,14 @@ var data = [
 							type : "Tutorial",
 							title : "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies",
 							organizers : [
-								"Frederic Madiot",
-								"Cedric Brun"
+								{
+									name : "Frederic Madiot",
+									email : 
+								},
+								{
+									name : "Cedric Brun",
+									email : 
+								}
 							]
 						}
 					]
@@ -548,7 +700,10 @@ var data = [
 							type : "Tutorial",
 							title : "Technologies and Design Patterns for Model-based Development of Cyber-physical Systems",
 							organizers : [
-								"Bran Selic"
+								{
+									name : "Bran Selic",
+									email : 
+								}
 							]
 						}
 					]
@@ -564,11 +719,27 @@ var data = [
 						{
 							type : "Workshop",
 							title : "ME",
+							abstract : "Software artefacts constantly increase in complexity, variety and novelty. Environment and business constraints, user requirements and new insights put additional pressure on their adaptability, availability, reliability and quality: they continuously need to be up to date and up to level. However, evolution issues are critical, complex and costly to manage. They concern requirements, architecture, design, source code, documentation, integration as well as deployment. They also typically affect various kinds of models (data, behavioural, domain, source code or goal models). Addressing and managing these varieties of changes is essential. Models and meta-models, the cornerstone of complex software systems’ abstraction, represent a powerful mean for facing software evolution challenges by ensuring a more abstract and expressive modelling of software evolution. They can help and guide software evolution, and can enforce and reduce critical risks and important involved resources. The workshop puts the focus on Models and Evolution by considering two main sides:
+							(1) Managing software evolution needs by relying on the high-level abstraction power of models and meta-models.
+							(2) Managing models and metamodels evolution needs by putting attention to their increasing evolution issues as they become primary artefacts and to the need of co-evolution of all related software artefacts.",
+							url : "http://www.models-and-evolution.com/"
 							organizers : [
-								"Dalila Tamzalit",
-								"Alfonso Pierantonio",
-								"Bernhard Schätz",
-								"Tanja Mayerhofer"
+								{
+									name : "Dalila Tamzalit",
+									email : "Dalila.Tamzalit@univnantes.fr"
+								},
+								{
+									name : "Alfonso Pierantonio",
+									email : "alfonso.pierantonio@univaq.it"
+								},
+								{
+									name : "Bernhard Schätz",
+									email : "schaetz@fortiss.org"
+								},
+								{
+									name : "Tanja Mayerhofer",
+									email : "mayerhofer@big.tuwien.ac.at"
+								}
 							]
 						}
 					]
@@ -584,10 +755,21 @@ var data = [
 						{
 							type : "Workshop",
 							title : "OCL",
+							abstract : "Limitations of graphical notations encourage the development of text-based modeling languages that either integrate with or replace graphical notations for modeling. Typical examples of such languages are OCL, textual MOF, Epsilon, and Alloy. The goal of this workshop is to create a forum where researchers and practitioners interested in building models using OCL or other kinds of textual languages can directly interact, report advances, share results, discuss appropriate standards and showcase tools on any aspect of textual modeling and analysis.",
+							url : "http://oclworkshop.github.io/2016/"
 							organizers : [
-								"Achim D. Brucker",
-								"Jordi Cabot",
-								"Adolfo Sanchez-Barbudo Herrera"
+								{
+									name : "Achim D. Brucker",
+									email : "a.brucker@sheffield.ac.uk"
+								},
+								{
+									name : "Jordi Cabot",
+									email : "jordi.cabot@icrea.cat"
+								},
+								{
+									name : "Adolfo Sanchez-Barbudo Herrera",
+									email : "asbh500@cs.york.uk"
+								}
 							]
 						}
 					]
@@ -603,10 +785,21 @@ var data = [
 						{
 							type : "Workshop",
 							title : "FlexMDE",
+							abstract : "Over the last years, numerous modeling platforms have been developed to simplify and automate many steps of Model Driven Engineering (MDE) processes. However, still several challenges have to be solved for enabling a wider adoption of MDE. One of the most important impediments in adopting MDE tools is related to the reduced flexibility of existing modeling platforms that do not permit to relax or enforce their rigidity depending on the stages of the applied development process. For instance, EMF does not permit to enter models which are not conforming to a metamodel. On one hand this allows only valid models to be defined, but on the other, it makes the corresponding pragmatics more difficult. Thus there is an increasing need for techniques supporting flexibility in a wide range of modeling activities, including metamodel, model, and model transformation development and reuse. The workshop aims at identifying the difficulties in the current practice of MDE related to the lack of flexibility, and soliciting contributions of ideas, concepts, and techniques also from other areas of software development which could be useful to revise certain MDE fundamental typing concepts, to facilitate flexible reuse of MDE artefacts, and to define agile model sketching techniques.",
+							url : "http://www.di.univaq.it/flexmde/"
 							organizers : [
-								"Davide Di Ruscio",
-								"Alfonso Pierantonio",
-								"Juan De Lara"
+								{
+									name : "Davide Di Ruscio",
+									email : "davide.diruscio@univaq.it"
+								},
+								{
+									name : "Alfonso Pierantonio",
+									email : "alfonso.pierantonio@univaq.it"
+								},
+								{
+									name : "Juan De Lara",
+									email : "Juan.deLara@uam.es"
+								}
 							]
 						}
 					]
@@ -622,9 +815,17 @@ var data = [
 						{
 							type : "Workshop",
 							title : "VOLT",
+							abstract : "Model transformations are everywhere in software development, implicitly or explicitly. They have been described as “the heart and soul of Model-Driven Development (MDD)”. Several experts have identified the verification of model transformations as one of the grand challenges of MDD. Despite some recent activity in the field, the work on the verification of model transformations remains scattered and a clear perspective on the subject is still not in sight. Furthermore, current model transformation tools most often lack verification techniques to support such activities. The Fifth International Workshop on the Verification Of modeL Transformation is one of the most accurate venues to offer researchers a dedicated forum to classify, discuss, propose, and advance verification techniques dedicated to model transformations. VOLT promotes discussions between theoreticians and practitioners from academy and industry, given its ideal co-location with MODELS. VOLT’s interest spans both to academic and industrial practices. One of the goals of the forum is to collect enough industrial case studies so that those problems can be stated at a theoretical level.",
+							url : "http://www-ens.iro.umontreal.ca/~syriani/volt2016/"
 							organizers : [
-								"Moussa Amrani",
-								"Eugene Syriani"
+								{
+									name : "Moussa Amrani",
+									email : "moussa.amrani@unamur.be"
+								},
+								{
+									name : "Eugene Syriani",
+									email : "syriani@iro.umontreal.ca"
+								}
 							]
 						}
 					]
@@ -722,8 +923,14 @@ var data = [
 							type : "Tutorial",
 							title : "Modeling Reactive Systems with the Scenario Modeling Language and ScenarioTools",
 							organizers : [
-								"Joel Greenyer",
-								"Daniel Gritzner"
+								{
+									name : "Joel Greenyer",
+									email : 
+								},
+								{
+									name : "Daniel Gritzner",
+									email : 
+								}
 							]
 						}
 					]
@@ -740,8 +947,14 @@ var data = [
 							type : "Tutorial",
 							title : "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies",
 							organizers : [
-								"Frederic Madiot",
-								"Cedric Brun"
+								{
+									name : "Frederic Madiot",
+									email : 
+								},
+								{
+									name : "Cedric Brun",
+									email : 
+								}
 							]
 						}
 					]
@@ -758,7 +971,10 @@ var data = [
 							type : "Tutorial",
 							title : "Technologies and Design Patterns for Model-based Development of Cyber-physical Systems",
 							organizers : [
-								"Bran Selic"
+								{
+									name : "Bran Selic",
+									email : 
+								}
 							]
 						}
 					]
@@ -774,11 +990,27 @@ var data = [
 						{
 							type : "Workshop",
 							title : "ME",
+							abstract : "Software artefacts constantly increase in complexity, variety and novelty. Environment and business constraints, user requirements and new insights put additional pressure on their adaptability, availability, reliability and quality: they continuously need to be up to date and up to level. However, evolution issues are critical, complex and costly to manage. They concern requirements, architecture, design, source code, documentation, integration as well as deployment. They also typically affect various kinds of models (data, behavioural, domain, source code or goal models). Addressing and managing these varieties of changes is essential. Models and meta-models, the cornerstone of complex software systems’ abstraction, represent a powerful mean for facing software evolution challenges by ensuring a more abstract and expressive modelling of software evolution. They can help and guide software evolution, and can enforce and reduce critical risks and important involved resources. The workshop puts the focus on Models and Evolution by considering two main sides:
+							(1) Managing software evolution needs by relying on the high-level abstraction power of models and meta-models.
+							(2) Managing models and metamodels evolution needs by putting attention to their increasing evolution issues as they become primary artefacts and to the need of co-evolution of all related software artefacts.",
+							url : "http://www.models-and-evolution.com/"
 							organizers : [
-								"Dalila Tamzalit",
-								"Alfonso Pierantonio",
-								"Bernhard Schätz",
-								"Tanja Mayerhofer"
+								{
+									name : "Dalila Tamzalit",
+									email : "Dalila.Tamzalit@univnantes.fr"
+								},
+								{
+									name : "Alfonso Pierantonio",
+									email : "alfonso.pierantonio@univaq.it"
+								},
+								{
+									name : "Bernhard Schätz",
+									email : "schaetz@fortiss.org"
+								},
+								{
+									name : "Tanja Mayerhofer",
+									email : "mayerhofer@big.tuwien.ac.at"
+								}
 							]
 						}
 					]
@@ -794,10 +1026,21 @@ var data = [
 						{
 							type : "Workshop",
 							title : "OCL",
+							abstract : "Limitations of graphical notations encourage the development of text-based modeling languages that either integrate with or replace graphical notations for modeling. Typical examples of such languages are OCL, textual MOF, Epsilon, and Alloy. The goal of this workshop is to create a forum where researchers and practitioners interested in building models using OCL or other kinds of textual languages can directly interact, report advances, share results, discuss appropriate standards and showcase tools on any aspect of textual modeling and analysis.",
+							url : "http://oclworkshop.github.io/2016/"
 							organizers : [
-								"Achim D. Brucker",
-								"Jordi Cabot",
-								"Adolfo Sanchez-Barbudo Herrera"
+								{
+									name : "Achim D. Brucker",
+									email : "a.brucker@sheffield.ac.uk"
+								},
+								{
+									name : "Jordi Cabot",
+									email : "jordi.cabot@icrea.cat"
+								},
+								{
+									name : "Adolfo Sanchez-Barbudo Herrera",
+									email : "asbh500@cs.york.uk"
+								}
 							]
 						}
 					]
@@ -813,10 +1056,21 @@ var data = [
 						{
 							type : "Workshop",
 							title : "FlexMDE",
+							abstract : "Over the last years, numerous modeling platforms have been developed to simplify and automate many steps of Model Driven Engineering (MDE) processes. However, still several challenges have to be solved for enabling a wider adoption of MDE. One of the most important impediments in adopting MDE tools is related to the reduced flexibility of existing modeling platforms that do not permit to relax or enforce their rigidity depending on the stages of the applied development process. For instance, EMF does not permit to enter models which are not conforming to a metamodel. On one hand this allows only valid models to be defined, but on the other, it makes the corresponding pragmatics more difficult. Thus there is an increasing need for techniques supporting flexibility in a wide range of modeling activities, including metamodel, model, and model transformation development and reuse. The workshop aims at identifying the difficulties in the current practice of MDE related to the lack of flexibility, and soliciting contributions of ideas, concepts, and techniques also from other areas of software development which could be useful to revise certain MDE fundamental typing concepts, to facilitate flexible reuse of MDE artefacts, and to define agile model sketching techniques.",
+							url : "http://www.di.univaq.it/flexmde/"
 							organizers : [
-								"Davide Di Ruscio",
-								"Alfonso Pierantonio",
-								"Juan De Lara"
+								{
+									name : "Davide Di Ruscio",
+									email : "davide.diruscio@univaq.it"
+								},
+								{
+									name : "Alfonso Pierantonio",
+									email : "alfonso.pierantonio@univaq.it"
+								},
+								{
+									name : "Juan De Lara",
+									email : "Juan.deLara@uam.es"
+								}
 							]
 						}
 					]
@@ -832,9 +1086,17 @@ var data = [
 						{
 							type : "Workshop",
 							title : "VOLT",
+							abstract : "Model transformations are everywhere in software development, implicitly or explicitly. They have been described as “the heart and soul of Model-Driven Development (MDD)”. Several experts have identified the verification of model transformations as one of the grand challenges of MDD. Despite some recent activity in the field, the work on the verification of model transformations remains scattered and a clear perspective on the subject is still not in sight. Furthermore, current model transformation tools most often lack verification techniques to support such activities. The Fifth International Workshop on the Verification Of modeL Transformation is one of the most accurate venues to offer researchers a dedicated forum to classify, discuss, propose, and advance verification techniques dedicated to model transformations. VOLT promotes discussions between theoreticians and practitioners from academy and industry, given its ideal co-location with MODELS. VOLT’s interest spans both to academic and industrial practices. One of the goals of the forum is to collect enough industrial case studies so that those problems can be stated at a theoretical level.",
+							url : "http://www-ens.iro.umontreal.ca/~syriani/volt2016/"
 							organizers : [
-								"Moussa Amrani",
-								"Eugene Syriani"
+								{
+									name : "Moussa Amrani",
+									email : "moussa.amrani@unamur.be"
+								},
+								{
+									name : "Eugene Syriani",
+									email : "syriani@iro.umontreal.ca"
+								}
 							]
 						}
 					]
@@ -914,9 +1176,18 @@ var data = [
 							type : "Tutorial",
 							title : "Empirical Research in Model Based Software Engineering",
 							organizers : [
-								"Michel Chaudron",
-								"Regina Hebig",
-								"Maria Teresa Baldassarre"
+								{
+									name : "Michel Chaudron",
+									email : 
+								},
+								{
+									name : "Regina Hebig",
+									email : 
+								},
+								{
+									name : "Maria Teresa Baldassarre",
+									email : 
+								}
 							]
 						}
 					]
@@ -933,8 +1204,14 @@ var data = [
 							type : "Tutorial",
 							title : "Applying Model Driven Engineering Technologies in the Creation of Domain Specific Modeling Languages",
 							organizers : [
-								"Bruce Trask",
-								"Angel Roman"
+								{
+									name : "Bruce Trask",
+									email : 
+								},
+								{
+									name : "Angel Roman",
+									email : 
+								}
 							]
 						}
 					]
@@ -950,11 +1227,25 @@ var data = [
 						{
 							type : "Workshop",
 							title : "PAME",
+							abstract : "PAME is intended to be the first forum for practitioners in MDE to discuss patterns that occur often during the different modeling activities. The aim of this workshop is to provide an arena for proposing and discussing good practices, patterns, pattern-based modeling, as well as start the initiative of developing a “language” for discussing and describing relevant problems and their solutions in the form of patterns.",
+							url : "http://www-ens.iro.umontreal.ca/~syriani/pame2016"
 							organizers : [
-								"Eugene Syriani",
-								"Richard Paige",
-								"Steffen Zschaler",
-								"Huseyin Ergin"
+								{
+									name : "Eugene Syriani",
+									email : "syriani@iro.umontreal.ca"
+								},
+								{
+									name : "Richard Paige",
+									email : "richard.paige@york.ac.uk"
+								},
+								{
+									name : "Steffen Zschaler",
+									email : "steffen.zschaler@kcl.ac.uk"
+								},
+								{
+									name : "Huseyin Ergin",
+									email : "hergin@crimson.ua.edu"
+								}
 							]
 						}
 					]
@@ -986,12 +1277,29 @@ var data = [
 						{
 							type : "Workshop",
 							title : "OSS4MDE",
+							abstract : "Just like the previous versions of the workshop, OSS4MDE’16 workshop will bring together researchers, educators and industry representatives interested in modeling and MDE with open source tools. However, compared to previous incarnations, OSS4MDE’16 will be less formal and more interactive, and place more emphasis on promoting open source by inspiring and encouraging potential users and contributors, and supporting existing users and contributors.",
+							url : "http://www.cs.queensu.ca/oss4mde"
 							organizers : [
-								"Juergen Dingel",
-								"Francis Bordeleau",
-								"Jean-Michel Bruel",
-								"Sebastien Gerard",
-								"Sebastian Voss"
+								{
+									name : "Juergen Dingel",
+									email : "dingel@cs.queensu.ca"
+								},
+								{
+									name : "Francis Bordeleau",
+									email : "francis.bordeleau@ericsson.com"
+								},
+								{
+									name : "Jean-Michel Bruel",
+									email : "bruel@irit.fr"
+								},
+								{
+									name : "Sebastien Gerard",
+									email : "sebastien.gerard@cea.fr"
+								},
+								{
+									name : "Sebastian Voss",
+									email : "voss@fortiss.org"
+								}
 							]
 						}
 					]
@@ -1007,11 +1315,25 @@ var data = [
 						{
 							type : "Workshop",
 							title : "EXE",
+							abstract : "Executable models have the potential of bringing major benefits to the development of complex systems, as they provide abstractions of complex system behaviors and allow for the performance of early analyses of that behavior. Despite the potential benefits of executable models, there are still many challenges to solve, such as the lack of maturity in the definition of and tooling for executable modeling languages, and the limited experience with executable modeling in much of the software development industry. The objective of this workshop is to draw attention to the potentials and challenges of executable modeling and advance the state-of-the-art in executable modeling. We aim at bringing together researchers working towards overcoming challenges in executable modeling, as well as practitioners from different application domains and application contexts of executable modeling. The workshop intends to provide a forum for exchanging recent results, ideas, opinions, requirements, and experiences in executable modeling.",
+							url : "http://www.modelexecution.org/"
 							organizers : [
-								"Tanja Mayerhofer",
-								"Philip Langer",
-								"Ed Seidewitz",
-								"Jeff Gray"
+								{
+									name : "Tanja Mayerhofer",
+									email : "mayerhofer@big.tuwien.ac.at"
+								},
+								{
+									name : "Philip Langer",
+									email : "planger@eclipsesource.com"
+								},
+								{
+									name : "Ed Seidewitz",
+									email : "ed-s@modeldriven.com"
+								},
+								{
+									name : "Jeff Gray",
+									email : "gray@cs.ua.edu"
+								}
 							]
 						}
 					]
@@ -1027,10 +1349,21 @@ var data = [
 						{
 							type : "Workshop",
 							title : "MoDeVVa",
+							abstract : "MoDeVVa offers a forum for researchers and practitioners who are working on Verification & Validation and Models-driven Engineering. The major questions of interest in MoDeVVa concern the mutual benefits of MDE and V&V: How can models-driven engineering improve V&V?, and How can V&V leverage the techniques around models-driven engineering? In 2016 we put an emphasis on making the V&V activities of MDE artefacts a systematic process. This includes modeling the V&V activities, investigating the synergies between them or composing different V&V activities to increase the confidence in the verification results.",
+							url : "https://sites.google.com/site/modevva/"
 							organizers : [
-								"Michalis Famelis",
-								"Daniel Ratiu",
-								"Gehan M. K. Selim"
+								{
+									name : "Michalis Famelis",
+									email : "famelis@cs.ubc.ca"
+								},
+								{
+									name : "Daniel Ratiu",
+									email : "daniel.ratiu@siemens.com"
+								},
+								{
+									name : "Gehan M. K. Selim",
+									email : "gehan@cs.queensu.ca"
+								}
 							]
 						}
 					]
@@ -1046,6 +1379,8 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
+							abstract : ,
+							url : 
 							organizers : [
 							]
 						}
@@ -1132,9 +1467,18 @@ var data = [
 							type : "Tutorial",
 							title : "Empirical Research in Model Based Software Engineering",
 							organizers : [
-								"Michel Chaudron",
-								"Regina Hebig",
-								"Maria Teresa Baldassarre"
+								{
+									name : "Michel Chaudron",
+									email : 
+								},
+								{
+									name : "Regina Hebig",
+									email : 
+								},
+								{
+									name : "Maria Teresa Baldassarre",
+									email : 
+								}
 							]
 						}
 					]
@@ -1151,8 +1495,14 @@ var data = [
 							type : "Tutorial",
 							title : "Applying Model Driven Engineering Technologies in the Creation of Domain Specific Modeling Languages",
 							organizers : [
-								"Bruce Trask",
-								"Angel Roman"
+								{
+									name : "Bruce Trask",
+									email : 
+								},
+								{
+									name : "Angel Roman",
+									email : 
+								}
 							]
 						}
 					]
@@ -1168,11 +1518,25 @@ var data = [
 						{
 							type : "Workshop",
 							title : "PAME",
+							abstract : "PAME is intended to be the first forum for practitioners in MDE to discuss patterns that occur often during the different modeling activities. The aim of this workshop is to provide an arena for proposing and discussing good practices, patterns, pattern-based modeling, as well as start the initiative of developing a “language” for discussing and describing relevant problems and their solutions in the form of patterns.",
+							url : "http://www-ens.iro.umontreal.ca/~syriani/pame2016"
 							organizers : [
-								"Eugene Syriani",
-								"Richard Paige",
-								"Steffen Zschaler",
-								"Huseyin Ergin"
+								{
+									name : "Eugene Syriani",
+									email : "syriani@iro.umontreal.ca"
+								},
+								{
+									name : "Richard Paige",
+									email : "richard.paige@york.ac.uk"
+								},
+								{
+									name : "Steffen Zschaler",
+									email : "steffen.zschaler@kcl.ac.uk"
+								},
+								{
+									name : "Huseyin Ergin",
+									email : "hergin@crimson.ua.edu"
+								}
 							]
 						}
 					]
@@ -1204,12 +1568,29 @@ var data = [
 						{
 							type : "Workshop",
 							title : "OSS4MDE",
+							abstract : "Just like the previous versions of the workshop, OSS4MDE’16 workshop will bring together researchers, educators and industry representatives interested in modeling and MDE with open source tools. However, compared to previous incarnations, OSS4MDE’16 will be less formal and more interactive, and place more emphasis on promoting open source by inspiring and encouraging potential users and contributors, and supporting existing users and contributors.",
+							url : "http://www.cs.queensu.ca/oss4mde"
 							organizers : [
-								"Juergen Dingel",
-								"Francis Bordeleau",
-								"Jean-Michel Bruel",
-								"Sebastien Gerard",
-								"Sebastian Voss"
+								{
+									name : "Juergen Dingel",
+									email : "dingel@cs.queensu.ca"
+								},
+								{
+									name : "Francis Bordeleau",
+									email : "francis.bordeleau@ericsson.com"
+								},
+								{
+									name : "Jean-Michel Bruel",
+									email : "bruel@irit.fr"
+								},
+								{
+									name : "Sebastien Gerard",
+									email : "sebastien.gerard@cea.fr"
+								},
+								{
+									name : "Sebastian Voss",
+									email : "voss@fortiss.org"
+								}
 							]
 						}
 					]
@@ -1225,11 +1606,25 @@ var data = [
 						{
 							type : "Workshop",
 							title : "EXE",
+							abstract : "Executable models have the potential of bringing major benefits to the development of complex systems, as they provide abstractions of complex system behaviors and allow for the performance of early analyses of that behavior. Despite the potential benefits of executable models, there are still many challenges to solve, such as the lack of maturity in the definition of and tooling for executable modeling languages, and the limited experience with executable modeling in much of the software development industry. The objective of this workshop is to draw attention to the potentials and challenges of executable modeling and advance the state-of-the-art in executable modeling. We aim at bringing together researchers working towards overcoming challenges in executable modeling, as well as practitioners from different application domains and application contexts of executable modeling. The workshop intends to provide a forum for exchanging recent results, ideas, opinions, requirements, and experiences in executable modeling.",
+							url : "http://www.modelexecution.org/"
 							organizers : [
-								"Tanja Mayerhofer",
-								"Philip Langer",
-								"Ed Seidewitz",
-								"Jeff Gray"
+								{
+									name : "Tanja Mayerhofer",
+									email : "mayerhofer@big.tuwien.ac.at"
+								},
+								{
+									name : "Philip Langer",
+									email : "planger@eclipsesource.com"
+								},
+								{
+									name : "Ed Seidewitz",
+									email : "ed-s@modeldriven.com"
+								},
+								{
+									name : "Jeff Gray",
+									email : "gray@cs.ua.edu"
+								}
 							]
 						}
 					]
@@ -1245,10 +1640,21 @@ var data = [
 						{
 							type : "Workshop",
 							title : "MoDeVVa",
+							abstract : "MoDeVVa offers a forum for researchers and practitioners who are working on Verification & Validation and Models-driven Engineering. The major questions of interest in MoDeVVa concern the mutual benefits of MDE and V&V: How can models-driven engineering improve V&V?, and How can V&V leverage the techniques around models-driven engineering? In 2016 we put an emphasis on making the V&V activities of MDE artefacts a systematic process. This includes modeling the V&V activities, investigating the synergies between them or composing different V&V activities to increase the confidence in the verification results.",
+							url : "https://sites.google.com/site/modevva/"
 							organizers : [
-								"Michalis Famelis",
-								"Daniel Ratiu",
-								"Gehan M. K. Selim"
+								{
+									name : "Michalis Famelis",
+									email : "famelis@cs.ubc.ca"
+								},
+								{
+									name : "Daniel Ratiu",
+									email : "daniel.ratiu@siemens.com"
+								},
+								{
+									name : "Gehan M. K. Selim",
+									email : "gehan@cs.queensu.ca"
+								}
 							]
 						}
 					]
@@ -1264,6 +1670,8 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
+							abstract : ,
+							url : 
 							organizers : [
 							]
 						}
@@ -1350,9 +1758,18 @@ var data = [
 							type : "Tutorial",
 							title : "Empirical Research in Model Based Software Engineering",
 							organizers : [
-								"Michel Chaudron",
-								"Regina Hebig",
-								"Maria Teresa Baldassarre"
+								{
+									name : "Michel Chaudron",
+									email : 
+								},
+								{
+									name : "Regina Hebig",
+									email : 
+								},
+								{
+									name : "Maria Teresa Baldassarre",
+									email : 
+								}
 							]
 						}
 					]
@@ -1369,8 +1786,14 @@ var data = [
 							type : "Tutorial",
 							title : "Multi-level Modelling with MetaDepth",
 							organizers : [
-								"Juan De Lara",
-								"Esther Guerra"
+								{
+									name : "Juan De Lara",
+									email : 
+								},
+								{
+									name : "Esther Guerra",
+									email : 
+								}
 							]
 						}
 					]
@@ -1386,11 +1809,25 @@ var data = [
 						{
 							type : "Workshop",
 							title : "PAME",
+							abstract : "PAME is intended to be the first forum for practitioners in MDE to discuss patterns that occur often during the different modeling activities. The aim of this workshop is to provide an arena for proposing and discussing good practices, patterns, pattern-based modeling, as well as start the initiative of developing a “language” for discussing and describing relevant problems and their solutions in the form of patterns.",
+							url : "http://www-ens.iro.umontreal.ca/~syriani/pame2016"
 							organizers : [
-								"Eugene Syriani",
-								"Richard Paige",
-								"Steffen Zschaler",
-								"Huseyin Ergin"
+								{
+									name : "Eugene Syriani",
+									email : "syriani@iro.umontreal.ca"
+								},
+								{
+									name : "Richard Paige",
+									email : "richard.paige@york.ac.uk"
+								},
+								{
+									name : "Steffen Zschaler",
+									email : "steffen.zschaler@kcl.ac.uk"
+								},
+								{
+									name : "Huseyin Ergin",
+									email : "hergin@crimson.ua.edu"
+								}
 							]
 						}
 					]
@@ -1422,12 +1859,29 @@ var data = [
 						{
 							type : "Workshop",
 							title : "OSS4MDE",
+							abstract : "Just like the previous versions of the workshop, OSS4MDE’16 workshop will bring together researchers, educators and industry representatives interested in modeling and MDE with open source tools. However, compared to previous incarnations, OSS4MDE’16 will be less formal and more interactive, and place more emphasis on promoting open source by inspiring and encouraging potential users and contributors, and supporting existing users and contributors.",
+							url : "http://www.cs.queensu.ca/oss4mde"
 							organizers : [
-								"Juergen Dingel",
-								"Francis Bordeleau",
-								"Jean-Michel Bruel",
-								"Sebastien Gerard",
-								"Sebastian Voss"
+								{
+									name : "Juergen Dingel",
+									email : "dingel@cs.queensu.ca"
+								},
+								{
+									name : "Francis Bordeleau",
+									email : "francis.bordeleau@ericsson.com"
+								},
+								{
+									name : "Jean-Michel Bruel",
+									email : "bruel@irit.fr"
+								},
+								{
+									name : "Sebastien Gerard",
+									email : "sebastien.gerard@cea.fr"
+								},
+								{
+									name : "Sebastian Voss",
+									email : "voss@fortiss.org"
+								}
 							]
 						}
 					]
@@ -1443,11 +1897,25 @@ var data = [
 						{
 							type : "Workshop",
 							title : "EXE",
+							abstract : "Executable models have the potential of bringing major benefits to the development of complex systems, as they provide abstractions of complex system behaviors and allow for the performance of early analyses of that behavior. Despite the potential benefits of executable models, there are still many challenges to solve, such as the lack of maturity in the definition of and tooling for executable modeling languages, and the limited experience with executable modeling in much of the software development industry. The objective of this workshop is to draw attention to the potentials and challenges of executable modeling and advance the state-of-the-art in executable modeling. We aim at bringing together researchers working towards overcoming challenges in executable modeling, as well as practitioners from different application domains and application contexts of executable modeling. The workshop intends to provide a forum for exchanging recent results, ideas, opinions, requirements, and experiences in executable modeling.",
+							url : "http://www.modelexecution.org/"
 							organizers : [
-								"Tanja Mayerhofer",
-								"Philip Langer",
-								"Ed Seidewitz",
-								"Jeff Gray"
+								{
+									name : "Tanja Mayerhofer",
+									email : "mayerhofer@big.tuwien.ac.at"
+								},
+								{
+									name : "Philip Langer",
+									email : "planger@eclipsesource.com"
+								},
+								{
+									name : "Ed Seidewitz",
+									email : "ed-s@modeldriven.com"
+								},
+								{
+									name : "Jeff Gray",
+									email : "gray@cs.ua.edu"
+								}
 							]
 						}
 					]
@@ -1463,10 +1931,21 @@ var data = [
 						{
 							type : "Workshop",
 							title : "MoDeVVa",
+							abstract : "MoDeVVa offers a forum for researchers and practitioners who are working on Verification & Validation and Models-driven Engineering. The major questions of interest in MoDeVVa concern the mutual benefits of MDE and V&V: How can models-driven engineering improve V&V?, and How can V&V leverage the techniques around models-driven engineering? In 2016 we put an emphasis on making the V&V activities of MDE artefacts a systematic process. This includes modeling the V&V activities, investigating the synergies between them or composing different V&V activities to increase the confidence in the verification results.",
+							url : "https://sites.google.com/site/modevva/"
 							organizers : [
-								"Michalis Famelis",
-								"Daniel Ratiu",
-								"Gehan M. K. Selim"
+								{
+									name : "Michalis Famelis",
+									email : "famelis@cs.ubc.ca"
+								},
+								{
+									name : "Daniel Ratiu",
+									email : "daniel.ratiu@siemens.com"
+								},
+								{
+									name : "Gehan M. K. Selim",
+									email : "gehan@cs.queensu.ca"
+								}
 							]
 						}
 					]
@@ -1482,6 +1961,8 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
+							abstract : ,
+							url : 
 							organizers : [
 							]
 						}
@@ -1568,9 +2049,18 @@ var data = [
 							type : "Tutorial",
 							title : "Empirical Research in Model Based Software Engineering",
 							organizers : [
-								"Michel Chaudron",
-								"Regina Hebig",
-								"Maria Teresa Baldassarre"
+								{
+									name : "Michel Chaudron",
+									email : 
+								},
+								{
+									name : "Regina Hebig",
+									email : 
+								},
+								{
+									name : "Maria Teresa Baldassarre",
+									email : 
+								}
 							]
 						}
 					]
@@ -1587,8 +2077,14 @@ var data = [
 							type : "Tutorial",
 							title : "Multi-level Modelling with MetaDepth",
 							organizers : [
-								"Juan De Lara",
-								"Esther Guerra"
+								{
+									name : "Juan De Lara",
+									email : 
+								},
+								{
+									name : "Esther Guerra",
+									email : 
+								}
 							]
 						}
 					]
@@ -1604,11 +2100,25 @@ var data = [
 						{
 							type : "Workshop",
 							title : "PAME",
+							abstract : "PAME is intended to be the first forum for practitioners in MDE to discuss patterns that occur often during the different modeling activities. The aim of this workshop is to provide an arena for proposing and discussing good practices, patterns, pattern-based modeling, as well as start the initiative of developing a “language” for discussing and describing relevant problems and their solutions in the form of patterns.",
+							url : "http://www-ens.iro.umontreal.ca/~syriani/pame2016"
 							organizers : [
-								"Eugene Syriani",
-								"Richard Paige",
-								"Steffen Zschaler",
-								"Huseyin Ergin"
+								{
+									name : "Eugene Syriani",
+									email : "syriani@iro.umontreal.ca"
+								},
+								{
+									name : "Richard Paige",
+									email : "richard.paige@york.ac.uk"
+								},
+								{
+									name : "Steffen Zschaler",
+									email : "steffen.zschaler@kcl.ac.uk"
+								},
+								{
+									name : "Huseyin Ergin",
+									email : "hergin@crimson.ua.edu"
+								}
 							]
 						}
 					]
@@ -1640,12 +2150,29 @@ var data = [
 						{
 							type : "Workshop",
 							title : "OSS4MDE",
+							abstract : "Just like the previous versions of the workshop, OSS4MDE’16 workshop will bring together researchers, educators and industry representatives interested in modeling and MDE with open source tools. However, compared to previous incarnations, OSS4MDE’16 will be less formal and more interactive, and place more emphasis on promoting open source by inspiring and encouraging potential users and contributors, and supporting existing users and contributors.",
+							url : "http://www.cs.queensu.ca/oss4mde"
 							organizers : [
-								"Juergen Dingel",
-								"Francis Bordeleau",
-								"Jean-Michel Bruel",
-								"Sebastien Gerard",
-								"Sebastian Voss"
+								{
+									name : "Juergen Dingel",
+									email : "dingel@cs.queensu.ca"
+								},
+								{
+									name : "Francis Bordeleau",
+									email : "francis.bordeleau@ericsson.com"
+								},
+								{
+									name : "Jean-Michel Bruel",
+									email : "bruel@irit.fr"
+								},
+								{
+									name : "Sebastien Gerard",
+									email : "sebastien.gerard@cea.fr"
+								},
+								{
+									name : "Sebastian Voss",
+									email : "voss@fortiss.org"
+								}
 							]
 						}
 					]
@@ -1661,11 +2188,25 @@ var data = [
 						{
 							type : "Workshop",
 							title : "EXE",
+							abstract : "Executable models have the potential of bringing major benefits to the development of complex systems, as they provide abstractions of complex system behaviors and allow for the performance of early analyses of that behavior. Despite the potential benefits of executable models, there are still many challenges to solve, such as the lack of maturity in the definition of and tooling for executable modeling languages, and the limited experience with executable modeling in much of the software development industry. The objective of this workshop is to draw attention to the potentials and challenges of executable modeling and advance the state-of-the-art in executable modeling. We aim at bringing together researchers working towards overcoming challenges in executable modeling, as well as practitioners from different application domains and application contexts of executable modeling. The workshop intends to provide a forum for exchanging recent results, ideas, opinions, requirements, and experiences in executable modeling.",
+							url : "http://www.modelexecution.org/"
 							organizers : [
-								"Tanja Mayerhofer",
-								"Philip Langer",
-								"Ed Seidewitz",
-								"Jeff Gray"
+								{
+									name : "Tanja Mayerhofer",
+									email : "mayerhofer@big.tuwien.ac.at"
+								},
+								{
+									name : "Philip Langer",
+									email : "planger@eclipsesource.com"
+								},
+								{
+									name : "Ed Seidewitz",
+									email : "ed-s@modeldriven.com"
+								},
+								{
+									name : "Jeff Gray",
+									email : "gray@cs.ua.edu"
+								}
 							]
 						}
 					]
@@ -1681,10 +2222,21 @@ var data = [
 						{
 							type : "Workshop",
 							title : "MoDeVVa",
+							abstract : "MoDeVVa offers a forum for researchers and practitioners who are working on Verification & Validation and Models-driven Engineering. The major questions of interest in MoDeVVa concern the mutual benefits of MDE and V&V: How can models-driven engineering improve V&V?, and How can V&V leverage the techniques around models-driven engineering? In 2016 we put an emphasis on making the V&V activities of MDE artefacts a systematic process. This includes modeling the V&V activities, investigating the synergies between them or composing different V&V activities to increase the confidence in the verification results.",
+							url : "https://sites.google.com/site/modevva/"
 							organizers : [
-								"Michalis Famelis",
-								"Daniel Ratiu",
-								"Gehan M. K. Selim"
+								{
+									name : "Michalis Famelis",
+									email : "famelis@cs.ubc.ca"
+								},
+								{
+									name : "Daniel Ratiu",
+									email : "daniel.ratiu@siemens.com"
+								},
+								{
+									name : "Gehan M. K. Selim",
+									email : "gehan@cs.queensu.ca"
+								}
 							]
 						}
 					]
@@ -1700,6 +2252,8 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
+							abstract : ,
+							url : 
 							organizers : [
 							]
 						}
@@ -1881,9 +2435,18 @@ var data = [
 						{
 							type : "Workshop",
 							title : "ModComp",
+							abstract : "Model-Driven Engineering (MDE) and Component-Based Software Engineering (CBSE) have been proven to effectively reduce software development complexity by (i) shifting the focus from source code to models and (ii) breaking down the set of desired features and their intricacy into smaller sub-modules, respectively. Moreover, the interplay of MDE and CBSE approaches is gaining recognition as a very promising means to boost the development of software systems by reducing costs and risks and shorten time-to-market. While several attempts to effectively combine MDE and CBSE have been documented, there are still unsolved clashes raising when exploiting interplay of MDE and CBSE, mostly due to mismatches in the related terminology as well as to differences in their basic essence.
+							As satellite event of MoDELS, the goal of ModComp’16 is to gather researchers and practitioners to share opinions, propose solutions to open challenges and generally explore the frontiers of interweaving between MDE and CBSE.",
+							url : "http://www.mrtc.mdh.se/ModComp16/"
 							organizers : [
-								"Federico Ciccozzi",
-								"Ivano Malavolta"
+								{
+									name : "Federico Ciccozzi",
+									email : "federico.ciccozzi@mdh.se"
+								},
+								{
+									name : "Ivano Malavolta",
+									email : "ivano.malavolta@gssi.infn.it"
+								}
 							]
 						}
 					]
@@ -1899,11 +2462,25 @@ var data = [
 						{
 							type : "Workshop",
 							title : "COMMitMDE",
+							abstract : "Nowadays, collaborative model-driven software engineering (MDSE) is gaining a growing interest in both academia and practice. Goal of COMMitMDE 2016 is to bring together researchers and practitioners in order to investigate together (i) the potential impact of collaborative software engineering methods and principles into MDE practices and (ii) how MDE methods and techniques can support collaborative software engineering activities. Also, COMMitMDE aims at assessing the state of the research and practice on collaborative MDE, creating new synergies between tool vendors, researchers, and practitioners.",
+							url : "http://cs.gssi.infn.it/commitmde2016"
 							organizers : [
-								"Henry Muccini",
-								"Ivano Malavolta",
-								"Sébastien Gérard",
-								"Dimitrios S. Kolovos"
+								{
+									name : "Henry Muccini",
+									email : "henry.muccini@univaq.it"
+								},
+								{
+									name : "Ivano Malavolta",
+									email : "ivano.malavolta@gssi.infn.it"
+								},
+								{
+									name : "Sébastien Gérard",
+									email : "sebastien.gerard@cea.fr"
+								},
+								{
+									name : "Dimitrios S. Kolovos",
+									email : "dimitris.kolovos@york.ac.uk"
+								}
 							]
 						}
 					]
@@ -1919,9 +2496,17 @@ var data = [
 						{
 							type : "Workshop",
 							title : "HuFaMo",
+							abstract : "Modeling is a genuinely human enterprise, so many of the questions related to modeling can only be answered by empirical studies of human factors. The HuFaMo workshop series is the premier venue for early stage empirical research involving human factors in modeling. Our goal is to improve the state of the science and professionalism in empirical research in the Model Based Engineering community. Typical examples of such questions might consider the usability of a certain approach such as a method or language, or the emotional states or personal judgements of modelers. We invite submissions regarding empirical studies of emotion, cognition, personality traits of modelers as well as studies about activities and communities of modelers, their culture and capabilities. Beyond conventional papers, we also seek to publish study designs, negative results, and, in fact, suggestions for actual studies to be carried out at the workshop.",
+							url : "http://hufamo.compute.dtu.dk/"
 							organizers : [
-								"Harald Störrle",
-								"Michel Chaudron"
+								{
+									name : "Harald Störrle",
+									email : "hsto@dtu.dk"
+								},
+								{
+									name : "Michel Chaudron",
+									email : "michel.chaudron@cse.gu.se"
+								}
 							]
 						}
 					]
@@ -1937,11 +2522,25 @@ var data = [
 						{
 							type : "Workshop",
 							title : "MRT",
+							abstract : "The complexity of adapting software during runtime has spawned interest in how models can be used to validate, monitor and adapt runtime behaviour. The use of models during runtime extends the use of modeling techniques beyond the design and implementation phases. The goal of this workshop is to look at issues related to developing appropriate model-driven approaches to managing and monitoring the execution of systems. We aim to continue the discussion of research ideas and proposals from researchers who work in relevant areas such as MDE, software architectures, reflection, and autonomic and self-adaptive systems, and provide a “state-of-the-art” research assessment expressed in terms of challenges and achievements.",
+							url : "http://st.inf.tu-dresden.de/MRT16/"
 							organizers : [
-								"Sebastian Götz",
-								"Nelly Bencomo",
-								"Gordon Blair",
-								"Hui Song"
+								{
+									name : "Sebastian Götz",
+									email : "sebastian.goetz@acm.org"
+								},
+								{
+									name : "Nelly Bencomo",
+									email : "nelly@acm.org"
+								},
+								{
+									name : "Gordon Blair",
+									email : "gordon@comp.lancs.ac.uk"
+								},
+								{
+									name : "Hui Song",
+									email : "hui.song@sintef.no"
+								}
 							]
 						}
 					]
@@ -1957,10 +2556,21 @@ var data = [
 						{
 							type : "Workshop",
 							title : "MULTI",
+							abstract : "As interest in multi-level modelling grows, and the range of multi-level modelling tools expands, there is growing interest in consolidating the key principles of the paradigm and clarifying the essential differences between heterogeneous approaches.  Although multi-level modelling has now been used successfully in a variety of industrial projects and standards initiatives, there is still no clear consensus on what the paradigm actually entails and how it should be applied. For example, there are different views on whether it is sound to combine instance facets and type facets into so-called clabjects, whether strict metamodeling is too restrictive, and what tool architectures provide the best framework for modelling with multiple classification levels. This lack of a foundational consensus is mirrored by the lack of a common focus in current multi-level tools. The goal of MULTI 2016 is to address these challenges and continue the community building established in the previous workshops. In particular, the goal is to encourage the community to delineate different approaches to multi-level modelling and define objective ways to evaluate their respective strengths/weaknesses.",
+							url : "http://swt4.informatik.uni-mannheim.de/multi-2016/index.html"
 							organizers : [
-								"Colin Atkinson",
-								"Tony Clark",
-								"Georg Grossmann"
+								{
+									name : "Colin Atkinson",
+									email : "atkinson@informatik.uni-mannheim.de"
+								},
+								{
+									name : "Tony Clark",
+									email : "t.clark@shu.ac.uk"
+								},
+								{
+									name : "Georg Grossmann",
+									email : "georg@cs.unisa.edu.au"
+								}
 							]
 						}
 					]
@@ -1976,9 +2586,18 @@ var data = [
 						{
 							type : "Workshop",
 							title : "GEMOC",
+							abstract : "To cope with complexity, modern software-intensive systems are often split in different concerns to serve the needs of diverse stakeholders. These different concerns are often associated with specialized description languages and technologies, which are based on concern-specific problems and solution concepts. Software developers are thus faced with the challenging task of integrating the different languages and associated technologies used to produce software artifacts in the different concern spaces.
+							The proposed GEMOC 2016 will be a full-day workshop that brings together researchers and practitioners in the modeling languages community to discuss the challenges associated with integrating multiple, heterogeneous modeling languages. The languages of interest range from requirements, to design and runtime languages, and include both general-purpose and domain-specific languages. Challenges related to engineering composable languages, well-formed semantic composition of languages and reasoning about systems described using heterogeneous languages are of particular interest. Following the three previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from the globalization of modeling languages; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.",
+							url : "http://gemoc.org/gemoc2016/"
 							organizers : [
-								"Julien Deantoni",
-								"Jeff Gray"
+								{
+									name : "Julien Deantoni",
+									email : "julien.deantoni@polytech.unice.fr"
+								},
+								{
+									name : "Jeff Gray",
+									email : "gray@cs.ua.edu"
+								}
 							]
 						}
 					]
@@ -1994,6 +2613,8 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
+							abstract : ,
+							url : 
 							organizers : [
 							]
 						}
@@ -2078,9 +2699,18 @@ var data = [
 						{
 							type : "Workshop",
 							title : "ModComp",
+							abstract : "Model-Driven Engineering (MDE) and Component-Based Software Engineering (CBSE) have been proven to effectively reduce software development complexity by (i) shifting the focus from source code to models and (ii) breaking down the set of desired features and their intricacy into smaller sub-modules, respectively. Moreover, the interplay of MDE and CBSE approaches is gaining recognition as a very promising means to boost the development of software systems by reducing costs and risks and shorten time-to-market. While several attempts to effectively combine MDE and CBSE have been documented, there are still unsolved clashes raising when exploiting interplay of MDE and CBSE, mostly due to mismatches in the related terminology as well as to differences in their basic essence.
+							As satellite event of MoDELS, the goal of ModComp’16 is to gather researchers and practitioners to share opinions, propose solutions to open challenges and generally explore the frontiers of interweaving between MDE and CBSE.",
+							url : "http://www.mrtc.mdh.se/ModComp16/"
 							organizers : [
-								"Federico Ciccozzi",
-								"Ivano Malavolta"
+								{
+									name : "Federico Ciccozzi",
+									email : "federico.ciccozzi@mdh.se"
+								},
+								{
+									name : "Ivano Malavolta",
+									email : "ivano.malavolta@gssi.infn.it"
+								}
 							]
 						}
 					]
@@ -2096,11 +2726,25 @@ var data = [
 						{
 							type : "Workshop",
 							title : "COMMitMDE",
+							abstract : "Nowadays, collaborative model-driven software engineering (MDSE) is gaining a growing interest in both academia and practice. Goal of COMMitMDE 2016 is to bring together researchers and practitioners in order to investigate together (i) the potential impact of collaborative software engineering methods and principles into MDE practices and (ii) how MDE methods and techniques can support collaborative software engineering activities. Also, COMMitMDE aims at assessing the state of the research and practice on collaborative MDE, creating new synergies between tool vendors, researchers, and practitioners.",
+							url : "http://cs.gssi.infn.it/commitmde2016"
 							organizers : [
-								"Henry Muccini",
-								"Ivano Malavolta",
-								"Sébastien Gérard",
-								"Dimitrios S. Kolovos"
+								{
+									name : "Henry Muccini",
+									email : "henry.muccini@univaq.it"
+								},
+								{
+									name : "Ivano Malavolta",
+									email : "ivano.malavolta@gssi.infn.it"
+								},
+								{
+									name : "Sébastien Gérard",
+									email : "sebastien.gerard@cea.fr"
+								},
+								{
+									name : "Dimitrios S. Kolovos",
+									email : "dimitris.kolovos@york.ac.uk"
+								}
 							]
 						}
 					]
@@ -2116,9 +2760,17 @@ var data = [
 						{
 							type : "Workshop",
 							title : "HuFaMo",
+							abstract : "Modeling is a genuinely human enterprise, so many of the questions related to modeling can only be answered by empirical studies of human factors. The HuFaMo workshop series is the premier venue for early stage empirical research involving human factors in modeling. Our goal is to improve the state of the science and professionalism in empirical research in the Model Based Engineering community. Typical examples of such questions might consider the usability of a certain approach such as a method or language, or the emotional states or personal judgements of modelers. We invite submissions regarding empirical studies of emotion, cognition, personality traits of modelers as well as studies about activities and communities of modelers, their culture and capabilities. Beyond conventional papers, we also seek to publish study designs, negative results, and, in fact, suggestions for actual studies to be carried out at the workshop.",
+							url : "http://hufamo.compute.dtu.dk/"
 							organizers : [
-								"Harald Störrle",
-								"Michel Chaudron"
+								{
+									name : "Harald Störrle",
+									email : "hsto@dtu.dk"
+								},
+								{
+									name : "Michel Chaudron",
+									email : "michel.chaudron@cse.gu.se"
+								}
 							]
 						}
 					]
@@ -2134,11 +2786,25 @@ var data = [
 						{
 							type : "Workshop",
 							title : "MRT",
+							abstract : "The complexity of adapting software during runtime has spawned interest in how models can be used to validate, monitor and adapt runtime behaviour. The use of models during runtime extends the use of modeling techniques beyond the design and implementation phases. The goal of this workshop is to look at issues related to developing appropriate model-driven approaches to managing and monitoring the execution of systems. We aim to continue the discussion of research ideas and proposals from researchers who work in relevant areas such as MDE, software architectures, reflection, and autonomic and self-adaptive systems, and provide a “state-of-the-art” research assessment expressed in terms of challenges and achievements.",
+							url : "http://st.inf.tu-dresden.de/MRT16/"
 							organizers : [
-								"Sebastian Götz",
-								"Nelly Bencomo",
-								"Gordon Blair",
-								"Hui Song"
+								{
+									name : "Sebastian Götz",
+									email : "sebastian.goetz@acm.org"
+								},
+								{
+									name : "Nelly Bencomo",
+									email : "nelly@acm.org"
+								},
+								{
+									name : "Gordon Blair",
+									email : "gordon@comp.lancs.ac.uk"
+								},
+								{
+									name : "Hui Song",
+									email : "hui.song@sintef.no"
+								}
 							]
 						}
 					]
@@ -2154,10 +2820,21 @@ var data = [
 						{
 							type : "Workshop",
 							title : "MULTI",
+							abstract : "As interest in multi-level modelling grows, and the range of multi-level modelling tools expands, there is growing interest in consolidating the key principles of the paradigm and clarifying the essential differences between heterogeneous approaches.  Although multi-level modelling has now been used successfully in a variety of industrial projects and standards initiatives, there is still no clear consensus on what the paradigm actually entails and how it should be applied. For example, there are different views on whether it is sound to combine instance facets and type facets into so-called clabjects, whether strict metamodeling is too restrictive, and what tool architectures provide the best framework for modelling with multiple classification levels. This lack of a foundational consensus is mirrored by the lack of a common focus in current multi-level tools. The goal of MULTI 2016 is to address these challenges and continue the community building established in the previous workshops. In particular, the goal is to encourage the community to delineate different approaches to multi-level modelling and define objective ways to evaluate their respective strengths/weaknesses.",
+							url : "http://swt4.informatik.uni-mannheim.de/multi-2016/index.html"
 							organizers : [
-								"Colin Atkinson",
-								"Tony Clark",
-								"Georg Grossmann"
+								{
+									name : "Colin Atkinson",
+									email : "atkinson@informatik.uni-mannheim.de"
+								},
+								{
+									name : "Tony Clark",
+									email : "t.clark@shu.ac.uk"
+								},
+								{
+									name : "Georg Grossmann",
+									email : "georg@cs.unisa.edu.au"
+								}
 							]
 						}
 					]
@@ -2173,9 +2850,18 @@ var data = [
 						{
 							type : "Workshop",
 							title : "GEMOC",
+							abstract : "To cope with complexity, modern software-intensive systems are often split in different concerns to serve the needs of diverse stakeholders. These different concerns are often associated with specialized description languages and technologies, which are based on concern-specific problems and solution concepts. Software developers are thus faced with the challenging task of integrating the different languages and associated technologies used to produce software artifacts in the different concern spaces.
+							The proposed GEMOC 2016 will be a full-day workshop that brings together researchers and practitioners in the modeling languages community to discuss the challenges associated with integrating multiple, heterogeneous modeling languages. The languages of interest range from requirements, to design and runtime languages, and include both general-purpose and domain-specific languages. Challenges related to engineering composable languages, well-formed semantic composition of languages and reasoning about systems described using heterogeneous languages are of particular interest. Following the three previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from the globalization of modeling languages; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.",
+							url : "http://gemoc.org/gemoc2016/"
 							organizers : [
-								"Julien Deantoni",
-								"Jeff Gray"
+								{
+									name : "Julien Deantoni",
+									email : "julien.deantoni@polytech.unice.fr"
+								},
+								{
+									name : "Jeff Gray",
+									email : "gray@cs.ua.edu"
+								}
 							]
 						}
 					]
@@ -2191,6 +2877,8 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
+							abstract : ,
+							url : 
 							organizers : [
 							]
 						}
@@ -2290,9 +2978,18 @@ var data = [
 						{
 							type : "Workshop",
 							title : "ModComp",
+							abstract : "Model-Driven Engineering (MDE) and Component-Based Software Engineering (CBSE) have been proven to effectively reduce software development complexity by (i) shifting the focus from source code to models and (ii) breaking down the set of desired features and their intricacy into smaller sub-modules, respectively. Moreover, the interplay of MDE and CBSE approaches is gaining recognition as a very promising means to boost the development of software systems by reducing costs and risks and shorten time-to-market. While several attempts to effectively combine MDE and CBSE have been documented, there are still unsolved clashes raising when exploiting interplay of MDE and CBSE, mostly due to mismatches in the related terminology as well as to differences in their basic essence.
+							As satellite event of MoDELS, the goal of ModComp’16 is to gather researchers and practitioners to share opinions, propose solutions to open challenges and generally explore the frontiers of interweaving between MDE and CBSE.",
+							url : "http://www.mrtc.mdh.se/ModComp16/"
 							organizers : [
-								"Federico Ciccozzi",
-								"Ivano Malavolta"
+								{
+									name : "Federico Ciccozzi",
+									email : "federico.ciccozzi@mdh.se"
+								},
+								{
+									name : "Ivano Malavolta",
+									email : "ivano.malavolta@gssi.infn.it"
+								}
 							]
 						}
 					]
@@ -2308,11 +3005,25 @@ var data = [
 						{
 							type : "Workshop",
 							title : "COMMitMDE",
+							abstract : "Nowadays, collaborative model-driven software engineering (MDSE) is gaining a growing interest in both academia and practice. Goal of COMMitMDE 2016 is to bring together researchers and practitioners in order to investigate together (i) the potential impact of collaborative software engineering methods and principles into MDE practices and (ii) how MDE methods and techniques can support collaborative software engineering activities. Also, COMMitMDE aims at assessing the state of the research and practice on collaborative MDE, creating new synergies between tool vendors, researchers, and practitioners.",
+							url : "http://cs.gssi.infn.it/commitmde2016"
 							organizers : [
-								"Henry Muccini",
-								"Ivano Malavolta",
-								"Sébastien Gérard",
-								"Dimitrios S. Kolovos"
+								{
+									name : "Henry Muccini",
+									email : "henry.muccini@univaq.it"
+								},
+								{
+									name : "Ivano Malavolta",
+									email : "ivano.malavolta@gssi.infn.it"
+								},
+								{
+									name : "Sébastien Gérard",
+									email : "sebastien.gerard@cea.fr"
+								},
+								{
+									name : "Dimitrios S. Kolovos",
+									email : "dimitris.kolovos@york.ac.uk"
+								}
 							]
 						}
 					]
@@ -2328,9 +3039,17 @@ var data = [
 						{
 							type : "Workshop",
 							title : "HuFaMo",
+							abstract : "Modeling is a genuinely human enterprise, so many of the questions related to modeling can only be answered by empirical studies of human factors. The HuFaMo workshop series is the premier venue for early stage empirical research involving human factors in modeling. Our goal is to improve the state of the science and professionalism in empirical research in the Model Based Engineering community. Typical examples of such questions might consider the usability of a certain approach such as a method or language, or the emotional states or personal judgements of modelers. We invite submissions regarding empirical studies of emotion, cognition, personality traits of modelers as well as studies about activities and communities of modelers, their culture and capabilities. Beyond conventional papers, we also seek to publish study designs, negative results, and, in fact, suggestions for actual studies to be carried out at the workshop.",
+							url : "http://hufamo.compute.dtu.dk/"
 							organizers : [
-								"Harald Störrle",
-								"Michel Chaudron"
+								{
+									name : "Harald Störrle",
+									email : "hsto@dtu.dk"
+								},
+								{
+									name : "Michel Chaudron",
+									email : "michel.chaudron@cse.gu.se"
+								}
 							]
 						}
 					]
@@ -2346,11 +3065,25 @@ var data = [
 						{
 							type : "Workshop",
 							title : "MRT",
+							abstract : "The complexity of adapting software during runtime has spawned interest in how models can be used to validate, monitor and adapt runtime behaviour. The use of models during runtime extends the use of modeling techniques beyond the design and implementation phases. The goal of this workshop is to look at issues related to developing appropriate model-driven approaches to managing and monitoring the execution of systems. We aim to continue the discussion of research ideas and proposals from researchers who work in relevant areas such as MDE, software architectures, reflection, and autonomic and self-adaptive systems, and provide a “state-of-the-art” research assessment expressed in terms of challenges and achievements.",
+							url : "http://st.inf.tu-dresden.de/MRT16/"
 							organizers : [
-								"Sebastian Götz",
-								"Nelly Bencomo",
-								"Gordon Blair",
-								"Hui Song"
+								{
+									name : "Sebastian Götz",
+									email : "sebastian.goetz@acm.org"
+								},
+								{
+									name : "Nelly Bencomo",
+									email : "nelly@acm.org"
+								},
+								{
+									name : "Gordon Blair",
+									email : "gordon@comp.lancs.ac.uk"
+								},
+								{
+									name : "Hui Song",
+									email : "hui.song@sintef.no"
+								}
 							]
 						}
 					]
@@ -2366,10 +3099,21 @@ var data = [
 						{
 							type : "Workshop",
 							title : "MULTI",
+							abstract : "As interest in multi-level modelling grows, and the range of multi-level modelling tools expands, there is growing interest in consolidating the key principles of the paradigm and clarifying the essential differences between heterogeneous approaches.  Although multi-level modelling has now been used successfully in a variety of industrial projects and standards initiatives, there is still no clear consensus on what the paradigm actually entails and how it should be applied. For example, there are different views on whether it is sound to combine instance facets and type facets into so-called clabjects, whether strict metamodeling is too restrictive, and what tool architectures provide the best framework for modelling with multiple classification levels. This lack of a foundational consensus is mirrored by the lack of a common focus in current multi-level tools. The goal of MULTI 2016 is to address these challenges and continue the community building established in the previous workshops. In particular, the goal is to encourage the community to delineate different approaches to multi-level modelling and define objective ways to evaluate their respective strengths/weaknesses.",
+							url : "http://swt4.informatik.uni-mannheim.de/multi-2016/index.html"
 							organizers : [
-								"Colin Atkinson",
-								"Tony Clark",
-								"Georg Grossmann"
+								{
+									name : "Colin Atkinson",
+									email : "atkinson@informatik.uni-mannheim.de"
+								},
+								{
+									name : "Tony Clark",
+									email : "t.clark@shu.ac.uk"
+								},
+								{
+									name : "Georg Grossmann",
+									email : "georg@cs.unisa.edu.au"
+								}
 							]
 						}
 					]
@@ -2385,9 +3129,18 @@ var data = [
 						{
 							type : "Workshop",
 							title : "GEMOC",
+							abstract : "To cope with complexity, modern software-intensive systems are often split in different concerns to serve the needs of diverse stakeholders. These different concerns are often associated with specialized description languages and technologies, which are based on concern-specific problems and solution concepts. Software developers are thus faced with the challenging task of integrating the different languages and associated technologies used to produce software artifacts in the different concern spaces.
+							The proposed GEMOC 2016 will be a full-day workshop that brings together researchers and practitioners in the modeling languages community to discuss the challenges associated with integrating multiple, heterogeneous modeling languages. The languages of interest range from requirements, to design and runtime languages, and include both general-purpose and domain-specific languages. Challenges related to engineering composable languages, well-formed semantic composition of languages and reasoning about systems described using heterogeneous languages are of particular interest. Following the three previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from the globalization of modeling languages; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.",
+							url : "http://gemoc.org/gemoc2016/"
 							organizers : [
-								"Julien Deantoni",
-								"Jeff Gray"
+								{
+									name : "Julien Deantoni",
+									email : "julien.deantoni@polytech.unice.fr"
+								},
+								{
+									name : "Jeff Gray",
+									email : "gray@cs.ua.edu"
+								}
 							]
 						}
 					]
@@ -2403,6 +3156,8 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
+							abstract : ,
+							url : 
 							organizers : [
 							]
 						}
@@ -2498,9 +3253,18 @@ var data = [
 						{
 							type : "Workshop",
 							title : "ModComp",
+							abstract : "Model-Driven Engineering (MDE) and Component-Based Software Engineering (CBSE) have been proven to effectively reduce software development complexity by (i) shifting the focus from source code to models and (ii) breaking down the set of desired features and their intricacy into smaller sub-modules, respectively. Moreover, the interplay of MDE and CBSE approaches is gaining recognition as a very promising means to boost the development of software systems by reducing costs and risks and shorten time-to-market. While several attempts to effectively combine MDE and CBSE have been documented, there are still unsolved clashes raising when exploiting interplay of MDE and CBSE, mostly due to mismatches in the related terminology as well as to differences in their basic essence.
+							As satellite event of MoDELS, the goal of ModComp’16 is to gather researchers and practitioners to share opinions, propose solutions to open challenges and generally explore the frontiers of interweaving between MDE and CBSE.",
+							url : "http://www.mrtc.mdh.se/ModComp16/"
 							organizers : [
-								"Federico Ciccozzi",
-								"Ivano Malavolta"
+								{
+									name : "Federico Ciccozzi",
+									email : "federico.ciccozzi@mdh.se"
+								},
+								{
+									name : "Ivano Malavolta",
+									email : "ivano.malavolta@gssi.infn.it"
+								}
 							]
 						}
 					]
@@ -2516,11 +3280,25 @@ var data = [
 						{
 							type : "Workshop",
 							title : "COMMitMDE",
+							abstract : "Nowadays, collaborative model-driven software engineering (MDSE) is gaining a growing interest in both academia and practice. Goal of COMMitMDE 2016 is to bring together researchers and practitioners in order to investigate together (i) the potential impact of collaborative software engineering methods and principles into MDE practices and (ii) how MDE methods and techniques can support collaborative software engineering activities. Also, COMMitMDE aims at assessing the state of the research and practice on collaborative MDE, creating new synergies between tool vendors, researchers, and practitioners.",
+							url : "http://cs.gssi.infn.it/commitmde2016"
 							organizers : [
-								"Henry Muccini",
-								"Ivano Malavolta",
-								"Sébastien Gérard",
-								"Dimitrios S. Kolovos"
+								{
+									name : "Henry Muccini",
+									email : "henry.muccini@univaq.it"
+								},
+								{
+									name : "Ivano Malavolta",
+									email : "ivano.malavolta@gssi.infn.it"
+								},
+								{
+									name : "Sébastien Gérard",
+									email : "sebastien.gerard@cea.fr"
+								},
+								{
+									name : "Dimitrios S. Kolovos",
+									email : "dimitris.kolovos@york.ac.uk"
+								}
 							]
 						}
 					]
@@ -2536,9 +3314,17 @@ var data = [
 						{
 							type : "Workshop",
 							title : "HuFaMo",
+							abstract : "Modeling is a genuinely human enterprise, so many of the questions related to modeling can only be answered by empirical studies of human factors. The HuFaMo workshop series is the premier venue for early stage empirical research involving human factors in modeling. Our goal is to improve the state of the science and professionalism in empirical research in the Model Based Engineering community. Typical examples of such questions might consider the usability of a certain approach such as a method or language, or the emotional states or personal judgements of modelers. We invite submissions regarding empirical studies of emotion, cognition, personality traits of modelers as well as studies about activities and communities of modelers, their culture and capabilities. Beyond conventional papers, we also seek to publish study designs, negative results, and, in fact, suggestions for actual studies to be carried out at the workshop.",
+							url : "http://hufamo.compute.dtu.dk/"
 							organizers : [
-								"Harald Störrle",
-								"Michel Chaudron"
+								{
+									name : "Harald Störrle",
+									email : "hsto@dtu.dk"
+								},
+								{
+									name : "Michel Chaudron",
+									email : "michel.chaudron@cse.gu.se"
+								}
 							]
 						}
 					]
@@ -2554,11 +3340,25 @@ var data = [
 						{
 							type : "Workshop",
 							title : "MRT",
+							abstract : "The complexity of adapting software during runtime has spawned interest in how models can be used to validate, monitor and adapt runtime behaviour. The use of models during runtime extends the use of modeling techniques beyond the design and implementation phases. The goal of this workshop is to look at issues related to developing appropriate model-driven approaches to managing and monitoring the execution of systems. We aim to continue the discussion of research ideas and proposals from researchers who work in relevant areas such as MDE, software architectures, reflection, and autonomic and self-adaptive systems, and provide a “state-of-the-art” research assessment expressed in terms of challenges and achievements.",
+							url : "http://st.inf.tu-dresden.de/MRT16/"
 							organizers : [
-								"Sebastian Götz",
-								"Nelly Bencomo",
-								"Gordon Blair",
-								"Hui Song"
+								{
+									name : "Sebastian Götz",
+									email : "sebastian.goetz@acm.org"
+								},
+								{
+									name : "Nelly Bencomo",
+									email : "nelly@acm.org"
+								},
+								{
+									name : "Gordon Blair",
+									email : "gordon@comp.lancs.ac.uk"
+								},
+								{
+									name : "Hui Song",
+									email : "hui.song@sintef.no"
+								}
 							]
 						}
 					]
@@ -2574,10 +3374,21 @@ var data = [
 						{
 							type : "Workshop",
 							title : "MULTI",
+							abstract : "As interest in multi-level modelling grows, and the range of multi-level modelling tools expands, there is growing interest in consolidating the key principles of the paradigm and clarifying the essential differences between heterogeneous approaches.  Although multi-level modelling has now been used successfully in a variety of industrial projects and standards initiatives, there is still no clear consensus on what the paradigm actually entails and how it should be applied. For example, there are different views on whether it is sound to combine instance facets and type facets into so-called clabjects, whether strict metamodeling is too restrictive, and what tool architectures provide the best framework for modelling with multiple classification levels. This lack of a foundational consensus is mirrored by the lack of a common focus in current multi-level tools. The goal of MULTI 2016 is to address these challenges and continue the community building established in the previous workshops. In particular, the goal is to encourage the community to delineate different approaches to multi-level modelling and define objective ways to evaluate their respective strengths/weaknesses.",
+							url : "http://swt4.informatik.uni-mannheim.de/multi-2016/index.html"
 							organizers : [
-								"Colin Atkinson",
-								"Tony Clark",
-								"Georg Grossmann"
+								{
+									name : "Colin Atkinson",
+									email : "atkinson@informatik.uni-mannheim.de"
+								},
+								{
+									name : "Tony Clark",
+									email : "t.clark@shu.ac.uk"
+								},
+								{
+									name : "Georg Grossmann",
+									email : "georg@cs.unisa.edu.au"
+								}
 							]
 						}
 					]
@@ -2593,9 +3404,18 @@ var data = [
 						{
 							type : "Workshop",
 							title : "GEMOC",
+							abstract : "To cope with complexity, modern software-intensive systems are often split in different concerns to serve the needs of diverse stakeholders. These different concerns are often associated with specialized description languages and technologies, which are based on concern-specific problems and solution concepts. Software developers are thus faced with the challenging task of integrating the different languages and associated technologies used to produce software artifacts in the different concern spaces.
+							The proposed GEMOC 2016 will be a full-day workshop that brings together researchers and practitioners in the modeling languages community to discuss the challenges associated with integrating multiple, heterogeneous modeling languages. The languages of interest range from requirements, to design and runtime languages, and include both general-purpose and domain-specific languages. Challenges related to engineering composable languages, well-formed semantic composition of languages and reasoning about systems described using heterogeneous languages are of particular interest. Following the three previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from the globalization of modeling languages; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.",
+							url : "http://gemoc.org/gemoc2016/"
 							organizers : [
-								"Julien Deantoni",
-								"Jeff Gray"
+								{
+									name : "Julien Deantoni",
+									email : "julien.deantoni@polytech.unice.fr"
+								},
+								{
+									name : "Jeff Gray",
+									email : "gray@cs.ua.edu"
+								}
 							]
 						}
 					]
@@ -2611,6 +3431,8 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
+							abstract : ,
+							url : 
 							organizers : [
 							]
 						}
@@ -2772,8 +3594,14 @@ var data = [
 									icalStart : "20161005T090000Z",
 									icalEnd : "20161005T092500Z",
 									authors : [
-										"Invidunt At",
-										"Sed Sea"
+										{
+											name : "Invidunt At",
+											email : 
+										},
+										{
+											name : "Sed Sea",
+											email : 
+										}
 									]
 								},
 								{
@@ -2783,9 +3611,18 @@ var data = [
 									icalStart : "20161005T092500Z",
 									icalEnd : "20161005T095000Z",
 									authors : [
-										"Dolores Et",
-										"Vero Et",
-										"Sed Kasd"
+										{
+											name : "Dolores Et",
+											email : 
+										},
+										{
+											name : "Vero Et",
+											email : 
+										},
+										{
+											name : "Sed Kasd",
+											email : 
+										}
 									]
 								},
 								{
@@ -2795,12 +3632,30 @@ var data = [
 									icalStart : "20161005T095000Z",
 									icalEnd : "20161005T101500Z",
 									authors : [
-										"Kasd Sanctus",
-										"Gubergren Consetetur",
-										"Invidunt Nonumy",
-										"Et Eos",
-										"Vero Et",
-										"Ipsum Magna"
+										{
+											name : "Kasd Sanctus",
+											email : 
+										},
+										{
+											name : "Gubergren Consetetur",
+											email : 
+										},
+										{
+											name : "Invidunt Nonumy",
+											email : 
+										},
+										{
+											name : "Et Eos",
+											email : 
+										},
+										{
+											name : "Vero Et",
+											email : 
+										},
+										{
+											name : "Ipsum Magna",
+											email : 
+										}
 									]
 								}
 							]
@@ -2827,12 +3682,30 @@ var data = [
 									icalStart : "20161005T090000Z",
 									icalEnd : "20161005T092500Z",
 									authors : [
-										"Aliquyam At",
-										"Ipsum Invidunt",
-										"Ipsum Magna",
-										"Takimata Et",
-										"Est Lorem",
-										"Invidunt At"
+										{
+											name : "Aliquyam At",
+											email : 
+										},
+										{
+											name : "Ipsum Invidunt",
+											email : 
+										},
+										{
+											name : "Ipsum Magna",
+											email : 
+										},
+										{
+											name : "Takimata Et",
+											email : 
+										},
+										{
+											name : "Est Lorem",
+											email : 
+										},
+										{
+											name : "Invidunt At",
+											email : 
+										}
 									]
 								},
 								{
@@ -2842,11 +3715,26 @@ var data = [
 									icalStart : "20161005T092500Z",
 									icalEnd : "20161005T095000Z",
 									authors : [
-										"Eos Et",
-										"No Aliquyam",
-										"Kasd Dolores",
-										"Gubergren At",
-										"Eirmod Consetetur"
+										{
+											name : "Eos Et",
+											email : 
+										},
+										{
+											name : "No Aliquyam",
+											email : 
+										},
+										{
+											name : "Kasd Dolores",
+											email : 
+										},
+										{
+											name : "Gubergren At",
+											email : 
+										},
+										{
+											name : "Eirmod Consetetur",
+											email : 
+										}
 									]
 								},
 								{
@@ -2856,14 +3744,38 @@ var data = [
 									icalStart : "20161005T095000Z",
 									icalEnd : "20161005T101500Z",
 									authors : [
-										"Ipsum Nonumy",
-										"Vero Ea",
-										"Kasd Sanctus",
-										"Ipsum Invidunt",
-										"Nonumy Dolore",
-										"Ipsum Nonumy",
-										"Clita Tempor",
-										"Ipsum Magna"
+										{
+											name : "Ipsum Nonumy",
+											email : 
+										},
+										{
+											name : "Vero Ea",
+											email : 
+										},
+										{
+											name : "Kasd Sanctus",
+											email : 
+										},
+										{
+											name : "Ipsum Invidunt",
+											email : 
+										},
+										{
+											name : "Nonumy Dolore",
+											email : 
+										},
+										{
+											name : "Ipsum Nonumy",
+											email : 
+										},
+										{
+											name : "Clita Tempor",
+											email : 
+										},
+										{
+											name : "Ipsum Magna",
+											email : 
+										}
 									]
 								}
 							]
@@ -2890,11 +3802,26 @@ var data = [
 									icalStart : "20161005T090000Z",
 									icalEnd : "20161005T092500Z",
 									authors : [
-										"Eos Et",
-										"No Aliquyam",
-										"Kasd Dolores",
-										"Gubergren At",
-										"Eirmod Consetetur"
+										{
+											name : "Eos Et",
+											email : 
+										},
+										{
+											name : "No Aliquyam",
+											email : 
+										},
+										{
+											name : "Kasd Dolores",
+											email : 
+										},
+										{
+											name : "Gubergren At",
+											email : 
+										},
+										{
+											name : "Eirmod Consetetur",
+											email : 
+										}
 									]
 								},
 								{
@@ -2904,12 +3831,30 @@ var data = [
 									icalStart : "20161005T092500Z",
 									icalEnd : "20161005T095000Z",
 									authors : [
-										"Aliquyam At",
-										"Ipsum Invidunt",
-										"Ipsum Magna",
-										"Takimata Et",
-										"Est Lorem",
-										"Invidunt At"
+										{
+											name : "Aliquyam At",
+											email : 
+										},
+										{
+											name : "Ipsum Invidunt",
+											email : 
+										},
+										{
+											name : "Ipsum Magna",
+											email : 
+										},
+										{
+											name : "Takimata Et",
+											email : 
+										},
+										{
+											name : "Est Lorem",
+											email : 
+										},
+										{
+											name : "Invidunt At",
+											email : 
+										}
 									]
 								},
 								{
@@ -2919,12 +3864,30 @@ var data = [
 									icalStart : "20161005T095000Z",
 									icalEnd : "20161005T101500Z",
 									authors : [
-										"Nonumy Ea",
-										"Kasd Dolores",
-										"Voluptua Voluptua",
-										"Est Lorem",
-										"Ipsum Magna",
-										"Consetetur Ipsum"
+										{
+											name : "Nonumy Ea",
+											email : 
+										},
+										{
+											name : "Kasd Dolores",
+											email : 
+										},
+										{
+											name : "Voluptua Voluptua",
+											email : 
+										},
+										{
+											name : "Est Lorem",
+											email : 
+										},
+										{
+											name : "Ipsum Magna",
+											email : 
+										},
+										{
+											name : "Consetetur Ipsum",
+											email : 
+										}
 									]
 								}
 							]
@@ -3011,13 +3974,34 @@ var data = [
 									icalStart : "20161005T120000Z",
 									icalEnd : "20161005T122500Z",
 									authors : [
-										"Gubergren Consetetur",
-										"Labore Sed",
-										"Voluptua Voluptua",
-										"Diam Et",
-										"Ipsum Invidunt",
-										"Ipsum Magna",
-										"Ipsum Magna"
+										{
+											name : "Gubergren Consetetur",
+											email : 
+										},
+										{
+											name : "Labore Sed",
+											email : 
+										},
+										{
+											name : "Voluptua Voluptua",
+											email : 
+										},
+										{
+											name : "Diam Et",
+											email : 
+										},
+										{
+											name : "Ipsum Invidunt",
+											email : 
+										},
+										{
+											name : "Ipsum Magna",
+											email : 
+										},
+										{
+											name : "Ipsum Magna",
+											email : 
+										}
 									]
 								},
 								{
@@ -3027,10 +4011,22 @@ var data = [
 									icalStart : "20161005T122500Z",
 									icalEnd : "20161005T125000Z",
 									authors : [
-										"Magna Dolore",
-										"Magna Labore",
-										"Sit Sadipscing",
-										"Eos Et"
+										{
+											name : "Magna Dolore",
+											email : 
+										},
+										{
+											name : "Magna Labore",
+											email : 
+										},
+										{
+											name : "Sit Sadipscing",
+											email : 
+										},
+										{
+											name : "Eos Et",
+											email : 
+										}
 									]
 								},
 								{
@@ -3040,13 +4036,34 @@ var data = [
 									icalStart : "20161005T125000Z",
 									icalEnd : "20161005T131500Z",
 									authors : [
-										"At No",
-										"Sea Amet",
-										"Amet Sit",
-										"Diam Et",
-										"Nonumy Ea",
-										"Est Et",
-										"Dolores Justo"
+										{
+											name : "At No",
+											email : 
+										},
+										{
+											name : "Sea Amet",
+											email : 
+										},
+										{
+											name : "Amet Sit",
+											email : 
+										},
+										{
+											name : "Diam Et",
+											email : 
+										},
+										{
+											name : "Nonumy Ea",
+											email : 
+										},
+										{
+											name : "Est Et",
+											email : 
+										},
+										{
+											name : "Dolores Justo",
+											email : 
+										}
 									]
 								}
 							]
@@ -3073,13 +4090,34 @@ var data = [
 									icalStart : "20161005T120000Z",
 									icalEnd : "20161005T122500Z",
 									authors : [
-										"Sed Consetetur",
-										"At No",
-										"Lorem No",
-										"Tempor Ea",
-										"Invidunt Nonumy",
-										"Diam Diam",
-										"Dolor Eirmod"
+										{
+											name : "Sed Consetetur",
+											email : 
+										},
+										{
+											name : "At No",
+											email : 
+										},
+										{
+											name : "Lorem No",
+											email : 
+										},
+										{
+											name : "Tempor Ea",
+											email : 
+										},
+										{
+											name : "Invidunt Nonumy",
+											email : 
+										},
+										{
+											name : "Diam Diam",
+											email : 
+										},
+										{
+											name : "Dolor Eirmod",
+											email : 
+										}
 									]
 								},
 								{
@@ -3089,10 +4127,22 @@ var data = [
 									icalStart : "20161005T122500Z",
 									icalEnd : "20161005T125000Z",
 									authors : [
-										"Kasd Dolores",
-										"Sed Consetetur",
-										"Sadipscing Ipsum",
-										"Magna Labore"
+										{
+											name : "Kasd Dolores",
+											email : 
+										},
+										{
+											name : "Sed Consetetur",
+											email : 
+										},
+										{
+											name : "Sadipscing Ipsum",
+											email : 
+										},
+										{
+											name : "Magna Labore",
+											email : 
+										}
 									]
 								},
 								{
@@ -3102,12 +4152,30 @@ var data = [
 									icalStart : "20161005T125000Z",
 									icalEnd : "20161005T131500Z",
 									authors : [
-										"Accusam Ipsum",
-										"Amet Sit",
-										"Voluptua Dolore",
-										"Sed Sea",
-										"Voluptua Voluptua",
-										"Dolores Et"
+										{
+											name : "Accusam Ipsum",
+											email : 
+										},
+										{
+											name : "Amet Sit",
+											email : 
+										},
+										{
+											name : "Voluptua Dolore",
+											email : 
+										},
+										{
+											name : "Sed Sea",
+											email : 
+										},
+										{
+											name : "Voluptua Voluptua",
+											email : 
+										},
+										{
+											name : "Dolores Et",
+											email : 
+										}
 									]
 								}
 							]
@@ -3134,10 +4202,22 @@ var data = [
 									icalStart : "20161005T120000Z",
 									icalEnd : "20161005T122500Z",
 									authors : [
-										"Accusam Ipsum",
-										"Magna Dolore",
-										"Accusam Ipsum",
-										"Labore Sed"
+										{
+											name : "Accusam Ipsum",
+											email : 
+										},
+										{
+											name : "Magna Dolore",
+											email : 
+										},
+										{
+											name : "Accusam Ipsum",
+											email : 
+										},
+										{
+											name : "Labore Sed",
+											email : 
+										}
 									]
 								},
 								{
@@ -3147,9 +4227,18 @@ var data = [
 									icalStart : "20161005T122500Z",
 									icalEnd : "20161005T125000Z",
 									authors : [
-										"Labore Sed",
-										"Et Eos",
-										"Stet No"
+										{
+											name : "Labore Sed",
+											email : 
+										},
+										{
+											name : "Et Eos",
+											email : 
+										},
+										{
+											name : "Stet No",
+											email : 
+										}
 									]
 								},
 								{
@@ -3159,9 +4248,18 @@ var data = [
 									icalStart : "20161005T125000Z",
 									icalEnd : "20161005T131500Z",
 									authors : [
-										"Dolores Et",
-										"Vero Et",
-										"Sed Kasd"
+										{
+											name : "Dolores Et",
+											email : 
+										},
+										{
+											name : "Vero Et",
+											email : 
+										},
+										{
+											name : "Sed Kasd",
+											email : 
+										}
 									]
 								}
 							]
@@ -3255,13 +4353,34 @@ var data = [
 									icalStart : "20161005T140000Z",
 									icalEnd : "20161005T142500Z",
 									authors : [
-										"Nonumy At",
-										"Gubergren At",
-										"Ea Diam",
-										"Et Diam",
-										"At Justo",
-										"No Aliquyam",
-										"Tempor Et"
+										{
+											name : "Nonumy At",
+											email : 
+										},
+										{
+											name : "Gubergren At",
+											email : 
+										},
+										{
+											name : "Ea Diam",
+											email : 
+										},
+										{
+											name : "Et Diam",
+											email : 
+										},
+										{
+											name : "At Justo",
+											email : 
+										},
+										{
+											name : "No Aliquyam",
+											email : 
+										},
+										{
+											name : "Tempor Et",
+											email : 
+										}
 									]
 								},
 								{
@@ -3271,8 +4390,14 @@ var data = [
 									icalStart : "20161005T142500Z",
 									icalEnd : "20161005T145000Z",
 									authors : [
-										"Magna Takimata",
-										"Lorem Lorem"
+										{
+											name : "Magna Takimata",
+											email : 
+										},
+										{
+											name : "Lorem Lorem",
+											email : 
+										}
 									]
 								},
 								{
@@ -3282,11 +4407,26 @@ var data = [
 									icalStart : "20161005T145000Z",
 									icalEnd : "20161005T151500Z",
 									authors : [
-										"Lorem Lorem",
-										"Takimata Et",
-										"Dolores Justo",
-										"Duo Nonumy",
-										"Sadipscing Ipsum"
+										{
+											name : "Lorem Lorem",
+											email : 
+										},
+										{
+											name : "Takimata Et",
+											email : 
+										},
+										{
+											name : "Dolores Justo",
+											email : 
+										},
+										{
+											name : "Duo Nonumy",
+											email : 
+										},
+										{
+											name : "Sadipscing Ipsum",
+											email : 
+										}
 									]
 								}
 							]
@@ -3313,10 +4453,22 @@ var data = [
 									icalStart : "20161005T140000Z",
 									icalEnd : "20161005T142500Z",
 									authors : [
-										"Sed Kasd",
-										"Nonumy At",
-										"Rebum Sadipscing",
-										"Consetetur Erat"
+										{
+											name : "Sed Kasd",
+											email : 
+										},
+										{
+											name : "Nonumy At",
+											email : 
+										},
+										{
+											name : "Rebum Sadipscing",
+											email : 
+										},
+										{
+											name : "Consetetur Erat",
+											email : 
+										}
 									]
 								},
 								{
@@ -3326,14 +4478,38 @@ var data = [
 									icalStart : "20161005T142500Z",
 									icalEnd : "20161005T145000Z",
 									authors : [
-										"Stet Justo",
-										"Eirmod Consetetur",
-										"Ut Accusam",
-										"Amet Sed",
-										"Stet Est",
-										"Ipsum Magna",
-										"Ipsum Invidunt",
-										"Accusam Ipsum"
+										{
+											name : "Stet Justo",
+											email : 
+										},
+										{
+											name : "Eirmod Consetetur",
+											email : 
+										},
+										{
+											name : "Ut Accusam",
+											email : 
+										},
+										{
+											name : "Amet Sed",
+											email : 
+										},
+										{
+											name : "Stet Est",
+											email : 
+										},
+										{
+											name : "Ipsum Magna",
+											email : 
+										},
+										{
+											name : "Ipsum Invidunt",
+											email : 
+										},
+										{
+											name : "Accusam Ipsum",
+											email : 
+										}
 									]
 								},
 								{
@@ -3343,13 +4519,34 @@ var data = [
 									icalStart : "20161005T145000Z",
 									icalEnd : "20161005T151500Z",
 									authors : [
-										"Tempor Ut",
-										"Est Lorem",
-										"Sit Sadipscing",
-										"Et Eos",
-										"Voluptua Voluptua",
-										"Diam Diam",
-										"Et Invidunt"
+										{
+											name : "Tempor Ut",
+											email : 
+										},
+										{
+											name : "Est Lorem",
+											email : 
+										},
+										{
+											name : "Sit Sadipscing",
+											email : 
+										},
+										{
+											name : "Et Eos",
+											email : 
+										},
+										{
+											name : "Voluptua Voluptua",
+											email : 
+										},
+										{
+											name : "Diam Diam",
+											email : 
+										},
+										{
+											name : "Et Invidunt",
+											email : 
+										}
 									]
 								}
 							]
@@ -3376,10 +4573,22 @@ var data = [
 									icalStart : "20161005T140000Z",
 									icalEnd : "20161005T142500Z",
 									authors : [
-										"Nonumy Dolore",
-										"At No",
-										"Rebum Nonumy",
-										"Nonumy Sed"
+										{
+											name : "Nonumy Dolore",
+											email : 
+										},
+										{
+											name : "At No",
+											email : 
+										},
+										{
+											name : "Rebum Nonumy",
+											email : 
+										},
+										{
+											name : "Nonumy Sed",
+											email : 
+										}
 									]
 								},
 								{
@@ -3389,13 +4598,34 @@ var data = [
 									icalStart : "20161005T142500Z",
 									icalEnd : "20161005T145000Z",
 									authors : [
-										"Eos Sed",
-										"Magna Takimata",
-										"Takimata Ea",
-										"Nonumy Sed",
-										"Eos Et",
-										"Amet At",
-										"Duo Accusam"
+										{
+											name : "Eos Sed",
+											email : 
+										},
+										{
+											name : "Magna Takimata",
+											email : 
+										},
+										{
+											name : "Takimata Ea",
+											email : 
+										},
+										{
+											name : "Nonumy Sed",
+											email : 
+										},
+										{
+											name : "Eos Et",
+											email : 
+										},
+										{
+											name : "Amet At",
+											email : 
+										},
+										{
+											name : "Duo Accusam",
+											email : 
+										}
 									]
 								},
 								{
@@ -3405,11 +4635,26 @@ var data = [
 									icalStart : "20161005T145000Z",
 									icalEnd : "20161005T151500Z",
 									authors : [
-										"Et Sadipscing",
-										"Ipsum Invidunt",
-										"Nonumy Ea",
-										"Duo Gubergren",
-										"Diam Sit"
+										{
+											name : "Et Sadipscing",
+											email : 
+										},
+										{
+											name : "Ipsum Invidunt",
+											email : 
+										},
+										{
+											name : "Nonumy Ea",
+											email : 
+										},
+										{
+											name : "Duo Gubergren",
+											email : 
+										},
+										{
+											name : "Diam Sit",
+											email : 
+										}
 									]
 								}
 							]
@@ -3663,13 +4908,34 @@ var data = [
 									icalStart : "20161006T090000Z",
 									icalEnd : "20161006T092500Z",
 									authors : [
-										"Lorem Lorem",
-										"Diam Et",
-										"Dolores Et",
-										"Lorem Sit",
-										"Ipsum Invidunt",
-										"Accusam Ipsum",
-										"Clita Tempor"
+										{
+											name : "Lorem Lorem",
+											email : 
+										},
+										{
+											name : "Diam Et",
+											email : 
+										},
+										{
+											name : "Dolores Et",
+											email : 
+										},
+										{
+											name : "Lorem Sit",
+											email : 
+										},
+										{
+											name : "Ipsum Invidunt",
+											email : 
+										},
+										{
+											name : "Accusam Ipsum",
+											email : 
+										},
+										{
+											name : "Clita Tempor",
+											email : 
+										}
 									]
 								},
 								{
@@ -3679,10 +4945,22 @@ var data = [
 									icalStart : "20161006T092500Z",
 									icalEnd : "20161006T095000Z",
 									authors : [
-										"Sed Kasd",
-										"Nonumy At",
-										"Rebum Sadipscing",
-										"Consetetur Erat"
+										{
+											name : "Sed Kasd",
+											email : 
+										},
+										{
+											name : "Nonumy At",
+											email : 
+										},
+										{
+											name : "Rebum Sadipscing",
+											email : 
+										},
+										{
+											name : "Consetetur Erat",
+											email : 
+										}
 									]
 								},
 								{
@@ -3692,14 +4970,38 @@ var data = [
 									icalStart : "20161006T095000Z",
 									icalEnd : "20161006T101500Z",
 									authors : [
-										"Diam Diam",
-										"Invidunt At",
-										"Aliquyam Et",
-										"Est Lorem",
-										"Est Et",
-										"Clita Tempor",
-										"Et Sadipscing",
-										"Kasd Dolores"
+										{
+											name : "Diam Diam",
+											email : 
+										},
+										{
+											name : "Invidunt At",
+											email : 
+										},
+										{
+											name : "Aliquyam Et",
+											email : 
+										},
+										{
+											name : "Est Lorem",
+											email : 
+										},
+										{
+											name : "Est Et",
+											email : 
+										},
+										{
+											name : "Clita Tempor",
+											email : 
+										},
+										{
+											name : "Et Sadipscing",
+											email : 
+										},
+										{
+											name : "Kasd Dolores",
+											email : 
+										}
 									]
 								}
 							]
@@ -3726,8 +5028,14 @@ var data = [
 									icalStart : "20161006T090000Z",
 									icalEnd : "20161006T092500Z",
 									authors : [
-										"Invidunt At",
-										"Sed Sea"
+										{
+											name : "Invidunt At",
+											email : 
+										},
+										{
+											name : "Sed Sea",
+											email : 
+										}
 									]
 								},
 								{
@@ -3737,14 +5045,38 @@ var data = [
 									icalStart : "20161006T092500Z",
 									icalEnd : "20161006T095000Z",
 									authors : [
-										"Lorem Sit",
-										"Dolores Et",
-										"Aliquyam Et",
-										"Takimata Et",
-										"Kasd Dolores",
-										"Duo Nonumy",
-										"Amet Sed",
-										"Invidunt Amet"
+										{
+											name : "Lorem Sit",
+											email : 
+										},
+										{
+											name : "Dolores Et",
+											email : 
+										},
+										{
+											name : "Aliquyam Et",
+											email : 
+										},
+										{
+											name : "Takimata Et",
+											email : 
+										},
+										{
+											name : "Kasd Dolores",
+											email : 
+										},
+										{
+											name : "Duo Nonumy",
+											email : 
+										},
+										{
+											name : "Amet Sed",
+											email : 
+										},
+										{
+											name : "Invidunt Amet",
+											email : 
+										}
 									]
 								},
 								{
@@ -3754,13 +5086,34 @@ var data = [
 									icalStart : "20161006T095000Z",
 									icalEnd : "20161006T101500Z",
 									authors : [
-										"Gubergren Ea",
-										"Et Invidunt",
-										"Stet No",
-										"Et Dolor",
-										"Amet At",
-										"Magna Labore",
-										"Dolor Eirmod"
+										{
+											name : "Gubergren Ea",
+											email : 
+										},
+										{
+											name : "Et Invidunt",
+											email : 
+										},
+										{
+											name : "Stet No",
+											email : 
+										},
+										{
+											name : "Et Dolor",
+											email : 
+										},
+										{
+											name : "Amet At",
+											email : 
+										},
+										{
+											name : "Magna Labore",
+											email : 
+										},
+										{
+											name : "Dolor Eirmod",
+											email : 
+										}
 									]
 								}
 							]
@@ -3787,12 +5140,30 @@ var data = [
 									icalStart : "20161006T090000Z",
 									icalEnd : "20161006T092500Z",
 									authors : [
-										"Amet At",
-										"Consetetur Erat",
-										"Diam Diam",
-										"Rebum Nonumy",
-										"Consetetur Ipsum",
-										"Sadipscing Ipsum"
+										{
+											name : "Amet At",
+											email : 
+										},
+										{
+											name : "Consetetur Erat",
+											email : 
+										},
+										{
+											name : "Diam Diam",
+											email : 
+										},
+										{
+											name : "Rebum Nonumy",
+											email : 
+										},
+										{
+											name : "Consetetur Ipsum",
+											email : 
+										},
+										{
+											name : "Sadipscing Ipsum",
+											email : 
+										}
 									]
 								},
 								{
@@ -3802,12 +5173,30 @@ var data = [
 									icalStart : "20161006T092500Z",
 									icalEnd : "20161006T095000Z",
 									authors : [
-										"Et Sadipscing",
-										"Sed Kasd",
-										"Labore Sed",
-										"Diam Et",
-										"Nonumy Dolore",
-										"Lorem No"
+										{
+											name : "Et Sadipscing",
+											email : 
+										},
+										{
+											name : "Sed Kasd",
+											email : 
+										},
+										{
+											name : "Labore Sed",
+											email : 
+										},
+										{
+											name : "Diam Et",
+											email : 
+										},
+										{
+											name : "Nonumy Dolore",
+											email : 
+										},
+										{
+											name : "Lorem No",
+											email : 
+										}
 									]
 								},
 								{
@@ -3817,10 +5206,22 @@ var data = [
 									icalStart : "20161006T095000Z",
 									icalEnd : "20161006T101500Z",
 									authors : [
-										"Ipsum Invidunt",
-										"Dolores Justo",
-										"Dolores Eirmod",
-										"Takimata Et"
+										{
+											name : "Ipsum Invidunt",
+											email : 
+										},
+										{
+											name : "Dolores Justo",
+											email : 
+										},
+										{
+											name : "Dolores Eirmod",
+											email : 
+										},
+										{
+											name : "Takimata Et",
+											email : 
+										}
 									]
 								}
 							]
@@ -3912,14 +5313,38 @@ var data = [
 									icalStart : "20161006T120000Z",
 									icalEnd : "20161006T122500Z",
 									authors : [
-										"Gubergren At",
-										"Accusam Ipsum",
-										"Consetetur Erat",
-										"At No",
-										"Accusam Vero",
-										"Clita Tempor",
-										"Lorem At",
-										"Magna Labore"
+										{
+											name : "Gubergren At",
+											email : 
+										},
+										{
+											name : "Accusam Ipsum",
+											email : 
+										},
+										{
+											name : "Consetetur Erat",
+											email : 
+										},
+										{
+											name : "At No",
+											email : 
+										},
+										{
+											name : "Accusam Vero",
+											email : 
+										},
+										{
+											name : "Clita Tempor",
+											email : 
+										},
+										{
+											name : "Lorem At",
+											email : 
+										},
+										{
+											name : "Magna Labore",
+											email : 
+										}
 									]
 								},
 								{
@@ -3929,12 +5354,30 @@ var data = [
 									icalStart : "20161006T122500Z",
 									icalEnd : "20161006T125000Z",
 									authors : [
-										"Kasd Sanctus",
-										"Gubergren Consetetur",
-										"Invidunt Nonumy",
-										"Et Eos",
-										"Vero Et",
-										"Ipsum Magna"
+										{
+											name : "Kasd Sanctus",
+											email : 
+										},
+										{
+											name : "Gubergren Consetetur",
+											email : 
+										},
+										{
+											name : "Invidunt Nonumy",
+											email : 
+										},
+										{
+											name : "Et Eos",
+											email : 
+										},
+										{
+											name : "Vero Et",
+											email : 
+										},
+										{
+											name : "Ipsum Magna",
+											email : 
+										}
 									]
 								},
 								{
@@ -3944,13 +5387,34 @@ var data = [
 									icalStart : "20161006T125000Z",
 									icalEnd : "20161006T131500Z",
 									authors : [
-										"Dolores Et",
-										"Accusam Vero",
-										"Ipsum Magna",
-										"Stet No",
-										"Duo Nonumy",
-										"Consetetur Erat",
-										"Ea Diam"
+										{
+											name : "Dolores Et",
+											email : 
+										},
+										{
+											name : "Accusam Vero",
+											email : 
+										},
+										{
+											name : "Ipsum Magna",
+											email : 
+										},
+										{
+											name : "Stet No",
+											email : 
+										},
+										{
+											name : "Duo Nonumy",
+											email : 
+										},
+										{
+											name : "Consetetur Erat",
+											email : 
+										},
+										{
+											name : "Ea Diam",
+											email : 
+										}
 									]
 								}
 							]
@@ -3977,13 +5441,34 @@ var data = [
 									icalStart : "20161006T120000Z",
 									icalEnd : "20161006T122500Z",
 									authors : [
-										"Tempor Ea",
-										"Voluptua Voluptua",
-										"No Aliquyam",
-										"Dolor Eirmod",
-										"Sadipscing Ipsum",
-										"Sed Sea",
-										"Lorem Diam"
+										{
+											name : "Tempor Ea",
+											email : 
+										},
+										{
+											name : "Voluptua Voluptua",
+											email : 
+										},
+										{
+											name : "No Aliquyam",
+											email : 
+										},
+										{
+											name : "Dolor Eirmod",
+											email : 
+										},
+										{
+											name : "Sadipscing Ipsum",
+											email : 
+										},
+										{
+											name : "Sed Sea",
+											email : 
+										},
+										{
+											name : "Lorem Diam",
+											email : 
+										}
 									]
 								},
 								{
@@ -3993,12 +5478,30 @@ var data = [
 									icalStart : "20161006T122500Z",
 									icalEnd : "20161006T125000Z",
 									authors : [
-										"Vero Justo",
-										"Gubergren Duo",
-										"Voluptua Dolore",
-										"Et Diam",
-										"Gubergren Consetetur",
-										"Voluptua Gubergren"
+										{
+											name : "Vero Justo",
+											email : 
+										},
+										{
+											name : "Gubergren Duo",
+											email : 
+										},
+										{
+											name : "Voluptua Dolore",
+											email : 
+										},
+										{
+											name : "Et Diam",
+											email : 
+										},
+										{
+											name : "Gubergren Consetetur",
+											email : 
+										},
+										{
+											name : "Voluptua Gubergren",
+											email : 
+										}
 									]
 								},
 								{
@@ -4008,14 +5511,38 @@ var data = [
 									icalStart : "20161006T125000Z",
 									icalEnd : "20161006T131500Z",
 									authors : [
-										"Nonumy Ea",
-										"Vero Clita",
-										"Lorem No",
-										"Invidunt Amet",
-										"No Aliquyam",
-										"Lorem Lorem",
-										"Amet At",
-										"Lorem Lorem"
+										{
+											name : "Nonumy Ea",
+											email : 
+										},
+										{
+											name : "Vero Clita",
+											email : 
+										},
+										{
+											name : "Lorem No",
+											email : 
+										},
+										{
+											name : "Invidunt Amet",
+											email : 
+										},
+										{
+											name : "No Aliquyam",
+											email : 
+										},
+										{
+											name : "Lorem Lorem",
+											email : 
+										},
+										{
+											name : "Amet At",
+											email : 
+										},
+										{
+											name : "Lorem Lorem",
+											email : 
+										}
 									]
 								}
 							]
@@ -4042,8 +5569,14 @@ var data = [
 									icalStart : "20161006T120000Z",
 									icalEnd : "20161006T122500Z",
 									authors : [
-										"Labore Sed",
-										"Clita Tempor"
+										{
+											name : "Labore Sed",
+											email : 
+										},
+										{
+											name : "Clita Tempor",
+											email : 
+										}
 									]
 								},
 								{
@@ -4053,11 +5586,26 @@ var data = [
 									icalStart : "20161006T122500Z",
 									icalEnd : "20161006T125000Z",
 									authors : [
-										"At No",
-										"Stet Justo",
-										"Est Et",
-										"Lorem Sit",
-										"Eos Et"
+										{
+											name : "At No",
+											email : 
+										},
+										{
+											name : "Stet Justo",
+											email : 
+										},
+										{
+											name : "Est Et",
+											email : 
+										},
+										{
+											name : "Lorem Sit",
+											email : 
+										},
+										{
+											name : "Eos Et",
+											email : 
+										}
 									]
 								},
 								{
@@ -4067,8 +5615,14 @@ var data = [
 									icalStart : "20161006T125000Z",
 									icalEnd : "20161006T131500Z",
 									authors : [
-										"Invidunt At",
-										"Sed Sea"
+										{
+											name : "Invidunt At",
+											email : 
+										},
+										{
+											name : "Sed Sea",
+											email : 
+										}
 									]
 								}
 							]
@@ -4139,14 +5693,38 @@ var data = [
 									icalStart : "20161006T140000Z",
 									icalEnd : "20161006T142500Z",
 									authors : [
-										"Voluptua Dolore",
-										"Invidunt Nonumy",
-										"Ipsum Invidunt",
-										"Aliquyam Ipsum",
-										"Vero Justo",
-										"Nonumy Sed",
-										"Stet No",
-										"Amet At"
+										{
+											name : "Voluptua Dolore",
+											email : 
+										},
+										{
+											name : "Invidunt Nonumy",
+											email : 
+										},
+										{
+											name : "Ipsum Invidunt",
+											email : 
+										},
+										{
+											name : "Aliquyam Ipsum",
+											email : 
+										},
+										{
+											name : "Vero Justo",
+											email : 
+										},
+										{
+											name : "Nonumy Sed",
+											email : 
+										},
+										{
+											name : "Stet No",
+											email : 
+										},
+										{
+											name : "Amet At",
+											email : 
+										}
 									]
 								},
 								{
@@ -4156,12 +5734,30 @@ var data = [
 									icalStart : "20161006T142500Z",
 									icalEnd : "20161006T145000Z",
 									authors : [
-										"Kasd Sanctus",
-										"Gubergren Consetetur",
-										"Invidunt Nonumy",
-										"Et Eos",
-										"Vero Et",
-										"Ipsum Magna"
+										{
+											name : "Kasd Sanctus",
+											email : 
+										},
+										{
+											name : "Gubergren Consetetur",
+											email : 
+										},
+										{
+											name : "Invidunt Nonumy",
+											email : 
+										},
+										{
+											name : "Et Eos",
+											email : 
+										},
+										{
+											name : "Vero Et",
+											email : 
+										},
+										{
+											name : "Ipsum Magna",
+											email : 
+										}
 									]
 								},
 								{
@@ -4171,10 +5767,22 @@ var data = [
 									icalStart : "20161006T145000Z",
 									icalEnd : "20161006T151500Z",
 									authors : [
-										"Magna Dolore",
-										"Magna Labore",
-										"Sit Sadipscing",
-										"Eos Et"
+										{
+											name : "Magna Dolore",
+											email : 
+										},
+										{
+											name : "Magna Labore",
+											email : 
+										},
+										{
+											name : "Sit Sadipscing",
+											email : 
+										},
+										{
+											name : "Eos Et",
+											email : 
+										}
 									]
 								}
 							]
@@ -4201,13 +5809,34 @@ var data = [
 									icalStart : "20161006T140000Z",
 									icalEnd : "20161006T142500Z",
 									authors : [
-										"Gubergren Consetetur",
-										"Labore Sed",
-										"Voluptua Voluptua",
-										"Diam Et",
-										"Ipsum Invidunt",
-										"Ipsum Magna",
-										"Ipsum Magna"
+										{
+											name : "Gubergren Consetetur",
+											email : 
+										},
+										{
+											name : "Labore Sed",
+											email : 
+										},
+										{
+											name : "Voluptua Voluptua",
+											email : 
+										},
+										{
+											name : "Diam Et",
+											email : 
+										},
+										{
+											name : "Ipsum Invidunt",
+											email : 
+										},
+										{
+											name : "Ipsum Magna",
+											email : 
+										},
+										{
+											name : "Ipsum Magna",
+											email : 
+										}
 									]
 								},
 								{
@@ -4217,10 +5846,22 @@ var data = [
 									icalStart : "20161006T142500Z",
 									icalEnd : "20161006T145000Z",
 									authors : [
-										"Magna Dolore",
-										"Magna Labore",
-										"Sit Sadipscing",
-										"Eos Et"
+										{
+											name : "Magna Dolore",
+											email : 
+										},
+										{
+											name : "Magna Labore",
+											email : 
+										},
+										{
+											name : "Sit Sadipscing",
+											email : 
+										},
+										{
+											name : "Eos Et",
+											email : 
+										}
 									]
 								},
 								{
@@ -4230,13 +5871,34 @@ var data = [
 									icalStart : "20161006T145000Z",
 									icalEnd : "20161006T151500Z",
 									authors : [
-										"At No",
-										"Sea Amet",
-										"Amet Sit",
-										"Diam Et",
-										"Nonumy Ea",
-										"Est Et",
-										"Dolores Justo"
+										{
+											name : "At No",
+											email : 
+										},
+										{
+											name : "Sea Amet",
+											email : 
+										},
+										{
+											name : "Amet Sit",
+											email : 
+										},
+										{
+											name : "Diam Et",
+											email : 
+										},
+										{
+											name : "Nonumy Ea",
+											email : 
+										},
+										{
+											name : "Est Et",
+											email : 
+										},
+										{
+											name : "Dolores Justo",
+											email : 
+										}
 									]
 								}
 							]
@@ -4263,13 +5925,34 @@ var data = [
 									icalStart : "20161006T140000Z",
 									icalEnd : "20161006T142500Z",
 									authors : [
-										"No Aliquyam",
-										"Aliquyam Ipsum",
-										"Amet Et",
-										"Kasd Dolores",
-										"Accusam Vero",
-										"Stet Justo",
-										"Duo Gubergren"
+										{
+											name : "No Aliquyam",
+											email : 
+										},
+										{
+											name : "Aliquyam Ipsum",
+											email : 
+										},
+										{
+											name : "Amet Et",
+											email : 
+										},
+										{
+											name : "Kasd Dolores",
+											email : 
+										},
+										{
+											name : "Accusam Vero",
+											email : 
+										},
+										{
+											name : "Stet Justo",
+											email : 
+										},
+										{
+											name : "Duo Gubergren",
+											email : 
+										}
 									]
 								},
 								{
@@ -4279,12 +5962,30 @@ var data = [
 									icalStart : "20161006T142500Z",
 									icalEnd : "20161006T145000Z",
 									authors : [
-										"Stet Est",
-										"Accusam Ipsum",
-										"Kasd Sanctus",
-										"Amet At",
-										"Consetetur Ipsum",
-										"Sed Sea"
+										{
+											name : "Stet Est",
+											email : 
+										},
+										{
+											name : "Accusam Ipsum",
+											email : 
+										},
+										{
+											name : "Kasd Sanctus",
+											email : 
+										},
+										{
+											name : "Amet At",
+											email : 
+										},
+										{
+											name : "Consetetur Ipsum",
+											email : 
+										},
+										{
+											name : "Sed Sea",
+											email : 
+										}
 									]
 								},
 								{
@@ -4294,10 +5995,22 @@ var data = [
 									icalStart : "20161006T145000Z",
 									icalEnd : "20161006T151500Z",
 									authors : [
-										"Amet Sed",
-										"Dolor No",
-										"Aliquyam Ipsum",
-										"Magna Takimata"
+										{
+											name : "Amet Sed",
+											email : 
+										},
+										{
+											name : "Dolor No",
+											email : 
+										},
+										{
+											name : "Aliquyam Ipsum",
+											email : 
+										},
+										{
+											name : "Magna Takimata",
+											email : 
+										}
 									]
 								}
 							]
@@ -4485,13 +6198,34 @@ var data = [
 									icalStart : "20161007T090000Z",
 									icalEnd : "20161007T092500Z",
 									authors : [
-										"Tempor Ut",
-										"Est Lorem",
-										"Sit Sadipscing",
-										"Et Eos",
-										"Voluptua Voluptua",
-										"Diam Diam",
-										"Et Invidunt"
+										{
+											name : "Tempor Ut",
+											email : 
+										},
+										{
+											name : "Est Lorem",
+											email : 
+										},
+										{
+											name : "Sit Sadipscing",
+											email : 
+										},
+										{
+											name : "Et Eos",
+											email : 
+										},
+										{
+											name : "Voluptua Voluptua",
+											email : 
+										},
+										{
+											name : "Diam Diam",
+											email : 
+										},
+										{
+											name : "Et Invidunt",
+											email : 
+										}
 									]
 								},
 								{
@@ -4501,10 +6235,22 @@ var data = [
 									icalStart : "20161007T092500Z",
 									icalEnd : "20161007T095000Z",
 									authors : [
-										"Ut Accusam",
-										"Duo Nonumy",
-										"No Aliquyam",
-										"Accusam Vero"
+										{
+											name : "Ut Accusam",
+											email : 
+										},
+										{
+											name : "Duo Nonumy",
+											email : 
+										},
+										{
+											name : "No Aliquyam",
+											email : 
+										},
+										{
+											name : "Accusam Vero",
+											email : 
+										}
 									]
 								},
 								{
@@ -4514,9 +6260,18 @@ var data = [
 									icalStart : "20161007T095000Z",
 									icalEnd : "20161007T101500Z",
 									authors : [
-										"Consetetur Erat",
-										"Duo Gubergren",
-										"Amet Sed"
+										{
+											name : "Consetetur Erat",
+											email : 
+										},
+										{
+											name : "Duo Gubergren",
+											email : 
+										},
+										{
+											name : "Amet Sed",
+											email : 
+										}
 									]
 								}
 							]
@@ -4543,10 +6298,22 @@ var data = [
 									icalStart : "20161007T090000Z",
 									icalEnd : "20161007T092500Z",
 									authors : [
-										"Accusam Ipsum",
-										"Magna Dolore",
-										"Accusam Ipsum",
-										"Labore Sed"
+										{
+											name : "Accusam Ipsum",
+											email : 
+										},
+										{
+											name : "Magna Dolore",
+											email : 
+										},
+										{
+											name : "Accusam Ipsum",
+											email : 
+										},
+										{
+											name : "Labore Sed",
+											email : 
+										}
 									]
 								},
 								{
@@ -4556,9 +6323,18 @@ var data = [
 									icalStart : "20161007T092500Z",
 									icalEnd : "20161007T095000Z",
 									authors : [
-										"Labore Sed",
-										"Et Eos",
-										"Stet No"
+										{
+											name : "Labore Sed",
+											email : 
+										},
+										{
+											name : "Et Eos",
+											email : 
+										},
+										{
+											name : "Stet No",
+											email : 
+										}
 									]
 								},
 								{
@@ -4568,9 +6344,18 @@ var data = [
 									icalStart : "20161007T095000Z",
 									icalEnd : "20161007T101500Z",
 									authors : [
-										"Dolores Et",
-										"Vero Et",
-										"Sed Kasd"
+										{
+											name : "Dolores Et",
+											email : 
+										},
+										{
+											name : "Vero Et",
+											email : 
+										},
+										{
+											name : "Sed Kasd",
+											email : 
+										}
 									]
 								}
 							]
@@ -4597,10 +6382,22 @@ var data = [
 									icalStart : "20161007T090000Z",
 									icalEnd : "20161007T092500Z",
 									authors : [
-										"Est Lorem",
-										"Tempor Ut",
-										"Stet Est",
-										"Ea Nonumy"
+										{
+											name : "Est Lorem",
+											email : 
+										},
+										{
+											name : "Tempor Ut",
+											email : 
+										},
+										{
+											name : "Stet Est",
+											email : 
+										},
+										{
+											name : "Ea Nonumy",
+											email : 
+										}
 									]
 								},
 								{
@@ -4610,13 +6407,34 @@ var data = [
 									icalStart : "20161007T092500Z",
 									icalEnd : "20161007T095000Z",
 									authors : [
-										"Nonumy At",
-										"Gubergren At",
-										"Ea Diam",
-										"Et Diam",
-										"At Justo",
-										"No Aliquyam",
-										"Tempor Et"
+										{
+											name : "Nonumy At",
+											email : 
+										},
+										{
+											name : "Gubergren At",
+											email : 
+										},
+										{
+											name : "Ea Diam",
+											email : 
+										},
+										{
+											name : "Et Diam",
+											email : 
+										},
+										{
+											name : "At Justo",
+											email : 
+										},
+										{
+											name : "No Aliquyam",
+											email : 
+										},
+										{
+											name : "Tempor Et",
+											email : 
+										}
 									]
 								},
 								{
@@ -4626,14 +6444,38 @@ var data = [
 									icalStart : "20161007T095000Z",
 									icalEnd : "20161007T101500Z",
 									authors : [
-										"Nonumy Accusam",
-										"Et Et",
-										"Gubergren At",
-										"Kasd Sanctus",
-										"Nonumy Sed",
-										"Magna Takimata",
-										"Et Eos",
-										"Eirmod Consetetur"
+										{
+											name : "Nonumy Accusam",
+											email : 
+										},
+										{
+											name : "Et Et",
+											email : 
+										},
+										{
+											name : "Gubergren At",
+											email : 
+										},
+										{
+											name : "Kasd Sanctus",
+											email : 
+										},
+										{
+											name : "Nonumy Sed",
+											email : 
+										},
+										{
+											name : "Magna Takimata",
+											email : 
+										},
+										{
+											name : "Et Eos",
+											email : 
+										},
+										{
+											name : "Eirmod Consetetur",
+											email : 
+										}
 									]
 								}
 							]

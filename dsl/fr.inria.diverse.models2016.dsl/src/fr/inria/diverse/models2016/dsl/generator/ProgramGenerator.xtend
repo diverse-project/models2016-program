@@ -42,6 +42,7 @@ import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.xtext.generator.AbstractGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess2
 import org.eclipse.xtext.generator.IGeneratorContext
+import models2016.Person
 
 /**
  * Generates code from your model files on save.
@@ -153,6 +154,16 @@ class ProgramGenerator extends AbstractGenerator {
 		return new Date(start.time + i * talkDuration * 60 * 1000)
 	}
 	
+	def private String getPerson(Person person) {
+		return
+				'''
+					{
+						name : «person.name»,
+						email : «person.email»
+					}
+				'''
+	}
+	
 	def private String getTalkSession(TalkSession talkSession, Date start) {
 		return
 				'''
@@ -177,7 +188,7 @@ class ProgramGenerator extends AbstractGenerator {
 								icalEnd : "«icalFormat.format(talkEnd)»",
 								authors : [
 									«FOR a : p.authors SEPARATOR ","»
-									«a.name»
+									«getPerson(a)»
 									«ENDFOR»
 								]
 							}
@@ -193,9 +204,11 @@ class ProgramGenerator extends AbstractGenerator {
 					{
 						type : "Workshop",
 						title : «workshop.name»,
+						abstract : «workshop.abstract»,
+						url : «workshop.url»
 						organizers : [
 							«FOR o : workshop.organizers SEPARATOR ","»
-							«o.name»
+							«getPerson(o)»
 							«ENDFOR»
 						]
 					}
@@ -270,7 +283,7 @@ class ProgramGenerator extends AbstractGenerator {
 						title : «symposium.name»,
 						organizers : [
 							«FOR o : symposium.organizers SEPARATOR ","»
-							«o.name»
+							«getPerson(o)»
 							«ENDFOR»
 						]
 					}
@@ -285,7 +298,7 @@ class ProgramGenerator extends AbstractGenerator {
 						title : «symposium.name»,
 						organizers : [
 							«FOR o : symposium.organizers SEPARATOR ","»
-							«o.name»
+							«getPerson(o)»
 							«ENDFOR»
 						]
 					}
@@ -300,7 +313,7 @@ class ProgramGenerator extends AbstractGenerator {
 						title : «tutorial.name»,
 						organizers : [
 							«FOR o : tutorial.organizers SEPARATOR ","»
-							«o.name»
+							«getPerson(o)»
 							«ENDFOR»
 						]
 					}
