@@ -7,17 +7,12 @@ import java.util.Collection;
 import models2016.Models2016Package;
 import models2016.Person;
 import models2016.Tutorial;
-
-import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -30,7 +25,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link models2016.impl.TutorialImpl#getOrganizers <em>Organizers</em>}</li>
- *   <li>{@link models2016.impl.TutorialImpl#getId <em>Id</em>}</li>
  * </ul>
  *
  * @generated
@@ -45,26 +39,6 @@ public class TutorialImpl extends EventImpl implements Tutorial {
 	 * @ordered
 	 */
 	protected EList<Person> organizers;
-
-	/**
-	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getId()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String ID_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getId()
-	 * @generated
-	 * @ordered
-	 */
-	protected String id = ID_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -102,27 +76,6 @@ public class TutorialImpl extends EventImpl implements Tutorial {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getId() {
-		return id;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setId(String newId) {
-		String oldId = id;
-		id = newId;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Models2016Package.TUTORIAL__ID, oldId, id));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -142,8 +95,6 @@ public class TutorialImpl extends EventImpl implements Tutorial {
 		switch (featureID) {
 			case Models2016Package.TUTORIAL__ORGANIZERS:
 				return getOrganizers();
-			case Models2016Package.TUTORIAL__ID:
-				return getId();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -161,9 +112,6 @@ public class TutorialImpl extends EventImpl implements Tutorial {
 				getOrganizers().clear();
 				getOrganizers().addAll((Collection<? extends Person>)newValue);
 				return;
-			case Models2016Package.TUTORIAL__ID:
-				setId((String)newValue);
-				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -179,9 +127,6 @@ public class TutorialImpl extends EventImpl implements Tutorial {
 			case Models2016Package.TUTORIAL__ORGANIZERS:
 				getOrganizers().clear();
 				return;
-			case Models2016Package.TUTORIAL__ID:
-				setId(ID_EDEFAULT);
-				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -196,26 +141,8 @@ public class TutorialImpl extends EventImpl implements Tutorial {
 		switch (featureID) {
 			case Models2016Package.TUTORIAL__ORGANIZERS:
 				return organizers != null && !organizers.isEmpty();
-			case Models2016Package.TUTORIAL__ID:
-				return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (id: ");
-		result.append(id);
-		result.append(')');
-		return result.toString();
 	}
 
 } //TutorialImpl

@@ -435,13 +435,13 @@ public interface Models2016Package extends EPackage {
 	int WORKSHOP__ORGANIZERS = EVENT_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * The feature id for the '<em><b>Full Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORKSHOP__ID = EVENT_FEATURE_COUNT + 2;
+	int WORKSHOP__FULL_NAME = EVENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Workshop</em>' class.
@@ -499,22 +499,13 @@ public interface Models2016Package extends EPackage {
 	int TUTORIAL__ORGANIZERS = EVENT_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TUTORIAL__ID = EVENT_FEATURE_COUNT + 1;
-
-	/**
 	 * The number of structural features of the '<em>Tutorial</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TUTORIAL_FEATURE_COUNT = EVENT_FEATURE_COUNT + 2;
+	int TUTORIAL_FEATURE_COUNT = EVENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Tutorial</em>' class.
@@ -1436,15 +1427,15 @@ public interface Models2016Package extends EPackage {
 	EReference getWorkshop_Organizers();
 
 	/**
-	 * Returns the meta object for the attribute '{@link models2016.Workshop#getId <em>Id</em>}'.
+	 * Returns the meta object for the attribute '{@link models2016.Workshop#getFullName <em>Full Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Id</em>'.
-	 * @see models2016.Workshop#getId()
+	 * @return the meta object for the attribute '<em>Full Name</em>'.
+	 * @see models2016.Workshop#getFullName()
 	 * @see #getWorkshop()
 	 * @generated
 	 */
-	EAttribute getWorkshop_Id();
+	EAttribute getWorkshop_FullName();
 
 	/**
 	 * Returns the meta object for class '{@link models2016.Tutorial <em>Tutorial</em>}'.
@@ -1466,17 +1457,6 @@ public interface Models2016Package extends EPackage {
 	 * @generated
 	 */
 	EReference getTutorial_Organizers();
-
-	/**
-	 * Returns the meta object for the attribute '{@link models2016.Tutorial#getId <em>Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Id</em>'.
-	 * @see models2016.Tutorial#getId()
-	 * @see #getTutorial()
-	 * @generated
-	 */
-	EAttribute getTutorial_Id();
 
 	/**
 	 * Returns the meta object for class '{@link models2016.DoctoralSymposium <em>Doctoral Symposium</em>}'.
@@ -2060,12 +2040,12 @@ public interface Models2016Package extends EPackage {
 		EReference WORKSHOP__ORGANIZERS = eINSTANCE.getWorkshop_Organizers();
 
 		/**
-		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Full Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute WORKSHOP__ID = eINSTANCE.getWorkshop_Id();
+		EAttribute WORKSHOP__FULL_NAME = eINSTANCE.getWorkshop_FullName();
 
 		/**
 		 * The meta object literal for the '{@link models2016.impl.TutorialImpl <em>Tutorial</em>}' class.
@@ -2084,14 +2064,6 @@ public interface Models2016Package extends EPackage {
 		 * @generated
 		 */
 		EReference TUTORIAL__ORGANIZERS = eINSTANCE.getTutorial_Organizers();
-
-		/**
-		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute TUTORIAL__ID = eINSTANCE.getTutorial_Id();
 
 		/**
 		 * The meta object literal for the '{@link models2016.impl.DoctoralSymposiumImpl <em>Doctoral Symposium</em>}' class.

@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link models2016.impl.WorkshopImpl#getUrl <em>Url</em>}</li>
  *   <li>{@link models2016.impl.WorkshopImpl#getOrganizers <em>Organizers</em>}</li>
- *   <li>{@link models2016.impl.WorkshopImpl#getId <em>Id</em>}</li>
+ *   <li>{@link models2016.impl.WorkshopImpl#getFullName <em>Full Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -68,24 +68,24 @@ public class WorkshopImpl extends EventImpl implements Workshop {
 	protected EList<Person> organizers;
 
 	/**
-	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * The default value of the '{@link #getFullName() <em>Full Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getId()
+	 * @see #getFullName()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String ID_EDEFAULT = null;
+	protected static final String FULL_NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * The cached value of the '{@link #getFullName() <em>Full Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getId()
+	 * @see #getFullName()
 	 * @generated
 	 * @ordered
 	 */
-	protected String id = ID_EDEFAULT;
+	protected String fullName = FULL_NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,8 +144,8 @@ public class WorkshopImpl extends EventImpl implements Workshop {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getId() {
-		return id;
+	public String getFullName() {
+		return fullName;
 	}
 
 	/**
@@ -153,11 +153,11 @@ public class WorkshopImpl extends EventImpl implements Workshop {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setId(String newId) {
-		String oldId = id;
-		id = newId;
+	public void setFullName(String newFullName) {
+		String oldFullName = fullName;
+		fullName = newFullName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Models2016Package.WORKSHOP__ID, oldId, id));
+			eNotify(new ENotificationImpl(this, Notification.SET, Models2016Package.WORKSHOP__FULL_NAME, oldFullName, fullName));
 	}
 
 	/**
@@ -186,8 +186,8 @@ public class WorkshopImpl extends EventImpl implements Workshop {
 				return getUrl();
 			case Models2016Package.WORKSHOP__ORGANIZERS:
 				return getOrganizers();
-			case Models2016Package.WORKSHOP__ID:
-				return getId();
+			case Models2016Package.WORKSHOP__FULL_NAME:
+				return getFullName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -208,8 +208,8 @@ public class WorkshopImpl extends EventImpl implements Workshop {
 				getOrganizers().clear();
 				getOrganizers().addAll((Collection<? extends Person>)newValue);
 				return;
-			case Models2016Package.WORKSHOP__ID:
-				setId((String)newValue);
+			case Models2016Package.WORKSHOP__FULL_NAME:
+				setFullName((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -229,8 +229,8 @@ public class WorkshopImpl extends EventImpl implements Workshop {
 			case Models2016Package.WORKSHOP__ORGANIZERS:
 				getOrganizers().clear();
 				return;
-			case Models2016Package.WORKSHOP__ID:
-				setId(ID_EDEFAULT);
+			case Models2016Package.WORKSHOP__FULL_NAME:
+				setFullName(FULL_NAME_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -248,8 +248,8 @@ public class WorkshopImpl extends EventImpl implements Workshop {
 				return URL_EDEFAULT == null ? url != null : !URL_EDEFAULT.equals(url);
 			case Models2016Package.WORKSHOP__ORGANIZERS:
 				return organizers != null && !organizers.isEmpty();
-			case Models2016Package.WORKSHOP__ID:
-				return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
+			case Models2016Package.WORKSHOP__FULL_NAME:
+				return FULL_NAME_EDEFAULT == null ? fullName != null : !FULL_NAME_EDEFAULT.equals(fullName);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -266,8 +266,8 @@ public class WorkshopImpl extends EventImpl implements Workshop {
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (url: ");
 		result.append(url);
-		result.append(", id: ");
-		result.append(id);
+		result.append(", fullName: ");
+		result.append(fullName);
 		result.append(')');
 		return result.toString();
 	}

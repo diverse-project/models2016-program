@@ -15,7 +15,7 @@ import org.eclipse.emf.common.util.EList;
  * <ul>
  *   <li>{@link models2016.Workshop#getUrl <em>Url</em>}</li>
  *   <li>{@link models2016.Workshop#getOrganizers <em>Organizers</em>}</li>
- *   <li>{@link models2016.Workshop#getId <em>Id</em>}</li>
+ *   <li>{@link models2016.Workshop#getFullName <em>Full Name</em>}</li>
  * </ul>
  *
  * @see models2016.Models2016Package#getWorkshop()
@@ -66,29 +66,29 @@ public interface Workshop extends Event {
 	EList<Person> getOrganizers();
 
 	/**
-	 * Returns the value of the '<em><b>Id</b></em>' attribute.
+	 * Returns the value of the '<em><b>Full Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Id</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Full Name</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Id</em>' attribute.
-	 * @see #setId(String)
-	 * @see models2016.Models2016Package#getWorkshop_Id()
+	 * @return the value of the '<em>Full Name</em>' attribute.
+	 * @see #setFullName(String)
+	 * @see models2016.Models2016Package#getWorkshop_FullName()
 	 * @model
 	 * @generated
 	 */
-	String getId();
+	String getFullName();
 
 	/**
-	 * Sets the value of the '{@link models2016.Workshop#getId <em>Id</em>}' attribute.
+	 * Sets the value of the '{@link models2016.Workshop#getFullName <em>Full Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Id</em>' attribute.
-	 * @see #getId()
+	 * @param value the new value of the '<em>Full Name</em>' attribute.
+	 * @see #getFullName()
 	 * @generated
 	 */
-	void setId(String value);
+	void setFullName(String value);
 
 } // Workshop

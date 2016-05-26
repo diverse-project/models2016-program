@@ -328,7 +328,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Tutorial returns Tutorial
 	 *
 	 * Constraint:
-	 *     (name=EString abstract=EString? id=EString? (organizers+=Person organizers+=Person*)?)
+	 *     (name=EString abstract=EString? (organizers+=Person organizers+=Person*)?)
 	 */
 	protected void sequence_Tutorial(ISerializationContext context, Tutorial semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -341,7 +341,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Workshop returns Workshop
 	 *
 	 * Constraint:
-	 *     (name=EString abstract=EString? url=EString? id=EString? (organizers+=Person organizers+=Person*)?)
+	 *     (name=EString abstract=EString? url=EString? fullName=EString? (organizers+=Person organizers+=Person*)?)
 	 */
 	protected void sequence_Workshop(ISerializationContext context, Workshop semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

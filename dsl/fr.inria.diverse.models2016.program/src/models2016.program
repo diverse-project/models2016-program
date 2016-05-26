@@ -38,33 +38,47 @@
 		Tutorial "Technologies and Design Patterns for Model-based Development of Cyber-physical Systems"
 			organizers "Bran Selic";
 		
-		Workshop "International Models and Evolution Workshop"
+		Workshop "ME"
+			name "10th International Workshop on Models and Evolution"
 			organizers "Dalila Tamzalit", "Alfonso Pierantonio", "Bernhard Schaetz", "Tanja Mayerhofer";
-		Workshop "ModComp'16: 3rd International Workshop on Model-Driven Engineering for Component-Based Software Systems"
+		Workshop "ModComp"
+			name "3rd International Workshop on Interplay of Model-Driven and Component-Based Software Engineering"
 			organizers "Federico Ciccozzi", "Ivano Malavolta";
-		Workshop "MoDeVVa’16: Model Driven Engineering, Verification and Validation - Integrating Verification and Validation in MDE"
+		Workshop "MoDeVVa"
+			name "13th International Workshop on Model Driven Engineering, Verification and Validation"
 			organizers "Gehan M. K. Selim", "Michalis Famelis", "Daniel Ratiu";
-		Workshop "Workshop on Executable Modeling (EXE)"
+		Workshop "EXE"
+			name "qs"
 			organizers "Tanja Mayerhofer", "Philip Langer", "Ed Seidewitz", "Jeff Gray";
-		Workshop "Open Source Software for Model-Driven Engineering (OSS4MDE’16): Creating Buzz and Building a Community"
+		Workshop "OSS4MDE"
+			name "Open Source Software for Model-Driven Engineering (OSS4MDE’16): Creating Buzz and Building a Community"
 			organizers "Francis Bordeleau", "Jean-Michel Bruel", "Juergen Dingel", "Sebastien Gerard", "Sebastian Voss";
-		Workshop "Flexible MDE 2016 (FlexMDE 2016)"
+		Workshop "FlexMDE"
+			name "Flexible MDE 2016 (FlexMDE 2016)"
 			organizers "Davide Di Ruscio", "Alfonso Pierantonio", "Juan De Lara";
-		Workshop "Patterns in Model Engineering Workshop PAME 2016"
+		Workshop "PAME"
+			name "Patterns in Model Engineering Workshop PAME 2016"
 			organizers "Eugene Syriani", "Richard Paige", "Steffen Zschaler", "Huseyin Ergin";
-		Workshop "Full-Day Workshop on OCL and Textual Modeling"
+		Workshop "OCL"
+			name "Full-Day Workshop on OCL and Textual Modeling"
 			organizers "Achim Brucker", "Jordi Cabot", "Adolfo Sánchez-Barbudo Herrera";
-		Workshop "GEMOC 2016: 4th Workshop On the Globalization of Modeling Languages"
+		Workshop "GEMOC"
+			name "GEMOC 2016: 4th Workshop On the Globalization of Modeling Languages"
 			organizers "Julien Deantoni", "Jeff Gray";
-		Workshop "International Workshop on Multi-Level Modelling (MULTI 2016)"
+		Workshop "MULTI"
+			name "International Workshop on Multi-Level Modelling (MULTI 2016)"
 			organizers "Colin Atkinson", "Tony Clark", "Georg Grossmann";
-		Workshop "Collaborative Modelling in MDE (COMMitMDE)"
+		Workshop "COMMitMDE"
+			name "Collaborative Modelling in MDE (COMMitMDE)"
 			organizers "Sébastien Gérard", "Dimitrios S. Kolovos", "Ivano Malavolta", "Henry Muccini";
-		Workshop "Human Factors in Modeling"
+		Workshop "HuFaMo"
+			name "Human Factors in Modeling"
 			organizers "Harald Störrle", "Chaudron Michel", "Vlad Acretoaie";
-		Workshop "11th International Workshop on Models@run.time: Workshop Proposal"
+		Workshop "MRT"
+			name "11th International Workshop on Models@run.time: Workshop Proposal"
 			organizers "Nelly Bencomo", "Sebastian Götz";
-		Workshop "Verification Of Model Transformations VOLT 2016"
+		Workshop "VOLT"
+			name "Verification Of Model Transformations VOLT 2016"
 			organizers "Eugene Syriani", "Moussa Amrani"
 		
 	}
@@ -79,10 +93,10 @@
 			09:00 - 10:30 in "Charcot" : "ARCADIA in a nutshell"
 			09:00 - 10:30 in "Vauban 1" : "Hybrid Graphical/Textual Modelling and Code Generation with PapyrusRT"
 			// Workshops
-			09:00 - 10:30 in "Vauban 2" : "International Models and Evolution Workshop"
-			09:00 - 10:30 in "Lamennais 1" : "Full-Day Workshop on OCL and Textual Modeling"
-			09:00 - 10:30 in "Lamennais 2" : "Flexible MDE 2016 (FlexMDE 2016)"
-			09:00 - 10:30 in "Lamennais 3" : "Verification Of Model Transformations VOLT 2016"
+//			09:00 - 10:30 in "Vauban 2" : "International Models and Evolution Workshop"
+//			09:00 - 10:30 in "Lamennais 1" : "Full-Day Workshop on OCL and Textual Modeling"
+//			09:00 - 10:30 in "Lamennais 2" : "Flexible MDE 2016 (FlexMDE 2016)"
+//			09:00 - 10:30 in "Lamennais 3" : "Verification Of Model Transformations VOLT 2016"
 			
 			10:30 - 11:00 in "Rotonde Surcouf" : "Coffee Break"
 			
@@ -92,10 +106,10 @@
 			11:00 - 12:30 in "Charcot" : "ARCADIA in a nutshell"
 			11:00 - 12:30 in "Vauban 1" : "Hybrid Graphical/Textual Modelling and Code Generation with PapyrusRT"
 			//Workshops
-			11:00 - 12:30 in "Vauban 2" : "International Models and Evolution Workshop"
-			11:00 - 12:30 in "Lamennais 1" : "Full-Day Workshop on OCL and Textual Modeling"
-			11:00 - 12:30 in "Lamennais 2" : "Flexible MDE 2016 (FlexMDE 2016)"
-			11:00 - 12:30 in "Lamennais 3" : "Verification Of Model Transformations VOLT 2016"
+//			11:00 - 12:30 in "Vauban 2" : "International Models and Evolution Workshop"
+//			11:00 - 12:30 in "Lamennais 1" : "Full-Day Workshop on OCL and Textual Modeling"
+//			11:00 - 12:30 in "Lamennais 2" : "Flexible MDE 2016 (FlexMDE 2016)"
+//			11:00 - 12:30 in "Lamennais 3" : "Verification Of Model Transformations VOLT 2016"
 			
 			12:30 - 14:00 in "Rotonde J. Cartier" : "Lunch"
 			
@@ -105,10 +119,10 @@
 			14:00 - 15:30 in "Charcot" : "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies"
 			14:00 - 15:30 in "Vauban 1" : "Technologies and Design Patterns for Model-based Development of Cyber-physical Systems"
 			//Workshops
-			14:00 - 15:30 in "Vauban 2" : "International Models and Evolution Workshop"
-			14:00 - 15:30 in "Lamennais 1" : "Full-Day Workshop on OCL and Textual Modeling"
-			14:00 - 15:30 in "Lamennais 2" : "Flexible MDE 2016 (FlexMDE 2016)"
-			14:00 - 15:30 in "Lamennais 3" : "Verification Of Model Transformations VOLT 2016"
+//			14:00 - 15:30 in "Vauban 2" : "International Models and Evolution Workshop"
+//			14:00 - 15:30 in "Lamennais 1" : "Full-Day Workshop on OCL and Textual Modeling"
+//			14:00 - 15:30 in "Lamennais 2" : "Flexible MDE 2016 (FlexMDE 2016)"
+//			14:00 - 15:30 in "Lamennais 3" : "Verification Of Model Transformations VOLT 2016"
 			
 			15:30 - 16:00 in "Rotonde Surcouf" : "Coffee Break"
 			
@@ -118,9 +132,9 @@
 			16:00 - 17:30 in "Charcot" : "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies"
 			16:00 - 17:30 in "Vauban 1" : "Technologies and Design Patterns for Model-based Development of Cyber-physical Systems"
 			//Workshops
-			16:00 - 17:30 in "Vauban 2" : "International Models and Evolution Workshop"
-			16:00 - 17:30 in "Lamennais 1" : "Full-Day Workshop on OCL and Textual Modeling"
-			16:00 - 17:30 in "Lamennais 2" : "Flexible MDE 2016 (FlexMDE 2016)"
-			16:00 - 17:30 in "Lamennais 3" : "Verification Of Model Transformations VOLT 2016"
+//			16:00 - 17:30 in "Vauban 2" : "International Models and Evolution Workshop"
+//			16:00 - 17:30 in "Lamennais 1" : "Full-Day Workshop on OCL and Textual Modeling"
+//			16:00 - 17:30 in "Lamennais 2" : "Flexible MDE 2016 (FlexMDE 2016)"
+//			16:00 - 17:30 in "Lamennais 3" : "Verification Of Model Transformations VOLT 2016"
 			
 	}

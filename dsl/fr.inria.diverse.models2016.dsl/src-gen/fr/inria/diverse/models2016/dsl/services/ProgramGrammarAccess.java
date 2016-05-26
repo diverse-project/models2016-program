@@ -781,9 +781,9 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cUrlAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
 		private final RuleCall cUrlEStringParserRuleCall_3_1_0 = (RuleCall)cUrlAssignment_3_1.eContents().get(0);
 		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
-		private final Keyword cIdKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
-		private final Assignment cIdAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
-		private final RuleCall cIdEStringParserRuleCall_4_1_0 = (RuleCall)cIdAssignment_4_1.eContents().get(0);
+		private final Keyword cNameKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
+		private final Assignment cFullNameAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
+		private final RuleCall cFullNameEStringParserRuleCall_4_1_0 = (RuleCall)cFullNameAssignment_4_1.eContents().get(0);
 		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
 		private final Keyword cOrganizersKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
 		private final Assignment cOrganizersAssignment_5_1 = (Assignment)cGroup_5.eContents().get(1);
@@ -795,11 +795,11 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//Workshop:
 		//	'Workshop'
-		//	name=EString ('abstract' abstract=EString)? ('url' url=EString)? ('id' id=EString)? ('organizers' organizers+=Person
-		//	(',' organizers+=Person)*)?;
+		//	name=EString ('abstract' abstract=EString)? ('url' url=EString)? ('name' fullName=EString)? ('organizers'
+		//	organizers+=Person (',' organizers+=Person)*)?;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'Workshop' name=EString ('abstract' abstract=EString)? ('url' url=EString)? ('id' id=EString)? ('organizers'
+		//'Workshop' name=EString ('abstract' abstract=EString)? ('url' url=EString)? ('name' fullName=EString)? ('organizers'
 		//organizers+=Person (',' organizers+=Person)*)?
 		public Group getGroup() { return cGroup; }
 		
@@ -836,17 +836,17 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		//EString
 		public RuleCall getUrlEStringParserRuleCall_3_1_0() { return cUrlEStringParserRuleCall_3_1_0; }
 		
-		//('id' id=EString)?
+		//('name' fullName=EString)?
 		public Group getGroup_4() { return cGroup_4; }
 		
-		//'id'
-		public Keyword getIdKeyword_4_0() { return cIdKeyword_4_0; }
+		//'name'
+		public Keyword getNameKeyword_4_0() { return cNameKeyword_4_0; }
 		
-		//id=EString
-		public Assignment getIdAssignment_4_1() { return cIdAssignment_4_1; }
+		//fullName=EString
+		public Assignment getFullNameAssignment_4_1() { return cFullNameAssignment_4_1; }
 		
 		//EString
-		public RuleCall getIdEStringParserRuleCall_4_1_0() { return cIdEStringParserRuleCall_4_1_0; }
+		public RuleCall getFullNameEStringParserRuleCall_4_1_0() { return cFullNameEStringParserRuleCall_4_1_0; }
 		
 		//('organizers' organizers+=Person (',' organizers+=Person)*)?
 		public Group getGroup_5() { return cGroup_5; }
@@ -883,26 +883,20 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cAbstractAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
 		private final RuleCall cAbstractEStringParserRuleCall_2_1_0 = (RuleCall)cAbstractAssignment_2_1.eContents().get(0);
 		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
-		private final Keyword cIdKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
-		private final Assignment cIdAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
-		private final RuleCall cIdEStringParserRuleCall_3_1_0 = (RuleCall)cIdAssignment_3_1.eContents().get(0);
-		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
-		private final Keyword cOrganizersKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
-		private final Assignment cOrganizersAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
-		private final RuleCall cOrganizersPersonParserRuleCall_4_1_0 = (RuleCall)cOrganizersAssignment_4_1.eContents().get(0);
-		private final Group cGroup_4_2 = (Group)cGroup_4.eContents().get(2);
-		private final Keyword cCommaKeyword_4_2_0 = (Keyword)cGroup_4_2.eContents().get(0);
-		private final Assignment cOrganizersAssignment_4_2_1 = (Assignment)cGroup_4_2.eContents().get(1);
-		private final RuleCall cOrganizersPersonParserRuleCall_4_2_1_0 = (RuleCall)cOrganizersAssignment_4_2_1.eContents().get(0);
+		private final Keyword cOrganizersKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
+		private final Assignment cOrganizersAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
+		private final RuleCall cOrganizersPersonParserRuleCall_3_1_0 = (RuleCall)cOrganizersAssignment_3_1.eContents().get(0);
+		private final Group cGroup_3_2 = (Group)cGroup_3.eContents().get(2);
+		private final Keyword cCommaKeyword_3_2_0 = (Keyword)cGroup_3_2.eContents().get(0);
+		private final Assignment cOrganizersAssignment_3_2_1 = (Assignment)cGroup_3_2.eContents().get(1);
+		private final RuleCall cOrganizersPersonParserRuleCall_3_2_1_0 = (RuleCall)cOrganizersAssignment_3_2_1.eContents().get(0);
 		
 		//Tutorial:
 		//	'Tutorial'
-		//	name=EString ('abstract' abstract=EString)? ('id' id=EString)? ('organizers' organizers+=Person (','
-		//	organizers+=Person)*)?;
+		//	name=EString ('abstract' abstract=EString)? ('organizers' organizers+=Person (',' organizers+=Person)*)?;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'Tutorial' name=EString ('abstract' abstract=EString)? ('id' id=EString)? ('organizers' organizers+=Person (','
-		//organizers+=Person)*)?
+		//'Tutorial' name=EString ('abstract' abstract=EString)? ('organizers' organizers+=Person (',' organizers+=Person)*)?
 		public Group getGroup() { return cGroup; }
 		
 		//'Tutorial'
@@ -926,41 +920,29 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		//EString
 		public RuleCall getAbstractEStringParserRuleCall_2_1_0() { return cAbstractEStringParserRuleCall_2_1_0; }
 		
-		//('id' id=EString)?
+		//('organizers' organizers+=Person (',' organizers+=Person)*)?
 		public Group getGroup_3() { return cGroup_3; }
 		
-		//'id'
-		public Keyword getIdKeyword_3_0() { return cIdKeyword_3_0; }
-		
-		//id=EString
-		public Assignment getIdAssignment_3_1() { return cIdAssignment_3_1; }
-		
-		//EString
-		public RuleCall getIdEStringParserRuleCall_3_1_0() { return cIdEStringParserRuleCall_3_1_0; }
-		
-		//('organizers' organizers+=Person (',' organizers+=Person)*)?
-		public Group getGroup_4() { return cGroup_4; }
-		
 		//'organizers'
-		public Keyword getOrganizersKeyword_4_0() { return cOrganizersKeyword_4_0; }
+		public Keyword getOrganizersKeyword_3_0() { return cOrganizersKeyword_3_0; }
 		
 		//organizers+=Person
-		public Assignment getOrganizersAssignment_4_1() { return cOrganizersAssignment_4_1; }
+		public Assignment getOrganizersAssignment_3_1() { return cOrganizersAssignment_3_1; }
 		
 		//Person
-		public RuleCall getOrganizersPersonParserRuleCall_4_1_0() { return cOrganizersPersonParserRuleCall_4_1_0; }
+		public RuleCall getOrganizersPersonParserRuleCall_3_1_0() { return cOrganizersPersonParserRuleCall_3_1_0; }
 		
 		//(',' organizers+=Person)*
-		public Group getGroup_4_2() { return cGroup_4_2; }
+		public Group getGroup_3_2() { return cGroup_3_2; }
 		
 		//','
-		public Keyword getCommaKeyword_4_2_0() { return cCommaKeyword_4_2_0; }
+		public Keyword getCommaKeyword_3_2_0() { return cCommaKeyword_3_2_0; }
 		
 		//organizers+=Person
-		public Assignment getOrganizersAssignment_4_2_1() { return cOrganizersAssignment_4_2_1; }
+		public Assignment getOrganizersAssignment_3_2_1() { return cOrganizersAssignment_3_2_1; }
 		
 		//Person
-		public RuleCall getOrganizersPersonParserRuleCall_4_2_1_0() { return cOrganizersPersonParserRuleCall_4_2_1_0; }
+		public RuleCall getOrganizersPersonParserRuleCall_3_2_1_0() { return cOrganizersPersonParserRuleCall_3_2_1_0; }
 	}
 	public class DoctoralSymposiumElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.DoctoralSymposium");
@@ -1804,8 +1786,8 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//Workshop:
 	//	'Workshop'
-	//	name=EString ('abstract' abstract=EString)? ('url' url=EString)? ('id' id=EString)? ('organizers' organizers+=Person
-	//	(',' organizers+=Person)*)?;
+	//	name=EString ('abstract' abstract=EString)? ('url' url=EString)? ('name' fullName=EString)? ('organizers'
+	//	organizers+=Person (',' organizers+=Person)*)?;
 	public WorkshopElements getWorkshopAccess() {
 		return pWorkshop;
 	}
@@ -1816,8 +1798,7 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//Tutorial:
 	//	'Tutorial'
-	//	name=EString ('abstract' abstract=EString)? ('id' id=EString)? ('organizers' organizers+=Person (','
-	//	organizers+=Person)*)?;
+	//	name=EString ('abstract' abstract=EString)? ('organizers' organizers+=Person (',' organizers+=Person)*)?;
 	public TutorialElements getTutorialAccess() {
 		return pTutorial;
 	}

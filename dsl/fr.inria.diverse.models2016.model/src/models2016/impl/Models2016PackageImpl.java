@@ -485,7 +485,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWorkshop_Id() {
+	public EAttribute getWorkshop_FullName() {
 		return (EAttribute)workshopEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -505,15 +505,6 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 */
 	public EReference getTutorial_Organizers() {
 		return (EReference)tutorialEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getTutorial_Id() {
-		return (EAttribute)tutorialEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -879,11 +870,10 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		workshopEClass = createEClass(WORKSHOP);
 		createEAttribute(workshopEClass, WORKSHOP__URL);
 		createEReference(workshopEClass, WORKSHOP__ORGANIZERS);
-		createEAttribute(workshopEClass, WORKSHOP__ID);
+		createEAttribute(workshopEClass, WORKSHOP__FULL_NAME);
 
 		tutorialEClass = createEClass(TUTORIAL);
 		createEReference(tutorialEClass, TUTORIAL__ORGANIZERS);
-		createEAttribute(tutorialEClass, TUTORIAL__ID);
 
 		doctoralSymposiumEClass = createEClass(DOCTORAL_SYMPOSIUM);
 		createEReference(doctoralSymposiumEClass, DOCTORAL_SYMPOSIUM__ORGANIZERS);
@@ -1007,11 +997,10 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		initEClass(workshopEClass, Workshop.class, "Workshop", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getWorkshop_Url(), ecorePackage.getEString(), "url", null, 0, 1, Workshop.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getWorkshop_Organizers(), this.getPerson(), null, "organizers", null, 0, -1, Workshop.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getWorkshop_Id(), ecorePackage.getEString(), "id", null, 0, 1, Workshop.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getWorkshop_FullName(), ecorePackage.getEString(), "fullName", null, 0, 1, Workshop.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(tutorialEClass, Tutorial.class, "Tutorial", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTutorial_Organizers(), this.getPerson(), null, "organizers", null, 0, -1, Tutorial.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getTutorial_Id(), ecorePackage.getEString(), "id", null, 0, 1, Tutorial.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(doctoralSymposiumEClass, DoctoralSymposium.class, "DoctoralSymposium", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDoctoralSymposium_Organizers(), this.getPerson(), null, "organizers", null, 0, -1, DoctoralSymposium.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

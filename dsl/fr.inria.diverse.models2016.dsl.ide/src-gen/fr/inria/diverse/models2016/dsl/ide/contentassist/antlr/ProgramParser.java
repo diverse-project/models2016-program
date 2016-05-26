@@ -76,8 +76,7 @@ public class ProgramParser extends AbstractContentAssistParser {
 					put(grammarAccess.getTutorialAccess().getGroup(), "rule__Tutorial__Group__0");
 					put(grammarAccess.getTutorialAccess().getGroup_2(), "rule__Tutorial__Group_2__0");
 					put(grammarAccess.getTutorialAccess().getGroup_3(), "rule__Tutorial__Group_3__0");
-					put(grammarAccess.getTutorialAccess().getGroup_4(), "rule__Tutorial__Group_4__0");
-					put(grammarAccess.getTutorialAccess().getGroup_4_2(), "rule__Tutorial__Group_4_2__0");
+					put(grammarAccess.getTutorialAccess().getGroup_3_2(), "rule__Tutorial__Group_3_2__0");
 					put(grammarAccess.getDoctoralSymposiumAccess().getGroup(), "rule__DoctoralSymposium__Group__0");
 					put(grammarAccess.getDoctoralSymposiumAccess().getGroup_2(), "rule__DoctoralSymposium__Group_2__0");
 					put(grammarAccess.getDoctoralSymposiumAccess().getGroup_3(), "rule__DoctoralSymposium__Group_3__0");
@@ -140,14 +139,13 @@ public class ProgramParser extends AbstractContentAssistParser {
 					put(grammarAccess.getWorkshopAccess().getNameAssignment_1(), "rule__Workshop__NameAssignment_1");
 					put(grammarAccess.getWorkshopAccess().getAbstractAssignment_2_1(), "rule__Workshop__AbstractAssignment_2_1");
 					put(grammarAccess.getWorkshopAccess().getUrlAssignment_3_1(), "rule__Workshop__UrlAssignment_3_1");
-					put(grammarAccess.getWorkshopAccess().getIdAssignment_4_1(), "rule__Workshop__IdAssignment_4_1");
+					put(grammarAccess.getWorkshopAccess().getFullNameAssignment_4_1(), "rule__Workshop__FullNameAssignment_4_1");
 					put(grammarAccess.getWorkshopAccess().getOrganizersAssignment_5_1(), "rule__Workshop__OrganizersAssignment_5_1");
 					put(grammarAccess.getWorkshopAccess().getOrganizersAssignment_5_2_1(), "rule__Workshop__OrganizersAssignment_5_2_1");
 					put(grammarAccess.getTutorialAccess().getNameAssignment_1(), "rule__Tutorial__NameAssignment_1");
 					put(grammarAccess.getTutorialAccess().getAbstractAssignment_2_1(), "rule__Tutorial__AbstractAssignment_2_1");
-					put(grammarAccess.getTutorialAccess().getIdAssignment_3_1(), "rule__Tutorial__IdAssignment_3_1");
-					put(grammarAccess.getTutorialAccess().getOrganizersAssignment_4_1(), "rule__Tutorial__OrganizersAssignment_4_1");
-					put(grammarAccess.getTutorialAccess().getOrganizersAssignment_4_2_1(), "rule__Tutorial__OrganizersAssignment_4_2_1");
+					put(grammarAccess.getTutorialAccess().getOrganizersAssignment_3_1(), "rule__Tutorial__OrganizersAssignment_3_1");
+					put(grammarAccess.getTutorialAccess().getOrganizersAssignment_3_2_1(), "rule__Tutorial__OrganizersAssignment_3_2_1");
 					put(grammarAccess.getDoctoralSymposiumAccess().getNameAssignment_1(), "rule__DoctoralSymposium__NameAssignment_1");
 					put(grammarAccess.getDoctoralSymposiumAccess().getAbstractAssignment_2_1(), "rule__DoctoralSymposium__AbstractAssignment_2_1");
 					put(grammarAccess.getDoctoralSymposiumAccess().getOrganizersAssignment_3_1(), "rule__DoctoralSymposium__OrganizersAssignment_3_1");

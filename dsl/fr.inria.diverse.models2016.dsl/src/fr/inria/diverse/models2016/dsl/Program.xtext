@@ -72,14 +72,13 @@ Workshop returns Workshop:
 		name=EString
 		('abstract' abstract=EString)?
 		('url' url=EString)?
-		('id' id=EString)?
+		('name' fullName=EString)?
 		('organizers' organizers+=Person (',' organizers+=Person)*)?;
 
 Tutorial returns Tutorial:
 	'Tutorial'
 		name=EString
 		('abstract' abstract=EString)?
-		('id' id=EString)?
 		('organizers' organizers+=Person (',' organizers+=Person)*)?;
 
 DoctoralSymposium returns DoctoralSymposium:
