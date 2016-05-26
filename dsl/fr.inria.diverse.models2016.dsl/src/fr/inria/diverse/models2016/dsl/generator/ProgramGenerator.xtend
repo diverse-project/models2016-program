@@ -15,8 +15,10 @@ import java.util.GregorianCalendar
 import java.util.HashMap
 import java.util.HashSet
 import java.util.List
+import java.util.Locale
 import java.util.Map
 import java.util.Set
+import java.util.TimeZone
 import models2016.Clinic
 import models2016.CoffeeBreak
 import models2016.Conference
@@ -24,10 +26,14 @@ import models2016.Day
 import models2016.DoctoralSymposium
 import models2016.EducatorSymposium
 import models2016.Event
+import models2016.KeyNote
 import models2016.Lunch
+import models2016.Meeting
 import models2016.Panel
+import models2016.Poster
 import models2016.Reception
 import models2016.Room
+import models2016.SRC
 import models2016.Session
 import models2016.TalkSession
 import models2016.Tutorial
@@ -36,8 +42,6 @@ import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.xtext.generator.AbstractGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess2
 import org.eclipse.xtext.generator.IGeneratorContext
-import java.util.Locale
-import java.util.TimeZone
 
 /**
  * Generates code from your model files on save.
@@ -303,6 +307,46 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 	}
 	
+	def private String getMeeting(Meeting meeting) {
+		return
+				'''
+					{
+						type : "Meeting",
+						title : «meeting.name»
+					}
+				'''
+	}
+	
+	def private String getSRC(SRC src) {
+		return
+				'''
+					{
+						type : "SRC",
+						title : «src.name»
+					}
+				'''
+	}
+	
+	def private String getPoster(Poster poster) {
+		return
+				'''
+					{
+						type : "Poster",
+						title : «poster.name»
+					}
+				'''
+	}
+	
+	def private String getKeynote(KeyNote keynote) {
+		return
+				'''
+					{
+						type : "Keynote",
+						title : «keynote.name»
+					}
+				'''
+	}
+	
 	def String getEvent(Event event, Date start) {
 		if (event instanceof TalkSession) {
 			return getTalkSession(event as TalkSession, start)
@@ -324,6 +368,14 @@ class ProgramGenerator extends AbstractGenerator {
 			return getClinic(event as Clinic)
 		} else if (event instanceof Lunch) {
 			return getLunch(event as Lunch)
+		} else if (event instanceof Meeting) {
+			return getMeeting(event as Meeting)
+		} else if (event instanceof SRC) {
+			return getSRC(event as SRC)
+		} else if (event instanceof Poster) {
+			return getPoster(event as Poster)
+		} else if (event instanceof KeyNote) {
+			return getKeynote(event as KeyNote)
 		}
 	}
 	

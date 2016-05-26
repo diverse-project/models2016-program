@@ -1069,7 +1069,11 @@ var data = [
 					icalStart : "20161003T083000Z",
 					icalEnd : "20161003T090000Z",
 					room : "Rotonde Surcouf",
-					events : [,
+					events : [
+						{
+							type : "SRC",
+							title : "SRC Poster"
+						},
 						{
 							type : "Clinic",
 							title : "Clinic"
@@ -1501,7 +1505,11 @@ var data = [
 					icalStart : "20161003T133000Z",
 					icalEnd : "20161003T140000Z",
 					room : "Rotonde Surcouf",
-					events : [,
+					events : [
+						{
+							type : "SRC",
+							title : "SRC Poster"
+						},
 						{
 							type : "Clinic",
 							title : "Clinic"
@@ -1761,6 +1769,10 @@ var data = [
 					icalEnd : "20161003T200000Z",
 					room : "Rotonde Surcouf",
 					events : [
+						{
+							type : "SRC",
+							title : "SRC Poster"
+						}
 					]
 				},
 				{
@@ -2261,6 +2273,10 @@ var data = [
 					icalEnd : "20161004T133000Z",
 					room : "Bouvet 1",
 					events : [
+						{
+							type : "SRC",
+							title : "SRC Talk"
+						}
 					]
 				},
 				{
@@ -2465,6 +2481,10 @@ var data = [
 					icalEnd : "20161004T153000Z",
 					room : "Bouvet 1",
 					events : [
+						{
+							type : "SRC",
+							title : "SRC Talk"
+						}
 					]
 				},
 				{
@@ -2653,6 +2673,10 @@ var data = [
 					icalEnd : "20161005T083000Z",
 					room : "Chateaubriand",
 					events : [
+						{
+							type : "Keynote",
+							title : "Keynote 1"
+						}
 					]
 				},
 				{
@@ -2683,6 +2707,10 @@ var data = [
 					icalEnd : "20161005T090000Z",
 					room : "Rotonde J. Cartier",
 					events : [
+						{
+							type : "Poster",
+							title : "Poster"
+						}
 					]
 				},
 				{
@@ -3162,6 +3190,10 @@ var data = [
 					icalEnd : "20161005T140000Z",
 					room : "Rotonde J. Cartier",
 					events : [
+						{
+							type : "Poster",
+							title : "Poster"
+						}
 					]
 				},
 				{
@@ -3418,6 +3450,10 @@ var data = [
 					icalEnd : "20161005T170000Z",
 					room : "Lamennais 4+5",
 					events : [
+						{
+							type : "Meeting",
+							title : "SC Meeting"
+						}
 					]
 				}
 			],
@@ -3466,6 +3502,10 @@ var data = [
 					icalEnd : "20161005T200000Z",
 					room : "Rotonde Surcouf",
 					events : [
+						{
+							type : "SRC",
+							title : "SRC Awards"
+						}
 					]
 				},
 				{
@@ -3547,6 +3587,10 @@ var data = [
 					icalEnd : "20161006T083000Z",
 					room : "Chateaubriand",
 					events : [
+						{
+							type : "Keynote",
+							title : "Keynote 2"
+						}
 					]
 				},
 				{
@@ -3574,6 +3618,10 @@ var data = [
 					icalEnd : "20161006T090000Z",
 					room : "Grand Large",
 					events : [
+						{
+							type : "Poster",
+							title : "Poster"
+						}
 					]
 				},
 				{
@@ -4046,6 +4094,10 @@ var data = [
 					icalEnd : "20161006T140000Z",
 					room : "Grand Large",
 					events : [
+						{
+							type : "Poster",
+							title : "Poster"
+						}
 					]
 				},
 				{
@@ -4283,6 +4335,10 @@ var data = [
 					icalEnd : "20161006T170000Z",
 					room : "Lamennais 4+5",
 					events : [
+						{
+							type : "Meeting",
+							title : "SoSyM Meeting"
+						}
 					]
 				}
 			],
@@ -4336,6 +4392,10 @@ var data = [
 					icalEnd : "20161007T083000Z",
 					room : "Chateaubriand",
 					events : [
+						{
+							type : "Keynote",
+							title : "Keynote 3"
+						}
 					]
 				},
 				{
@@ -4363,6 +4423,10 @@ var data = [
 					icalEnd : "20161007T090000Z",
 					room : "Rotonde J. Cartier",
 					events : [
+						{
+							type : "Poster",
+							title : "Poster"
+						}
 					]
 				},
 				{
