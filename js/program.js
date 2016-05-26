@@ -124,12 +124,12 @@ modelsApp.controller("ProgramController", function($scope) {
                                if (typeof event.papers === "undefined") {
 
                                    if (!favoritesOnly || ((typeof event.selected !== "undefined") && event.selected === true)) {
-                                        createEvent(calendar, session.icalStart, session.icalEnd, event.title, event.title, session.room);
+                                        createEvent(calendar, session.icalStart, session.icalEnd, event.title, event.title, session.room); // TODO : description
                                    }
                                } else {
                                    event.papers.forEach(function(talk, talkIndex) {
                                        if (!favoritesOnly || ((typeof talk.selected !== "undefined") && talk.selected === true)) {
-                                           createEvent(calendar, talk.icalStart, talk.icalEnd, talk.title, talk.title, session.room);
+                                           createEvent(calendar, talk.icalStart, talk.icalEnd, talk.title, talk.title, session.room); // TODO : description
                                        }
                                    });
                                }

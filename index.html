@@ -34,20 +34,42 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                         <h4 class="modal-title" id="myModalLabel">
+                            <!-- Star -->
                             <button class="btn btn-link btn-sm" ng-click="toggleFavoriteTalk(selectedTalk, selectedTalkDate)">
                                 <span ng-if="selectedTalk.selected" class="glyphicon glyphicon-star"></span>
                                 <span ng-if="!selectedTalk.selected" class="glyphicon glyphicon-star-empty"></span>
                             </button>
-                            <strong ng-if="selectedTalk.type">{{selectedTalk.type}}:</strong> {{selectedTalk.title}}
+
+                            <!-- Title -->
+                            <strong ng-if="selectedTalk.type">{{selectedTalk.type}}:</strong>
+                            <a ng-if="selectedTalk.url" ng-href="{{selectedTalk.url}}">{{selectedTalk.title}}</a>
+                            <span ng-if="!selectedTalk.url">{{selectedTalk.title}}</span>
                         </h4>
                     </div>
                     <div class="modal-body">
+
+                        <!-- Organizers -->
                         <div ng-if="selectedTalk.organizers.length > 0">
-                            <strong>Organizers:</strong> <span ng-repeat="organizer in selectedTalk.organizers"><span ng-if="$index > 0">, </span>{{organizer}}</span>
+                            <strong>Organizers:</strong>
+                            <span ng-repeat="organizer in selectedTalk.organizers">
+                                <span ng-if="$index > 0">, </span>
+                                <a ng-if="organizer.email" ng-href="mailto:{{organizer.email}}">{{organizer.name}}</a>
+                                <span ng-if="!organizer.email">{{organizer.name}}</span>
+                            </span>
                         </div>
+
+                        <!-- Authors -->
                         <div ng-if="selectedTalk.authors">
-                            <strong>Authors:</strong> <span ng-repeat="author in selectedTalk.authors"><span ng-if="$index > 0">, </span>{{author}}</span>
+                            <strong>Authors:</strong>
+                            <span ng-repeat="author in selectedTalk.authors">
+                                <span ng-if="$index > 0">, </span>
+                                {{author}}
+                                <a ng-if="author.email" ng-href="mailto:{{author.email}}">{{author.name}}</a>
+                                <span ng-if="!author.email">{{author.name}}</span>
+                            </span>
                         </div>
+
+                        <!-- Abstract -->
                         <div ng-if="selectedTalk.abstract" class="abstract">
                             <strong>Abstract:</strong> {{selectedTalk.abstract}}
                         </div>
