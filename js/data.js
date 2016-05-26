@@ -154,7 +154,7 @@ var data = [
 							type : "Workshop",
 							title : "ME",
 							abstract : "Software artefacts constantly increase in complexity, variety and novelty. Environment and business constraints, user requirements and new insights put additional pressure on their adaptability, availability, reliability and quality: they continuously need to be up to date and up to level. However, evolution issues are critical, complex and costly to manage. They concern requirements, architecture, design, source code, documentation, integration as well as deployment. They also typically affect various kinds of models (data, behavioural, domain, source code or goal models). Addressing and managing these varieties of changes is essential. Models and meta-models, the cornerstone of complex software systems’ abstraction, represent a powerful mean for facing software evolution challenges by ensuring a more abstract and expressive modelling of software evolution. They can help and guide software evolution, and can enforce and reduce critical risks and important involved resources. The workshop puts the focus on Models and Evolution by considering two main sides:\n(1) Managing software evolution needs by relying on the high-level abstraction power of models and meta-models.\n(2) Managing models and metamodels evolution needs by putting attention to their increasing evolution issues as they become primary artefacts and to the need of co-evolution of all related software artefacts.",
-							url : "http://www.models-and-evolution.com/"
+							url : "http://www.models-and-evolution.com/",
 							organizers : [
 								{
 									name : "Dalila Tamzalit",
@@ -188,7 +188,7 @@ var data = [
 							type : "Workshop",
 							title : "OCL",
 							abstract : "Limitations of graphical notations encourage the development of text-based modeling languages that either integrate with or replace graphical notations for modeling. Typical examples of such languages are OCL, textual MOF, Epsilon, and Alloy. The goal of this workshop is to create a forum where researchers and practitioners interested in building models using OCL or other kinds of textual languages can directly interact, report advances, share results, discuss appropriate standards and showcase tools on any aspect of textual modeling and analysis.",
-							url : "http://oclworkshop.github.io/2016/"
+							url : "http://oclworkshop.github.io/2016/",
 							organizers : [
 								{
 									name : "Achim D. Brucker",
@@ -218,7 +218,7 @@ var data = [
 							type : "Workshop",
 							title : "FlexMDE",
 							abstract : "Over the last years, numerous modeling platforms have been developed to simplify and automate many steps of Model Driven Engineering (MDE) processes. However, still several challenges have to be solved for enabling a wider adoption of MDE. One of the most important impediments in adopting MDE tools is related to the reduced flexibility of existing modeling platforms that do not permit to relax or enforce their rigidity depending on the stages of the applied development process. For instance, EMF does not permit to enter models which are not conforming to a metamodel. On one hand this allows only valid models to be defined, but on the other, it makes the corresponding pragmatics more difficult. Thus there is an increasing need for techniques supporting flexibility in a wide range of modeling activities, including metamodel, model, and model transformation development and reuse. The workshop aims at identifying the difficulties in the current practice of MDE related to the lack of flexibility, and soliciting contributions of ideas, concepts, and techniques also from other areas of software development which could be useful to revise certain MDE fundamental typing concepts, to facilitate flexible reuse of MDE artefacts, and to define agile model sketching techniques.",
-							url : "http://www.di.univaq.it/flexmde/"
+							url : "http://www.di.univaq.it/flexmde/",
 							organizers : [
 								{
 									name : "Davide Di Ruscio",
@@ -248,7 +248,7 @@ var data = [
 							type : "Workshop",
 							title : "VOLT",
 							abstract : "Model transformations are everywhere in software development, implicitly or explicitly. They have been described as “the heart and soul of Model-Driven Development (MDD)”. Several experts have identified the verification of model transformations as one of the grand challenges of MDD. Despite some recent activity in the field, the work on the verification of model transformations remains scattered and a clear perspective on the subject is still not in sight. Furthermore, current model transformation tools most often lack verification techniques to support such activities. The Fifth International Workshop on the Verification Of modeL Transformation is one of the most accurate venues to offer researchers a dedicated forum to classify, discuss, propose, and advance verification techniques dedicated to model transformations. VOLT promotes discussions between theoreticians and practitioners from academy and industry, given its ideal co-location with MODELS. VOLT’s interest spans both to academic and industrial practices. One of the goals of the forum is to collect enough industrial case studies so that those problems can be stated at a theoretical level.",
-							url : "http://www-ens.iro.umontreal.ca/~syriani/volt2016/"
+							url : "http://www-ens.iro.umontreal.ca/~syriani/volt2016/",
 							organizers : [
 								{
 									name : "Moussa Amrani",
@@ -427,7 +427,7 @@ var data = [
 							type : "Workshop",
 							title : "ME",
 							abstract : "Software artefacts constantly increase in complexity, variety and novelty. Environment and business constraints, user requirements and new insights put additional pressure on their adaptability, availability, reliability and quality: they continuously need to be up to date and up to level. However, evolution issues are critical, complex and costly to manage. They concern requirements, architecture, design, source code, documentation, integration as well as deployment. They also typically affect various kinds of models (data, behavioural, domain, source code or goal models). Addressing and managing these varieties of changes is essential. Models and meta-models, the cornerstone of complex software systems’ abstraction, represent a powerful mean for facing software evolution challenges by ensuring a more abstract and expressive modelling of software evolution. They can help and guide software evolution, and can enforce and reduce critical risks and important involved resources. The workshop puts the focus on Models and Evolution by considering two main sides:\n(1) Managing software evolution needs by relying on the high-level abstraction power of models and meta-models.\n(2) Managing models and metamodels evolution needs by putting attention to their increasing evolution issues as they become primary artefacts and to the need of co-evolution of all related software artefacts.",
-							url : "http://www.models-and-evolution.com/"
+							url : "http://www.models-and-evolution.com/",
 							organizers : [
 								{
 									name : "Dalila Tamzalit",
@@ -461,7 +461,7 @@ var data = [
 							type : "Workshop",
 							title : "OCL",
 							abstract : "Limitations of graphical notations encourage the development of text-based modeling languages that either integrate with or replace graphical notations for modeling. Typical examples of such languages are OCL, textual MOF, Epsilon, and Alloy. The goal of this workshop is to create a forum where researchers and practitioners interested in building models using OCL or other kinds of textual languages can directly interact, report advances, share results, discuss appropriate standards and showcase tools on any aspect of textual modeling and analysis.",
-							url : "http://oclworkshop.github.io/2016/"
+							url : "http://oclworkshop.github.io/2016/",
 							organizers : [
 								{
 									name : "Achim D. Brucker",
@@ -491,7 +491,7 @@ var data = [
 							type : "Workshop",
 							title : "FlexMDE",
 							abstract : "Over the last years, numerous modeling platforms have been developed to simplify and automate many steps of Model Driven Engineering (MDE) processes. However, still several challenges have to be solved for enabling a wider adoption of MDE. One of the most important impediments in adopting MDE tools is related to the reduced flexibility of existing modeling platforms that do not permit to relax or enforce their rigidity depending on the stages of the applied development process. For instance, EMF does not permit to enter models which are not conforming to a metamodel. On one hand this allows only valid models to be defined, but on the other, it makes the corresponding pragmatics more difficult. Thus there is an increasing need for techniques supporting flexibility in a wide range of modeling activities, including metamodel, model, and model transformation development and reuse. The workshop aims at identifying the difficulties in the current practice of MDE related to the lack of flexibility, and soliciting contributions of ideas, concepts, and techniques also from other areas of software development which could be useful to revise certain MDE fundamental typing concepts, to facilitate flexible reuse of MDE artefacts, and to define agile model sketching techniques.",
-							url : "http://www.di.univaq.it/flexmde/"
+							url : "http://www.di.univaq.it/flexmde/",
 							organizers : [
 								{
 									name : "Davide Di Ruscio",
@@ -521,7 +521,7 @@ var data = [
 							type : "Workshop",
 							title : "VOLT",
 							abstract : "Model transformations are everywhere in software development, implicitly or explicitly. They have been described as “the heart and soul of Model-Driven Development (MDD)”. Several experts have identified the verification of model transformations as one of the grand challenges of MDD. Despite some recent activity in the field, the work on the verification of model transformations remains scattered and a clear perspective on the subject is still not in sight. Furthermore, current model transformation tools most often lack verification techniques to support such activities. The Fifth International Workshop on the Verification Of modeL Transformation is one of the most accurate venues to offer researchers a dedicated forum to classify, discuss, propose, and advance verification techniques dedicated to model transformations. VOLT promotes discussions between theoreticians and practitioners from academy and industry, given its ideal co-location with MODELS. VOLT’s interest spans both to academic and industrial practices. One of the goals of the forum is to collect enough industrial case studies so that those problems can be stated at a theoretical level.",
-							url : "http://www-ens.iro.umontreal.ca/~syriani/volt2016/"
+							url : "http://www-ens.iro.umontreal.ca/~syriani/volt2016/",
 							organizers : [
 								{
 									name : "Moussa Amrani",
@@ -695,7 +695,7 @@ var data = [
 							type : "Workshop",
 							title : "ME",
 							abstract : "Software artefacts constantly increase in complexity, variety and novelty. Environment and business constraints, user requirements and new insights put additional pressure on their adaptability, availability, reliability and quality: they continuously need to be up to date and up to level. However, evolution issues are critical, complex and costly to manage. They concern requirements, architecture, design, source code, documentation, integration as well as deployment. They also typically affect various kinds of models (data, behavioural, domain, source code or goal models). Addressing and managing these varieties of changes is essential. Models and meta-models, the cornerstone of complex software systems’ abstraction, represent a powerful mean for facing software evolution challenges by ensuring a more abstract and expressive modelling of software evolution. They can help and guide software evolution, and can enforce and reduce critical risks and important involved resources. The workshop puts the focus on Models and Evolution by considering two main sides:\n(1) Managing software evolution needs by relying on the high-level abstraction power of models and meta-models.\n(2) Managing models and metamodels evolution needs by putting attention to their increasing evolution issues as they become primary artefacts and to the need of co-evolution of all related software artefacts.",
-							url : "http://www.models-and-evolution.com/"
+							url : "http://www.models-and-evolution.com/",
 							organizers : [
 								{
 									name : "Dalila Tamzalit",
@@ -729,7 +729,7 @@ var data = [
 							type : "Workshop",
 							title : "OCL",
 							abstract : "Limitations of graphical notations encourage the development of text-based modeling languages that either integrate with or replace graphical notations for modeling. Typical examples of such languages are OCL, textual MOF, Epsilon, and Alloy. The goal of this workshop is to create a forum where researchers and practitioners interested in building models using OCL or other kinds of textual languages can directly interact, report advances, share results, discuss appropriate standards and showcase tools on any aspect of textual modeling and analysis.",
-							url : "http://oclworkshop.github.io/2016/"
+							url : "http://oclworkshop.github.io/2016/",
 							organizers : [
 								{
 									name : "Achim D. Brucker",
@@ -759,7 +759,7 @@ var data = [
 							type : "Workshop",
 							title : "FlexMDE",
 							abstract : "Over the last years, numerous modeling platforms have been developed to simplify and automate many steps of Model Driven Engineering (MDE) processes. However, still several challenges have to be solved for enabling a wider adoption of MDE. One of the most important impediments in adopting MDE tools is related to the reduced flexibility of existing modeling platforms that do not permit to relax or enforce their rigidity depending on the stages of the applied development process. For instance, EMF does not permit to enter models which are not conforming to a metamodel. On one hand this allows only valid models to be defined, but on the other, it makes the corresponding pragmatics more difficult. Thus there is an increasing need for techniques supporting flexibility in a wide range of modeling activities, including metamodel, model, and model transformation development and reuse. The workshop aims at identifying the difficulties in the current practice of MDE related to the lack of flexibility, and soliciting contributions of ideas, concepts, and techniques also from other areas of software development which could be useful to revise certain MDE fundamental typing concepts, to facilitate flexible reuse of MDE artefacts, and to define agile model sketching techniques.",
-							url : "http://www.di.univaq.it/flexmde/"
+							url : "http://www.di.univaq.it/flexmde/",
 							organizers : [
 								{
 									name : "Davide Di Ruscio",
@@ -789,7 +789,7 @@ var data = [
 							type : "Workshop",
 							title : "VOLT",
 							abstract : "Model transformations are everywhere in software development, implicitly or explicitly. They have been described as “the heart and soul of Model-Driven Development (MDD)”. Several experts have identified the verification of model transformations as one of the grand challenges of MDD. Despite some recent activity in the field, the work on the verification of model transformations remains scattered and a clear perspective on the subject is still not in sight. Furthermore, current model transformation tools most often lack verification techniques to support such activities. The Fifth International Workshop on the Verification Of modeL Transformation is one of the most accurate venues to offer researchers a dedicated forum to classify, discuss, propose, and advance verification techniques dedicated to model transformations. VOLT promotes discussions between theoreticians and practitioners from academy and industry, given its ideal co-location with MODELS. VOLT’s interest spans both to academic and industrial practices. One of the goals of the forum is to collect enough industrial case studies so that those problems can be stated at a theoretical level.",
-							url : "http://www-ens.iro.umontreal.ca/~syriani/volt2016/"
+							url : "http://www-ens.iro.umontreal.ca/~syriani/volt2016/",
 							organizers : [
 								{
 									name : "Moussa Amrani",
@@ -959,7 +959,7 @@ var data = [
 							type : "Workshop",
 							title : "ME",
 							abstract : "Software artefacts constantly increase in complexity, variety and novelty. Environment and business constraints, user requirements and new insights put additional pressure on their adaptability, availability, reliability and quality: they continuously need to be up to date and up to level. However, evolution issues are critical, complex and costly to manage. They concern requirements, architecture, design, source code, documentation, integration as well as deployment. They also typically affect various kinds of models (data, behavioural, domain, source code or goal models). Addressing and managing these varieties of changes is essential. Models and meta-models, the cornerstone of complex software systems’ abstraction, represent a powerful mean for facing software evolution challenges by ensuring a more abstract and expressive modelling of software evolution. They can help and guide software evolution, and can enforce and reduce critical risks and important involved resources. The workshop puts the focus on Models and Evolution by considering two main sides:\n(1) Managing software evolution needs by relying on the high-level abstraction power of models and meta-models.\n(2) Managing models and metamodels evolution needs by putting attention to their increasing evolution issues as they become primary artefacts and to the need of co-evolution of all related software artefacts.",
-							url : "http://www.models-and-evolution.com/"
+							url : "http://www.models-and-evolution.com/",
 							organizers : [
 								{
 									name : "Dalila Tamzalit",
@@ -993,7 +993,7 @@ var data = [
 							type : "Workshop",
 							title : "OCL",
 							abstract : "Limitations of graphical notations encourage the development of text-based modeling languages that either integrate with or replace graphical notations for modeling. Typical examples of such languages are OCL, textual MOF, Epsilon, and Alloy. The goal of this workshop is to create a forum where researchers and practitioners interested in building models using OCL or other kinds of textual languages can directly interact, report advances, share results, discuss appropriate standards and showcase tools on any aspect of textual modeling and analysis.",
-							url : "http://oclworkshop.github.io/2016/"
+							url : "http://oclworkshop.github.io/2016/",
 							organizers : [
 								{
 									name : "Achim D. Brucker",
@@ -1023,7 +1023,7 @@ var data = [
 							type : "Workshop",
 							title : "FlexMDE",
 							abstract : "Over the last years, numerous modeling platforms have been developed to simplify and automate many steps of Model Driven Engineering (MDE) processes. However, still several challenges have to be solved for enabling a wider adoption of MDE. One of the most important impediments in adopting MDE tools is related to the reduced flexibility of existing modeling platforms that do not permit to relax or enforce their rigidity depending on the stages of the applied development process. For instance, EMF does not permit to enter models which are not conforming to a metamodel. On one hand this allows only valid models to be defined, but on the other, it makes the corresponding pragmatics more difficult. Thus there is an increasing need for techniques supporting flexibility in a wide range of modeling activities, including metamodel, model, and model transformation development and reuse. The workshop aims at identifying the difficulties in the current practice of MDE related to the lack of flexibility, and soliciting contributions of ideas, concepts, and techniques also from other areas of software development which could be useful to revise certain MDE fundamental typing concepts, to facilitate flexible reuse of MDE artefacts, and to define agile model sketching techniques.",
-							url : "http://www.di.univaq.it/flexmde/"
+							url : "http://www.di.univaq.it/flexmde/",
 							organizers : [
 								{
 									name : "Davide Di Ruscio",
@@ -1053,7 +1053,7 @@ var data = [
 							type : "Workshop",
 							title : "VOLT",
 							abstract : "Model transformations are everywhere in software development, implicitly or explicitly. They have been described as “the heart and soul of Model-Driven Development (MDD)”. Several experts have identified the verification of model transformations as one of the grand challenges of MDD. Despite some recent activity in the field, the work on the verification of model transformations remains scattered and a clear perspective on the subject is still not in sight. Furthermore, current model transformation tools most often lack verification techniques to support such activities. The Fifth International Workshop on the Verification Of modeL Transformation is one of the most accurate venues to offer researchers a dedicated forum to classify, discuss, propose, and advance verification techniques dedicated to model transformations. VOLT promotes discussions between theoreticians and practitioners from academy and industry, given its ideal co-location with MODELS. VOLT’s interest spans both to academic and industrial practices. One of the goals of the forum is to collect enough industrial case studies so that those problems can be stated at a theoretical level.",
-							url : "http://www-ens.iro.umontreal.ca/~syriani/volt2016/"
+							url : "http://www-ens.iro.umontreal.ca/~syriani/volt2016/",
 							organizers : [
 								{
 									name : "Moussa Amrani",
@@ -1189,7 +1189,7 @@ var data = [
 							type : "Workshop",
 							title : "PAME",
 							abstract : "PAME is intended to be the first forum for practitioners in MDE to discuss patterns that occur often during the different modeling activities. The aim of this workshop is to provide an arena for proposing and discussing good practices, patterns, pattern-based modeling, as well as start the initiative of developing a “language” for discussing and describing relevant problems and their solutions in the form of patterns.",
-							url : "http://www-ens.iro.umontreal.ca/~syriani/pame2016"
+							url : "http://www-ens.iro.umontreal.ca/~syriani/pame2016",
 							organizers : [
 								{
 									name : "Eugene Syriani",
@@ -1239,7 +1239,7 @@ var data = [
 							type : "Workshop",
 							title : "OSS4MDE",
 							abstract : "Just like the previous versions of the workshop, OSS4MDE’16 workshop will bring together researchers, educators and industry representatives interested in modeling and MDE with open source tools. However, compared to previous incarnations, OSS4MDE’16 will be less formal and more interactive, and place more emphasis on promoting open source by inspiring and encouraging potential users and contributors, and supporting existing users and contributors.",
-							url : "http://www.cs.queensu.ca/oss4mde"
+							url : "http://www.cs.queensu.ca/oss4mde",
 							organizers : [
 								{
 									name : "Juergen Dingel",
@@ -1277,7 +1277,7 @@ var data = [
 							type : "Workshop",
 							title : "EXE",
 							abstract : "Executable models have the potential of bringing major benefits to the development of complex systems, as they provide abstractions of complex system behaviors and allow for the performance of early analyses of that behavior. Despite the potential benefits of executable models, there are still many challenges to solve, such as the lack of maturity in the definition of and tooling for executable modeling languages, and the limited experience with executable modeling in much of the software development industry. The objective of this workshop is to draw attention to the potentials and challenges of executable modeling and advance the state-of-the-art in executable modeling. We aim at bringing together researchers working towards overcoming challenges in executable modeling, as well as practitioners from different application domains and application contexts of executable modeling. The workshop intends to provide a forum for exchanging recent results, ideas, opinions, requirements, and experiences in executable modeling.",
-							url : "http://www.modelexecution.org/"
+							url : "http://www.modelexecution.org/",
 							organizers : [
 								{
 									name : "Tanja Mayerhofer",
@@ -1311,7 +1311,7 @@ var data = [
 							type : "Workshop",
 							title : "MoDeVVa",
 							abstract : "MoDeVVa offers a forum for researchers and practitioners who are working on Verification & Validation and Models-driven Engineering. The major questions of interest in MoDeVVa concern the mutual benefits of MDE and V&V: How can models-driven engineering improve V&V?, and How can V&V leverage the techniques around models-driven engineering? In 2016 we put an emphasis on making the V&V activities of MDE artefacts a systematic process. This includes modeling the V&V activities, investigating the synergies between them or composing different V&V activities to increase the confidence in the verification results.",
-							url : "https://sites.google.com/site/modevva/"
+							url : "https://sites.google.com/site/modevva/",
 							organizers : [
 								{
 									name : "Michalis Famelis",
@@ -1340,7 +1340,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							url : 
+							url : ,
 							organizers : [
 							]
 						}
@@ -1474,7 +1474,7 @@ var data = [
 							type : "Workshop",
 							title : "PAME",
 							abstract : "PAME is intended to be the first forum for practitioners in MDE to discuss patterns that occur often during the different modeling activities. The aim of this workshop is to provide an arena for proposing and discussing good practices, patterns, pattern-based modeling, as well as start the initiative of developing a “language” for discussing and describing relevant problems and their solutions in the form of patterns.",
-							url : "http://www-ens.iro.umontreal.ca/~syriani/pame2016"
+							url : "http://www-ens.iro.umontreal.ca/~syriani/pame2016",
 							organizers : [
 								{
 									name : "Eugene Syriani",
@@ -1524,7 +1524,7 @@ var data = [
 							type : "Workshop",
 							title : "OSS4MDE",
 							abstract : "Just like the previous versions of the workshop, OSS4MDE’16 workshop will bring together researchers, educators and industry representatives interested in modeling and MDE with open source tools. However, compared to previous incarnations, OSS4MDE’16 will be less formal and more interactive, and place more emphasis on promoting open source by inspiring and encouraging potential users and contributors, and supporting existing users and contributors.",
-							url : "http://www.cs.queensu.ca/oss4mde"
+							url : "http://www.cs.queensu.ca/oss4mde",
 							organizers : [
 								{
 									name : "Juergen Dingel",
@@ -1562,7 +1562,7 @@ var data = [
 							type : "Workshop",
 							title : "EXE",
 							abstract : "Executable models have the potential of bringing major benefits to the development of complex systems, as they provide abstractions of complex system behaviors and allow for the performance of early analyses of that behavior. Despite the potential benefits of executable models, there are still many challenges to solve, such as the lack of maturity in the definition of and tooling for executable modeling languages, and the limited experience with executable modeling in much of the software development industry. The objective of this workshop is to draw attention to the potentials and challenges of executable modeling and advance the state-of-the-art in executable modeling. We aim at bringing together researchers working towards overcoming challenges in executable modeling, as well as practitioners from different application domains and application contexts of executable modeling. The workshop intends to provide a forum for exchanging recent results, ideas, opinions, requirements, and experiences in executable modeling.",
-							url : "http://www.modelexecution.org/"
+							url : "http://www.modelexecution.org/",
 							organizers : [
 								{
 									name : "Tanja Mayerhofer",
@@ -1596,7 +1596,7 @@ var data = [
 							type : "Workshop",
 							title : "MoDeVVa",
 							abstract : "MoDeVVa offers a forum for researchers and practitioners who are working on Verification & Validation and Models-driven Engineering. The major questions of interest in MoDeVVa concern the mutual benefits of MDE and V&V: How can models-driven engineering improve V&V?, and How can V&V leverage the techniques around models-driven engineering? In 2016 we put an emphasis on making the V&V activities of MDE artefacts a systematic process. This includes modeling the V&V activities, investigating the synergies between them or composing different V&V activities to increase the confidence in the verification results.",
-							url : "https://sites.google.com/site/modevva/"
+							url : "https://sites.google.com/site/modevva/",
 							organizers : [
 								{
 									name : "Michalis Famelis",
@@ -1625,7 +1625,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							url : 
+							url : ,
 							organizers : [
 							]
 						}
@@ -1759,7 +1759,7 @@ var data = [
 							type : "Workshop",
 							title : "PAME",
 							abstract : "PAME is intended to be the first forum for practitioners in MDE to discuss patterns that occur often during the different modeling activities. The aim of this workshop is to provide an arena for proposing and discussing good practices, patterns, pattern-based modeling, as well as start the initiative of developing a “language” for discussing and describing relevant problems and their solutions in the form of patterns.",
-							url : "http://www-ens.iro.umontreal.ca/~syriani/pame2016"
+							url : "http://www-ens.iro.umontreal.ca/~syriani/pame2016",
 							organizers : [
 								{
 									name : "Eugene Syriani",
@@ -1809,7 +1809,7 @@ var data = [
 							type : "Workshop",
 							title : "OSS4MDE",
 							abstract : "Just like the previous versions of the workshop, OSS4MDE’16 workshop will bring together researchers, educators and industry representatives interested in modeling and MDE with open source tools. However, compared to previous incarnations, OSS4MDE’16 will be less formal and more interactive, and place more emphasis on promoting open source by inspiring and encouraging potential users and contributors, and supporting existing users and contributors.",
-							url : "http://www.cs.queensu.ca/oss4mde"
+							url : "http://www.cs.queensu.ca/oss4mde",
 							organizers : [
 								{
 									name : "Juergen Dingel",
@@ -1847,7 +1847,7 @@ var data = [
 							type : "Workshop",
 							title : "EXE",
 							abstract : "Executable models have the potential of bringing major benefits to the development of complex systems, as they provide abstractions of complex system behaviors and allow for the performance of early analyses of that behavior. Despite the potential benefits of executable models, there are still many challenges to solve, such as the lack of maturity in the definition of and tooling for executable modeling languages, and the limited experience with executable modeling in much of the software development industry. The objective of this workshop is to draw attention to the potentials and challenges of executable modeling and advance the state-of-the-art in executable modeling. We aim at bringing together researchers working towards overcoming challenges in executable modeling, as well as practitioners from different application domains and application contexts of executable modeling. The workshop intends to provide a forum for exchanging recent results, ideas, opinions, requirements, and experiences in executable modeling.",
-							url : "http://www.modelexecution.org/"
+							url : "http://www.modelexecution.org/",
 							organizers : [
 								{
 									name : "Tanja Mayerhofer",
@@ -1881,7 +1881,7 @@ var data = [
 							type : "Workshop",
 							title : "MoDeVVa",
 							abstract : "MoDeVVa offers a forum for researchers and practitioners who are working on Verification & Validation and Models-driven Engineering. The major questions of interest in MoDeVVa concern the mutual benefits of MDE and V&V: How can models-driven engineering improve V&V?, and How can V&V leverage the techniques around models-driven engineering? In 2016 we put an emphasis on making the V&V activities of MDE artefacts a systematic process. This includes modeling the V&V activities, investigating the synergies between them or composing different V&V activities to increase the confidence in the verification results.",
-							url : "https://sites.google.com/site/modevva/"
+							url : "https://sites.google.com/site/modevva/",
 							organizers : [
 								{
 									name : "Michalis Famelis",
@@ -1910,7 +1910,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							url : 
+							url : ,
 							organizers : [
 							]
 						}
@@ -2044,7 +2044,7 @@ var data = [
 							type : "Workshop",
 							title : "PAME",
 							abstract : "PAME is intended to be the first forum for practitioners in MDE to discuss patterns that occur often during the different modeling activities. The aim of this workshop is to provide an arena for proposing and discussing good practices, patterns, pattern-based modeling, as well as start the initiative of developing a “language” for discussing and describing relevant problems and their solutions in the form of patterns.",
-							url : "http://www-ens.iro.umontreal.ca/~syriani/pame2016"
+							url : "http://www-ens.iro.umontreal.ca/~syriani/pame2016",
 							organizers : [
 								{
 									name : "Eugene Syriani",
@@ -2094,7 +2094,7 @@ var data = [
 							type : "Workshop",
 							title : "OSS4MDE",
 							abstract : "Just like the previous versions of the workshop, OSS4MDE’16 workshop will bring together researchers, educators and industry representatives interested in modeling and MDE with open source tools. However, compared to previous incarnations, OSS4MDE’16 will be less formal and more interactive, and place more emphasis on promoting open source by inspiring and encouraging potential users and contributors, and supporting existing users and contributors.",
-							url : "http://www.cs.queensu.ca/oss4mde"
+							url : "http://www.cs.queensu.ca/oss4mde",
 							organizers : [
 								{
 									name : "Juergen Dingel",
@@ -2132,7 +2132,7 @@ var data = [
 							type : "Workshop",
 							title : "EXE",
 							abstract : "Executable models have the potential of bringing major benefits to the development of complex systems, as they provide abstractions of complex system behaviors and allow for the performance of early analyses of that behavior. Despite the potential benefits of executable models, there are still many challenges to solve, such as the lack of maturity in the definition of and tooling for executable modeling languages, and the limited experience with executable modeling in much of the software development industry. The objective of this workshop is to draw attention to the potentials and challenges of executable modeling and advance the state-of-the-art in executable modeling. We aim at bringing together researchers working towards overcoming challenges in executable modeling, as well as practitioners from different application domains and application contexts of executable modeling. The workshop intends to provide a forum for exchanging recent results, ideas, opinions, requirements, and experiences in executable modeling.",
-							url : "http://www.modelexecution.org/"
+							url : "http://www.modelexecution.org/",
 							organizers : [
 								{
 									name : "Tanja Mayerhofer",
@@ -2166,7 +2166,7 @@ var data = [
 							type : "Workshop",
 							title : "MoDeVVa",
 							abstract : "MoDeVVa offers a forum for researchers and practitioners who are working on Verification & Validation and Models-driven Engineering. The major questions of interest in MoDeVVa concern the mutual benefits of MDE and V&V: How can models-driven engineering improve V&V?, and How can V&V leverage the techniques around models-driven engineering? In 2016 we put an emphasis on making the V&V activities of MDE artefacts a systematic process. This includes modeling the V&V activities, investigating the synergies between them or composing different V&V activities to increase the confidence in the verification results.",
-							url : "https://sites.google.com/site/modevva/"
+							url : "https://sites.google.com/site/modevva/",
 							organizers : [
 								{
 									name : "Michalis Famelis",
@@ -2195,7 +2195,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							url : 
+							url : ,
 							organizers : [
 							]
 						}
@@ -2378,7 +2378,7 @@ var data = [
 							type : "Workshop",
 							title : "ModComp",
 							abstract : "Model-Driven Engineering (MDE) and Component-Based Software Engineering (CBSE) have been proven to effectively reduce software development complexity by (i) shifting the focus from source code to models and (ii) breaking down the set of desired features and their intricacy into smaller sub-modules, respectively. Moreover, the interplay of MDE and CBSE approaches is gaining recognition as a very promising means to boost the development of software systems by reducing costs and risks and shorten time-to-market. While several attempts to effectively combine MDE and CBSE have been documented, there are still unsolved clashes raising when exploiting interplay of MDE and CBSE, mostly due to mismatches in the related terminology as well as to differences in their basic essence.\nAs satellite event of MoDELS, the goal of ModComp’16 is to gather researchers and practitioners to share opinions, propose solutions to open challenges and generally explore the frontiers of interweaving between MDE and CBSE.",
-							url : "http://www.mrtc.mdh.se/ModComp16/"
+							url : "http://www.mrtc.mdh.se/ModComp16/",
 							organizers : [
 								{
 									name : "Federico Ciccozzi",
@@ -2404,7 +2404,7 @@ var data = [
 							type : "Workshop",
 							title : "COMMitMDE",
 							abstract : "Nowadays, collaborative model-driven software engineering (MDSE) is gaining a growing interest in both academia and practice. Goal of COMMitMDE 2016 is to bring together researchers and practitioners in order to investigate together (i) the potential impact of collaborative software engineering methods and principles into MDE practices and (ii) how MDE methods and techniques can support collaborative software engineering activities. Also, COMMitMDE aims at assessing the state of the research and practice on collaborative MDE, creating new synergies between tool vendors, researchers, and practitioners.",
-							url : "http://cs.gssi.infn.it/commitmde2016"
+							url : "http://cs.gssi.infn.it/commitmde2016",
 							organizers : [
 								{
 									name : "Henry Muccini",
@@ -2438,7 +2438,7 @@ var data = [
 							type : "Workshop",
 							title : "HuFaMo",
 							abstract : "Modeling is a genuinely human enterprise, so many of the questions related to modeling can only be answered by empirical studies of human factors. The HuFaMo workshop series is the premier venue for early stage empirical research involving human factors in modeling. Our goal is to improve the state of the science and professionalism in empirical research in the Model Based Engineering community. Typical examples of such questions might consider the usability of a certain approach such as a method or language, or the emotional states or personal judgements of modelers. We invite submissions regarding empirical studies of emotion, cognition, personality traits of modelers as well as studies about activities and communities of modelers, their culture and capabilities. Beyond conventional papers, we also seek to publish study designs, negative results, and, in fact, suggestions for actual studies to be carried out at the workshop.",
-							url : "http://hufamo.compute.dtu.dk/"
+							url : "http://hufamo.compute.dtu.dk/",
 							organizers : [
 								{
 									name : "Harald Störrle",
@@ -2464,7 +2464,7 @@ var data = [
 							type : "Workshop",
 							title : "MRT",
 							abstract : "The complexity of adapting software during runtime has spawned interest in how models can be used to validate, monitor and adapt runtime behaviour. The use of models during runtime extends the use of modeling techniques beyond the design and implementation phases. The goal of this workshop is to look at issues related to developing appropriate model-driven approaches to managing and monitoring the execution of systems. We aim to continue the discussion of research ideas and proposals from researchers who work in relevant areas such as MDE, software architectures, reflection, and autonomic and self-adaptive systems, and provide a “state-of-the-art” research assessment expressed in terms of challenges and achievements.",
-							url : "http://st.inf.tu-dresden.de/MRT16/"
+							url : "http://st.inf.tu-dresden.de/MRT16/",
 							organizers : [
 								{
 									name : "Sebastian Götz",
@@ -2498,7 +2498,7 @@ var data = [
 							type : "Workshop",
 							title : "MULTI",
 							abstract : "As interest in multi-level modelling grows, and the range of multi-level modelling tools expands, there is growing interest in consolidating the key principles of the paradigm and clarifying the essential differences between heterogeneous approaches.  Although multi-level modelling has now been used successfully in a variety of industrial projects and standards initiatives, there is still no clear consensus on what the paradigm actually entails and how it should be applied. For example, there are different views on whether it is sound to combine instance facets and type facets into so-called clabjects, whether strict metamodeling is too restrictive, and what tool architectures provide the best framework for modelling with multiple classification levels. This lack of a foundational consensus is mirrored by the lack of a common focus in current multi-level tools. The goal of MULTI 2016 is to address these challenges and continue the community building established in the previous workshops. In particular, the goal is to encourage the community to delineate different approaches to multi-level modelling and define objective ways to evaluate their respective strengths/weaknesses.",
-							url : "http://swt4.informatik.uni-mannheim.de/multi-2016/index.html"
+							url : "http://swt4.informatik.uni-mannheim.de/multi-2016/index.html",
 							organizers : [
 								{
 									name : "Colin Atkinson",
@@ -2528,7 +2528,7 @@ var data = [
 							type : "Workshop",
 							title : "GEMOC",
 							abstract : "To cope with complexity, modern software-intensive systems are often split in different concerns to serve the needs of diverse stakeholders. These different concerns are often associated with specialized description languages and technologies, which are based on concern-specific problems and solution concepts. Software developers are thus faced with the challenging task of integrating the different languages and associated technologies used to produce software artifacts in the different concern spaces.\nThe proposed GEMOC 2016 will be a full-day workshop that brings together researchers and practitioners in the modeling languages community to discuss the challenges associated with integrating multiple, heterogeneous modeling languages. The languages of interest range from requirements, to design and runtime languages, and include both general-purpose and domain-specific languages. Challenges related to engineering composable languages, well-formed semantic composition of languages and reasoning about systems described using heterogeneous languages are of particular interest. Following the three previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from the globalization of modeling languages; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.",
-							url : "http://gemoc.org/gemoc2016/"
+							url : "http://gemoc.org/gemoc2016/",
 							organizers : [
 								{
 									name : "Julien Deantoni",
@@ -2553,7 +2553,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							url : 
+							url : ,
 							organizers : [
 							]
 						}
@@ -2639,7 +2639,7 @@ var data = [
 							type : "Workshop",
 							title : "ModComp",
 							abstract : "Model-Driven Engineering (MDE) and Component-Based Software Engineering (CBSE) have been proven to effectively reduce software development complexity by (i) shifting the focus from source code to models and (ii) breaking down the set of desired features and their intricacy into smaller sub-modules, respectively. Moreover, the interplay of MDE and CBSE approaches is gaining recognition as a very promising means to boost the development of software systems by reducing costs and risks and shorten time-to-market. While several attempts to effectively combine MDE and CBSE have been documented, there are still unsolved clashes raising when exploiting interplay of MDE and CBSE, mostly due to mismatches in the related terminology as well as to differences in their basic essence.\nAs satellite event of MoDELS, the goal of ModComp’16 is to gather researchers and practitioners to share opinions, propose solutions to open challenges and generally explore the frontiers of interweaving between MDE and CBSE.",
-							url : "http://www.mrtc.mdh.se/ModComp16/"
+							url : "http://www.mrtc.mdh.se/ModComp16/",
 							organizers : [
 								{
 									name : "Federico Ciccozzi",
@@ -2665,7 +2665,7 @@ var data = [
 							type : "Workshop",
 							title : "COMMitMDE",
 							abstract : "Nowadays, collaborative model-driven software engineering (MDSE) is gaining a growing interest in both academia and practice. Goal of COMMitMDE 2016 is to bring together researchers and practitioners in order to investigate together (i) the potential impact of collaborative software engineering methods and principles into MDE practices and (ii) how MDE methods and techniques can support collaborative software engineering activities. Also, COMMitMDE aims at assessing the state of the research and practice on collaborative MDE, creating new synergies between tool vendors, researchers, and practitioners.",
-							url : "http://cs.gssi.infn.it/commitmde2016"
+							url : "http://cs.gssi.infn.it/commitmde2016",
 							organizers : [
 								{
 									name : "Henry Muccini",
@@ -2699,7 +2699,7 @@ var data = [
 							type : "Workshop",
 							title : "HuFaMo",
 							abstract : "Modeling is a genuinely human enterprise, so many of the questions related to modeling can only be answered by empirical studies of human factors. The HuFaMo workshop series is the premier venue for early stage empirical research involving human factors in modeling. Our goal is to improve the state of the science and professionalism in empirical research in the Model Based Engineering community. Typical examples of such questions might consider the usability of a certain approach such as a method or language, or the emotional states or personal judgements of modelers. We invite submissions regarding empirical studies of emotion, cognition, personality traits of modelers as well as studies about activities and communities of modelers, their culture and capabilities. Beyond conventional papers, we also seek to publish study designs, negative results, and, in fact, suggestions for actual studies to be carried out at the workshop.",
-							url : "http://hufamo.compute.dtu.dk/"
+							url : "http://hufamo.compute.dtu.dk/",
 							organizers : [
 								{
 									name : "Harald Störrle",
@@ -2725,7 +2725,7 @@ var data = [
 							type : "Workshop",
 							title : "MRT",
 							abstract : "The complexity of adapting software during runtime has spawned interest in how models can be used to validate, monitor and adapt runtime behaviour. The use of models during runtime extends the use of modeling techniques beyond the design and implementation phases. The goal of this workshop is to look at issues related to developing appropriate model-driven approaches to managing and monitoring the execution of systems. We aim to continue the discussion of research ideas and proposals from researchers who work in relevant areas such as MDE, software architectures, reflection, and autonomic and self-adaptive systems, and provide a “state-of-the-art” research assessment expressed in terms of challenges and achievements.",
-							url : "http://st.inf.tu-dresden.de/MRT16/"
+							url : "http://st.inf.tu-dresden.de/MRT16/",
 							organizers : [
 								{
 									name : "Sebastian Götz",
@@ -2759,7 +2759,7 @@ var data = [
 							type : "Workshop",
 							title : "MULTI",
 							abstract : "As interest in multi-level modelling grows, and the range of multi-level modelling tools expands, there is growing interest in consolidating the key principles of the paradigm and clarifying the essential differences between heterogeneous approaches.  Although multi-level modelling has now been used successfully in a variety of industrial projects and standards initiatives, there is still no clear consensus on what the paradigm actually entails and how it should be applied. For example, there are different views on whether it is sound to combine instance facets and type facets into so-called clabjects, whether strict metamodeling is too restrictive, and what tool architectures provide the best framework for modelling with multiple classification levels. This lack of a foundational consensus is mirrored by the lack of a common focus in current multi-level tools. The goal of MULTI 2016 is to address these challenges and continue the community building established in the previous workshops. In particular, the goal is to encourage the community to delineate different approaches to multi-level modelling and define objective ways to evaluate their respective strengths/weaknesses.",
-							url : "http://swt4.informatik.uni-mannheim.de/multi-2016/index.html"
+							url : "http://swt4.informatik.uni-mannheim.de/multi-2016/index.html",
 							organizers : [
 								{
 									name : "Colin Atkinson",
@@ -2789,7 +2789,7 @@ var data = [
 							type : "Workshop",
 							title : "GEMOC",
 							abstract : "To cope with complexity, modern software-intensive systems are often split in different concerns to serve the needs of diverse stakeholders. These different concerns are often associated with specialized description languages and technologies, which are based on concern-specific problems and solution concepts. Software developers are thus faced with the challenging task of integrating the different languages and associated technologies used to produce software artifacts in the different concern spaces.\nThe proposed GEMOC 2016 will be a full-day workshop that brings together researchers and practitioners in the modeling languages community to discuss the challenges associated with integrating multiple, heterogeneous modeling languages. The languages of interest range from requirements, to design and runtime languages, and include both general-purpose and domain-specific languages. Challenges related to engineering composable languages, well-formed semantic composition of languages and reasoning about systems described using heterogeneous languages are of particular interest. Following the three previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from the globalization of modeling languages; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.",
-							url : "http://gemoc.org/gemoc2016/"
+							url : "http://gemoc.org/gemoc2016/",
 							organizers : [
 								{
 									name : "Julien Deantoni",
@@ -2814,7 +2814,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							url : 
+							url : ,
 							organizers : [
 							]
 						}
@@ -2915,7 +2915,7 @@ var data = [
 							type : "Workshop",
 							title : "ModComp",
 							abstract : "Model-Driven Engineering (MDE) and Component-Based Software Engineering (CBSE) have been proven to effectively reduce software development complexity by (i) shifting the focus from source code to models and (ii) breaking down the set of desired features and their intricacy into smaller sub-modules, respectively. Moreover, the interplay of MDE and CBSE approaches is gaining recognition as a very promising means to boost the development of software systems by reducing costs and risks and shorten time-to-market. While several attempts to effectively combine MDE and CBSE have been documented, there are still unsolved clashes raising when exploiting interplay of MDE and CBSE, mostly due to mismatches in the related terminology as well as to differences in their basic essence.\nAs satellite event of MoDELS, the goal of ModComp’16 is to gather researchers and practitioners to share opinions, propose solutions to open challenges and generally explore the frontiers of interweaving between MDE and CBSE.",
-							url : "http://www.mrtc.mdh.se/ModComp16/"
+							url : "http://www.mrtc.mdh.se/ModComp16/",
 							organizers : [
 								{
 									name : "Federico Ciccozzi",
@@ -2941,7 +2941,7 @@ var data = [
 							type : "Workshop",
 							title : "COMMitMDE",
 							abstract : "Nowadays, collaborative model-driven software engineering (MDSE) is gaining a growing interest in both academia and practice. Goal of COMMitMDE 2016 is to bring together researchers and practitioners in order to investigate together (i) the potential impact of collaborative software engineering methods and principles into MDE practices and (ii) how MDE methods and techniques can support collaborative software engineering activities. Also, COMMitMDE aims at assessing the state of the research and practice on collaborative MDE, creating new synergies between tool vendors, researchers, and practitioners.",
-							url : "http://cs.gssi.infn.it/commitmde2016"
+							url : "http://cs.gssi.infn.it/commitmde2016",
 							organizers : [
 								{
 									name : "Henry Muccini",
@@ -2975,7 +2975,7 @@ var data = [
 							type : "Workshop",
 							title : "HuFaMo",
 							abstract : "Modeling is a genuinely human enterprise, so many of the questions related to modeling can only be answered by empirical studies of human factors. The HuFaMo workshop series is the premier venue for early stage empirical research involving human factors in modeling. Our goal is to improve the state of the science and professionalism in empirical research in the Model Based Engineering community. Typical examples of such questions might consider the usability of a certain approach such as a method or language, or the emotional states or personal judgements of modelers. We invite submissions regarding empirical studies of emotion, cognition, personality traits of modelers as well as studies about activities and communities of modelers, their culture and capabilities. Beyond conventional papers, we also seek to publish study designs, negative results, and, in fact, suggestions for actual studies to be carried out at the workshop.",
-							url : "http://hufamo.compute.dtu.dk/"
+							url : "http://hufamo.compute.dtu.dk/",
 							organizers : [
 								{
 									name : "Harald Störrle",
@@ -3001,7 +3001,7 @@ var data = [
 							type : "Workshop",
 							title : "MRT",
 							abstract : "The complexity of adapting software during runtime has spawned interest in how models can be used to validate, monitor and adapt runtime behaviour. The use of models during runtime extends the use of modeling techniques beyond the design and implementation phases. The goal of this workshop is to look at issues related to developing appropriate model-driven approaches to managing and monitoring the execution of systems. We aim to continue the discussion of research ideas and proposals from researchers who work in relevant areas such as MDE, software architectures, reflection, and autonomic and self-adaptive systems, and provide a “state-of-the-art” research assessment expressed in terms of challenges and achievements.",
-							url : "http://st.inf.tu-dresden.de/MRT16/"
+							url : "http://st.inf.tu-dresden.de/MRT16/",
 							organizers : [
 								{
 									name : "Sebastian Götz",
@@ -3035,7 +3035,7 @@ var data = [
 							type : "Workshop",
 							title : "MULTI",
 							abstract : "As interest in multi-level modelling grows, and the range of multi-level modelling tools expands, there is growing interest in consolidating the key principles of the paradigm and clarifying the essential differences between heterogeneous approaches.  Although multi-level modelling has now been used successfully in a variety of industrial projects and standards initiatives, there is still no clear consensus on what the paradigm actually entails and how it should be applied. For example, there are different views on whether it is sound to combine instance facets and type facets into so-called clabjects, whether strict metamodeling is too restrictive, and what tool architectures provide the best framework for modelling with multiple classification levels. This lack of a foundational consensus is mirrored by the lack of a common focus in current multi-level tools. The goal of MULTI 2016 is to address these challenges and continue the community building established in the previous workshops. In particular, the goal is to encourage the community to delineate different approaches to multi-level modelling and define objective ways to evaluate their respective strengths/weaknesses.",
-							url : "http://swt4.informatik.uni-mannheim.de/multi-2016/index.html"
+							url : "http://swt4.informatik.uni-mannheim.de/multi-2016/index.html",
 							organizers : [
 								{
 									name : "Colin Atkinson",
@@ -3065,7 +3065,7 @@ var data = [
 							type : "Workshop",
 							title : "GEMOC",
 							abstract : "To cope with complexity, modern software-intensive systems are often split in different concerns to serve the needs of diverse stakeholders. These different concerns are often associated with specialized description languages and technologies, which are based on concern-specific problems and solution concepts. Software developers are thus faced with the challenging task of integrating the different languages and associated technologies used to produce software artifacts in the different concern spaces.\nThe proposed GEMOC 2016 will be a full-day workshop that brings together researchers and practitioners in the modeling languages community to discuss the challenges associated with integrating multiple, heterogeneous modeling languages. The languages of interest range from requirements, to design and runtime languages, and include both general-purpose and domain-specific languages. Challenges related to engineering composable languages, well-formed semantic composition of languages and reasoning about systems described using heterogeneous languages are of particular interest. Following the three previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from the globalization of modeling languages; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.",
-							url : "http://gemoc.org/gemoc2016/"
+							url : "http://gemoc.org/gemoc2016/",
 							organizers : [
 								{
 									name : "Julien Deantoni",
@@ -3090,7 +3090,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							url : 
+							url : ,
 							organizers : [
 							]
 						}
@@ -3187,7 +3187,7 @@ var data = [
 							type : "Workshop",
 							title : "ModComp",
 							abstract : "Model-Driven Engineering (MDE) and Component-Based Software Engineering (CBSE) have been proven to effectively reduce software development complexity by (i) shifting the focus from source code to models and (ii) breaking down the set of desired features and their intricacy into smaller sub-modules, respectively. Moreover, the interplay of MDE and CBSE approaches is gaining recognition as a very promising means to boost the development of software systems by reducing costs and risks and shorten time-to-market. While several attempts to effectively combine MDE and CBSE have been documented, there are still unsolved clashes raising when exploiting interplay of MDE and CBSE, mostly due to mismatches in the related terminology as well as to differences in their basic essence.\nAs satellite event of MoDELS, the goal of ModComp’16 is to gather researchers and practitioners to share opinions, propose solutions to open challenges and generally explore the frontiers of interweaving between MDE and CBSE.",
-							url : "http://www.mrtc.mdh.se/ModComp16/"
+							url : "http://www.mrtc.mdh.se/ModComp16/",
 							organizers : [
 								{
 									name : "Federico Ciccozzi",
@@ -3213,7 +3213,7 @@ var data = [
 							type : "Workshop",
 							title : "COMMitMDE",
 							abstract : "Nowadays, collaborative model-driven software engineering (MDSE) is gaining a growing interest in both academia and practice. Goal of COMMitMDE 2016 is to bring together researchers and practitioners in order to investigate together (i) the potential impact of collaborative software engineering methods and principles into MDE practices and (ii) how MDE methods and techniques can support collaborative software engineering activities. Also, COMMitMDE aims at assessing the state of the research and practice on collaborative MDE, creating new synergies between tool vendors, researchers, and practitioners.",
-							url : "http://cs.gssi.infn.it/commitmde2016"
+							url : "http://cs.gssi.infn.it/commitmde2016",
 							organizers : [
 								{
 									name : "Henry Muccini",
@@ -3247,7 +3247,7 @@ var data = [
 							type : "Workshop",
 							title : "HuFaMo",
 							abstract : "Modeling is a genuinely human enterprise, so many of the questions related to modeling can only be answered by empirical studies of human factors. The HuFaMo workshop series is the premier venue for early stage empirical research involving human factors in modeling. Our goal is to improve the state of the science and professionalism in empirical research in the Model Based Engineering community. Typical examples of such questions might consider the usability of a certain approach such as a method or language, or the emotional states or personal judgements of modelers. We invite submissions regarding empirical studies of emotion, cognition, personality traits of modelers as well as studies about activities and communities of modelers, their culture and capabilities. Beyond conventional papers, we also seek to publish study designs, negative results, and, in fact, suggestions for actual studies to be carried out at the workshop.",
-							url : "http://hufamo.compute.dtu.dk/"
+							url : "http://hufamo.compute.dtu.dk/",
 							organizers : [
 								{
 									name : "Harald Störrle",
@@ -3273,7 +3273,7 @@ var data = [
 							type : "Workshop",
 							title : "MRT",
 							abstract : "The complexity of adapting software during runtime has spawned interest in how models can be used to validate, monitor and adapt runtime behaviour. The use of models during runtime extends the use of modeling techniques beyond the design and implementation phases. The goal of this workshop is to look at issues related to developing appropriate model-driven approaches to managing and monitoring the execution of systems. We aim to continue the discussion of research ideas and proposals from researchers who work in relevant areas such as MDE, software architectures, reflection, and autonomic and self-adaptive systems, and provide a “state-of-the-art” research assessment expressed in terms of challenges and achievements.",
-							url : "http://st.inf.tu-dresden.de/MRT16/"
+							url : "http://st.inf.tu-dresden.de/MRT16/",
 							organizers : [
 								{
 									name : "Sebastian Götz",
@@ -3307,7 +3307,7 @@ var data = [
 							type : "Workshop",
 							title : "MULTI",
 							abstract : "As interest in multi-level modelling grows, and the range of multi-level modelling tools expands, there is growing interest in consolidating the key principles of the paradigm and clarifying the essential differences between heterogeneous approaches.  Although multi-level modelling has now been used successfully in a variety of industrial projects and standards initiatives, there is still no clear consensus on what the paradigm actually entails and how it should be applied. For example, there are different views on whether it is sound to combine instance facets and type facets into so-called clabjects, whether strict metamodeling is too restrictive, and what tool architectures provide the best framework for modelling with multiple classification levels. This lack of a foundational consensus is mirrored by the lack of a common focus in current multi-level tools. The goal of MULTI 2016 is to address these challenges and continue the community building established in the previous workshops. In particular, the goal is to encourage the community to delineate different approaches to multi-level modelling and define objective ways to evaluate their respective strengths/weaknesses.",
-							url : "http://swt4.informatik.uni-mannheim.de/multi-2016/index.html"
+							url : "http://swt4.informatik.uni-mannheim.de/multi-2016/index.html",
 							organizers : [
 								{
 									name : "Colin Atkinson",
@@ -3337,7 +3337,7 @@ var data = [
 							type : "Workshop",
 							title : "GEMOC",
 							abstract : "To cope with complexity, modern software-intensive systems are often split in different concerns to serve the needs of diverse stakeholders. These different concerns are often associated with specialized description languages and technologies, which are based on concern-specific problems and solution concepts. Software developers are thus faced with the challenging task of integrating the different languages and associated technologies used to produce software artifacts in the different concern spaces.\nThe proposed GEMOC 2016 will be a full-day workshop that brings together researchers and practitioners in the modeling languages community to discuss the challenges associated with integrating multiple, heterogeneous modeling languages. The languages of interest range from requirements, to design and runtime languages, and include both general-purpose and domain-specific languages. Challenges related to engineering composable languages, well-formed semantic composition of languages and reasoning about systems described using heterogeneous languages are of particular interest. Following the three previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from the globalization of modeling languages; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.",
-							url : "http://gemoc.org/gemoc2016/"
+							url : "http://gemoc.org/gemoc2016/",
 							organizers : [
 								{
 									name : "Julien Deantoni",
@@ -3362,7 +3362,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							url : 
+							url : ,
 							organizers : [
 							]
 						}

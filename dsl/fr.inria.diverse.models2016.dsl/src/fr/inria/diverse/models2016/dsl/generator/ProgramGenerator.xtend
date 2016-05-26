@@ -210,7 +210,7 @@ class ProgramGenerator extends AbstractGenerator {
 						«IF workshop.abstract != null && workshop.abstract.length > 0»
 						abstract : «workshop.abstract.replace("\n","\\n")»,
 						«ENDIF»
-						url : «workshop.url»
+						url : «workshop.url»,
 						organizers : [
 							«FOR o : workshop.organizers SEPARATOR ","»
 							«getPerson(o)»
