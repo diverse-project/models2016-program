@@ -147,13 +147,15 @@ modelsApp.controller("ProgramController", function($scope) {
 
         // Download file
         var blob = new Blob([file], {type: 'text/calendar'});
+        var inlinedDataUrl = 'data:text/calendar;charset=utf-8,' + encodeURIComponent(file);
         var filename = "models.ics";
         if(window.navigator.msSaveOrOpenBlob) {
             window.navigator.msSaveBlob(blob, filename);
         }
         else{
             var elem = window.document.createElement('a');
-            elem.href = window.URL.createObjectURL(blob);
+            // elem.href = window.URL.createObjectURL(blob);
+            elem.href = inlinedDataUrl;
             elem.download = filename;
             document.body.appendChild(elem);
             elem.click();
