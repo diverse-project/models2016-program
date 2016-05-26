@@ -83,25 +83,15 @@ var data = [
 							title : "Advanced Model Management with Epsilon",
 							organizers : [
 								{
-									name : "Richard Paige",
-									email : 
-								},
+									name : "Richard Paige"},
 								{
-									name : "Dimitris Kolovos",
-									email : 
-								},
+									name : "Dimitris Kolovos"},
 								{
-									name : "Antonio Garcia-Dominguez",
-									email : 
-								},
+									name : "Antonio Garcia-Dominguez"},
 								{
-									name : "Nicholas Matragkas",
-									email : 
-								},
+									name : "Nicholas Matragkas"},
 								{
-									name : "Horacio Hoyos",
-									email : 
-								}
+									name : "Horacio Hoyos"}
 							]
 						}
 					]
@@ -119,9 +109,7 @@ var data = [
 							title : "ARCADIA in a Nutshell",
 							organizers : [
 								{
-									name : "Pascal Roques",
-									email : 
-								}
+									name : "Pascal Roques"}
 							]
 						}
 					]
@@ -139,13 +127,9 @@ var data = [
 							title : "Hybrid Graphical/Textual Modelling and Code Generation with PapyrusRT",
 							organizers : [
 								{
-									name : "Ernesto Posse",
-									email : 
-								},
+									name : "Ernesto Posse"},
 								{
-									name : "Nicolas Hili",
-									email : 
-								}
+									name : "Nicolas Hili"}
 							]
 						}
 					]
@@ -366,25 +350,15 @@ var data = [
 							title : "Advanced Model Management with Epsilon",
 							organizers : [
 								{
-									name : "Richard Paige",
-									email : 
-								},
+									name : "Richard Paige"},
 								{
-									name : "Dimitris Kolovos",
-									email : 
-								},
+									name : "Dimitris Kolovos"},
 								{
-									name : "Antonio Garcia-Dominguez",
-									email : 
-								},
+									name : "Antonio Garcia-Dominguez"},
 								{
-									name : "Nicholas Matragkas",
-									email : 
-								},
+									name : "Nicholas Matragkas"},
 								{
-									name : "Horacio Hoyos",
-									email : 
-								}
+									name : "Horacio Hoyos"}
 							]
 						}
 					]
@@ -402,9 +376,7 @@ var data = [
 							title : "ARCADIA in a Nutshell",
 							organizers : [
 								{
-									name : "Pascal Roques",
-									email : 
-								}
+									name : "Pascal Roques"}
 							]
 						}
 					]
@@ -422,13 +394,9 @@ var data = [
 							title : "Hybrid Graphical/Textual Modelling and Code Generation with PapyrusRT",
 							organizers : [
 								{
-									name : "Ernesto Posse",
-									email : 
-								},
+									name : "Ernesto Posse"},
 								{
-									name : "Nicolas Hili",
-									email : 
-								}
+									name : "Nicolas Hili"}
 							]
 						}
 					]
@@ -653,13 +621,9 @@ var data = [
 							title : "Modeling Reactive Systems with the Scenario Modeling Language and ScenarioTools",
 							organizers : [
 								{
-									name : "Joel Greenyer",
-									email : 
-								},
+									name : "Joel Greenyer"},
 								{
-									name : "Daniel Gritzner",
-									email : 
-								}
+									name : "Daniel Gritzner"}
 							]
 						}
 					]
@@ -677,13 +641,9 @@ var data = [
 							title : "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies",
 							organizers : [
 								{
-									name : "Frederic Madiot",
-									email : 
-								},
+									name : "Frederic Madiot"},
 								{
-									name : "Cedric Brun",
-									email : 
-								}
+									name : "Cedric Brun"}
 							]
 						}
 					]
@@ -701,9 +661,7 @@ var data = [
 							title : "Technologies and Design Patterns for Model-based Development of Cyber-physical Systems",
 							organizers : [
 								{
-									name : "Bran Selic",
-									email : 
-								}
+									name : "Bran Selic"}
 							]
 						}
 					]
@@ -924,13 +882,9 @@ var data = [
 							title : "Modeling Reactive Systems with the Scenario Modeling Language and ScenarioTools",
 							organizers : [
 								{
-									name : "Joel Greenyer",
-									email : 
-								},
+									name : "Joel Greenyer"},
 								{
-									name : "Daniel Gritzner",
-									email : 
-								}
+									name : "Daniel Gritzner"}
 							]
 						}
 					]
@@ -948,13 +902,9 @@ var data = [
 							title : "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies",
 							organizers : [
 								{
-									name : "Frederic Madiot",
-									email : 
-								},
+									name : "Frederic Madiot"},
 								{
-									name : "Cedric Brun",
-									email : 
-								}
+									name : "Cedric Brun"}
 							]
 						}
 					]
@@ -972,9 +922,7 @@ var data = [
 							title : "Technologies and Design Patterns for Model-based Development of Cyber-physical Systems",
 							organizers : [
 								{
-									name : "Bran Selic",
-									email : 
-								}
+									name : "Bran Selic"}
 							]
 						}
 					]
@@ -1177,17 +1125,11 @@ var data = [
 							title : "Empirical Research in Model Based Software Engineering",
 							organizers : [
 								{
-									name : "Michel Chaudron",
-									email : 
-								},
+									name : "Michel Chaudron"},
 								{
-									name : "Regina Hebig",
-									email : 
-								},
+									name : "Regina Hebig"},
 								{
-									name : "Maria Teresa Baldassarre",
-									email : 
-								}
+									name : "Maria Teresa Baldassarre"}
 							]
 						}
 					]
@@ -1205,13 +1147,9 @@ var data = [
 							title : "Applying Model Driven Engineering Technologies in the Creation of Domain Specific Modeling Languages",
 							organizers : [
 								{
-									name : "Bruce Trask",
-									email : 
-								},
+									name : "Bruce Trask"},
 								{
-									name : "Angel Roman",
-									email : 
-								}
+									name : "Angel Roman"}
 							]
 						}
 					]
@@ -1468,17 +1406,11 @@ var data = [
 							title : "Empirical Research in Model Based Software Engineering",
 							organizers : [
 								{
-									name : "Michel Chaudron",
-									email : 
-								},
+									name : "Michel Chaudron"},
 								{
-									name : "Regina Hebig",
-									email : 
-								},
+									name : "Regina Hebig"},
 								{
-									name : "Maria Teresa Baldassarre",
-									email : 
-								}
+									name : "Maria Teresa Baldassarre"}
 							]
 						}
 					]
@@ -1496,13 +1428,9 @@ var data = [
 							title : "Applying Model Driven Engineering Technologies in the Creation of Domain Specific Modeling Languages",
 							organizers : [
 								{
-									name : "Bruce Trask",
-									email : 
-								},
+									name : "Bruce Trask"},
 								{
-									name : "Angel Roman",
-									email : 
-								}
+									name : "Angel Roman"}
 							]
 						}
 					]
@@ -1759,17 +1687,11 @@ var data = [
 							title : "Empirical Research in Model Based Software Engineering",
 							organizers : [
 								{
-									name : "Michel Chaudron",
-									email : 
-								},
+									name : "Michel Chaudron"},
 								{
-									name : "Regina Hebig",
-									email : 
-								},
+									name : "Regina Hebig"},
 								{
-									name : "Maria Teresa Baldassarre",
-									email : 
-								}
+									name : "Maria Teresa Baldassarre"}
 							]
 						}
 					]
@@ -1787,13 +1709,9 @@ var data = [
 							title : "Multi-level Modelling with MetaDepth",
 							organizers : [
 								{
-									name : "Juan De Lara",
-									email : 
-								},
+									name : "Juan De Lara"},
 								{
-									name : "Esther Guerra",
-									email : 
-								}
+									name : "Esther Guerra"}
 							]
 						}
 					]
@@ -2050,17 +1968,11 @@ var data = [
 							title : "Empirical Research in Model Based Software Engineering",
 							organizers : [
 								{
-									name : "Michel Chaudron",
-									email : 
-								},
+									name : "Michel Chaudron"},
 								{
-									name : "Regina Hebig",
-									email : 
-								},
+									name : "Regina Hebig"},
 								{
-									name : "Maria Teresa Baldassarre",
-									email : 
-								}
+									name : "Maria Teresa Baldassarre"}
 							]
 						}
 					]
@@ -2078,13 +1990,9 @@ var data = [
 							title : "Multi-level Modelling with MetaDepth",
 							organizers : [
 								{
-									name : "Juan De Lara",
-									email : 
-								},
+									name : "Juan De Lara"},
 								{
-									name : "Esther Guerra",
-									email : 
-								}
+									name : "Esther Guerra"}
 							]
 						}
 					]
@@ -3595,13 +3503,9 @@ var data = [
 									icalEnd : "20161005T092500Z",
 									authors : [
 										{
-											name : "Invidunt At",
-											email : 
-										},
+											name : "Invidunt At"},
 										{
-											name : "Sed Sea",
-											email : 
-										}
+											name : "Sed Sea"}
 									]
 								},
 								{
@@ -3612,17 +3516,11 @@ var data = [
 									icalEnd : "20161005T095000Z",
 									authors : [
 										{
-											name : "Dolores Et",
-											email : 
-										},
+											name : "Dolores Et"},
 										{
-											name : "Vero Et",
-											email : 
-										},
+											name : "Vero Et"},
 										{
-											name : "Sed Kasd",
-											email : 
-										}
+											name : "Sed Kasd"}
 									]
 								},
 								{
@@ -3633,29 +3531,17 @@ var data = [
 									icalEnd : "20161005T101500Z",
 									authors : [
 										{
-											name : "Kasd Sanctus",
-											email : 
-										},
+											name : "Kasd Sanctus"},
 										{
-											name : "Gubergren Consetetur",
-											email : 
-										},
+											name : "Gubergren Consetetur"},
 										{
-											name : "Invidunt Nonumy",
-											email : 
-										},
+											name : "Invidunt Nonumy"},
 										{
-											name : "Et Eos",
-											email : 
-										},
+											name : "Et Eos"},
 										{
-											name : "Vero Et",
-											email : 
-										},
+											name : "Vero Et"},
 										{
-											name : "Ipsum Magna",
-											email : 
-										}
+											name : "Ipsum Magna"}
 									]
 								}
 							]
@@ -3683,29 +3569,17 @@ var data = [
 									icalEnd : "20161005T092500Z",
 									authors : [
 										{
-											name : "Aliquyam At",
-											email : 
-										},
+											name : "Aliquyam At"},
 										{
-											name : "Ipsum Invidunt",
-											email : 
-										},
+											name : "Ipsum Invidunt"},
 										{
-											name : "Ipsum Magna",
-											email : 
-										},
+											name : "Ipsum Magna"},
 										{
-											name : "Takimata Et",
-											email : 
-										},
+											name : "Takimata Et"},
 										{
-											name : "Est Lorem",
-											email : 
-										},
+											name : "Est Lorem"},
 										{
-											name : "Invidunt At",
-											email : 
-										}
+											name : "Invidunt At"}
 									]
 								},
 								{
@@ -3716,25 +3590,15 @@ var data = [
 									icalEnd : "20161005T095000Z",
 									authors : [
 										{
-											name : "Eos Et",
-											email : 
-										},
+											name : "Eos Et"},
 										{
-											name : "No Aliquyam",
-											email : 
-										},
+											name : "No Aliquyam"},
 										{
-											name : "Kasd Dolores",
-											email : 
-										},
+											name : "Kasd Dolores"},
 										{
-											name : "Gubergren At",
-											email : 
-										},
+											name : "Gubergren At"},
 										{
-											name : "Eirmod Consetetur",
-											email : 
-										}
+											name : "Eirmod Consetetur"}
 									]
 								},
 								{
@@ -3745,37 +3609,21 @@ var data = [
 									icalEnd : "20161005T101500Z",
 									authors : [
 										{
-											name : "Ipsum Nonumy",
-											email : 
-										},
+											name : "Ipsum Nonumy"},
 										{
-											name : "Vero Ea",
-											email : 
-										},
+											name : "Vero Ea"},
 										{
-											name : "Kasd Sanctus",
-											email : 
-										},
+											name : "Kasd Sanctus"},
 										{
-											name : "Ipsum Invidunt",
-											email : 
-										},
+											name : "Ipsum Invidunt"},
 										{
-											name : "Nonumy Dolore",
-											email : 
-										},
+											name : "Nonumy Dolore"},
 										{
-											name : "Ipsum Nonumy",
-											email : 
-										},
+											name : "Ipsum Nonumy"},
 										{
-											name : "Clita Tempor",
-											email : 
-										},
+											name : "Clita Tempor"},
 										{
-											name : "Ipsum Magna",
-											email : 
-										}
+											name : "Ipsum Magna"}
 									]
 								}
 							]
@@ -3803,25 +3651,15 @@ var data = [
 									icalEnd : "20161005T092500Z",
 									authors : [
 										{
-											name : "Eos Et",
-											email : 
-										},
+											name : "Eos Et"},
 										{
-											name : "No Aliquyam",
-											email : 
-										},
+											name : "No Aliquyam"},
 										{
-											name : "Kasd Dolores",
-											email : 
-										},
+											name : "Kasd Dolores"},
 										{
-											name : "Gubergren At",
-											email : 
-										},
+											name : "Gubergren At"},
 										{
-											name : "Eirmod Consetetur",
-											email : 
-										}
+											name : "Eirmod Consetetur"}
 									]
 								},
 								{
@@ -3832,29 +3670,17 @@ var data = [
 									icalEnd : "20161005T095000Z",
 									authors : [
 										{
-											name : "Aliquyam At",
-											email : 
-										},
+											name : "Aliquyam At"},
 										{
-											name : "Ipsum Invidunt",
-											email : 
-										},
+											name : "Ipsum Invidunt"},
 										{
-											name : "Ipsum Magna",
-											email : 
-										},
+											name : "Ipsum Magna"},
 										{
-											name : "Takimata Et",
-											email : 
-										},
+											name : "Takimata Et"},
 										{
-											name : "Est Lorem",
-											email : 
-										},
+											name : "Est Lorem"},
 										{
-											name : "Invidunt At",
-											email : 
-										}
+											name : "Invidunt At"}
 									]
 								},
 								{
@@ -3865,29 +3691,17 @@ var data = [
 									icalEnd : "20161005T101500Z",
 									authors : [
 										{
-											name : "Nonumy Ea",
-											email : 
-										},
+											name : "Nonumy Ea"},
 										{
-											name : "Kasd Dolores",
-											email : 
-										},
+											name : "Kasd Dolores"},
 										{
-											name : "Voluptua Voluptua",
-											email : 
-										},
+											name : "Voluptua Voluptua"},
 										{
-											name : "Est Lorem",
-											email : 
-										},
+											name : "Est Lorem"},
 										{
-											name : "Ipsum Magna",
-											email : 
-										},
+											name : "Ipsum Magna"},
 										{
-											name : "Consetetur Ipsum",
-											email : 
-										}
+											name : "Consetetur Ipsum"}
 									]
 								}
 							]
@@ -3975,33 +3789,19 @@ var data = [
 									icalEnd : "20161005T122500Z",
 									authors : [
 										{
-											name : "Gubergren Consetetur",
-											email : 
-										},
+											name : "Gubergren Consetetur"},
 										{
-											name : "Labore Sed",
-											email : 
-										},
+											name : "Labore Sed"},
 										{
-											name : "Voluptua Voluptua",
-											email : 
-										},
+											name : "Voluptua Voluptua"},
 										{
-											name : "Diam Et",
-											email : 
-										},
+											name : "Diam Et"},
 										{
-											name : "Ipsum Invidunt",
-											email : 
-										},
+											name : "Ipsum Invidunt"},
 										{
-											name : "Ipsum Magna",
-											email : 
-										},
+											name : "Ipsum Magna"},
 										{
-											name : "Ipsum Magna",
-											email : 
-										}
+											name : "Ipsum Magna"}
 									]
 								},
 								{
@@ -4012,21 +3812,13 @@ var data = [
 									icalEnd : "20161005T125000Z",
 									authors : [
 										{
-											name : "Magna Dolore",
-											email : 
-										},
+											name : "Magna Dolore"},
 										{
-											name : "Magna Labore",
-											email : 
-										},
+											name : "Magna Labore"},
 										{
-											name : "Sit Sadipscing",
-											email : 
-										},
+											name : "Sit Sadipscing"},
 										{
-											name : "Eos Et",
-											email : 
-										}
+											name : "Eos Et"}
 									]
 								},
 								{
@@ -4037,33 +3829,19 @@ var data = [
 									icalEnd : "20161005T131500Z",
 									authors : [
 										{
-											name : "At No",
-											email : 
-										},
+											name : "At No"},
 										{
-											name : "Sea Amet",
-											email : 
-										},
+											name : "Sea Amet"},
 										{
-											name : "Amet Sit",
-											email : 
-										},
+											name : "Amet Sit"},
 										{
-											name : "Diam Et",
-											email : 
-										},
+											name : "Diam Et"},
 										{
-											name : "Nonumy Ea",
-											email : 
-										},
+											name : "Nonumy Ea"},
 										{
-											name : "Est Et",
-											email : 
-										},
+											name : "Est Et"},
 										{
-											name : "Dolores Justo",
-											email : 
-										}
+											name : "Dolores Justo"}
 									]
 								}
 							]
@@ -4091,33 +3869,19 @@ var data = [
 									icalEnd : "20161005T122500Z",
 									authors : [
 										{
-											name : "Sed Consetetur",
-											email : 
-										},
+											name : "Sed Consetetur"},
 										{
-											name : "At No",
-											email : 
-										},
+											name : "At No"},
 										{
-											name : "Lorem No",
-											email : 
-										},
+											name : "Lorem No"},
 										{
-											name : "Tempor Ea",
-											email : 
-										},
+											name : "Tempor Ea"},
 										{
-											name : "Invidunt Nonumy",
-											email : 
-										},
+											name : "Invidunt Nonumy"},
 										{
-											name : "Diam Diam",
-											email : 
-										},
+											name : "Diam Diam"},
 										{
-											name : "Dolor Eirmod",
-											email : 
-										}
+											name : "Dolor Eirmod"}
 									]
 								},
 								{
@@ -4128,21 +3892,13 @@ var data = [
 									icalEnd : "20161005T125000Z",
 									authors : [
 										{
-											name : "Kasd Dolores",
-											email : 
-										},
+											name : "Kasd Dolores"},
 										{
-											name : "Sed Consetetur",
-											email : 
-										},
+											name : "Sed Consetetur"},
 										{
-											name : "Sadipscing Ipsum",
-											email : 
-										},
+											name : "Sadipscing Ipsum"},
 										{
-											name : "Magna Labore",
-											email : 
-										}
+											name : "Magna Labore"}
 									]
 								},
 								{
@@ -4153,29 +3909,17 @@ var data = [
 									icalEnd : "20161005T131500Z",
 									authors : [
 										{
-											name : "Accusam Ipsum",
-											email : 
-										},
+											name : "Accusam Ipsum"},
 										{
-											name : "Amet Sit",
-											email : 
-										},
+											name : "Amet Sit"},
 										{
-											name : "Voluptua Dolore",
-											email : 
-										},
+											name : "Voluptua Dolore"},
 										{
-											name : "Sed Sea",
-											email : 
-										},
+											name : "Sed Sea"},
 										{
-											name : "Voluptua Voluptua",
-											email : 
-										},
+											name : "Voluptua Voluptua"},
 										{
-											name : "Dolores Et",
-											email : 
-										}
+											name : "Dolores Et"}
 									]
 								}
 							]
@@ -4203,21 +3947,13 @@ var data = [
 									icalEnd : "20161005T122500Z",
 									authors : [
 										{
-											name : "Accusam Ipsum",
-											email : 
-										},
+											name : "Accusam Ipsum"},
 										{
-											name : "Magna Dolore",
-											email : 
-										},
+											name : "Magna Dolore"},
 										{
-											name : "Accusam Ipsum",
-											email : 
-										},
+											name : "Accusam Ipsum"},
 										{
-											name : "Labore Sed",
-											email : 
-										}
+											name : "Labore Sed"}
 									]
 								},
 								{
@@ -4228,17 +3964,11 @@ var data = [
 									icalEnd : "20161005T125000Z",
 									authors : [
 										{
-											name : "Labore Sed",
-											email : 
-										},
+											name : "Labore Sed"},
 										{
-											name : "Et Eos",
-											email : 
-										},
+											name : "Et Eos"},
 										{
-											name : "Stet No",
-											email : 
-										}
+											name : "Stet No"}
 									]
 								},
 								{
@@ -4249,17 +3979,11 @@ var data = [
 									icalEnd : "20161005T131500Z",
 									authors : [
 										{
-											name : "Dolores Et",
-											email : 
-										},
+											name : "Dolores Et"},
 										{
-											name : "Vero Et",
-											email : 
-										},
+											name : "Vero Et"},
 										{
-											name : "Sed Kasd",
-											email : 
-										}
+											name : "Sed Kasd"}
 									]
 								}
 							]
@@ -4354,33 +4078,19 @@ var data = [
 									icalEnd : "20161005T142500Z",
 									authors : [
 										{
-											name : "Nonumy At",
-											email : 
-										},
+											name : "Nonumy At"},
 										{
-											name : "Gubergren At",
-											email : 
-										},
+											name : "Gubergren At"},
 										{
-											name : "Ea Diam",
-											email : 
-										},
+											name : "Ea Diam"},
 										{
-											name : "Et Diam",
-											email : 
-										},
+											name : "Et Diam"},
 										{
-											name : "At Justo",
-											email : 
-										},
+											name : "At Justo"},
 										{
-											name : "No Aliquyam",
-											email : 
-										},
+											name : "No Aliquyam"},
 										{
-											name : "Tempor Et",
-											email : 
-										}
+											name : "Tempor Et"}
 									]
 								},
 								{
@@ -4391,13 +4101,9 @@ var data = [
 									icalEnd : "20161005T145000Z",
 									authors : [
 										{
-											name : "Magna Takimata",
-											email : 
-										},
+											name : "Magna Takimata"},
 										{
-											name : "Lorem Lorem",
-											email : 
-										}
+											name : "Lorem Lorem"}
 									]
 								},
 								{
@@ -4408,25 +4114,15 @@ var data = [
 									icalEnd : "20161005T151500Z",
 									authors : [
 										{
-											name : "Lorem Lorem",
-											email : 
-										},
+											name : "Lorem Lorem"},
 										{
-											name : "Takimata Et",
-											email : 
-										},
+											name : "Takimata Et"},
 										{
-											name : "Dolores Justo",
-											email : 
-										},
+											name : "Dolores Justo"},
 										{
-											name : "Duo Nonumy",
-											email : 
-										},
+											name : "Duo Nonumy"},
 										{
-											name : "Sadipscing Ipsum",
-											email : 
-										}
+											name : "Sadipscing Ipsum"}
 									]
 								}
 							]
@@ -4454,21 +4150,13 @@ var data = [
 									icalEnd : "20161005T142500Z",
 									authors : [
 										{
-											name : "Sed Kasd",
-											email : 
-										},
+											name : "Sed Kasd"},
 										{
-											name : "Nonumy At",
-											email : 
-										},
+											name : "Nonumy At"},
 										{
-											name : "Rebum Sadipscing",
-											email : 
-										},
+											name : "Rebum Sadipscing"},
 										{
-											name : "Consetetur Erat",
-											email : 
-										}
+											name : "Consetetur Erat"}
 									]
 								},
 								{
@@ -4479,37 +4167,21 @@ var data = [
 									icalEnd : "20161005T145000Z",
 									authors : [
 										{
-											name : "Stet Justo",
-											email : 
-										},
+											name : "Stet Justo"},
 										{
-											name : "Eirmod Consetetur",
-											email : 
-										},
+											name : "Eirmod Consetetur"},
 										{
-											name : "Ut Accusam",
-											email : 
-										},
+											name : "Ut Accusam"},
 										{
-											name : "Amet Sed",
-											email : 
-										},
+											name : "Amet Sed"},
 										{
-											name : "Stet Est",
-											email : 
-										},
+											name : "Stet Est"},
 										{
-											name : "Ipsum Magna",
-											email : 
-										},
+											name : "Ipsum Magna"},
 										{
-											name : "Ipsum Invidunt",
-											email : 
-										},
+											name : "Ipsum Invidunt"},
 										{
-											name : "Accusam Ipsum",
-											email : 
-										}
+											name : "Accusam Ipsum"}
 									]
 								},
 								{
@@ -4520,33 +4192,19 @@ var data = [
 									icalEnd : "20161005T151500Z",
 									authors : [
 										{
-											name : "Tempor Ut",
-											email : 
-										},
+											name : "Tempor Ut"},
 										{
-											name : "Est Lorem",
-											email : 
-										},
+											name : "Est Lorem"},
 										{
-											name : "Sit Sadipscing",
-											email : 
-										},
+											name : "Sit Sadipscing"},
 										{
-											name : "Et Eos",
-											email : 
-										},
+											name : "Et Eos"},
 										{
-											name : "Voluptua Voluptua",
-											email : 
-										},
+											name : "Voluptua Voluptua"},
 										{
-											name : "Diam Diam",
-											email : 
-										},
+											name : "Diam Diam"},
 										{
-											name : "Et Invidunt",
-											email : 
-										}
+											name : "Et Invidunt"}
 									]
 								}
 							]
@@ -4574,21 +4232,13 @@ var data = [
 									icalEnd : "20161005T142500Z",
 									authors : [
 										{
-											name : "Nonumy Dolore",
-											email : 
-										},
+											name : "Nonumy Dolore"},
 										{
-											name : "At No",
-											email : 
-										},
+											name : "At No"},
 										{
-											name : "Rebum Nonumy",
-											email : 
-										},
+											name : "Rebum Nonumy"},
 										{
-											name : "Nonumy Sed",
-											email : 
-										}
+											name : "Nonumy Sed"}
 									]
 								},
 								{
@@ -4599,33 +4249,19 @@ var data = [
 									icalEnd : "20161005T145000Z",
 									authors : [
 										{
-											name : "Eos Sed",
-											email : 
-										},
+											name : "Eos Sed"},
 										{
-											name : "Magna Takimata",
-											email : 
-										},
+											name : "Magna Takimata"},
 										{
-											name : "Takimata Ea",
-											email : 
-										},
+											name : "Takimata Ea"},
 										{
-											name : "Nonumy Sed",
-											email : 
-										},
+											name : "Nonumy Sed"},
 										{
-											name : "Eos Et",
-											email : 
-										},
+											name : "Eos Et"},
 										{
-											name : "Amet At",
-											email : 
-										},
+											name : "Amet At"},
 										{
-											name : "Duo Accusam",
-											email : 
-										}
+											name : "Duo Accusam"}
 									]
 								},
 								{
@@ -4636,25 +4272,15 @@ var data = [
 									icalEnd : "20161005T151500Z",
 									authors : [
 										{
-											name : "Et Sadipscing",
-											email : 
-										},
+											name : "Et Sadipscing"},
 										{
-											name : "Ipsum Invidunt",
-											email : 
-										},
+											name : "Ipsum Invidunt"},
 										{
-											name : "Nonumy Ea",
-											email : 
-										},
+											name : "Nonumy Ea"},
 										{
-											name : "Duo Gubergren",
-											email : 
-										},
+											name : "Duo Gubergren"},
 										{
-											name : "Diam Sit",
-											email : 
-										}
+											name : "Diam Sit"}
 									]
 								}
 							]
@@ -4909,33 +4535,19 @@ var data = [
 									icalEnd : "20161006T092500Z",
 									authors : [
 										{
-											name : "Lorem Lorem",
-											email : 
-										},
+											name : "Lorem Lorem"},
 										{
-											name : "Diam Et",
-											email : 
-										},
+											name : "Diam Et"},
 										{
-											name : "Dolores Et",
-											email : 
-										},
+											name : "Dolores Et"},
 										{
-											name : "Lorem Sit",
-											email : 
-										},
+											name : "Lorem Sit"},
 										{
-											name : "Ipsum Invidunt",
-											email : 
-										},
+											name : "Ipsum Invidunt"},
 										{
-											name : "Accusam Ipsum",
-											email : 
-										},
+											name : "Accusam Ipsum"},
 										{
-											name : "Clita Tempor",
-											email : 
-										}
+											name : "Clita Tempor"}
 									]
 								},
 								{
@@ -4946,21 +4558,13 @@ var data = [
 									icalEnd : "20161006T095000Z",
 									authors : [
 										{
-											name : "Sed Kasd",
-											email : 
-										},
+											name : "Sed Kasd"},
 										{
-											name : "Nonumy At",
-											email : 
-										},
+											name : "Nonumy At"},
 										{
-											name : "Rebum Sadipscing",
-											email : 
-										},
+											name : "Rebum Sadipscing"},
 										{
-											name : "Consetetur Erat",
-											email : 
-										}
+											name : "Consetetur Erat"}
 									]
 								},
 								{
@@ -4971,37 +4575,21 @@ var data = [
 									icalEnd : "20161006T101500Z",
 									authors : [
 										{
-											name : "Diam Diam",
-											email : 
-										},
+											name : "Diam Diam"},
 										{
-											name : "Invidunt At",
-											email : 
-										},
+											name : "Invidunt At"},
 										{
-											name : "Aliquyam Et",
-											email : 
-										},
+											name : "Aliquyam Et"},
 										{
-											name : "Est Lorem",
-											email : 
-										},
+											name : "Est Lorem"},
 										{
-											name : "Est Et",
-											email : 
-										},
+											name : "Est Et"},
 										{
-											name : "Clita Tempor",
-											email : 
-										},
+											name : "Clita Tempor"},
 										{
-											name : "Et Sadipscing",
-											email : 
-										},
+											name : "Et Sadipscing"},
 										{
-											name : "Kasd Dolores",
-											email : 
-										}
+											name : "Kasd Dolores"}
 									]
 								}
 							]
@@ -5029,13 +4617,9 @@ var data = [
 									icalEnd : "20161006T092500Z",
 									authors : [
 										{
-											name : "Invidunt At",
-											email : 
-										},
+											name : "Invidunt At"},
 										{
-											name : "Sed Sea",
-											email : 
-										}
+											name : "Sed Sea"}
 									]
 								},
 								{
@@ -5046,37 +4630,21 @@ var data = [
 									icalEnd : "20161006T095000Z",
 									authors : [
 										{
-											name : "Lorem Sit",
-											email : 
-										},
+											name : "Lorem Sit"},
 										{
-											name : "Dolores Et",
-											email : 
-										},
+											name : "Dolores Et"},
 										{
-											name : "Aliquyam Et",
-											email : 
-										},
+											name : "Aliquyam Et"},
 										{
-											name : "Takimata Et",
-											email : 
-										},
+											name : "Takimata Et"},
 										{
-											name : "Kasd Dolores",
-											email : 
-										},
+											name : "Kasd Dolores"},
 										{
-											name : "Duo Nonumy",
-											email : 
-										},
+											name : "Duo Nonumy"},
 										{
-											name : "Amet Sed",
-											email : 
-										},
+											name : "Amet Sed"},
 										{
-											name : "Invidunt Amet",
-											email : 
-										}
+											name : "Invidunt Amet"}
 									]
 								},
 								{
@@ -5087,33 +4655,19 @@ var data = [
 									icalEnd : "20161006T101500Z",
 									authors : [
 										{
-											name : "Gubergren Ea",
-											email : 
-										},
+											name : "Gubergren Ea"},
 										{
-											name : "Et Invidunt",
-											email : 
-										},
+											name : "Et Invidunt"},
 										{
-											name : "Stet No",
-											email : 
-										},
+											name : "Stet No"},
 										{
-											name : "Et Dolor",
-											email : 
-										},
+											name : "Et Dolor"},
 										{
-											name : "Amet At",
-											email : 
-										},
+											name : "Amet At"},
 										{
-											name : "Magna Labore",
-											email : 
-										},
+											name : "Magna Labore"},
 										{
-											name : "Dolor Eirmod",
-											email : 
-										}
+											name : "Dolor Eirmod"}
 									]
 								}
 							]
@@ -5141,29 +4695,17 @@ var data = [
 									icalEnd : "20161006T092500Z",
 									authors : [
 										{
-											name : "Amet At",
-											email : 
-										},
+											name : "Amet At"},
 										{
-											name : "Consetetur Erat",
-											email : 
-										},
+											name : "Consetetur Erat"},
 										{
-											name : "Diam Diam",
-											email : 
-										},
+											name : "Diam Diam"},
 										{
-											name : "Rebum Nonumy",
-											email : 
-										},
+											name : "Rebum Nonumy"},
 										{
-											name : "Consetetur Ipsum",
-											email : 
-										},
+											name : "Consetetur Ipsum"},
 										{
-											name : "Sadipscing Ipsum",
-											email : 
-										}
+											name : "Sadipscing Ipsum"}
 									]
 								},
 								{
@@ -5174,29 +4716,17 @@ var data = [
 									icalEnd : "20161006T095000Z",
 									authors : [
 										{
-											name : "Et Sadipscing",
-											email : 
-										},
+											name : "Et Sadipscing"},
 										{
-											name : "Sed Kasd",
-											email : 
-										},
+											name : "Sed Kasd"},
 										{
-											name : "Labore Sed",
-											email : 
-										},
+											name : "Labore Sed"},
 										{
-											name : "Diam Et",
-											email : 
-										},
+											name : "Diam Et"},
 										{
-											name : "Nonumy Dolore",
-											email : 
-										},
+											name : "Nonumy Dolore"},
 										{
-											name : "Lorem No",
-											email : 
-										}
+											name : "Lorem No"}
 									]
 								},
 								{
@@ -5207,21 +4737,13 @@ var data = [
 									icalEnd : "20161006T101500Z",
 									authors : [
 										{
-											name : "Ipsum Invidunt",
-											email : 
-										},
+											name : "Ipsum Invidunt"},
 										{
-											name : "Dolores Justo",
-											email : 
-										},
+											name : "Dolores Justo"},
 										{
-											name : "Dolores Eirmod",
-											email : 
-										},
+											name : "Dolores Eirmod"},
 										{
-											name : "Takimata Et",
-											email : 
-										}
+											name : "Takimata Et"}
 									]
 								}
 							]
@@ -5314,37 +4836,21 @@ var data = [
 									icalEnd : "20161006T122500Z",
 									authors : [
 										{
-											name : "Gubergren At",
-											email : 
-										},
+											name : "Gubergren At"},
 										{
-											name : "Accusam Ipsum",
-											email : 
-										},
+											name : "Accusam Ipsum"},
 										{
-											name : "Consetetur Erat",
-											email : 
-										},
+											name : "Consetetur Erat"},
 										{
-											name : "At No",
-											email : 
-										},
+											name : "At No"},
 										{
-											name : "Accusam Vero",
-											email : 
-										},
+											name : "Accusam Vero"},
 										{
-											name : "Clita Tempor",
-											email : 
-										},
+											name : "Clita Tempor"},
 										{
-											name : "Lorem At",
-											email : 
-										},
+											name : "Lorem At"},
 										{
-											name : "Magna Labore",
-											email : 
-										}
+											name : "Magna Labore"}
 									]
 								},
 								{
@@ -5355,29 +4861,17 @@ var data = [
 									icalEnd : "20161006T125000Z",
 									authors : [
 										{
-											name : "Kasd Sanctus",
-											email : 
-										},
+											name : "Kasd Sanctus"},
 										{
-											name : "Gubergren Consetetur",
-											email : 
-										},
+											name : "Gubergren Consetetur"},
 										{
-											name : "Invidunt Nonumy",
-											email : 
-										},
+											name : "Invidunt Nonumy"},
 										{
-											name : "Et Eos",
-											email : 
-										},
+											name : "Et Eos"},
 										{
-											name : "Vero Et",
-											email : 
-										},
+											name : "Vero Et"},
 										{
-											name : "Ipsum Magna",
-											email : 
-										}
+											name : "Ipsum Magna"}
 									]
 								},
 								{
@@ -5388,33 +4882,19 @@ var data = [
 									icalEnd : "20161006T131500Z",
 									authors : [
 										{
-											name : "Dolores Et",
-											email : 
-										},
+											name : "Dolores Et"},
 										{
-											name : "Accusam Vero",
-											email : 
-										},
+											name : "Accusam Vero"},
 										{
-											name : "Ipsum Magna",
-											email : 
-										},
+											name : "Ipsum Magna"},
 										{
-											name : "Stet No",
-											email : 
-										},
+											name : "Stet No"},
 										{
-											name : "Duo Nonumy",
-											email : 
-										},
+											name : "Duo Nonumy"},
 										{
-											name : "Consetetur Erat",
-											email : 
-										},
+											name : "Consetetur Erat"},
 										{
-											name : "Ea Diam",
-											email : 
-										}
+											name : "Ea Diam"}
 									]
 								}
 							]
@@ -5442,33 +4922,19 @@ var data = [
 									icalEnd : "20161006T122500Z",
 									authors : [
 										{
-											name : "Tempor Ea",
-											email : 
-										},
+											name : "Tempor Ea"},
 										{
-											name : "Voluptua Voluptua",
-											email : 
-										},
+											name : "Voluptua Voluptua"},
 										{
-											name : "No Aliquyam",
-											email : 
-										},
+											name : "No Aliquyam"},
 										{
-											name : "Dolor Eirmod",
-											email : 
-										},
+											name : "Dolor Eirmod"},
 										{
-											name : "Sadipscing Ipsum",
-											email : 
-										},
+											name : "Sadipscing Ipsum"},
 										{
-											name : "Sed Sea",
-											email : 
-										},
+											name : "Sed Sea"},
 										{
-											name : "Lorem Diam",
-											email : 
-										}
+											name : "Lorem Diam"}
 									]
 								},
 								{
@@ -5479,29 +4945,17 @@ var data = [
 									icalEnd : "20161006T125000Z",
 									authors : [
 										{
-											name : "Vero Justo",
-											email : 
-										},
+											name : "Vero Justo"},
 										{
-											name : "Gubergren Duo",
-											email : 
-										},
+											name : "Gubergren Duo"},
 										{
-											name : "Voluptua Dolore",
-											email : 
-										},
+											name : "Voluptua Dolore"},
 										{
-											name : "Et Diam",
-											email : 
-										},
+											name : "Et Diam"},
 										{
-											name : "Gubergren Consetetur",
-											email : 
-										},
+											name : "Gubergren Consetetur"},
 										{
-											name : "Voluptua Gubergren",
-											email : 
-										}
+											name : "Voluptua Gubergren"}
 									]
 								},
 								{
@@ -5512,37 +4966,21 @@ var data = [
 									icalEnd : "20161006T131500Z",
 									authors : [
 										{
-											name : "Nonumy Ea",
-											email : 
-										},
+											name : "Nonumy Ea"},
 										{
-											name : "Vero Clita",
-											email : 
-										},
+											name : "Vero Clita"},
 										{
-											name : "Lorem No",
-											email : 
-										},
+											name : "Lorem No"},
 										{
-											name : "Invidunt Amet",
-											email : 
-										},
+											name : "Invidunt Amet"},
 										{
-											name : "No Aliquyam",
-											email : 
-										},
+											name : "No Aliquyam"},
 										{
-											name : "Lorem Lorem",
-											email : 
-										},
+											name : "Lorem Lorem"},
 										{
-											name : "Amet At",
-											email : 
-										},
+											name : "Amet At"},
 										{
-											name : "Lorem Lorem",
-											email : 
-										}
+											name : "Lorem Lorem"}
 									]
 								}
 							]
@@ -5570,13 +5008,9 @@ var data = [
 									icalEnd : "20161006T122500Z",
 									authors : [
 										{
-											name : "Labore Sed",
-											email : 
-										},
+											name : "Labore Sed"},
 										{
-											name : "Clita Tempor",
-											email : 
-										}
+											name : "Clita Tempor"}
 									]
 								},
 								{
@@ -5587,25 +5021,15 @@ var data = [
 									icalEnd : "20161006T125000Z",
 									authors : [
 										{
-											name : "At No",
-											email : 
-										},
+											name : "At No"},
 										{
-											name : "Stet Justo",
-											email : 
-										},
+											name : "Stet Justo"},
 										{
-											name : "Est Et",
-											email : 
-										},
+											name : "Est Et"},
 										{
-											name : "Lorem Sit",
-											email : 
-										},
+											name : "Lorem Sit"},
 										{
-											name : "Eos Et",
-											email : 
-										}
+											name : "Eos Et"}
 									]
 								},
 								{
@@ -5616,13 +5040,9 @@ var data = [
 									icalEnd : "20161006T131500Z",
 									authors : [
 										{
-											name : "Invidunt At",
-											email : 
-										},
+											name : "Invidunt At"},
 										{
-											name : "Sed Sea",
-											email : 
-										}
+											name : "Sed Sea"}
 									]
 								}
 							]
@@ -5694,37 +5114,21 @@ var data = [
 									icalEnd : "20161006T142500Z",
 									authors : [
 										{
-											name : "Voluptua Dolore",
-											email : 
-										},
+											name : "Voluptua Dolore"},
 										{
-											name : "Invidunt Nonumy",
-											email : 
-										},
+											name : "Invidunt Nonumy"},
 										{
-											name : "Ipsum Invidunt",
-											email : 
-										},
+											name : "Ipsum Invidunt"},
 										{
-											name : "Aliquyam Ipsum",
-											email : 
-										},
+											name : "Aliquyam Ipsum"},
 										{
-											name : "Vero Justo",
-											email : 
-										},
+											name : "Vero Justo"},
 										{
-											name : "Nonumy Sed",
-											email : 
-										},
+											name : "Nonumy Sed"},
 										{
-											name : "Stet No",
-											email : 
-										},
+											name : "Stet No"},
 										{
-											name : "Amet At",
-											email : 
-										}
+											name : "Amet At"}
 									]
 								},
 								{
@@ -5735,29 +5139,17 @@ var data = [
 									icalEnd : "20161006T145000Z",
 									authors : [
 										{
-											name : "Kasd Sanctus",
-											email : 
-										},
+											name : "Kasd Sanctus"},
 										{
-											name : "Gubergren Consetetur",
-											email : 
-										},
+											name : "Gubergren Consetetur"},
 										{
-											name : "Invidunt Nonumy",
-											email : 
-										},
+											name : "Invidunt Nonumy"},
 										{
-											name : "Et Eos",
-											email : 
-										},
+											name : "Et Eos"},
 										{
-											name : "Vero Et",
-											email : 
-										},
+											name : "Vero Et"},
 										{
-											name : "Ipsum Magna",
-											email : 
-										}
+											name : "Ipsum Magna"}
 									]
 								},
 								{
@@ -5768,21 +5160,13 @@ var data = [
 									icalEnd : "20161006T151500Z",
 									authors : [
 										{
-											name : "Magna Dolore",
-											email : 
-										},
+											name : "Magna Dolore"},
 										{
-											name : "Magna Labore",
-											email : 
-										},
+											name : "Magna Labore"},
 										{
-											name : "Sit Sadipscing",
-											email : 
-										},
+											name : "Sit Sadipscing"},
 										{
-											name : "Eos Et",
-											email : 
-										}
+											name : "Eos Et"}
 									]
 								}
 							]
@@ -5810,33 +5194,19 @@ var data = [
 									icalEnd : "20161006T142500Z",
 									authors : [
 										{
-											name : "Gubergren Consetetur",
-											email : 
-										},
+											name : "Gubergren Consetetur"},
 										{
-											name : "Labore Sed",
-											email : 
-										},
+											name : "Labore Sed"},
 										{
-											name : "Voluptua Voluptua",
-											email : 
-										},
+											name : "Voluptua Voluptua"},
 										{
-											name : "Diam Et",
-											email : 
-										},
+											name : "Diam Et"},
 										{
-											name : "Ipsum Invidunt",
-											email : 
-										},
+											name : "Ipsum Invidunt"},
 										{
-											name : "Ipsum Magna",
-											email : 
-										},
+											name : "Ipsum Magna"},
 										{
-											name : "Ipsum Magna",
-											email : 
-										}
+											name : "Ipsum Magna"}
 									]
 								},
 								{
@@ -5847,21 +5217,13 @@ var data = [
 									icalEnd : "20161006T145000Z",
 									authors : [
 										{
-											name : "Magna Dolore",
-											email : 
-										},
+											name : "Magna Dolore"},
 										{
-											name : "Magna Labore",
-											email : 
-										},
+											name : "Magna Labore"},
 										{
-											name : "Sit Sadipscing",
-											email : 
-										},
+											name : "Sit Sadipscing"},
 										{
-											name : "Eos Et",
-											email : 
-										}
+											name : "Eos Et"}
 									]
 								},
 								{
@@ -5872,33 +5234,19 @@ var data = [
 									icalEnd : "20161006T151500Z",
 									authors : [
 										{
-											name : "At No",
-											email : 
-										},
+											name : "At No"},
 										{
-											name : "Sea Amet",
-											email : 
-										},
+											name : "Sea Amet"},
 										{
-											name : "Amet Sit",
-											email : 
-										},
+											name : "Amet Sit"},
 										{
-											name : "Diam Et",
-											email : 
-										},
+											name : "Diam Et"},
 										{
-											name : "Nonumy Ea",
-											email : 
-										},
+											name : "Nonumy Ea"},
 										{
-											name : "Est Et",
-											email : 
-										},
+											name : "Est Et"},
 										{
-											name : "Dolores Justo",
-											email : 
-										}
+											name : "Dolores Justo"}
 									]
 								}
 							]
@@ -5926,33 +5274,19 @@ var data = [
 									icalEnd : "20161006T142500Z",
 									authors : [
 										{
-											name : "No Aliquyam",
-											email : 
-										},
+											name : "No Aliquyam"},
 										{
-											name : "Aliquyam Ipsum",
-											email : 
-										},
+											name : "Aliquyam Ipsum"},
 										{
-											name : "Amet Et",
-											email : 
-										},
+											name : "Amet Et"},
 										{
-											name : "Kasd Dolores",
-											email : 
-										},
+											name : "Kasd Dolores"},
 										{
-											name : "Accusam Vero",
-											email : 
-										},
+											name : "Accusam Vero"},
 										{
-											name : "Stet Justo",
-											email : 
-										},
+											name : "Stet Justo"},
 										{
-											name : "Duo Gubergren",
-											email : 
-										}
+											name : "Duo Gubergren"}
 									]
 								},
 								{
@@ -5963,29 +5297,17 @@ var data = [
 									icalEnd : "20161006T145000Z",
 									authors : [
 										{
-											name : "Stet Est",
-											email : 
-										},
+											name : "Stet Est"},
 										{
-											name : "Accusam Ipsum",
-											email : 
-										},
+											name : "Accusam Ipsum"},
 										{
-											name : "Kasd Sanctus",
-											email : 
-										},
+											name : "Kasd Sanctus"},
 										{
-											name : "Amet At",
-											email : 
-										},
+											name : "Amet At"},
 										{
-											name : "Consetetur Ipsum",
-											email : 
-										},
+											name : "Consetetur Ipsum"},
 										{
-											name : "Sed Sea",
-											email : 
-										}
+											name : "Sed Sea"}
 									]
 								},
 								{
@@ -5996,21 +5318,13 @@ var data = [
 									icalEnd : "20161006T151500Z",
 									authors : [
 										{
-											name : "Amet Sed",
-											email : 
-										},
+											name : "Amet Sed"},
 										{
-											name : "Dolor No",
-											email : 
-										},
+											name : "Dolor No"},
 										{
-											name : "Aliquyam Ipsum",
-											email : 
-										},
+											name : "Aliquyam Ipsum"},
 										{
-											name : "Magna Takimata",
-											email : 
-										}
+											name : "Magna Takimata"}
 									]
 								}
 							]
@@ -6199,33 +5513,19 @@ var data = [
 									icalEnd : "20161007T092500Z",
 									authors : [
 										{
-											name : "Tempor Ut",
-											email : 
-										},
+											name : "Tempor Ut"},
 										{
-											name : "Est Lorem",
-											email : 
-										},
+											name : "Est Lorem"},
 										{
-											name : "Sit Sadipscing",
-											email : 
-										},
+											name : "Sit Sadipscing"},
 										{
-											name : "Et Eos",
-											email : 
-										},
+											name : "Et Eos"},
 										{
-											name : "Voluptua Voluptua",
-											email : 
-										},
+											name : "Voluptua Voluptua"},
 										{
-											name : "Diam Diam",
-											email : 
-										},
+											name : "Diam Diam"},
 										{
-											name : "Et Invidunt",
-											email : 
-										}
+											name : "Et Invidunt"}
 									]
 								},
 								{
@@ -6236,21 +5536,13 @@ var data = [
 									icalEnd : "20161007T095000Z",
 									authors : [
 										{
-											name : "Ut Accusam",
-											email : 
-										},
+											name : "Ut Accusam"},
 										{
-											name : "Duo Nonumy",
-											email : 
-										},
+											name : "Duo Nonumy"},
 										{
-											name : "No Aliquyam",
-											email : 
-										},
+											name : "No Aliquyam"},
 										{
-											name : "Accusam Vero",
-											email : 
-										}
+											name : "Accusam Vero"}
 									]
 								},
 								{
@@ -6261,17 +5553,11 @@ var data = [
 									icalEnd : "20161007T101500Z",
 									authors : [
 										{
-											name : "Consetetur Erat",
-											email : 
-										},
+											name : "Consetetur Erat"},
 										{
-											name : "Duo Gubergren",
-											email : 
-										},
+											name : "Duo Gubergren"},
 										{
-											name : "Amet Sed",
-											email : 
-										}
+											name : "Amet Sed"}
 									]
 								}
 							]
@@ -6299,21 +5585,13 @@ var data = [
 									icalEnd : "20161007T092500Z",
 									authors : [
 										{
-											name : "Accusam Ipsum",
-											email : 
-										},
+											name : "Accusam Ipsum"},
 										{
-											name : "Magna Dolore",
-											email : 
-										},
+											name : "Magna Dolore"},
 										{
-											name : "Accusam Ipsum",
-											email : 
-										},
+											name : "Accusam Ipsum"},
 										{
-											name : "Labore Sed",
-											email : 
-										}
+											name : "Labore Sed"}
 									]
 								},
 								{
@@ -6324,17 +5602,11 @@ var data = [
 									icalEnd : "20161007T095000Z",
 									authors : [
 										{
-											name : "Labore Sed",
-											email : 
-										},
+											name : "Labore Sed"},
 										{
-											name : "Et Eos",
-											email : 
-										},
+											name : "Et Eos"},
 										{
-											name : "Stet No",
-											email : 
-										}
+											name : "Stet No"}
 									]
 								},
 								{
@@ -6345,17 +5617,11 @@ var data = [
 									icalEnd : "20161007T101500Z",
 									authors : [
 										{
-											name : "Dolores Et",
-											email : 
-										},
+											name : "Dolores Et"},
 										{
-											name : "Vero Et",
-											email : 
-										},
+											name : "Vero Et"},
 										{
-											name : "Sed Kasd",
-											email : 
-										}
+											name : "Sed Kasd"}
 									]
 								}
 							]
@@ -6383,21 +5649,13 @@ var data = [
 									icalEnd : "20161007T092500Z",
 									authors : [
 										{
-											name : "Est Lorem",
-											email : 
-										},
+											name : "Est Lorem"},
 										{
-											name : "Tempor Ut",
-											email : 
-										},
+											name : "Tempor Ut"},
 										{
-											name : "Stet Est",
-											email : 
-										},
+											name : "Stet Est"},
 										{
-											name : "Ea Nonumy",
-											email : 
-										}
+											name : "Ea Nonumy"}
 									]
 								},
 								{
@@ -6408,33 +5666,19 @@ var data = [
 									icalEnd : "20161007T095000Z",
 									authors : [
 										{
-											name : "Nonumy At",
-											email : 
-										},
+											name : "Nonumy At"},
 										{
-											name : "Gubergren At",
-											email : 
-										},
+											name : "Gubergren At"},
 										{
-											name : "Ea Diam",
-											email : 
-										},
+											name : "Ea Diam"},
 										{
-											name : "Et Diam",
-											email : 
-										},
+											name : "Et Diam"},
 										{
-											name : "At Justo",
-											email : 
-										},
+											name : "At Justo"},
 										{
-											name : "No Aliquyam",
-											email : 
-										},
+											name : "No Aliquyam"},
 										{
-											name : "Tempor Et",
-											email : 
-										}
+											name : "Tempor Et"}
 									]
 								},
 								{
@@ -6445,37 +5689,21 @@ var data = [
 									icalEnd : "20161007T101500Z",
 									authors : [
 										{
-											name : "Nonumy Accusam",
-											email : 
-										},
+											name : "Nonumy Accusam"},
 										{
-											name : "Et Et",
-											email : 
-										},
+											name : "Et Et"},
 										{
-											name : "Gubergren At",
-											email : 
-										},
+											name : "Gubergren At"},
 										{
-											name : "Kasd Sanctus",
-											email : 
-										},
+											name : "Kasd Sanctus"},
 										{
-											name : "Nonumy Sed",
-											email : 
-										},
+											name : "Nonumy Sed"},
 										{
-											name : "Magna Takimata",
-											email : 
-										},
+											name : "Magna Takimata"},
 										{
-											name : "Et Eos",
-											email : 
-										},
+											name : "Et Eos"},
 										{
-											name : "Eirmod Consetetur",
-											email : 
-										}
+											name : "Eirmod Consetetur"}
 									]
 								}
 							]

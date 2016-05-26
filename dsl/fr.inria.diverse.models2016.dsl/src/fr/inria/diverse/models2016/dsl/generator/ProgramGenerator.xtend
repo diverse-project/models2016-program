@@ -158,8 +158,9 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						name : «person.name»,
+						name : «person.name»«IF person.email != null && person.email.length > 0»,
 						email : «person.email»
+						«ENDIF»
 					}
 				'''
 	}
