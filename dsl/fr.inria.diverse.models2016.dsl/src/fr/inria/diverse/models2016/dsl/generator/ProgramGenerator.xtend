@@ -160,6 +160,8 @@ class ProgramGenerator extends AbstractGenerator {
 					{
 						name : «person.name»«IF person.email != null && person.email.length > 0»,
 						email : «person.email»
+						«ELSE»
+						
 						«ENDIF»
 					}
 				'''
@@ -180,7 +182,7 @@ class ProgramGenerator extends AbstractGenerator {
 							{
 								title : «p.name»,
 								«IF p.abstract != null && p.abstract.length > 0»
-								abstract : «p.abstract»,
+								abstract : «p.abstract.replace("\n","\\n")»,
 								«ENDIF»
 								«val talkStart = computeTalkStart(start,i++)»
 								«val talkEnd = computeTalkStart(start,i)»
@@ -205,7 +207,9 @@ class ProgramGenerator extends AbstractGenerator {
 					{
 						type : "Workshop",
 						title : «workshop.name»,
-						abstract : «workshop.abstract»,
+						«IF workshop.abstract != null && workshop.abstract.length > 0»
+						abstract : «workshop.abstract.replace("\n","\\n")»,
+						«ENDIF»
 						url : «workshop.url»
 						organizers : [
 							«FOR o : workshop.organizers SEPARATOR ","»

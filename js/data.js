@@ -83,15 +83,20 @@ var data = [
 							title : "Advanced Model Management with Epsilon",
 							organizers : [
 								{
-									name : "Richard Paige"},
+									name : "Richard Paige"	
+								},
 								{
-									name : "Dimitris Kolovos"},
+									name : "Dimitris Kolovos"	
+								},
 								{
-									name : "Antonio Garcia-Dominguez"},
+									name : "Antonio Garcia-Dominguez"	
+								},
 								{
-									name : "Nicholas Matragkas"},
+									name : "Nicholas Matragkas"	
+								},
 								{
-									name : "Horacio Hoyos"}
+									name : "Horacio Hoyos"	
+								}
 							]
 						}
 					]
@@ -109,7 +114,8 @@ var data = [
 							title : "ARCADIA in a Nutshell",
 							organizers : [
 								{
-									name : "Pascal Roques"}
+									name : "Pascal Roques"	
+								}
 							]
 						}
 					]
@@ -127,9 +133,11 @@ var data = [
 							title : "Hybrid Graphical/Textual Modelling and Code Generation with PapyrusRT",
 							organizers : [
 								{
-									name : "Ernesto Posse"},
+									name : "Ernesto Posse"	
+								},
 								{
-									name : "Nicolas Hili"}
+									name : "Nicolas Hili"	
+								}
 							]
 						}
 					]
@@ -145,9 +153,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "ME",
-							abstract : "Software artefacts constantly increase in complexity, variety and novelty. Environment and business constraints, user requirements and new insights put additional pressure on their adaptability, availability, reliability and quality: they continuously need to be up to date and up to level. However, evolution issues are critical, complex and costly to manage. They concern requirements, architecture, design, source code, documentation, integration as well as deployment. They also typically affect various kinds of models (data, behavioural, domain, source code or goal models). Addressing and managing these varieties of changes is essential. Models and meta-models, the cornerstone of complex software systems’ abstraction, represent a powerful mean for facing software evolution challenges by ensuring a more abstract and expressive modelling of software evolution. They can help and guide software evolution, and can enforce and reduce critical risks and important involved resources. The workshop puts the focus on Models and Evolution by considering two main sides:
-							(1) Managing software evolution needs by relying on the high-level abstraction power of models and meta-models.
-							(2) Managing models and metamodels evolution needs by putting attention to their increasing evolution issues as they become primary artefacts and to the need of co-evolution of all related software artefacts.",
+							abstract : "Software artefacts constantly increase in complexity, variety and novelty. Environment and business constraints, user requirements and new insights put additional pressure on their adaptability, availability, reliability and quality: they continuously need to be up to date and up to level. However, evolution issues are critical, complex and costly to manage. They concern requirements, architecture, design, source code, documentation, integration as well as deployment. They also typically affect various kinds of models (data, behavioural, domain, source code or goal models). Addressing and managing these varieties of changes is essential. Models and meta-models, the cornerstone of complex software systems’ abstraction, represent a powerful mean for facing software evolution challenges by ensuring a more abstract and expressive modelling of software evolution. They can help and guide software evolution, and can enforce and reduce critical risks and important involved resources. The workshop puts the focus on Models and Evolution by considering two main sides:\n(1) Managing software evolution needs by relying on the high-level abstraction power of models and meta-models.\n(2) Managing models and metamodels evolution needs by putting attention to their increasing evolution issues as they become primary artefacts and to the need of co-evolution of all related software artefacts.",
 							url : "http://www.models-and-evolution.com/"
 							organizers : [
 								{
@@ -350,15 +356,20 @@ var data = [
 							title : "Advanced Model Management with Epsilon",
 							organizers : [
 								{
-									name : "Richard Paige"},
+									name : "Richard Paige"	
+								},
 								{
-									name : "Dimitris Kolovos"},
+									name : "Dimitris Kolovos"	
+								},
 								{
-									name : "Antonio Garcia-Dominguez"},
+									name : "Antonio Garcia-Dominguez"	
+								},
 								{
-									name : "Nicholas Matragkas"},
+									name : "Nicholas Matragkas"	
+								},
 								{
-									name : "Horacio Hoyos"}
+									name : "Horacio Hoyos"	
+								}
 							]
 						}
 					]
@@ -376,7 +387,8 @@ var data = [
 							title : "ARCADIA in a Nutshell",
 							organizers : [
 								{
-									name : "Pascal Roques"}
+									name : "Pascal Roques"	
+								}
 							]
 						}
 					]
@@ -394,9 +406,11 @@ var data = [
 							title : "Hybrid Graphical/Textual Modelling and Code Generation with PapyrusRT",
 							organizers : [
 								{
-									name : "Ernesto Posse"},
+									name : "Ernesto Posse"	
+								},
 								{
-									name : "Nicolas Hili"}
+									name : "Nicolas Hili"	
+								}
 							]
 						}
 					]
@@ -412,9 +426,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "ME",
-							abstract : "Software artefacts constantly increase in complexity, variety and novelty. Environment and business constraints, user requirements and new insights put additional pressure on their adaptability, availability, reliability and quality: they continuously need to be up to date and up to level. However, evolution issues are critical, complex and costly to manage. They concern requirements, architecture, design, source code, documentation, integration as well as deployment. They also typically affect various kinds of models (data, behavioural, domain, source code or goal models). Addressing and managing these varieties of changes is essential. Models and meta-models, the cornerstone of complex software systems’ abstraction, represent a powerful mean for facing software evolution challenges by ensuring a more abstract and expressive modelling of software evolution. They can help and guide software evolution, and can enforce and reduce critical risks and important involved resources. The workshop puts the focus on Models and Evolution by considering two main sides:
-							(1) Managing software evolution needs by relying on the high-level abstraction power of models and meta-models.
-							(2) Managing models and metamodels evolution needs by putting attention to their increasing evolution issues as they become primary artefacts and to the need of co-evolution of all related software artefacts.",
+							abstract : "Software artefacts constantly increase in complexity, variety and novelty. Environment and business constraints, user requirements and new insights put additional pressure on their adaptability, availability, reliability and quality: they continuously need to be up to date and up to level. However, evolution issues are critical, complex and costly to manage. They concern requirements, architecture, design, source code, documentation, integration as well as deployment. They also typically affect various kinds of models (data, behavioural, domain, source code or goal models). Addressing and managing these varieties of changes is essential. Models and meta-models, the cornerstone of complex software systems’ abstraction, represent a powerful mean for facing software evolution challenges by ensuring a more abstract and expressive modelling of software evolution. They can help and guide software evolution, and can enforce and reduce critical risks and important involved resources. The workshop puts the focus on Models and Evolution by considering two main sides:\n(1) Managing software evolution needs by relying on the high-level abstraction power of models and meta-models.\n(2) Managing models and metamodels evolution needs by putting attention to their increasing evolution issues as they become primary artefacts and to the need of co-evolution of all related software artefacts.",
 							url : "http://www.models-and-evolution.com/"
 							organizers : [
 								{
@@ -621,9 +633,11 @@ var data = [
 							title : "Modeling Reactive Systems with the Scenario Modeling Language and ScenarioTools",
 							organizers : [
 								{
-									name : "Joel Greenyer"},
+									name : "Joel Greenyer"	
+								},
 								{
-									name : "Daniel Gritzner"}
+									name : "Daniel Gritzner"	
+								}
 							]
 						}
 					]
@@ -641,9 +655,11 @@ var data = [
 							title : "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies",
 							organizers : [
 								{
-									name : "Frederic Madiot"},
+									name : "Frederic Madiot"	
+								},
 								{
-									name : "Cedric Brun"}
+									name : "Cedric Brun"	
+								}
 							]
 						}
 					]
@@ -661,7 +677,8 @@ var data = [
 							title : "Technologies and Design Patterns for Model-based Development of Cyber-physical Systems",
 							organizers : [
 								{
-									name : "Bran Selic"}
+									name : "Bran Selic"	
+								}
 							]
 						}
 					]
@@ -677,9 +694,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "ME",
-							abstract : "Software artefacts constantly increase in complexity, variety and novelty. Environment and business constraints, user requirements and new insights put additional pressure on their adaptability, availability, reliability and quality: they continuously need to be up to date and up to level. However, evolution issues are critical, complex and costly to manage. They concern requirements, architecture, design, source code, documentation, integration as well as deployment. They also typically affect various kinds of models (data, behavioural, domain, source code or goal models). Addressing and managing these varieties of changes is essential. Models and meta-models, the cornerstone of complex software systems’ abstraction, represent a powerful mean for facing software evolution challenges by ensuring a more abstract and expressive modelling of software evolution. They can help and guide software evolution, and can enforce and reduce critical risks and important involved resources. The workshop puts the focus on Models and Evolution by considering two main sides:
-							(1) Managing software evolution needs by relying on the high-level abstraction power of models and meta-models.
-							(2) Managing models and metamodels evolution needs by putting attention to their increasing evolution issues as they become primary artefacts and to the need of co-evolution of all related software artefacts.",
+							abstract : "Software artefacts constantly increase in complexity, variety and novelty. Environment and business constraints, user requirements and new insights put additional pressure on their adaptability, availability, reliability and quality: they continuously need to be up to date and up to level. However, evolution issues are critical, complex and costly to manage. They concern requirements, architecture, design, source code, documentation, integration as well as deployment. They also typically affect various kinds of models (data, behavioural, domain, source code or goal models). Addressing and managing these varieties of changes is essential. Models and meta-models, the cornerstone of complex software systems’ abstraction, represent a powerful mean for facing software evolution challenges by ensuring a more abstract and expressive modelling of software evolution. They can help and guide software evolution, and can enforce and reduce critical risks and important involved resources. The workshop puts the focus on Models and Evolution by considering two main sides:\n(1) Managing software evolution needs by relying on the high-level abstraction power of models and meta-models.\n(2) Managing models and metamodels evolution needs by putting attention to their increasing evolution issues as they become primary artefacts and to the need of co-evolution of all related software artefacts.",
 							url : "http://www.models-and-evolution.com/"
 							organizers : [
 								{
@@ -882,9 +897,11 @@ var data = [
 							title : "Modeling Reactive Systems with the Scenario Modeling Language and ScenarioTools",
 							organizers : [
 								{
-									name : "Joel Greenyer"},
+									name : "Joel Greenyer"	
+								},
 								{
-									name : "Daniel Gritzner"}
+									name : "Daniel Gritzner"	
+								}
 							]
 						}
 					]
@@ -902,9 +919,11 @@ var data = [
 							title : "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies",
 							organizers : [
 								{
-									name : "Frederic Madiot"},
+									name : "Frederic Madiot"	
+								},
 								{
-									name : "Cedric Brun"}
+									name : "Cedric Brun"	
+								}
 							]
 						}
 					]
@@ -922,7 +941,8 @@ var data = [
 							title : "Technologies and Design Patterns for Model-based Development of Cyber-physical Systems",
 							organizers : [
 								{
-									name : "Bran Selic"}
+									name : "Bran Selic"	
+								}
 							]
 						}
 					]
@@ -938,9 +958,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "ME",
-							abstract : "Software artefacts constantly increase in complexity, variety and novelty. Environment and business constraints, user requirements and new insights put additional pressure on their adaptability, availability, reliability and quality: they continuously need to be up to date and up to level. However, evolution issues are critical, complex and costly to manage. They concern requirements, architecture, design, source code, documentation, integration as well as deployment. They also typically affect various kinds of models (data, behavioural, domain, source code or goal models). Addressing and managing these varieties of changes is essential. Models and meta-models, the cornerstone of complex software systems’ abstraction, represent a powerful mean for facing software evolution challenges by ensuring a more abstract and expressive modelling of software evolution. They can help and guide software evolution, and can enforce and reduce critical risks and important involved resources. The workshop puts the focus on Models and Evolution by considering two main sides:
-							(1) Managing software evolution needs by relying on the high-level abstraction power of models and meta-models.
-							(2) Managing models and metamodels evolution needs by putting attention to their increasing evolution issues as they become primary artefacts and to the need of co-evolution of all related software artefacts.",
+							abstract : "Software artefacts constantly increase in complexity, variety and novelty. Environment and business constraints, user requirements and new insights put additional pressure on their adaptability, availability, reliability and quality: they continuously need to be up to date and up to level. However, evolution issues are critical, complex and costly to manage. They concern requirements, architecture, design, source code, documentation, integration as well as deployment. They also typically affect various kinds of models (data, behavioural, domain, source code or goal models). Addressing and managing these varieties of changes is essential. Models and meta-models, the cornerstone of complex software systems’ abstraction, represent a powerful mean for facing software evolution challenges by ensuring a more abstract and expressive modelling of software evolution. They can help and guide software evolution, and can enforce and reduce critical risks and important involved resources. The workshop puts the focus on Models and Evolution by considering two main sides:\n(1) Managing software evolution needs by relying on the high-level abstraction power of models and meta-models.\n(2) Managing models and metamodels evolution needs by putting attention to their increasing evolution issues as they become primary artefacts and to the need of co-evolution of all related software artefacts.",
 							url : "http://www.models-and-evolution.com/"
 							organizers : [
 								{
@@ -1125,11 +1143,14 @@ var data = [
 							title : "Empirical Research in Model Based Software Engineering",
 							organizers : [
 								{
-									name : "Michel Chaudron"},
+									name : "Michel Chaudron"	
+								},
 								{
-									name : "Regina Hebig"},
+									name : "Regina Hebig"	
+								},
 								{
-									name : "Maria Teresa Baldassarre"}
+									name : "Maria Teresa Baldassarre"	
+								}
 							]
 						}
 					]
@@ -1147,9 +1168,11 @@ var data = [
 							title : "Applying Model Driven Engineering Technologies in the Creation of Domain Specific Modeling Languages",
 							organizers : [
 								{
-									name : "Bruce Trask"},
+									name : "Bruce Trask"	
+								},
 								{
-									name : "Angel Roman"}
+									name : "Angel Roman"	
+								}
 							]
 						}
 					]
@@ -1317,7 +1340,6 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							abstract : ,
 							url : 
 							organizers : [
 							]
@@ -1406,11 +1428,14 @@ var data = [
 							title : "Empirical Research in Model Based Software Engineering",
 							organizers : [
 								{
-									name : "Michel Chaudron"},
+									name : "Michel Chaudron"	
+								},
 								{
-									name : "Regina Hebig"},
+									name : "Regina Hebig"	
+								},
 								{
-									name : "Maria Teresa Baldassarre"}
+									name : "Maria Teresa Baldassarre"	
+								}
 							]
 						}
 					]
@@ -1428,9 +1453,11 @@ var data = [
 							title : "Applying Model Driven Engineering Technologies in the Creation of Domain Specific Modeling Languages",
 							organizers : [
 								{
-									name : "Bruce Trask"},
+									name : "Bruce Trask"	
+								},
 								{
-									name : "Angel Roman"}
+									name : "Angel Roman"	
+								}
 							]
 						}
 					]
@@ -1598,7 +1625,6 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							abstract : ,
 							url : 
 							organizers : [
 							]
@@ -1687,11 +1713,14 @@ var data = [
 							title : "Empirical Research in Model Based Software Engineering",
 							organizers : [
 								{
-									name : "Michel Chaudron"},
+									name : "Michel Chaudron"	
+								},
 								{
-									name : "Regina Hebig"},
+									name : "Regina Hebig"	
+								},
 								{
-									name : "Maria Teresa Baldassarre"}
+									name : "Maria Teresa Baldassarre"	
+								}
 							]
 						}
 					]
@@ -1709,9 +1738,11 @@ var data = [
 							title : "Multi-level Modelling with MetaDepth",
 							organizers : [
 								{
-									name : "Juan De Lara"},
+									name : "Juan De Lara"	
+								},
 								{
-									name : "Esther Guerra"}
+									name : "Esther Guerra"	
+								}
 							]
 						}
 					]
@@ -1879,7 +1910,6 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							abstract : ,
 							url : 
 							organizers : [
 							]
@@ -1968,11 +1998,14 @@ var data = [
 							title : "Empirical Research in Model Based Software Engineering",
 							organizers : [
 								{
-									name : "Michel Chaudron"},
+									name : "Michel Chaudron"	
+								},
 								{
-									name : "Regina Hebig"},
+									name : "Regina Hebig"	
+								},
 								{
-									name : "Maria Teresa Baldassarre"}
+									name : "Maria Teresa Baldassarre"	
+								}
 							]
 						}
 					]
@@ -1990,9 +2023,11 @@ var data = [
 							title : "Multi-level Modelling with MetaDepth",
 							organizers : [
 								{
-									name : "Juan De Lara"},
+									name : "Juan De Lara"	
+								},
 								{
-									name : "Esther Guerra"}
+									name : "Esther Guerra"	
+								}
 							]
 						}
 					]
@@ -2160,7 +2195,6 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							abstract : ,
 							url : 
 							organizers : [
 							]
@@ -2343,8 +2377,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "ModComp",
-							abstract : "Model-Driven Engineering (MDE) and Component-Based Software Engineering (CBSE) have been proven to effectively reduce software development complexity by (i) shifting the focus from source code to models and (ii) breaking down the set of desired features and their intricacy into smaller sub-modules, respectively. Moreover, the interplay of MDE and CBSE approaches is gaining recognition as a very promising means to boost the development of software systems by reducing costs and risks and shorten time-to-market. While several attempts to effectively combine MDE and CBSE have been documented, there are still unsolved clashes raising when exploiting interplay of MDE and CBSE, mostly due to mismatches in the related terminology as well as to differences in their basic essence.
-							As satellite event of MoDELS, the goal of ModComp’16 is to gather researchers and practitioners to share opinions, propose solutions to open challenges and generally explore the frontiers of interweaving between MDE and CBSE.",
+							abstract : "Model-Driven Engineering (MDE) and Component-Based Software Engineering (CBSE) have been proven to effectively reduce software development complexity by (i) shifting the focus from source code to models and (ii) breaking down the set of desired features and their intricacy into smaller sub-modules, respectively. Moreover, the interplay of MDE and CBSE approaches is gaining recognition as a very promising means to boost the development of software systems by reducing costs and risks and shorten time-to-market. While several attempts to effectively combine MDE and CBSE have been documented, there are still unsolved clashes raising when exploiting interplay of MDE and CBSE, mostly due to mismatches in the related terminology as well as to differences in their basic essence.\nAs satellite event of MoDELS, the goal of ModComp’16 is to gather researchers and practitioners to share opinions, propose solutions to open challenges and generally explore the frontiers of interweaving between MDE and CBSE.",
 							url : "http://www.mrtc.mdh.se/ModComp16/"
 							organizers : [
 								{
@@ -2494,8 +2527,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "GEMOC",
-							abstract : "To cope with complexity, modern software-intensive systems are often split in different concerns to serve the needs of diverse stakeholders. These different concerns are often associated with specialized description languages and technologies, which are based on concern-specific problems and solution concepts. Software developers are thus faced with the challenging task of integrating the different languages and associated technologies used to produce software artifacts in the different concern spaces.
-							The proposed GEMOC 2016 will be a full-day workshop that brings together researchers and practitioners in the modeling languages community to discuss the challenges associated with integrating multiple, heterogeneous modeling languages. The languages of interest range from requirements, to design and runtime languages, and include both general-purpose and domain-specific languages. Challenges related to engineering composable languages, well-formed semantic composition of languages and reasoning about systems described using heterogeneous languages are of particular interest. Following the three previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from the globalization of modeling languages; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.",
+							abstract : "To cope with complexity, modern software-intensive systems are often split in different concerns to serve the needs of diverse stakeholders. These different concerns are often associated with specialized description languages and technologies, which are based on concern-specific problems and solution concepts. Software developers are thus faced with the challenging task of integrating the different languages and associated technologies used to produce software artifacts in the different concern spaces.\nThe proposed GEMOC 2016 will be a full-day workshop that brings together researchers and practitioners in the modeling languages community to discuss the challenges associated with integrating multiple, heterogeneous modeling languages. The languages of interest range from requirements, to design and runtime languages, and include both general-purpose and domain-specific languages. Challenges related to engineering composable languages, well-formed semantic composition of languages and reasoning about systems described using heterogeneous languages are of particular interest. Following the three previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from the globalization of modeling languages; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.",
 							url : "http://gemoc.org/gemoc2016/"
 							organizers : [
 								{
@@ -2521,7 +2553,6 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							abstract : ,
 							url : 
 							organizers : [
 							]
@@ -2607,8 +2638,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "ModComp",
-							abstract : "Model-Driven Engineering (MDE) and Component-Based Software Engineering (CBSE) have been proven to effectively reduce software development complexity by (i) shifting the focus from source code to models and (ii) breaking down the set of desired features and their intricacy into smaller sub-modules, respectively. Moreover, the interplay of MDE and CBSE approaches is gaining recognition as a very promising means to boost the development of software systems by reducing costs and risks and shorten time-to-market. While several attempts to effectively combine MDE and CBSE have been documented, there are still unsolved clashes raising when exploiting interplay of MDE and CBSE, mostly due to mismatches in the related terminology as well as to differences in their basic essence.
-							As satellite event of MoDELS, the goal of ModComp’16 is to gather researchers and practitioners to share opinions, propose solutions to open challenges and generally explore the frontiers of interweaving between MDE and CBSE.",
+							abstract : "Model-Driven Engineering (MDE) and Component-Based Software Engineering (CBSE) have been proven to effectively reduce software development complexity by (i) shifting the focus from source code to models and (ii) breaking down the set of desired features and their intricacy into smaller sub-modules, respectively. Moreover, the interplay of MDE and CBSE approaches is gaining recognition as a very promising means to boost the development of software systems by reducing costs and risks and shorten time-to-market. While several attempts to effectively combine MDE and CBSE have been documented, there are still unsolved clashes raising when exploiting interplay of MDE and CBSE, mostly due to mismatches in the related terminology as well as to differences in their basic essence.\nAs satellite event of MoDELS, the goal of ModComp’16 is to gather researchers and practitioners to share opinions, propose solutions to open challenges and generally explore the frontiers of interweaving between MDE and CBSE.",
 							url : "http://www.mrtc.mdh.se/ModComp16/"
 							organizers : [
 								{
@@ -2758,8 +2788,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "GEMOC",
-							abstract : "To cope with complexity, modern software-intensive systems are often split in different concerns to serve the needs of diverse stakeholders. These different concerns are often associated with specialized description languages and technologies, which are based on concern-specific problems and solution concepts. Software developers are thus faced with the challenging task of integrating the different languages and associated technologies used to produce software artifacts in the different concern spaces.
-							The proposed GEMOC 2016 will be a full-day workshop that brings together researchers and practitioners in the modeling languages community to discuss the challenges associated with integrating multiple, heterogeneous modeling languages. The languages of interest range from requirements, to design and runtime languages, and include both general-purpose and domain-specific languages. Challenges related to engineering composable languages, well-formed semantic composition of languages and reasoning about systems described using heterogeneous languages are of particular interest. Following the three previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from the globalization of modeling languages; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.",
+							abstract : "To cope with complexity, modern software-intensive systems are often split in different concerns to serve the needs of diverse stakeholders. These different concerns are often associated with specialized description languages and technologies, which are based on concern-specific problems and solution concepts. Software developers are thus faced with the challenging task of integrating the different languages and associated technologies used to produce software artifacts in the different concern spaces.\nThe proposed GEMOC 2016 will be a full-day workshop that brings together researchers and practitioners in the modeling languages community to discuss the challenges associated with integrating multiple, heterogeneous modeling languages. The languages of interest range from requirements, to design and runtime languages, and include both general-purpose and domain-specific languages. Challenges related to engineering composable languages, well-formed semantic composition of languages and reasoning about systems described using heterogeneous languages are of particular interest. Following the three previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from the globalization of modeling languages; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.",
 							url : "http://gemoc.org/gemoc2016/"
 							organizers : [
 								{
@@ -2785,7 +2814,6 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							abstract : ,
 							url : 
 							organizers : [
 							]
@@ -2886,8 +2914,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "ModComp",
-							abstract : "Model-Driven Engineering (MDE) and Component-Based Software Engineering (CBSE) have been proven to effectively reduce software development complexity by (i) shifting the focus from source code to models and (ii) breaking down the set of desired features and their intricacy into smaller sub-modules, respectively. Moreover, the interplay of MDE and CBSE approaches is gaining recognition as a very promising means to boost the development of software systems by reducing costs and risks and shorten time-to-market. While several attempts to effectively combine MDE and CBSE have been documented, there are still unsolved clashes raising when exploiting interplay of MDE and CBSE, mostly due to mismatches in the related terminology as well as to differences in their basic essence.
-							As satellite event of MoDELS, the goal of ModComp’16 is to gather researchers and practitioners to share opinions, propose solutions to open challenges and generally explore the frontiers of interweaving between MDE and CBSE.",
+							abstract : "Model-Driven Engineering (MDE) and Component-Based Software Engineering (CBSE) have been proven to effectively reduce software development complexity by (i) shifting the focus from source code to models and (ii) breaking down the set of desired features and their intricacy into smaller sub-modules, respectively. Moreover, the interplay of MDE and CBSE approaches is gaining recognition as a very promising means to boost the development of software systems by reducing costs and risks and shorten time-to-market. While several attempts to effectively combine MDE and CBSE have been documented, there are still unsolved clashes raising when exploiting interplay of MDE and CBSE, mostly due to mismatches in the related terminology as well as to differences in their basic essence.\nAs satellite event of MoDELS, the goal of ModComp’16 is to gather researchers and practitioners to share opinions, propose solutions to open challenges and generally explore the frontiers of interweaving between MDE and CBSE.",
 							url : "http://www.mrtc.mdh.se/ModComp16/"
 							organizers : [
 								{
@@ -3037,8 +3064,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "GEMOC",
-							abstract : "To cope with complexity, modern software-intensive systems are often split in different concerns to serve the needs of diverse stakeholders. These different concerns are often associated with specialized description languages and technologies, which are based on concern-specific problems and solution concepts. Software developers are thus faced with the challenging task of integrating the different languages and associated technologies used to produce software artifacts in the different concern spaces.
-							The proposed GEMOC 2016 will be a full-day workshop that brings together researchers and practitioners in the modeling languages community to discuss the challenges associated with integrating multiple, heterogeneous modeling languages. The languages of interest range from requirements, to design and runtime languages, and include both general-purpose and domain-specific languages. Challenges related to engineering composable languages, well-formed semantic composition of languages and reasoning about systems described using heterogeneous languages are of particular interest. Following the three previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from the globalization of modeling languages; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.",
+							abstract : "To cope with complexity, modern software-intensive systems are often split in different concerns to serve the needs of diverse stakeholders. These different concerns are often associated with specialized description languages and technologies, which are based on concern-specific problems and solution concepts. Software developers are thus faced with the challenging task of integrating the different languages and associated technologies used to produce software artifacts in the different concern spaces.\nThe proposed GEMOC 2016 will be a full-day workshop that brings together researchers and practitioners in the modeling languages community to discuss the challenges associated with integrating multiple, heterogeneous modeling languages. The languages of interest range from requirements, to design and runtime languages, and include both general-purpose and domain-specific languages. Challenges related to engineering composable languages, well-formed semantic composition of languages and reasoning about systems described using heterogeneous languages are of particular interest. Following the three previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from the globalization of modeling languages; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.",
 							url : "http://gemoc.org/gemoc2016/"
 							organizers : [
 								{
@@ -3064,7 +3090,6 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							abstract : ,
 							url : 
 							organizers : [
 							]
@@ -3161,8 +3186,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "ModComp",
-							abstract : "Model-Driven Engineering (MDE) and Component-Based Software Engineering (CBSE) have been proven to effectively reduce software development complexity by (i) shifting the focus from source code to models and (ii) breaking down the set of desired features and their intricacy into smaller sub-modules, respectively. Moreover, the interplay of MDE and CBSE approaches is gaining recognition as a very promising means to boost the development of software systems by reducing costs and risks and shorten time-to-market. While several attempts to effectively combine MDE and CBSE have been documented, there are still unsolved clashes raising when exploiting interplay of MDE and CBSE, mostly due to mismatches in the related terminology as well as to differences in their basic essence.
-							As satellite event of MoDELS, the goal of ModComp’16 is to gather researchers and practitioners to share opinions, propose solutions to open challenges and generally explore the frontiers of interweaving between MDE and CBSE.",
+							abstract : "Model-Driven Engineering (MDE) and Component-Based Software Engineering (CBSE) have been proven to effectively reduce software development complexity by (i) shifting the focus from source code to models and (ii) breaking down the set of desired features and their intricacy into smaller sub-modules, respectively. Moreover, the interplay of MDE and CBSE approaches is gaining recognition as a very promising means to boost the development of software systems by reducing costs and risks and shorten time-to-market. While several attempts to effectively combine MDE and CBSE have been documented, there are still unsolved clashes raising when exploiting interplay of MDE and CBSE, mostly due to mismatches in the related terminology as well as to differences in their basic essence.\nAs satellite event of MoDELS, the goal of ModComp’16 is to gather researchers and practitioners to share opinions, propose solutions to open challenges and generally explore the frontiers of interweaving between MDE and CBSE.",
 							url : "http://www.mrtc.mdh.se/ModComp16/"
 							organizers : [
 								{
@@ -3312,8 +3336,7 @@ var data = [
 						{
 							type : "Workshop",
 							title : "GEMOC",
-							abstract : "To cope with complexity, modern software-intensive systems are often split in different concerns to serve the needs of diverse stakeholders. These different concerns are often associated with specialized description languages and technologies, which are based on concern-specific problems and solution concepts. Software developers are thus faced with the challenging task of integrating the different languages and associated technologies used to produce software artifacts in the different concern spaces.
-							The proposed GEMOC 2016 will be a full-day workshop that brings together researchers and practitioners in the modeling languages community to discuss the challenges associated with integrating multiple, heterogeneous modeling languages. The languages of interest range from requirements, to design and runtime languages, and include both general-purpose and domain-specific languages. Challenges related to engineering composable languages, well-formed semantic composition of languages and reasoning about systems described using heterogeneous languages are of particular interest. Following the three previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from the globalization of modeling languages; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.",
+							abstract : "To cope with complexity, modern software-intensive systems are often split in different concerns to serve the needs of diverse stakeholders. These different concerns are often associated with specialized description languages and technologies, which are based on concern-specific problems and solution concepts. Software developers are thus faced with the challenging task of integrating the different languages and associated technologies used to produce software artifacts in the different concern spaces.\nThe proposed GEMOC 2016 will be a full-day workshop that brings together researchers and practitioners in the modeling languages community to discuss the challenges associated with integrating multiple, heterogeneous modeling languages. The languages of interest range from requirements, to design and runtime languages, and include both general-purpose and domain-specific languages. Challenges related to engineering composable languages, well-formed semantic composition of languages and reasoning about systems described using heterogeneous languages are of particular interest. Following the three previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from the globalization of modeling languages; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.",
 							url : "http://gemoc.org/gemoc2016/"
 							organizers : [
 								{
@@ -3339,7 +3362,6 @@ var data = [
 						{
 							type : "Workshop",
 							title : "SAM",
-							abstract : ,
 							url : 
 							organizers : [
 							]
@@ -3503,9 +3525,11 @@ var data = [
 									icalEnd : "20161005T092500Z",
 									authors : [
 										{
-											name : "Invidunt At"},
+											name : "Invidunt At"	
+										},
 										{
-											name : "Sed Sea"}
+											name : "Sed Sea"	
+										}
 									]
 								},
 								{
@@ -3516,11 +3540,14 @@ var data = [
 									icalEnd : "20161005T095000Z",
 									authors : [
 										{
-											name : "Dolores Et"},
+											name : "Dolores Et"	
+										},
 										{
-											name : "Vero Et"},
+											name : "Vero Et"	
+										},
 										{
-											name : "Sed Kasd"}
+											name : "Sed Kasd"	
+										}
 									]
 								},
 								{
@@ -3531,17 +3558,23 @@ var data = [
 									icalEnd : "20161005T101500Z",
 									authors : [
 										{
-											name : "Kasd Sanctus"},
+											name : "Kasd Sanctus"	
+										},
 										{
-											name : "Gubergren Consetetur"},
+											name : "Gubergren Consetetur"	
+										},
 										{
-											name : "Invidunt Nonumy"},
+											name : "Invidunt Nonumy"	
+										},
 										{
-											name : "Et Eos"},
+											name : "Et Eos"	
+										},
 										{
-											name : "Vero Et"},
+											name : "Vero Et"	
+										},
 										{
-											name : "Ipsum Magna"}
+											name : "Ipsum Magna"	
+										}
 									]
 								}
 							]
@@ -3569,17 +3602,23 @@ var data = [
 									icalEnd : "20161005T092500Z",
 									authors : [
 										{
-											name : "Aliquyam At"},
+											name : "Aliquyam At"	
+										},
 										{
-											name : "Ipsum Invidunt"},
+											name : "Ipsum Invidunt"	
+										},
 										{
-											name : "Ipsum Magna"},
+											name : "Ipsum Magna"	
+										},
 										{
-											name : "Takimata Et"},
+											name : "Takimata Et"	
+										},
 										{
-											name : "Est Lorem"},
+											name : "Est Lorem"	
+										},
 										{
-											name : "Invidunt At"}
+											name : "Invidunt At"	
+										}
 									]
 								},
 								{
@@ -3590,15 +3629,20 @@ var data = [
 									icalEnd : "20161005T095000Z",
 									authors : [
 										{
-											name : "Eos Et"},
+											name : "Eos Et"	
+										},
 										{
-											name : "No Aliquyam"},
+											name : "No Aliquyam"	
+										},
 										{
-											name : "Kasd Dolores"},
+											name : "Kasd Dolores"	
+										},
 										{
-											name : "Gubergren At"},
+											name : "Gubergren At"	
+										},
 										{
-											name : "Eirmod Consetetur"}
+											name : "Eirmod Consetetur"	
+										}
 									]
 								},
 								{
@@ -3609,21 +3653,29 @@ var data = [
 									icalEnd : "20161005T101500Z",
 									authors : [
 										{
-											name : "Ipsum Nonumy"},
+											name : "Ipsum Nonumy"	
+										},
 										{
-											name : "Vero Ea"},
+											name : "Vero Ea"	
+										},
 										{
-											name : "Kasd Sanctus"},
+											name : "Kasd Sanctus"	
+										},
 										{
-											name : "Ipsum Invidunt"},
+											name : "Ipsum Invidunt"	
+										},
 										{
-											name : "Nonumy Dolore"},
+											name : "Nonumy Dolore"	
+										},
 										{
-											name : "Ipsum Nonumy"},
+											name : "Ipsum Nonumy"	
+										},
 										{
-											name : "Clita Tempor"},
+											name : "Clita Tempor"	
+										},
 										{
-											name : "Ipsum Magna"}
+											name : "Ipsum Magna"	
+										}
 									]
 								}
 							]
@@ -3651,15 +3703,20 @@ var data = [
 									icalEnd : "20161005T092500Z",
 									authors : [
 										{
-											name : "Eos Et"},
+											name : "Eos Et"	
+										},
 										{
-											name : "No Aliquyam"},
+											name : "No Aliquyam"	
+										},
 										{
-											name : "Kasd Dolores"},
+											name : "Kasd Dolores"	
+										},
 										{
-											name : "Gubergren At"},
+											name : "Gubergren At"	
+										},
 										{
-											name : "Eirmod Consetetur"}
+											name : "Eirmod Consetetur"	
+										}
 									]
 								},
 								{
@@ -3670,17 +3727,23 @@ var data = [
 									icalEnd : "20161005T095000Z",
 									authors : [
 										{
-											name : "Aliquyam At"},
+											name : "Aliquyam At"	
+										},
 										{
-											name : "Ipsum Invidunt"},
+											name : "Ipsum Invidunt"	
+										},
 										{
-											name : "Ipsum Magna"},
+											name : "Ipsum Magna"	
+										},
 										{
-											name : "Takimata Et"},
+											name : "Takimata Et"	
+										},
 										{
-											name : "Est Lorem"},
+											name : "Est Lorem"	
+										},
 										{
-											name : "Invidunt At"}
+											name : "Invidunt At"	
+										}
 									]
 								},
 								{
@@ -3691,17 +3754,23 @@ var data = [
 									icalEnd : "20161005T101500Z",
 									authors : [
 										{
-											name : "Nonumy Ea"},
+											name : "Nonumy Ea"	
+										},
 										{
-											name : "Kasd Dolores"},
+											name : "Kasd Dolores"	
+										},
 										{
-											name : "Voluptua Voluptua"},
+											name : "Voluptua Voluptua"	
+										},
 										{
-											name : "Est Lorem"},
+											name : "Est Lorem"	
+										},
 										{
-											name : "Ipsum Magna"},
+											name : "Ipsum Magna"	
+										},
 										{
-											name : "Consetetur Ipsum"}
+											name : "Consetetur Ipsum"	
+										}
 									]
 								}
 							]
@@ -3789,19 +3858,26 @@ var data = [
 									icalEnd : "20161005T122500Z",
 									authors : [
 										{
-											name : "Gubergren Consetetur"},
+											name : "Gubergren Consetetur"	
+										},
 										{
-											name : "Labore Sed"},
+											name : "Labore Sed"	
+										},
 										{
-											name : "Voluptua Voluptua"},
+											name : "Voluptua Voluptua"	
+										},
 										{
-											name : "Diam Et"},
+											name : "Diam Et"	
+										},
 										{
-											name : "Ipsum Invidunt"},
+											name : "Ipsum Invidunt"	
+										},
 										{
-											name : "Ipsum Magna"},
+											name : "Ipsum Magna"	
+										},
 										{
-											name : "Ipsum Magna"}
+											name : "Ipsum Magna"	
+										}
 									]
 								},
 								{
@@ -3812,13 +3888,17 @@ var data = [
 									icalEnd : "20161005T125000Z",
 									authors : [
 										{
-											name : "Magna Dolore"},
+											name : "Magna Dolore"	
+										},
 										{
-											name : "Magna Labore"},
+											name : "Magna Labore"	
+										},
 										{
-											name : "Sit Sadipscing"},
+											name : "Sit Sadipscing"	
+										},
 										{
-											name : "Eos Et"}
+											name : "Eos Et"	
+										}
 									]
 								},
 								{
@@ -3829,19 +3909,26 @@ var data = [
 									icalEnd : "20161005T131500Z",
 									authors : [
 										{
-											name : "At No"},
+											name : "At No"	
+										},
 										{
-											name : "Sea Amet"},
+											name : "Sea Amet"	
+										},
 										{
-											name : "Amet Sit"},
+											name : "Amet Sit"	
+										},
 										{
-											name : "Diam Et"},
+											name : "Diam Et"	
+										},
 										{
-											name : "Nonumy Ea"},
+											name : "Nonumy Ea"	
+										},
 										{
-											name : "Est Et"},
+											name : "Est Et"	
+										},
 										{
-											name : "Dolores Justo"}
+											name : "Dolores Justo"	
+										}
 									]
 								}
 							]
@@ -3869,19 +3956,26 @@ var data = [
 									icalEnd : "20161005T122500Z",
 									authors : [
 										{
-											name : "Sed Consetetur"},
+											name : "Sed Consetetur"	
+										},
 										{
-											name : "At No"},
+											name : "At No"	
+										},
 										{
-											name : "Lorem No"},
+											name : "Lorem No"	
+										},
 										{
-											name : "Tempor Ea"},
+											name : "Tempor Ea"	
+										},
 										{
-											name : "Invidunt Nonumy"},
+											name : "Invidunt Nonumy"	
+										},
 										{
-											name : "Diam Diam"},
+											name : "Diam Diam"	
+										},
 										{
-											name : "Dolor Eirmod"}
+											name : "Dolor Eirmod"	
+										}
 									]
 								},
 								{
@@ -3892,13 +3986,17 @@ var data = [
 									icalEnd : "20161005T125000Z",
 									authors : [
 										{
-											name : "Kasd Dolores"},
+											name : "Kasd Dolores"	
+										},
 										{
-											name : "Sed Consetetur"},
+											name : "Sed Consetetur"	
+										},
 										{
-											name : "Sadipscing Ipsum"},
+											name : "Sadipscing Ipsum"	
+										},
 										{
-											name : "Magna Labore"}
+											name : "Magna Labore"	
+										}
 									]
 								},
 								{
@@ -3909,17 +4007,23 @@ var data = [
 									icalEnd : "20161005T131500Z",
 									authors : [
 										{
-											name : "Accusam Ipsum"},
+											name : "Accusam Ipsum"	
+										},
 										{
-											name : "Amet Sit"},
+											name : "Amet Sit"	
+										},
 										{
-											name : "Voluptua Dolore"},
+											name : "Voluptua Dolore"	
+										},
 										{
-											name : "Sed Sea"},
+											name : "Sed Sea"	
+										},
 										{
-											name : "Voluptua Voluptua"},
+											name : "Voluptua Voluptua"	
+										},
 										{
-											name : "Dolores Et"}
+											name : "Dolores Et"	
+										}
 									]
 								}
 							]
@@ -3947,13 +4051,17 @@ var data = [
 									icalEnd : "20161005T122500Z",
 									authors : [
 										{
-											name : "Accusam Ipsum"},
+											name : "Accusam Ipsum"	
+										},
 										{
-											name : "Magna Dolore"},
+											name : "Magna Dolore"	
+										},
 										{
-											name : "Accusam Ipsum"},
+											name : "Accusam Ipsum"	
+										},
 										{
-											name : "Labore Sed"}
+											name : "Labore Sed"	
+										}
 									]
 								},
 								{
@@ -3964,11 +4072,14 @@ var data = [
 									icalEnd : "20161005T125000Z",
 									authors : [
 										{
-											name : "Labore Sed"},
+											name : "Labore Sed"	
+										},
 										{
-											name : "Et Eos"},
+											name : "Et Eos"	
+										},
 										{
-											name : "Stet No"}
+											name : "Stet No"	
+										}
 									]
 								},
 								{
@@ -3979,11 +4090,14 @@ var data = [
 									icalEnd : "20161005T131500Z",
 									authors : [
 										{
-											name : "Dolores Et"},
+											name : "Dolores Et"	
+										},
 										{
-											name : "Vero Et"},
+											name : "Vero Et"	
+										},
 										{
-											name : "Sed Kasd"}
+											name : "Sed Kasd"	
+										}
 									]
 								}
 							]
@@ -4078,19 +4192,26 @@ var data = [
 									icalEnd : "20161005T142500Z",
 									authors : [
 										{
-											name : "Nonumy At"},
+											name : "Nonumy At"	
+										},
 										{
-											name : "Gubergren At"},
+											name : "Gubergren At"	
+										},
 										{
-											name : "Ea Diam"},
+											name : "Ea Diam"	
+										},
 										{
-											name : "Et Diam"},
+											name : "Et Diam"	
+										},
 										{
-											name : "At Justo"},
+											name : "At Justo"	
+										},
 										{
-											name : "No Aliquyam"},
+											name : "No Aliquyam"	
+										},
 										{
-											name : "Tempor Et"}
+											name : "Tempor Et"	
+										}
 									]
 								},
 								{
@@ -4101,9 +4222,11 @@ var data = [
 									icalEnd : "20161005T145000Z",
 									authors : [
 										{
-											name : "Magna Takimata"},
+											name : "Magna Takimata"	
+										},
 										{
-											name : "Lorem Lorem"}
+											name : "Lorem Lorem"	
+										}
 									]
 								},
 								{
@@ -4114,15 +4237,20 @@ var data = [
 									icalEnd : "20161005T151500Z",
 									authors : [
 										{
-											name : "Lorem Lorem"},
+											name : "Lorem Lorem"	
+										},
 										{
-											name : "Takimata Et"},
+											name : "Takimata Et"	
+										},
 										{
-											name : "Dolores Justo"},
+											name : "Dolores Justo"	
+										},
 										{
-											name : "Duo Nonumy"},
+											name : "Duo Nonumy"	
+										},
 										{
-											name : "Sadipscing Ipsum"}
+											name : "Sadipscing Ipsum"	
+										}
 									]
 								}
 							]
@@ -4150,13 +4278,17 @@ var data = [
 									icalEnd : "20161005T142500Z",
 									authors : [
 										{
-											name : "Sed Kasd"},
+											name : "Sed Kasd"	
+										},
 										{
-											name : "Nonumy At"},
+											name : "Nonumy At"	
+										},
 										{
-											name : "Rebum Sadipscing"},
+											name : "Rebum Sadipscing"	
+										},
 										{
-											name : "Consetetur Erat"}
+											name : "Consetetur Erat"	
+										}
 									]
 								},
 								{
@@ -4167,21 +4299,29 @@ var data = [
 									icalEnd : "20161005T145000Z",
 									authors : [
 										{
-											name : "Stet Justo"},
+											name : "Stet Justo"	
+										},
 										{
-											name : "Eirmod Consetetur"},
+											name : "Eirmod Consetetur"	
+										},
 										{
-											name : "Ut Accusam"},
+											name : "Ut Accusam"	
+										},
 										{
-											name : "Amet Sed"},
+											name : "Amet Sed"	
+										},
 										{
-											name : "Stet Est"},
+											name : "Stet Est"	
+										},
 										{
-											name : "Ipsum Magna"},
+											name : "Ipsum Magna"	
+										},
 										{
-											name : "Ipsum Invidunt"},
+											name : "Ipsum Invidunt"	
+										},
 										{
-											name : "Accusam Ipsum"}
+											name : "Accusam Ipsum"	
+										}
 									]
 								},
 								{
@@ -4192,19 +4332,26 @@ var data = [
 									icalEnd : "20161005T151500Z",
 									authors : [
 										{
-											name : "Tempor Ut"},
+											name : "Tempor Ut"	
+										},
 										{
-											name : "Est Lorem"},
+											name : "Est Lorem"	
+										},
 										{
-											name : "Sit Sadipscing"},
+											name : "Sit Sadipscing"	
+										},
 										{
-											name : "Et Eos"},
+											name : "Et Eos"	
+										},
 										{
-											name : "Voluptua Voluptua"},
+											name : "Voluptua Voluptua"	
+										},
 										{
-											name : "Diam Diam"},
+											name : "Diam Diam"	
+										},
 										{
-											name : "Et Invidunt"}
+											name : "Et Invidunt"	
+										}
 									]
 								}
 							]
@@ -4232,13 +4379,17 @@ var data = [
 									icalEnd : "20161005T142500Z",
 									authors : [
 										{
-											name : "Nonumy Dolore"},
+											name : "Nonumy Dolore"	
+										},
 										{
-											name : "At No"},
+											name : "At No"	
+										},
 										{
-											name : "Rebum Nonumy"},
+											name : "Rebum Nonumy"	
+										},
 										{
-											name : "Nonumy Sed"}
+											name : "Nonumy Sed"	
+										}
 									]
 								},
 								{
@@ -4249,19 +4400,26 @@ var data = [
 									icalEnd : "20161005T145000Z",
 									authors : [
 										{
-											name : "Eos Sed"},
+											name : "Eos Sed"	
+										},
 										{
-											name : "Magna Takimata"},
+											name : "Magna Takimata"	
+										},
 										{
-											name : "Takimata Ea"},
+											name : "Takimata Ea"	
+										},
 										{
-											name : "Nonumy Sed"},
+											name : "Nonumy Sed"	
+										},
 										{
-											name : "Eos Et"},
+											name : "Eos Et"	
+										},
 										{
-											name : "Amet At"},
+											name : "Amet At"	
+										},
 										{
-											name : "Duo Accusam"}
+											name : "Duo Accusam"	
+										}
 									]
 								},
 								{
@@ -4272,15 +4430,20 @@ var data = [
 									icalEnd : "20161005T151500Z",
 									authors : [
 										{
-											name : "Et Sadipscing"},
+											name : "Et Sadipscing"	
+										},
 										{
-											name : "Ipsum Invidunt"},
+											name : "Ipsum Invidunt"	
+										},
 										{
-											name : "Nonumy Ea"},
+											name : "Nonumy Ea"	
+										},
 										{
-											name : "Duo Gubergren"},
+											name : "Duo Gubergren"	
+										},
 										{
-											name : "Diam Sit"}
+											name : "Diam Sit"	
+										}
 									]
 								}
 							]
@@ -4535,19 +4698,26 @@ var data = [
 									icalEnd : "20161006T092500Z",
 									authors : [
 										{
-											name : "Lorem Lorem"},
+											name : "Lorem Lorem"	
+										},
 										{
-											name : "Diam Et"},
+											name : "Diam Et"	
+										},
 										{
-											name : "Dolores Et"},
+											name : "Dolores Et"	
+										},
 										{
-											name : "Lorem Sit"},
+											name : "Lorem Sit"	
+										},
 										{
-											name : "Ipsum Invidunt"},
+											name : "Ipsum Invidunt"	
+										},
 										{
-											name : "Accusam Ipsum"},
+											name : "Accusam Ipsum"	
+										},
 										{
-											name : "Clita Tempor"}
+											name : "Clita Tempor"	
+										}
 									]
 								},
 								{
@@ -4558,13 +4728,17 @@ var data = [
 									icalEnd : "20161006T095000Z",
 									authors : [
 										{
-											name : "Sed Kasd"},
+											name : "Sed Kasd"	
+										},
 										{
-											name : "Nonumy At"},
+											name : "Nonumy At"	
+										},
 										{
-											name : "Rebum Sadipscing"},
+											name : "Rebum Sadipscing"	
+										},
 										{
-											name : "Consetetur Erat"}
+											name : "Consetetur Erat"	
+										}
 									]
 								},
 								{
@@ -4575,21 +4749,29 @@ var data = [
 									icalEnd : "20161006T101500Z",
 									authors : [
 										{
-											name : "Diam Diam"},
+											name : "Diam Diam"	
+										},
 										{
-											name : "Invidunt At"},
+											name : "Invidunt At"	
+										},
 										{
-											name : "Aliquyam Et"},
+											name : "Aliquyam Et"	
+										},
 										{
-											name : "Est Lorem"},
+											name : "Est Lorem"	
+										},
 										{
-											name : "Est Et"},
+											name : "Est Et"	
+										},
 										{
-											name : "Clita Tempor"},
+											name : "Clita Tempor"	
+										},
 										{
-											name : "Et Sadipscing"},
+											name : "Et Sadipscing"	
+										},
 										{
-											name : "Kasd Dolores"}
+											name : "Kasd Dolores"	
+										}
 									]
 								}
 							]
@@ -4617,9 +4799,11 @@ var data = [
 									icalEnd : "20161006T092500Z",
 									authors : [
 										{
-											name : "Invidunt At"},
+											name : "Invidunt At"	
+										},
 										{
-											name : "Sed Sea"}
+											name : "Sed Sea"	
+										}
 									]
 								},
 								{
@@ -4630,21 +4814,29 @@ var data = [
 									icalEnd : "20161006T095000Z",
 									authors : [
 										{
-											name : "Lorem Sit"},
+											name : "Lorem Sit"	
+										},
 										{
-											name : "Dolores Et"},
+											name : "Dolores Et"	
+										},
 										{
-											name : "Aliquyam Et"},
+											name : "Aliquyam Et"	
+										},
 										{
-											name : "Takimata Et"},
+											name : "Takimata Et"	
+										},
 										{
-											name : "Kasd Dolores"},
+											name : "Kasd Dolores"	
+										},
 										{
-											name : "Duo Nonumy"},
+											name : "Duo Nonumy"	
+										},
 										{
-											name : "Amet Sed"},
+											name : "Amet Sed"	
+										},
 										{
-											name : "Invidunt Amet"}
+											name : "Invidunt Amet"	
+										}
 									]
 								},
 								{
@@ -4655,19 +4847,26 @@ var data = [
 									icalEnd : "20161006T101500Z",
 									authors : [
 										{
-											name : "Gubergren Ea"},
+											name : "Gubergren Ea"	
+										},
 										{
-											name : "Et Invidunt"},
+											name : "Et Invidunt"	
+										},
 										{
-											name : "Stet No"},
+											name : "Stet No"	
+										},
 										{
-											name : "Et Dolor"},
+											name : "Et Dolor"	
+										},
 										{
-											name : "Amet At"},
+											name : "Amet At"	
+										},
 										{
-											name : "Magna Labore"},
+											name : "Magna Labore"	
+										},
 										{
-											name : "Dolor Eirmod"}
+											name : "Dolor Eirmod"	
+										}
 									]
 								}
 							]
@@ -4695,17 +4894,23 @@ var data = [
 									icalEnd : "20161006T092500Z",
 									authors : [
 										{
-											name : "Amet At"},
+											name : "Amet At"	
+										},
 										{
-											name : "Consetetur Erat"},
+											name : "Consetetur Erat"	
+										},
 										{
-											name : "Diam Diam"},
+											name : "Diam Diam"	
+										},
 										{
-											name : "Rebum Nonumy"},
+											name : "Rebum Nonumy"	
+										},
 										{
-											name : "Consetetur Ipsum"},
+											name : "Consetetur Ipsum"	
+										},
 										{
-											name : "Sadipscing Ipsum"}
+											name : "Sadipscing Ipsum"	
+										}
 									]
 								},
 								{
@@ -4716,17 +4921,23 @@ var data = [
 									icalEnd : "20161006T095000Z",
 									authors : [
 										{
-											name : "Et Sadipscing"},
+											name : "Et Sadipscing"	
+										},
 										{
-											name : "Sed Kasd"},
+											name : "Sed Kasd"	
+										},
 										{
-											name : "Labore Sed"},
+											name : "Labore Sed"	
+										},
 										{
-											name : "Diam Et"},
+											name : "Diam Et"	
+										},
 										{
-											name : "Nonumy Dolore"},
+											name : "Nonumy Dolore"	
+										},
 										{
-											name : "Lorem No"}
+											name : "Lorem No"	
+										}
 									]
 								},
 								{
@@ -4737,13 +4948,17 @@ var data = [
 									icalEnd : "20161006T101500Z",
 									authors : [
 										{
-											name : "Ipsum Invidunt"},
+											name : "Ipsum Invidunt"	
+										},
 										{
-											name : "Dolores Justo"},
+											name : "Dolores Justo"	
+										},
 										{
-											name : "Dolores Eirmod"},
+											name : "Dolores Eirmod"	
+										},
 										{
-											name : "Takimata Et"}
+											name : "Takimata Et"	
+										}
 									]
 								}
 							]
@@ -4836,21 +5051,29 @@ var data = [
 									icalEnd : "20161006T122500Z",
 									authors : [
 										{
-											name : "Gubergren At"},
+											name : "Gubergren At"	
+										},
 										{
-											name : "Accusam Ipsum"},
+											name : "Accusam Ipsum"	
+										},
 										{
-											name : "Consetetur Erat"},
+											name : "Consetetur Erat"	
+										},
 										{
-											name : "At No"},
+											name : "At No"	
+										},
 										{
-											name : "Accusam Vero"},
+											name : "Accusam Vero"	
+										},
 										{
-											name : "Clita Tempor"},
+											name : "Clita Tempor"	
+										},
 										{
-											name : "Lorem At"},
+											name : "Lorem At"	
+										},
 										{
-											name : "Magna Labore"}
+											name : "Magna Labore"	
+										}
 									]
 								},
 								{
@@ -4861,17 +5084,23 @@ var data = [
 									icalEnd : "20161006T125000Z",
 									authors : [
 										{
-											name : "Kasd Sanctus"},
+											name : "Kasd Sanctus"	
+										},
 										{
-											name : "Gubergren Consetetur"},
+											name : "Gubergren Consetetur"	
+										},
 										{
-											name : "Invidunt Nonumy"},
+											name : "Invidunt Nonumy"	
+										},
 										{
-											name : "Et Eos"},
+											name : "Et Eos"	
+										},
 										{
-											name : "Vero Et"},
+											name : "Vero Et"	
+										},
 										{
-											name : "Ipsum Magna"}
+											name : "Ipsum Magna"	
+										}
 									]
 								},
 								{
@@ -4882,19 +5111,26 @@ var data = [
 									icalEnd : "20161006T131500Z",
 									authors : [
 										{
-											name : "Dolores Et"},
+											name : "Dolores Et"	
+										},
 										{
-											name : "Accusam Vero"},
+											name : "Accusam Vero"	
+										},
 										{
-											name : "Ipsum Magna"},
+											name : "Ipsum Magna"	
+										},
 										{
-											name : "Stet No"},
+											name : "Stet No"	
+										},
 										{
-											name : "Duo Nonumy"},
+											name : "Duo Nonumy"	
+										},
 										{
-											name : "Consetetur Erat"},
+											name : "Consetetur Erat"	
+										},
 										{
-											name : "Ea Diam"}
+											name : "Ea Diam"	
+										}
 									]
 								}
 							]
@@ -4922,19 +5158,26 @@ var data = [
 									icalEnd : "20161006T122500Z",
 									authors : [
 										{
-											name : "Tempor Ea"},
+											name : "Tempor Ea"	
+										},
 										{
-											name : "Voluptua Voluptua"},
+											name : "Voluptua Voluptua"	
+										},
 										{
-											name : "No Aliquyam"},
+											name : "No Aliquyam"	
+										},
 										{
-											name : "Dolor Eirmod"},
+											name : "Dolor Eirmod"	
+										},
 										{
-											name : "Sadipscing Ipsum"},
+											name : "Sadipscing Ipsum"	
+										},
 										{
-											name : "Sed Sea"},
+											name : "Sed Sea"	
+										},
 										{
-											name : "Lorem Diam"}
+											name : "Lorem Diam"	
+										}
 									]
 								},
 								{
@@ -4945,17 +5188,23 @@ var data = [
 									icalEnd : "20161006T125000Z",
 									authors : [
 										{
-											name : "Vero Justo"},
+											name : "Vero Justo"	
+										},
 										{
-											name : "Gubergren Duo"},
+											name : "Gubergren Duo"	
+										},
 										{
-											name : "Voluptua Dolore"},
+											name : "Voluptua Dolore"	
+										},
 										{
-											name : "Et Diam"},
+											name : "Et Diam"	
+										},
 										{
-											name : "Gubergren Consetetur"},
+											name : "Gubergren Consetetur"	
+										},
 										{
-											name : "Voluptua Gubergren"}
+											name : "Voluptua Gubergren"	
+										}
 									]
 								},
 								{
@@ -4966,21 +5215,29 @@ var data = [
 									icalEnd : "20161006T131500Z",
 									authors : [
 										{
-											name : "Nonumy Ea"},
+											name : "Nonumy Ea"	
+										},
 										{
-											name : "Vero Clita"},
+											name : "Vero Clita"	
+										},
 										{
-											name : "Lorem No"},
+											name : "Lorem No"	
+										},
 										{
-											name : "Invidunt Amet"},
+											name : "Invidunt Amet"	
+										},
 										{
-											name : "No Aliquyam"},
+											name : "No Aliquyam"	
+										},
 										{
-											name : "Lorem Lorem"},
+											name : "Lorem Lorem"	
+										},
 										{
-											name : "Amet At"},
+											name : "Amet At"	
+										},
 										{
-											name : "Lorem Lorem"}
+											name : "Lorem Lorem"	
+										}
 									]
 								}
 							]
@@ -5008,9 +5265,11 @@ var data = [
 									icalEnd : "20161006T122500Z",
 									authors : [
 										{
-											name : "Labore Sed"},
+											name : "Labore Sed"	
+										},
 										{
-											name : "Clita Tempor"}
+											name : "Clita Tempor"	
+										}
 									]
 								},
 								{
@@ -5021,15 +5280,20 @@ var data = [
 									icalEnd : "20161006T125000Z",
 									authors : [
 										{
-											name : "At No"},
+											name : "At No"	
+										},
 										{
-											name : "Stet Justo"},
+											name : "Stet Justo"	
+										},
 										{
-											name : "Est Et"},
+											name : "Est Et"	
+										},
 										{
-											name : "Lorem Sit"},
+											name : "Lorem Sit"	
+										},
 										{
-											name : "Eos Et"}
+											name : "Eos Et"	
+										}
 									]
 								},
 								{
@@ -5040,9 +5304,11 @@ var data = [
 									icalEnd : "20161006T131500Z",
 									authors : [
 										{
-											name : "Invidunt At"},
+											name : "Invidunt At"	
+										},
 										{
-											name : "Sed Sea"}
+											name : "Sed Sea"	
+										}
 									]
 								}
 							]
@@ -5114,21 +5380,29 @@ var data = [
 									icalEnd : "20161006T142500Z",
 									authors : [
 										{
-											name : "Voluptua Dolore"},
+											name : "Voluptua Dolore"	
+										},
 										{
-											name : "Invidunt Nonumy"},
+											name : "Invidunt Nonumy"	
+										},
 										{
-											name : "Ipsum Invidunt"},
+											name : "Ipsum Invidunt"	
+										},
 										{
-											name : "Aliquyam Ipsum"},
+											name : "Aliquyam Ipsum"	
+										},
 										{
-											name : "Vero Justo"},
+											name : "Vero Justo"	
+										},
 										{
-											name : "Nonumy Sed"},
+											name : "Nonumy Sed"	
+										},
 										{
-											name : "Stet No"},
+											name : "Stet No"	
+										},
 										{
-											name : "Amet At"}
+											name : "Amet At"	
+										}
 									]
 								},
 								{
@@ -5139,17 +5413,23 @@ var data = [
 									icalEnd : "20161006T145000Z",
 									authors : [
 										{
-											name : "Kasd Sanctus"},
+											name : "Kasd Sanctus"	
+										},
 										{
-											name : "Gubergren Consetetur"},
+											name : "Gubergren Consetetur"	
+										},
 										{
-											name : "Invidunt Nonumy"},
+											name : "Invidunt Nonumy"	
+										},
 										{
-											name : "Et Eos"},
+											name : "Et Eos"	
+										},
 										{
-											name : "Vero Et"},
+											name : "Vero Et"	
+										},
 										{
-											name : "Ipsum Magna"}
+											name : "Ipsum Magna"	
+										}
 									]
 								},
 								{
@@ -5160,13 +5440,17 @@ var data = [
 									icalEnd : "20161006T151500Z",
 									authors : [
 										{
-											name : "Magna Dolore"},
+											name : "Magna Dolore"	
+										},
 										{
-											name : "Magna Labore"},
+											name : "Magna Labore"	
+										},
 										{
-											name : "Sit Sadipscing"},
+											name : "Sit Sadipscing"	
+										},
 										{
-											name : "Eos Et"}
+											name : "Eos Et"	
+										}
 									]
 								}
 							]
@@ -5194,19 +5478,26 @@ var data = [
 									icalEnd : "20161006T142500Z",
 									authors : [
 										{
-											name : "Gubergren Consetetur"},
+											name : "Gubergren Consetetur"	
+										},
 										{
-											name : "Labore Sed"},
+											name : "Labore Sed"	
+										},
 										{
-											name : "Voluptua Voluptua"},
+											name : "Voluptua Voluptua"	
+										},
 										{
-											name : "Diam Et"},
+											name : "Diam Et"	
+										},
 										{
-											name : "Ipsum Invidunt"},
+											name : "Ipsum Invidunt"	
+										},
 										{
-											name : "Ipsum Magna"},
+											name : "Ipsum Magna"	
+										},
 										{
-											name : "Ipsum Magna"}
+											name : "Ipsum Magna"	
+										}
 									]
 								},
 								{
@@ -5217,13 +5508,17 @@ var data = [
 									icalEnd : "20161006T145000Z",
 									authors : [
 										{
-											name : "Magna Dolore"},
+											name : "Magna Dolore"	
+										},
 										{
-											name : "Magna Labore"},
+											name : "Magna Labore"	
+										},
 										{
-											name : "Sit Sadipscing"},
+											name : "Sit Sadipscing"	
+										},
 										{
-											name : "Eos Et"}
+											name : "Eos Et"	
+										}
 									]
 								},
 								{
@@ -5234,19 +5529,26 @@ var data = [
 									icalEnd : "20161006T151500Z",
 									authors : [
 										{
-											name : "At No"},
+											name : "At No"	
+										},
 										{
-											name : "Sea Amet"},
+											name : "Sea Amet"	
+										},
 										{
-											name : "Amet Sit"},
+											name : "Amet Sit"	
+										},
 										{
-											name : "Diam Et"},
+											name : "Diam Et"	
+										},
 										{
-											name : "Nonumy Ea"},
+											name : "Nonumy Ea"	
+										},
 										{
-											name : "Est Et"},
+											name : "Est Et"	
+										},
 										{
-											name : "Dolores Justo"}
+											name : "Dolores Justo"	
+										}
 									]
 								}
 							]
@@ -5274,19 +5576,26 @@ var data = [
 									icalEnd : "20161006T142500Z",
 									authors : [
 										{
-											name : "No Aliquyam"},
+											name : "No Aliquyam"	
+										},
 										{
-											name : "Aliquyam Ipsum"},
+											name : "Aliquyam Ipsum"	
+										},
 										{
-											name : "Amet Et"},
+											name : "Amet Et"	
+										},
 										{
-											name : "Kasd Dolores"},
+											name : "Kasd Dolores"	
+										},
 										{
-											name : "Accusam Vero"},
+											name : "Accusam Vero"	
+										},
 										{
-											name : "Stet Justo"},
+											name : "Stet Justo"	
+										},
 										{
-											name : "Duo Gubergren"}
+											name : "Duo Gubergren"	
+										}
 									]
 								},
 								{
@@ -5297,17 +5606,23 @@ var data = [
 									icalEnd : "20161006T145000Z",
 									authors : [
 										{
-											name : "Stet Est"},
+											name : "Stet Est"	
+										},
 										{
-											name : "Accusam Ipsum"},
+											name : "Accusam Ipsum"	
+										},
 										{
-											name : "Kasd Sanctus"},
+											name : "Kasd Sanctus"	
+										},
 										{
-											name : "Amet At"},
+											name : "Amet At"	
+										},
 										{
-											name : "Consetetur Ipsum"},
+											name : "Consetetur Ipsum"	
+										},
 										{
-											name : "Sed Sea"}
+											name : "Sed Sea"	
+										}
 									]
 								},
 								{
@@ -5318,13 +5633,17 @@ var data = [
 									icalEnd : "20161006T151500Z",
 									authors : [
 										{
-											name : "Amet Sed"},
+											name : "Amet Sed"	
+										},
 										{
-											name : "Dolor No"},
+											name : "Dolor No"	
+										},
 										{
-											name : "Aliquyam Ipsum"},
+											name : "Aliquyam Ipsum"	
+										},
 										{
-											name : "Magna Takimata"}
+											name : "Magna Takimata"	
+										}
 									]
 								}
 							]
@@ -5513,19 +5832,26 @@ var data = [
 									icalEnd : "20161007T092500Z",
 									authors : [
 										{
-											name : "Tempor Ut"},
+											name : "Tempor Ut"	
+										},
 										{
-											name : "Est Lorem"},
+											name : "Est Lorem"	
+										},
 										{
-											name : "Sit Sadipscing"},
+											name : "Sit Sadipscing"	
+										},
 										{
-											name : "Et Eos"},
+											name : "Et Eos"	
+										},
 										{
-											name : "Voluptua Voluptua"},
+											name : "Voluptua Voluptua"	
+										},
 										{
-											name : "Diam Diam"},
+											name : "Diam Diam"	
+										},
 										{
-											name : "Et Invidunt"}
+											name : "Et Invidunt"	
+										}
 									]
 								},
 								{
@@ -5536,13 +5862,17 @@ var data = [
 									icalEnd : "20161007T095000Z",
 									authors : [
 										{
-											name : "Ut Accusam"},
+											name : "Ut Accusam"	
+										},
 										{
-											name : "Duo Nonumy"},
+											name : "Duo Nonumy"	
+										},
 										{
-											name : "No Aliquyam"},
+											name : "No Aliquyam"	
+										},
 										{
-											name : "Accusam Vero"}
+											name : "Accusam Vero"	
+										}
 									]
 								},
 								{
@@ -5553,11 +5883,14 @@ var data = [
 									icalEnd : "20161007T101500Z",
 									authors : [
 										{
-											name : "Consetetur Erat"},
+											name : "Consetetur Erat"	
+										},
 										{
-											name : "Duo Gubergren"},
+											name : "Duo Gubergren"	
+										},
 										{
-											name : "Amet Sed"}
+											name : "Amet Sed"	
+										}
 									]
 								}
 							]
@@ -5585,13 +5918,17 @@ var data = [
 									icalEnd : "20161007T092500Z",
 									authors : [
 										{
-											name : "Accusam Ipsum"},
+											name : "Accusam Ipsum"	
+										},
 										{
-											name : "Magna Dolore"},
+											name : "Magna Dolore"	
+										},
 										{
-											name : "Accusam Ipsum"},
+											name : "Accusam Ipsum"	
+										},
 										{
-											name : "Labore Sed"}
+											name : "Labore Sed"	
+										}
 									]
 								},
 								{
@@ -5602,11 +5939,14 @@ var data = [
 									icalEnd : "20161007T095000Z",
 									authors : [
 										{
-											name : "Labore Sed"},
+											name : "Labore Sed"	
+										},
 										{
-											name : "Et Eos"},
+											name : "Et Eos"	
+										},
 										{
-											name : "Stet No"}
+											name : "Stet No"	
+										}
 									]
 								},
 								{
@@ -5617,11 +5957,14 @@ var data = [
 									icalEnd : "20161007T101500Z",
 									authors : [
 										{
-											name : "Dolores Et"},
+											name : "Dolores Et"	
+										},
 										{
-											name : "Vero Et"},
+											name : "Vero Et"	
+										},
 										{
-											name : "Sed Kasd"}
+											name : "Sed Kasd"	
+										}
 									]
 								}
 							]
@@ -5649,13 +5992,17 @@ var data = [
 									icalEnd : "20161007T092500Z",
 									authors : [
 										{
-											name : "Est Lorem"},
+											name : "Est Lorem"	
+										},
 										{
-											name : "Tempor Ut"},
+											name : "Tempor Ut"	
+										},
 										{
-											name : "Stet Est"},
+											name : "Stet Est"	
+										},
 										{
-											name : "Ea Nonumy"}
+											name : "Ea Nonumy"	
+										}
 									]
 								},
 								{
@@ -5666,19 +6013,26 @@ var data = [
 									icalEnd : "20161007T095000Z",
 									authors : [
 										{
-											name : "Nonumy At"},
+											name : "Nonumy At"	
+										},
 										{
-											name : "Gubergren At"},
+											name : "Gubergren At"	
+										},
 										{
-											name : "Ea Diam"},
+											name : "Ea Diam"	
+										},
 										{
-											name : "Et Diam"},
+											name : "Et Diam"	
+										},
 										{
-											name : "At Justo"},
+											name : "At Justo"	
+										},
 										{
-											name : "No Aliquyam"},
+											name : "No Aliquyam"	
+										},
 										{
-											name : "Tempor Et"}
+											name : "Tempor Et"	
+										}
 									]
 								},
 								{
@@ -5689,21 +6043,29 @@ var data = [
 									icalEnd : "20161007T101500Z",
 									authors : [
 										{
-											name : "Nonumy Accusam"},
+											name : "Nonumy Accusam"	
+										},
 										{
-											name : "Et Et"},
+											name : "Et Et"	
+										},
 										{
-											name : "Gubergren At"},
+											name : "Gubergren At"	
+										},
 										{
-											name : "Kasd Sanctus"},
+											name : "Kasd Sanctus"	
+										},
 										{
-											name : "Nonumy Sed"},
+											name : "Nonumy Sed"	
+										},
 										{
-											name : "Magna Takimata"},
+											name : "Magna Takimata"	
+										},
 										{
-											name : "Et Eos"},
+											name : "Et Eos"	
+										},
 										{
-											name : "Eirmod Consetetur"}
+											name : "Eirmod Consetetur"	
+										}
 									]
 								}
 							]
