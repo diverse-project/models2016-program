@@ -76,6 +76,9 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 			case Models2016Package.LUNCH: return createLunch();
 			case Models2016Package.COFFEE_BREAK: return createCoffeeBreak();
 			case Models2016Package.MEETING: return createMeeting();
+			case Models2016Package.SRC: return createSRC();
+			case Models2016Package.POSTER: return createPoster();
+			case Models2016Package.KEY_NOTE: return createKeyNote();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -301,6 +304,36 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 	public Meeting createMeeting() {
 		MeetingImpl meeting = new MeetingImpl();
 		return meeting;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SRC createSRC() {
+		SRCImpl src = new SRCImpl();
+		return src;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Poster createPoster() {
+		PosterImpl poster = new PosterImpl();
+		return poster;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public KeyNote createKeyNote() {
+		KeyNoteImpl keyNote = new KeyNoteImpl();
+		return keyNote;
 	}
 
 	/**

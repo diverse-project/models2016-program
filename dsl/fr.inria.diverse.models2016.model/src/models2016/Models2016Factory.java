@@ -184,6 +184,33 @@ public interface Models2016Factory extends EFactory {
 	Meeting createMeeting();
 
 	/**
+	 * Returns a new object of class '<em>SRC</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>SRC</em>'.
+	 * @generated
+	 */
+	SRC createSRC();
+
+	/**
+	 * Returns a new object of class '<em>Poster</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Poster</em>'.
+	 * @generated
+	 */
+	Poster createPoster();
+
+	/**
+	 * Returns a new object of class '<em>Key Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Key Note</em>'.
+	 * @generated
+	 */
+	KeyNote createKeyNote();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

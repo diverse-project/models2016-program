@@ -10,6 +10,7 @@ import models2016.Day;
 import models2016.DoctoralSymposium;
 import models2016.EducatorSymposium;
 import models2016.Event;
+import models2016.KeyNote;
 import models2016.Lunch;
 import models2016.Meeting;
 import models2016.Models2016Factory;
@@ -17,6 +18,7 @@ import models2016.Models2016Package;
 import models2016.Panel;
 import models2016.Paper;
 import models2016.Person;
+import models2016.Poster;
 import models2016.Program;
 import models2016.Reception;
 import models2016.Resource;
@@ -183,6 +185,27 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * @generated
 	 */
 	private EClass meetingEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass srcEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass posterEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass keyNoteEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -782,6 +805,42 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getSRC() {
+		return srcEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPoster() {
+		return posterEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getKeyNote() {
+		return keyNoteEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getKeyNote_Speaker() {
+		return (EReference)keyNoteEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getWeekDay() {
 		return weekDayEEnum;
 	}
@@ -917,6 +976,13 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 
 		meetingEClass = createEClass(MEETING);
 
+		srcEClass = createEClass(SRC);
+
+		posterEClass = createEClass(POSTER);
+
+		keyNoteEClass = createEClass(KEY_NOTE);
+		createEReference(keyNoteEClass, KEY_NOTE__SPEAKER);
+
 		// Create enums
 		weekDayEEnum = createEEnum(WEEK_DAY);
 		trackEEnum = createEEnum(TRACK);
@@ -966,6 +1032,9 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		lunchEClass.getESuperTypes().add(this.getEvent());
 		coffeeBreakEClass.getESuperTypes().add(this.getEvent());
 		meetingEClass.getESuperTypes().add(this.getEvent());
+		srcEClass.getESuperTypes().add(this.getEvent());
+		posterEClass.getESuperTypes().add(this.getEvent());
+		keyNoteEClass.getESuperTypes().add(this.getEvent());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(dayEClass, Day.class, "Day", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1043,6 +1112,13 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		initEClass(coffeeBreakEClass, CoffeeBreak.class, "CoffeeBreak", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(meetingEClass, Meeting.class, "Meeting", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(srcEClass, models2016.SRC.class, "SRC", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(posterEClass, Poster.class, "Poster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(keyNoteEClass, KeyNote.class, "KeyNote", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getKeyNote_Speaker(), this.getPerson(), null, "speaker", null, 1, 1, KeyNote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(weekDayEEnum, WeekDay.class, "WeekDay");

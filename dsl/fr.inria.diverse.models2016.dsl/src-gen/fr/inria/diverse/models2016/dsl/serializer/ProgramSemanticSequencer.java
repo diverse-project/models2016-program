@@ -12,15 +12,18 @@ import models2016.Conference;
 import models2016.Day;
 import models2016.DoctoralSymposium;
 import models2016.EducatorSymposium;
+import models2016.KeyNote;
 import models2016.Lunch;
 import models2016.Meeting;
 import models2016.Models2016Package;
 import models2016.Panel;
 import models2016.Paper;
 import models2016.Person;
+import models2016.Poster;
 import models2016.Program;
 import models2016.Reception;
 import models2016.Room;
+import models2016.SRC;
 import models2016.Session;
 import models2016.TalkSession;
 import models2016.Tutorial;
@@ -65,6 +68,9 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 			case Models2016Package.EDUCATOR_SYMPOSIUM:
 				sequence_EducatorSymposium(context, (EducatorSymposium) semanticObject); 
 				return; 
+			case Models2016Package.KEY_NOTE:
+				sequence_KeyNote(context, (KeyNote) semanticObject); 
+				return; 
 			case Models2016Package.LUNCH:
 				sequence_Lunch(context, (Lunch) semanticObject); 
 				return; 
@@ -80,6 +86,9 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 			case Models2016Package.PERSON:
 				sequence_Person(context, (Person) semanticObject); 
 				return; 
+			case Models2016Package.POSTER:
+				sequence_Poster(context, (Poster) semanticObject); 
+				return; 
 			case Models2016Package.PROGRAM:
 				sequence_Program(context, (Program) semanticObject); 
 				return; 
@@ -88,6 +97,9 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 				return; 
 			case Models2016Package.ROOM:
 				sequence_Room(context, (Room) semanticObject); 
+				return; 
+			case Models2016Package.SRC:
+				sequence_SRC(context, (SRC) semanticObject); 
 				return; 
 			case Models2016Package.SESSION:
 				sequence_Session(context, (Session) semanticObject); 
@@ -191,6 +203,19 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Contexts:
+	 *     Event returns KeyNote
+	 *     KeyNote returns KeyNote
+	 *
+	 * Constraint:
+	 *     (name=EString abstract=EString? speaker=Person?)
+	 */
+	protected void sequence_KeyNote(ISerializationContext context, KeyNote semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Contexts:
 	 *     Event returns Lunch
 	 *     Lunch returns Lunch
 	 *
@@ -261,6 +286,19 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Contexts:
+	 *     Event returns Poster
+	 *     Poster returns Poster
+	 *
+	 * Constraint:
+	 *     (name=EString abstract=EString?)
+	 */
+	protected void sequence_Poster(ISerializationContext context, Poster semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Contexts:
 	 *     Program returns Program
 	 *
 	 * Constraint:
@@ -293,6 +331,19 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     (name=EString capacity=EIntegerObject?)
 	 */
 	protected void sequence_Room(ISerializationContext context, Room semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Contexts:
+	 *     Event returns SRC
+	 *     SRC returns SRC
+	 *
+	 * Constraint:
+	 *     (name=EString abstract=EString?)
+	 */
+	protected void sequence_SRC(ISerializationContext context, SRC semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	

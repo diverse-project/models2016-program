@@ -103,4 +103,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="HourDataType" instanceClassName="java.util.Date"/>
   <eClassifiers xsi:type="ecore:EDataType" name="DayDataType" instanceClassName="java.util.Date"/>
   <eClassifiers xsi:type="ecore:EClass" name="Meeting" eSuperTypes="#//Event"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SRC" eSuperTypes="#//Event"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Poster" eSuperTypes="#//Event"/>
+  <eClassifiers xsi:type="ecore:EClass" name="KeyNote" eSuperTypes="#//Event">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="speaker" lowerBound="1"
+        eType="#//Person" containment="true"/>
+  </eClassifiers>
 </ecore:EPackage>

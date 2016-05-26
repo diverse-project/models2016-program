@@ -198,6 +198,27 @@ public class Models2016Switch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case Models2016Package.SRC: {
+				SRC src = (SRC)theEObject;
+				T result = caseSRC(src);
+				if (result == null) result = caseEvent(src);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Models2016Package.POSTER: {
+				Poster poster = (Poster)theEObject;
+				T result = casePoster(poster);
+				if (result == null) result = caseEvent(poster);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Models2016Package.KEY_NOTE: {
+				KeyNote keyNote = (KeyNote)theEObject;
+				T result = caseKeyNote(keyNote);
+				if (result == null) result = caseEvent(keyNote);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -499,6 +520,51 @@ public class Models2016Switch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseMeeting(Meeting object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>SRC</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>SRC</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSRC(SRC object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Poster</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Poster</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePoster(Poster object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Key Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Key Note</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseKeyNote(KeyNote object) {
 		return null;
 	}
 

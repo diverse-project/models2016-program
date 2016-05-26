@@ -101,7 +101,7 @@ var data = [
 					events : [
 						{
 							type : "Tutorial",
-							title : "ARCADIA in a nutshell",
+							title : "ARCADIA in a Nutshell",
 							organizers : [
 								"Pascal Roques"
 							]
@@ -136,11 +136,11 @@ var data = [
 					events : [
 						{
 							type : "Workshop",
-							title : "International Models and Evolution Workshop",
+							title : "ME",
 							organizers : [
 								"Dalila Tamzalit",
 								"Alfonso Pierantonio",
-								"Bernhard Schaetz",
+								"Bernhard Schätz",
 								"Tanja Mayerhofer"
 							]
 						}
@@ -156,11 +156,11 @@ var data = [
 					events : [
 						{
 							type : "Workshop",
-							title : "Full-Day Workshop on OCL and Textual Modeling",
+							title : "OCL",
 							organizers : [
-								"Achim Brucker",
+								"Achim D. Brucker",
 								"Jordi Cabot",
-								"Adolfo Sánchez-Barbudo Herrera"
+								"Adolfo Sanchez-Barbudo Herrera"
 							]
 						}
 					]
@@ -175,7 +175,7 @@ var data = [
 					events : [
 						{
 							type : "Workshop",
-							title : "Flexible MDE 2016 (FlexMDE 2016)",
+							title : "FlexMDE",
 							organizers : [
 								"Davide Di Ruscio",
 								"Alfonso Pierantonio",
@@ -194,10 +194,10 @@ var data = [
 					events : [
 						{
 							type : "Workshop",
-							title : "Verification Of Model Transformations VOLT 2016",
+							title : "VOLT",
 							organizers : [
-								"Eugene Syriani",
-								"Moussa Amrani"
+								"Moussa Amrani",
+								"Eugene Syriani"
 							]
 						}
 					]
@@ -314,7 +314,7 @@ var data = [
 					events : [
 						{
 							type : "Tutorial",
-							title : "ARCADIA in a nutshell",
+							title : "ARCADIA in a Nutshell",
 							organizers : [
 								"Pascal Roques"
 							]
@@ -349,11 +349,11 @@ var data = [
 					events : [
 						{
 							type : "Workshop",
-							title : "International Models and Evolution Workshop",
+							title : "ME",
 							organizers : [
 								"Dalila Tamzalit",
 								"Alfonso Pierantonio",
-								"Bernhard Schaetz",
+								"Bernhard Schätz",
 								"Tanja Mayerhofer"
 							]
 						}
@@ -369,11 +369,11 @@ var data = [
 					events : [
 						{
 							type : "Workshop",
-							title : "Full-Day Workshop on OCL and Textual Modeling",
+							title : "OCL",
 							organizers : [
-								"Achim Brucker",
+								"Achim D. Brucker",
 								"Jordi Cabot",
-								"Adolfo Sánchez-Barbudo Herrera"
+								"Adolfo Sanchez-Barbudo Herrera"
 							]
 						}
 					]
@@ -388,7 +388,7 @@ var data = [
 					events : [
 						{
 							type : "Workshop",
-							title : "Flexible MDE 2016 (FlexMDE 2016)",
+							title : "FlexMDE",
 							organizers : [
 								"Davide Di Ruscio",
 								"Alfonso Pierantonio",
@@ -407,10 +407,10 @@ var data = [
 					events : [
 						{
 							type : "Workshop",
-							title : "Verification Of Model Transformations VOLT 2016",
+							title : "VOLT",
 							organizers : [
-								"Eugene Syriani",
-								"Moussa Amrani"
+								"Moussa Amrani",
+								"Eugene Syriani"
 							]
 						}
 					]
@@ -530,7 +530,7 @@ var data = [
 							type : "Tutorial",
 							title : "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies",
 							organizers : [
-								"Frédéric Madiot",
+								"Frederic Madiot",
 								"Cedric Brun"
 							]
 						}
@@ -563,11 +563,11 @@ var data = [
 					events : [
 						{
 							type : "Workshop",
-							title : "International Models and Evolution Workshop",
+							title : "ME",
 							organizers : [
 								"Dalila Tamzalit",
 								"Alfonso Pierantonio",
-								"Bernhard Schaetz",
+								"Bernhard Schätz",
 								"Tanja Mayerhofer"
 							]
 						}
@@ -583,11 +583,11 @@ var data = [
 					events : [
 						{
 							type : "Workshop",
-							title : "Full-Day Workshop on OCL and Textual Modeling",
+							title : "OCL",
 							organizers : [
-								"Achim Brucker",
+								"Achim D. Brucker",
 								"Jordi Cabot",
-								"Adolfo Sánchez-Barbudo Herrera"
+								"Adolfo Sanchez-Barbudo Herrera"
 							]
 						}
 					]
@@ -602,7 +602,7 @@ var data = [
 					events : [
 						{
 							type : "Workshop",
-							title : "Flexible MDE 2016 (FlexMDE 2016)",
+							title : "FlexMDE",
 							organizers : [
 								"Davide Di Ruscio",
 								"Alfonso Pierantonio",
@@ -621,10 +621,10 @@ var data = [
 					events : [
 						{
 							type : "Workshop",
-							title : "Verification Of Model Transformations VOLT 2016",
+							title : "VOLT",
 							organizers : [
-								"Eugene Syriani",
-								"Moussa Amrani"
+								"Moussa Amrani",
+								"Eugene Syriani"
 							]
 						}
 					]
@@ -740,7 +740,7 @@ var data = [
 							type : "Tutorial",
 							title : "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies",
 							organizers : [
-								"Frédéric Madiot",
+								"Frederic Madiot",
 								"Cedric Brun"
 							]
 						}
@@ -773,11 +773,11 @@ var data = [
 					events : [
 						{
 							type : "Workshop",
-							title : "International Models and Evolution Workshop",
+							title : "ME",
 							organizers : [
 								"Dalila Tamzalit",
 								"Alfonso Pierantonio",
-								"Bernhard Schaetz",
+								"Bernhard Schätz",
 								"Tanja Mayerhofer"
 							]
 						}
@@ -793,11 +793,11 @@ var data = [
 					events : [
 						{
 							type : "Workshop",
-							title : "Full-Day Workshop on OCL and Textual Modeling",
+							title : "OCL",
 							organizers : [
-								"Achim Brucker",
+								"Achim D. Brucker",
 								"Jordi Cabot",
-								"Adolfo Sánchez-Barbudo Herrera"
+								"Adolfo Sanchez-Barbudo Herrera"
 							]
 						}
 					]
@@ -812,7 +812,7 @@ var data = [
 					events : [
 						{
 							type : "Workshop",
-							title : "Flexible MDE 2016 (FlexMDE 2016)",
+							title : "FlexMDE",
 							organizers : [
 								"Davide Di Ruscio",
 								"Alfonso Pierantonio",
@@ -831,10 +831,1767 @@ var data = [
 					events : [
 						{
 							type : "Workshop",
-							title : "Verification Of Model Transformations VOLT 2016",
+							title : "VOLT",
+							organizers : [
+								"Moussa Amrani",
+								"Eugene Syriani"
+							]
+						}
+					]
+				}
+			],
+			[],
+			[],
+			[],
+			[],
+			[]
+		]
+	},
+	{
+		name : "Monday",
+		date : "20161003",
+		rooms : [
+			{
+				name : "Rotonde Surcouf"
+			},
+			{
+				name : "Rotonde J. Cartier"
+			},
+			{
+				name : "Bouvet 1",
+				capacity : "45"
+			},
+			{
+				name : "Bouvet 2",
+				capacity : "45"
+			},
+			{
+				name : "Charcot",
+				capacity : "54"
+			},
+			{
+				name : "Vauban 1",
+				capacity : "50"
+			},
+			{
+				name : "Vauban 2",
+				capacity : "60"
+			},
+			{
+				name : "Lamennais 1",
+				capacity : "80"
+			},
+			{
+				name : "Lamennais 2",
+				capacity : "80"
+			},
+			{
+				name : "Lamennais 3",
+				capacity : "80"
+			}
+		],
+		sessionGroups : [
+			[
+				{
+					start : "09:00",
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					start : "09:00",
+					end : "10:30",
+					rowSpan : 6,
+					icalStart : "20161003T070000Z",
+					icalEnd : "20161003T083000Z",
+					room : "Bouvet 1",
+					events : [
+						{
+							type : "Tutorial",
+							title : "Empirical Research in Model Based Software Engineering",
+							organizers : [
+								"Michel Chaudron",
+								"Regina Hebig",
+								"Maria Teresa Baldassarre"
+							]
+						}
+					]
+				},
+				{
+					start : "09:00",
+					end : "10:30",
+					rowSpan : 6,
+					icalStart : "20161003T070000Z",
+					icalEnd : "20161003T083000Z",
+					room : "Bouvet 2",
+					events : [
+						{
+							type : "Tutorial",
+							title : "Applying Model Driven Engineering Technologies in the Creation of Domain Specific Modeling Languages",
+							organizers : [
+								"Bruce Trask",
+								"Angel Roman"
+							]
+						}
+					]
+				},
+				{
+					start : "09:00",
+					end : "10:30",
+					rowSpan : 6,
+					icalStart : "20161003T070000Z",
+					icalEnd : "20161003T083000Z",
+					room : "Charcot",
+					events : [
+						{
+							type : "Workshop",
+							title : "PAME",
 							organizers : [
 								"Eugene Syriani",
-								"Moussa Amrani"
+								"Richard Paige",
+								"Steffen Zschaler",
+								"Huseyin Ergin"
+							]
+						}
+					]
+				},
+				{
+					start : "09:00",
+					end : "10:30",
+					rowSpan : 6,
+					icalStart : "20161003T070000Z",
+					icalEnd : "20161003T083000Z",
+					room : "Vauban 1",
+					events : [
+						{
+							type : "EducatorSymposium",
+							title : "Educator Symposium",
+							organizers : [
+							]
+						}
+					]
+				},
+				{
+					start : "09:00",
+					end : "10:30",
+					rowSpan : 6,
+					icalStart : "20161003T070000Z",
+					icalEnd : "20161003T083000Z",
+					room : "Vauban 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "OSS4MDE",
+							organizers : [
+								"Juergen Dingel",
+								"Francis Bordeleau",
+								"Jean-Michel Bruel",
+								"Sebastien Gerard",
+								"Sebastian Voss"
+							]
+						}
+					]
+				},
+				{
+					start : "09:00",
+					end : "10:30",
+					rowSpan : 6,
+					icalStart : "20161003T070000Z",
+					icalEnd : "20161003T083000Z",
+					room : "Lamennais 1",
+					events : [
+						{
+							type : "Workshop",
+							title : "EXE",
+							organizers : [
+								"Tanja Mayerhofer",
+								"Philip Langer",
+								"Ed Seidewitz",
+								"Jeff Gray"
+							]
+						}
+					]
+				},
+				{
+					start : "09:00",
+					end : "10:30",
+					rowSpan : 6,
+					icalStart : "20161003T070000Z",
+					icalEnd : "20161003T083000Z",
+					room : "Lamennais 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "MoDeVVa",
+							organizers : [
+								"Michalis Famelis",
+								"Daniel Ratiu",
+								"Gehan M. K. Selim"
+							]
+						}
+					]
+				},
+				{
+					start : "09:00",
+					end : "10:30",
+					rowSpan : 6,
+					icalStart : "20161003T070000Z",
+					icalEnd : "20161003T083000Z",
+					room : "Lamennais 3",
+					events : [
+						{
+							type : "Workshop",
+							title : "SAM",
+							organizers : [
+							]
+						}
+					]
+				}
+			],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[
+				{
+					start : "10:30",
+					rowSpan : 2
+				},
+				{
+					start : "10:30",
+					end : "11:00",
+					rowSpan : 2,
+					icalStart : "20161003T083000Z",
+					icalEnd : "20161003T090000Z",
+					room : "Rotonde Surcouf",
+					events : [,
+						{
+							type : "Clinic",
+							title : "Clinic"
+						}
+					]
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				}
+			],
+			[],
+			[
+				{
+					start : "11:00",
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					start : "11:00",
+					end : "12:30",
+					rowSpan : 6,
+					icalStart : "20161003T090000Z",
+					icalEnd : "20161003T103000Z",
+					room : "Bouvet 1",
+					events : [
+						{
+							type : "Tutorial",
+							title : "Empirical Research in Model Based Software Engineering",
+							organizers : [
+								"Michel Chaudron",
+								"Regina Hebig",
+								"Maria Teresa Baldassarre"
+							]
+						}
+					]
+				},
+				{
+					start : "11:00",
+					end : "12:30",
+					rowSpan : 6,
+					icalStart : "20161003T090000Z",
+					icalEnd : "20161003T103000Z",
+					room : "Bouvet 2",
+					events : [
+						{
+							type : "Tutorial",
+							title : "Applying Model Driven Engineering Technologies in the Creation of Domain Specific Modeling Languages",
+							organizers : [
+								"Bruce Trask",
+								"Angel Roman"
+							]
+						}
+					]
+				},
+				{
+					start : "11:00",
+					end : "12:30",
+					rowSpan : 6,
+					icalStart : "20161003T090000Z",
+					icalEnd : "20161003T103000Z",
+					room : "Charcot",
+					events : [
+						{
+							type : "Workshop",
+							title : "PAME",
+							organizers : [
+								"Eugene Syriani",
+								"Richard Paige",
+								"Steffen Zschaler",
+								"Huseyin Ergin"
+							]
+						}
+					]
+				},
+				{
+					start : "11:00",
+					end : "12:30",
+					rowSpan : 6,
+					icalStart : "20161003T090000Z",
+					icalEnd : "20161003T103000Z",
+					room : "Vauban 1",
+					events : [
+						{
+							type : "EducatorSymposium",
+							title : "Educator Symposium",
+							organizers : [
+							]
+						}
+					]
+				},
+				{
+					start : "11:00",
+					end : "12:30",
+					rowSpan : 6,
+					icalStart : "20161003T090000Z",
+					icalEnd : "20161003T103000Z",
+					room : "Vauban 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "OSS4MDE",
+							organizers : [
+								"Juergen Dingel",
+								"Francis Bordeleau",
+								"Jean-Michel Bruel",
+								"Sebastien Gerard",
+								"Sebastian Voss"
+							]
+						}
+					]
+				},
+				{
+					start : "11:00",
+					end : "12:30",
+					rowSpan : 6,
+					icalStart : "20161003T090000Z",
+					icalEnd : "20161003T103000Z",
+					room : "Lamennais 1",
+					events : [
+						{
+							type : "Workshop",
+							title : "EXE",
+							organizers : [
+								"Tanja Mayerhofer",
+								"Philip Langer",
+								"Ed Seidewitz",
+								"Jeff Gray"
+							]
+						}
+					]
+				},
+				{
+					start : "11:00",
+					end : "12:30",
+					rowSpan : 6,
+					icalStart : "20161003T090000Z",
+					icalEnd : "20161003T103000Z",
+					room : "Lamennais 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "MoDeVVa",
+							organizers : [
+								"Michalis Famelis",
+								"Daniel Ratiu",
+								"Gehan M. K. Selim"
+							]
+						}
+					]
+				},
+				{
+					start : "11:00",
+					end : "12:30",
+					rowSpan : 6,
+					icalStart : "20161003T090000Z",
+					icalEnd : "20161003T103000Z",
+					room : "Lamennais 3",
+					events : [
+						{
+							type : "Workshop",
+							title : "SAM",
+							organizers : [
+							]
+						}
+					]
+				}
+			],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[
+				{
+					start : "12:30",
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					start : "12:30",
+					end : "14:00",
+					rowSpan : 6,
+					icalStart : "20161003T103000Z",
+					icalEnd : "20161003T120000Z",
+					room : "Rotonde J. Cartier",
+					events : [
+						{
+							type : "Lunch",
+							title : "Lunch"
+						}
+					]
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				}
+			],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[
+				{
+					start : "14:00",
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "20161003T120000Z",
+					icalEnd : "20161003T133000Z",
+					room : "Bouvet 1",
+					events : [
+						{
+							type : "Tutorial",
+							title : "Empirical Research in Model Based Software Engineering",
+							organizers : [
+								"Michel Chaudron",
+								"Regina Hebig",
+								"Maria Teresa Baldassarre"
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "20161003T120000Z",
+					icalEnd : "20161003T133000Z",
+					room : "Bouvet 2",
+					events : [
+						{
+							type : "Tutorial",
+							title : "Multi-level Modelling with MetaDepth",
+							organizers : [
+								"Juan De Lara",
+								"Esther Guerra"
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "20161003T120000Z",
+					icalEnd : "20161003T133000Z",
+					room : "Charcot",
+					events : [
+						{
+							type : "Workshop",
+							title : "PAME",
+							organizers : [
+								"Eugene Syriani",
+								"Richard Paige",
+								"Steffen Zschaler",
+								"Huseyin Ergin"
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "20161003T120000Z",
+					icalEnd : "20161003T133000Z",
+					room : "Vauban 1",
+					events : [
+						{
+							type : "EducatorSymposium",
+							title : "Educator Symposium",
+							organizers : [
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "20161003T120000Z",
+					icalEnd : "20161003T133000Z",
+					room : "Vauban 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "OSS4MDE",
+							organizers : [
+								"Juergen Dingel",
+								"Francis Bordeleau",
+								"Jean-Michel Bruel",
+								"Sebastien Gerard",
+								"Sebastian Voss"
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "20161003T120000Z",
+					icalEnd : "20161003T133000Z",
+					room : "Lamennais 1",
+					events : [
+						{
+							type : "Workshop",
+							title : "EXE",
+							organizers : [
+								"Tanja Mayerhofer",
+								"Philip Langer",
+								"Ed Seidewitz",
+								"Jeff Gray"
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "20161003T120000Z",
+					icalEnd : "20161003T133000Z",
+					room : "Lamennais 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "MoDeVVa",
+							organizers : [
+								"Michalis Famelis",
+								"Daniel Ratiu",
+								"Gehan M. K. Selim"
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "20161003T120000Z",
+					icalEnd : "20161003T133000Z",
+					room : "Lamennais 3",
+					events : [
+						{
+							type : "Workshop",
+							title : "SAM",
+							organizers : [
+							]
+						}
+					]
+				}
+			],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[
+				{
+					start : "15:30",
+					rowSpan : 2
+				},
+				{
+					start : "15:30",
+					end : "16:00",
+					rowSpan : 2,
+					icalStart : "20161003T133000Z",
+					icalEnd : "20161003T140000Z",
+					room : "Rotonde Surcouf",
+					events : [,
+						{
+							type : "Clinic",
+							title : "Clinic"
+						}
+					]
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				}
+			],
+			[],
+			[
+				{
+					start : "16:00",
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					rowSpan : 6,
+					icalStart : "20161003T140000Z",
+					icalEnd : "20161003T153000Z",
+					room : "Bouvet 1",
+					events : [
+						{
+							type : "Tutorial",
+							title : "Empirical Research in Model Based Software Engineering",
+							organizers : [
+								"Michel Chaudron",
+								"Regina Hebig",
+								"Maria Teresa Baldassarre"
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					rowSpan : 6,
+					icalStart : "20161003T140000Z",
+					icalEnd : "20161003T153000Z",
+					room : "Bouvet 2",
+					events : [
+						{
+							type : "Tutorial",
+							title : "Multi-level Modelling with MetaDepth",
+							organizers : [
+								"Juan De Lara",
+								"Esther Guerra"
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					rowSpan : 6,
+					icalStart : "20161003T140000Z",
+					icalEnd : "20161003T153000Z",
+					room : "Charcot",
+					events : [
+						{
+							type : "Workshop",
+							title : "PAME",
+							organizers : [
+								"Eugene Syriani",
+								"Richard Paige",
+								"Steffen Zschaler",
+								"Huseyin Ergin"
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					rowSpan : 6,
+					icalStart : "20161003T140000Z",
+					icalEnd : "20161003T153000Z",
+					room : "Vauban 1",
+					events : [
+						{
+							type : "EducatorSymposium",
+							title : "Educator Symposium",
+							organizers : [
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					rowSpan : 6,
+					icalStart : "20161003T140000Z",
+					icalEnd : "20161003T153000Z",
+					room : "Vauban 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "OSS4MDE",
+							organizers : [
+								"Juergen Dingel",
+								"Francis Bordeleau",
+								"Jean-Michel Bruel",
+								"Sebastien Gerard",
+								"Sebastian Voss"
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					rowSpan : 6,
+					icalStart : "20161003T140000Z",
+					icalEnd : "20161003T153000Z",
+					room : "Lamennais 1",
+					events : [
+						{
+							type : "Workshop",
+							title : "EXE",
+							organizers : [
+								"Tanja Mayerhofer",
+								"Philip Langer",
+								"Ed Seidewitz",
+								"Jeff Gray"
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					rowSpan : 6,
+					icalStart : "20161003T140000Z",
+					icalEnd : "20161003T153000Z",
+					room : "Lamennais 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "MoDeVVa",
+							organizers : [
+								"Michalis Famelis",
+								"Daniel Ratiu",
+								"Gehan M. K. Selim"
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					rowSpan : 6,
+					icalStart : "20161003T140000Z",
+					icalEnd : "20161003T153000Z",
+					room : "Lamennais 3",
+					events : [
+						{
+							type : "Workshop",
+							title : "SAM",
+							organizers : [
+							]
+						}
+					]
+				}
+			],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[
+				{
+					start : "17:30",
+					rowSpan : 10
+				},
+				{
+					rowSpan : 10
+				},
+				{
+					rowSpan : 10
+				},
+				{
+					rowSpan : 10
+				},
+				{
+					rowSpan : 10
+				},
+				{
+					rowSpan : 10
+				},
+				{
+					rowSpan : 10
+				},
+				{
+					rowSpan : 10
+				},
+				{
+					rowSpan : 10
+				},
+				{
+					rowSpan : 10
+				},
+				{
+					rowSpan : 10
+				}
+			],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[
+				{
+					start : "20:00",
+					rowSpan : 8
+				},
+				{
+					start : "20:00",
+					end : "22:00",
+					rowSpan : 8,
+					icalStart : "20161003T180000Z",
+					icalEnd : "20161003T200000Z",
+					room : "Rotonde Surcouf",
+					events : [
+					]
+				},
+				{
+					rowSpan : 8
+				},
+				{
+					rowSpan : 8
+				},
+				{
+					rowSpan : 8
+				},
+				{
+					rowSpan : 8
+				},
+				{
+					rowSpan : 8
+				},
+				{
+					rowSpan : 8
+				},
+				{
+					rowSpan : 8
+				},
+				{
+					rowSpan : 8
+				},
+				{
+					rowSpan : 8
+				}
+			],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[]
+		]
+	},
+	{
+		name : "Tuesday",
+		date : "20161004",
+		rooms : [
+			{
+				name : "Rotonde Surcouf"
+			},
+			{
+				name : "Rotonde J. Cartier"
+			},
+			{
+				name : "Bouvet 1",
+				capacity : "45"
+			},
+			{
+				name : "Bouvet 2",
+				capacity : "45"
+			},
+			{
+				name : "Charcot",
+				capacity : "54"
+			},
+			{
+				name : "Vauban 1",
+				capacity : "50"
+			},
+			{
+				name : "Vauban 2",
+				capacity : "60"
+			},
+			{
+				name : "Lamennais 1",
+				capacity : "80"
+			},
+			{
+				name : "Lamennais 2",
+				capacity : "80"
+			},
+			{
+				name : "Lamennais 3",
+				capacity : "80"
+			}
+		],
+		sessionGroups : [
+			[
+				{
+					start : "09:00",
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					start : "09:00",
+					end : "10:30",
+					rowSpan : 6,
+					icalStart : "20161004T070000Z",
+					icalEnd : "20161004T083000Z",
+					room : "Bouvet 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "ModComp",
+							organizers : [
+								"Federico Ciccozzi",
+								"Ivano Malavolta"
+							]
+						}
+					]
+				},
+				{
+					start : "09:00",
+					end : "10:30",
+					rowSpan : 6,
+					icalStart : "20161004T070000Z",
+					icalEnd : "20161004T083000Z",
+					room : "Charcot",
+					events : [
+						{
+							type : "Workshop",
+							title : "COMMitMDE",
+							organizers : [
+								"Henry Muccini",
+								"Ivano Malavolta",
+								"Sébastien Gérard",
+								"Dimitrios S. Kolovos"
+							]
+						}
+					]
+				},
+				{
+					start : "09:00",
+					end : "10:30",
+					rowSpan : 6,
+					icalStart : "20161004T070000Z",
+					icalEnd : "20161004T083000Z",
+					room : "Vauban 1",
+					events : [
+						{
+							type : "Workshop",
+							title : "HuFaMo",
+							organizers : [
+								"Harald Störrle",
+								"Michel Chaudron"
+							]
+						}
+					]
+				},
+				{
+					start : "09:00",
+					end : "10:30",
+					rowSpan : 6,
+					icalStart : "20161004T070000Z",
+					icalEnd : "20161004T083000Z",
+					room : "Vauban 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "MRT",
+							organizers : [
+								"Sebastian Götz",
+								"Nelly Bencomo",
+								"Gordon Blair",
+								"Hui Song"
+							]
+						}
+					]
+				},
+				{
+					start : "09:00",
+					end : "10:30",
+					rowSpan : 6,
+					icalStart : "20161004T070000Z",
+					icalEnd : "20161004T083000Z",
+					room : "Lamennais 1",
+					events : [
+						{
+							type : "Workshop",
+							title : "MULTI",
+							organizers : [
+								"Colin Atkinson",
+								"Tony Clark",
+								"Georg Grossmann"
+							]
+						}
+					]
+				},
+				{
+					start : "09:00",
+					end : "10:30",
+					rowSpan : 6,
+					icalStart : "20161004T070000Z",
+					icalEnd : "20161004T083000Z",
+					room : "Lamennais 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "GEMOC",
+							organizers : [
+								"Julien Deantoni",
+								"Jeff Gray"
+							]
+						}
+					]
+				},
+				{
+					start : "09:00",
+					end : "10:30",
+					rowSpan : 6,
+					icalStart : "20161004T070000Z",
+					icalEnd : "20161004T083000Z",
+					room : "Lamennais 3",
+					events : [
+						{
+							type : "Workshop",
+							title : "SAM",
+							organizers : [
+							]
+						}
+					]
+				}
+			],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[
+				{
+					start : "10:30",
+					rowSpan : 2
+				},
+				{
+					start : "10:30",
+					end : "11:00",
+					rowSpan : 2,
+					icalStart : "20161004T083000Z",
+					icalEnd : "20161004T090000Z",
+					room : "Rotonde Surcouf",
+					events : [
+						{
+							type : "CoffeeBreak",
+							title : "Coffee Break"
+						}
+					]
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				}
+			],
+			[],
+			[
+				{
+					start : "11:00",
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					start : "11:00",
+					end : "12:30",
+					rowSpan : 6,
+					icalStart : "20161004T090000Z",
+					icalEnd : "20161004T103000Z",
+					room : "Bouvet 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "ModComp",
+							organizers : [
+								"Federico Ciccozzi",
+								"Ivano Malavolta"
+							]
+						}
+					]
+				},
+				{
+					start : "11:00",
+					end : "12:30",
+					rowSpan : 6,
+					icalStart : "20161004T090000Z",
+					icalEnd : "20161004T103000Z",
+					room : "Charcot",
+					events : [
+						{
+							type : "Workshop",
+							title : "COMMitMDE",
+							organizers : [
+								"Henry Muccini",
+								"Ivano Malavolta",
+								"Sébastien Gérard",
+								"Dimitrios S. Kolovos"
+							]
+						}
+					]
+				},
+				{
+					start : "11:00",
+					end : "12:30",
+					rowSpan : 6,
+					icalStart : "20161004T090000Z",
+					icalEnd : "20161004T103000Z",
+					room : "Vauban 1",
+					events : [
+						{
+							type : "Workshop",
+							title : "HuFaMo",
+							organizers : [
+								"Harald Störrle",
+								"Michel Chaudron"
+							]
+						}
+					]
+				},
+				{
+					start : "11:00",
+					end : "12:30",
+					rowSpan : 6,
+					icalStart : "20161004T090000Z",
+					icalEnd : "20161004T103000Z",
+					room : "Vauban 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "MRT",
+							organizers : [
+								"Sebastian Götz",
+								"Nelly Bencomo",
+								"Gordon Blair",
+								"Hui Song"
+							]
+						}
+					]
+				},
+				{
+					start : "11:00",
+					end : "12:30",
+					rowSpan : 6,
+					icalStart : "20161004T090000Z",
+					icalEnd : "20161004T103000Z",
+					room : "Lamennais 1",
+					events : [
+						{
+							type : "Workshop",
+							title : "MULTI",
+							organizers : [
+								"Colin Atkinson",
+								"Tony Clark",
+								"Georg Grossmann"
+							]
+						}
+					]
+				},
+				{
+					start : "11:00",
+					end : "12:30",
+					rowSpan : 6,
+					icalStart : "20161004T090000Z",
+					icalEnd : "20161004T103000Z",
+					room : "Lamennais 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "GEMOC",
+							organizers : [
+								"Julien Deantoni",
+								"Jeff Gray"
+							]
+						}
+					]
+				},
+				{
+					start : "11:00",
+					end : "12:30",
+					rowSpan : 6,
+					icalStart : "20161004T090000Z",
+					icalEnd : "20161004T103000Z",
+					room : "Lamennais 3",
+					events : [
+						{
+							type : "Workshop",
+							title : "SAM",
+							organizers : [
+							]
+						}
+					]
+				}
+			],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[
+				{
+					start : "12:30",
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					start : "12:30",
+					end : "14:00",
+					rowSpan : 6,
+					icalStart : "20161004T103000Z",
+					icalEnd : "20161004T120000Z",
+					room : "Rotonde J. Cartier",
+					events : [
+						{
+							type : "Lunch",
+							title : "Lunch"
+						}
+					]
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				}
+			],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[
+				{
+					start : "14:00",
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "20161004T120000Z",
+					icalEnd : "20161004T133000Z",
+					room : "Bouvet 1",
+					events : [
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "20161004T120000Z",
+					icalEnd : "20161004T133000Z",
+					room : "Bouvet 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "ModComp",
+							organizers : [
+								"Federico Ciccozzi",
+								"Ivano Malavolta"
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "20161004T120000Z",
+					icalEnd : "20161004T133000Z",
+					room : "Charcot",
+					events : [
+						{
+							type : "Workshop",
+							title : "COMMitMDE",
+							organizers : [
+								"Henry Muccini",
+								"Ivano Malavolta",
+								"Sébastien Gérard",
+								"Dimitrios S. Kolovos"
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "20161004T120000Z",
+					icalEnd : "20161004T133000Z",
+					room : "Vauban 1",
+					events : [
+						{
+							type : "Workshop",
+							title : "HuFaMo",
+							organizers : [
+								"Harald Störrle",
+								"Michel Chaudron"
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "20161004T120000Z",
+					icalEnd : "20161004T133000Z",
+					room : "Vauban 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "MRT",
+							organizers : [
+								"Sebastian Götz",
+								"Nelly Bencomo",
+								"Gordon Blair",
+								"Hui Song"
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "20161004T120000Z",
+					icalEnd : "20161004T133000Z",
+					room : "Lamennais 1",
+					events : [
+						{
+							type : "Workshop",
+							title : "MULTI",
+							organizers : [
+								"Colin Atkinson",
+								"Tony Clark",
+								"Georg Grossmann"
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "20161004T120000Z",
+					icalEnd : "20161004T133000Z",
+					room : "Lamennais 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "GEMOC",
+							organizers : [
+								"Julien Deantoni",
+								"Jeff Gray"
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "20161004T120000Z",
+					icalEnd : "20161004T133000Z",
+					room : "Lamennais 3",
+					events : [
+						{
+							type : "Workshop",
+							title : "SAM",
+							organizers : [
+							]
+						}
+					]
+				}
+			],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[
+				{
+					start : "15:30",
+					rowSpan : 2
+				},
+				{
+					start : "15:30",
+					end : "16:00",
+					rowSpan : 2,
+					icalStart : "20161004T133000Z",
+					icalEnd : "20161004T140000Z",
+					room : "Rotonde Surcouf",
+					events : [
+						{
+							type : "CoffeeBreak",
+							title : "Coffee Break"
+						}
+					]
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				},
+				{
+					rowSpan : 2
+				}
+			],
+			[],
+			[
+				{
+					start : "16:00",
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					rowSpan : 6,
+					icalStart : "20161004T140000Z",
+					icalEnd : "20161004T153000Z",
+					room : "Bouvet 1",
+					events : [
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					rowSpan : 6,
+					icalStart : "20161004T140000Z",
+					icalEnd : "20161004T153000Z",
+					room : "Bouvet 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "ModComp",
+							organizers : [
+								"Federico Ciccozzi",
+								"Ivano Malavolta"
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					rowSpan : 6,
+					icalStart : "20161004T140000Z",
+					icalEnd : "20161004T153000Z",
+					room : "Charcot",
+					events : [
+						{
+							type : "Workshop",
+							title : "COMMitMDE",
+							organizers : [
+								"Henry Muccini",
+								"Ivano Malavolta",
+								"Sébastien Gérard",
+								"Dimitrios S. Kolovos"
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					rowSpan : 6,
+					icalStart : "20161004T140000Z",
+					icalEnd : "20161004T153000Z",
+					room : "Vauban 1",
+					events : [
+						{
+							type : "Workshop",
+							title : "HuFaMo",
+							organizers : [
+								"Harald Störrle",
+								"Michel Chaudron"
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					rowSpan : 6,
+					icalStart : "20161004T140000Z",
+					icalEnd : "20161004T153000Z",
+					room : "Vauban 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "MRT",
+							organizers : [
+								"Sebastian Götz",
+								"Nelly Bencomo",
+								"Gordon Blair",
+								"Hui Song"
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					rowSpan : 6,
+					icalStart : "20161004T140000Z",
+					icalEnd : "20161004T153000Z",
+					room : "Lamennais 1",
+					events : [
+						{
+							type : "Workshop",
+							title : "MULTI",
+							organizers : [
+								"Colin Atkinson",
+								"Tony Clark",
+								"Georg Grossmann"
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					rowSpan : 6,
+					icalStart : "20161004T140000Z",
+					icalEnd : "20161004T153000Z",
+					room : "Lamennais 2",
+					events : [
+						{
+							type : "Workshop",
+							title : "GEMOC",
+							organizers : [
+								"Julien Deantoni",
+								"Jeff Gray"
+							]
+						}
+					]
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					rowSpan : 6,
+					icalStart : "20161004T140000Z",
+					icalEnd : "20161004T153000Z",
+					room : "Lamennais 3",
+					events : [
+						{
+							type : "Workshop",
+							title : "SAM",
+							organizers : [
 							]
 						}
 					]
@@ -853,6 +2610,9 @@ var data = [
 		rooms : [
 			{
 				name : "Rotonde Surcouf"
+			},
+			{
+				name : "Rotonde J. Cartier"
 			},
 			{
 				name : "Grand Large"
@@ -883,6 +2643,9 @@ var data = [
 					rowSpan : 6
 				},
 				{
+					rowSpan : 6
+				},
+				{
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
@@ -890,180 +2653,13 @@ var data = [
 					icalEnd : "20161005T083000Z",
 					room : "Chateaubriand",
 					events : [
-						{
-							type : "TalkSession",
-							title : "Labore et dolore magna aliquyam erat sed",
-							chair : "Nicholas Matragkas",
-							papers : [
-								{
-									title : "Elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed",
-									abstract : "Ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam Justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est. Invidunt ut labore et dolore. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Rebum stet clita kasd gubergren. Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Dolore magna aliquyam erat sed. Diam nonumy eirmod tempor invidunt. Erat sed diam voluptua at vero eos et accusam et justo duo. Magna aliquyam erat sed diam. Sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor.",
-									start : "09:00",
-									icalStart : "20161005T070000Z",
-									icalEnd : "20161005T072500Z",
-									authors : [
-										"Gehan M. K. Selim",
-										"Ernesto Posse",
-										"Sebastian Voss",
-										"Richard Paige",
-										"Huseyin Ergin",
-										"Nicholas Matragkas",
-										"Nicholas Matragkas"
-									]
-								},
-								{
-									title : "Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet",
-									abstract : "No sea takimata sanctus est Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Rebum stet clita kasd gubergren. Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy. Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore. Elitr sed diam nonumy eirmod. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor. Vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren.",
-									start : "09:25",
-									icalStart : "20161005T072500Z",
-									icalEnd : "20161005T075000Z",
-									authors : [
-										"Francis Bordeleau",
-										"Sebastian Voss",
-										"Antonio Garcia-Dominguez"
-									]
-								},
-								{
-									title : "Invidunt ut labore et dolore magna aliquyam erat sed",
-									abstract : "Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor Dolore magna aliquyam erat sed diam voluptua at vero eos et. No sea takimata sanctus est. At vero eos et accusam et justo duo dolores et ea. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Lorem ipsum dolor sit amet. Sit amet consetetur sadipscing elitr sed diam nonumy eirmod. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor. Voluptua at vero eos et. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet.",
-									start : "09:50",
-									icalStart : "20161005T075000Z",
-									icalEnd : "20161005T081500Z",
-									authors : [
-										"Alfonso Pierantonio",
-										"Juan De Lara",
-										"Dalila Tamzalit",
-										"Eugene Syriani",
-										"Ernesto Posse",
-										"Antonio Garcia-Dominguez",
-										"Ed Seidewitz",
-										"Dimitris Kolovos"
-									]
-								}
-							]
-						}
 					]
 				},
 				{
-					start : "09:00",
-					end : "10:30",
-					rowSpan : 6,
-					icalStart : "20161005T070000Z",
-					icalEnd : "20161005T083000Z",
-					room : "Lamennais 1+2",
-					events : [
-						{
-							type : "TalkSession",
-							title : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore",
-							chair : "Federico Ciccozzi",
-							papers : [
-								{
-									title : "Vero eos et accusam et justo duo dolores et ea rebum stet clita",
-									abstract : "At vero eos et accusam Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd. Et ea rebum stet clita. Dolor sit amet consetetur sadipscing elitr sed diam. Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit. Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor. Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor. Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata. Et justo duo dolores et ea rebum stet clita kasd. Consetetur sadipscing elitr sed diam. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum.",
-									start : "09:00",
-									icalStart : "20161005T070000Z",
-									icalEnd : "20161005T072500Z",
-									authors : [
-										"Daniel Gritzner",
-										"Sebastien Gerard"
-									]
-								},
-								{
-									title : "Gubergren no sea takimata sanctus",
-									abstract : "Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam Eos et accusam et justo duo dolores et. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod. Nonumy eirmod tempor invidunt ut labore et. Justo duo dolores et ea. Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Ipsum dolor sit amet lorem. Tempor invidunt ut labore et dolore magna aliquyam erat sed.",
-									start : "09:25",
-									icalStart : "20161005T072500Z",
-									icalEnd : "20161005T075000Z",
-									authors : [
-										"Dimitris Kolovos",
-										"Gehan M. K. Selim",
-										"Michalis Famelis",
-										"Eugene Syriani",
-										"Ivano Malavolta",
-										"Nicolas Hili"
-									]
-								},
-								{
-									title : "Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea",
-									abstract : "Magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores Gubergren no sea takimata sanctus. Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing. Dolores et ea rebum stet. Sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr. Voluptua at vero eos et accusam et justo. Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo. Kasd gubergren no sea takimata. Magna aliquyam erat sed diam. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Gubergren no sea takimata sanctus est lorem ipsum dolor sit. Et justo duo dolores et.",
-									start : "09:50",
-									icalStart : "20161005T075000Z",
-									icalEnd : "20161005T081500Z",
-									authors : [
-										"Michalis Famelis",
-										"Daniel Gritzner",
-										"Cedric Brun",
-										"Jeff Gray",
-										"Ernesto Posse",
-										"Daniel Gritzner",
-										"Davide Di Ruscio"
-									]
-								}
-							]
-						}
-					]
+					rowSpan : 6
 				},
 				{
-					start : "09:00",
-					end : "10:30",
-					rowSpan : 6,
-					icalStart : "20161005T070000Z",
-					icalEnd : "20161005T083000Z",
-					room : "Lamennais 4+5",
-					events : [
-						{
-							type : "TalkSession",
-							title : "Vero eos et accusam et justo duo dolores et ea rebum",
-							chair : "Federico Ciccozzi",
-							papers : [
-								{
-									title : "Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata",
-									abstract : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam Sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Voluptua at vero eos et accusam et justo duo dolores et ea. Ipsum dolor sit amet consetetur. Ea rebum stet clita kasd. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Ipsum dolor sit amet lorem ipsum dolor sit. Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren.",
-									start : "09:00",
-									icalStart : "20161005T070000Z",
-									icalEnd : "20161005T072500Z",
-									authors : [
-										"Jean-Michel Bruel",
-										"Tanja Mayerhofer",
-										"Alfonso Pierantonio"
-									]
-								},
-								{
-									title : "Vero eos et accusam et",
-									abstract : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Duo dolores et ea rebum. Et accusam et justo duo. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Sadipscing elitr sed diam nonumy. Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing. Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et.",
-									start : "09:25",
-									icalStart : "20161005T072500Z",
-									icalEnd : "20161005T075000Z",
-									authors : [
-										"Bernhard Schaetz",
-										"Daniel Ratiu",
-										"Sebastian Voss",
-										"Steffen Zschaler",
-										"Richard Paige",
-										"Cedric Brun",
-										"Antonio Garcia-Dominguez"
-									]
-								},
-								{
-									title : "Sanctus est lorem ipsum dolor sit amet",
-									abstract : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet. Duo dolores et ea rebum. Stet clita kasd gubergren no. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. No sea takimata sanctus est. Et accusam et justo duo. Labore et dolore magna aliquyam. Sanctus est lorem ipsum dolor.",
-									start : "09:50",
-									icalStart : "20161005T075000Z",
-									icalEnd : "20161005T081500Z",
-									authors : [
-										"Davide Di Ruscio",
-										"Steffen Zschaler",
-										"Juergen Dingel",
-										"Eugene Syriani",
-										"Federico Ciccozzi",
-										"Eugene Syriani",
-										"Richard Paige",
-										"Francis Bordeleau"
-									]
-								}
-							]
-						}
-					]
+					rowSpan : 6
 				}
 			],
 			[],
@@ -1077,12 +2673,25 @@ var data = [
 					rowSpan : 2
 				},
 				{
+					rowSpan : 2
+				},
+				{
 					start : "10:30",
 					end : "11:00",
 					rowSpan : 2,
 					icalStart : "20161005T083000Z",
 					icalEnd : "20161005T090000Z",
-					room : "Rotonde Surcouf",
+					room : "Rotonde J. Cartier",
+					events : [
+					]
+				},
+				{
+					start : "10:30",
+					end : "11:00",
+					rowSpan : 2,
+					icalStart : "20161005T083000Z",
+					icalEnd : "20161005T090000Z",
+					room : "Grand Large",
 					events : [
 						{
 							type : "CoffeeBreak",
@@ -1098,15 +2707,15 @@ var data = [
 				},
 				{
 					rowSpan : 2
-				},
-				{
-					rowSpan : 2
 				}
 			],
 			[],
 			[
 				{
 					start : "11:00",
+					rowSpan : 6
+				},
+				{
 					rowSpan : 6
 				},
 				{
@@ -1125,53 +2734,45 @@ var data = [
 					events : [
 						{
 							type : "TalkSession",
-							title : "Labore et dolore magna aliquyam",
-							chair : "Dimitris Kolovos",
+							title : "Takimata sanctus est lorem ipsum dolor sit amet lorem",
+							chair : "Et Lorem",
 							papers : [
 								{
-									title : "Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod",
-									abstract : "Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero Et accusam et justo duo. Eos et accusam et justo. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Sit amet consetetur sadipscing elitr sed diam. Eos et accusam et justo duo dolores et ea rebum. Sadipscing elitr sed diam nonumy eirmod tempor. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Et ea rebum stet clita. Elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+									title : "Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo",
+									abstract : "Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum Lorem ipsum dolor sit amet. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Vero eos et accusam et. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Diam voluptua at vero eos. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Eirmod tempor invidunt ut labore. Vero eos et accusam et. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor.",
 									start : "11:00",
 									icalStart : "20161005T090000Z",
 									icalEnd : "20161005T092500Z",
 									authors : [
-										"Cedric Brun",
-										"Bran Selic",
-										"Richard Paige",
-										"Horacio Hoyos",
-										"Sebastian Voss",
-										"Dalila Tamzalit",
-										"Dalila Tamzalit",
-										"Francis Bordeleau"
+										"Invidunt At",
+										"Sed Sea"
 									]
 								},
 								{
-									title : "Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet",
-									abstract : "No sea takimata sanctus est Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Rebum stet clita kasd gubergren. Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy. Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore. Elitr sed diam nonumy eirmod. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor. Vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren.",
+									title : "Sadipscing elitr sed diam nonumy",
+									abstract : "Stet clita kasd gubergren no sea Accusam et justo duo dolores. Sed diam voluptua at vero. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt. Diam nonumy eirmod tempor invidunt. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. At vero eos et accusam et justo duo dolores et ea.",
 									start : "11:25",
 									icalStart : "20161005T092500Z",
 									icalEnd : "20161005T095000Z",
 									authors : [
-										"Francis Bordeleau",
-										"Sebastian Voss",
-										"Antonio Garcia-Dominguez"
+										"Dolores Et",
+										"Vero Et",
+										"Sed Kasd"
 									]
 								},
 								{
-									title : "Aliquyam erat sed diam voluptua",
-									abstract : "Diam nonumy eirmod tempor invidunt No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit. Gubergren no sea takimata sanctus. Et justo duo dolores et ea rebum stet clita kasd gubergren no sea. Lorem ipsum dolor sit amet. Ipsum dolor sit amet consetetur sadipscing. Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod. Elitr sed diam nonumy eirmod tempor invidunt ut labore et. Labore et dolore magna aliquyam. Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.",
+									title : "Amet consetetur sadipscing elitr sed",
+									abstract : "Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum Labore et dolore magna aliquyam erat sed diam voluptua at vero. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Aliquyam erat sed diam voluptua. Elitr sed diam nonumy eirmod tempor invidunt ut labore et. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Diam nonumy eirmod tempor invidunt. Et ea rebum stet clita. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet.",
 									start : "11:50",
 									icalStart : "20161005T095000Z",
 									icalEnd : "20161005T101500Z",
 									authors : [
-										"Jean-Michel Bruel",
-										"Daniel Gritzner",
-										"Gehan M. K. Selim",
-										"Nicholas Matragkas",
-										"Eugene Syriani",
-										"Gehan M. K. Selim",
-										"Antonio Garcia-Dominguez",
-										"Bran Selic"
+										"Kasd Sanctus",
+										"Gubergren Consetetur",
+										"Invidunt Nonumy",
+										"Et Eos",
+										"Vero Et",
+										"Ipsum Magna"
 									]
 								}
 							]
@@ -1188,50 +2789,53 @@ var data = [
 					events : [
 						{
 							type : "TalkSession",
-							title : "Consetetur sadipscing elitr sed diam",
-							chair : "Gehan M. K. Selim",
+							title : "Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet",
+							chair : "Consetetur Erat",
 							papers : [
 								{
-									title : "Dolore magna aliquyam erat sed diam voluptua at vero eos",
-									abstract : "Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam Labore et dolore magna aliquyam erat sed diam voluptua. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor. Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita. Justo duo dolores et ea rebum. Magna aliquyam erat sed diam. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Stet clita kasd gubergren no sea takimata.",
+									title : "Voluptua at vero eos et",
+									abstract : "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum. Sed diam voluptua at vero eos et accusam et. Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea. Magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Amet consetetur sadipscing elitr sed. Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita.",
 									start : "11:00",
 									icalStart : "20161005T090000Z",
 									icalEnd : "20161005T092500Z",
 									authors : [
-										"Sebastien Gerard",
-										"Tanja Mayerhofer",
-										"Juergen Dingel",
-										"Juan De Lara",
-										"Gehan M. K. Selim",
-										"Cedric Brun",
-										"Dalila Tamzalit",
-										"Davide Di Ruscio"
+										"Aliquyam At",
+										"Ipsum Invidunt",
+										"Ipsum Magna",
+										"Takimata Et",
+										"Est Lorem",
+										"Invidunt At"
 									]
 								},
 								{
-									title : "Diam voluptua at vero eos et accusam",
-									abstract : "Dolores et ea rebum stet Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit. Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum. Accusam et justo duo dolores et ea rebum. Sed diam nonumy eirmod tempor invidunt ut. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd. Gubergren no sea takimata sanctus est lorem ipsum. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero.",
+									title : "No sea takimata sanctus est",
+									abstract : "Magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo Eos et accusam et justo. Ipsum dolor sit amet consetetur sadipscing elitr sed diam. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos. Kasd gubergren no sea takimata. Nonumy eirmod tempor invidunt ut. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor.",
 									start : "11:25",
 									icalStart : "20161005T092500Z",
 									icalEnd : "20161005T095000Z",
 									authors : [
-										"Juan De Lara",
-										"Antonio Garcia-Dominguez",
-										"Eugene Syriani",
-										"Daniel Gritzner",
-										"Juan De Lara"
+										"Eos Et",
+										"No Aliquyam",
+										"Kasd Dolores",
+										"Gubergren At",
+										"Eirmod Consetetur"
 									]
 								},
 								{
-									title : "Tempor invidunt ut labore et dolore",
-									abstract : "Takimata sanctus est lorem ipsum Nonumy eirmod tempor invidunt ut. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Diam nonumy eirmod tempor invidunt ut. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Ea rebum stet clita kasd. At vero eos et accusam. At vero eos et accusam et justo duo dolores et ea. Dolor sit amet consetetur sadipscing elitr sed. Sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr. Elitr sed diam nonumy eirmod. Diam nonumy eirmod tempor invidunt.",
+									title : "Consetetur sadipscing elitr sed diam",
+									abstract : "Dolores et ea rebum stet clita kasd Eirmod tempor invidunt ut labore et dolore magna. Elitr sed diam nonumy eirmod. Sit amet lorem ipsum dolor. Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita. Duo dolores et ea rebum. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam. Voluptua at vero eos et. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Diam voluptua at vero eos et accusam et justo duo dolores et ea. Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor.",
 									start : "11:50",
 									icalStart : "20161005T095000Z",
 									icalEnd : "20161005T101500Z",
 									authors : [
-										"Cedric Brun",
-										"Jean-Michel Bruel",
-										"Joel Greenyer"
+										"Ipsum Nonumy",
+										"Vero Ea",
+										"Kasd Sanctus",
+										"Ipsum Invidunt",
+										"Nonumy Dolore",
+										"Ipsum Nonumy",
+										"Clita Tempor",
+										"Ipsum Magna"
 									]
 								}
 							]
@@ -1248,47 +2852,51 @@ var data = [
 					events : [
 						{
 							type : "TalkSession",
-							title : "Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore",
-							chair : "Cedric Brun",
+							title : "Lorem ipsum dolor sit amet lorem ipsum dolor sit",
+							chair : "Eos Sed",
 							papers : [
 								{
-									title : "Et justo duo dolores et",
-									abstract : "Invidunt ut labore et dolore magna aliquyam erat sed diam Lorem ipsum dolor sit amet. Sit amet lorem ipsum dolor. Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Sit amet consetetur sadipscing elitr. Amet consetetur sadipscing elitr sed. Et dolore magna aliquyam erat. Ipsum dolor sit amet lorem. Clita kasd gubergren no sea. Invidunt ut labore et dolore.",
+									title : "No sea takimata sanctus est",
+									abstract : "Magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo Eos et accusam et justo. Ipsum dolor sit amet consetetur sadipscing elitr sed diam. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos. Kasd gubergren no sea takimata. Nonumy eirmod tempor invidunt ut. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor.",
 									start : "11:00",
 									icalStart : "20161005T090000Z",
 									icalEnd : "20161005T092500Z",
 									authors : [
-										"Pascal Roques",
-										"Ernesto Posse",
-										"Alfonso Pierantonio"
+										"Eos Et",
+										"No Aliquyam",
+										"Kasd Dolores",
+										"Gubergren At",
+										"Eirmod Consetetur"
 									]
 								},
 								{
-									title : "No sea takimata sanctus est lorem ipsum dolor",
-									abstract : "Amet consetetur sadipscing elitr sed diam Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam. Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum. Dolores et ea rebum stet. Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur. Magna aliquyam erat sed diam voluptua at vero eos et. Et justo duo dolores et. Voluptua at vero eos et. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Magna aliquyam erat sed diam. Clita kasd gubergren no sea takimata sanctus est lorem ipsum.",
+									title : "Voluptua at vero eos et",
+									abstract : "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum. Sed diam voluptua at vero eos et accusam et. Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea. Magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Amet consetetur sadipscing elitr sed. Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita.",
 									start : "11:25",
 									icalStart : "20161005T092500Z",
 									icalEnd : "20161005T095000Z",
 									authors : [
-										"Ivano Malavolta",
-										"Huseyin Ergin",
-										"Jean-Michel Bruel",
-										"Jeff Gray",
-										"Horacio Hoyos",
-										"Nicolas Hili"
+										"Aliquyam At",
+										"Ipsum Invidunt",
+										"Ipsum Magna",
+										"Takimata Et",
+										"Est Lorem",
+										"Invidunt At"
 									]
 								},
 								{
-									title : "Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea",
-									abstract : "Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem Ut labore et dolore magna aliquyam erat. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore. Vero eos et accusam et justo duo dolores. Et justo duo dolores et. Dolor sit amet consetetur sadipscing. Dolores et ea rebum stet clita kasd gubergren no. Eirmod tempor invidunt ut labore et. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam. Clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Et justo duo dolores et.",
+									title : "Eirmod tempor invidunt ut labore et dolore magna aliquyam",
+									abstract : "Sadipscing elitr sed diam nonumy eirmod tempor invidunt Est lorem ipsum dolor sit amet lorem ipsum. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et. Invidunt ut labore et dolore. At vero eos et accusam et justo duo dolores et ea rebum stet clita. Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit. Vero eos et accusam et justo duo dolores et ea. Duo dolores et ea rebum stet clita kasd gubergren no sea.",
 									start : "11:50",
 									icalStart : "20161005T095000Z",
 									icalEnd : "20161005T101500Z",
 									authors : [
-										"Ed Seidewitz",
-										"Daniel Gritzner",
-										"Ivano Malavolta",
-										"Horacio Hoyos"
+										"Nonumy Ea",
+										"Kasd Dolores",
+										"Voluptua Voluptua",
+										"Est Lorem",
+										"Ipsum Magna",
+										"Consetetur Ipsum"
 									]
 								}
 							]
@@ -1304,6 +2912,9 @@ var data = [
 			[
 				{
 					start : "12:30",
+					rowSpan : 6
+				},
+				{
 					rowSpan : 6
 				},
 				{
@@ -1350,6 +2961,9 @@ var data = [
 					rowSpan : 6
 				},
 				{
+					rowSpan : 6
+				},
+				{
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
@@ -1359,50 +2973,52 @@ var data = [
 					events : [
 						{
 							type : "TalkSession",
-							title : "Sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr",
-							chair : "Nicholas Matragkas",
+							title : "Rebum stet clita kasd gubergren",
+							chair : "Lorem Diam",
 							papers : [
 								{
-									title : "Et accusam et justo duo dolores et ea rebum stet clita kasd",
-									abstract : "Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum. Dolores et ea rebum stet clita kasd gubergren no sea takimata. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Sit amet consetetur sadipscing elitr. Eos et accusam et justo. Amet consetetur sadipscing elitr sed. Est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.",
+									title : "Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit",
+									abstract : "Erat sed diam voluptua at vero eos et accusam et Elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy. Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita. Dolor sit amet lorem ipsum. Et ea rebum stet clita. Amet lorem ipsum dolor sit amet consetetur sadipscing. Elitr sed diam nonumy eirmod tempor invidunt ut. Amet consetetur sadipscing elitr sed. Invidunt ut labore et dolore.",
 									start : "14:00",
 									icalStart : "20161005T120000Z",
 									icalEnd : "20161005T122500Z",
 									authors : [
-										"Alfonso Pierantonio",
-										"Juan De Lara",
-										"Richard Paige",
-										"Tanja Mayerhofer",
-										"Richard Paige",
-										"Frédéric Madiot"
+										"Gubergren Consetetur",
+										"Labore Sed",
+										"Voluptua Voluptua",
+										"Diam Et",
+										"Ipsum Invidunt",
+										"Ipsum Magna",
+										"Ipsum Magna"
 									]
 								},
 								{
-									title : "Aliquyam erat sed diam voluptua at vero eos",
-									abstract : "Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Magna aliquyam erat sed diam voluptua at vero. Ea rebum stet clita kasd. Elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. Ipsum dolor sit amet lorem ipsum dolor sit. Eirmod tempor invidunt ut labore. Sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet.",
+									title : "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit",
+									abstract : "Lorem ipsum dolor sit amet consetetur sadipscing elitr Eos et accusam et justo. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Labore et dolore magna aliquyam erat sed diam voluptua at. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. Lorem ipsum dolor sit amet. Ut labore et dolore magna aliquyam erat sed. Ut labore et dolore magna.",
 									start : "14:25",
 									icalStart : "20161005T122500Z",
 									icalEnd : "20161005T125000Z",
 									authors : [
-										"Ivano Malavolta",
-										"Dalila Tamzalit",
-										"Francis Bordeleau",
-										"Alfonso Pierantonio"
+										"Magna Dolore",
+										"Magna Labore",
+										"Sit Sadipscing",
+										"Eos Et"
 									]
 								},
 								{
-									title : "Ut labore et dolore magna",
-									abstract : "Dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo Ea rebum stet clita kasd. Invidunt ut labore et dolore. Et ea rebum stet clita. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea. Clita kasd gubergren no sea takimata sanctus est lorem ipsum. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd. Dolor sit amet lorem ipsum dolor sit amet consetetur. Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor.",
+									title : "Sanctus est lorem ipsum dolor sit amet lorem ipsum",
+									abstract : "Voluptua at vero eos et accusam et justo duo dolores At vero eos et accusam et justo. Elitr sed diam nonumy eirmod tempor invidunt ut. Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd. Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy.",
 									start : "14:50",
 									icalStart : "20161005T125000Z",
 									icalEnd : "20161005T131500Z",
 									authors : [
-										"Tanja Mayerhofer",
-										"Cedric Brun",
-										"Ed Seidewitz",
-										"Jeff Gray",
-										"Alfonso Pierantonio",
-										"Nicolas Hili"
+										"At No",
+										"Sea Amet",
+										"Amet Sit",
+										"Diam Et",
+										"Nonumy Ea",
+										"Est Et",
+										"Dolores Justo"
 									]
 								}
 							]
@@ -1419,50 +3035,51 @@ var data = [
 					events : [
 						{
 							type : "TalkSession",
-							title : "Est lorem ipsum dolor sit",
-							chair : "Bran Selic",
+							title : "Takimata sanctus est lorem ipsum dolor",
+							chair : "Vero Clita",
 							papers : [
 								{
-									title : "Duo dolores et ea rebum stet",
-									abstract : "Invidunt ut labore et dolore Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Stet clita kasd gubergren no sea takimata sanctus. Sea takimata sanctus est lorem. Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Voluptua at vero eos et. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur. Sanctus est lorem ipsum dolor.",
+									title : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor",
+									abstract : "Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et. Rebum stet clita kasd gubergren no sea. Sanctus est lorem ipsum dolor sit amet lorem ipsum. Dolores et ea rebum stet clita kasd gubergren no sea. Sed diam voluptua at vero. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. Duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est. Lorem ipsum dolor sit amet. Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit. Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita. Magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores.",
 									start : "14:00",
 									icalStart : "20161005T120000Z",
 									icalEnd : "20161005T122500Z",
 									authors : [
-										"Cedric Brun",
-										"Alfonso Pierantonio",
-										"Juan De Lara",
-										"Gehan M. K. Selim",
-										"Bran Selic",
-										"Pascal Roques"
+										"Sed Consetetur",
+										"At No",
+										"Lorem No",
+										"Tempor Ea",
+										"Invidunt Nonumy",
+										"Diam Diam",
+										"Dolor Eirmod"
 									]
 								},
 								{
-									title : "Magna aliquyam erat sed diam voluptua at vero",
-									abstract : "Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo Takimata sanctus est lorem ipsum. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Diam voluptua at vero eos. Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor. Lorem ipsum dolor sit amet consetetur sadipscing elitr. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor. Amet consetetur sadipscing elitr sed. Erat sed diam voluptua at vero eos et accusam et justo duo. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit.",
+									title : "Duo dolores et ea rebum",
+									abstract : "Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et Dolores et ea rebum stet. Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero. Ipsum dolor sit amet lorem ipsum dolor sit. Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et. Sanctus est lorem ipsum dolor.",
 									start : "14:25",
 									icalStart : "20161005T122500Z",
 									icalEnd : "20161005T125000Z",
 									authors : [
-										"Ernesto Posse",
-										"Frédéric Madiot",
-										"Tanja Mayerhofer",
-										"Juan De Lara",
-										"Cedric Brun"
+										"Kasd Dolores",
+										"Sed Consetetur",
+										"Sadipscing Ipsum",
+										"Magna Labore"
 									]
 								},
 								{
-									title : "Rebum stet clita kasd gubergren",
-									abstract : "Ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam Diam voluptua at vero eos. Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Ipsum dolor sit amet lorem. Sed diam nonumy eirmod tempor. Vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus.",
+									title : "Sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore",
+									abstract : "Diam nonumy eirmod tempor invidunt ut labore Erat sed diam voluptua at vero eos et accusam et justo duo. Est lorem ipsum dolor sit. Clita kasd gubergren no sea takimata sanctus est. Clita kasd gubergren no sea. Dolor sit amet lorem ipsum. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Sed diam voluptua at vero eos et accusam et justo. Justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est. At vero eos et accusam.",
 									start : "14:50",
 									icalStart : "20161005T125000Z",
 									icalEnd : "20161005T131500Z",
 									authors : [
-										"Pascal Roques",
-										"Eugene Syriani",
-										"Alfonso Pierantonio",
-										"Dalila Tamzalit",
-										"Tanja Mayerhofer"
+										"Accusam Ipsum",
+										"Amet Sit",
+										"Voluptua Dolore",
+										"Sed Sea",
+										"Voluptua Voluptua",
+										"Dolores Et"
 									]
 								}
 							]
@@ -1479,47 +3096,44 @@ var data = [
 					events : [
 						{
 							type : "TalkSession",
-							title : "Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor",
-							chair : "Tanja Mayerhofer",
+							title : "Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea",
+							chair : "Stet Justo",
 							papers : [
 								{
-									title : "At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd",
-									abstract : "Dolore magna aliquyam erat sed Stet clita kasd gubergren no. Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita. Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Nonumy eirmod tempor invidunt ut. Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Lorem ipsum dolor sit amet.",
+									title : "Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit",
+									abstract : "Sit amet consetetur sadipscing elitr Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Stet clita kasd gubergren no. Amet consetetur sadipscing elitr sed. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est. Clita kasd gubergren no sea. Vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et.",
 									start : "14:00",
 									icalStart : "20161005T120000Z",
 									icalEnd : "20161005T122500Z",
 									authors : [
-										"Federico Ciccozzi",
-										"Nicholas Matragkas",
-										"Jean-Michel Bruel",
-										"Ivano Malavolta"
+										"Accusam Ipsum",
+										"Magna Dolore",
+										"Accusam Ipsum",
+										"Labore Sed"
 									]
 								},
 								{
-									title : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore",
-									abstract : "Sadipscing elitr sed diam nonumy Eirmod tempor invidunt ut labore. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem. Sea takimata sanctus est lorem. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. Diam voluptua at vero eos et accusam et justo. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit. Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua.",
+									title : "Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed",
+									abstract : "Et accusam et justo duo Amet consetetur sadipscing elitr sed. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Clita kasd gubergren no sea. Eirmod tempor invidunt ut labore. Ipsum dolor sit amet consetetur sadipscing elitr sed. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Et accusam et justo duo. Consetetur sadipscing elitr sed diam.",
 									start : "14:25",
 									icalStart : "20161005T122500Z",
 									icalEnd : "20161005T125000Z",
 									authors : [
-										"Ivano Malavolta",
-										"Pascal Roques",
-										"Alfonso Pierantonio",
-										"Cedric Brun",
-										"Gehan M. K. Selim",
-										"Daniel Ratiu"
+										"Labore Sed",
+										"Et Eos",
+										"Stet No"
 									]
 								},
 								{
-									title : "Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata",
-									abstract : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam Sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Voluptua at vero eos et accusam et justo duo dolores et ea. Ipsum dolor sit amet consetetur. Ea rebum stet clita kasd. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Ipsum dolor sit amet lorem ipsum dolor sit. Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren.",
+									title : "Sadipscing elitr sed diam nonumy",
+									abstract : "Stet clita kasd gubergren no sea Accusam et justo duo dolores. Sed diam voluptua at vero. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt. Diam nonumy eirmod tempor invidunt. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. At vero eos et accusam et justo duo dolores et ea.",
 									start : "14:50",
 									icalStart : "20161005T125000Z",
 									icalEnd : "20161005T131500Z",
 									authors : [
-										"Jean-Michel Bruel",
-										"Tanja Mayerhofer",
-										"Alfonso Pierantonio"
+										"Dolores Et",
+										"Vero Et",
+										"Sed Kasd"
 									]
 								}
 							]
@@ -1538,12 +3152,25 @@ var data = [
 					rowSpan : 2
 				},
 				{
+					rowSpan : 2
+				},
+				{
 					start : "15:30",
 					end : "16:00",
 					rowSpan : 2,
 					icalStart : "20161005T133000Z",
 					icalEnd : "20161005T140000Z",
-					room : "Rotonde Surcouf",
+					room : "Rotonde J. Cartier",
+					events : [
+					]
+				},
+				{
+					start : "15:30",
+					end : "16:00",
+					rowSpan : 2,
+					icalStart : "20161005T133000Z",
+					icalEnd : "20161005T140000Z",
+					room : "Grand Large",
 					events : [
 						{
 							type : "CoffeeBreak",
@@ -1559,15 +3186,15 @@ var data = [
 				},
 				{
 					rowSpan : 2
-				},
-				{
-					rowSpan : 2
 				}
 			],
 			[],
 			[
 				{
 					start : "16:00",
+					rowSpan : 6
+				},
+				{
 					rowSpan : 6
 				},
 				{
@@ -1586,48 +3213,48 @@ var data = [
 					events : [
 						{
 							type : "TalkSession",
-							title : "Sea takimata sanctus est lorem",
-							chair : "Sebastian Voss",
+							title : "Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing",
+							chair : "Consetetur Erat",
 							papers : [
 								{
-									title : "No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
-									abstract : "Duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est Dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo. Sed diam voluptua at vero. Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Dolores et ea rebum stet. Consetetur sadipscing elitr sed diam nonumy eirmod. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit. Dolor sit amet lorem ipsum.",
+									title : "Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore",
+									abstract : "Sed diam voluptua at vero eos et accusam et justo duo dolores Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur. Dolor sit amet consetetur sadipscing. Magna aliquyam erat sed diam. Aliquyam erat sed diam voluptua. Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et.",
 									start : "16:00",
 									icalStart : "20161005T140000Z",
 									icalEnd : "20161005T142500Z",
 									authors : [
-										"Philip Langer",
-										"Pascal Roques",
-										"Juergen Dingel",
-										"Nicholas Matragkas",
-										"Ivano Malavolta"
+										"Nonumy At",
+										"Gubergren At",
+										"Ea Diam",
+										"Et Diam",
+										"At Justo",
+										"No Aliquyam",
+										"Tempor Et"
 									]
 								},
 								{
-									title : "Duo dolores et ea rebum stet clita",
-									abstract : "Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo. Dolor sit amet lorem ipsum. Voluptua at vero eos et accusam et justo duo dolores et ea rebum. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur. Magna aliquyam erat sed diam. Dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Takimata sanctus est lorem ipsum dolor sit amet lorem. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor.",
+									title : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
+									abstract : "Sadipscing elitr sed diam nonumy eirmod tempor invidunt Kasd gubergren no sea takimata sanctus est lorem ipsum. Kasd gubergren no sea takimata. Sed diam nonumy eirmod tempor invidunt ut labore. Voluptua at vero eos et. Dolore magna aliquyam erat sed. Nonumy eirmod tempor invidunt ut. Ipsum dolor sit amet lorem ipsum. Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et.",
 									start : "16:25",
 									icalStart : "20161005T142500Z",
 									icalEnd : "20161005T145000Z",
 									authors : [
-										"Alfonso Pierantonio",
-										"Philip Langer"
+										"Magna Takimata",
+										"Lorem Lorem"
 									]
 								},
 								{
-									title : "Diam nonumy eirmod tempor invidunt",
-									abstract : "Accusam et justo duo dolores Labore et dolore magna aliquyam. Et justo duo dolores et ea rebum stet clita kasd gubergren no sea. Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Clita kasd gubergren no sea takimata sanctus est. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua.",
+									title : "Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy",
+									abstract : "Vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam. Voluptua at vero eos et. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero. Et dolore magna aliquyam erat sed diam. Magna aliquyam erat sed diam voluptua at vero eos. Sit amet consetetur sadipscing elitr. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam. Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo.",
 									start : "16:50",
 									icalStart : "20161005T145000Z",
 									icalEnd : "20161005T151500Z",
 									authors : [
-										"Nicholas Matragkas",
-										"Pascal Roques",
-										"Horacio Hoyos",
-										"Juergen Dingel",
-										"Ed Seidewitz",
-										"Sebastian Voss",
-										"Frédéric Madiot"
+										"Lorem Lorem",
+										"Takimata Et",
+										"Dolores Justo",
+										"Duo Nonumy",
+										"Sadipscing Ipsum"
 									]
 								}
 							]
@@ -1644,56 +3271,53 @@ var data = [
 					events : [
 						{
 							type : "TalkSession",
-							title : "Accusam et justo duo dolores et ea rebum",
-							chair : "Dimitris Kolovos",
+							title : "Accusam et justo duo dolores et ea rebum stet clita kasd gubergren",
+							chair : "Ipsum Magna",
 							papers : [
 								{
-									title : "Sit amet lorem ipsum dolor",
-									abstract : "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor At vero eos et accusam et justo duo dolores et. Elitr sed diam nonumy eirmod. Rebum stet clita kasd gubergren no sea takimata. Sanctus est lorem ipsum dolor sit amet lorem ipsum. Ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam. Clita kasd gubergren no sea. Ut labore et dolore magna. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam.",
+									title : "Diam nonumy eirmod tempor invidunt",
+									abstract : "Lorem ipsum dolor sit amet lorem ipsum dolor Kasd gubergren no sea takimata. Voluptua at vero eos et accusam. Et dolore magna aliquyam erat sed diam voluptua at vero. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur. Diam voluptua at vero eos. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.",
 									start : "16:00",
 									icalStart : "20161005T140000Z",
 									icalEnd : "20161005T142500Z",
 									authors : [
-										"Nicolas Hili",
-										"Frédéric Madiot",
-										"Bran Selic",
-										"Tanja Mayerhofer",
-										"Pascal Roques",
-										"Daniel Gritzner",
-										"Cedric Brun",
-										"Richard Paige"
+										"Sed Kasd",
+										"Nonumy At",
+										"Rebum Sadipscing",
+										"Consetetur Erat"
 									]
 								},
 								{
-									title : "Erat sed diam voluptua at",
-									abstract : "Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et Sit amet consetetur sadipscing elitr. Et justo duo dolores et ea rebum stet clita. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et. Dolor sit amet consetetur sadipscing. Vero eos et accusam et justo duo dolores et ea rebum stet. Dolor sit amet lorem ipsum. Duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus.",
+									title : "Justo duo dolores et ea",
+									abstract : "Sanctus est lorem ipsum dolor Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea. Ea rebum stet clita kasd gubergren no. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Sit amet lorem ipsum dolor sit amet. Gubergren no sea takimata sanctus. Sed diam voluptua at vero. Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita. Duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus. Elitr sed diam nonumy eirmod. Elitr sed diam nonumy eirmod.",
 									start : "16:25",
 									icalStart : "20161005T142500Z",
 									icalEnd : "20161005T145000Z",
 									authors : [
-										"Daniel Ratiu",
-										"Federico Ciccozzi",
-										"Juergen Dingel",
-										"Jean-Michel Bruel",
-										"Francis Bordeleau",
-										"Jeff Gray"
+										"Stet Justo",
+										"Eirmod Consetetur",
+										"Ut Accusam",
+										"Amet Sed",
+										"Stet Est",
+										"Ipsum Magna",
+										"Ipsum Invidunt",
+										"Accusam Ipsum"
 									]
 								},
 								{
-									title : "Diam voluptua at vero eos",
-									abstract : "Et justo duo dolores et Clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Sit amet lorem ipsum dolor sit amet. Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Dolore magna aliquyam erat sed. Elitr sed diam nonumy eirmod tempor invidunt ut labore. Elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. Sea takimata sanctus est lorem. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.",
+									title : "Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus",
+									abstract : "Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed Voluptua at vero eos et. Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et. Elitr sed diam nonumy eirmod tempor invidunt ut labore et. Diam nonumy eirmod tempor invidunt. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Et justo duo dolores et. Clita kasd gubergren no sea takimata sanctus. Erat sed diam voluptua at vero eos et. Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus.",
 									start : "16:50",
 									icalStart : "20161005T145000Z",
 									icalEnd : "20161005T151500Z",
 									authors : [
-										"Alfonso Pierantonio",
-										"Sebastien Gerard",
-										"Jeff Gray",
-										"Sebastian Voss",
-										"Sebastian Voss",
-										"Michalis Famelis",
-										"Steffen Zschaler",
-										"Juergen Dingel"
+										"Tempor Ut",
+										"Est Lorem",
+										"Sit Sadipscing",
+										"Et Eos",
+										"Voluptua Voluptua",
+										"Diam Diam",
+										"Et Invidunt"
 									]
 								}
 							]
@@ -1710,46 +3334,50 @@ var data = [
 					events : [
 						{
 							type : "TalkSession",
-							title : "Duo dolores et ea rebum",
-							chair : "Steffen Zschaler",
+							title : "Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no",
+							chair : "Consetetur Erat",
 							papers : [
 								{
-									title : "Accusam et justo duo dolores et ea rebum stet",
-									abstract : "Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam. Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem. Dolor sit amet consetetur sadipscing. Sit amet consetetur sadipscing elitr. Dolor sit amet consetetur sadipscing. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. Et ea rebum stet clita kasd gubergren no sea. Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt. Et accusam et justo duo dolores et.",
+									title : "Clita kasd gubergren no sea",
+									abstract : "Vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren Ipsum dolor sit amet lorem. Consetetur sadipscing elitr sed diam nonumy eirmod tempor. Dolor sit amet lorem ipsum dolor sit amet. Aliquyam erat sed diam voluptua. Dolor sit amet consetetur sadipscing. Rebum stet clita kasd gubergren no sea takimata sanctus est. Et dolore magna aliquyam erat. Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing.",
 									start : "16:00",
 									icalStart : "20161005T140000Z",
 									icalEnd : "20161005T142500Z",
 									authors : [
-										"Sebastien Gerard",
-										"Alfonso Pierantonio",
-										"Antonio Garcia-Dominguez"
+										"Nonumy Dolore",
+										"At No",
+										"Rebum Nonumy",
+										"Nonumy Sed"
 									]
 								},
 								{
-									title : "Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no",
-									abstract : "Voluptua at vero eos et Ipsum dolor sit amet consetetur. Kasd gubergren no sea takimata. Aliquyam erat sed diam voluptua. Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus. Sed diam voluptua at vero. Ut labore et dolore magna. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur.",
+									title : "Rebum stet clita kasd gubergren no sea takimata",
+									abstract : "Tempor invidunt ut labore et Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum. Justo duo dolores et ea. Magna aliquyam erat sed diam. Voluptua at vero eos et. Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing. Magna aliquyam erat sed diam. Vero eos et accusam et justo duo dolores. Sed diam voluptua at vero. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam.",
 									start : "16:25",
 									icalStart : "20161005T142500Z",
 									icalEnd : "20161005T145000Z",
 									authors : [
-										"Joel Greenyer",
-										"Huseyin Ergin",
-										"Daniel Ratiu",
-										"Bran Selic"
+										"Eos Sed",
+										"Magna Takimata",
+										"Takimata Ea",
+										"Nonumy Sed",
+										"Eos Et",
+										"Amet At",
+										"Duo Accusam"
 									]
 								},
 								{
-									title : "Justo duo dolores et ea",
-									abstract : "Voluptua at vero eos et accusam et justo duo dolores et ea rebum Sea takimata sanctus est lorem ipsum dolor sit. Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor. Magna aliquyam erat sed diam. Et dolore magna aliquyam erat. Sit amet consetetur sadipscing elitr. Justo duo dolores et ea. Est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore. Amet lorem ipsum dolor sit.",
+									title : "Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit",
+									abstract : "Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor Kasd gubergren no sea takimata sanctus. Duo dolores et ea rebum. Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Lorem ipsum dolor sit amet lorem ipsum dolor sit. Clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Est lorem ipsum dolor sit. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut.",
 									start : "16:50",
 									icalStart : "20161005T145000Z",
 									icalEnd : "20161005T151500Z",
 									authors : [
-										"Tanja Mayerhofer",
-										"Richard Paige",
-										"Davide Di Ruscio",
-										"Horacio Hoyos",
-										"Jeff Gray"
+										"Et Sadipscing",
+										"Ipsum Invidunt",
+										"Nonumy Ea",
+										"Duo Gubergren",
+										"Diam Sit"
 									]
 								}
 							]
@@ -1757,6 +3385,107 @@ var data = [
 					]
 				}
 			],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[
+				{
+					start : "17:30",
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					start : "17:30",
+					end : "19:00",
+					rowSpan : 6,
+					icalStart : "20161005T153000Z",
+					icalEnd : "20161005T170000Z",
+					room : "Lamennais 4+5",
+					events : [
+					]
+				}
+			],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[
+				{
+					start : "19:00",
+					rowSpan : 4
+				},
+				{
+					rowSpan : 4
+				},
+				{
+					rowSpan : 4
+				},
+				{
+					rowSpan : 4
+				},
+				{
+					rowSpan : 4
+				},
+				{
+					rowSpan : 4
+				},
+				{
+					rowSpan : 4
+				}
+			],
+			[],
+			[],
+			[],
+			[
+				{
+					start : "20:00",
+					rowSpan : 8
+				},
+				{
+					start : "20:00",
+					end : "22:00",
+					rowSpan : 8,
+					icalStart : "20161005T180000Z",
+					icalEnd : "20161005T200000Z",
+					room : "Rotonde Surcouf",
+					events : [
+					]
+				},
+				{
+					rowSpan : 8
+				},
+				{
+					rowSpan : 8
+				},
+				{
+					rowSpan : 8
+				},
+				{
+					rowSpan : 8
+				},
+				{
+					rowSpan : 8
+				}
+			],
+			[],
+			[],
 			[],
 			[],
 			[],
@@ -1769,7 +3498,7 @@ var data = [
 		date : "20161006",
 		rooms : [
 			{
-				name : "Rotonde Surcouf"
+				name : "Rotonde J. Cartier"
 			},
 			{
 				name : "Grand Large"
@@ -1794,7 +3523,18 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 6
+					start : "09:00",
+					end : "12:30",
+					rowSpan : 14,
+					icalStart : "20161006T070000Z",
+					icalEnd : "20161006T103000Z",
+					room : "Rotonde J. Cartier",
+					events : [
+						{
+							type : "Clinic",
+							title : "Clinic"
+						}
+					]
 				},
 				{
 					rowSpan : 6
@@ -1807,178 +3547,13 @@ var data = [
 					icalEnd : "20161006T083000Z",
 					room : "Chateaubriand",
 					events : [
-						{
-							type : "TalkSession",
-							title : "Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et",
-							chair : "Daniel Gritzner",
-							papers : [
-								{
-									title : "Dolores et ea rebum stet clita kasd gubergren no sea",
-									abstract : "Duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem Vero eos et accusam et justo duo dolores et ea rebum stet. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Nonumy eirmod tempor invidunt ut labore et dolore magna. Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing. Ut labore et dolore magna aliquyam erat.",
-									start : "09:00",
-									icalStart : "20161006T070000Z",
-									icalEnd : "20161006T072500Z",
-									authors : [
-										"Eugene Syriani",
-										"Jeff Gray",
-										"Bran Selic",
-										"Nicolas Hili"
-									]
-								},
-								{
-									title : "Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor",
-									abstract : "Voluptua at vero eos et Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur. Magna aliquyam erat sed diam voluptua at. Dolore magna aliquyam erat sed diam. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Sit amet lorem ipsum dolor. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr. Sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut.",
-									start : "09:25",
-									icalStart : "20161006T072500Z",
-									icalEnd : "20161006T075000Z",
-									authors : [
-										"Nicholas Matragkas",
-										"Pascal Roques",
-										"Francis Bordeleau"
-									]
-								},
-								{
-									title : "Et accusam et justo duo",
-									abstract : "Ea rebum stet clita kasd gubergren no sea Sit amet consetetur sadipscing elitr. Vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren. Magna aliquyam erat sed diam voluptua. Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt. Ea rebum stet clita kasd. Sit amet consetetur sadipscing elitr. Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo.",
-									start : "09:50",
-									icalStart : "20161006T075000Z",
-									icalEnd : "20161006T081500Z",
-									authors : [
-										"Bran Selic",
-										"Bernhard Schaetz",
-										"Bran Selic",
-										"Alfonso Pierantonio",
-										"Ivano Malavolta",
-										"Daniel Gritzner",
-										"Dimitris Kolovos"
-									]
-								}
-							]
-						}
 					]
 				},
 				{
-					start : "09:00",
-					end : "10:30",
-					rowSpan : 6,
-					icalStart : "20161006T070000Z",
-					icalEnd : "20161006T083000Z",
-					room : "Lamennais 1+2",
-					events : [
-						{
-							type : "TalkSession",
-							title : "At vero eos et accusam",
-							chair : "Alfonso Pierantonio",
-							papers : [
-								{
-									title : "Dolore magna aliquyam erat sed",
-									abstract : "Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam Erat sed diam voluptua at. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Aliquyam erat sed diam voluptua at vero eos et accusam. Clita kasd gubergren no sea. Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Et accusam et justo duo. Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et. Amet lorem ipsum dolor sit amet. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit.",
-									start : "09:00",
-									icalStart : "20161006T070000Z",
-									icalEnd : "20161006T072500Z",
-									authors : [
-										"Francis Bordeleau",
-										"Richard Paige",
-										"Federico Ciccozzi",
-										"Eugene Syriani",
-										"Eugene Syriani",
-										"Jeff Gray",
-										"Bran Selic"
-									]
-								},
-								{
-									title : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut",
-									abstract : "Dolore magna aliquyam erat sed diam voluptua Est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Clita kasd gubergren no sea. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. Stet clita kasd gubergren no sea takimata sanctus est lorem. Stet clita kasd gubergren no. Erat sed diam voluptua at. Labore et dolore magna aliquyam.",
-									start : "09:25",
-									icalStart : "20161006T072500Z",
-									icalEnd : "20161006T075000Z",
-									authors : [
-										"Eugene Syriani",
-										"Dalila Tamzalit",
-										"Sebastian Voss",
-										"Daniel Gritzner",
-										"Daniel Gritzner",
-										"Horacio Hoyos",
-										"Cedric Brun",
-										"Jean-Michel Bruel"
-									]
-								},
-								{
-									title : "Dolor sit amet lorem ipsum dolor sit amet consetetur",
-									abstract : "Justo duo dolores et ea Eirmod tempor invidunt ut labore. Aliquyam erat sed diam voluptua. Duo dolores et ea rebum. Et ea rebum stet clita kasd gubergren no. Ipsum dolor sit amet lorem ipsum dolor. Aliquyam erat sed diam voluptua. Stet clita kasd gubergren no. Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor.",
-									start : "09:50",
-									icalStart : "20161006T075000Z",
-									icalEnd : "20161006T081500Z",
-									authors : [
-										"Bernhard Schaetz",
-										"Tanja Mayerhofer",
-										"Steffen Zschaler",
-										"Juan De Lara"
-									]
-								}
-							]
-						}
-					]
+					rowSpan : 6
 				},
 				{
-					start : "09:00",
-					end : "10:30",
-					rowSpan : 6,
-					icalStart : "20161006T070000Z",
-					icalEnd : "20161006T083000Z",
-					room : "Lamennais 4+5",
-					events : [
-						{
-							type : "TalkSession",
-							title : "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit",
-							chair : "Ivano Malavolta",
-							papers : [
-								{
-									title : "Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit",
-									abstract : "Dolores et ea rebum stet Vero eos et accusam et. Tempor invidunt ut labore et. Accusam et justo duo dolores et ea rebum. Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Est lorem ipsum dolor sit. Ipsum dolor sit amet consetetur. Lorem ipsum dolor sit amet. Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy.",
-									start : "09:00",
-									icalStart : "20161006T070000Z",
-									icalEnd : "20161006T072500Z",
-									authors : [
-										"Joel Greenyer",
-										"Sebastian Voss"
-									]
-								},
-								{
-									title : "Clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum",
-									abstract : "Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Dolor sit amet consetetur sadipscing elitr. Est lorem ipsum dolor sit. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy. Stet clita kasd gubergren no. Lorem ipsum dolor sit amet. Dolor sit amet consetetur sadipscing. Aliquyam erat sed diam voluptua.",
-									start : "09:25",
-									icalStart : "20161006T072500Z",
-									icalEnd : "20161006T075000Z",
-									authors : [
-										"Huseyin Ergin",
-										"Nicolas Hili",
-										"Bernhard Schaetz",
-										"Juan De Lara",
-										"Bran Selic",
-										"Ernesto Posse",
-										"Ivano Malavolta",
-										"Ernesto Posse"
-									]
-								},
-								{
-									title : "Sit amet consetetur sadipscing elitr",
-									abstract : "Magna aliquyam erat sed diam voluptua at vero eos et accusam et justo Amet lorem ipsum dolor sit. Lorem ipsum dolor sit amet. Magna aliquyam erat sed diam. Labore et dolore magna aliquyam. Ipsum dolor sit amet consetetur. Lorem ipsum dolor sit amet consetetur sadipscing. Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Amet consetetur sadipscing elitr sed.",
-									start : "09:50",
-									icalStart : "20161006T075000Z",
-									icalEnd : "20161006T081500Z",
-									authors : [
-										"Dalila Tamzalit",
-										"Dimitris Kolovos",
-										"Frédéric Madiot",
-										"Nicholas Matragkas",
-										"Philip Langer",
-										"Alfonso Pierantonio"
-									]
-								}
-							]
-						}
-					]
+					rowSpan : 6
 				}
 			],
 			[],
@@ -1997,16 +3572,9 @@ var data = [
 					rowSpan : 2,
 					icalStart : "20161006T083000Z",
 					icalEnd : "20161006T090000Z",
-					room : "Rotonde Surcouf",
+					room : "Grand Large",
 					events : [
-						{
-							type : "CoffeeBreak",
-							title : "Coffee Break"
-						}
 					]
-				},
-				{
-					rowSpan : 2
 				},
 				{
 					rowSpan : 2
@@ -2028,9 +3596,6 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 6
-				},
-				{
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
@@ -2040,50 +3605,53 @@ var data = [
 					events : [
 						{
 							type : "TalkSession",
-							title : "Sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut",
-							chair : "Dimitris Kolovos",
+							title : "Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero",
+							chair : "Stet No",
 							papers : [
 								{
-									title : "Dolore magna aliquyam erat sed",
-									abstract : "Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam Erat sed diam voluptua at. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Aliquyam erat sed diam voluptua at vero eos et accusam. Clita kasd gubergren no sea. Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Et accusam et justo duo. Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et. Amet lorem ipsum dolor sit amet. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit.",
+									title : "Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at",
+									abstract : "Sit amet consetetur sadipscing elitr Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Magna aliquyam erat sed diam. Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et. Diam voluptua at vero eos. Justo duo dolores et ea rebum stet clita kasd. Dolores et ea rebum stet clita kasd gubergren no sea.",
 									start : "11:00",
 									icalStart : "20161006T090000Z",
 									icalEnd : "20161006T092500Z",
 									authors : [
-										"Francis Bordeleau",
-										"Richard Paige",
-										"Federico Ciccozzi",
-										"Eugene Syriani",
-										"Eugene Syriani",
-										"Jeff Gray",
-										"Bran Selic"
+										"Lorem Lorem",
+										"Diam Et",
+										"Dolores Et",
+										"Lorem Sit",
+										"Ipsum Invidunt",
+										"Accusam Ipsum",
+										"Clita Tempor"
 									]
 								},
 								{
-									title : "Sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit",
-									abstract : "Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea Vero eos et accusam et justo. Est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr. Ea rebum stet clita kasd gubergren no sea. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. Magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores. Diam nonumy eirmod tempor invidunt. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at.",
+									title : "Diam nonumy eirmod tempor invidunt",
+									abstract : "Lorem ipsum dolor sit amet lorem ipsum dolor Kasd gubergren no sea takimata. Voluptua at vero eos et accusam. Et dolore magna aliquyam erat sed diam voluptua at vero. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur. Diam voluptua at vero eos. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.",
 									start : "11:25",
 									icalStart : "20161006T092500Z",
 									icalEnd : "20161006T095000Z",
 									authors : [
-										"Davide Di Ruscio",
-										"Michalis Famelis"
+										"Sed Kasd",
+										"Nonumy At",
+										"Rebum Sadipscing",
+										"Consetetur Erat"
 									]
 								},
 								{
-									title : "Dolores et ea rebum stet",
-									abstract : "Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita Et accusam et justo duo. Erat sed diam voluptua at vero eos et accusam et justo. Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos. Labore et dolore magna aliquyam erat sed diam voluptua at. Eirmod tempor invidunt ut labore. Dolore magna aliquyam erat sed. Sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.",
+									title : "Labore et dolore magna aliquyam erat sed diam voluptua",
+									abstract : "Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus. Et dolore magna aliquyam erat. Duo dolores et ea rebum. Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr. Sit amet consetetur sadipscing elitr. Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam. Dolor sit amet consetetur sadipscing. Dolore magna aliquyam erat sed. Lorem ipsum dolor sit amet consetetur.",
 									start : "11:50",
 									icalStart : "20161006T095000Z",
 									icalEnd : "20161006T101500Z",
 									authors : [
-										"Pascal Roques",
-										"Jean-Michel Bruel",
-										"Jean-Michel Bruel",
-										"Davide Di Ruscio",
-										"Nicolas Hili",
-										"Dalila Tamzalit",
-										"Steffen Zschaler"
+										"Diam Diam",
+										"Invidunt At",
+										"Aliquyam Et",
+										"Est Lorem",
+										"Est Et",
+										"Clita Tempor",
+										"Et Sadipscing",
+										"Kasd Dolores"
 									]
 								}
 							]
@@ -2100,44 +3668,51 @@ var data = [
 					events : [
 						{
 							type : "TalkSession",
-							title : "Sed diam voluptua at vero",
-							chair : "Davide Di Ruscio",
+							title : "Kasd gubergren no sea takimata",
+							chair : "Gubergren Duo",
 							papers : [
 								{
-									title : "Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod",
-									abstract : "Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat Est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Et ea rebum stet clita. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero. Diam voluptua at vero eos. Lorem ipsum dolor sit amet. Dolore magna aliquyam erat sed. Voluptua at vero eos et accusam et justo duo dolores et. Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Dolores et ea rebum stet. Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet.",
+									title : "Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo",
+									abstract : "Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum Lorem ipsum dolor sit amet. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Vero eos et accusam et. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Diam voluptua at vero eos. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Eirmod tempor invidunt ut labore. Vero eos et accusam et. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor.",
 									start : "11:00",
 									icalStart : "20161006T090000Z",
 									icalEnd : "20161006T092500Z",
 									authors : [
-										"Ivano Malavolta",
-										"Francis Bordeleau",
-										"Nicolas Hili"
+										"Invidunt At",
+										"Sed Sea"
 									]
 								},
 								{
-									title : "Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy",
-									abstract : "Voluptua at vero eos et accusam et justo Diam nonumy eirmod tempor invidunt. Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo. Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero. Est lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Justo duo dolores et ea. Labore et dolore magna aliquyam. Rebum stet clita kasd gubergren. Rebum stet clita kasd gubergren no.",
+									title : "Invidunt ut labore et dolore",
+									abstract : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing. Et ea rebum stet clita. Dolores et ea rebum stet. Sadipscing elitr sed diam nonumy. Magna aliquyam erat sed diam. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Stet clita kasd gubergren no sea takimata sanctus.",
 									start : "11:25",
 									icalStart : "20161006T092500Z",
 									icalEnd : "20161006T095000Z",
 									authors : [
-										"Juan De Lara",
-										"Gehan M. K. Selim"
+										"Lorem Sit",
+										"Dolores Et",
+										"Aliquyam Et",
+										"Takimata Et",
+										"Kasd Dolores",
+										"Duo Nonumy",
+										"Amet Sed",
+										"Invidunt Amet"
 									]
 								},
 								{
-									title : "Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos",
-									abstract : "Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum Clita kasd gubergren no sea. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero. Ut labore et dolore magna. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Takimata sanctus est lorem ipsum. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed.",
+									title : "Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero",
+									abstract : "Consetetur sadipscing elitr sed diam Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy. Et justo duo dolores et ea rebum stet clita kasd gubergren. Clita kasd gubergren no sea. Est lorem ipsum dolor sit amet lorem ipsum. Diam nonumy eirmod tempor invidunt. Ea rebum stet clita kasd. Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata.",
 									start : "11:50",
 									icalStart : "20161006T095000Z",
 									icalEnd : "20161006T101500Z",
 									authors : [
-										"Eugene Syriani",
-										"Nicholas Matragkas",
-										"Juergen Dingel",
-										"Nicolas Hili",
-										"Huseyin Ergin"
+										"Gubergren Ea",
+										"Et Invidunt",
+										"Stet No",
+										"Et Dolor",
+										"Amet At",
+										"Magna Labore",
+										"Dolor Eirmod"
 									]
 								}
 							]
@@ -2154,44 +3729,50 @@ var data = [
 					events : [
 						{
 							type : "TalkSession",
-							title : "Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
-							chair : "Antonio Garcia-Dominguez",
+							title : "Et accusam et justo duo",
+							chair : "Gubergren Ea",
 							papers : [
 								{
-									title : "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit",
-									abstract : "Ipsum dolor sit amet consetetur Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Et ea rebum stet clita. Ut labore et dolore magna aliquyam erat sed diam voluptua. Et accusam et justo duo dolores et ea rebum stet. Et dolore magna aliquyam erat sed diam voluptua at. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy. Dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo. Tempor invidunt ut labore et.",
+									title : "Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem",
+									abstract : "Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero Sed diam voluptua at vero. Et ea rebum stet clita kasd. Aliquyam erat sed diam voluptua. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Stet clita kasd gubergren no sea takimata sanctus est. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea.",
 									start : "11:00",
 									icalStart : "20161006T090000Z",
 									icalEnd : "20161006T092500Z",
 									authors : [
-										"Horacio Hoyos",
-										"Bran Selic",
-										"Alfonso Pierantonio",
-										"Alfonso Pierantonio"
+										"Amet At",
+										"Consetetur Erat",
+										"Diam Diam",
+										"Rebum Nonumy",
+										"Consetetur Ipsum",
+										"Sadipscing Ipsum"
 									]
 								},
 								{
-									title : "Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut",
-									abstract : "Consetetur sadipscing elitr sed diam Sit amet lorem ipsum dolor sit. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore. Eos et accusam et justo. Stet clita kasd gubergren no. Et accusam et justo duo. Duo dolores et ea rebum. Amet consetetur sadipscing elitr sed diam nonumy eirmod. Stet clita kasd gubergren no.",
+									title : "Takimata sanctus est lorem ipsum dolor sit",
+									abstract : "Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor Vero eos et accusam et justo duo dolores. Justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus. Duo dolores et ea rebum stet clita kasd gubergren no. Amet lorem ipsum dolor sit amet. Et ea rebum stet clita. Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor. Kasd gubergren no sea takimata sanctus. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur.",
 									start : "11:25",
 									icalStart : "20161006T092500Z",
 									icalEnd : "20161006T095000Z",
 									authors : [
-										"Sebastien Gerard",
-										"Horacio Hoyos"
+										"Et Sadipscing",
+										"Sed Kasd",
+										"Labore Sed",
+										"Diam Et",
+										"Nonumy Dolore",
+										"Lorem No"
 									]
 								},
 								{
-									title : "Est lorem ipsum dolor sit",
-									abstract : "Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit. Justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero. Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren. Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Rebum stet clita kasd gubergren no sea takimata sanctus est.",
+									title : "Aliquyam erat sed diam voluptua",
+									abstract : "Ipsum dolor sit amet consetetur sadipscing elitr sed diam Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum. Dolor sit amet lorem ipsum. Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore. Takimata sanctus est lorem ipsum.",
 									start : "11:50",
 									icalStart : "20161006T095000Z",
 									icalEnd : "20161006T101500Z",
 									authors : [
-										"Sebastian Voss",
-										"Alfonso Pierantonio",
-										"Frédéric Madiot",
-										"Sebastian Voss"
+										"Ipsum Invidunt",
+										"Dolores Justo",
+										"Dolores Eirmod",
+										"Takimata Et"
 									]
 								}
 							]
@@ -2247,7 +3828,18 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 6
+					start : "14:00",
+					end : "17:30",
+					rowSpan : 14,
+					icalStart : "20161006T120000Z",
+					icalEnd : "20161006T153000Z",
+					room : "Rotonde J. Cartier",
+					events : [
+						{
+							type : "Clinic",
+							title : "Clinic"
+						}
+					]
 				},
 				{
 					rowSpan : 6
@@ -2262,57 +3854,55 @@ var data = [
 					events : [
 						{
 							type : "TalkSession",
-							title : "Eirmod tempor invidunt ut labore",
-							chair : "Nicholas Matragkas",
+							title : "Kasd gubergren no sea takimata sanctus",
+							chair : "Amet Sit",
 							papers : [
 								{
-									title : "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam",
-									abstract : "Eos et accusam et justo Ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Dolor sit amet lorem ipsum. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Dolore magna aliquyam erat sed. Justo duo dolores et ea rebum stet clita. Et accusam et justo duo.",
+									title : "Et accusam et justo duo",
+									abstract : "Dolor sit amet lorem ipsum Labore et dolore magna aliquyam erat sed diam voluptua at vero. Et accusam et justo duo. Justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est. Dolor sit amet consetetur sadipscing. At vero eos et accusam et justo duo dolores. Aliquyam erat sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum stet. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos.",
 									start : "14:00",
 									icalStart : "20161006T120000Z",
 									icalEnd : "20161006T122500Z",
 									authors : [
-										"Jeff Gray",
-										"Alfonso Pierantonio",
-										"Steffen Zschaler",
-										"Horacio Hoyos",
-										"Dimitris Kolovos",
-										"Ed Seidewitz",
-										"Horacio Hoyos",
-										"Sebastian Voss"
+										"Gubergren At",
+										"Accusam Ipsum",
+										"Consetetur Erat",
+										"At No",
+										"Accusam Vero",
+										"Clita Tempor",
+										"Lorem At",
+										"Magna Labore"
 									]
 								},
 								{
-									title : "Vero eos et accusam et",
-									abstract : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Duo dolores et ea rebum. Et accusam et justo duo. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Sadipscing elitr sed diam nonumy. Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing. Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et.",
+									title : "Amet consetetur sadipscing elitr sed",
+									abstract : "Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum Labore et dolore magna aliquyam erat sed diam voluptua at vero. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Aliquyam erat sed diam voluptua. Elitr sed diam nonumy eirmod tempor invidunt ut labore et. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Diam nonumy eirmod tempor invidunt. Et ea rebum stet clita. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet.",
 									start : "14:25",
 									icalStart : "20161006T122500Z",
 									icalEnd : "20161006T125000Z",
 									authors : [
-										"Bernhard Schaetz",
-										"Daniel Ratiu",
-										"Sebastian Voss",
-										"Steffen Zschaler",
-										"Richard Paige",
-										"Cedric Brun",
-										"Antonio Garcia-Dominguez"
+										"Kasd Sanctus",
+										"Gubergren Consetetur",
+										"Invidunt Nonumy",
+										"Et Eos",
+										"Vero Et",
+										"Ipsum Magna"
 									]
 								},
 								{
-									title : "Sed diam nonumy eirmod tempor invidunt ut labore",
-									abstract : "Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero Voluptua at vero eos et. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam. Dolore magna aliquyam erat sed diam voluptua at. Voluptua at vero eos et accusam et justo duo dolores. Et ea rebum stet clita. Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd. Ipsum dolor sit amet lorem ipsum dolor sit.",
+									title : "Accusam et justo duo dolores et ea rebum stet",
+									abstract : "Sed diam voluptua at vero eos et accusam et justo Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Gubergren no sea takimata sanctus. Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo. Dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Et ea rebum stet clita. Tempor invidunt ut labore et dolore magna aliquyam erat sed. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
 									start : "14:50",
 									icalStart : "20161006T125000Z",
 									icalEnd : "20161006T131500Z",
 									authors : [
-										"Ed Seidewitz",
-										"Philip Langer",
-										"Davide Di Ruscio",
-										"Eugene Syriani",
-										"Ed Seidewitz",
-										"Juan De Lara",
-										"Dimitris Kolovos",
-										"Alfonso Pierantonio"
+										"Dolores Et",
+										"Accusam Vero",
+										"Ipsum Magna",
+										"Stet No",
+										"Duo Nonumy",
+										"Consetetur Erat",
+										"Ea Diam"
 									]
 								}
 							]
@@ -2329,44 +3919,55 @@ var data = [
 					events : [
 						{
 							type : "TalkSession",
-							title : "Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea",
-							chair : "Antonio Garcia-Dominguez",
+							title : "Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr",
+							chair : "Voluptua Voluptua",
 							papers : [
 								{
-									title : "Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
-									abstract : "Diam voluptua at vero eos Labore et dolore magna aliquyam erat sed diam voluptua at. Tempor invidunt ut labore et. Nonumy eirmod tempor invidunt ut labore et dolore. Dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo. Dolor sit amet lorem ipsum. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam.",
+									title : "Voluptua at vero eos et accusam et justo duo dolores et",
+									abstract : "Sit amet lorem ipsum dolor sit Erat sed diam voluptua at vero eos et accusam et justo duo. No sea takimata sanctus est. Ipsum dolor sit amet lorem. Sadipscing elitr sed diam nonumy. Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus. Ipsum dolor sit amet consetetur. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Diam voluptua at vero eos. Dolore magna aliquyam erat sed diam. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea.",
 									start : "14:00",
 									icalStart : "20161006T120000Z",
 									icalEnd : "20161006T122500Z",
 									authors : [
-										"Federico Ciccozzi",
-										"Steffen Zschaler"
+										"Tempor Ea",
+										"Voluptua Voluptua",
+										"No Aliquyam",
+										"Dolor Eirmod",
+										"Sadipscing Ipsum",
+										"Sed Sea",
+										"Lorem Diam"
 									]
 								},
 								{
-									title : "Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos",
-									abstract : "Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum Clita kasd gubergren no sea. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero. Ut labore et dolore magna. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Takimata sanctus est lorem ipsum. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed.",
+									title : "Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et",
+									abstract : "Rebum stet clita kasd gubergren no sea takimata sanctus Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Ea rebum stet clita kasd gubergren no sea. Sed diam voluptua at vero eos. Dolore magna aliquyam erat sed. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum. Rebum stet clita kasd gubergren no sea takimata sanctus. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Est lorem ipsum dolor sit.",
 									start : "14:25",
 									icalStart : "20161006T122500Z",
 									icalEnd : "20161006T125000Z",
 									authors : [
-										"Eugene Syriani",
-										"Nicholas Matragkas",
-										"Juergen Dingel",
-										"Nicolas Hili",
-										"Huseyin Ergin"
+										"Vero Justo",
+										"Gubergren Duo",
+										"Voluptua Dolore",
+										"Et Diam",
+										"Gubergren Consetetur",
+										"Voluptua Gubergren"
 									]
 								},
 								{
-									title : "Amet lorem ipsum dolor sit amet consetetur sadipscing elitr",
-									abstract : "Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem. Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum. Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Justo duo dolores et ea rebum. Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy. Vero eos et accusam et justo duo dolores et ea rebum.",
+									title : "Tempor invidunt ut labore et dolore magna aliquyam erat sed",
+									abstract : "Elitr sed diam nonumy eirmod tempor Et ea rebum stet clita. Ut labore et dolore magna aliquyam erat. At vero eos et accusam. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Voluptua at vero eos et. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. Stet clita kasd gubergren no. Sit amet consetetur sadipscing elitr sed diam nonumy.",
 									start : "14:50",
 									icalStart : "20161006T125000Z",
 									icalEnd : "20161006T131500Z",
 									authors : [
-										"Steffen Zschaler",
-										"Dalila Tamzalit",
-										"Eugene Syriani"
+										"Nonumy Ea",
+										"Vero Clita",
+										"Lorem No",
+										"Invidunt Amet",
+										"No Aliquyam",
+										"Lorem Lorem",
+										"Amet At",
+										"Lorem Lorem"
 									]
 								}
 							]
@@ -2383,48 +3984,43 @@ var data = [
 					events : [
 						{
 							type : "TalkSession",
-							title : "Rebum stet clita kasd gubergren",
-							chair : "Alfonso Pierantonio",
+							title : "Sit amet lorem ipsum dolor",
+							chair : "Clita Clita",
 							papers : [
 								{
-									title : "Voluptua at vero eos et",
-									abstract : "Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem. Aliquyam erat sed diam voluptua. Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam. Voluptua at vero eos et. Et dolore magna aliquyam erat sed diam voluptua. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy. Clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Aliquyam erat sed diam voluptua at vero.",
+									title : "Dolore magna aliquyam erat sed",
+									abstract : "Sadipscing elitr sed diam nonumy eirmod tempor Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Stet clita kasd gubergren no. Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. Sea takimata sanctus est lorem. Lorem ipsum dolor sit amet. Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Duo dolores et ea rebum stet clita.",
 									start : "14:00",
 									icalStart : "20161006T120000Z",
 									icalEnd : "20161006T122500Z",
 									authors : [
-										"Daniel Gritzner",
-										"Eugene Syriani",
-										"Bran Selic"
+										"Labore Sed",
+										"Clita Tempor"
 									]
 								},
 								{
-									title : "Ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam",
-									abstract : "No sea takimata sanctus est Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum. Dolor sit amet consetetur sadipscing elitr sed. Nonumy eirmod tempor invidunt ut labore et. Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo. Takimata sanctus est lorem ipsum. Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Magna aliquyam erat sed diam.",
+									title : "Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod",
+									abstract : "Rebum stet clita kasd gubergren Dolor sit amet consetetur sadipscing elitr. Dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr. Amet consetetur sadipscing elitr sed. Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Sanctus est lorem ipsum dolor sit amet. Ut labore et dolore magna. Takimata sanctus est lorem ipsum. Sanctus est lorem ipsum dolor.",
 									start : "14:25",
 									icalStart : "20161006T122500Z",
 									icalEnd : "20161006T125000Z",
 									authors : [
-										"Dimitris Kolovos",
-										"Alfonso Pierantonio",
-										"Eugene Syriani",
-										"Eugene Syriani",
-										"Alfonso Pierantonio",
-										"Gehan M. K. Selim",
-										"Sebastian Voss",
-										"Huseyin Ergin"
+										"At No",
+										"Stet Justo",
+										"Est Et",
+										"Lorem Sit",
+										"Eos Et"
 									]
 								},
 								{
-									title : "Eirmod tempor invidunt ut labore et dolore magna",
-									abstract : "Lorem ipsum dolor sit amet Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita. Elitr sed diam nonumy eirmod. Invidunt ut labore et dolore. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. Diam voluptua at vero eos. Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit. Elitr sed diam nonumy eirmod. Accusam et justo duo dolores. Rebum stet clita kasd gubergren. Kasd gubergren no sea takimata sanctus est. Lorem ipsum dolor sit amet consetetur.",
+									title : "Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo",
+									abstract : "Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum Lorem ipsum dolor sit amet. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Vero eos et accusam et. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Diam voluptua at vero eos. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Eirmod tempor invidunt ut labore. Vero eos et accusam et. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor.",
 									start : "14:50",
 									icalStart : "20161006T125000Z",
 									icalEnd : "20161006T131500Z",
 									authors : [
-										"Federico Ciccozzi",
-										"Gehan M. K. Selim",
-										"Federico Ciccozzi"
+										"Invidunt At",
+										"Sed Sea"
 									]
 								}
 							]
@@ -2448,16 +4044,9 @@ var data = [
 					rowSpan : 2,
 					icalStart : "20161006T133000Z",
 					icalEnd : "20161006T140000Z",
-					room : "Rotonde Surcouf",
+					room : "Grand Large",
 					events : [
-						{
-							type : "CoffeeBreak",
-							title : "Coffee Break"
-						}
 					]
-				},
-				{
-					rowSpan : 2
 				},
 				{
 					rowSpan : 2
@@ -2479,9 +4068,6 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 6
-				},
-				{
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
@@ -2491,50 +4077,52 @@ var data = [
 					events : [
 						{
 							type : "TalkSession",
-							title : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
-							chair : "Michalis Famelis",
+							title : "Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem",
+							chair : "Duo Nonumy",
 							papers : [
 								{
-									title : "Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et",
-									abstract : "Amet lorem ipsum dolor sit amet consetetur sadipscing Gubergren no sea takimata sanctus. Sed diam voluptua at vero eos et accusam et justo duo. Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata. Lorem ipsum dolor sit amet lorem ipsum dolor sit. Ea rebum stet clita kasd. Sit amet consetetur sadipscing elitr. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.",
+									title : "Ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam",
+									abstract : "Diam nonumy eirmod tempor invidunt Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea. Justo duo dolores et ea rebum stet clita kasd gubergren. Takimata sanctus est lorem ipsum. Labore et dolore magna aliquyam. At vero eos et accusam. Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo. Accusam et justo duo dolores. Magna aliquyam erat sed diam.",
 									start : "16:00",
 									icalStart : "20161006T140000Z",
 									icalEnd : "20161006T142500Z",
 									authors : [
-										"Frédéric Madiot",
-										"Federico Ciccozzi",
-										"Alfonso Pierantonio",
-										"Bran Selic",
-										"Pascal Roques"
+										"Voluptua Dolore",
+										"Invidunt Nonumy",
+										"Ipsum Invidunt",
+										"Aliquyam Ipsum",
+										"Vero Justo",
+										"Nonumy Sed",
+										"Stet No",
+										"Amet At"
 									]
 								},
 								{
-									title : "Elitr sed diam nonumy eirmod",
-									abstract : "Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Stet clita kasd gubergren no sea. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy. Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Clita kasd gubergren no sea takimata sanctus. Et accusam et justo duo dolores et. Aliquyam erat sed diam voluptua.",
+									title : "Amet consetetur sadipscing elitr sed",
+									abstract : "Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum Labore et dolore magna aliquyam erat sed diam voluptua at vero. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Aliquyam erat sed diam voluptua. Elitr sed diam nonumy eirmod tempor invidunt ut labore et. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Diam nonumy eirmod tempor invidunt. Et ea rebum stet clita. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet.",
 									start : "16:25",
 									icalStart : "20161006T142500Z",
 									icalEnd : "20161006T145000Z",
 									authors : [
-										"Richard Paige",
-										"Nicolas Hili",
-										"Sebastien Gerard",
-										"Huseyin Ergin",
-										"Steffen Zschaler",
-										"Dalila Tamzalit"
+										"Kasd Sanctus",
+										"Gubergren Consetetur",
+										"Invidunt Nonumy",
+										"Et Eos",
+										"Vero Et",
+										"Ipsum Magna"
 									]
 								},
 								{
-									title : "Eos et accusam et justo duo dolores et ea rebum stet",
-									abstract : "Kasd gubergren no sea takimata sanctus Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Erat sed diam voluptua at vero eos et accusam et justo. Rebum stet clita kasd gubergren. Magna aliquyam erat sed diam. Eos et accusam et justo duo dolores et ea rebum. Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. Et ea rebum stet clita kasd gubergren no sea takimata. Est lorem ipsum dolor sit.",
+									title : "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit",
+									abstract : "Lorem ipsum dolor sit amet consetetur sadipscing elitr Eos et accusam et justo. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Labore et dolore magna aliquyam erat sed diam voluptua at. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. Lorem ipsum dolor sit amet. Ut labore et dolore magna aliquyam erat sed. Ut labore et dolore magna.",
 									start : "16:50",
 									icalStart : "20161006T145000Z",
 									icalEnd : "20161006T151500Z",
 									authors : [
-										"Huseyin Ergin",
-										"Alfonso Pierantonio",
-										"Antonio Garcia-Dominguez",
-										"Juan De Lara",
-										"Joel Greenyer"
+										"Magna Dolore",
+										"Magna Labore",
+										"Sit Sadipscing",
+										"Eos Et"
 									]
 								}
 							]
@@ -2551,49 +4139,52 @@ var data = [
 					events : [
 						{
 							type : "TalkSession",
-							title : "Amet lorem ipsum dolor sit amet consetetur",
-							chair : "Ed Seidewitz",
+							title : "Rebum stet clita kasd gubergren",
+							chair : "Lorem Diam",
 							papers : [
 								{
-									title : "Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt",
-									abstract : "Dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo Amet consetetur sadipscing elitr sed diam. Eirmod tempor invidunt ut labore. Elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr. Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt. Justo duo dolores et ea. Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Lorem ipsum dolor sit amet. Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor. Et accusam et justo duo dolores et ea rebum stet clita kasd.",
+									title : "Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit",
+									abstract : "Erat sed diam voluptua at vero eos et accusam et Elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy. Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita. Dolor sit amet lorem ipsum. Et ea rebum stet clita. Amet lorem ipsum dolor sit amet consetetur sadipscing. Elitr sed diam nonumy eirmod tempor invidunt ut. Amet consetetur sadipscing elitr sed. Invidunt ut labore et dolore.",
 									start : "16:00",
 									icalStart : "20161006T140000Z",
 									icalEnd : "20161006T142500Z",
 									authors : [
-										"Jeff Gray",
-										"Ivano Malavolta",
-										"Richard Paige"
+										"Gubergren Consetetur",
+										"Labore Sed",
+										"Voluptua Voluptua",
+										"Diam Et",
+										"Ipsum Invidunt",
+										"Ipsum Magna",
+										"Ipsum Magna"
 									]
 								},
 								{
-									title : "Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero",
-									abstract : "Voluptua at vero eos et accusam et justo duo dolores Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea. Sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores. Ipsum dolor sit amet lorem. Est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Eos et accusam et justo duo dolores et ea rebum stet. Ipsum dolor sit amet lorem. Dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Dolore magna aliquyam erat sed.",
+									title : "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit",
+									abstract : "Lorem ipsum dolor sit amet consetetur sadipscing elitr Eos et accusam et justo. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Labore et dolore magna aliquyam erat sed diam voluptua at. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. Lorem ipsum dolor sit amet. Ut labore et dolore magna aliquyam erat sed. Ut labore et dolore magna.",
 									start : "16:25",
 									icalStart : "20161006T142500Z",
 									icalEnd : "20161006T145000Z",
 									authors : [
-										"Francis Bordeleau",
-										"Eugene Syriani",
-										"Nicholas Matragkas",
-										"Dalila Tamzalit",
-										"Michalis Famelis",
-										"Richard Paige",
-										"Michalis Famelis",
-										"Nicolas Hili"
+										"Magna Dolore",
+										"Magna Labore",
+										"Sit Sadipscing",
+										"Eos Et"
 									]
 								},
 								{
-									title : "Est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed",
-									abstract : "Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam Rebum stet clita kasd gubergren. Labore et dolore magna aliquyam erat sed diam voluptua at vero. Eos et accusam et justo duo dolores et ea. Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore. Erat sed diam voluptua at. Justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore. Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Accusam et justo duo dolores.",
+									title : "Sanctus est lorem ipsum dolor sit amet lorem ipsum",
+									abstract : "Voluptua at vero eos et accusam et justo duo dolores At vero eos et accusam et justo. Elitr sed diam nonumy eirmod tempor invidunt ut. Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd. Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy.",
 									start : "16:50",
 									icalStart : "20161006T145000Z",
 									icalEnd : "20161006T151500Z",
 									authors : [
-										"Dimitris Kolovos",
-										"Davide Di Ruscio",
-										"Daniel Ratiu",
-										"Antonio Garcia-Dominguez"
+										"At No",
+										"Sea Amet",
+										"Amet Sit",
+										"Diam Et",
+										"Nonumy Ea",
+										"Est Et",
+										"Dolores Justo"
 									]
 								}
 							]
@@ -2610,48 +4201,88 @@ var data = [
 					events : [
 						{
 							type : "TalkSession",
-							title : "Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur",
-							chair : "Michalis Famelis",
+							title : "Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua",
+							chair : "Gubergren At",
 							papers : [
 								{
-									title : "Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua",
-									abstract : "Sit amet lorem ipsum dolor Ipsum dolor sit amet consetetur. Eos et accusam et justo. Kasd gubergren no sea takimata. Elitr sed diam nonumy eirmod. Ut labore et dolore magna aliquyam erat sed diam voluptua at. Est lorem ipsum dolor sit. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren no.",
+									title : "No sea takimata sanctus est lorem ipsum",
+									abstract : "Duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem Sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea. Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum. Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Sit amet consetetur sadipscing elitr. Dolores et ea rebum stet clita kasd gubergren no sea. Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam. Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Dolore magna aliquyam erat sed. Sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr.",
 									start : "16:00",
 									icalStart : "20161006T140000Z",
 									icalEnd : "20161006T142500Z",
 									authors : [
-										"Frédéric Madiot",
-										"Cedric Brun",
-										"Frédéric Madiot",
-										"Nicolas Hili",
-										"Steffen Zschaler"
+										"No Aliquyam",
+										"Aliquyam Ipsum",
+										"Amet Et",
+										"Kasd Dolores",
+										"Accusam Vero",
+										"Stet Justo",
+										"Duo Gubergren"
 									]
 								},
 								{
-									title : "Voluptua at vero eos et accusam",
-									abstract : "Sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore Erat sed diam voluptua at vero eos et accusam et justo. Sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Erat sed diam voluptua at vero eos et accusam et justo duo. Est lorem ipsum dolor sit. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam. Duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem. Eos et accusam et justo.",
+									title : "No sea takimata sanctus est lorem ipsum dolor sit amet",
+									abstract : "Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur Accusam et justo duo dolores et ea rebum stet clita kasd. Kasd gubergren no sea takimata sanctus est. Gubergren no sea takimata sanctus. Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt. Sit amet consetetur sadipscing elitr. Clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Erat sed diam voluptua at.",
 									start : "16:25",
 									icalStart : "20161006T142500Z",
 									icalEnd : "20161006T145000Z",
 									authors : [
-										"Daniel Ratiu",
-										"Richard Paige"
+										"Stet Est",
+										"Accusam Ipsum",
+										"Kasd Sanctus",
+										"Amet At",
+										"Consetetur Ipsum",
+										"Sed Sea"
 									]
 								},
 								{
-									title : "Justo duo dolores et ea rebum",
-									abstract : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam Est lorem ipsum dolor sit. Duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Justo duo dolores et ea. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Magna aliquyam erat sed diam voluptua at vero. Diam voluptua at vero eos et. Dolor sit amet lorem ipsum. No sea takimata sanctus est lorem ipsum dolor.",
+									title : "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam",
+									abstract : "Kasd gubergren no sea takimata Sit amet lorem ipsum dolor sit amet consetetur sadipscing. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Vero eos et accusam et justo duo dolores et ea rebum stet clita. Duo dolores et ea rebum. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Et justo duo dolores et. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Lorem ipsum dolor sit amet lorem ipsum.",
 									start : "16:50",
 									icalStart : "20161006T145000Z",
 									icalEnd : "20161006T151500Z",
 									authors : [
-										"Antonio Garcia-Dominguez",
-										"Davide Di Ruscio",
-										"Ivano Malavolta"
+										"Amet Sed",
+										"Dolor No",
+										"Aliquyam Ipsum",
+										"Magna Takimata"
 									]
 								}
 							]
 						}
+					]
+				}
+			],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[
+				{
+					start : "17:30",
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					start : "17:30",
+					end : "19:00",
+					rowSpan : 6,
+					icalStart : "20161006T153000Z",
+					icalEnd : "20161006T170000Z",
+					room : "Lamennais 4+5",
+					events : [
 					]
 				}
 			],
@@ -2667,7 +4298,7 @@ var data = [
 		date : "20161007",
 		rooms : [
 			{
-				name : "Rotonde Surcouf"
+				name : "Rotonde J. Cartier"
 			},
 			{
 				name : "Grand Large"
@@ -2705,187 +4336,13 @@ var data = [
 					icalEnd : "20161007T083000Z",
 					room : "Chateaubriand",
 					events : [
-						{
-							type : "TalkSession",
-							title : "Sit amet consetetur sadipscing elitr sed diam",
-							chair : "Jean-Michel Bruel",
-							papers : [
-								{
-									title : "Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod",
-									abstract : "Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero Et accusam et justo duo. Eos et accusam et justo. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Sit amet consetetur sadipscing elitr sed diam. Eos et accusam et justo duo dolores et ea rebum. Sadipscing elitr sed diam nonumy eirmod tempor. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Et ea rebum stet clita. Elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
-									start : "09:00",
-									icalStart : "20161007T070000Z",
-									icalEnd : "20161007T072500Z",
-									authors : [
-										"Cedric Brun",
-										"Bran Selic",
-										"Richard Paige",
-										"Horacio Hoyos",
-										"Sebastian Voss",
-										"Dalila Tamzalit",
-										"Dalila Tamzalit",
-										"Francis Bordeleau"
-									]
-								},
-								{
-									title : "Ipsum dolor sit amet consetetur",
-									abstract : "Clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum Vero eos et accusam et justo duo dolores et ea rebum stet clita kasd. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Sed diam voluptua at vero. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Sadipscing elitr sed diam nonumy. Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Et justo duo dolores et. Eirmod tempor invidunt ut labore et dolore.",
-									start : "09:25",
-									icalStart : "20161007T072500Z",
-									icalEnd : "20161007T075000Z",
-									authors : [
-										"Alfonso Pierantonio",
-										"Philip Langer",
-										"Sebastien Gerard",
-										"Ed Seidewitz",
-										"Alfonso Pierantonio",
-										"Ernesto Posse",
-										"Gehan M. K. Selim"
-									]
-								},
-								{
-									title : "Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor",
-									abstract : "Dolor sit amet consetetur sadipscing Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Et justo duo dolores et ea rebum stet clita kasd gubergren no sea. Lorem ipsum dolor sit amet. Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing. Clita kasd gubergren no sea takimata sanctus est. Eirmod tempor invidunt ut labore. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam.",
-									start : "09:50",
-									icalStart : "20161007T075000Z",
-									icalEnd : "20161007T081500Z",
-									authors : [
-										"Nicolas Hili",
-										"Eugene Syriani",
-										"Philip Langer",
-										"Pascal Roques",
-										"Davide Di Ruscio",
-										"Ed Seidewitz",
-										"Francis Bordeleau",
-										"Juan De Lara"
-									]
-								}
-							]
-						}
 					]
 				},
 				{
-					start : "09:00",
-					end : "10:30",
-					rowSpan : 6,
-					icalStart : "20161007T070000Z",
-					icalEnd : "20161007T083000Z",
-					room : "Lamennais 1+2",
-					events : [
-						{
-							type : "TalkSession",
-							title : "Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur",
-							chair : "Sebastien Gerard",
-							papers : [
-								{
-									title : "Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor",
-									abstract : "Est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy. Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata. Stet clita kasd gubergren no. Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Dolor sit amet consetetur sadipscing. Consetetur sadipscing elitr sed diam.",
-									start : "09:00",
-									icalStart : "20161007T070000Z",
-									icalEnd : "20161007T072500Z",
-									authors : [
-										"Francis Bordeleau",
-										"Horacio Hoyos",
-										"Philip Langer",
-										"Juan De Lara",
-										"Juergen Dingel",
-										"Antonio Garcia-Dominguez",
-										"Huseyin Ergin"
-									]
-								},
-								{
-									title : "Dolores et ea rebum stet clita kasd gubergren no sea",
-									abstract : "Duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem Vero eos et accusam et justo duo dolores et ea rebum stet. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Nonumy eirmod tempor invidunt ut labore et dolore magna. Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing. Ut labore et dolore magna aliquyam erat.",
-									start : "09:25",
-									icalStart : "20161007T072500Z",
-									icalEnd : "20161007T075000Z",
-									authors : [
-										"Eugene Syriani",
-										"Jeff Gray",
-										"Bran Selic",
-										"Nicolas Hili"
-									]
-								},
-								{
-									title : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt",
-									abstract : "Et dolore magna aliquyam erat Kasd gubergren no sea takimata. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum. Eos et accusam et justo duo dolores et. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit. Ipsum dolor sit amet lorem ipsum dolor sit. Sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor. Diam voluptua at vero eos et.",
-									start : "09:50",
-									icalStart : "20161007T075000Z",
-									icalEnd : "20161007T081500Z",
-									authors : [
-										"Richard Paige",
-										"Philip Langer",
-										"Nicolas Hili",
-										"Steffen Zschaler",
-										"Tanja Mayerhofer"
-									]
-								}
-							]
-						}
-					]
+					rowSpan : 6
 				},
 				{
-					start : "09:00",
-					end : "10:30",
-					rowSpan : 6,
-					icalStart : "20161007T070000Z",
-					icalEnd : "20161007T083000Z",
-					room : "Lamennais 4+5",
-					events : [
-						{
-							type : "TalkSession",
-							title : "At vero eos et accusam",
-							chair : "Alfonso Pierantonio",
-							papers : [
-								{
-									title : "Dolore magna aliquyam erat sed",
-									abstract : "Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam Erat sed diam voluptua at. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Aliquyam erat sed diam voluptua at vero eos et accusam. Clita kasd gubergren no sea. Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Et accusam et justo duo. Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et. Amet lorem ipsum dolor sit amet. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit.",
-									start : "09:00",
-									icalStart : "20161007T070000Z",
-									icalEnd : "20161007T072500Z",
-									authors : [
-										"Francis Bordeleau",
-										"Richard Paige",
-										"Federico Ciccozzi",
-										"Eugene Syriani",
-										"Eugene Syriani",
-										"Jeff Gray",
-										"Bran Selic"
-									]
-								},
-								{
-									title : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut",
-									abstract : "Dolore magna aliquyam erat sed diam voluptua Est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Clita kasd gubergren no sea. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. Stet clita kasd gubergren no sea takimata sanctus est lorem. Stet clita kasd gubergren no. Erat sed diam voluptua at. Labore et dolore magna aliquyam.",
-									start : "09:25",
-									icalStart : "20161007T072500Z",
-									icalEnd : "20161007T075000Z",
-									authors : [
-										"Eugene Syriani",
-										"Dalila Tamzalit",
-										"Sebastian Voss",
-										"Daniel Gritzner",
-										"Daniel Gritzner",
-										"Horacio Hoyos",
-										"Cedric Brun",
-										"Jean-Michel Bruel"
-									]
-								},
-								{
-									title : "Dolor sit amet lorem ipsum dolor sit amet consetetur",
-									abstract : "Justo duo dolores et ea Eirmod tempor invidunt ut labore. Aliquyam erat sed diam voluptua. Duo dolores et ea rebum. Et ea rebum stet clita kasd gubergren no. Ipsum dolor sit amet lorem ipsum dolor. Aliquyam erat sed diam voluptua. Stet clita kasd gubergren no. Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor.",
-									start : "09:50",
-									icalStart : "20161007T075000Z",
-									icalEnd : "20161007T081500Z",
-									authors : [
-										"Bernhard Schaetz",
-										"Tanja Mayerhofer",
-										"Steffen Zschaler",
-										"Juan De Lara"
-									]
-								}
-							]
-						}
-					]
+					rowSpan : 6
 				}
 			],
 			[],
@@ -2904,459 +4361,19 @@ var data = [
 					rowSpan : 2,
 					icalStart : "20161007T083000Z",
 					icalEnd : "20161007T090000Z",
-					room : "Rotonde Surcouf",
+					room : "Rotonde J. Cartier",
 					events : [
-						{
-							type : "CoffeeBreak",
-							title : "Coffee Break"
-						}
 					]
 				},
 				{
-					rowSpan : 2
-				},
-				{
-					rowSpan : 2
-				},
-				{
-					rowSpan : 2
-				},
-				{
-					rowSpan : 2
-				}
-			],
-			[],
-			[
-				{
-					start : "11:00",
-					rowSpan : 6
-				},
-				{
-					rowSpan : 6
-				},
-				{
-					rowSpan : 6
-				},
-				{
-					start : "11:00",
-					end : "12:30",
-					rowSpan : 6,
-					icalStart : "20161007T090000Z",
-					icalEnd : "20161007T103000Z",
-					room : "Chateaubriand",
-					events : [
-						{
-							type : "TalkSession",
-							title : "At vero eos et accusam et justo",
-							chair : "Juan De Lara",
-							papers : [
-								{
-									title : "Elitr sed diam nonumy eirmod",
-									abstract : "Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Stet clita kasd gubergren no sea. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy. Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Clita kasd gubergren no sea takimata sanctus. Et accusam et justo duo dolores et. Aliquyam erat sed diam voluptua.",
-									start : "11:00",
-									icalStart : "20161007T090000Z",
-									icalEnd : "20161007T092500Z",
-									authors : [
-										"Richard Paige",
-										"Nicolas Hili",
-										"Sebastien Gerard",
-										"Huseyin Ergin",
-										"Steffen Zschaler",
-										"Dalila Tamzalit"
-									]
-								},
-								{
-									title : "Labore et dolore magna aliquyam erat sed diam voluptua",
-									abstract : "Accusam et justo duo dolores et ea rebum stet clita kasd gubergren No sea takimata sanctus est lorem ipsum dolor. Sea takimata sanctus est lorem. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. Dolor sit amet consetetur sadipscing. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd. Eos et accusam et justo duo dolores et ea rebum stet clita kasd. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem. Invidunt ut labore et dolore. Aliquyam erat sed diam voluptua. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et.",
-									start : "11:25",
-									icalStart : "20161007T092500Z",
-									icalEnd : "20161007T095000Z",
-									authors : [
-										"Eugene Syriani",
-										"Nicholas Matragkas",
-										"Alfonso Pierantonio",
-										"Dimitris Kolovos"
-									]
-								},
-								{
-									title : "Dolores et ea rebum stet clita",
-									abstract : "Invidunt ut labore et dolore Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd. Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero. Aliquyam erat sed diam voluptua at. Sit amet lorem ipsum dolor. Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit. Rebum stet clita kasd gubergren.",
-									start : "11:50",
-									icalStart : "20161007T095000Z",
-									icalEnd : "20161007T101500Z",
-									authors : [
-										"Nicolas Hili",
-										"Alfonso Pierantonio",
-										"Ed Seidewitz",
-										"Horacio Hoyos",
-										"Philip Langer"
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					start : "11:00",
-					end : "12:30",
-					rowSpan : 6,
-					icalStart : "20161007T090000Z",
-					icalEnd : "20161007T103000Z",
-					room : "Lamennais 1+2",
-					events : [
-						{
-							type : "TalkSession",
-							title : "Invidunt ut labore et dolore magna aliquyam erat",
-							chair : "Gehan M. K. Selim",
-							papers : [
-								{
-									title : "Nonumy eirmod tempor invidunt ut",
-									abstract : "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit Sed diam nonumy eirmod tempor invidunt ut labore. Nonumy eirmod tempor invidunt ut labore et dolore. Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Stet clita kasd gubergren no sea takimata sanctus est lorem. Duo dolores et ea rebum stet clita kasd. Tempor invidunt ut labore et dolore magna aliquyam erat. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur. Rebum stet clita kasd gubergren. Dolore magna aliquyam erat sed.",
-									start : "11:00",
-									icalStart : "20161007T090000Z",
-									icalEnd : "20161007T092500Z",
-									authors : [
-										"Francis Bordeleau",
-										"Pascal Roques",
-										"Eugene Syriani",
-										"Tanja Mayerhofer",
-										"Alfonso Pierantonio"
-									]
-								},
-								{
-									title : "Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et",
-									abstract : "Amet lorem ipsum dolor sit amet consetetur sadipscing Gubergren no sea takimata sanctus. Sed diam voluptua at vero eos et accusam et justo duo. Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata. Lorem ipsum dolor sit amet lorem ipsum dolor sit. Ea rebum stet clita kasd. Sit amet consetetur sadipscing elitr. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.",
-									start : "11:25",
-									icalStart : "20161007T092500Z",
-									icalEnd : "20161007T095000Z",
-									authors : [
-										"Frédéric Madiot",
-										"Federico Ciccozzi",
-										"Alfonso Pierantonio",
-										"Bran Selic",
-										"Pascal Roques"
-									]
-								},
-								{
-									title : "Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy",
-									abstract : "Voluptua at vero eos et accusam et justo Diam nonumy eirmod tempor invidunt. Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo. Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero. Est lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Justo duo dolores et ea. Labore et dolore magna aliquyam. Rebum stet clita kasd gubergren. Rebum stet clita kasd gubergren no.",
-									start : "11:50",
-									icalStart : "20161007T095000Z",
-									icalEnd : "20161007T101500Z",
-									authors : [
-										"Juan De Lara",
-										"Gehan M. K. Selim"
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					start : "11:00",
-					end : "12:30",
-					rowSpan : 6,
-					icalStart : "20161007T090000Z",
-					icalEnd : "20161007T103000Z",
-					room : "Lamennais 4+5",
-					events : [
-						{
-							type : "TalkSession",
-							title : "Kasd gubergren no sea takimata",
-							chair : "Jean-Michel Bruel",
-							papers : [
-								{
-									title : "Justo duo dolores et ea rebum stet clita kasd",
-									abstract : "Ipsum dolor sit amet lorem ipsum Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt. Et ea rebum stet clita kasd gubergren no sea takimata. Et justo duo dolores et. Stet clita kasd gubergren no sea takimata. Elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. No sea takimata sanctus est lorem ipsum dolor sit amet lorem. Gubergren no sea takimata sanctus. Elitr sed diam nonumy eirmod. Et justo duo dolores et.",
-									start : "11:00",
-									icalStart : "20161007T090000Z",
-									icalEnd : "20161007T092500Z",
-									authors : [
-										"Philip Langer",
-										"Juan De Lara",
-										"Richard Paige",
-										"Gehan M. K. Selim",
-										"Richard Paige",
-										"Michalis Famelis",
-										"Bernhard Schaetz"
-									]
-								},
-								{
-									title : "Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea",
-									abstract : "Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem Ut labore et dolore magna aliquyam erat. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore. Vero eos et accusam et justo duo dolores. Et justo duo dolores et. Dolor sit amet consetetur sadipscing. Dolores et ea rebum stet clita kasd gubergren no. Eirmod tempor invidunt ut labore et. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam. Clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Et justo duo dolores et.",
-									start : "11:25",
-									icalStart : "20161007T092500Z",
-									icalEnd : "20161007T095000Z",
-									authors : [
-										"Ed Seidewitz",
-										"Daniel Gritzner",
-										"Ivano Malavolta",
-										"Horacio Hoyos"
-									]
-								},
-								{
-									title : "Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam",
-									abstract : "Et ea rebum stet clita Et ea rebum stet clita. Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata. Gubergren no sea takimata sanctus. Amet lorem ipsum dolor sit. Ipsum dolor sit amet lorem ipsum. Lorem ipsum dolor sit amet. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. Ea rebum stet clita kasd gubergren no sea. Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit.",
-									start : "11:50",
-									icalStart : "20161007T095000Z",
-									icalEnd : "20161007T101500Z",
-									authors : [
-										"Sebastien Gerard",
-										"Bran Selic"
-									]
-								}
-							]
-						}
-					]
-				}
-			],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[
-				{
-					start : "12:30",
-					rowSpan : 6
-				},
-				{
-					rowSpan : 6
-				},
-				{
-					start : "12:30",
-					end : "14:00",
-					rowSpan : 6,
-					icalStart : "20161007T103000Z",
-					icalEnd : "20161007T120000Z",
+					start : "10:30",
+					end : "11:00",
+					rowSpan : 2,
+					icalStart : "20161007T083000Z",
+					icalEnd : "20161007T090000Z",
 					room : "Grand Large",
 					events : [
 						{
-							type : "Lunch",
-							title : "Lunch"
-						}
-					]
-				},
-				{
-					rowSpan : 6
-				},
-				{
-					rowSpan : 6
-				},
-				{
-					rowSpan : 6
-				}
-			],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[
-				{
-					start : "14:00",
-					rowSpan : 6
-				},
-				{
-					rowSpan : 6
-				},
-				{
-					rowSpan : 6
-				},
-				{
-					start : "14:00",
-					end : "15:30",
-					rowSpan : 6,
-					icalStart : "20161007T120000Z",
-					icalEnd : "20161007T133000Z",
-					room : "Chateaubriand",
-					events : [
-						{
-							type : "TalkSession",
-							title : "Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor",
-							chair : "Frédéric Madiot",
-							papers : [
-								{
-									title : "Dolor sit amet consetetur sadipscing",
-									abstract : "Ea rebum stet clita kasd Sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore. Sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur. Ea rebum stet clita kasd. Est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Ipsum dolor sit amet consetetur sadipscing elitr sed. Et justo duo dolores et. At vero eos et accusam et justo duo.",
-									start : "14:00",
-									icalStart : "20161007T120000Z",
-									icalEnd : "20161007T122500Z",
-									authors : [
-										"Federico Ciccozzi",
-										"Michalis Famelis",
-										"Antonio Garcia-Dominguez",
-										"Jean-Michel Bruel",
-										"Nicolas Hili"
-									]
-								},
-								{
-									title : "Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea",
-									abstract : "Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem Ut labore et dolore magna aliquyam erat. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore. Vero eos et accusam et justo duo dolores. Et justo duo dolores et. Dolor sit amet consetetur sadipscing. Dolores et ea rebum stet clita kasd gubergren no. Eirmod tempor invidunt ut labore et. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam. Clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Et justo duo dolores et.",
-									start : "14:25",
-									icalStart : "20161007T122500Z",
-									icalEnd : "20161007T125000Z",
-									authors : [
-										"Ed Seidewitz",
-										"Daniel Gritzner",
-										"Ivano Malavolta",
-										"Horacio Hoyos"
-									]
-								},
-								{
-									title : "Justo duo dolores et ea rebum",
-									abstract : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam Est lorem ipsum dolor sit. Duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Justo duo dolores et ea. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Magna aliquyam erat sed diam voluptua at vero. Diam voluptua at vero eos et. Dolor sit amet lorem ipsum. No sea takimata sanctus est lorem ipsum dolor.",
-									start : "14:50",
-									icalStart : "20161007T125000Z",
-									icalEnd : "20161007T131500Z",
-									authors : [
-										"Antonio Garcia-Dominguez",
-										"Davide Di Ruscio",
-										"Ivano Malavolta"
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					start : "14:00",
-					end : "15:30",
-					rowSpan : 6,
-					icalStart : "20161007T120000Z",
-					icalEnd : "20161007T133000Z",
-					room : "Lamennais 1+2",
-					events : [
-						{
-							type : "TalkSession",
-							title : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore",
-							chair : "Daniel Ratiu",
-							papers : [
-								{
-									title : "Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum",
-									abstract : "Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero. Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Takimata sanctus est lorem ipsum. Diam voluptua at vero eos. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Et accusam et justo duo. Kasd gubergren no sea takimata. Magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores. Dolore magna aliquyam erat sed.",
-									start : "14:00",
-									icalStart : "20161007T120000Z",
-									icalEnd : "20161007T122500Z",
-									authors : [
-										"Cedric Brun",
-										"Gehan M. K. Selim",
-										"Nicholas Matragkas",
-										"Ivano Malavolta",
-										"Alfonso Pierantonio",
-										"Gehan M. K. Selim"
-									]
-								},
-								{
-									title : "Amet consetetur sadipscing elitr sed diam nonumy",
-									abstract : "Sea takimata sanctus est lorem ipsum dolor sit amet Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor. Takimata sanctus est lorem ipsum dolor sit. Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt. Kasd gubergren no sea takimata. Ea rebum stet clita kasd. Dolore magna aliquyam erat sed. Clita kasd gubergren no sea. Est lorem ipsum dolor sit.",
-									start : "14:25",
-									icalStart : "20161007T122500Z",
-									icalEnd : "20161007T125000Z",
-									authors : [
-										"Davide Di Ruscio",
-										"Frédéric Madiot",
-										"Daniel Gritzner",
-										"Philip Langer"
-									]
-								},
-								{
-									title : "Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
-									abstract : "Diam voluptua at vero eos Labore et dolore magna aliquyam erat sed diam voluptua at. Tempor invidunt ut labore et. Nonumy eirmod tempor invidunt ut labore et dolore. Dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo. Dolor sit amet lorem ipsum. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam.",
-									start : "14:50",
-									icalStart : "20161007T125000Z",
-									icalEnd : "20161007T131500Z",
-									authors : [
-										"Federico Ciccozzi",
-										"Steffen Zschaler"
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					start : "14:00",
-					end : "15:30",
-					rowSpan : 6,
-					icalStart : "20161007T120000Z",
-					icalEnd : "20161007T133000Z",
-					room : "Lamennais 4+5",
-					events : [
-						{
-							type : "TalkSession",
-							title : "Amet consetetur sadipscing elitr sed",
-							chair : "Huseyin Ergin",
-							papers : [
-								{
-									title : "Diam nonumy eirmod tempor invidunt",
-									abstract : "Accusam et justo duo dolores Labore et dolore magna aliquyam. Et justo duo dolores et ea rebum stet clita kasd gubergren no sea. Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Clita kasd gubergren no sea takimata sanctus est. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua.",
-									start : "14:00",
-									icalStart : "20161007T120000Z",
-									icalEnd : "20161007T122500Z",
-									authors : [
-										"Nicholas Matragkas",
-										"Pascal Roques",
-										"Horacio Hoyos",
-										"Juergen Dingel",
-										"Ed Seidewitz",
-										"Sebastian Voss",
-										"Frédéric Madiot"
-									]
-								},
-								{
-									title : "Sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut",
-									abstract : "Kasd gubergren no sea takimata Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. No sea takimata sanctus est. No sea takimata sanctus est. Dolores et ea rebum stet. Sanctus est lorem ipsum dolor sit. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Nonumy eirmod tempor invidunt ut. Sea takimata sanctus est lorem ipsum. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor.",
-									start : "14:25",
-									icalStart : "20161007T122500Z",
-									icalEnd : "20161007T125000Z",
-									authors : [
-										"Davide Di Ruscio",
-										"Philip Langer",
-										"Juergen Dingel"
-									]
-								},
-								{
-									title : "Clita kasd gubergren no sea",
-									abstract : "Clita kasd gubergren no sea takimata Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit. Stet clita kasd gubergren no. Sea takimata sanctus est lorem ipsum dolor sit amet. Dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Invidunt ut labore et dolore. Sit amet consetetur sadipscing elitr. Ipsum dolor sit amet lorem. Sea takimata sanctus est lorem ipsum dolor sit amet. Aliquyam erat sed diam voluptua.",
-									start : "14:50",
-									icalStart : "20161007T125000Z",
-									icalEnd : "20161007T131500Z",
-									authors : [
-										"Richard Paige",
-										"Daniel Ratiu",
-										"Bernhard Schaetz",
-										"Philip Langer",
-										"Michalis Famelis",
-										"Sebastian Voss",
-										"Tanja Mayerhofer",
-										"Alfonso Pierantonio"
-									]
-								}
-							]
-						}
-					]
-				}
-			],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[
-				{
-					start : "15:30",
-					rowSpan : 2
-				},
-				{
-					start : "15:30",
-					end : "16:00",
-					rowSpan : 2,
-					icalStart : "20161007T133000Z",
-					icalEnd : "20161007T140000Z",
-					room : "Rotonde Surcouf",
-					events : [
-						{
 							type : "CoffeeBreak",
 							title : "Coffee Break"
 						}
@@ -3370,15 +4387,12 @@ var data = [
 				},
 				{
 					rowSpan : 2
-				},
-				{
-					rowSpan : 2
 				}
 			],
 			[],
 			[
 				{
-					start : "16:00",
+					start : "11:00",
 					rowSpan : 6
 				},
 				{
@@ -3388,55 +4402,57 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					start : "16:00",
-					end : "17:30",
+					start : "11:00",
+					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161007T140000Z",
-					icalEnd : "20161007T153000Z",
+					icalStart : "20161007T090000Z",
+					icalEnd : "20161007T103000Z",
 					room : "Chateaubriand",
 					events : [
 						{
 							type : "TalkSession",
-							title : "Rebum stet clita kasd gubergren no sea takimata",
-							chair : "Philip Langer",
+							title : "Accusam et justo duo dolores et ea rebum",
+							chair : "At Justo",
 							papers : [
 								{
+									title : "Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus",
+									abstract : "Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed Voluptua at vero eos et. Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et. Elitr sed diam nonumy eirmod tempor invidunt ut labore et. Diam nonumy eirmod tempor invidunt. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Et justo duo dolores et. Clita kasd gubergren no sea takimata sanctus. Erat sed diam voluptua at vero eos et. Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus.",
+									start : "11:00",
+									icalStart : "20161007T090000Z",
+									icalEnd : "20161007T092500Z",
+									authors : [
+										"Tempor Ut",
+										"Est Lorem",
+										"Sit Sadipscing",
+										"Et Eos",
+										"Voluptua Voluptua",
+										"Diam Diam",
+										"Et Invidunt"
+									]
+								},
+								{
 									title : "Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet",
-									abstract : "Elitr sed diam nonumy eirmod Amet consetetur sadipscing elitr sed. Clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Dolores et ea rebum stet. At vero eos et accusam. Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum. No sea takimata sanctus est.",
-									start : "16:00",
-									icalStart : "20161007T140000Z",
-									icalEnd : "20161007T142500Z",
+									abstract : "Lorem ipsum dolor sit amet consetetur sadipscing elitr Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Vero eos et accusam et. Diam voluptua at vero eos et accusam et justo. Consetetur sadipscing elitr sed diam. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Stet clita kasd gubergren no.",
+									start : "11:25",
+									icalStart : "20161007T092500Z",
+									icalEnd : "20161007T095000Z",
 									authors : [
-										"Daniel Gritzner",
-										"Nicholas Matragkas",
-										"Francis Bordeleau",
-										"Sebastian Voss",
-										"Philip Langer",
-										"Eugene Syriani",
-										"Juergen Dingel",
-										"Sebastien Gerard"
+										"Ut Accusam",
+										"Duo Nonumy",
+										"No Aliquyam",
+										"Accusam Vero"
 									]
 								},
 								{
-									title : "Sadipscing elitr sed diam nonumy eirmod tempor",
-									abstract : "Dolor sit amet lorem ipsum Ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore. Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Rebum stet clita kasd gubergren no. Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore. Nonumy eirmod tempor invidunt ut. Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et. Sadipscing elitr sed diam nonumy. Eirmod tempor invidunt ut labore et.",
-									start : "16:25",
-									icalStart : "20161007T142500Z",
-									icalEnd : "20161007T145000Z",
+									title : "Gubergren no sea takimata sanctus",
+									abstract : "Sea takimata sanctus est lorem Lorem ipsum dolor sit amet. Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum. Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus. Dolores et ea rebum stet. Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et. Et dolore magna aliquyam erat. Est lorem ipsum dolor sit amet lorem ipsum. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum.",
+									start : "11:50",
+									icalStart : "20161007T095000Z",
+									icalEnd : "20161007T101500Z",
 									authors : [
-										"Antonio Garcia-Dominguez",
-										"Juergen Dingel"
-									]
-								},
-								{
-									title : "Ea rebum stet clita kasd gubergren no sea takimata sanctus est",
-									abstract : "Invidunt ut labore et dolore Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea. Et dolore magna aliquyam erat. Eos et accusam et justo. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor. Magna aliquyam erat sed diam voluptua at vero eos et. At vero eos et accusam. Est lorem ipsum dolor sit. Sit amet lorem ipsum dolor.",
-									start : "16:50",
-									icalStart : "20161007T145000Z",
-									icalEnd : "20161007T151500Z",
-									authors : [
-										"Alfonso Pierantonio",
-										"Cedric Brun"
+										"Consetetur Erat",
+										"Duo Gubergren",
+										"Amet Sed"
 									]
 								}
 							]
@@ -3444,54 +4460,53 @@ var data = [
 					]
 				},
 				{
-					start : "16:00",
-					end : "17:30",
+					start : "11:00",
+					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161007T140000Z",
-					icalEnd : "20161007T153000Z",
+					icalStart : "20161007T090000Z",
+					icalEnd : "20161007T103000Z",
 					room : "Lamennais 1+2",
 					events : [
 						{
 							type : "TalkSession",
-							title : "Invidunt ut labore et dolore magna aliquyam erat sed",
-							chair : "Antonio Garcia-Dominguez",
+							title : "Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea",
+							chair : "Stet Justo",
 							papers : [
 								{
-									title : "Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at",
-									abstract : "Sed diam voluptua at vero Vero eos et accusam et. Lorem ipsum dolor sit amet. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Eirmod tempor invidunt ut labore. Rebum stet clita kasd gubergren no sea takimata sanctus. Sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore. Est lorem ipsum dolor sit. Ea rebum stet clita kasd gubergren no sea takimata sanctus.",
-									start : "16:00",
-									icalStart : "20161007T140000Z",
-									icalEnd : "20161007T142500Z",
+									title : "Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit",
+									abstract : "Sit amet consetetur sadipscing elitr Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Stet clita kasd gubergren no. Amet consetetur sadipscing elitr sed. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est. Clita kasd gubergren no sea. Vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et.",
+									start : "11:00",
+									icalStart : "20161007T090000Z",
+									icalEnd : "20161007T092500Z",
 									authors : [
-										"Davide Di Ruscio",
-										"Dimitris Kolovos"
+										"Accusam Ipsum",
+										"Magna Dolore",
+										"Accusam Ipsum",
+										"Labore Sed"
 									]
 								},
 								{
-									title : "Sit amet consetetur sadipscing elitr",
-									abstract : "Magna aliquyam erat sed diam voluptua at vero eos et accusam et justo Amet lorem ipsum dolor sit. Lorem ipsum dolor sit amet. Magna aliquyam erat sed diam. Labore et dolore magna aliquyam. Ipsum dolor sit amet consetetur. Lorem ipsum dolor sit amet consetetur sadipscing. Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Amet consetetur sadipscing elitr sed.",
-									start : "16:25",
-									icalStart : "20161007T142500Z",
-									icalEnd : "20161007T145000Z",
+									title : "Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed",
+									abstract : "Et accusam et justo duo Amet consetetur sadipscing elitr sed. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Clita kasd gubergren no sea. Eirmod tempor invidunt ut labore. Ipsum dolor sit amet consetetur sadipscing elitr sed. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Et accusam et justo duo. Consetetur sadipscing elitr sed diam.",
+									start : "11:25",
+									icalStart : "20161007T092500Z",
+									icalEnd : "20161007T095000Z",
 									authors : [
-										"Dalila Tamzalit",
-										"Dimitris Kolovos",
-										"Frédéric Madiot",
-										"Nicholas Matragkas",
-										"Philip Langer",
-										"Alfonso Pierantonio"
+										"Labore Sed",
+										"Et Eos",
+										"Stet No"
 									]
 								},
 								{
-									title : "Ipsum dolor sit amet lorem",
-									abstract : "Sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit Vero eos et accusam et justo duo dolores et ea. Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata. Sit amet consetetur sadipscing elitr. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Et accusam et justo duo. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Ut labore et dolore magna aliquyam erat sed.",
-									start : "16:50",
-									icalStart : "20161007T145000Z",
-									icalEnd : "20161007T151500Z",
+									title : "Sadipscing elitr sed diam nonumy",
+									abstract : "Stet clita kasd gubergren no sea Accusam et justo duo dolores. Sed diam voluptua at vero. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt. Diam nonumy eirmod tempor invidunt. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. At vero eos et accusam et justo duo dolores et ea.",
+									start : "11:50",
+									icalStart : "20161007T095000Z",
+									icalEnd : "20161007T101500Z",
 									authors : [
-										"Daniel Ratiu",
-										"Dalila Tamzalit",
-										"Sebastien Gerard"
+										"Dolores Et",
+										"Vero Et",
+										"Sed Kasd"
 									]
 								}
 							]
@@ -3499,66 +4514,62 @@ var data = [
 					]
 				},
 				{
-					start : "16:00",
-					end : "17:30",
+					start : "11:00",
+					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161007T140000Z",
-					icalEnd : "20161007T153000Z",
+					icalStart : "20161007T090000Z",
+					icalEnd : "20161007T103000Z",
 					room : "Lamennais 4+5",
 					events : [
 						{
 							type : "TalkSession",
-							title : "Eirmod tempor invidunt ut labore",
-							chair : "Nicholas Matragkas",
+							title : "Est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed",
+							chair : "Duo Nonumy",
 							papers : [
 								{
-									title : "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam",
-									abstract : "Eos et accusam et justo Ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Dolor sit amet lorem ipsum. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Dolore magna aliquyam erat sed. Justo duo dolores et ea rebum stet clita. Et accusam et justo duo.",
-									start : "16:00",
-									icalStart : "20161007T140000Z",
-									icalEnd : "20161007T142500Z",
+									title : "Ea rebum stet clita kasd",
+									abstract : "Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet Dolor sit amet lorem ipsum. Erat sed diam voluptua at. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Labore et dolore magna aliquyam. Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea. Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata. Clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Lorem ipsum dolor sit amet. Elitr sed diam nonumy eirmod. Aliquyam erat sed diam voluptua.",
+									start : "11:00",
+									icalStart : "20161007T090000Z",
+									icalEnd : "20161007T092500Z",
 									authors : [
-										"Jeff Gray",
-										"Alfonso Pierantonio",
-										"Steffen Zschaler",
-										"Horacio Hoyos",
-										"Dimitris Kolovos",
-										"Ed Seidewitz",
-										"Horacio Hoyos",
-										"Sebastian Voss"
+										"Est Lorem",
+										"Tempor Ut",
+										"Stet Est",
+										"Ea Nonumy"
 									]
 								},
 								{
-									title : "Vero eos et accusam et",
-									abstract : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Duo dolores et ea rebum. Et accusam et justo duo. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Sadipscing elitr sed diam nonumy. Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing. Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et.",
-									start : "16:25",
-									icalStart : "20161007T142500Z",
-									icalEnd : "20161007T145000Z",
+									title : "Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore",
+									abstract : "Sed diam voluptua at vero eos et accusam et justo duo dolores Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur. Dolor sit amet consetetur sadipscing. Magna aliquyam erat sed diam. Aliquyam erat sed diam voluptua. Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et.",
+									start : "11:25",
+									icalStart : "20161007T092500Z",
+									icalEnd : "20161007T095000Z",
 									authors : [
-										"Bernhard Schaetz",
-										"Daniel Ratiu",
-										"Sebastian Voss",
-										"Steffen Zschaler",
-										"Richard Paige",
-										"Cedric Brun",
-										"Antonio Garcia-Dominguez"
+										"Nonumy At",
+										"Gubergren At",
+										"Ea Diam",
+										"Et Diam",
+										"At Justo",
+										"No Aliquyam",
+										"Tempor Et"
 									]
 								},
 								{
-									title : "Sed diam nonumy eirmod tempor invidunt ut labore",
-									abstract : "Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero Voluptua at vero eos et. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam. Dolore magna aliquyam erat sed diam voluptua at. Voluptua at vero eos et accusam et justo duo dolores. Et ea rebum stet clita. Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd. Ipsum dolor sit amet lorem ipsum dolor sit.",
-									start : "16:50",
-									icalStart : "20161007T145000Z",
-									icalEnd : "20161007T151500Z",
+									title : "Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod",
+									abstract : "Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus Et accusam et justo duo. Dolor sit amet consetetur sadipscing elitr sed. Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo. Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore. Sed diam nonumy eirmod tempor. Justo duo dolores et ea. Elitr sed diam nonumy eirmod. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore. Aliquyam erat sed diam voluptua at vero eos et.",
+									start : "11:50",
+									icalStart : "20161007T095000Z",
+									icalEnd : "20161007T101500Z",
 									authors : [
-										"Ed Seidewitz",
-										"Philip Langer",
-										"Davide Di Ruscio",
-										"Eugene Syriani",
-										"Ed Seidewitz",
-										"Juan De Lara",
-										"Dimitris Kolovos",
-										"Alfonso Pierantonio"
+										"Nonumy Accusam",
+										"Et Et",
+										"Gubergren At",
+										"Kasd Sanctus",
+										"Nonumy Sed",
+										"Magna Takimata",
+										"Et Eos",
+										"Eirmod Consetetur"
 									]
 								}
 							]

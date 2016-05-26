@@ -212,14 +212,17 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cLunchParserRuleCall_8 = (RuleCall)cAlternatives.eContents().get(8);
 		private final RuleCall cCoffeeBreakParserRuleCall_9 = (RuleCall)cAlternatives.eContents().get(9);
 		private final RuleCall cMeetingParserRuleCall_10 = (RuleCall)cAlternatives.eContents().get(10);
+		private final RuleCall cSRCParserRuleCall_11 = (RuleCall)cAlternatives.eContents().get(11);
+		private final RuleCall cPosterParserRuleCall_12 = (RuleCall)cAlternatives.eContents().get(12);
+		private final RuleCall cKeyNoteParserRuleCall_13 = (RuleCall)cAlternatives.eContents().get(13);
 		
 		//Event:
 		//	TalkSession | Panel | Workshop | Tutorial | DoctoralSymposium | EducatorSymposium | Reception | Clinic | Lunch |
-		//	CoffeeBreak | Meeting;
+		//	CoffeeBreak | Meeting | SRC | Poster | KeyNote;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//TalkSession | Panel | Workshop | Tutorial | DoctoralSymposium | EducatorSymposium | Reception | Clinic | Lunch |
-		//CoffeeBreak | Meeting
+		//CoffeeBreak | Meeting | SRC | Poster | KeyNote
 		public Alternatives getAlternatives() { return cAlternatives; }
 		
 		//TalkSession
@@ -254,6 +257,15 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//Meeting
 		public RuleCall getMeetingParserRuleCall_10() { return cMeetingParserRuleCall_10; }
+		
+		//SRC
+		public RuleCall getSRCParserRuleCall_11() { return cSRCParserRuleCall_11; }
+		
+		//Poster
+		public RuleCall getPosterParserRuleCall_12() { return cPosterParserRuleCall_12; }
+		
+		//KeyNote
+		public RuleCall getKeyNoteParserRuleCall_13() { return cKeyNoteParserRuleCall_13; }
 	}
 	public class EStringElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.EString");
@@ -765,6 +777,142 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//Person
 		public RuleCall getModeratorsPersonParserRuleCall_4_2_1_0() { return cModeratorsPersonParserRuleCall_4_2_1_0; }
+	}
+	public class SRCElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.SRC");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cSRCKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cNameEStringParserRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
+		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
+		private final Keyword cAbstractKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
+		private final Assignment cAbstractAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
+		private final RuleCall cAbstractEStringParserRuleCall_2_1_0 = (RuleCall)cAbstractAssignment_2_1.eContents().get(0);
+		
+		//SRC:
+		//	'SRC'
+		//	name=EString ('abstract' abstract=EString)?;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//'SRC' name=EString ('abstract' abstract=EString)?
+		public Group getGroup() { return cGroup; }
+		
+		//'SRC'
+		public Keyword getSRCKeyword_0() { return cSRCKeyword_0; }
+		
+		//name=EString
+		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
+		
+		//EString
+		public RuleCall getNameEStringParserRuleCall_1_0() { return cNameEStringParserRuleCall_1_0; }
+		
+		//('abstract' abstract=EString)?
+		public Group getGroup_2() { return cGroup_2; }
+		
+		//'abstract'
+		public Keyword getAbstractKeyword_2_0() { return cAbstractKeyword_2_0; }
+		
+		//abstract=EString
+		public Assignment getAbstractAssignment_2_1() { return cAbstractAssignment_2_1; }
+		
+		//EString
+		public RuleCall getAbstractEStringParserRuleCall_2_1_0() { return cAbstractEStringParserRuleCall_2_1_0; }
+	}
+	public class PosterElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.Poster");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cPosterKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cNameEStringParserRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
+		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
+		private final Keyword cAbstractKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
+		private final Assignment cAbstractAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
+		private final RuleCall cAbstractEStringParserRuleCall_2_1_0 = (RuleCall)cAbstractAssignment_2_1.eContents().get(0);
+		
+		//Poster:
+		//	'Poster'
+		//	name=EString ('abstract' abstract=EString)?;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//'Poster' name=EString ('abstract' abstract=EString)?
+		public Group getGroup() { return cGroup; }
+		
+		//'Poster'
+		public Keyword getPosterKeyword_0() { return cPosterKeyword_0; }
+		
+		//name=EString
+		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
+		
+		//EString
+		public RuleCall getNameEStringParserRuleCall_1_0() { return cNameEStringParserRuleCall_1_0; }
+		
+		//('abstract' abstract=EString)?
+		public Group getGroup_2() { return cGroup_2; }
+		
+		//'abstract'
+		public Keyword getAbstractKeyword_2_0() { return cAbstractKeyword_2_0; }
+		
+		//abstract=EString
+		public Assignment getAbstractAssignment_2_1() { return cAbstractAssignment_2_1; }
+		
+		//EString
+		public RuleCall getAbstractEStringParserRuleCall_2_1_0() { return cAbstractEStringParserRuleCall_2_1_0; }
+	}
+	public class KeyNoteElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.KeyNote");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cKeyNoteKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cNameEStringParserRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
+		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
+		private final Keyword cAbstractKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
+		private final Assignment cAbstractAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
+		private final RuleCall cAbstractEStringParserRuleCall_2_1_0 = (RuleCall)cAbstractAssignment_2_1.eContents().get(0);
+		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
+		private final Keyword cSpeakerKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
+		private final Assignment cSpeakerAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
+		private final RuleCall cSpeakerPersonParserRuleCall_3_1_0 = (RuleCall)cSpeakerAssignment_3_1.eContents().get(0);
+		
+		//KeyNote:
+		//	'KeyNote'
+		//	name=EString ('abstract' abstract=EString)? ('speaker' speaker=Person)?;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//'KeyNote' name=EString ('abstract' abstract=EString)? ('speaker' speaker=Person)?
+		public Group getGroup() { return cGroup; }
+		
+		//'KeyNote'
+		public Keyword getKeyNoteKeyword_0() { return cKeyNoteKeyword_0; }
+		
+		//name=EString
+		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
+		
+		//EString
+		public RuleCall getNameEStringParserRuleCall_1_0() { return cNameEStringParserRuleCall_1_0; }
+		
+		//('abstract' abstract=EString)?
+		public Group getGroup_2() { return cGroup_2; }
+		
+		//'abstract'
+		public Keyword getAbstractKeyword_2_0() { return cAbstractKeyword_2_0; }
+		
+		//abstract=EString
+		public Assignment getAbstractAssignment_2_1() { return cAbstractAssignment_2_1; }
+		
+		//EString
+		public RuleCall getAbstractEStringParserRuleCall_2_1_0() { return cAbstractEStringParserRuleCall_2_1_0; }
+		
+		//('speaker' speaker=Person)?
+		public Group getGroup_3() { return cGroup_3; }
+		
+		//'speaker'
+		public Keyword getSpeakerKeyword_3_0() { return cSpeakerKeyword_3_0; }
+		
+		//speaker=Person
+		public Assignment getSpeakerAssignment_3_1() { return cSpeakerAssignment_3_1; }
+		
+		//Person
+		public RuleCall getSpeakerPersonParserRuleCall_3_1_0() { return cSpeakerPersonParserRuleCall_3_1_0; }
 	}
 	public class WorkshopElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.Workshop");
@@ -1557,6 +1705,9 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	private final SessionElements pSession;
 	private final TalkSessionElements pTalkSession;
 	private final PanelElements pPanel;
+	private final SRCElements pSRC;
+	private final PosterElements pPoster;
+	private final KeyNoteElements pKeyNote;
 	private final WorkshopElements pWorkshop;
 	private final TutorialElements pTutorial;
 	private final DoctoralSymposiumElements pDoctoralSymposium;
@@ -1593,6 +1744,9 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		this.pSession = new SessionElements();
 		this.pTalkSession = new TalkSessionElements();
 		this.pPanel = new PanelElements();
+		this.pSRC = new SRCElements();
+		this.pPoster = new PosterElements();
+		this.pKeyNote = new KeyNoteElements();
 		this.pWorkshop = new WorkshopElements();
 		this.pTutorial = new TutorialElements();
 		this.pDoctoralSymposium = new DoctoralSymposiumElements();
@@ -1659,7 +1813,7 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//Event:
 	//	TalkSession | Panel | Workshop | Tutorial | DoctoralSymposium | EducatorSymposium | Reception | Clinic | Lunch |
-	//	CoffeeBreak | Meeting;
+	//	CoffeeBreak | Meeting | SRC | Poster | KeyNote;
 	public EventElements getEventAccess() {
 		return pEvent;
 	}
@@ -1782,6 +1936,39 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	
 	public ParserRule getPanelRule() {
 		return getPanelAccess().getRule();
+	}
+	
+	//SRC:
+	//	'SRC'
+	//	name=EString ('abstract' abstract=EString)?;
+	public SRCElements getSRCAccess() {
+		return pSRC;
+	}
+	
+	public ParserRule getSRCRule() {
+		return getSRCAccess().getRule();
+	}
+	
+	//Poster:
+	//	'Poster'
+	//	name=EString ('abstract' abstract=EString)?;
+	public PosterElements getPosterAccess() {
+		return pPoster;
+	}
+	
+	public ParserRule getPosterRule() {
+		return getPosterAccess().getRule();
+	}
+	
+	//KeyNote:
+	//	'KeyNote'
+	//	name=EString ('abstract' abstract=EString)? ('speaker' speaker=Person)?;
+	public KeyNoteElements getKeyNoteAccess() {
+		return pKeyNote;
+	}
+	
+	public ParserRule getKeyNoteRule() {
+		return getKeyNoteAccess().getRule();
 	}
 	
 	//Workshop:

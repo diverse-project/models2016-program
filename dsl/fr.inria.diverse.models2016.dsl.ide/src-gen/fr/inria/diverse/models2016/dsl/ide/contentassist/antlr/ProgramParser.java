@@ -67,6 +67,13 @@ public class ProgramParser extends AbstractContentAssistParser {
 					put(grammarAccess.getPanelAccess().getGroup_3_2(), "rule__Panel__Group_3_2__0");
 					put(grammarAccess.getPanelAccess().getGroup_4(), "rule__Panel__Group_4__0");
 					put(grammarAccess.getPanelAccess().getGroup_4_2(), "rule__Panel__Group_4_2__0");
+					put(grammarAccess.getSRCAccess().getGroup(), "rule__SRC__Group__0");
+					put(grammarAccess.getSRCAccess().getGroup_2(), "rule__SRC__Group_2__0");
+					put(grammarAccess.getPosterAccess().getGroup(), "rule__Poster__Group__0");
+					put(grammarAccess.getPosterAccess().getGroup_2(), "rule__Poster__Group_2__0");
+					put(grammarAccess.getKeyNoteAccess().getGroup(), "rule__KeyNote__Group__0");
+					put(grammarAccess.getKeyNoteAccess().getGroup_2(), "rule__KeyNote__Group_2__0");
+					put(grammarAccess.getKeyNoteAccess().getGroup_3(), "rule__KeyNote__Group_3__0");
 					put(grammarAccess.getWorkshopAccess().getGroup(), "rule__Workshop__Group__0");
 					put(grammarAccess.getWorkshopAccess().getGroup_2(), "rule__Workshop__Group_2__0");
 					put(grammarAccess.getWorkshopAccess().getGroup_3(), "rule__Workshop__Group_3__0");
@@ -136,6 +143,13 @@ public class ProgramParser extends AbstractContentAssistParser {
 					put(grammarAccess.getPanelAccess().getPanelistsAssignment_3_2_1(), "rule__Panel__PanelistsAssignment_3_2_1");
 					put(grammarAccess.getPanelAccess().getModeratorsAssignment_4_1(), "rule__Panel__ModeratorsAssignment_4_1");
 					put(grammarAccess.getPanelAccess().getModeratorsAssignment_4_2_1(), "rule__Panel__ModeratorsAssignment_4_2_1");
+					put(grammarAccess.getSRCAccess().getNameAssignment_1(), "rule__SRC__NameAssignment_1");
+					put(grammarAccess.getSRCAccess().getAbstractAssignment_2_1(), "rule__SRC__AbstractAssignment_2_1");
+					put(grammarAccess.getPosterAccess().getNameAssignment_1(), "rule__Poster__NameAssignment_1");
+					put(grammarAccess.getPosterAccess().getAbstractAssignment_2_1(), "rule__Poster__AbstractAssignment_2_1");
+					put(grammarAccess.getKeyNoteAccess().getNameAssignment_1(), "rule__KeyNote__NameAssignment_1");
+					put(grammarAccess.getKeyNoteAccess().getAbstractAssignment_2_1(), "rule__KeyNote__AbstractAssignment_2_1");
+					put(grammarAccess.getKeyNoteAccess().getSpeakerAssignment_3_1(), "rule__KeyNote__SpeakerAssignment_3_1");
 					put(grammarAccess.getWorkshopAccess().getNameAssignment_1(), "rule__Workshop__NameAssignment_1");
 					put(grammarAccess.getWorkshopAccess().getAbstractAssignment_2_1(), "rule__Workshop__AbstractAssignment_2_1");
 					put(grammarAccess.getWorkshopAccess().getUrlAssignment_3_1(), "rule__Workshop__UrlAssignment_3_1");

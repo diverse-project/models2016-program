@@ -148,6 +148,18 @@ public class Models2016AdapterFactory extends AdapterFactoryImpl {
 				return createMeetingAdapter();
 			}
 			@Override
+			public Adapter caseSRC(SRC object) {
+				return createSRCAdapter();
+			}
+			@Override
+			public Adapter casePoster(Poster object) {
+				return createPosterAdapter();
+			}
+			@Override
+			public Adapter caseKeyNote(KeyNote object) {
+				return createKeyNoteAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -444,6 +456,48 @@ public class Models2016AdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMeetingAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link models2016.SRC <em>SRC</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see models2016.SRC
+	 * @generated
+	 */
+	public Adapter createSRCAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link models2016.Poster <em>Poster</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see models2016.Poster
+	 * @generated
+	 */
+	public Adapter createPosterAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link models2016.KeyNote <em>Key Note</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see models2016.KeyNote
+	 * @generated
+	 */
+	public Adapter createKeyNoteAdapter() {
 		return null;
 	}
 

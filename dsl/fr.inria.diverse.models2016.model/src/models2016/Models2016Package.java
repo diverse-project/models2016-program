@@ -1141,6 +1141,153 @@ public interface Models2016Package extends EPackage {
 	int MEETING_OPERATION_COUNT = EVENT_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link models2016.impl.SRCImpl <em>SRC</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see models2016.impl.SRCImpl
+	 * @see models2016.impl.Models2016PackageImpl#getSRC()
+	 * @generated
+	 */
+	int SRC = 20;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SRC__NAME = EVENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Abstract</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SRC__ABSTRACT = EVENT__ABSTRACT;
+
+	/**
+	 * The number of structural features of the '<em>SRC</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SRC_FEATURE_COUNT = EVENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>SRC</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SRC_OPERATION_COUNT = EVENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link models2016.impl.PosterImpl <em>Poster</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see models2016.impl.PosterImpl
+	 * @see models2016.impl.Models2016PackageImpl#getPoster()
+	 * @generated
+	 */
+	int POSTER = 21;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTER__NAME = EVENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Abstract</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTER__ABSTRACT = EVENT__ABSTRACT;
+
+	/**
+	 * The number of structural features of the '<em>Poster</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTER_FEATURE_COUNT = EVENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Poster</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTER_OPERATION_COUNT = EVENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link models2016.impl.KeyNoteImpl <em>Key Note</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see models2016.impl.KeyNoteImpl
+	 * @see models2016.impl.Models2016PackageImpl#getKeyNote()
+	 * @generated
+	 */
+	int KEY_NOTE = 22;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int KEY_NOTE__NAME = EVENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Abstract</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int KEY_NOTE__ABSTRACT = EVENT__ABSTRACT;
+
+	/**
+	 * The feature id for the '<em><b>Speaker</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int KEY_NOTE__SPEAKER = EVENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Key Note</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int KEY_NOTE_FEATURE_COUNT = EVENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Key Note</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int KEY_NOTE_OPERATION_COUNT = EVENT_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link models2016.WeekDay <em>Week Day</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1148,7 +1295,7 @@ public interface Models2016Package extends EPackage {
 	 * @see models2016.impl.Models2016PackageImpl#getWeekDay()
 	 * @generated
 	 */
-	int WEEK_DAY = 20;
+	int WEEK_DAY = 23;
 
 	/**
 	 * The meta object id for the '{@link models2016.Track <em>Track</em>}' enum.
@@ -1158,7 +1305,7 @@ public interface Models2016Package extends EPackage {
 	 * @see models2016.impl.Models2016PackageImpl#getTrack()
 	 * @generated
 	 */
-	int TRACK = 21;
+	int TRACK = 24;
 
 	/**
 	 * The meta object id for the '<em>Hour Data Type</em>' data type.
@@ -1168,7 +1315,7 @@ public interface Models2016Package extends EPackage {
 	 * @see models2016.impl.Models2016PackageImpl#getHourDataType()
 	 * @generated
 	 */
-	int HOUR_DATA_TYPE = 22;
+	int HOUR_DATA_TYPE = 25;
 
 	/**
 	 * The meta object id for the '<em>Day Data Type</em>' data type.
@@ -1178,7 +1325,7 @@ public interface Models2016Package extends EPackage {
 	 * @see models2016.impl.Models2016PackageImpl#getDayDataType()
 	 * @generated
 	 */
-	int DAY_DATA_TYPE = 23;
+	int DAY_DATA_TYPE = 26;
 
 	/**
 	 * Returns the meta object for class '{@link models2016.Day <em>Day</em>}'.
@@ -1777,6 +1924,47 @@ public interface Models2016Package extends EPackage {
 	EClass getMeeting();
 
 	/**
+	 * Returns the meta object for class '{@link models2016.SRC <em>SRC</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>SRC</em>'.
+	 * @see models2016.SRC
+	 * @generated
+	 */
+	EClass getSRC();
+
+	/**
+	 * Returns the meta object for class '{@link models2016.Poster <em>Poster</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Poster</em>'.
+	 * @see models2016.Poster
+	 * @generated
+	 */
+	EClass getPoster();
+
+	/**
+	 * Returns the meta object for class '{@link models2016.KeyNote <em>Key Note</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Key Note</em>'.
+	 * @see models2016.KeyNote
+	 * @generated
+	 */
+	EClass getKeyNote();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link models2016.KeyNote#getSpeaker <em>Speaker</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Speaker</em>'.
+	 * @see models2016.KeyNote#getSpeaker()
+	 * @see #getKeyNote()
+	 * @generated
+	 */
+	EReference getKeyNote_Speaker();
+
+	/**
 	 * Returns the meta object for enum '{@link models2016.WeekDay <em>Week Day</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2328,6 +2516,44 @@ public interface Models2016Package extends EPackage {
 		 * @generated
 		 */
 		EClass MEETING = eINSTANCE.getMeeting();
+
+		/**
+		 * The meta object literal for the '{@link models2016.impl.SRCImpl <em>SRC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see models2016.impl.SRCImpl
+		 * @see models2016.impl.Models2016PackageImpl#getSRC()
+		 * @generated
+		 */
+		EClass SRC = eINSTANCE.getSRC();
+
+		/**
+		 * The meta object literal for the '{@link models2016.impl.PosterImpl <em>Poster</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see models2016.impl.PosterImpl
+		 * @see models2016.impl.Models2016PackageImpl#getPoster()
+		 * @generated
+		 */
+		EClass POSTER = eINSTANCE.getPoster();
+
+		/**
+		 * The meta object literal for the '{@link models2016.impl.KeyNoteImpl <em>Key Note</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see models2016.impl.KeyNoteImpl
+		 * @see models2016.impl.Models2016PackageImpl#getKeyNote()
+		 * @generated
+		 */
+		EClass KEY_NOTE = eINSTANCE.getKeyNote();
+
+		/**
+		 * The meta object literal for the '<em><b>Speaker</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference KEY_NOTE__SPEAKER = eINSTANCE.getKeyNote_Speaker();
 
 		/**
 		 * The meta object literal for the '{@link models2016.WeekDay <em>Week Day</em>}' enum.
