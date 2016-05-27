@@ -285,9 +285,9 @@ Conference "Models 2016"
 		Poster "Poster";
 		
 		Opening "General Chairs Opening";
-		Opening "Program Commitee Opening";
+		Opening "Program Committee Opening";
 		
-		Meeting "Models Steering Commitee Meeting";
+		Meeting "MODELS Steering Committee Meeting";
 		Meeting "SoSyM Editorial Board Meeting";
 		
 		Clinic "Clinic";
@@ -741,9 +741,9 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		Wednesday
 			date 16.10.05
 			
-			08:45 - 09:00 in "Chateaubriand" : "Program Commitee Opening"
+			08:45 - 09:00 in "Chateaubriand" : "General Chairs Opening"
 			
-			09:00 - 09:15 in "Chateaubriand" : "General Chairs Opening"
+			09:00 - 09:15 in "Chateaubriand" : "Program Commitee Opening"
 			
 			09:15 - 10:30 in "Chateaubriand" : "Resurrecting Laplace’s Demon: The Case for Deterministic Models"
 			
