@@ -1,0 +1,154 @@
+/* Text style */
+
+body {
+    color: #555555;
+    font-size: small;
+}
+
+.title {
+    color: #588fb3;
+}
+
+.day {
+    color: #588fb3;
+}
+
+
+
+
+/* Table style */
+
+.table {
+
+}
+
+.table tr {
+    min-height: 30px;
+    height: 1px;
+}
+
+.table th {
+    background-color: #588fb3;
+    color: white;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.table td {
+    min-width: 100px;
+    max-width: 300px;
+    word-wrap: break-word;
+    padding: 2px !important;
+    white-space: normal !important;
+    height: inherit;
+    border: none !important;
+}
+
+
+
+.table .table {
+    background-color: transparent;
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+.table .table td {
+    border: none;
+    padding: 2px;
+    border-radius: 6px;
+}
+
+.table .table td:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+
+.sessionColumn {
+
+}
+
+
+/* Other styles */
+
+.star {
+    text-align: center;
+}
+
+.eventType {
+    height: 5px;
+    width: 100%;
+}
+
+footer {
+    text-align: right;
+}
+
+/* Modal style */
+.abstract {
+    text-align: justify;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+
+/* Type of events */
+
+.TalkSession {
+    background-color: rgba(173, 255, 47, 0.5);
+    /*background-color: greenyellow;*/
+}
+
+.Panel {
+    background-color: rgba(255, 249, 40, 0.5);
+}
+
+.Workshop {
+    background-color: rgba(255, 167, 45, 0.5);
+}
+
+.Tutorial {
+    background-color: rgba(255, 46, 51, 0.5);
+}
+
+.DoctoralSymposium {
+    background-color: rgba(162, 53, 255, 0.5);
+}
+
+.EducatorSymposium {
+    background-color: rgba(119, 61, 255, 0.5);
+}
+
+.Reception {
+    background-color: rgba(61, 188, 255, 0.5);
+}
+
+.Clinic {
+    background-color: rgba(54, 255, 225, 0.5);
+}
+
+.Lunch {
+    background-color: rgba(176, 180, 178, 0.5);
+    text-align: center;
+}
+
+.CoffeeBreak {
+    background-color: rgba(176, 180, 178, 0.5);
+    text-align: center;
+}
+
+.SRC {
+    background-color: rgba(41, 150, 180, 0.5);
+}
+
+.Poster {
+    background-color: rgba(41, 150, 180, 0.5);
+}
+
+.Keynote {
+    background-color: rgba(41, 150, 180, 0.5);
+}
+
+.Meeting {
+    background-color: rgba(41, 150, 180, 0.5);
+}
