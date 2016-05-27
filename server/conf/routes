@@ -1,7 +1,8 @@
 # Routes
 GET     /                           controllers.ProgramController.index
+GET     /completeIcal               controllers.ProgramController.getCompleteIcal
 POST    /generateIcal               controllers.ProgramController.generateIcal
-GET     /getIcal/:id                controllers.ProgramController.ical(id : String)
+GET     /getIcal/:id                controllers.ProgramController.getIcal(id : String)
 
 # Static resources
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

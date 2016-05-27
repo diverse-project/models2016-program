@@ -12,10 +12,8 @@
 
             <div class="checkbox">
                 <label><input type="checkbox" ng-model="showFavorites" ng-change="toggleFavorites()"> Show only <span class="glyphicon glyphicon-star"></span></label>
-                <button class="btn btn-default" ng-click="exportToCal(true)">Export <span class="glyphicon glyphicon-star"></span> to iCal</button>
-                <button class="btn btn-default" ng-click="exportToCal(false)">Export all to iCal</button>
-                @*<a class="btn btn-default" ng-href="{{favoriteTalksUrl}}" download="models.ics" target="_blank">Download</a>*@
-                <button class="btn btn-default" ng-click="test()">Test</button>
+                <button class="btn btn-default" ng-click="generateIcal()">Export <span class="glyphicon glyphicon-star"></span> to iCal</button>
+                <a class="btn btn-default" href='@routes.ProgramController.getCompleteIcal()' download="models.ics">Export all to iCal</a>
             </div>
 
                 <!-- Modal for more info on talk -->
