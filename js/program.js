@@ -16,7 +16,7 @@ modelsApp.controller("ProgramController", function($scope) {
     }
 
     $scope.hideType = function(talkType) {
-        return typeof talkType === "undefined" || ["Poster", "SRC", "DoctoralSymposium", "Clinic"].indexOf(talkType) !== -1
+        return typeof talkType === "undefined" || ["Poster", "SRC", "DoctoralSymposium", "Clinic", "EducatorSymposium"].indexOf(talkType) !== -1
     };
 
     ////// Preprocess data //////
