@@ -41,7 +41,7 @@
                             </button>
 
                             <!-- Title -->
-                            <strong ng-if="selectedTalk.type">{{selectedTalk.type}}:</strong>
+                            <strong ng-if="!hideType(selectedTalk.type)">{{selectedTalk.type}}:</strong>
                             <a ng-if="selectedTalk.url" ng-href="{{selectedTalk.url}}">{{selectedTalk.title}}</a>
                             <span ng-if="!selectedTalk.url">{{selectedTalk.title}}</span>
                         </h4>
@@ -51,22 +51,17 @@
                         <!-- Organizers -->
                         <div ng-if="selectedTalk.organizers.length > 0">
                             <strong>Organizers:</strong>
-                            <span ng-repeat="organizer in selectedTalk.organizers">
-                                <span ng-if="$index > 0">, </span>
-                                <a ng-if="organizer.email" ng-href="mailto:{{organizer.email}}">{{organizer.name}}</a>
-                                <span ng-if="!organizer.email">{{organizer.name}}</span>
-                            </span>
+                            <span ng-repeat="organizer in selectedTalk.organizers">{{$index > 0 ? ", " : ""}}<a ng-if="organizer.email" ng-href="mailto:{{organizer.email}}">{{organizer.name}}</a><span ng-if="!organizer.email">{{organizer.name}}</span></span>
                         </div>
 
                         <!-- Authors -->
                         <div ng-if="selectedTalk.authors">
                             <strong>Authors:</strong>
-                            <span ng-repeat="author in selectedTalk.authors">
-                                <span ng-if="$index > 0">, </span>
-                                {{author}}
-                                <a ng-if="author.email" ng-href="mailto:{{author.email}}">{{author.name}}</a>
-                                <span ng-if="!author.email">{{author.name}}</span>
-                            </span>
+                            <span ng-repeat="author in selectedTalk.authors">{{$index > 0 ? ", " : ""}}<a ng-if="author.email" ng-href="mailto:{{author.email}}">{{author.name}}</a><span ng-if="!author.email">{{author.name}}</span></span>
+                        </div>
+
+                        <div ng-if="selectedTalk.url">
+                            <strong>Website:</strong> <a ng-href="{{selectedTalk.url}}">{{selectedTalk.url}}</a>
                         </div>
 
                         <!-- Abstract -->
