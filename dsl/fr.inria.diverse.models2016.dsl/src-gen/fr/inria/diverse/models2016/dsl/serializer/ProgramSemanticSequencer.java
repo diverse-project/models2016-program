@@ -12,10 +12,12 @@ import models2016.Conference;
 import models2016.Day;
 import models2016.DoctoralSymposium;
 import models2016.EducatorSymposium;
-import models2016.KeyNote;
+import models2016.Keynote;
+import models2016.Kind;
 import models2016.Lunch;
 import models2016.Meeting;
 import models2016.Models2016Package;
+import models2016.Opening;
 import models2016.Panel;
 import models2016.Paper;
 import models2016.Person;
@@ -25,6 +27,7 @@ import models2016.Reception;
 import models2016.Room;
 import models2016.SRC;
 import models2016.Session;
+import models2016.SponsorKeynote;
 import models2016.TalkSession;
 import models2016.Tutorial;
 import models2016.Workshop;
@@ -34,7 +37,9 @@ import org.eclipse.xtext.Action;
 import org.eclipse.xtext.Parameter;
 import org.eclipse.xtext.ParserRule;
 import org.eclipse.xtext.serializer.ISerializationContext;
+import org.eclipse.xtext.serializer.acceptor.SequenceFeeder;
 import org.eclipse.xtext.serializer.sequencer.AbstractDelegatingSemanticSequencer;
+import org.eclipse.xtext.serializer.sequencer.ITransientValueService.ValueTransient;
 
 @SuppressWarnings("all")
 public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequencer {
@@ -68,14 +73,20 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 			case Models2016Package.EDUCATOR_SYMPOSIUM:
 				sequence_EducatorSymposium(context, (EducatorSymposium) semanticObject); 
 				return; 
-			case Models2016Package.KEY_NOTE:
-				sequence_KeyNote(context, (KeyNote) semanticObject); 
+			case Models2016Package.KEYNOTE:
+				sequence_Keynote(context, (Keynote) semanticObject); 
+				return; 
+			case Models2016Package.KIND:
+				sequence_Kind(context, (Kind) semanticObject); 
 				return; 
 			case Models2016Package.LUNCH:
 				sequence_Lunch(context, (Lunch) semanticObject); 
 				return; 
 			case Models2016Package.MEETING:
 				sequence_Meeting(context, (Meeting) semanticObject); 
+				return; 
+			case Models2016Package.OPENING:
+				sequence_Opening(context, (Opening) semanticObject); 
 				return; 
 			case Models2016Package.PANEL:
 				sequence_Panel(context, (Panel) semanticObject); 
@@ -103,6 +114,9 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 				return; 
 			case Models2016Package.SESSION:
 				sequence_Session(context, (Session) semanticObject); 
+				return; 
+			case Models2016Package.SPONSOR_KEYNOTE:
+				sequence_SponsorKeynote(context, (SponsorKeynote) semanticObject); 
 				return; 
 			case Models2016Package.TALK_SESSION:
 				sequence_TalkSession(context, (TalkSession) semanticObject); 
@@ -152,6 +166,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     (
 	 *         name=EString 
 	 *         talkDuration=EIntegerObject 
+	 *         (kinds+=Kind kinds+=Kind*)? 
 	 *         (resources+=Resource resources+=Resource*)? 
 	 *         (papers+=Paper papers+=Paper*)? 
 	 *         (events+=Event events+=Event*)? 
@@ -203,14 +218,32 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Contexts:
-	 *     Event returns KeyNote
-	 *     KeyNote returns KeyNote
+	 *     Event returns Keynote
+	 *     Keynote returns Keynote
 	 *
 	 * Constraint:
 	 *     (name=EString abstract=EString? speaker=Person?)
 	 */
-	protected void sequence_KeyNote(ISerializationContext context, KeyNote semanticObject) {
+	protected void sequence_Keynote(ISerializationContext context, Keynote semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Contexts:
+	 *     Kind returns Kind
+	 *
+	 * Constraint:
+	 *     name=EString
+	 */
+	protected void sequence_Kind(ISerializationContext context, Kind semanticObject) {
+		if (errorAcceptor != null) {
+			if (transientValues.isValueTransient(semanticObject, Models2016Package.Literals.KIND__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, Models2016Package.Literals.KIND__NAME));
+		}
+		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
+		feeder.accept(grammarAccess.getKindAccess().getNameEStringParserRuleCall_1_0(), semanticObject.getName());
+		feeder.finish();
 	}
 	
 	
@@ -242,6 +275,19 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Contexts:
+	 *     Event returns Opening
+	 *     Opening returns Opening
+	 *
+	 * Constraint:
+	 *     (name=EString abstract=EString?)
+	 */
+	protected void sequence_Opening(ISerializationContext context, Opening semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Contexts:
 	 *     Event returns Panel
 	 *     Panel returns Panel
 	 *
@@ -264,7 +310,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *         authors+=Person* 
 	 *         abstract=EString? 
 	 *         preprint=EString? 
-	 *         kind=Track?
+	 *         kind=[Kind|EString]?
 	 *     )
 	 */
 	protected void sequence_Paper(ISerializationContext context, Paper semanticObject) {
@@ -356,6 +402,19 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     (startingTime=HourDataType endingTime=HourDataType room=[Room|EString] events+=[Event|EString] events+=[Event|EString]*)
 	 */
 	protected void sequence_Session(ISerializationContext context, Session semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Contexts:
+	 *     Event returns SponsorKeynote
+	 *     SponsorKeynote returns SponsorKeynote
+	 *
+	 * Constraint:
+	 *     (name=EString abstract=EString? speaker=Person?)
+	 */
+	protected void sequence_SponsorKeynote(ISerializationContext context, SponsorKeynote semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	

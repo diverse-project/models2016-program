@@ -21,6 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link models2016.Conference#getEvents <em>Events</em>}</li>
  *   <li>{@link models2016.Conference#getPapers <em>Papers</em>}</li>
  *   <li>{@link models2016.Conference#getTalkDuration <em>Talk Duration</em>}</li>
+ *   <li>{@link models2016.Conference#getKinds <em>Kinds</em>}</li>
  * </ul>
  *
  * @see models2016.Models2016Package#getConference()
@@ -153,5 +154,21 @@ public interface Conference extends EObject {
 	 * @generated
 	 */
 	void setTalkDuration(Integer value);
+
+	/**
+	 * Returns the value of the '<em><b>Kinds</b></em>' containment reference list.
+	 * The list contents are of type {@link models2016.Kind}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Kinds</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Kinds</em>' containment reference list.
+	 * @see models2016.Models2016Package#getConference_Kinds()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Kind> getKinds();
 
 } // Conference

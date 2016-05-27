@@ -156,8 +156,20 @@ public class Models2016AdapterFactory extends AdapterFactoryImpl {
 				return createPosterAdapter();
 			}
 			@Override
-			public Adapter caseKeyNote(KeyNote object) {
-				return createKeyNoteAdapter();
+			public Adapter caseKeynote(Keynote object) {
+				return createKeynoteAdapter();
+			}
+			@Override
+			public Adapter caseKind(Kind object) {
+				return createKindAdapter();
+			}
+			@Override
+			public Adapter caseSponsorKeynote(SponsorKeynote object) {
+				return createSponsorKeynoteAdapter();
+			}
+			@Override
+			public Adapter caseOpening(Opening object) {
+				return createOpeningAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -488,16 +500,58 @@ public class Models2016AdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link models2016.KeyNote <em>Key Note</em>}'.
+	 * Creates a new adapter for an object of class '{@link models2016.Keynote <em>Keynote</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see models2016.KeyNote
+	 * @see models2016.Keynote
 	 * @generated
 	 */
-	public Adapter createKeyNoteAdapter() {
+	public Adapter createKeynoteAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link models2016.Kind <em>Kind</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see models2016.Kind
+	 * @generated
+	 */
+	public Adapter createKindAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link models2016.SponsorKeynote <em>Sponsor Keynote</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see models2016.SponsorKeynote
+	 * @generated
+	 */
+	public Adapter createSponsorKeynoteAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link models2016.Opening <em>Opening</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see models2016.Opening
+	 * @generated
+	 */
+	public Adapter createOpeningAdapter() {
 		return null;
 	}
 

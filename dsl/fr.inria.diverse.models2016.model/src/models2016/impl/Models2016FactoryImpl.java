@@ -78,7 +78,10 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 			case Models2016Package.MEETING: return createMeeting();
 			case Models2016Package.SRC: return createSRC();
 			case Models2016Package.POSTER: return createPoster();
-			case Models2016Package.KEY_NOTE: return createKeyNote();
+			case Models2016Package.KEYNOTE: return createKeynote();
+			case Models2016Package.KIND: return createKind();
+			case Models2016Package.SPONSOR_KEYNOTE: return createSponsorKeynote();
+			case Models2016Package.OPENING: return createOpening();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -94,8 +97,6 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 		switch (eDataType.getClassifierID()) {
 			case Models2016Package.WEEK_DAY:
 				return createWeekDayFromString(eDataType, initialValue);
-			case Models2016Package.TRACK:
-				return createTrackFromString(eDataType, initialValue);
 			case Models2016Package.HOUR_DATA_TYPE:
 				return createHourDataTypeFromString(eDataType, initialValue);
 			case Models2016Package.DAY_DATA_TYPE:
@@ -115,8 +116,6 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 		switch (eDataType.getClassifierID()) {
 			case Models2016Package.WEEK_DAY:
 				return convertWeekDayToString(eDataType, instanceValue);
-			case Models2016Package.TRACK:
-				return convertTrackToString(eDataType, instanceValue);
 			case Models2016Package.HOUR_DATA_TYPE:
 				return convertHourDataTypeToString(eDataType, instanceValue);
 			case Models2016Package.DAY_DATA_TYPE:
@@ -331,9 +330,39 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public KeyNote createKeyNote() {
-		KeyNoteImpl keyNote = new KeyNoteImpl();
-		return keyNote;
+	public Keynote createKeynote() {
+		KeynoteImpl keynote = new KeynoteImpl();
+		return keynote;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Kind createKind() {
+		KindImpl kind = new KindImpl();
+		return kind;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SponsorKeynote createSponsorKeynote() {
+		SponsorKeynoteImpl sponsorKeynote = new SponsorKeynoteImpl();
+		return sponsorKeynote;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Opening createOpening() {
+		OpeningImpl opening = new OpeningImpl();
+		return opening;
 	}
 
 	/**
@@ -353,26 +382,6 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 	 * @generated
 	 */
 	public String convertWeekDayToString(EDataType eDataType, Object instanceValue) {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Track createTrackFromString(EDataType eDataType, String initialValue) {
-		Track result = Track.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertTrackToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

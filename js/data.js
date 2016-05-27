@@ -81,6 +81,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "Advanced Model Management with Epsilon",
+							abstract : "Model management in MDE is all about manipulating models: transforming them, checking that they satisfy constraints, updating them, etc. This tutorial will focus on advanced model management – moving beyond simply building and executing transformations or constraints – illustrated with the Eclipse Epsilon platform. The tutorial will include a brief introduction to the principles and architecture of the Epsilon platform, especially its extensibility features. It will then illustrate advanced features, including developing new Epsilon languages, using annotations, extension via grammars, and developing new drivers.",
 							organizers : [
 								{
 									name : "Richard Paige"	
@@ -112,6 +113,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "ARCADIA in a Nutshell",
+							abstract : "The ARCADIA/Capella Domain Specific Modeling Language (DSML) is inspired by UML/SysML and NAF standards, and shares many concepts with these languages. It is the result of an iterative definition process driven by systems and software architects working in a broad spectrum of business domains (transportation, avionics, space, radar, etc.). It enforces an approach structured on successive engineering phases which establishes clear separation between needs (operational need analysis and system need analysis) and solutions (logical and physical architectures), in accordance with the IEEE 1220 standard. The Capella workbench is an Eclipse application (Polarsys project) implementing the ARCADIA method providing both a DSML and a dedicated toolset. This tutorial will demonstrate the benefits of using both ARCADIA and Capella on a simple case study. It will guide you into the first steps of using ARCADIA, starting with the Analysis levels of the case study. It will then show you how the Capella tool, with the help of the ARCADIA method, will help you design more efficiently both Logical and Physical Architectures.",
 							organizers : [
 								{
 									name : "Pascal Roques"	
@@ -131,6 +133,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "Hybrid Graphical/Textual Modelling and Code Generation with PapyrusRT",
+							abstract : "Many MDE tools rely on graphical notations to design models but in recent years there has been an increased interest in textual and mixed graphical/textual approaches to modelling. In this tutorial we present mixed graphical/textual modelling in PapyrusRT, an open-source industrial-strength modelling development environment for real-time and embedded systems based on the UML-RT language. We also introduce the tool’s code generator and present how to customize and extend the code generator, for example to provide code instrumentation or generate alternative code patterns. We will illustrate the tool with an extension of the code generator that enables web-based simulation and monitoring and model animation of an Arduino board model.",
 							organizers : [
 								{
 									name : "Ernesto Posse"	
@@ -354,6 +357,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "Advanced Model Management with Epsilon",
+							abstract : "Model management in MDE is all about manipulating models: transforming them, checking that they satisfy constraints, updating them, etc. This tutorial will focus on advanced model management – moving beyond simply building and executing transformations or constraints – illustrated with the Eclipse Epsilon platform. The tutorial will include a brief introduction to the principles and architecture of the Epsilon platform, especially its extensibility features. It will then illustrate advanced features, including developing new Epsilon languages, using annotations, extension via grammars, and developing new drivers.",
 							organizers : [
 								{
 									name : "Richard Paige"	
@@ -385,6 +389,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "ARCADIA in a Nutshell",
+							abstract : "The ARCADIA/Capella Domain Specific Modeling Language (DSML) is inspired by UML/SysML and NAF standards, and shares many concepts with these languages. It is the result of an iterative definition process driven by systems and software architects working in a broad spectrum of business domains (transportation, avionics, space, radar, etc.). It enforces an approach structured on successive engineering phases which establishes clear separation between needs (operational need analysis and system need analysis) and solutions (logical and physical architectures), in accordance with the IEEE 1220 standard. The Capella workbench is an Eclipse application (Polarsys project) implementing the ARCADIA method providing both a DSML and a dedicated toolset. This tutorial will demonstrate the benefits of using both ARCADIA and Capella on a simple case study. It will guide you into the first steps of using ARCADIA, starting with the Analysis levels of the case study. It will then show you how the Capella tool, with the help of the ARCADIA method, will help you design more efficiently both Logical and Physical Architectures.",
 							organizers : [
 								{
 									name : "Pascal Roques"	
@@ -404,6 +409,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "Hybrid Graphical/Textual Modelling and Code Generation with PapyrusRT",
+							abstract : "Many MDE tools rely on graphical notations to design models but in recent years there has been an increased interest in textual and mixed graphical/textual approaches to modelling. In this tutorial we present mixed graphical/textual modelling in PapyrusRT, an open-source industrial-strength modelling development environment for real-time and embedded systems based on the UML-RT language. We also introduce the tool’s code generator and present how to customize and extend the code generator, for example to provide code instrumentation or generate alternative code patterns. We will illustrate the tool with an extension of the code generator that enables web-based simulation and monitoring and model animation of an Arduino board model.",
 							organizers : [
 								{
 									name : "Ernesto Posse"	
@@ -631,6 +637,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "Modeling Reactive Systems with the Scenario Modeling Language and ScenarioTools",
+							abstract : "Software-intensive systems in many domains consist of multiple cooperating reactive components. The distributed and concurrent nature of these systems makes the software development difficult. Key to avoiding the costly iterations is having a precise and consistent specification. In this tutorial, we present a powerful formal, scenario-based method for modeling reactive system specifications. Software engineers can specify the inter-component behavior by a set of scenarios. Each scenario describes what the system must or must not do in a certain situation and in reaction to certain events. This fits how engineers conceive and communicate the behavior during the early design. Specifications can be executed, which allows engineers to understand the interplay of the scenarios. Inconsistencies can be detected through formal synthesis algorithms. For curious beginners, but also for experienced reactive systems modelers, we introduce scenario-based modeling and give a hands-on experience on its strengths and challenges. In part 1 we overview the modeling methodology and introduce Live Sequence Charts (LSCs) and a textual variant, the Scenario Modeling Language (SML). We also introduce ScenarioTools, which supports the modeling and analysis of SML specifications. In part 2, we interactively model parts of a car-to-x system. We reflect on the method and discuss research opportunities.",
 							organizers : [
 								{
 									name : "Joel Greenyer"	
@@ -653,6 +660,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies",
+							abstract : "This tutorial will explain how to create a domain-specific graphical modeling workbench by using Eclipse Sirius. The tutorial will start with the definition of the metamodel by using Ecore Tools. Then, several diagrams and tabular representations with their tools (edition, navigation, complexity management, …) will be created with Sirius. Finally we will show how to combine this workbench with other Eclipse Modeling technologies such as Xtext to persist the models into a human-readable textual format and Acceleo to generate code.",
 							organizers : [
 								{
 									name : "Frederic Madiot"	
@@ -675,6 +683,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "Technologies and Design Patterns for Model-based Development of Cyber-physical Systems",
+							abstract : "Cyber-physical systems (CPS) are complex engineering systems that interact directly with the physical world. They generally combine different engineering technologies, (e.g., mechanical, electrical) with embedded software, which is primarily responsible for monitoring and control functions. Traditional design approaches for such systems were based on an early decomposition into technology-centric subsystems, which were developed separately and then integrated towards the end of the development cycle. In contrast, modern CPS design takes a more holistic approach, which allows for increased flexibility in allocating functional responsibilities to the most appropriate technologies. This is made possible through more extensive and more effective use of computer-based engineering models. A key engineering challenge is how to construct and analyze models of such complex systems. To that end, a new generation of computer-based modeling languages has emerged. In this tutorial, we consider two industry standard modeling languages from this category, SysML and MARTE. We explore the rationale behind them, the relationships between them, and how they can be combined for effective and agile CPS design. Practical examples are used throughout to illustrate the various language concepts and their usage.",
 							organizers : [
 								{
 									name : "Bran Selic"	
@@ -895,6 +904,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "Modeling Reactive Systems with the Scenario Modeling Language and ScenarioTools",
+							abstract : "Software-intensive systems in many domains consist of multiple cooperating reactive components. The distributed and concurrent nature of these systems makes the software development difficult. Key to avoiding the costly iterations is having a precise and consistent specification. In this tutorial, we present a powerful formal, scenario-based method for modeling reactive system specifications. Software engineers can specify the inter-component behavior by a set of scenarios. Each scenario describes what the system must or must not do in a certain situation and in reaction to certain events. This fits how engineers conceive and communicate the behavior during the early design. Specifications can be executed, which allows engineers to understand the interplay of the scenarios. Inconsistencies can be detected through formal synthesis algorithms. For curious beginners, but also for experienced reactive systems modelers, we introduce scenario-based modeling and give a hands-on experience on its strengths and challenges. In part 1 we overview the modeling methodology and introduce Live Sequence Charts (LSCs) and a textual variant, the Scenario Modeling Language (SML). We also introduce ScenarioTools, which supports the modeling and analysis of SML specifications. In part 2, we interactively model parts of a car-to-x system. We reflect on the method and discuss research opportunities.",
 							organizers : [
 								{
 									name : "Joel Greenyer"	
@@ -917,6 +927,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "Creating a Domain-Specific Graphical Modeling Workbench with Eclipse Technologies",
+							abstract : "This tutorial will explain how to create a domain-specific graphical modeling workbench by using Eclipse Sirius. The tutorial will start with the definition of the metamodel by using Ecore Tools. Then, several diagrams and tabular representations with their tools (edition, navigation, complexity management, …) will be created with Sirius. Finally we will show how to combine this workbench with other Eclipse Modeling technologies such as Xtext to persist the models into a human-readable textual format and Acceleo to generate code.",
 							organizers : [
 								{
 									name : "Frederic Madiot"	
@@ -939,6 +950,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "Technologies and Design Patterns for Model-based Development of Cyber-physical Systems",
+							abstract : "Cyber-physical systems (CPS) are complex engineering systems that interact directly with the physical world. They generally combine different engineering technologies, (e.g., mechanical, electrical) with embedded software, which is primarily responsible for monitoring and control functions. Traditional design approaches for such systems were based on an early decomposition into technology-centric subsystems, which were developed separately and then integrated towards the end of the development cycle. In contrast, modern CPS design takes a more holistic approach, which allows for increased flexibility in allocating functional responsibilities to the most appropriate technologies. This is made possible through more extensive and more effective use of computer-based engineering models. A key engineering challenge is how to construct and analyze models of such complex systems. To that end, a new generation of computer-based modeling languages has emerged. In this tutorial, we consider two industry standard modeling languages from this category, SysML and MARTE. We explore the rationale behind them, the relationships between them, and how they can be combined for effective and agile CPS design. Practical examples are used throughout to illustrate the various language concepts and their usage.",
 							organizers : [
 								{
 									name : "Bran Selic"	
@@ -1125,7 +1137,18 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 6
+					start : "09:00",
+					end : "10:30",
+					rowSpan : 6,
+					icalStart : "20161003T070000Z",
+					icalEnd : "20161003T083000Z",
+					room : "Rotonde Surcouf",
+					events : [
+						{
+							type : "Clinic",
+							title : "Clinic"
+						}
+					]
 				},
 				{
 					rowSpan : 6
@@ -1141,6 +1164,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "Empirical Research in Model Based Software Engineering",
+							abstract : "Modelling is applied in many different ways in software engineering: for facilitating communication, for analyzing systems, for generating code and tests. Thus, the evaluation of modelling techniques, languages and tools is needed in order to assess their advantages and disadvantages, to ensure their applicability to different contexts, their ease of use, and other issues such as skills and costs. However, many papers submitted to the MODELS conference lack empirical validations of their proposed methods/techniques. This tutorial offers an introduction to empirical methods in software engineering and thereby aims to equip researchers in the MODELS community with knowledge required to perform evaluations. This tutorial is offered by a group of people with broad experience in several types of empirical studies (including experiments, surveys, case studies, action research).",
 							organizers : [
 								{
 									name : "Michel Chaudron"	
@@ -1166,6 +1190,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "Applying Model Driven Engineering Technologies in the Creation of Domain Specific Modeling Languages",
+							abstract : "Model Driven Engineering (MDE) brings together multiple technologies and critical innovations and formalizes them into the next wave of software development methods. This tutorial will cover the basic patterns, principles and practices of MDE. The three main MDE categories include the development of Domain Specific Languages (DSL), Domain Specific Editors (and Views), and Domain Specific Transformation Engines or Generators. Expressed in terms of language development technology, these mirror the development of the Abstract Syntax, Concrete Syntax and Semantics of a new Domain Specific Language. This tutorial will cover the basic effective patterns, principles and practices for developing these MDE software artifacts. The tutorial will show how to apply these concepts as effective means with which to both raise levels of abstraction and domain specificity and thus increase power and value of tools and languages that allow developers to tackle the complexities of today’s software systems. It will also show how to effectively leverage abstraction without sacrificing the ability to robustly and precisely refine these abstractions to solve complex real world problems. To show these patterns and principles in action, this tutorial will cover the details of how to leverage MDE Language Workbenches and frameworks in support of robust software development.",
 							organizers : [
 								{
 									name : "Bruce Trask"	
@@ -1371,6 +1396,10 @@ var data = [
 						{
 							type : "Clinic",
 							title : "Clinic"
+						},
+						{
+							type : "CoffeeBreak",
+							title : "Coffee Break"
 						}
 					]
 				},
@@ -1409,7 +1438,18 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 6
+					start : "11:00",
+					end : "12:30",
+					rowSpan : 6,
+					icalStart : "20161003T090000Z",
+					icalEnd : "20161003T103000Z",
+					room : "Rotonde Surcouf",
+					events : [
+						{
+							type : "Clinic",
+							title : "Clinic"
+						}
+					]
 				},
 				{
 					rowSpan : 6
@@ -1425,6 +1465,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "Empirical Research in Model Based Software Engineering",
+							abstract : "Modelling is applied in many different ways in software engineering: for facilitating communication, for analyzing systems, for generating code and tests. Thus, the evaluation of modelling techniques, languages and tools is needed in order to assess their advantages and disadvantages, to ensure their applicability to different contexts, their ease of use, and other issues such as skills and costs. However, many papers submitted to the MODELS conference lack empirical validations of their proposed methods/techniques. This tutorial offers an introduction to empirical methods in software engineering and thereby aims to equip researchers in the MODELS community with knowledge required to perform evaluations. This tutorial is offered by a group of people with broad experience in several types of empirical studies (including experiments, surveys, case studies, action research).",
 							organizers : [
 								{
 									name : "Michel Chaudron"	
@@ -1450,6 +1491,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "Applying Model Driven Engineering Technologies in the Creation of Domain Specific Modeling Languages",
+							abstract : "Model Driven Engineering (MDE) brings together multiple technologies and critical innovations and formalizes them into the next wave of software development methods. This tutorial will cover the basic patterns, principles and practices of MDE. The three main MDE categories include the development of Domain Specific Languages (DSL), Domain Specific Editors (and Views), and Domain Specific Transformation Engines or Generators. Expressed in terms of language development technology, these mirror the development of the Abstract Syntax, Concrete Syntax and Semantics of a new Domain Specific Language. This tutorial will cover the basic effective patterns, principles and practices for developing these MDE software artifacts. The tutorial will show how to apply these concepts as effective means with which to both raise levels of abstraction and domain specificity and thus increase power and value of tools and languages that allow developers to tackle the complexities of today’s software systems. It will also show how to effectively leverage abstraction without sacrificing the ability to robustly and precisely refine these abstractions to solve complex real world problems. To show these patterns and principles in action, this tutorial will cover the details of how to leverage MDE Language Workbenches and frameworks in support of robust software development.",
 							organizers : [
 								{
 									name : "Bruce Trask"	
@@ -1693,7 +1735,18 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 6
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "20161003T120000Z",
+					icalEnd : "20161003T133000Z",
+					room : "Rotonde Surcouf",
+					events : [
+						{
+							type : "Clinic",
+							title : "Clinic"
+						}
+					]
 				},
 				{
 					rowSpan : 6
@@ -1709,6 +1762,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "Empirical Research in Model Based Software Engineering",
+							abstract : "Modelling is applied in many different ways in software engineering: for facilitating communication, for analyzing systems, for generating code and tests. Thus, the evaluation of modelling techniques, languages and tools is needed in order to assess their advantages and disadvantages, to ensure their applicability to different contexts, their ease of use, and other issues such as skills and costs. However, many papers submitted to the MODELS conference lack empirical validations of their proposed methods/techniques. This tutorial offers an introduction to empirical methods in software engineering and thereby aims to equip researchers in the MODELS community with knowledge required to perform evaluations. This tutorial is offered by a group of people with broad experience in several types of empirical studies (including experiments, surveys, case studies, action research).",
 							organizers : [
 								{
 									name : "Michel Chaudron"	
@@ -1734,6 +1788,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "Multi-level Modelling with MetaDepth",
+							abstract : "Model-Driven Engineering (MDE) promotes models as the primary artefacts in the software development process, from which code for the final application is derived. Standard approaches to MDE (like those based on MOF or EMF) advocate a two-level meta-modelling setting where domain-specific modelling languages are defined through a meta-model, which is instantiated to build models at the meta-level below. Multi-level modelling — also called deep meta-modelling — extends the standard approach to meta-modelling by enabling modelling at an arbitrary number of meta-levels, not necessarily two. This approach leads to simpler models in situations where the type-object pattern or some of its variants arises. In this tutorial, we will discuss the motivation for multi-level modelling and explain its basic concepts. These will be illustrated in practice with the MetaDepth tool, developed by the lecturers. The tutorial will also cover the use of constraint and model management languages (e.g., for code generation or model-to-model transformation) in a multi-level setting, and will finish by introducing more advanced multi-level concepts.",
 							organizers : [
 								{
 									name : "Juan De Lara"	
@@ -1939,6 +1994,10 @@ var data = [
 						{
 							type : "Clinic",
 							title : "Clinic"
+						},
+						{
+							type : "CoffeeBreak",
+							title : "Coffee Break"
 						}
 					]
 				},
@@ -1977,7 +2036,18 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 6
+					start : "16:00",
+					end : "17:30",
+					rowSpan : 6,
+					icalStart : "20161003T140000Z",
+					icalEnd : "20161003T153000Z",
+					room : "Rotonde Surcouf",
+					events : [
+						{
+							type : "Clinic",
+							title : "Clinic"
+						}
+					]
 				},
 				{
 					rowSpan : 6
@@ -1993,6 +2063,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "Empirical Research in Model Based Software Engineering",
+							abstract : "Modelling is applied in many different ways in software engineering: for facilitating communication, for analyzing systems, for generating code and tests. Thus, the evaluation of modelling techniques, languages and tools is needed in order to assess their advantages and disadvantages, to ensure their applicability to different contexts, their ease of use, and other issues such as skills and costs. However, many papers submitted to the MODELS conference lack empirical validations of their proposed methods/techniques. This tutorial offers an introduction to empirical methods in software engineering and thereby aims to equip researchers in the MODELS community with knowledge required to perform evaluations. This tutorial is offered by a group of people with broad experience in several types of empirical studies (including experiments, surveys, case studies, action research).",
 							organizers : [
 								{
 									name : "Michel Chaudron"	
@@ -2018,6 +2089,7 @@ var data = [
 						{
 							type : "Tutorial",
 							title : "Multi-level Modelling with MetaDepth",
+							abstract : "Model-Driven Engineering (MDE) promotes models as the primary artefacts in the software development process, from which code for the final application is derived. Standard approaches to MDE (like those based on MOF or EMF) advocate a two-level meta-modelling setting where domain-specific modelling languages are defined through a meta-model, which is instantiated to build models at the meta-level below. Multi-level modelling — also called deep meta-modelling — extends the standard approach to meta-modelling by enabling modelling at an arbitrary number of meta-levels, not necessarily two. This approach leads to simpler models in situations where the type-object pattern or some of its variants arises. In this tutorial, we will discuss the motivation for multi-level modelling and explain its basic concepts. These will be illustrated in practice with the MetaDepth tool, developed by the lecturers. The tutorial will also cover the use of constraint and model management languages (e.g., for code generation or model-to-model transformation) in a multi-level setting, and will finish by introducing more advanced multi-level concepts.",
 							organizers : [
 								{
 									name : "Juan De Lara"	
@@ -3397,40 +3469,112 @@ var data = [
 		sessionGroups : [
 			[
 				{
+					start : "08:45",
+					rowSpan : 1
+				},
+				{
+					rowSpan : 1
+				},
+				{
+					rowSpan : 1
+				},
+				{
+					rowSpan : 1
+				},
+				{
+					start : "08:45",
+					end : "09:00",
+					rowSpan : 1,
+					icalStart : "20161005T064500Z",
+					icalEnd : "20161005T070000Z",
+					room : "Chateaubriand",
+					events : [
+						{
+							type : "Opening",
+							title : "Program Commitee Opening"
+						}
+					]
+				},
+				{
+					rowSpan : 1
+				},
+				{
+					rowSpan : 1
+				}
+			],			
+			[
+				{
 					start : "09:00",
-					rowSpan : 6
+					rowSpan : 1
 				},
 				{
-					rowSpan : 6
+					rowSpan : 1
 				},
 				{
-					rowSpan : 6
+					rowSpan : 1
 				},
 				{
-					rowSpan : 6
+					rowSpan : 1
 				},
 				{
 					start : "09:00",
-					end : "10:30",
-					rowSpan : 6,
+					end : "09:15",
+					rowSpan : 1,
 					icalStart : "20161005T070000Z",
+					icalEnd : "20161005T071500Z",
+					room : "Chateaubriand",
+					events : [
+						{
+							type : "Opening",
+							title : "General Chairs Opening"
+						}
+					]
+				},
+				{
+					rowSpan : 1
+				},
+				{
+					rowSpan : 1
+				}
+			],			
+			[
+				{
+					start : "09:15",
+					rowSpan : 5
+				},
+				{
+					rowSpan : 5
+				},
+				{
+					rowSpan : 5
+				},
+				{
+					rowSpan : 5
+				},
+				{
+					start : "09:15",
+					end : "10:30",
+					rowSpan : 5,
+					icalStart : "20161005T071500Z",
 					icalEnd : "20161005T083000Z",
 					room : "Chateaubriand",
 					events : [
 						{
 							type : "Keynote",
-							title : "Keynote 1"
+							title : "Resurrecting Laplace’s Demon: The Case for Deterministic Models",
+							speaker : {
+								name : "Edward A. Lee"	
+							}
 						}
 					]
 				},
 				{
-					rowSpan : 6
+					rowSpan : 5
 				},
 				{
-					rowSpan : 6
+					rowSpan : 5
 				}
 			],
-			[],
 			[],
 			[],
 			[],
@@ -4478,7 +4622,7 @@ var data = [
 					events : [
 						{
 							type : "Meeting",
-							title : "SC Meeting"
+							title : "Models Steering Commitee Meeting"
 						}
 					]
 				}
@@ -4586,7 +4730,7 @@ var data = [
 			[
 				{
 					start : "09:00",
-					rowSpan : 6
+					rowSpan : 1
 				},
 				{
 					start : "09:00",
@@ -4603,30 +4747,61 @@ var data = [
 					]
 				},
 				{
-					rowSpan : 6
+					rowSpan : 1
 				},
 				{
 					start : "09:00",
-					end : "10:30",
-					rowSpan : 6,
+					end : "09:15",
+					rowSpan : 1,
 					icalStart : "20161006T070000Z",
+					icalEnd : "20161006T071500Z",
+					room : "Chateaubriand",
+					events : [
+						{
+							type : "Opening",
+							title : "General Chairs Opening"
+						}
+					]
+				},
+				{
+					rowSpan : 1
+				},
+				{
+					rowSpan : 1
+				}
+			],			
+			[
+				{
+					start : "09:15",
+					rowSpan : 5
+				},
+				{
+					rowSpan : 5
+				},
+				{
+					start : "09:15",
+					end : "10:30",
+					rowSpan : 5,
+					icalStart : "20161006T071500Z",
 					icalEnd : "20161006T083000Z",
 					room : "Chateaubriand",
 					events : [
 						{
 							type : "Keynote",
-							title : "Keynote 2"
+							title : "Keynote 2",
+							speaker : {
+								name : "Gordon Blair"	
+							}
 						}
 					]
 				},
 				{
-					rowSpan : 6
+					rowSpan : 5
 				},
 				{
-					rowSpan : 6
+					rowSpan : 5
 				}
 			],
-			[],
 			[],
 			[],
 			[],
@@ -4647,6 +4822,10 @@ var data = [
 						{
 							type : "Poster",
 							title : "Poster"
+						},
+						{
+							type : "CoffeeBreak",
+							title : "Coffee Break"
 						}
 					]
 				},
@@ -5329,6 +5508,10 @@ var data = [
 						{
 							type : "Poster",
 							title : "Poster"
+						},
+						{
+							type : "CoffeeBreak",
+							title : "Coffee Break"
 						}
 					]
 				},
@@ -5675,7 +5858,7 @@ var data = [
 					events : [
 						{
 							type : "Meeting",
-							title : "SoSyM Meeting"
+							title : "SoSyM Editorial Board Meeting"
 						}
 					]
 				}
@@ -5714,36 +5897,70 @@ var data = [
 			[
 				{
 					start : "09:00",
-					rowSpan : 6
+					rowSpan : 1
 				},
 				{
-					rowSpan : 6
+					rowSpan : 1
 				},
 				{
-					rowSpan : 6
+					rowSpan : 1
 				},
 				{
 					start : "09:00",
-					end : "10:30",
-					rowSpan : 6,
+					end : "09:15",
+					rowSpan : 1,
 					icalStart : "20161007T070000Z",
+					icalEnd : "20161007T071500Z",
+					room : "Chateaubriand",
+					events : [
+						{
+							type : "Opening",
+							title : "General Chairs Opening"
+						}
+					]
+				},
+				{
+					rowSpan : 1
+				},
+				{
+					rowSpan : 1
+				}
+			],			
+			[
+				{
+					start : "09:15",
+					rowSpan : 5
+				},
+				{
+					rowSpan : 5
+				},
+				{
+					rowSpan : 5
+				},
+				{
+					start : "09:15",
+					end : "10:30",
+					rowSpan : 5,
+					icalStart : "20161007T071500Z",
 					icalEnd : "20161007T083000Z",
 					room : "Chateaubriand",
 					events : [
 						{
 							type : "Keynote",
-							title : "Keynote 3"
+							title : "The Straight Line is Ungodly",
+							speaker : {
+								name : "Jim Coplien"	
+							}
 						}
 					]
 				},
 				{
-					rowSpan : 6
+					rowSpan : 5
 				},
 				{
-					rowSpan : 6
+					rowSpan : 5
 				}
 			],
-			[],
 			[],
 			[],
 			[],

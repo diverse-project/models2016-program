@@ -6,6 +6,7 @@ import java.util.Collection;
 
 import models2016.Conference;
 import models2016.Event;
+import models2016.Kind;
 import models2016.Models2016Package;
 import models2016.Paper;
 import models2016.Program;
@@ -38,6 +39,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link models2016.impl.ConferenceImpl#getEvents <em>Events</em>}</li>
  *   <li>{@link models2016.impl.ConferenceImpl#getPapers <em>Papers</em>}</li>
  *   <li>{@link models2016.impl.ConferenceImpl#getTalkDuration <em>Talk Duration</em>}</li>
+ *   <li>{@link models2016.impl.ConferenceImpl#getKinds <em>Kinds</em>}</li>
  * </ul>
  *
  * @generated
@@ -122,6 +124,16 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 	 * @ordered
 	 */
 	protected Integer talkDuration = TALK_DURATION_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getKinds() <em>Kinds</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getKinds()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Kind> kinds;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -268,6 +280,18 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<Kind> getKinds() {
+		if (kinds == null) {
+			kinds = new EObjectContainmentEList<Kind>(Kind.class, this, Models2016Package.CONFERENCE__KINDS);
+		}
+		return kinds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -279,6 +303,8 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 				return ((InternalEList<?>)getEvents()).basicRemove(otherEnd, msgs);
 			case Models2016Package.CONFERENCE__PAPERS:
 				return ((InternalEList<?>)getPapers()).basicRemove(otherEnd, msgs);
+			case Models2016Package.CONFERENCE__KINDS:
+				return ((InternalEList<?>)getKinds()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -303,6 +329,8 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 				return getPapers();
 			case Models2016Package.CONFERENCE__TALK_DURATION:
 				return getTalkDuration();
+			case Models2016Package.CONFERENCE__KINDS:
+				return getKinds();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -337,6 +365,10 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 			case Models2016Package.CONFERENCE__TALK_DURATION:
 				setTalkDuration((Integer)newValue);
 				return;
+			case Models2016Package.CONFERENCE__KINDS:
+				getKinds().clear();
+				getKinds().addAll((Collection<? extends Kind>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -367,6 +399,9 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 			case Models2016Package.CONFERENCE__TALK_DURATION:
 				setTalkDuration(TALK_DURATION_EDEFAULT);
 				return;
+			case Models2016Package.CONFERENCE__KINDS:
+				getKinds().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -391,6 +426,8 @@ public class ConferenceImpl extends MinimalEObjectImpl.Container implements Conf
 				return papers != null && !papers.isEmpty();
 			case Models2016Package.CONFERENCE__TALK_DURATION:
 				return TALK_DURATION_EDEFAULT == null ? talkDuration != null : !TALK_DURATION_EDEFAULT.equals(talkDuration);
+			case Models2016Package.CONFERENCE__KINDS:
+				return kinds != null && !kinds.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

@@ -212,10 +212,31 @@ public class Models2016Switch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case Models2016Package.KEY_NOTE: {
-				KeyNote keyNote = (KeyNote)theEObject;
-				T result = caseKeyNote(keyNote);
-				if (result == null) result = caseEvent(keyNote);
+			case Models2016Package.KEYNOTE: {
+				Keynote keynote = (Keynote)theEObject;
+				T result = caseKeynote(keynote);
+				if (result == null) result = caseEvent(keynote);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Models2016Package.KIND: {
+				Kind kind = (Kind)theEObject;
+				T result = caseKind(kind);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Models2016Package.SPONSOR_KEYNOTE: {
+				SponsorKeynote sponsorKeynote = (SponsorKeynote)theEObject;
+				T result = caseSponsorKeynote(sponsorKeynote);
+				if (result == null) result = caseKeynote(sponsorKeynote);
+				if (result == null) result = caseEvent(sponsorKeynote);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Models2016Package.OPENING: {
+				Opening opening = (Opening)theEObject;
+				T result = caseOpening(opening);
+				if (result == null) result = caseEvent(opening);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -554,17 +575,62 @@ public class Models2016Switch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Key Note</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Keynote</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Key Note</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Keynote</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseKeyNote(KeyNote object) {
+	public T caseKeynote(Keynote object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Kind</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Kind</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseKind(Kind object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Sponsor Keynote</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Sponsor Keynote</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSponsorKeynote(SponsorKeynote object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Opening</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Opening</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOpening(Opening object) {
 		return null;
 	}
 

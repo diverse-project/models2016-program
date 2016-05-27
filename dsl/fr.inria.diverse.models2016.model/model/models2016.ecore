@@ -71,6 +71,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="papers" upperBound="-1"
         eType="#//Paper" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="talkDuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="kinds" upperBound="-1"
+        eType="#//Kind" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="WeekDay">
     <eLiterals name="Monday" literal="MONDAY"/>
@@ -90,13 +92,9 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="authors" upperBound="-1"
         eType="#//Person" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="preprint" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="kind" eType="#//Track"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="abstract" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="Track">
-    <eLiterals name="PracticeAndInnovation" literal="PracticeAndInnovation"/>
-    <eLiterals name="Research" value="1" literal="RESEARCH"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="kind" eType="#//Kind"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Lunch" eSuperTypes="#//Event"/>
   <eClassifiers xsi:type="ecore:EClass" name="CoffeeBreak" eSuperTypes="#//Event"/>
@@ -105,8 +103,13 @@
   <eClassifiers xsi:type="ecore:EClass" name="Meeting" eSuperTypes="#//Event"/>
   <eClassifiers xsi:type="ecore:EClass" name="SRC" eSuperTypes="#//Event"/>
   <eClassifiers xsi:type="ecore:EClass" name="Poster" eSuperTypes="#//Event"/>
-  <eClassifiers xsi:type="ecore:EClass" name="KeyNote" eSuperTypes="#//Event">
+  <eClassifiers xsi:type="ecore:EClass" name="Keynote" eSuperTypes="#//Event">
     <eStructuralFeatures xsi:type="ecore:EReference" name="speaker" lowerBound="1"
         eType="#//Person" containment="true"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Kind">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SponsorKeynote" eSuperTypes="#//Keynote"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Opening" eSuperTypes="#//Event"/>
 </ecore:EPackage>

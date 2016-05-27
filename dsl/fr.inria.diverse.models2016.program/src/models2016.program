@@ -1,5 +1,8 @@
-"Models 2016"
+Conference "Models 2016"
 	talk duration 25
+	
+	kinds "Research", "PracticeAndInnovation", "Demo", "SoSyM"
+	
 	resources
 		room "Broussais"
 		room "Rotonde Surcouf"
@@ -281,17 +284,27 @@
 		
 		Poster "Poster";
 		
-		Meeting "SC Meeting";
-		Meeting "SoSyM Meeting";
+		Opening "General Chairs Opening";
+		Opening "Program Commitee Opening";
+		
+		Meeting "Models Steering Commitee Meeting";
+		Meeting "SoSyM Editorial Board Meeting";
 		
 		Clinic "Clinic";
 		
-		KeyNote "Keynote 1"
-			speaker "Mr. Key";
-		KeyNote "Keynote 2"
-			speaker "Ms. Note";
-		KeyNote "Keynote 3"
-			speaker "Key Note";
+		Keynote "Resurrecting Laplace’s Demon: The Case for Deterministic Models"
+			abstract " In 1814, Pierre-Simon Laplace published an argument for determinism in the universe, arguing that if someone (a demon) were to know the precise location and momentum of every atom in the universe, then their past and future values for any given time are completely determined and can be calculated from the laws of classical mechanics. This principle, of course, has been roundly invalidated by quantum mechanics, and yet the laws of classical mechanics continue to be extremely useful for prediction.
+In this talk, I will argue that models plays different (complementary) roles in engineering and science, and that deterministic models have historically proved proved even more valuable in engineering than in science. Moreover, I will show that deterministic models for cyber-physical systems, which combine computation with physical dynamics, remain elusive. I will argue that the next big advance in engineering methods must include deterministic models for CPS, and I will show that such models are both possible and practical. "
+			speaker "Edward A. Lee";
+		Keynote "Keynote 2"
+			speaker "Gordon Blair";
+		Keynote "The Straight Line is Ungodly"
+			abstract " Model-based approaches are not thriving, and the blame is usually laid at the feet of the unsophistication of software engineers. Yet software engineers may tacitly know something that the formal folks seldom discuss: Software systems are complex, and it is only simple problems that yield to formal approaches, including most modeling approaches—especially the analytical and computer-supported ones.
+A system is complex proportional to its number of distinct, meaningful tops. However, these « tops » are rarely separable, so independent models based on such formalisms are relatively impotent. And such models are abstractions (i.e., they discard information) to the degree they are formal: and Gödel, Heisenberg, Rosen and a host of others note that there’s always a ghost in the machine. This matters more and more as we face increased complexity.
+I will propose that modeling efforts be redirected to the more realistic, logically inconsistent, human ways of understanding ourselves and our interactions with computers. Object-orientation started with Kay’s operational models that would become objects; we see them again in Model-View-Controller-User. Both of these approaches emphasize the need to mix multiple concurrent perspectives (called roles) when analyzing a system. DCI is one paradigm that provides a single computational model while accommodating “tops” for both the left and right brain, and it bridges the abstraction of modeling with concrete implementation. I will argue that design is less about reifying extrinsic, abstract models than it is about creating a “habitable » reality close to the implementation, guided by human mental models. Last, I’ll touch on the kinds of socially constructed complex models as we find in patterns, which were explicitly created out of a dissatisfaction with the ability of formal models to add value."
+			speaker "Jim Coplien";
+		SponsorKeynote "Thales"
+			speaker "Thales Speaker";
 		
 		Tutorial "Empirical Research in Model Based Software Engineering"
 			abstract "Modelling is applied in many different ways in software engineering: for facilitating communication, for analyzing systems, for generating code and tests. Thus, the evaluation of modelling techniques, languages and tools is needed in order to assess their advantages and disadvantages, to ensure their applicability to different contexts, their ease of use, and other issues such as skills and costs. However, many papers submitted to the MODELS conference lack empirical validations of their proposed methods/techniques. This tutorial offers an introduction to empirical methods in software engineering and thereby aims to equip researchers in the MODELS community with knowledge required to perform evaluations. This tutorial is offered by a group of people with broad experience in several types of empirical studies (including experiments, surveys, case studies, action research)."
@@ -464,87 +477,89 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			
 		Workshop "SAM";
 		
-			TalkSession "Takimata sanctus est lorem ipsum dolor sit amet lorem"
-		chair "Et Lorem"
-		papers "Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo", "Sadipscing elitr sed diam nonumy", "Amet consetetur sadipscing elitr sed";
-	TalkSession "Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet"
-		chair "Consetetur Erat"
-		papers "Voluptua at vero eos et", "No sea takimata sanctus est", "Consetetur sadipscing elitr sed diam";
-	TalkSession "Lorem ipsum dolor sit amet lorem ipsum dolor sit"
-		chair "Eos Sed"
-		papers "No sea takimata sanctus est", "Voluptua at vero eos et", "Eirmod tempor invidunt ut labore et dolore magna aliquyam";
-	TalkSession "Rebum stet clita kasd gubergren"
-		chair "Lorem Diam"
-		papers "Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit", "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit", "Sanctus est lorem ipsum dolor sit amet lorem ipsum";
-	TalkSession "Takimata sanctus est lorem ipsum dolor"
-		chair "Vero Clita"
-		papers "Consetetur sadipscing elitr sed diam nonumy eirmod tempor", "Duo dolores et ea rebum", "Sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore";
-	TalkSession "Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea"
-		chair "Stet Justo"
-		papers "Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit", "Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed", "Sadipscing elitr sed diam nonumy";
-	TalkSession "Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing"
-		chair "Consetetur Erat"
-		papers "Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore", "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam", "Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy";
-	TalkSession "Accusam et justo duo dolores et ea rebum stet clita kasd gubergren"
-		chair "Ipsum Magna"
-		papers "Diam nonumy eirmod tempor invidunt", "Justo duo dolores et ea", "Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus";
-	TalkSession "Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no"
-		chair "Consetetur Erat"
-		papers "Clita kasd gubergren no sea", "Rebum stet clita kasd gubergren no sea takimata", "Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit";
-	TalkSession "Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero"
-		chair "Stet No"
-		papers "Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at", "Diam nonumy eirmod tempor invidunt", "Labore et dolore magna aliquyam erat sed diam voluptua";
-	TalkSession "Kasd gubergren no sea takimata"
-		chair "Gubergren Duo"
-		papers "Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo", "Invidunt ut labore et dolore", "Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero";
-	TalkSession "Et accusam et justo duo"
-		chair "Gubergren Ea"
-		papers "Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem", "Takimata sanctus est lorem ipsum dolor sit", "Aliquyam erat sed diam voluptua";
-	TalkSession "Kasd gubergren no sea takimata sanctus"
-		chair "Amet Sit"
-		papers "Et accusam et justo duo", "Amet consetetur sadipscing elitr sed", "Accusam et justo duo dolores et ea rebum stet";
-	TalkSession "Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr"
-		chair "Voluptua Voluptua"
-		papers "Voluptua at vero eos et accusam et justo duo dolores et", "Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et", "Tempor invidunt ut labore et dolore magna aliquyam erat sed";
-	TalkSession "Sit amet lorem ipsum dolor"
-		chair "Clita Clita"
-		papers "Dolore magna aliquyam erat sed", "Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod", "Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo";
-	TalkSession "Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem"
-		chair "Duo Nonumy"
-		papers "Ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam", "Amet consetetur sadipscing elitr sed", "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit";
-	TalkSession "Rebum stet clita kasd gubergren"
-		chair "Consetetur Ipsum"
-		papers "Et ea rebum stet clita", "Justo duo dolores et ea rebum stet clita kasd gubergren no", "Et dolore magna aliquyam erat";
-	TalkSession "Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua"
-		chair "Gubergren At"
-		papers "No sea takimata sanctus est lorem ipsum", "No sea takimata sanctus est lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam";
-	TalkSession "Accusam et justo duo dolores et ea rebum"
-		chair "At Justo"
-		papers "Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus", "Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet", "Gubergren no sea takimata sanctus";
-	TalkSession "Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea"
-		chair "Amet Sit"
-		papers "Kasd gubergren no sea takimata", "Invidunt ut labore et dolore magna aliquyam erat sed", "Tempor invidunt ut labore et dolore magna aliquyam";
-	TalkSession "Est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed"
-		chair "Duo Nonumy"
-		papers "Ea rebum stet clita kasd", "Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore", "Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod";
-	TalkSession "Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet"
-		chair "Aliquyam At"
-		papers "Sadipscing elitr sed diam nonumy", "Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et", "Erat sed diam voluptua at";
-	TalkSession "Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem"
-		chair "Eos Sed"
-		papers "Stet clita kasd gubergren no", "Sea takimata sanctus est lorem", "Duo dolores et ea rebum stet";
-	TalkSession "Voluptua at vero eos et"
-		chair "Duo Accusam"
-		papers "Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum", "Et justo duo dolores et ea", "Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et";
-	TalkSession "Sea takimata sanctus est lorem"
-		chair "Aliquyam Ipsum"
-		papers "Ut labore et dolore magna aliquyam erat", "Vero eos et accusam et justo duo dolores et", "Sed diam voluptua at vero";
-	TalkSession "Vero eos et accusam et"
-		chair "Invidunt Amet"
-		papers "Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea", "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit", "No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor";
-	TalkSession "Ut labore et dolore magna"
-		chair "At Justo"
-		papers "Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et", "Elitr sed diam nonumy eirmod", "Diam nonumy eirmod tempor invidunt"
+		TalkSession "10 years after";
+		
+		TalkSession "Takimata sanctus est lorem ipsum dolor sit amet lorem"
+			chair "Et Lorem"
+			papers "Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo", "Sadipscing elitr sed diam nonumy", "Amet consetetur sadipscing elitr sed";
+		TalkSession "Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet"
+			chair "Consetetur Erat"
+			papers "Voluptua at vero eos et", "No sea takimata sanctus est", "Consetetur sadipscing elitr sed diam";
+		TalkSession "Lorem ipsum dolor sit amet lorem ipsum dolor sit"
+			chair "Eos Sed"
+			papers "No sea takimata sanctus est", "Voluptua at vero eos et", "Eirmod tempor invidunt ut labore et dolore magna aliquyam";
+		TalkSession "Rebum stet clita kasd gubergren"
+			chair "Lorem Diam"
+			papers "Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit", "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit", "Sanctus est lorem ipsum dolor sit amet lorem ipsum";
+		TalkSession "Takimata sanctus est lorem ipsum dolor"
+			chair "Vero Clita"
+			papers "Consetetur sadipscing elitr sed diam nonumy eirmod tempor", "Duo dolores et ea rebum", "Sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore";
+		TalkSession "Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea"
+			chair "Stet Justo"
+			papers "Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit", "Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed", "Sadipscing elitr sed diam nonumy";
+		TalkSession "Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing"
+			chair "Consetetur Erat"
+			papers "Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore", "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam", "Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy";
+		TalkSession "Accusam et justo duo dolores et ea rebum stet clita kasd gubergren"
+			chair "Ipsum Magna"
+			papers "Diam nonumy eirmod tempor invidunt", "Justo duo dolores et ea", "Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus";
+		TalkSession "Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no"
+			chair "Consetetur Erat"
+			papers "Clita kasd gubergren no sea", "Rebum stet clita kasd gubergren no sea takimata", "Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit";
+		TalkSession "Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero"
+			chair "Stet No"
+			papers "Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at", "Diam nonumy eirmod tempor invidunt", "Labore et dolore magna aliquyam erat sed diam voluptua";
+		TalkSession "Kasd gubergren no sea takimata"
+			chair "Gubergren Duo"
+			papers "Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo", "Invidunt ut labore et dolore", "Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero";
+		TalkSession "Et accusam et justo duo"
+			chair "Gubergren Ea"
+			papers "Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem", "Takimata sanctus est lorem ipsum dolor sit", "Aliquyam erat sed diam voluptua";
+		TalkSession "Kasd gubergren no sea takimata sanctus"
+			chair "Amet Sit"
+			papers "Et accusam et justo duo", "Amet consetetur sadipscing elitr sed", "Accusam et justo duo dolores et ea rebum stet";
+		TalkSession "Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr"
+			chair "Voluptua Voluptua"
+			papers "Voluptua at vero eos et accusam et justo duo dolores et", "Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et", "Tempor invidunt ut labore et dolore magna aliquyam erat sed";
+		TalkSession "Sit amet lorem ipsum dolor"
+			chair "Clita Clita"
+			papers "Dolore magna aliquyam erat sed", "Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod", "Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo";
+		TalkSession "Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem"
+			chair "Duo Nonumy"
+			papers "Ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam", "Amet consetetur sadipscing elitr sed", "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit";
+		TalkSession "Rebum stet clita kasd gubergren"
+			chair "Consetetur Ipsum"
+			papers "Et ea rebum stet clita", "Justo duo dolores et ea rebum stet clita kasd gubergren no", "Et dolore magna aliquyam erat";
+		TalkSession "Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua"
+			chair "Gubergren At"
+			papers "No sea takimata sanctus est lorem ipsum", "No sea takimata sanctus est lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam";
+		TalkSession "Accusam et justo duo dolores et ea rebum"
+			chair "At Justo"
+			papers "Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus", "Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet", "Gubergren no sea takimata sanctus";
+		TalkSession "Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea"
+			chair "Amet Sit"
+			papers "Kasd gubergren no sea takimata", "Invidunt ut labore et dolore magna aliquyam erat sed", "Tempor invidunt ut labore et dolore magna aliquyam";
+		TalkSession "Est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed"
+			chair "Duo Nonumy"
+			papers "Ea rebum stet clita kasd", "Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore", "Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod";
+		TalkSession "Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet"
+			chair "Aliquyam At"
+			papers "Sadipscing elitr sed diam nonumy", "Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et", "Erat sed diam voluptua at";
+		TalkSession "Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem"
+			chair "Eos Sed"
+			papers "Stet clita kasd gubergren no", "Sea takimata sanctus est lorem", "Duo dolores et ea rebum stet";
+		TalkSession "Voluptua at vero eos et"
+			chair "Duo Accusam"
+			papers "Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum", "Et justo duo dolores et ea", "Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et";
+		TalkSession "Sea takimata sanctus est lorem"
+			chair "Aliquyam Ipsum"
+			papers "Ut labore et dolore magna aliquyam erat", "Vero eos et accusam et justo duo dolores et", "Sed diam voluptua at vero";
+		TalkSession "Vero eos et accusam et"
+			chair "Invidunt Amet"
+			papers "Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea", "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit", "No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor";
+		TalkSession "Ut labore et dolore magna"
+			chair "At Justo"
+			papers "Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et", "Elitr sed diam nonumy eirmod", "Diam nonumy eirmod tempor invidunt"
 		
 	}
 	
@@ -616,8 +631,10 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			09:00 - 10:30 in "Lamennais 2" : "MoDeVVa"
 			// Collocated Conferences
 			09:00 - 10:30 in "Lamennais 3" : "SAM"
+			// Clinic
+			09:00 - 10:30 in "Rotonde Surcouf" : "Clinic"
 			
-			10:30 - 11:00 in "Rotonde Surcouf" : "SRC Poster", "Clinic"
+			10:30 - 11:00 in "Rotonde Surcouf" : "SRC Poster", "Clinic", "Coffee Break"
 			
 			11:00 - 12:30 in "Vauban 1" : "Educator Symposium"
 			// Tutorials
@@ -630,6 +647,8 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			11:00 - 12:30 in "Lamennais 2" : "MoDeVVa"
 			// Collocated Conferences
 			11:00 - 12:30 in "Lamennais 3" : "SAM"
+			// Clinic
+			11:00 - 12:30 in "Rotonde Surcouf" : "Clinic"
 			
 			12:30 - 14:00 in "Rotonde J. Cartier" : "Lunch"
 			
@@ -644,8 +663,10 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			14:00 - 15:30 in "Lamennais 2" : "MoDeVVa"
 			// Collocated Conferences
 			14:00 - 15:30 in "Lamennais 3" : "SAM"
+			// Clinic
+			14:00 - 15:30 in "Rotonde Surcouf" : "Clinic"
 			
-			15:30 - 16:00 in "Rotonde Surcouf" : "SRC Poster", "Clinic"
+			15:30 - 16:00 in "Rotonde Surcouf" : "SRC Poster", "Clinic", "Coffee Break"
 			
 			16:00 - 17:30 in "Vauban 1" : "Educator Symposium"
 			// Tutorials
@@ -658,6 +679,8 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			16:00 - 17:30 in "Lamennais 2" : "MoDeVVa"
 			// Collocated Conferences
 			16:00 - 17:30 in "Lamennais 3" : "SAM"
+			// Clinic
+			16:00 - 17:30 in "Rotonde Surcouf" : "Clinic"
 			
 			// Student Research Competition
 			20:00 - 22:00 in "Rotonde Surcouf" : "SRC Poster"
@@ -718,7 +741,11 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		Wednesday
 			date 16.10.05
 			
-			09:00 - 10:30 in "Chateaubriand" : "Keynote 1"
+			08:45 - 09:00 in "Chateaubriand" : "Program Commitee Opening"
+			
+			09:00 - 09:15 in "Chateaubriand" : "General Chairs Opening"
+			
+			09:15 - 10:30 in "Chateaubriand" : "Resurrecting Laplace’s Demon: The Case for Deterministic Models"
 			
 			10:30 - 11:00 in "Grand Large" : "Coffee Break"
 			10:30 - 11:00 in "Rotonde J. Cartier" : "Poster"
@@ -728,7 +755,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			15:30 - 16:00 in "Grand Large" : "Coffee Break"
 			15:30 - 16:00 in "Rotonde J. Cartier" : "Poster"
 			
-			17:30 - 19:00 in "Lamennais 4+5" : "SC Meeting"
+			17:30 - 19:00 in "Lamennais 4+5" : "Models Steering Commitee Meeting"
 			
 			// Student Research Competition
 			20:00 - 22:00 in "Rotonde Surcouf" : "SRC Awards"
@@ -748,17 +775,19 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		Thursday
 			date 16.10.06
 			
-			09:00 - 10:30 in "Chateaubriand" : "Keynote 2"
+			09:00 - 09:15 in "Chateaubriand" : "General Chairs Opening"
+			
+			09:15 - 10:30 in "Chateaubriand" : "Keynote 2"
 			
 			09:00 - 12:30 in "Rotonde J. Cartier" : "Clinic"
-			10:30 - 11:00 in "Grand Large" : "Poster"
+			10:30 - 11:00 in "Grand Large" : "Poster", "Coffee Break"
 			
 			12:30 - 14:00 in "Grand Large" : "Lunch"
 			
 			14:00 - 17:30 in "Rotonde J. Cartier" : "Clinic"
-			15:30 - 16:00 in "Grand Large" : "Poster"
+			15:30 - 16:00 in "Grand Large" : "Poster", "Coffee Break"
 			
-			17:30 - 19:00 in "Lamennais 4+5" : "SoSyM Meeting"
+			17:30 - 19:00 in "Lamennais 4+5" : "SoSyM Editorial Board Meeting"
 			
 			11:00 - 12:30 in "Chateaubriand" : "Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero"
 			11:00 - 12:30 in "Lamennais 1+2" : "Kasd gubergren no sea takimata"
@@ -775,7 +804,9 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		Friday
 			date 16.10.07
 			
-			09:00 - 10:30 in "Chateaubriand" : "Keynote 3"
+			09:00 - 09:15 in "Chateaubriand" : "General Chairs Opening"
+			
+			09:15 - 10:30 in "Chateaubriand" : "The Straight Line is Ungodly"
 			
 			10:30 - 11:00 in "Grand Large" : "Coffee Break"
 			10:30 - 11:00 in "Rotonde J. Cartier" : "Poster"

@@ -202,13 +202,40 @@ public interface Models2016Factory extends EFactory {
 	Poster createPoster();
 
 	/**
-	 * Returns a new object of class '<em>Key Note</em>'.
+	 * Returns a new object of class '<em>Keynote</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Key Note</em>'.
+	 * @return a new object of class '<em>Keynote</em>'.
 	 * @generated
 	 */
-	KeyNote createKeyNote();
+	Keynote createKeynote();
+
+	/**
+	 * Returns a new object of class '<em>Kind</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Kind</em>'.
+	 * @generated
+	 */
+	Kind createKind();
+
+	/**
+	 * Returns a new object of class '<em>Sponsor Keynote</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Sponsor Keynote</em>'.
+	 * @generated
+	 */
+	SponsorKeynote createSponsorKeynote();
+
+	/**
+	 * Returns a new object of class '<em>Opening</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Opening</em>'.
+	 * @generated
+	 */
+	Opening createOpening();
 
 	/**
 	 * Returns the package supported by this factory.

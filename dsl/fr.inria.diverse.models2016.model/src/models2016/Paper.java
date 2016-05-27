@@ -17,9 +17,9 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link models2016.Paper#getAuthors <em>Authors</em>}</li>
  *   <li>{@link models2016.Paper#getPreprint <em>Preprint</em>}</li>
- *   <li>{@link models2016.Paper#getKind <em>Kind</em>}</li>
  *   <li>{@link models2016.Paper#getAbstract <em>Abstract</em>}</li>
  *   <li>{@link models2016.Paper#getName <em>Name</em>}</li>
+ *   <li>{@link models2016.Paper#getKind <em>Kind</em>}</li>
  * </ul>
  *
  * @see models2016.Models2016Package#getPaper()
@@ -70,33 +70,30 @@ public interface Paper extends EObject {
 	void setPreprint(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Kind</b></em>' attribute.
-	 * The literals are from the enumeration {@link models2016.Track}.
+	 * Returns the value of the '<em><b>Kind</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Kind</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Kind</em>' attribute.
-	 * @see models2016.Track
-	 * @see #setKind(Track)
+	 * @return the value of the '<em>Kind</em>' reference.
+	 * @see #setKind(Kind)
 	 * @see models2016.Models2016Package#getPaper_Kind()
 	 * @model
 	 * @generated
 	 */
-	Track getKind();
+	Kind getKind();
 
 	/**
-	 * Sets the value of the '{@link models2016.Paper#getKind <em>Kind</em>}' attribute.
+	 * Sets the value of the '{@link models2016.Paper#getKind <em>Kind</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Kind</em>' attribute.
-	 * @see models2016.Track
+	 * @param value the new value of the '<em>Kind</em>' reference.
 	 * @see #getKind()
 	 * @generated
 	 */
-	void setKind(Track value);
+	void setKind(Kind value);
 
 	/**
 	 * Returns the value of the '<em><b>Abstract</b></em>' attribute.

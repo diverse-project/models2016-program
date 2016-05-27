@@ -2,13 +2,13 @@
  */
 package models2016.impl;
 
-import models2016.KeyNote;
+import models2016.Keynote;
 import models2016.Models2016Package;
 import models2016.Person;
 
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.notify.NotificationChain;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
@@ -16,18 +16,18 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Key Note</b></em>'.
+ * An implementation of the model object '<em><b>Keynote</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link models2016.impl.KeyNoteImpl#getSpeaker <em>Speaker</em>}</li>
+ *   <li>{@link models2016.impl.KeynoteImpl#getSpeaker <em>Speaker</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class KeyNoteImpl extends EventImpl implements KeyNote {
+public class KeynoteImpl extends EventImpl implements Keynote {
 	/**
 	 * The cached value of the '{@link #getSpeaker() <em>Speaker</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -43,7 +43,7 @@ public class KeyNoteImpl extends EventImpl implements KeyNote {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected KeyNoteImpl() {
+	protected KeynoteImpl() {
 		super();
 	}
 
@@ -54,7 +54,7 @@ public class KeyNoteImpl extends EventImpl implements KeyNote {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return Models2016Package.Literals.KEY_NOTE;
+		return Models2016Package.Literals.KEYNOTE;
 	}
 
 	/**
@@ -75,7 +75,7 @@ public class KeyNoteImpl extends EventImpl implements KeyNote {
 		Person oldSpeaker = speaker;
 		speaker = newSpeaker;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, Models2016Package.KEY_NOTE__SPEAKER, oldSpeaker, newSpeaker);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, Models2016Package.KEYNOTE__SPEAKER, oldSpeaker, newSpeaker);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -90,14 +90,14 @@ public class KeyNoteImpl extends EventImpl implements KeyNote {
 		if (newSpeaker != speaker) {
 			NotificationChain msgs = null;
 			if (speaker != null)
-				msgs = ((InternalEObject)speaker).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - Models2016Package.KEY_NOTE__SPEAKER, null, msgs);
+				msgs = ((InternalEObject)speaker).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - Models2016Package.KEYNOTE__SPEAKER, null, msgs);
 			if (newSpeaker != null)
-				msgs = ((InternalEObject)newSpeaker).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - Models2016Package.KEY_NOTE__SPEAKER, null, msgs);
+				msgs = ((InternalEObject)newSpeaker).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - Models2016Package.KEYNOTE__SPEAKER, null, msgs);
 			msgs = basicSetSpeaker(newSpeaker, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Models2016Package.KEY_NOTE__SPEAKER, newSpeaker, newSpeaker));
+			eNotify(new ENotificationImpl(this, Notification.SET, Models2016Package.KEYNOTE__SPEAKER, newSpeaker, newSpeaker));
 	}
 
 	/**
@@ -108,7 +108,7 @@ public class KeyNoteImpl extends EventImpl implements KeyNote {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case Models2016Package.KEY_NOTE__SPEAKER:
+			case Models2016Package.KEYNOTE__SPEAKER:
 				return basicSetSpeaker(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -122,7 +122,7 @@ public class KeyNoteImpl extends EventImpl implements KeyNote {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case Models2016Package.KEY_NOTE__SPEAKER:
+			case Models2016Package.KEYNOTE__SPEAKER:
 				return getSpeaker();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -136,7 +136,7 @@ public class KeyNoteImpl extends EventImpl implements KeyNote {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case Models2016Package.KEY_NOTE__SPEAKER:
+			case Models2016Package.KEYNOTE__SPEAKER:
 				setSpeaker((Person)newValue);
 				return;
 		}
@@ -151,7 +151,7 @@ public class KeyNoteImpl extends EventImpl implements KeyNote {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case Models2016Package.KEY_NOTE__SPEAKER:
+			case Models2016Package.KEYNOTE__SPEAKER:
 				setSpeaker((Person)null);
 				return;
 		}
@@ -166,10 +166,10 @@ public class KeyNoteImpl extends EventImpl implements KeyNote {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case Models2016Package.KEY_NOTE__SPEAKER:
+			case Models2016Package.KEYNOTE__SPEAKER:
 				return speaker != null;
 		}
 		return super.eIsSet(featureID);
 	}
 
-} //KeyNoteImpl
+} //KeynoteImpl

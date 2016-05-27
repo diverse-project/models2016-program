@@ -4,11 +4,10 @@ package models2016.impl;
 
 import java.util.Collection;
 
+import models2016.Kind;
 import models2016.Models2016Package;
 import models2016.Paper;
 import models2016.Person;
-import models2016.Track;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
@@ -33,9 +32,9 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link models2016.impl.PaperImpl#getAuthors <em>Authors</em>}</li>
  *   <li>{@link models2016.impl.PaperImpl#getPreprint <em>Preprint</em>}</li>
- *   <li>{@link models2016.impl.PaperImpl#getKind <em>Kind</em>}</li>
  *   <li>{@link models2016.impl.PaperImpl#getAbstract <em>Abstract</em>}</li>
  *   <li>{@link models2016.impl.PaperImpl#getName <em>Name</em>}</li>
+ *   <li>{@link models2016.impl.PaperImpl#getKind <em>Kind</em>}</li>
  * </ul>
  *
  * @generated
@@ -70,26 +69,6 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 	 * @ordered
 	 */
 	protected String preprint = PREPRINT_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getKind() <em>Kind</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getKind()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final Track KIND_EDEFAULT = Track.PRACTICE_AND_INNOVATION;
-
-	/**
-	 * The cached value of the '{@link #getKind() <em>Kind</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getKind()
-	 * @generated
-	 * @ordered
-	 */
-	protected Track kind = KIND_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getAbstract() <em>Abstract</em>}' attribute.
@@ -130,6 +109,16 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 	 * @ordered
 	 */
 	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getKind() <em>Kind</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getKind()
+	 * @generated
+	 * @ordered
+	 */
+	protected Kind kind;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -188,7 +177,15 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Track getKind() {
+	public Kind getKind() {
+		if (kind != null && kind.eIsProxy()) {
+			InternalEObject oldKind = (InternalEObject)kind;
+			kind = (Kind)eResolveProxy(oldKind);
+			if (kind != oldKind) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Models2016Package.PAPER__KIND, oldKind, kind));
+			}
+		}
 		return kind;
 	}
 
@@ -197,9 +194,18 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setKind(Track newKind) {
-		Track oldKind = kind;
-		kind = newKind == null ? KIND_EDEFAULT : newKind;
+	public Kind basicGetKind() {
+		return kind;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setKind(Kind newKind) {
+		Kind oldKind = kind;
+		kind = newKind;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, Models2016Package.PAPER__KIND, oldKind, kind));
 	}
@@ -272,12 +278,13 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 				return getAuthors();
 			case Models2016Package.PAPER__PREPRINT:
 				return getPreprint();
-			case Models2016Package.PAPER__KIND:
-				return getKind();
 			case Models2016Package.PAPER__ABSTRACT:
 				return getAbstract();
 			case Models2016Package.PAPER__NAME:
 				return getName();
+			case Models2016Package.PAPER__KIND:
+				if (resolve) return getKind();
+				return basicGetKind();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -298,14 +305,14 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 			case Models2016Package.PAPER__PREPRINT:
 				setPreprint((String)newValue);
 				return;
-			case Models2016Package.PAPER__KIND:
-				setKind((Track)newValue);
-				return;
 			case Models2016Package.PAPER__ABSTRACT:
 				setAbstract((String)newValue);
 				return;
 			case Models2016Package.PAPER__NAME:
 				setName((String)newValue);
+				return;
+			case Models2016Package.PAPER__KIND:
+				setKind((Kind)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -325,14 +332,14 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 			case Models2016Package.PAPER__PREPRINT:
 				setPreprint(PREPRINT_EDEFAULT);
 				return;
-			case Models2016Package.PAPER__KIND:
-				setKind(KIND_EDEFAULT);
-				return;
 			case Models2016Package.PAPER__ABSTRACT:
 				setAbstract(ABSTRACT_EDEFAULT);
 				return;
 			case Models2016Package.PAPER__NAME:
 				setName(NAME_EDEFAULT);
+				return;
+			case Models2016Package.PAPER__KIND:
+				setKind((Kind)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -350,12 +357,12 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 				return authors != null && !authors.isEmpty();
 			case Models2016Package.PAPER__PREPRINT:
 				return PREPRINT_EDEFAULT == null ? preprint != null : !PREPRINT_EDEFAULT.equals(preprint);
-			case Models2016Package.PAPER__KIND:
-				return kind != KIND_EDEFAULT;
 			case Models2016Package.PAPER__ABSTRACT:
 				return ABSTRACT_EDEFAULT == null ? abstract_ != null : !ABSTRACT_EDEFAULT.equals(abstract_);
 			case Models2016Package.PAPER__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case Models2016Package.PAPER__KIND:
+				return kind != null;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -372,8 +379,6 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (preprint: ");
 		result.append(preprint);
-		result.append(", kind: ");
-		result.append(kind);
 		result.append(", abstract: ");
 		result.append(abstract_);
 		result.append(", name: ");

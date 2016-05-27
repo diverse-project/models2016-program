@@ -10,11 +10,13 @@ import models2016.Day;
 import models2016.DoctoralSymposium;
 import models2016.EducatorSymposium;
 import models2016.Event;
-import models2016.KeyNote;
+import models2016.Keynote;
+import models2016.Kind;
 import models2016.Lunch;
 import models2016.Meeting;
 import models2016.Models2016Factory;
 import models2016.Models2016Package;
+import models2016.Opening;
 import models2016.Panel;
 import models2016.Paper;
 import models2016.Person;
@@ -24,8 +26,8 @@ import models2016.Reception;
 import models2016.Resource;
 import models2016.Room;
 import models2016.Session;
+import models2016.SponsorKeynote;
 import models2016.TalkSession;
-import models2016.Track;
 import models2016.Tutorial;
 import models2016.WeekDay;
 import models2016.Workshop;
@@ -205,7 +207,28 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass keyNoteEClass = null;
+	private EClass keynoteEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass kindEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass sponsorKeynoteEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass openingEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -213,13 +236,6 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * @generated
 	 */
 	private EEnum weekDayEEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EEnum trackEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -688,6 +704,15 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getConference_Kinds() {
+		return (EReference)conferenceEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getPerson() {
 		return personEClass;
 	}
@@ -751,8 +776,8 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPaper_Kind() {
-		return (EAttribute)paperEClass.getEStructuralFeatures().get(2);
+	public EReference getPaper_Kind() {
+		return (EReference)paperEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -761,7 +786,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * @generated
 	 */
 	public EAttribute getPaper_Abstract() {
-		return (EAttribute)paperEClass.getEStructuralFeatures().get(3);
+		return (EAttribute)paperEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -770,7 +795,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * @generated
 	 */
 	public EAttribute getPaper_Name() {
-		return (EAttribute)paperEClass.getEStructuralFeatures().get(4);
+		return (EAttribute)paperEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -823,8 +848,8 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getKeyNote() {
-		return keyNoteEClass;
+	public EClass getKeynote() {
+		return keynoteEClass;
 	}
 
 	/**
@@ -832,8 +857,44 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getKeyNote_Speaker() {
-		return (EReference)keyNoteEClass.getEStructuralFeatures().get(0);
+	public EReference getKeynote_Speaker() {
+		return (EReference)keynoteEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getKind() {
+		return kindEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getKind_Name() {
+		return (EAttribute)kindEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSponsorKeynote() {
+		return sponsorKeynoteEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getOpening() {
+		return openingEClass;
 	}
 
 	/**
@@ -843,15 +904,6 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 */
 	public EEnum getWeekDay() {
 		return weekDayEEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EEnum getTrack() {
-		return trackEEnum;
 	}
 
 	/**
@@ -957,6 +1009,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		createEReference(conferenceEClass, CONFERENCE__EVENTS);
 		createEReference(conferenceEClass, CONFERENCE__PAPERS);
 		createEAttribute(conferenceEClass, CONFERENCE__TALK_DURATION);
+		createEReference(conferenceEClass, CONFERENCE__KINDS);
 
 		personEClass = createEClass(PERSON);
 		createEAttribute(personEClass, PERSON__NAME);
@@ -966,9 +1019,9 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		paperEClass = createEClass(PAPER);
 		createEReference(paperEClass, PAPER__AUTHORS);
 		createEAttribute(paperEClass, PAPER__PREPRINT);
-		createEAttribute(paperEClass, PAPER__KIND);
 		createEAttribute(paperEClass, PAPER__ABSTRACT);
 		createEAttribute(paperEClass, PAPER__NAME);
+		createEReference(paperEClass, PAPER__KIND);
 
 		lunchEClass = createEClass(LUNCH);
 
@@ -980,12 +1033,18 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 
 		posterEClass = createEClass(POSTER);
 
-		keyNoteEClass = createEClass(KEY_NOTE);
-		createEReference(keyNoteEClass, KEY_NOTE__SPEAKER);
+		keynoteEClass = createEClass(KEYNOTE);
+		createEReference(keynoteEClass, KEYNOTE__SPEAKER);
+
+		kindEClass = createEClass(KIND);
+		createEAttribute(kindEClass, KIND__NAME);
+
+		sponsorKeynoteEClass = createEClass(SPONSOR_KEYNOTE);
+
+		openingEClass = createEClass(OPENING);
 
 		// Create enums
 		weekDayEEnum = createEEnum(WEEK_DAY);
-		trackEEnum = createEEnum(TRACK);
 
 		// Create data types
 		hourDataTypeEDataType = createEDataType(HOUR_DATA_TYPE);
@@ -1034,7 +1093,9 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		meetingEClass.getESuperTypes().add(this.getEvent());
 		srcEClass.getESuperTypes().add(this.getEvent());
 		posterEClass.getESuperTypes().add(this.getEvent());
-		keyNoteEClass.getESuperTypes().add(this.getEvent());
+		keynoteEClass.getESuperTypes().add(this.getEvent());
+		sponsorKeynoteEClass.getESuperTypes().add(this.getKeynote());
+		openingEClass.getESuperTypes().add(this.getEvent());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(dayEClass, Day.class, "Day", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1094,6 +1155,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		initEReference(getConference_Events(), this.getEvent(), null, "events", null, 0, -1, Conference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getConference_Papers(), this.getPaper(), null, "papers", null, 0, -1, Conference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getConference_TalkDuration(), ecorePackage.getEIntegerObject(), "talkDuration", null, 0, 1, Conference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getConference_Kinds(), this.getKind(), null, "kinds", null, 0, -1, Conference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(personEClass, Person.class, "Person", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPerson_Name(), ecorePackage.getEString(), "name", null, 1, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1103,9 +1165,9 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		initEClass(paperEClass, Paper.class, "Paper", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPaper_Authors(), this.getPerson(), null, "authors", null, 0, -1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPaper_Preprint(), ecorePackage.getEString(), "preprint", null, 0, 1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPaper_Kind(), this.getTrack(), "kind", null, 0, 1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPaper_Abstract(), ecorePackage.getEString(), "abstract", null, 0, 1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPaper_Name(), ecorePackage.getEString(), "name", null, 0, 1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPaper_Kind(), this.getKind(), null, "kind", null, 0, 1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(lunchEClass, Lunch.class, "Lunch", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1117,8 +1179,15 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 
 		initEClass(posterEClass, Poster.class, "Poster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(keyNoteEClass, KeyNote.class, "KeyNote", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getKeyNote_Speaker(), this.getPerson(), null, "speaker", null, 1, 1, KeyNote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(keynoteEClass, Keynote.class, "Keynote", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getKeynote_Speaker(), this.getPerson(), null, "speaker", null, 1, 1, Keynote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(kindEClass, Kind.class, "Kind", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getKind_Name(), ecorePackage.getEString(), "name", null, 1, 1, Kind.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(sponsorKeynoteEClass, SponsorKeynote.class, "SponsorKeynote", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(openingEClass, Opening.class, "Opening", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Initialize enums and add enum literals
 		initEEnum(weekDayEEnum, WeekDay.class, "WeekDay");
@@ -1129,10 +1198,6 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		addEEnumLiteral(weekDayEEnum, WeekDay.FRIDAY);
 		addEEnumLiteral(weekDayEEnum, WeekDay.SATURDAY);
 		addEEnumLiteral(weekDayEEnum, WeekDay.SUNDAY);
-
-		initEEnum(trackEEnum, Track.class, "Track");
-		addEEnumLiteral(trackEEnum, Track.PRACTICE_AND_INNOVATION);
-		addEEnumLiteral(trackEEnum, Track.RESEARCH);
 
 		// Initialize data types
 		initEDataType(hourDataTypeEDataType, Date.class, "HourDataType", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);

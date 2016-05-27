@@ -26,15 +26,18 @@ import models2016.Day
 import models2016.DoctoralSymposium
 import models2016.EducatorSymposium
 import models2016.Event
-import models2016.KeyNote
+import models2016.Keynote
 import models2016.Lunch
 import models2016.Meeting
+import models2016.Opening
 import models2016.Panel
+import models2016.Person
 import models2016.Poster
 import models2016.Reception
 import models2016.Room
 import models2016.SRC
 import models2016.Session
+import models2016.SponsorKeynote
 import models2016.TalkSession
 import models2016.Tutorial
 import models2016.Workshop
@@ -42,7 +45,6 @@ import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.xtext.generator.AbstractGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess2
 import org.eclipse.xtext.generator.IGeneratorContext
-import models2016.Person
 
 /**
  * Generates code from your model files on save.
@@ -318,6 +320,9 @@ class ProgramGenerator extends AbstractGenerator {
 					{
 						type : "Tutorial",
 						title : «tutorial.name»,
+						«IF tutorial.abstract != null && tutorial.abstract.length > 0»
+						abstract : «tutorial.abstract.replace("\n","\\n")»,
+						«ENDIF»
 						organizers : [
 							«FOR o : tutorial.organizers SEPARATOR ","»
 							«getPerson(o)»
@@ -357,12 +362,34 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 	}
 	
-	def private String getKeynote(KeyNote keynote) {
+	def private String getKeynote(Keynote keynote) {
 		return
 				'''
 					{
 						type : "Keynote",
-						title : «keynote.name»
+						title : «keynote.name»,
+						speaker : «getPerson(keynote.speaker)»
+					}
+				'''
+	}
+	
+	def private String getSponsorKeynote(SponsorKeynote keynote) {
+		return
+				'''
+					{
+						type : "SponsorKeynote",
+						title : «keynote.name»,
+						speaker : «getPerson(keynote.speaker)»
+					}
+				'''
+	}
+	
+	def private String getOpening(Opening opening) {
+		return
+				'''
+					{
+						type : "Opening",
+						title : «opening.name»
 					}
 				'''
 	}
@@ -394,8 +421,12 @@ class ProgramGenerator extends AbstractGenerator {
 			return getSRC(event as SRC)
 		} else if (event instanceof Poster) {
 			return getPoster(event as Poster)
-		} else if (event instanceof KeyNote) {
-			return getKeynote(event as KeyNote)
+		} else if (event instanceof SponsorKeynote) {
+			return getSponsorKeynote(event as SponsorKeynote)
+		} else if (event instanceof Keynote) {
+			return getKeynote(event as Keynote)
+		} else if (event instanceof Opening) {
+			return getOpening(event as Opening)
 		}
 	}
 	
