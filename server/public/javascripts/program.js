@@ -1,6 +1,6 @@
 var modelsApp = angular.module("models-app", []);
 
-modelsApp.controller("ProgramController", function($scope) {
+modelsApp.controller("ProgramController", function($scope, $http) {
 
     // Utils
     $scope.getStartOfSessionGroup = function(sessionGroup) {
@@ -15,11 +15,30 @@ modelsApp.controller("ProgramController", function($scope) {
         }
     }
 
+    $scope.hideType = function(talkType) {
+        return typeof talkType === "undefined" || ["Poster", "SRC", "DoctoralSymposium", "Clinic"].indexOf(talkType) !== -1
+    };
+
     ////// Preprocess data //////
 
     $scope.data = data;
 
     ////// Favorites /////
+
+    function updateFavoriteTalksUrl() {
+        var url = "models.ics";
+        var favorites = [];
+        for (var talk in $scope.favoriteTalks) {
+            if ($scope.favoriteTalks.hasOwnProperty(talk) && $scope.favoriteTalks[talk]) {
+                favorites.push(talk);
+            }
+        }
+        if (favorites.length > 0) {
+            url += "?favorites=" + encodeURIComponent(favorites.join(","));
+        }
+
+        $scope.favoriteTalksUrl = url;
+    }
 
     $scope.showFavorites = localStorage.getItem("showFavorites") === "true";
 
@@ -51,6 +70,8 @@ modelsApp.controller("ProgramController", function($scope) {
         });
     });
 
+    updateFavoriteTalksUrl();
+
     $scope.toggleFavorites = function() {
         localStorage.setItem("showFavorites", $scope.showFavorites);
     };
@@ -58,6 +79,8 @@ modelsApp.controller("ProgramController", function($scope) {
     $scope.toggleFavoriteTalk = function(talk, date) {
         talk.selected=!talk.selected;
         $scope.favoriteTalks[talk.title + date] = talk.selected;
+
+        updateFavoriteTalksUrl();
 
         if(typeof(Storage) !== "undefined") {
             localStorage.setItem("favoriteTalks", JSON.stringify($scope.favoriteTalks));
@@ -76,7 +99,6 @@ modelsApp.controller("ProgramController", function($scope) {
 
         return !$scope.showFavorites || ($scope.showFavorites && atLeastOneSelected);
     };
-
 
 
     ///// Export to iCal /////
@@ -115,31 +137,31 @@ modelsApp.controller("ProgramController", function($scope) {
 
         $scope.data.forEach(function(day) {
 
-           day.sessionGroups.forEach(function(sessionGroup) {
-               if (sessionGroup.length > 0) {
-                   sessionGroup.forEach(function (session, roomIndex) {
-                       if (typeof session.events !== "undefined") {
-                           session.events.forEach(function (event, eventIndex) {
+            day.sessionGroups.forEach(function(sessionGroup) {
+                if (sessionGroup.length > 0) {
+                    sessionGroup.forEach(function (session, roomIndex) {
+                        if (typeof session.events !== "undefined") {
+                            session.events.forEach(function (event, eventIndex) {
 
-                               if (typeof event.papers === "undefined") {
+                                if (typeof event.papers === "undefined") {
 
-                                   if (!favoritesOnly || ((typeof event.selected !== "undefined") && event.selected === true)) {
+                                    if (!favoritesOnly || ((typeof event.selected !== "undefined") && event.selected === true)) {
                                         createEvent(calendar, session.icalStart, session.icalEnd, event.title, event.title, session.room); // TODO : description
-                                   }
-                               } else {
-                                   event.papers.forEach(function(talk, talkIndex) {
-                                       if (!favoritesOnly || ((typeof talk.selected !== "undefined") && talk.selected === true)) {
-                                           createEvent(calendar, talk.icalStart, talk.icalEnd, talk.title, talk.title, session.room); // TODO : description
-                                       }
-                                   });
-                               }
+                                    }
+                                } else {
+                                    event.papers.forEach(function(talk, talkIndex) {
+                                        if (!favoritesOnly || ((typeof talk.selected !== "undefined") && talk.selected === true)) {
+                                            createEvent(calendar, talk.icalStart, talk.icalEnd, talk.title, talk.title, session.room); // TODO : description
+                                        }
+                                    });
+                                }
 
 
-                           });
-                       }
-                   });
-               }
-           });
+                            });
+                        }
+                    });
+                }
+            });
         });
 
         calendar.push("END:VCALENDAR");
@@ -167,5 +189,18 @@ modelsApp.controller("ProgramController", function($scope) {
     $scope.getInfo = function(talk, date) {
         $scope.selectedTalk = talk;
         $scope.selectedTalkDate = date;
+    };
+
+
+    $scope.test = function() {
+        $http.post("/generateIcal", $scope.data).then(function(response) {
+            var elem = window.document.createElement('a');
+            elem.href = "/getIcal/" + response.data;
+            console.log(elem.href)
+            elem.download = "models.ics";
+            document.body.appendChild(elem);
+            elem.click();
+            document.body.removeChild(elem);
+        })
     }
 });

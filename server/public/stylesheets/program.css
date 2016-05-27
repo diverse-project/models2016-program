@@ -90,6 +90,9 @@ footer {
 hr {
     margin-top: 0;
     margin-bottom: 2px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.4);
+    border-width: 1px;
 }
 
 /* Type of events */
