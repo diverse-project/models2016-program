@@ -35,7 +35,7 @@ body {
 }
 
 .table td {
-    min-width: 100px;
+    min-width: 130px;
     max-width: 300px;
     word-wrap: break-word;
     padding: 2px !important;
@@ -68,8 +68,6 @@ body {
 }
 
 .session {
-    height: 100%;
-    min-height: 50px;
     position: relative;
 }
 

@@ -20,38 +20,6 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-2 col-md-2">
-                <div class="row"><strong>Legend:</strong></div>
-                <div class="row legend Opening">Opening</div>
-                <div class="row legend Keynote">Keynote</div>
-                <div class="row legend TalkSession">Talk Session</div>
-
-                <div class="row legend Workshop">Workshop</div>
-                <div class="row legend Tutorial">Tutorial</div>
-                <div class="row legend Poster">Poster</div>
-                <div class="row legend DoctoralSymposium">Symposium</div>
-                <!--<div class="row legend DoctoralSymposium">Doctoral Symposium</div>-->
-                <!--<div class="row legend EducatorSymposium">Educator Symposium</div>-->
-                <div class="row legend SRC">Student Research Competition</div>
-
-
-
-                <div class="row legend Panel">Panel</div>
-                <div class="row legend Clinic">Clinic</div>
-                <div class="row legend Meeting">Meeting</div>
-
-                <!--<div class="row legend Reception">Reception</div>-->
-                <!--<div class="row legend Lunch">Lunch</div>-->
-                <!--<div class="row legend CoffeeBreak">Coffee Break</div>-->
-            </div>
-
-
-            <div class="col-sm-10 col-md-10">
-
-            </div>
-        </div>
-
-        <div class="row">
             <label class="checkbox-inline"><input type="checkbox" ng-model="showFavorites" ng-change="toggleFavorites()"> Show only <span class="glyphicon glyphicon-star"></span></label>
             <button class="btn btn-default" ng-click="exportToCal(true)">Export <span class="glyphicon glyphicon-star"></span> to iCal</button>
             <button class="btn btn-default" ng-click="exportToCal(false)">Export all to iCal</button>
@@ -100,6 +68,11 @@
                             <strong>Speaker:</strong> {{selectedTalk.speaker.name}}
                         </div>
 
+                        <!-- Homepage -->
+                        <div ng-if="selectedTalk.speaker.homepage">
+                            <strong>Homepage:</strong> <a ng-href="{{selectedTalk.speaker.homepage}}">{{selectedTalk.speaker.homepage}}</a>
+                        </div>
+
                         <!-- Website -->
                         <div ng-if="selectedTalk.url">
                             <strong>Website:</strong> <a ng-href="{{selectedTalk.url}}">{{selectedTalk.url}}</a>
@@ -131,7 +104,7 @@
                     <tbody>
                     <tr ng-repeat="sessionGroup in day.sessionGroups" ng-init="sessionGroupIndex = $index">
                         <td ng-if="sessionGroup.length > 0" ng-repeat="session in sessionGroup" rowspan="{{session.rowSpan}}">
-                            <div class="session" ng-if="$first">
+                            <div class="session" ng-if="$first" style="height: {{20*session.rowSpan}}px;">
                                 {{getStartOfSessionGroup(sessionGroup)}}
                                 <div class="sessionEnd">
                                     {{sessionGroupIndex + session.rowSpan === day.sessionGroups.length ? getEndOfSessionGroup(sessionGroup) : ""}}
@@ -146,7 +119,8 @@
                                         <div ng-if="event.title && !event.papers" ng-show="!showFavorites || (showFavorites && event.selected)"  >
 
 
-                                            <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(event, session.icalStart)" ng-if="showModalAndStar(event.type)">{{event.title}}</a>
+                                            <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(event, session.icalStart)" ng-if="event.type !== 'Keynote' && showModalAndStar(event.type)">{{event.title}}</a>
+                                            <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(event, session.icalStart)" ng-if="event.type === 'Keynote'">Keynote: {{event.speaker.name}}</a>
                                             <span ng-if="!showModalAndStar(event.type)">{{event.title}}</span>
                                             <button class="start btn btn-link btn-xs" ng-click="toggleFavoriteTalk(event, session.icalStart)" ng-if="showModalAndStar(event.type)">
                                                 <span ng-if="event.selected" class="glyphicon glyphicon-star"></span>
@@ -177,6 +151,33 @@
                     </tr>
                     </tbody>
                 </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="row"><strong>Legend:</strong></div>
+                <div class="row legend Opening">Opening</div>
+                <div class="row legend Keynote">Keynote</div>
+                <div class="row legend TalkSession">Talk Session</div>
+
+                <div class="row legend Workshop">Workshop</div>
+                <div class="row legend Tutorial">Tutorial</div>
+                <div class="row legend Poster">Poster</div>
+                <div class="row legend DoctoralSymposium">Symposium</div>
+                <!--<div class="row legend DoctoralSymposium">Doctoral Symposium</div>-->
+                <!--<div class="row legend EducatorSymposium">Educator Symposium</div>-->
+                <div class="row legend SRC">Student Research Competition</div>
+
+
+
+                <div class="row legend Panel">Panel</div>
+                <div class="row legend Clinic">Clinic</div>
+                <div class="row legend Meeting">Meeting</div>
+
+                <!--<div class="row legend Reception">Reception</div>-->
+                <!--<div class="row legend Lunch">Lunch</div>-->
+                <!--<div class="row legend CoffeeBreak">Coffee Break</div>-->
             </div>
         </div>
 
