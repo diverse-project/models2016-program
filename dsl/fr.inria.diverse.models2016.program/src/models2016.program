@@ -290,6 +290,10 @@ Conference "MODELS 2016"
 		Meeting "MODELS Steering Commitee Meeting";
 		Meeting "SoSyM Editorial Board Meeting";
 		
+		Reception "Workshop Welcome Reception";
+		Reception "Conference Welcome Reception";
+		Reception "Gala Dinner";
+		
 		Clinic "Clinic";
 		
 		Keynote "Resurrecting Laplace’s Demon: The Case for Deterministic Models"
@@ -684,6 +688,9 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			
 			// Student Research Competition
 			17:30 - 19:00 in "Rotonde Surcouf" : "SRC Poster"
+
+
+			18:00 - 20:00 in "Grand Large" : "Workshop Welcome Reception"
 			
 		Tuesday
 			date 16.10.04
@@ -772,6 +779,9 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			16:00 - 17:30 in "Lamennais 1+2" : "Accusam et justo duo dolores et ea rebum stet clita kasd gubergren"
 			16:00 - 17:30 in "Lamennais 4+5" : "Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no"
 		
+		
+			18:00 - 24:00 in "Grand Large" : "Conference Welcome Reception"
+			
 		Thursday
 			date 16.10.06
 			
@@ -800,6 +810,8 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			16:00 - 17:30 in "Chateaubriand" : "Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem"
 			16:00 - 17:30 in "Lamennais 1+2" : "Rebum stet clita kasd gubergren"
 			16:00 - 17:30 in "Lamennais 4+5" : "Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua"
+		
+			18:00 - 24:00 in "Grand Large" : "Gala Dinner"
 		
 		Friday
 			date 16.10.07
