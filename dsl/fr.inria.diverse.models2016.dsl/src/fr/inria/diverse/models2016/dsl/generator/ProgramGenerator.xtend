@@ -164,6 +164,7 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
+						«IF person.homepage != null && person.homepage.length > 0»homepage : "«person.homepage»",«ENDIF»
 						name : "«person.name»"«IF person.email != null && person.email.length > 0»,
 						email : "«person.email»"
 						«ELSE»

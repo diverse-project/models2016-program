@@ -3624,6 +3624,7 @@ var data = [
 							type : "Keynote",
 							title : "Resurrecting Laplace’s Demon: The Case for Deterministic Models",
 							speaker : {
+								homepage : "http://ptolemy.eecs.berkeley.edu/~eal/",
 								name : "Edward A. Lee"	
 							}
 							,
@@ -4905,6 +4906,7 @@ var data = [
 							type : "Keynote",
 							title : "Keynote 2",
 							speaker : {
+								homepage : "http://www.research.lancs.ac.uk/portal/en/people/gordon-blair",
 								name : "Gordon Blair"	
 							}
 							}
@@ -6128,6 +6130,7 @@ var data = [
 							type : "Keynote",
 							title : "The Straight Line is Ungodly",
 							speaker : {
+								homepage : "https://sites.google.com/a/gertrudandcope.com/www/jimcoplien",
 								name : "Jim Coplien"	
 							}
 							,
