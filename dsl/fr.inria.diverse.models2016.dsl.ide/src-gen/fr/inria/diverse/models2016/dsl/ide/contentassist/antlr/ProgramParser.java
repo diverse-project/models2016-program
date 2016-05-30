@@ -53,8 +53,8 @@ public class ProgramParser extends AbstractContentAssistParser {
 					put(grammarAccess.getDayAccess().getGroup(), "rule__Day__Group__0");
 					put(grammarAccess.getDayAccess().getGroup_1(), "rule__Day__Group_1__0");
 					put(grammarAccess.getDayAccess().getGroup_2(), "rule__Day__Group_2__0");
-					put(grammarAccess.getDayDataTypeAccess().getGroup(), "rule__DayDataType__Group__0");
-					put(grammarAccess.getHourDataTypeAccess().getGroup(), "rule__HourDataType__Group__0");
+					put(grammarAccess.getDayDateAccess().getGroup(), "rule__DayDate__Group__0");
+					put(grammarAccess.getHourDateAccess().getGroup(), "rule__HourDate__Group__0");
 					put(grammarAccess.getSessionAccess().getGroup(), "rule__Session__Group__0");
 					put(grammarAccess.getSessionAccess().getGroup_8(), "rule__Session__Group_8__0");
 					put(grammarAccess.getTalkSessionAccess().getGroup(), "rule__TalkSession__Group__0");
@@ -136,6 +136,11 @@ public class ProgramParser extends AbstractContentAssistParser {
 					put(grammarAccess.getDayAccess().getDateAssignment_1_1(), "rule__Day__DateAssignment_1_1");
 					put(grammarAccess.getDayAccess().getSessionsAssignment_2_0(), "rule__Day__SessionsAssignment_2_0");
 					put(grammarAccess.getDayAccess().getSessionsAssignment_2_1(), "rule__Day__SessionsAssignment_2_1");
+					put(grammarAccess.getDayDateAccess().getYearAssignment_0(), "rule__DayDate__YearAssignment_0");
+					put(grammarAccess.getDayDateAccess().getMonthAssignment_2(), "rule__DayDate__MonthAssignment_2");
+					put(grammarAccess.getDayDateAccess().getDayAssignment_4(), "rule__DayDate__DayAssignment_4");
+					put(grammarAccess.getHourDateAccess().getHoursAssignment_0(), "rule__HourDate__HoursAssignment_0");
+					put(grammarAccess.getHourDateAccess().getMinutesAssignment_2(), "rule__HourDate__MinutesAssignment_2");
 					put(grammarAccess.getSessionAccess().getStartingTimeAssignment_1(), "rule__Session__StartingTimeAssignment_1");
 					put(grammarAccess.getSessionAccess().getEndingTimeAssignment_3(), "rule__Session__EndingTimeAssignment_3");
 					put(grammarAccess.getSessionAccess().getRoomAssignment_5(), "rule__Session__RoomAssignment_5");

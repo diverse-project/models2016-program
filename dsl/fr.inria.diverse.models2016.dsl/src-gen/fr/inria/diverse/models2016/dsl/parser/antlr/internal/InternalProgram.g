@@ -90,20 +90,19 @@ ruleConference returns [EObject current=null]
 		}
 		(
 			(
+				lv_name_2_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getConferenceAccess().getNameEStringParserRuleCall_2_0());
+					newLeafNode(lv_name_2_0, grammarAccess.getConferenceAccess().getNameSTRINGTerminalRuleCall_2_0());
 				}
-				lv_name_2_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getConferenceRule());
+						$current = createModelElement(grammarAccess.getConferenceRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_2_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -113,20 +112,19 @@ ruleConference returns [EObject current=null]
 		}
 		(
 			(
+				lv_talkDuration_4_0=RULE_INT
 				{
-					newCompositeNode(grammarAccess.getConferenceAccess().getTalkDurationEIntegerObjectParserRuleCall_4_0());
+					newLeafNode(lv_talkDuration_4_0, grammarAccess.getConferenceAccess().getTalkDurationINTTerminalRuleCall_4_0());
 				}
-				lv_talkDuration_4_0=ruleEIntegerObject
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getConferenceRule());
+						$current = createModelElement(grammarAccess.getConferenceRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"talkDuration",
 						lv_talkDuration_4_0,
-						"fr.inria.diverse.models2016.dsl.Program.EIntegerObject");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.INT");
 				}
 			)
 		)
@@ -555,30 +553,6 @@ ruleEvent returns [EObject current=null]
 	)
 ;
 
-// Entry rule entryRuleEString
-entryRuleEString returns [String current=null]:
-	{ newCompositeNode(grammarAccess.getEStringRule()); }
-	iv_ruleEString=ruleEString
-	{ $current=$iv_ruleEString.current.getText(); }
-	EOF;
-
-// Rule EString
-ruleEString returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
-	this_STRING_0=RULE_STRING
-	{
-		$current.merge(this_STRING_0);
-	}
-	{
-		newLeafNode(this_STRING_0, grammarAccess.getEStringAccess().getSTRINGTerminalRuleCall());
-	}
-;
-
 // Entry rule entryRuleProgram
 entryRuleProgram returns [EObject current=null]:
 	{ newCompositeNode(grammarAccess.getProgramRule()); }
@@ -682,20 +656,19 @@ ruleRoom returns [EObject current=null]
 		}
 		(
 			(
+				lv_name_2_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getRoomAccess().getNameEStringParserRuleCall_2_0());
+					newLeafNode(lv_name_2_0, grammarAccess.getRoomAccess().getNameSTRINGTerminalRuleCall_2_0());
 				}
-				lv_name_2_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getRoomRule());
+						$current = createModelElement(grammarAccess.getRoomRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_2_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -706,49 +679,24 @@ ruleRoom returns [EObject current=null]
 			}
 			(
 				(
+					lv_capacity_4_0=RULE_INT
 					{
-						newCompositeNode(grammarAccess.getRoomAccess().getCapacityEIntegerObjectParserRuleCall_3_1_0());
+						newLeafNode(lv_capacity_4_0, grammarAccess.getRoomAccess().getCapacityINTTerminalRuleCall_3_1_0());
 					}
-					lv_capacity_4_0=ruleEIntegerObject
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getRoomRule());
+							$current = createModelElement(grammarAccess.getRoomRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"capacity",
 							lv_capacity_4_0,
-							"fr.inria.diverse.models2016.dsl.Program.EIntegerObject");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.INT");
 					}
 				)
 			)
 		)?
 	)
-;
-
-// Entry rule entryRuleEIntegerObject
-entryRuleEIntegerObject returns [String current=null]:
-	{ newCompositeNode(grammarAccess.getEIntegerObjectRule()); }
-	iv_ruleEIntegerObject=ruleEIntegerObject
-	{ $current=$iv_ruleEIntegerObject.current.getText(); }
-	EOF;
-
-// Rule EIntegerObject
-ruleEIntegerObject returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
-	this_INT_0=RULE_INT
-	{
-		$current.merge(this_INT_0);
-	}
-	{
-		newLeafNode(this_INT_0, grammarAccess.getEIntegerObjectAccess().getINTTerminalRuleCall());
-	}
 ;
 
 // Entry rule entryRuleDay
@@ -794,9 +742,9 @@ ruleDay returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getDayAccess().getDateDayDataTypeParserRuleCall_1_1_0());
+						newCompositeNode(grammarAccess.getDayAccess().getDateDayDateParserRuleCall_1_1_0());
 					}
-					lv_date_2_0=ruleDayDataType
+					lv_date_2_0=ruleDayDate
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getDayRule());
@@ -805,7 +753,7 @@ ruleDay returns [EObject current=null]
 							$current,
 							"date",
 							lv_date_2_0,
-							"fr.inria.diverse.models2016.dsl.Program.DayDataType");
+							"fr.inria.diverse.models2016.dsl.Program.DayDate");
 						afterParserOrEnumRuleCall();
 					}
 				)
@@ -854,15 +802,15 @@ ruleDay returns [EObject current=null]
 	)
 ;
 
-// Entry rule entryRuleDayDataType
-entryRuleDayDataType returns [String current=null]:
-	{ newCompositeNode(grammarAccess.getDayDataTypeRule()); }
-	iv_ruleDayDataType=ruleDayDataType
-	{ $current=$iv_ruleDayDataType.current.getText(); }
+// Entry rule entryRuleDayDate
+entryRuleDayDate returns [EObject current=null]:
+	{ newCompositeNode(grammarAccess.getDayDateRule()); }
+	iv_ruleDayDate=ruleDayDate
+	{ $current=$iv_ruleDayDate.current; }
 	EOF;
 
-// Rule DayDataType
-ruleDayDataType returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+// Rule DayDate
+ruleDayDate returns [EObject current=null]
 @init {
 	enterRule();
 }
@@ -870,49 +818,80 @@ ruleDayDataType returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleTok
 	leaveRule();
 }:
 	(
-		this_INT_0=RULE_INT
+		(
+			(
+				lv_year_0_0=RULE_INT
+				{
+					newLeafNode(lv_year_0_0, grammarAccess.getDayDateAccess().getYearINTTerminalRuleCall_0_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getDayDateRule());
+					}
+					setWithLastConsumed(
+						$current,
+						"year",
+						lv_year_0_0,
+						"org.eclipse.xtext.common.Terminals.INT");
+				}
+			)
+		)
+		otherlv_1='.'
 		{
-			$current.merge(this_INT_0);
+			newLeafNode(otherlv_1, grammarAccess.getDayDateAccess().getFullStopKeyword_1());
 		}
+		(
+			(
+				lv_month_2_0=RULE_INT
+				{
+					newLeafNode(lv_month_2_0, grammarAccess.getDayDateAccess().getMonthINTTerminalRuleCall_2_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getDayDateRule());
+					}
+					setWithLastConsumed(
+						$current,
+						"month",
+						lv_month_2_0,
+						"org.eclipse.xtext.common.Terminals.INT");
+				}
+			)
+		)
+		otherlv_3='.'
 		{
-			newLeafNode(this_INT_0, grammarAccess.getDayDataTypeAccess().getINTTerminalRuleCall_0());
+			newLeafNode(otherlv_3, grammarAccess.getDayDateAccess().getFullStopKeyword_3());
 		}
-		kw='.'
-		{
-			$current.merge(kw);
-			newLeafNode(kw, grammarAccess.getDayDataTypeAccess().getFullStopKeyword_1());
-		}
-		this_INT_2=RULE_INT
-		{
-			$current.merge(this_INT_2);
-		}
-		{
-			newLeafNode(this_INT_2, grammarAccess.getDayDataTypeAccess().getINTTerminalRuleCall_2());
-		}
-		kw='.'
-		{
-			$current.merge(kw);
-			newLeafNode(kw, grammarAccess.getDayDataTypeAccess().getFullStopKeyword_3());
-		}
-		this_INT_4=RULE_INT
-		{
-			$current.merge(this_INT_4);
-		}
-		{
-			newLeafNode(this_INT_4, grammarAccess.getDayDataTypeAccess().getINTTerminalRuleCall_4());
-		}
+		(
+			(
+				lv_day_4_0=RULE_INT
+				{
+					newLeafNode(lv_day_4_0, grammarAccess.getDayDateAccess().getDayINTTerminalRuleCall_4_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getDayDateRule());
+					}
+					setWithLastConsumed(
+						$current,
+						"day",
+						lv_day_4_0,
+						"org.eclipse.xtext.common.Terminals.INT");
+				}
+			)
+		)
 	)
 ;
 
-// Entry rule entryRuleHourDataType
-entryRuleHourDataType returns [String current=null]:
-	{ newCompositeNode(grammarAccess.getHourDataTypeRule()); }
-	iv_ruleHourDataType=ruleHourDataType
-	{ $current=$iv_ruleHourDataType.current.getText(); }
+// Entry rule entryRuleHourDate
+entryRuleHourDate returns [EObject current=null]:
+	{ newCompositeNode(grammarAccess.getHourDateRule()); }
+	iv_ruleHourDate=ruleHourDate
+	{ $current=$iv_ruleHourDate.current; }
 	EOF;
 
-// Rule HourDataType
-ruleHourDataType returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+// Rule HourDate
+ruleHourDate returns [EObject current=null]
 @init {
 	enterRule();
 }
@@ -920,25 +899,46 @@ ruleHourDataType returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleTo
 	leaveRule();
 }:
 	(
-		this_INT_0=RULE_INT
+		(
+			(
+				lv_hours_0_0=RULE_INT
+				{
+					newLeafNode(lv_hours_0_0, grammarAccess.getHourDateAccess().getHoursINTTerminalRuleCall_0_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getHourDateRule());
+					}
+					setWithLastConsumed(
+						$current,
+						"hours",
+						lv_hours_0_0,
+						"org.eclipse.xtext.common.Terminals.INT");
+				}
+			)
+		)
+		otherlv_1=':'
 		{
-			$current.merge(this_INT_0);
+			newLeafNode(otherlv_1, grammarAccess.getHourDateAccess().getColonKeyword_1());
 		}
-		{
-			newLeafNode(this_INT_0, grammarAccess.getHourDataTypeAccess().getINTTerminalRuleCall_0());
-		}
-		kw=':'
-		{
-			$current.merge(kw);
-			newLeafNode(kw, grammarAccess.getHourDataTypeAccess().getColonKeyword_1());
-		}
-		this_INT_2=RULE_INT
-		{
-			$current.merge(this_INT_2);
-		}
-		{
-			newLeafNode(this_INT_2, grammarAccess.getHourDataTypeAccess().getINTTerminalRuleCall_2());
-		}
+		(
+			(
+				lv_minutes_2_0=RULE_INT
+				{
+					newLeafNode(lv_minutes_2_0, grammarAccess.getHourDateAccess().getMinutesINTTerminalRuleCall_2_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getHourDateRule());
+					}
+					setWithLastConsumed(
+						$current,
+						"minutes",
+						lv_minutes_2_0,
+						"org.eclipse.xtext.common.Terminals.INT");
+				}
+			)
+		)
 	)
 ;
 
@@ -968,9 +968,9 @@ ruleSession returns [EObject current=null]
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getSessionAccess().getStartingTimeHourDataTypeParserRuleCall_1_0());
+					newCompositeNode(grammarAccess.getSessionAccess().getStartingTimeHourDateParserRuleCall_1_0());
 				}
-				lv_startingTime_1_0=ruleHourDataType
+				lv_startingTime_1_0=ruleHourDate
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getSessionRule());
@@ -979,7 +979,7 @@ ruleSession returns [EObject current=null]
 						$current,
 						"startingTime",
 						lv_startingTime_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.HourDataType");
+						"fr.inria.diverse.models2016.dsl.Program.HourDate");
 					afterParserOrEnumRuleCall();
 				}
 			)
@@ -991,9 +991,9 @@ ruleSession returns [EObject current=null]
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getSessionAccess().getEndingTimeHourDataTypeParserRuleCall_3_0());
+					newCompositeNode(grammarAccess.getSessionAccess().getEndingTimeHourDateParserRuleCall_3_0());
 				}
-				lv_endingTime_3_0=ruleHourDataType
+				lv_endingTime_3_0=ruleHourDate
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getSessionRule());
@@ -1002,7 +1002,7 @@ ruleSession returns [EObject current=null]
 						$current,
 						"endingTime",
 						lv_endingTime_3_0,
-						"fr.inria.diverse.models2016.dsl.Program.HourDataType");
+						"fr.inria.diverse.models2016.dsl.Program.HourDate");
 					afterParserOrEnumRuleCall();
 				}
 			)
@@ -1018,12 +1018,9 @@ ruleSession returns [EObject current=null]
 						$current = createModelElement(grammarAccess.getSessionRule());
 					}
 				}
+				otherlv_5=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getSessionAccess().getRoomRoomCrossReference_5_0());
-				}
-				ruleEString
-				{
-					afterParserOrEnumRuleCall();
+					newLeafNode(otherlv_5, grammarAccess.getSessionAccess().getRoomRoomCrossReference_5_0());
 				}
 			)
 		)
@@ -1038,12 +1035,9 @@ ruleSession returns [EObject current=null]
 						$current = createModelElement(grammarAccess.getSessionRule());
 					}
 				}
+				otherlv_7=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getSessionAccess().getEventsEventCrossReference_7_0());
-				}
-				ruleEString
-				{
-					afterParserOrEnumRuleCall();
+					newLeafNode(otherlv_7, grammarAccess.getSessionAccess().getEventsEventCrossReference_7_0());
 				}
 			)
 		)
@@ -1059,12 +1053,9 @@ ruleSession returns [EObject current=null]
 							$current = createModelElement(grammarAccess.getSessionRule());
 						}
 					}
+					otherlv_9=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getSessionAccess().getEventsEventCrossReference_8_1_0());
-					}
-					ruleEString
-					{
-						afterParserOrEnumRuleCall();
+						newLeafNode(otherlv_9, grammarAccess.getSessionAccess().getEventsEventCrossReference_8_1_0());
 					}
 				)
 			)
@@ -1094,20 +1085,19 @@ ruleTalkSession returns [EObject current=null]
 		}
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getTalkSessionAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getTalkSessionAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getTalkSessionRule());
+						$current = createModelElement(grammarAccess.getTalkSessionRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -1143,20 +1133,19 @@ ruleTalkSession returns [EObject current=null]
 			}
 			(
 				(
+					lv_abstract_5_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getTalkSessionAccess().getAbstractEStringParserRuleCall_3_1_0());
+						newLeafNode(lv_abstract_5_0, grammarAccess.getTalkSessionAccess().getAbstractSTRINGTerminalRuleCall_3_1_0());
 					}
-					lv_abstract_5_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getTalkSessionRule());
+							$current = createModelElement(grammarAccess.getTalkSessionRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"abstract",
 							lv_abstract_5_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -1173,12 +1162,9 @@ ruleTalkSession returns [EObject current=null]
 							$current = createModelElement(grammarAccess.getTalkSessionRule());
 						}
 					}
+					otherlv_7=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getTalkSessionAccess().getPapersPaperCrossReference_4_1_0());
-					}
-					ruleEString
-					{
-						afterParserOrEnumRuleCall();
+						newLeafNode(otherlv_7, grammarAccess.getTalkSessionAccess().getPapersPaperCrossReference_4_1_0());
 					}
 				)
 			)
@@ -1194,12 +1180,9 @@ ruleTalkSession returns [EObject current=null]
 								$current = createModelElement(grammarAccess.getTalkSessionRule());
 							}
 						}
+						otherlv_9=RULE_STRING
 						{
-							newCompositeNode(grammarAccess.getTalkSessionAccess().getPapersPaperCrossReference_4_2_1_0());
-						}
-						ruleEString
-						{
-							afterParserOrEnumRuleCall();
+							newLeafNode(otherlv_9, grammarAccess.getTalkSessionAccess().getPapersPaperCrossReference_4_2_1_0());
 						}
 					)
 				)
@@ -1230,20 +1213,19 @@ rulePanel returns [EObject current=null]
 		}
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getPanelAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getPanelAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getPanelRule());
+						$current = createModelElement(grammarAccess.getPanelRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -1254,20 +1236,19 @@ rulePanel returns [EObject current=null]
 			}
 			(
 				(
+					lv_abstract_3_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getPanelAccess().getAbstractEStringParserRuleCall_2_1_0());
+						newLeafNode(lv_abstract_3_0, grammarAccess.getPanelAccess().getAbstractSTRINGTerminalRuleCall_2_1_0());
 					}
-					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getPanelRule());
+							$current = createModelElement(grammarAccess.getPanelRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"abstract",
 							lv_abstract_3_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -1397,20 +1378,19 @@ ruleSRC returns [EObject current=null]
 		}
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getSRCAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getSRCAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getSRCRule());
+						$current = createModelElement(grammarAccess.getSRCRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -1421,20 +1401,19 @@ ruleSRC returns [EObject current=null]
 			}
 			(
 				(
+					lv_abstract_3_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getSRCAccess().getAbstractEStringParserRuleCall_2_1_0());
+						newLeafNode(lv_abstract_3_0, grammarAccess.getSRCAccess().getAbstractSTRINGTerminalRuleCall_2_1_0());
 					}
-					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getSRCRule());
+							$current = createModelElement(grammarAccess.getSRCRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"abstract",
 							lv_abstract_3_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -1464,20 +1443,19 @@ rulePoster returns [EObject current=null]
 		}
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getPosterAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getPosterAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getPosterRule());
+						$current = createModelElement(grammarAccess.getPosterRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -1488,20 +1466,19 @@ rulePoster returns [EObject current=null]
 			}
 			(
 				(
+					lv_abstract_3_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getPosterAccess().getAbstractEStringParserRuleCall_2_1_0());
+						newLeafNode(lv_abstract_3_0, grammarAccess.getPosterAccess().getAbstractSTRINGTerminalRuleCall_2_1_0());
 					}
-					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getPosterRule());
+							$current = createModelElement(grammarAccess.getPosterRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"abstract",
 							lv_abstract_3_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -1531,20 +1508,19 @@ ruleKeynote returns [EObject current=null]
 		}
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getKeynoteAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getKeynoteAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getKeynoteRule());
+						$current = createModelElement(grammarAccess.getKeynoteRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -1555,20 +1531,19 @@ ruleKeynote returns [EObject current=null]
 			}
 			(
 				(
+					lv_abstract_3_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getKeynoteAccess().getAbstractEStringParserRuleCall_2_1_0());
+						newLeafNode(lv_abstract_3_0, grammarAccess.getKeynoteAccess().getAbstractSTRINGTerminalRuleCall_2_1_0());
 					}
-					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getKeynoteRule());
+							$current = createModelElement(grammarAccess.getKeynoteRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"abstract",
 							lv_abstract_3_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -1623,20 +1598,19 @@ ruleSponsorKeynote returns [EObject current=null]
 		}
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getSponsorKeynoteAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getSponsorKeynoteAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getSponsorKeynoteRule());
+						$current = createModelElement(grammarAccess.getSponsorKeynoteRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -1647,20 +1621,19 @@ ruleSponsorKeynote returns [EObject current=null]
 			}
 			(
 				(
+					lv_abstract_3_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getSponsorKeynoteAccess().getAbstractEStringParserRuleCall_2_1_0());
+						newLeafNode(lv_abstract_3_0, grammarAccess.getSponsorKeynoteAccess().getAbstractSTRINGTerminalRuleCall_2_1_0());
 					}
-					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getSponsorKeynoteRule());
+							$current = createModelElement(grammarAccess.getSponsorKeynoteRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"abstract",
 							lv_abstract_3_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -1715,20 +1688,19 @@ ruleWorkshop returns [EObject current=null]
 		}
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getWorkshopAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getWorkshopAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getWorkshopRule());
+						$current = createModelElement(grammarAccess.getWorkshopRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -1739,20 +1711,19 @@ ruleWorkshop returns [EObject current=null]
 			}
 			(
 				(
+					lv_abstract_3_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getWorkshopAccess().getAbstractEStringParserRuleCall_2_1_0());
+						newLeafNode(lv_abstract_3_0, grammarAccess.getWorkshopAccess().getAbstractSTRINGTerminalRuleCall_2_1_0());
 					}
-					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getWorkshopRule());
+							$current = createModelElement(grammarAccess.getWorkshopRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"abstract",
 							lv_abstract_3_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -1764,20 +1735,19 @@ ruleWorkshop returns [EObject current=null]
 			}
 			(
 				(
+					lv_url_5_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getWorkshopAccess().getUrlEStringParserRuleCall_3_1_0());
+						newLeafNode(lv_url_5_0, grammarAccess.getWorkshopAccess().getUrlSTRINGTerminalRuleCall_3_1_0());
 					}
-					lv_url_5_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getWorkshopRule());
+							$current = createModelElement(grammarAccess.getWorkshopRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"url",
 							lv_url_5_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -1789,20 +1759,19 @@ ruleWorkshop returns [EObject current=null]
 			}
 			(
 				(
+					lv_fullName_7_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getWorkshopAccess().getFullNameEStringParserRuleCall_4_1_0());
+						newLeafNode(lv_fullName_7_0, grammarAccess.getWorkshopAccess().getFullNameSTRINGTerminalRuleCall_4_1_0());
 					}
-					lv_fullName_7_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getWorkshopRule());
+							$current = createModelElement(grammarAccess.getWorkshopRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"fullName",
 							lv_fullName_7_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -1882,20 +1851,19 @@ ruleTutorial returns [EObject current=null]
 		}
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getTutorialAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getTutorialAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getTutorialRule());
+						$current = createModelElement(grammarAccess.getTutorialRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -1906,20 +1874,19 @@ ruleTutorial returns [EObject current=null]
 			}
 			(
 				(
+					lv_abstract_3_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getTutorialAccess().getAbstractEStringParserRuleCall_2_1_0());
+						newLeafNode(lv_abstract_3_0, grammarAccess.getTutorialAccess().getAbstractSTRINGTerminalRuleCall_2_1_0());
 					}
-					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getTutorialRule());
+							$current = createModelElement(grammarAccess.getTutorialRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"abstract",
 							lv_abstract_3_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -1999,20 +1966,19 @@ ruleDoctoralSymposium returns [EObject current=null]
 		}
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getDoctoralSymposiumAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getDoctoralSymposiumAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getDoctoralSymposiumRule());
+						$current = createModelElement(grammarAccess.getDoctoralSymposiumRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -2023,20 +1989,19 @@ ruleDoctoralSymposium returns [EObject current=null]
 			}
 			(
 				(
+					lv_abstract_3_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getDoctoralSymposiumAccess().getAbstractEStringParserRuleCall_2_1_0());
+						newLeafNode(lv_abstract_3_0, grammarAccess.getDoctoralSymposiumAccess().getAbstractSTRINGTerminalRuleCall_2_1_0());
 					}
-					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getDoctoralSymposiumRule());
+							$current = createModelElement(grammarAccess.getDoctoralSymposiumRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"abstract",
 							lv_abstract_3_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -2116,20 +2081,19 @@ ruleEducatorSymposium returns [EObject current=null]
 		}
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getEducatorSymposiumAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getEducatorSymposiumAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getEducatorSymposiumRule());
+						$current = createModelElement(grammarAccess.getEducatorSymposiumRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -2140,20 +2104,19 @@ ruleEducatorSymposium returns [EObject current=null]
 			}
 			(
 				(
+					lv_abstract_3_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getEducatorSymposiumAccess().getAbstractEStringParserRuleCall_2_1_0());
+						newLeafNode(lv_abstract_3_0, grammarAccess.getEducatorSymposiumAccess().getAbstractSTRINGTerminalRuleCall_2_1_0());
 					}
-					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getEducatorSymposiumRule());
+							$current = createModelElement(grammarAccess.getEducatorSymposiumRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"abstract",
 							lv_abstract_3_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -2233,20 +2196,19 @@ ruleReception returns [EObject current=null]
 		}
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getReceptionAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getReceptionAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getReceptionRule());
+						$current = createModelElement(grammarAccess.getReceptionRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -2257,20 +2219,19 @@ ruleReception returns [EObject current=null]
 			}
 			(
 				(
+					lv_abstract_3_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getReceptionAccess().getAbstractEStringParserRuleCall_2_1_0());
+						newLeafNode(lv_abstract_3_0, grammarAccess.getReceptionAccess().getAbstractSTRINGTerminalRuleCall_2_1_0());
 					}
-					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getReceptionRule());
+							$current = createModelElement(grammarAccess.getReceptionRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"abstract",
 							lv_abstract_3_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -2300,20 +2261,19 @@ ruleClinic returns [EObject current=null]
 		}
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getClinicAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getClinicAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getClinicRule());
+						$current = createModelElement(grammarAccess.getClinicRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -2324,20 +2284,19 @@ ruleClinic returns [EObject current=null]
 			}
 			(
 				(
+					lv_abstract_3_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getClinicAccess().getAbstractEStringParserRuleCall_2_1_0());
+						newLeafNode(lv_abstract_3_0, grammarAccess.getClinicAccess().getAbstractSTRINGTerminalRuleCall_2_1_0());
 					}
-					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getClinicRule());
+							$current = createModelElement(grammarAccess.getClinicRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"abstract",
 							lv_abstract_3_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -2367,20 +2326,19 @@ ruleLunch returns [EObject current=null]
 		}
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getLunchAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getLunchAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getLunchRule());
+						$current = createModelElement(grammarAccess.getLunchRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -2391,20 +2349,19 @@ ruleLunch returns [EObject current=null]
 			}
 			(
 				(
+					lv_abstract_3_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getLunchAccess().getAbstractEStringParserRuleCall_2_1_0());
+						newLeafNode(lv_abstract_3_0, grammarAccess.getLunchAccess().getAbstractSTRINGTerminalRuleCall_2_1_0());
 					}
-					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getLunchRule());
+							$current = createModelElement(grammarAccess.getLunchRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"abstract",
 							lv_abstract_3_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -2434,20 +2391,19 @@ ruleCoffeeBreak returns [EObject current=null]
 		}
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getCoffeeBreakAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getCoffeeBreakAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getCoffeeBreakRule());
+						$current = createModelElement(grammarAccess.getCoffeeBreakRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -2458,20 +2414,19 @@ ruleCoffeeBreak returns [EObject current=null]
 			}
 			(
 				(
+					lv_abstract_3_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getCoffeeBreakAccess().getAbstractEStringParserRuleCall_2_1_0());
+						newLeafNode(lv_abstract_3_0, grammarAccess.getCoffeeBreakAccess().getAbstractSTRINGTerminalRuleCall_2_1_0());
 					}
-					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getCoffeeBreakRule());
+							$current = createModelElement(grammarAccess.getCoffeeBreakRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"abstract",
 							lv_abstract_3_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -2501,20 +2456,19 @@ ruleMeeting returns [EObject current=null]
 		}
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getMeetingAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getMeetingAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getMeetingRule());
+						$current = createModelElement(grammarAccess.getMeetingRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -2525,20 +2479,19 @@ ruleMeeting returns [EObject current=null]
 			}
 			(
 				(
+					lv_abstract_3_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getMeetingAccess().getAbstractEStringParserRuleCall_2_1_0());
+						newLeafNode(lv_abstract_3_0, grammarAccess.getMeetingAccess().getAbstractSTRINGTerminalRuleCall_2_1_0());
 					}
-					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getMeetingRule());
+							$current = createModelElement(grammarAccess.getMeetingRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"abstract",
 							lv_abstract_3_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -2568,20 +2521,19 @@ ruleOpening returns [EObject current=null]
 		}
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getOpeningAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getOpeningAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getOpeningRule());
+						$current = createModelElement(grammarAccess.getOpeningRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -2592,20 +2544,19 @@ ruleOpening returns [EObject current=null]
 			}
 			(
 				(
+					lv_abstract_3_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getOpeningAccess().getAbstractEStringParserRuleCall_2_1_0());
+						newLeafNode(lv_abstract_3_0, grammarAccess.getOpeningAccess().getAbstractSTRINGTerminalRuleCall_2_1_0());
 					}
-					lv_abstract_3_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getOpeningRule());
+							$current = createModelElement(grammarAccess.getOpeningRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"abstract",
 							lv_abstract_3_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -2638,20 +2589,19 @@ rulePaper returns [EObject current=null]
 		)
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getPaperAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getPaperAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getPaperRule());
+						$current = createModelElement(grammarAccess.getPaperRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -2710,20 +2660,19 @@ rulePaper returns [EObject current=null]
 			}
 			(
 				(
+					lv_abstract_7_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getPaperAccess().getAbstractEStringParserRuleCall_5_1_0());
+						newLeafNode(lv_abstract_7_0, grammarAccess.getPaperAccess().getAbstractSTRINGTerminalRuleCall_5_1_0());
 					}
-					lv_abstract_7_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getPaperRule());
+							$current = createModelElement(grammarAccess.getPaperRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"abstract",
 							lv_abstract_7_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -2735,20 +2684,19 @@ rulePaper returns [EObject current=null]
 			}
 			(
 				(
+					lv_preprint_9_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getPaperAccess().getPreprintEStringParserRuleCall_6_1_0());
+						newLeafNode(lv_preprint_9_0, grammarAccess.getPaperAccess().getPreprintSTRINGTerminalRuleCall_6_1_0());
 					}
-					lv_preprint_9_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getPaperRule());
+							$current = createModelElement(grammarAccess.getPaperRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"preprint",
 							lv_preprint_9_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -2765,12 +2713,9 @@ rulePaper returns [EObject current=null]
 							$current = createModelElement(grammarAccess.getPaperRule());
 						}
 					}
+					otherlv_11=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getPaperAccess().getKindKindCrossReference_7_1_0());
-					}
-					ruleEString
-					{
-						afterParserOrEnumRuleCall();
+						newLeafNode(otherlv_11, grammarAccess.getPaperAccess().getKindKindCrossReference_7_1_0());
 					}
 				)
 			)
@@ -2803,20 +2748,19 @@ rulePerson returns [EObject current=null]
 		)
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getPersonAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getPersonAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getPersonRule());
+						$current = createModelElement(grammarAccess.getPersonRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)
@@ -2827,20 +2771,19 @@ rulePerson returns [EObject current=null]
 			}
 			(
 				(
+					lv_email_3_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getPersonAccess().getEmailEStringParserRuleCall_2_1_0());
+						newLeafNode(lv_email_3_0, grammarAccess.getPersonAccess().getEmailSTRINGTerminalRuleCall_2_1_0());
 					}
-					lv_email_3_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getPersonRule());
+							$current = createModelElement(grammarAccess.getPersonRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"email",
 							lv_email_3_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -2852,20 +2795,19 @@ rulePerson returns [EObject current=null]
 			}
 			(
 				(
+					lv_homepage_5_0=RULE_STRING
 					{
-						newCompositeNode(grammarAccess.getPersonAccess().getHomepageEStringParserRuleCall_3_1_0());
+						newLeafNode(lv_homepage_5_0, grammarAccess.getPersonAccess().getHomepageSTRINGTerminalRuleCall_3_1_0());
 					}
-					lv_homepage_5_0=ruleEString
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getPersonRule());
+							$current = createModelElement(grammarAccess.getPersonRule());
 						}
-						set(
+						setWithLastConsumed(
 							$current,
 							"homepage",
 							lv_homepage_5_0,
-							"fr.inria.diverse.models2016.dsl.Program.EString");
-						afterParserOrEnumRuleCall();
+							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
 			)
@@ -2898,20 +2840,19 @@ ruleKind returns [EObject current=null]
 		)
 		(
 			(
+				lv_name_1_0=RULE_STRING
 				{
-					newCompositeNode(grammarAccess.getKindAccess().getNameEStringParserRuleCall_1_0());
+					newLeafNode(lv_name_1_0, grammarAccess.getKindAccess().getNameSTRINGTerminalRuleCall_1_0());
 				}
-				lv_name_1_0=ruleEString
 				{
 					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getKindRule());
+						$current = createModelElement(grammarAccess.getKindRule());
 					}
-					set(
+					setWithLastConsumed(
 						$current,
 						"name",
 						lv_name_1_0,
-						"fr.inria.diverse.models2016.dsl.Program.EString");
-					afterParserOrEnumRuleCall();
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
 		)

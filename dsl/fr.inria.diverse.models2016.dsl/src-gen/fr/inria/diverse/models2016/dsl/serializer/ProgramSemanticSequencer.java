@@ -9,6 +9,7 @@ import java.util.Set;
 import models2016.Clinic;
 import models2016.CoffeeBreak;
 import models2016.Conference;
+import models2016.Date;
 import models2016.Day;
 import models2016.DoctoralSymposium;
 import models2016.EducatorSymposium;
@@ -64,6 +65,16 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 			case Models2016Package.CONFERENCE:
 				sequence_Conference(context, (Conference) semanticObject); 
 				return; 
+			case Models2016Package.DATE:
+				if (rule == grammarAccess.getDayDateRule()) {
+					sequence_DayDate(context, (Date) semanticObject); 
+					return; 
+				}
+				else if (rule == grammarAccess.getHourDateRule()) {
+					sequence_HourDate(context, (Date) semanticObject); 
+					return; 
+				}
+				else break;
 			case Models2016Package.DAY:
 				sequence_Day(context, (Day) semanticObject); 
 				return; 
@@ -138,7 +149,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Clinic returns Clinic
 	 *
 	 * Constraint:
-	 *     (name=EString abstract=EString?)
+	 *     (name=STRING abstract=STRING?)
 	 */
 	protected void sequence_Clinic(ISerializationContext context, Clinic semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -151,7 +162,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     CoffeeBreak returns CoffeeBreak
 	 *
 	 * Constraint:
-	 *     (name=EString abstract=EString?)
+	 *     (name=STRING abstract=STRING?)
 	 */
 	protected void sequence_CoffeeBreak(ISerializationContext context, CoffeeBreak semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -164,8 +175,8 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *
 	 * Constraint:
 	 *     (
-	 *         name=EString 
-	 *         talkDuration=EIntegerObject 
+	 *         name=STRING 
+	 *         talkDuration=INT 
 	 *         (kinds+=Kind kinds+=Kind*)? 
 	 *         (resources+=Resource resources+=Resource*)? 
 	 *         (papers+=Paper papers+=Paper*)? 
@@ -180,10 +191,34 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Contexts:
+	 *     DayDate returns Date
+	 *
+	 * Constraint:
+	 *     (year=INT month=INT day=INT)
+	 */
+	protected void sequence_DayDate(ISerializationContext context, Date semanticObject) {
+		if (errorAcceptor != null) {
+			if (transientValues.isValueTransient(semanticObject, Models2016Package.Literals.DATE__YEAR) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, Models2016Package.Literals.DATE__YEAR));
+			if (transientValues.isValueTransient(semanticObject, Models2016Package.Literals.DATE__MONTH) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, Models2016Package.Literals.DATE__MONTH));
+			if (transientValues.isValueTransient(semanticObject, Models2016Package.Literals.DATE__DAY) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, Models2016Package.Literals.DATE__DAY));
+		}
+		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
+		feeder.accept(grammarAccess.getDayDateAccess().getYearINTTerminalRuleCall_0_0(), semanticObject.getYear());
+		feeder.accept(grammarAccess.getDayDateAccess().getMonthINTTerminalRuleCall_2_0(), semanticObject.getMonth());
+		feeder.accept(grammarAccess.getDayDateAccess().getDayINTTerminalRuleCall_4_0(), semanticObject.getDay());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Contexts:
 	 *     Day returns Day
 	 *
 	 * Constraint:
-	 *     (weekday=WeekDay date=DayDataType? (sessions+=Session sessions+=Session*)?)
+	 *     (weekday=WeekDay date=DayDate? (sessions+=Session sessions+=Session*)?)
 	 */
 	protected void sequence_Day(ISerializationContext context, Day semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -196,7 +231,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     DoctoralSymposium returns DoctoralSymposium
 	 *
 	 * Constraint:
-	 *     (name=EString abstract=EString? (organizers+=Person organizers+=Person*)?)
+	 *     (name=STRING abstract=STRING? (organizers+=Person organizers+=Person*)?)
 	 */
 	protected void sequence_DoctoralSymposium(ISerializationContext context, DoctoralSymposium semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -209,10 +244,31 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     EducatorSymposium returns EducatorSymposium
 	 *
 	 * Constraint:
-	 *     (name=EString abstract=EString? (organizers+=Person organizers+=Person*)?)
+	 *     (name=STRING abstract=STRING? (organizers+=Person organizers+=Person*)?)
 	 */
 	protected void sequence_EducatorSymposium(ISerializationContext context, EducatorSymposium semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Contexts:
+	 *     HourDate returns Date
+	 *
+	 * Constraint:
+	 *     (hours=INT minutes=INT)
+	 */
+	protected void sequence_HourDate(ISerializationContext context, Date semanticObject) {
+		if (errorAcceptor != null) {
+			if (transientValues.isValueTransient(semanticObject, Models2016Package.Literals.DATE__HOURS) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, Models2016Package.Literals.DATE__HOURS));
+			if (transientValues.isValueTransient(semanticObject, Models2016Package.Literals.DATE__MINUTES) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, Models2016Package.Literals.DATE__MINUTES));
+		}
+		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
+		feeder.accept(grammarAccess.getHourDateAccess().getHoursINTTerminalRuleCall_0_0(), semanticObject.getHours());
+		feeder.accept(grammarAccess.getHourDateAccess().getMinutesINTTerminalRuleCall_2_0(), semanticObject.getMinutes());
+		feeder.finish();
 	}
 	
 	
@@ -222,7 +278,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Keynote returns Keynote
 	 *
 	 * Constraint:
-	 *     (name=EString abstract=EString? speaker=Person?)
+	 *     (name=STRING abstract=STRING? speaker=Person?)
 	 */
 	protected void sequence_Keynote(ISerializationContext context, Keynote semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -234,7 +290,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Kind returns Kind
 	 *
 	 * Constraint:
-	 *     name=EString
+	 *     name=STRING
 	 */
 	protected void sequence_Kind(ISerializationContext context, Kind semanticObject) {
 		if (errorAcceptor != null) {
@@ -242,7 +298,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, Models2016Package.Literals.KIND__NAME));
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getKindAccess().getNameEStringParserRuleCall_1_0(), semanticObject.getName());
+		feeder.accept(grammarAccess.getKindAccess().getNameSTRINGTerminalRuleCall_1_0(), semanticObject.getName());
 		feeder.finish();
 	}
 	
@@ -253,7 +309,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Lunch returns Lunch
 	 *
 	 * Constraint:
-	 *     (name=EString abstract=EString?)
+	 *     (name=STRING abstract=STRING?)
 	 */
 	protected void sequence_Lunch(ISerializationContext context, Lunch semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -266,7 +322,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Meeting returns Meeting
 	 *
 	 * Constraint:
-	 *     (name=EString abstract=EString?)
+	 *     (name=STRING abstract=STRING?)
 	 */
 	protected void sequence_Meeting(ISerializationContext context, Meeting semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -279,7 +335,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Opening returns Opening
 	 *
 	 * Constraint:
-	 *     (name=EString abstract=EString?)
+	 *     (name=STRING abstract=STRING?)
 	 */
 	protected void sequence_Opening(ISerializationContext context, Opening semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -292,7 +348,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Panel returns Panel
 	 *
 	 * Constraint:
-	 *     (name=EString abstract=EString? (panelists+=Person panelists+=Person*)? (moderators+=Person moderators+=Person*)?)
+	 *     (name=STRING abstract=STRING? (panelists+=Person panelists+=Person*)? (moderators+=Person moderators+=Person*)?)
 	 */
 	protected void sequence_Panel(ISerializationContext context, Panel semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -305,12 +361,12 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *
 	 * Constraint:
 	 *     (
-	 *         name=EString 
+	 *         name=STRING 
 	 *         authors+=Person 
 	 *         authors+=Person* 
-	 *         abstract=EString? 
-	 *         preprint=EString? 
-	 *         kind=[Kind|EString]?
+	 *         abstract=STRING? 
+	 *         preprint=STRING? 
+	 *         kind=[Kind|STRING]?
 	 *     )
 	 */
 	protected void sequence_Paper(ISerializationContext context, Paper semanticObject) {
@@ -323,7 +379,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Person returns Person
 	 *
 	 * Constraint:
-	 *     (name=EString email=EString? homepage=EString?)
+	 *     (name=STRING email=STRING? homepage=STRING?)
 	 */
 	protected void sequence_Person(ISerializationContext context, Person semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -336,7 +392,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Poster returns Poster
 	 *
 	 * Constraint:
-	 *     (name=EString abstract=EString?)
+	 *     (name=STRING abstract=STRING?)
 	 */
 	protected void sequence_Poster(ISerializationContext context, Poster semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -361,7 +417,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Reception returns Reception
 	 *
 	 * Constraint:
-	 *     (name=EString abstract=EString?)
+	 *     (name=STRING abstract=STRING?)
 	 */
 	protected void sequence_Reception(ISerializationContext context, Reception semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -374,7 +430,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Room returns Room
 	 *
 	 * Constraint:
-	 *     (name=EString capacity=EIntegerObject?)
+	 *     (name=STRING capacity=INT?)
 	 */
 	protected void sequence_Room(ISerializationContext context, Room semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -387,7 +443,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     SRC returns SRC
 	 *
 	 * Constraint:
-	 *     (name=EString abstract=EString?)
+	 *     (name=STRING abstract=STRING?)
 	 */
 	protected void sequence_SRC(ISerializationContext context, SRC semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -399,7 +455,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Session returns Session
 	 *
 	 * Constraint:
-	 *     (startingTime=HourDataType endingTime=HourDataType room=[Room|EString] events+=[Event|EString] events+=[Event|EString]*)
+	 *     (startingTime=HourDate endingTime=HourDate room=[Room|STRING] events+=[Event|STRING] events+=[Event|STRING]*)
 	 */
 	protected void sequence_Session(ISerializationContext context, Session semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -412,7 +468,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     SponsorKeynote returns SponsorKeynote
 	 *
 	 * Constraint:
-	 *     (name=EString abstract=EString? speaker=Person?)
+	 *     (name=STRING abstract=STRING? speaker=Person?)
 	 */
 	protected void sequence_SponsorKeynote(ISerializationContext context, SponsorKeynote semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -425,7 +481,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     TalkSession returns TalkSession
 	 *
 	 * Constraint:
-	 *     (name=EString chair=Person? abstract=EString? (papers+=[Paper|EString] papers+=[Paper|EString]*)?)
+	 *     (name=STRING chair=Person? abstract=STRING? (papers+=[Paper|STRING] papers+=[Paper|STRING]*)?)
 	 */
 	protected void sequence_TalkSession(ISerializationContext context, TalkSession semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -438,7 +494,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Tutorial returns Tutorial
 	 *
 	 * Constraint:
-	 *     (name=EString abstract=EString? (organizers+=Person organizers+=Person*)?)
+	 *     (name=STRING abstract=STRING? (organizers+=Person organizers+=Person*)?)
 	 */
 	protected void sequence_Tutorial(ISerializationContext context, Tutorial semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -451,7 +507,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Workshop returns Workshop
 	 *
 	 * Constraint:
-	 *     (name=EString abstract=EString? url=EString? fullName=EString? (organizers+=Person organizers+=Person*)?)
+	 *     (name=STRING abstract=STRING? url=STRING? fullName=STRING? (organizers+=Person organizers+=Person*)?)
 	 */
 	protected void sequence_Workshop(ISerializationContext context, Workshop semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
