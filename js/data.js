@@ -1,7 +1,7 @@
 var data = [
 	{
 		name : "Sunday",
-		date : "20161002",
+		date : "00161102",
 		rooms : [
 			{
 				name : "Rotonde Surcouf"
@@ -11,35 +11,35 @@ var data = [
 			},
 			{
 				name : "Bouvet 1",
-				capacity : "45"
+				capacity : 45
 			},
 			{
 				name : "Bouvet 2",
-				capacity : "45"
+				capacity : 45
 			},
 			{
 				name : "Charcot",
-				capacity : "54"
+				capacity : 54
 			},
 			{
 				name : "Vauban 1",
-				capacity : "50"
+				capacity : 50
 			},
 			{
 				name : "Vauban 2",
-				capacity : "60"
+				capacity : 60
 			},
 			{
 				name : "Lamennais 1",
-				capacity : "80"
+				capacity : 80
 			},
 			{
 				name : "Lamennais 2",
-				capacity : "80"
+				capacity : 80
 			},
 			{
 				name : "Lamennais 3",
-				capacity : "80"
+				capacity : 80
 			}
 		],
 		sessionGroups : [
@@ -58,8 +58,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161002T070000Z",
-					icalEnd : "20161002T083000Z",
+					icalStart : "00161102T080000Z",
+					icalEnd : "00161102T093000Z",
 					room : "Bouvet 1",
 					events : [
 						{
@@ -74,8 +74,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161002T070000Z",
-					icalEnd : "20161002T083000Z",
+					icalStart : "00161102T080000Z",
+					icalEnd : "00161102T093000Z",
 					room : "Bouvet 2",
 					events : [
 						{
@@ -84,19 +84,19 @@ var data = [
 							abstract : "Model management in MDE is all about manipulating models: transforming them, checking that they satisfy constraints, updating them, etc. This tutorial will focus on advanced model management – moving beyond simply building and executing transformations or constraints – illustrated with the Eclipse Epsilon platform. The tutorial will include a brief introduction to the principles and architecture of the Epsilon platform, especially its extensibility features. It will then illustrate advanced features, including developing new Epsilon languages, using annotations, extension via grammars, and developing new drivers.",
 							organizers : [
 								{
-									name : "Richard Paige"	
+									name : "Richard Paige	
 								},
 								{
-									name : "Dimitris Kolovos"	
+									name : "Dimitris Kolovos	
 								},
 								{
-									name : "Antonio Garcia-Dominguez"	
+									name : "Antonio Garcia-Dominguez	
 								},
 								{
-									name : "Nicholas Matragkas"	
+									name : "Nicholas Matragkas	
 								},
 								{
-									name : "Horacio Hoyos"	
+									name : "Horacio Hoyos	
 								}
 							]
 						}
@@ -106,8 +106,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161002T070000Z",
-					icalEnd : "20161002T083000Z",
+					icalStart : "00161102T080000Z",
+					icalEnd : "00161102T093000Z",
 					room : "Charcot",
 					events : [
 						{
@@ -116,7 +116,7 @@ var data = [
 							abstract : "The ARCADIA/Capella Domain Specific Modeling Language (DSML) is inspired by UML/SysML and NAF standards, and shares many concepts with these languages. It is the result of an iterative definition process driven by systems and software architects working in a broad spectrum of business domains (transportation, avionics, space, radar, etc.). It enforces an approach structured on successive engineering phases which establishes clear separation between needs (operational need analysis and system need analysis) and solutions (logical and physical architectures), in accordance with the IEEE 1220 standard. The Capella workbench is an Eclipse application (Polarsys project) implementing the ARCADIA method providing both a DSML and a dedicated toolset. This tutorial will demonstrate the benefits of using both ARCADIA and Capella on a simple case study. It will guide you into the first steps of using ARCADIA, starting with the Analysis levels of the case study. It will then show you how the Capella tool, with the help of the ARCADIA method, will help you design more efficiently both Logical and Physical Architectures.",
 							organizers : [
 								{
-									name : "Pascal Roques"	
+									name : "Pascal Roques	
 								}
 							]
 						}
@@ -126,8 +126,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161002T070000Z",
-					icalEnd : "20161002T083000Z",
+					icalStart : "00161102T080000Z",
+					icalEnd : "00161102T093000Z",
 					room : "Vauban 1",
 					events : [
 						{
@@ -136,10 +136,10 @@ var data = [
 							abstract : "Many MDE tools rely on graphical notations to design models but in recent years there has been an increased interest in textual and mixed graphical/textual approaches to modelling. In this tutorial we present mixed graphical/textual modelling in PapyrusRT, an open-source industrial-strength modelling development environment for real-time and embedded systems based on the UML-RT language. We also introduce the tool’s code generator and present how to customize and extend the code generator, for example to provide code instrumentation or generate alternative code patterns. We will illustrate the tool with an extension of the code generator that enables web-based simulation and monitoring and model animation of an Arduino board model.",
 							organizers : [
 								{
-									name : "Ernesto Posse"	
+									name : "Ernesto Posse	
 								},
 								{
-									name : "Nicolas Hili"	
+									name : "Nicolas Hili	
 								}
 							]
 						}
@@ -149,8 +149,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161002T070000Z",
-					icalEnd : "20161002T083000Z",
+					icalStart : "00161102T080000Z",
+					icalEnd : "00161102T093000Z",
 					room : "Vauban 2",
 					events : [
 						{
@@ -183,8 +183,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161002T070000Z",
-					icalEnd : "20161002T083000Z",
+					icalStart : "00161102T080000Z",
+					icalEnd : "00161102T093000Z",
 					room : "Lamennais 1",
 					events : [
 						{
@@ -213,8 +213,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161002T070000Z",
-					icalEnd : "20161002T083000Z",
+					icalStart : "00161102T080000Z",
+					icalEnd : "00161102T093000Z",
 					room : "Lamennais 2",
 					events : [
 						{
@@ -243,8 +243,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161002T070000Z",
-					icalEnd : "20161002T083000Z",
+					icalStart : "00161102T080000Z",
+					icalEnd : "00161102T093000Z",
 					room : "Lamennais 3",
 					events : [
 						{
@@ -280,8 +280,8 @@ var data = [
 					start : "10:30",
 					end : "11:00",
 					rowSpan : 2,
-					icalStart : "20161002T083000Z",
-					icalEnd : "20161002T090000Z",
+					icalStart : "00161102T093000Z",
+					icalEnd : "00161102T100000Z",
 					room : "Rotonde Surcouf",
 					events : [
 						{
@@ -334,8 +334,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161002T090000Z",
-					icalEnd : "20161002T103000Z",
+					icalStart : "00161102T100000Z",
+					icalEnd : "00161102T113000Z",
 					room : "Bouvet 1",
 					events : [
 						{
@@ -350,8 +350,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161002T090000Z",
-					icalEnd : "20161002T103000Z",
+					icalStart : "00161102T100000Z",
+					icalEnd : "00161102T113000Z",
 					room : "Bouvet 2",
 					events : [
 						{
@@ -360,19 +360,19 @@ var data = [
 							abstract : "Model management in MDE is all about manipulating models: transforming them, checking that they satisfy constraints, updating them, etc. This tutorial will focus on advanced model management – moving beyond simply building and executing transformations or constraints – illustrated with the Eclipse Epsilon platform. The tutorial will include a brief introduction to the principles and architecture of the Epsilon platform, especially its extensibility features. It will then illustrate advanced features, including developing new Epsilon languages, using annotations, extension via grammars, and developing new drivers.",
 							organizers : [
 								{
-									name : "Richard Paige"	
+									name : "Richard Paige	
 								},
 								{
-									name : "Dimitris Kolovos"	
+									name : "Dimitris Kolovos	
 								},
 								{
-									name : "Antonio Garcia-Dominguez"	
+									name : "Antonio Garcia-Dominguez	
 								},
 								{
-									name : "Nicholas Matragkas"	
+									name : "Nicholas Matragkas	
 								},
 								{
-									name : "Horacio Hoyos"	
+									name : "Horacio Hoyos	
 								}
 							]
 						}
@@ -382,8 +382,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161002T090000Z",
-					icalEnd : "20161002T103000Z",
+					icalStart : "00161102T100000Z",
+					icalEnd : "00161102T113000Z",
 					room : "Charcot",
 					events : [
 						{
@@ -392,7 +392,7 @@ var data = [
 							abstract : "The ARCADIA/Capella Domain Specific Modeling Language (DSML) is inspired by UML/SysML and NAF standards, and shares many concepts with these languages. It is the result of an iterative definition process driven by systems and software architects working in a broad spectrum of business domains (transportation, avionics, space, radar, etc.). It enforces an approach structured on successive engineering phases which establishes clear separation between needs (operational need analysis and system need analysis) and solutions (logical and physical architectures), in accordance with the IEEE 1220 standard. The Capella workbench is an Eclipse application (Polarsys project) implementing the ARCADIA method providing both a DSML and a dedicated toolset. This tutorial will demonstrate the benefits of using both ARCADIA and Capella on a simple case study. It will guide you into the first steps of using ARCADIA, starting with the Analysis levels of the case study. It will then show you how the Capella tool, with the help of the ARCADIA method, will help you design more efficiently both Logical and Physical Architectures.",
 							organizers : [
 								{
-									name : "Pascal Roques"	
+									name : "Pascal Roques	
 								}
 							]
 						}
@@ -402,8 +402,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161002T090000Z",
-					icalEnd : "20161002T103000Z",
+					icalStart : "00161102T100000Z",
+					icalEnd : "00161102T113000Z",
 					room : "Vauban 1",
 					events : [
 						{
@@ -412,10 +412,10 @@ var data = [
 							abstract : "Many MDE tools rely on graphical notations to design models but in recent years there has been an increased interest in textual and mixed graphical/textual approaches to modelling. In this tutorial we present mixed graphical/textual modelling in PapyrusRT, an open-source industrial-strength modelling development environment for real-time and embedded systems based on the UML-RT language. We also introduce the tool’s code generator and present how to customize and extend the code generator, for example to provide code instrumentation or generate alternative code patterns. We will illustrate the tool with an extension of the code generator that enables web-based simulation and monitoring and model animation of an Arduino board model.",
 							organizers : [
 								{
-									name : "Ernesto Posse"	
+									name : "Ernesto Posse	
 								},
 								{
-									name : "Nicolas Hili"	
+									name : "Nicolas Hili	
 								}
 							]
 						}
@@ -425,8 +425,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161002T090000Z",
-					icalEnd : "20161002T103000Z",
+					icalStart : "00161102T100000Z",
+					icalEnd : "00161102T113000Z",
 					room : "Vauban 2",
 					events : [
 						{
@@ -459,8 +459,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161002T090000Z",
-					icalEnd : "20161002T103000Z",
+					icalStart : "00161102T100000Z",
+					icalEnd : "00161102T113000Z",
 					room : "Lamennais 1",
 					events : [
 						{
@@ -489,8 +489,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161002T090000Z",
-					icalEnd : "20161002T103000Z",
+					icalStart : "00161102T100000Z",
+					icalEnd : "00161102T113000Z",
 					room : "Lamennais 2",
 					events : [
 						{
@@ -519,8 +519,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161002T090000Z",
-					icalEnd : "20161002T103000Z",
+					icalStart : "00161102T100000Z",
+					icalEnd : "00161102T113000Z",
 					room : "Lamennais 3",
 					events : [
 						{
@@ -559,8 +559,8 @@ var data = [
 					start : "12:30",
 					end : "14:00",
 					rowSpan : 6,
-					icalStart : "20161002T103000Z",
-					icalEnd : "20161002T120000Z",
+					icalStart : "00161102T113000Z",
+					icalEnd : "00161102T130000Z",
 					room : "Rotonde J. Cartier",
 					events : [
 						{
@@ -614,8 +614,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161002T120000Z",
-					icalEnd : "20161002T133000Z",
+					icalStart : "00161102T130000Z",
+					icalEnd : "00161102T143000Z",
 					room : "Bouvet 1",
 					events : [
 						{
@@ -630,8 +630,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161002T120000Z",
-					icalEnd : "20161002T133000Z",
+					icalStart : "00161102T130000Z",
+					icalEnd : "00161102T143000Z",
 					room : "Bouvet 2",
 					events : [
 						{
@@ -640,10 +640,10 @@ var data = [
 							abstract : "Software-intensive systems in many domains consist of multiple cooperating reactive components. The distributed and concurrent nature of these systems makes the software development difficult. Key to avoiding the costly iterations is having a precise and consistent specification. In this tutorial, we present a powerful formal, scenario-based method for modeling reactive system specifications. Software engineers can specify the inter-component behavior by a set of scenarios. Each scenario describes what the system must or must not do in a certain situation and in reaction to certain events. This fits how engineers conceive and communicate the behavior during the early design. Specifications can be executed, which allows engineers to understand the interplay of the scenarios. Inconsistencies can be detected through formal synthesis algorithms. For curious beginners, but also for experienced reactive systems modelers, we introduce scenario-based modeling and give a hands-on experience on its strengths and challenges. In part 1 we overview the modeling methodology and introduce Live Sequence Charts (LSCs) and a textual variant, the Scenario Modeling Language (SML). We also introduce ScenarioTools, which supports the modeling and analysis of SML specifications. In part 2, we interactively model parts of a car-to-x system. We reflect on the method and discuss research opportunities.",
 							organizers : [
 								{
-									name : "Joel Greenyer"	
+									name : "Joel Greenyer	
 								},
 								{
-									name : "Daniel Gritzner"	
+									name : "Daniel Gritzner	
 								}
 							]
 						}
@@ -653,8 +653,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161002T120000Z",
-					icalEnd : "20161002T133000Z",
+					icalStart : "00161102T130000Z",
+					icalEnd : "00161102T143000Z",
 					room : "Charcot",
 					events : [
 						{
@@ -663,10 +663,10 @@ var data = [
 							abstract : "This tutorial will explain how to create a domain-specific graphical modeling workbench by using Eclipse Sirius. The tutorial will start with the definition of the metamodel by using Ecore Tools. Then, several diagrams and tabular representations with their tools (edition, navigation, complexity management, …) will be created with Sirius. Finally we will show how to combine this workbench with other Eclipse Modeling technologies such as Xtext to persist the models into a human-readable textual format and Acceleo to generate code.",
 							organizers : [
 								{
-									name : "Frederic Madiot"	
+									name : "Frederic Madiot	
 								},
 								{
-									name : "Cedric Brun"	
+									name : "Cedric Brun	
 								}
 							]
 						}
@@ -676,8 +676,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161002T120000Z",
-					icalEnd : "20161002T133000Z",
+					icalStart : "00161102T130000Z",
+					icalEnd : "00161102T143000Z",
 					room : "Vauban 1",
 					events : [
 						{
@@ -686,7 +686,7 @@ var data = [
 							abstract : "Cyber-physical systems (CPS) are complex engineering systems that interact directly with the physical world. They generally combine different engineering technologies, (e.g., mechanical, electrical) with embedded software, which is primarily responsible for monitoring and control functions. Traditional design approaches for such systems were based on an early decomposition into technology-centric subsystems, which were developed separately and then integrated towards the end of the development cycle. In contrast, modern CPS design takes a more holistic approach, which allows for increased flexibility in allocating functional responsibilities to the most appropriate technologies. This is made possible through more extensive and more effective use of computer-based engineering models. A key engineering challenge is how to construct and analyze models of such complex systems. To that end, a new generation of computer-based modeling languages has emerged. In this tutorial, we consider two industry standard modeling languages from this category, SysML and MARTE. We explore the rationale behind them, the relationships between them, and how they can be combined for effective and agile CPS design. Practical examples are used throughout to illustrate the various language concepts and their usage.",
 							organizers : [
 								{
-									name : "Bran Selic"	
+									name : "Bran Selic	
 								}
 							]
 						}
@@ -696,8 +696,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161002T120000Z",
-					icalEnd : "20161002T133000Z",
+					icalStart : "00161102T130000Z",
+					icalEnd : "00161102T143000Z",
 					room : "Vauban 2",
 					events : [
 						{
@@ -730,8 +730,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161002T120000Z",
-					icalEnd : "20161002T133000Z",
+					icalStart : "00161102T130000Z",
+					icalEnd : "00161102T143000Z",
 					room : "Lamennais 1",
 					events : [
 						{
@@ -760,8 +760,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161002T120000Z",
-					icalEnd : "20161002T133000Z",
+					icalStart : "00161102T130000Z",
+					icalEnd : "00161102T143000Z",
 					room : "Lamennais 2",
 					events : [
 						{
@@ -790,8 +790,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161002T120000Z",
-					icalEnd : "20161002T133000Z",
+					icalStart : "00161102T130000Z",
+					icalEnd : "00161102T143000Z",
 					room : "Lamennais 3",
 					events : [
 						{
@@ -827,8 +827,8 @@ var data = [
 					start : "15:30",
 					end : "16:00",
 					rowSpan : 2,
-					icalStart : "20161002T133000Z",
-					icalEnd : "20161002T140000Z",
+					icalStart : "00161102T143000Z",
+					icalEnd : "00161102T150000Z",
 					room : "Rotonde Surcouf",
 					events : [
 						{
@@ -881,8 +881,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161002T140000Z",
-					icalEnd : "20161002T153000Z",
+					icalStart : "00161102T150000Z",
+					icalEnd : "00161102T163000Z",
 					room : "Bouvet 1",
 					events : [
 						{
@@ -897,8 +897,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161002T140000Z",
-					icalEnd : "20161002T153000Z",
+					icalStart : "00161102T150000Z",
+					icalEnd : "00161102T163000Z",
 					room : "Bouvet 2",
 					events : [
 						{
@@ -907,10 +907,10 @@ var data = [
 							abstract : "Software-intensive systems in many domains consist of multiple cooperating reactive components. The distributed and concurrent nature of these systems makes the software development difficult. Key to avoiding the costly iterations is having a precise and consistent specification. In this tutorial, we present a powerful formal, scenario-based method for modeling reactive system specifications. Software engineers can specify the inter-component behavior by a set of scenarios. Each scenario describes what the system must or must not do in a certain situation and in reaction to certain events. This fits how engineers conceive and communicate the behavior during the early design. Specifications can be executed, which allows engineers to understand the interplay of the scenarios. Inconsistencies can be detected through formal synthesis algorithms. For curious beginners, but also for experienced reactive systems modelers, we introduce scenario-based modeling and give a hands-on experience on its strengths and challenges. In part 1 we overview the modeling methodology and introduce Live Sequence Charts (LSCs) and a textual variant, the Scenario Modeling Language (SML). We also introduce ScenarioTools, which supports the modeling and analysis of SML specifications. In part 2, we interactively model parts of a car-to-x system. We reflect on the method and discuss research opportunities.",
 							organizers : [
 								{
-									name : "Joel Greenyer"	
+									name : "Joel Greenyer	
 								},
 								{
-									name : "Daniel Gritzner"	
+									name : "Daniel Gritzner	
 								}
 							]
 						}
@@ -920,8 +920,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161002T140000Z",
-					icalEnd : "20161002T153000Z",
+					icalStart : "00161102T150000Z",
+					icalEnd : "00161102T163000Z",
 					room : "Charcot",
 					events : [
 						{
@@ -930,10 +930,10 @@ var data = [
 							abstract : "This tutorial will explain how to create a domain-specific graphical modeling workbench by using Eclipse Sirius. The tutorial will start with the definition of the metamodel by using Ecore Tools. Then, several diagrams and tabular representations with their tools (edition, navigation, complexity management, …) will be created with Sirius. Finally we will show how to combine this workbench with other Eclipse Modeling technologies such as Xtext to persist the models into a human-readable textual format and Acceleo to generate code.",
 							organizers : [
 								{
-									name : "Frederic Madiot"	
+									name : "Frederic Madiot	
 								},
 								{
-									name : "Cedric Brun"	
+									name : "Cedric Brun	
 								}
 							]
 						}
@@ -943,8 +943,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161002T140000Z",
-					icalEnd : "20161002T153000Z",
+					icalStart : "00161102T150000Z",
+					icalEnd : "00161102T163000Z",
 					room : "Vauban 1",
 					events : [
 						{
@@ -953,7 +953,7 @@ var data = [
 							abstract : "Cyber-physical systems (CPS) are complex engineering systems that interact directly with the physical world. They generally combine different engineering technologies, (e.g., mechanical, electrical) with embedded software, which is primarily responsible for monitoring and control functions. Traditional design approaches for such systems were based on an early decomposition into technology-centric subsystems, which were developed separately and then integrated towards the end of the development cycle. In contrast, modern CPS design takes a more holistic approach, which allows for increased flexibility in allocating functional responsibilities to the most appropriate technologies. This is made possible through more extensive and more effective use of computer-based engineering models. A key engineering challenge is how to construct and analyze models of such complex systems. To that end, a new generation of computer-based modeling languages has emerged. In this tutorial, we consider two industry standard modeling languages from this category, SysML and MARTE. We explore the rationale behind them, the relationships between them, and how they can be combined for effective and agile CPS design. Practical examples are used throughout to illustrate the various language concepts and their usage.",
 							organizers : [
 								{
-									name : "Bran Selic"	
+									name : "Bran Selic	
 								}
 							]
 						}
@@ -963,8 +963,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161002T140000Z",
-					icalEnd : "20161002T153000Z",
+					icalStart : "00161102T150000Z",
+					icalEnd : "00161102T163000Z",
 					room : "Vauban 2",
 					events : [
 						{
@@ -997,8 +997,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161002T140000Z",
-					icalEnd : "20161002T153000Z",
+					icalStart : "00161102T150000Z",
+					icalEnd : "00161102T163000Z",
 					room : "Lamennais 1",
 					events : [
 						{
@@ -1027,8 +1027,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161002T140000Z",
-					icalEnd : "20161002T153000Z",
+					icalStart : "00161102T150000Z",
+					icalEnd : "00161102T163000Z",
 					room : "Lamennais 2",
 					events : [
 						{
@@ -1057,8 +1057,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161002T140000Z",
-					icalEnd : "20161002T153000Z",
+					icalStart : "00161102T150000Z",
+					icalEnd : "00161102T163000Z",
 					room : "Lamennais 3",
 					events : [
 						{
@@ -1089,7 +1089,7 @@ var data = [
 	},
 	{
 		name : "Monday",
-		date : "20161003",
+		date : "00161103",
 		rooms : [
 			{
 				name : "Rotonde Surcouf"
@@ -1099,35 +1099,35 @@ var data = [
 			},
 			{
 				name : "Bouvet 1",
-				capacity : "45"
+				capacity : 45
 			},
 			{
 				name : "Bouvet 2",
-				capacity : "45"
+				capacity : 45
 			},
 			{
 				name : "Charcot",
-				capacity : "54"
+				capacity : 54
 			},
 			{
 				name : "Vauban 1",
-				capacity : "50"
+				capacity : 50
 			},
 			{
 				name : "Vauban 2",
-				capacity : "60"
+				capacity : 60
 			},
 			{
 				name : "Lamennais 1",
-				capacity : "80"
+				capacity : 80
 			},
 			{
 				name : "Lamennais 2",
-				capacity : "80"
+				capacity : 80
 			},
 			{
 				name : "Lamennais 3",
-				capacity : "80"
+				capacity : 80
 			}
 		],
 		sessionGroups : [
@@ -1140,8 +1140,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161003T070000Z",
-					icalEnd : "20161003T083000Z",
+					icalStart : "00161103T080000Z",
+					icalEnd : "00161103T093000Z",
 					room : "Rotonde Surcouf",
 					events : [
 						{
@@ -1157,8 +1157,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161003T070000Z",
-					icalEnd : "20161003T083000Z",
+					icalStart : "00161103T080000Z",
+					icalEnd : "00161103T093000Z",
 					room : "Bouvet 1",
 					events : [
 						{
@@ -1167,13 +1167,13 @@ var data = [
 							abstract : "Modelling is applied in many different ways in software engineering: for facilitating communication, for analyzing systems, for generating code and tests. Thus, the evaluation of modelling techniques, languages and tools is needed in order to assess their advantages and disadvantages, to ensure their applicability to different contexts, their ease of use, and other issues such as skills and costs. However, many papers submitted to the MODELS conference lack empirical validations of their proposed methods/techniques. This tutorial offers an introduction to empirical methods in software engineering and thereby aims to equip researchers in the MODELS community with knowledge required to perform evaluations. This tutorial is offered by a group of people with broad experience in several types of empirical studies (including experiments, surveys, case studies, action research).",
 							organizers : [
 								{
-									name : "Michel Chaudron"	
+									name : "Michel Chaudron	
 								},
 								{
-									name : "Regina Hebig"	
+									name : "Regina Hebig	
 								},
 								{
-									name : "Maria Teresa Baldassarre"	
+									name : "Maria Teresa Baldassarre	
 								}
 							]
 						}
@@ -1183,8 +1183,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161003T070000Z",
-					icalEnd : "20161003T083000Z",
+					icalStart : "00161103T080000Z",
+					icalEnd : "00161103T093000Z",
 					room : "Bouvet 2",
 					events : [
 						{
@@ -1193,10 +1193,10 @@ var data = [
 							abstract : "Model Driven Engineering (MDE) brings together multiple technologies and critical innovations and formalizes them into the next wave of software development methods. This tutorial will cover the basic patterns, principles and practices of MDE. The three main MDE categories include the development of Domain Specific Languages (DSL), Domain Specific Editors (and Views), and Domain Specific Transformation Engines or Generators. Expressed in terms of language development technology, these mirror the development of the Abstract Syntax, Concrete Syntax and Semantics of a new Domain Specific Language. This tutorial will cover the basic effective patterns, principles and practices for developing these MDE software artifacts. The tutorial will show how to apply these concepts as effective means with which to both raise levels of abstraction and domain specificity and thus increase power and value of tools and languages that allow developers to tackle the complexities of today’s software systems. It will also show how to effectively leverage abstraction without sacrificing the ability to robustly and precisely refine these abstractions to solve complex real world problems. To show these patterns and principles in action, this tutorial will cover the details of how to leverage MDE Language Workbenches and frameworks in support of robust software development.",
 							organizers : [
 								{
-									name : "Bruce Trask"	
+									name : "Bruce Trask	
 								},
 								{
-									name : "Angel Roman"	
+									name : "Angel Roman	
 								}
 							]
 						}
@@ -1206,8 +1206,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161003T070000Z",
-					icalEnd : "20161003T083000Z",
+					icalStart : "00161103T080000Z",
+					icalEnd : "00161103T093000Z",
 					room : "Charcot",
 					events : [
 						{
@@ -1240,8 +1240,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161003T070000Z",
-					icalEnd : "20161003T083000Z",
+					icalStart : "00161103T080000Z",
+					icalEnd : "00161103T093000Z",
 					room : "Vauban 1",
 					events : [
 						{
@@ -1256,8 +1256,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161003T070000Z",
-					icalEnd : "20161003T083000Z",
+					icalStart : "00161103T080000Z",
+					icalEnd : "00161103T093000Z",
 					room : "Vauban 2",
 					events : [
 						{
@@ -1294,8 +1294,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161003T070000Z",
-					icalEnd : "20161003T083000Z",
+					icalStart : "00161103T080000Z",
+					icalEnd : "00161103T093000Z",
 					room : "Lamennais 1",
 					events : [
 						{
@@ -1328,8 +1328,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161003T070000Z",
-					icalEnd : "20161003T083000Z",
+					icalStart : "00161103T080000Z",
+					icalEnd : "00161103T093000Z",
 					room : "Lamennais 2",
 					events : [
 						{
@@ -1358,8 +1358,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161003T070000Z",
-					icalEnd : "20161003T083000Z",
+					icalStart : "00161103T080000Z",
+					icalEnd : "00161103T093000Z",
 					room : "Lamennais 3",
 					events : [
 						{
@@ -1385,8 +1385,8 @@ var data = [
 					start : "10:30",
 					end : "11:00",
 					rowSpan : 2,
-					icalStart : "20161003T083000Z",
-					icalEnd : "20161003T090000Z",
+					icalStart : "00161103T093000Z",
+					icalEnd : "00161103T100000Z",
 					room : "Rotonde Surcouf",
 					events : [
 						{
@@ -1441,8 +1441,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161003T090000Z",
-					icalEnd : "20161003T103000Z",
+					icalStart : "00161103T100000Z",
+					icalEnd : "00161103T113000Z",
 					room : "Rotonde Surcouf",
 					events : [
 						{
@@ -1458,8 +1458,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161003T090000Z",
-					icalEnd : "20161003T103000Z",
+					icalStart : "00161103T100000Z",
+					icalEnd : "00161103T113000Z",
 					room : "Bouvet 1",
 					events : [
 						{
@@ -1468,13 +1468,13 @@ var data = [
 							abstract : "Modelling is applied in many different ways in software engineering: for facilitating communication, for analyzing systems, for generating code and tests. Thus, the evaluation of modelling techniques, languages and tools is needed in order to assess their advantages and disadvantages, to ensure their applicability to different contexts, their ease of use, and other issues such as skills and costs. However, many papers submitted to the MODELS conference lack empirical validations of their proposed methods/techniques. This tutorial offers an introduction to empirical methods in software engineering and thereby aims to equip researchers in the MODELS community with knowledge required to perform evaluations. This tutorial is offered by a group of people with broad experience in several types of empirical studies (including experiments, surveys, case studies, action research).",
 							organizers : [
 								{
-									name : "Michel Chaudron"	
+									name : "Michel Chaudron	
 								},
 								{
-									name : "Regina Hebig"	
+									name : "Regina Hebig	
 								},
 								{
-									name : "Maria Teresa Baldassarre"	
+									name : "Maria Teresa Baldassarre	
 								}
 							]
 						}
@@ -1484,8 +1484,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161003T090000Z",
-					icalEnd : "20161003T103000Z",
+					icalStart : "00161103T100000Z",
+					icalEnd : "00161103T113000Z",
 					room : "Bouvet 2",
 					events : [
 						{
@@ -1494,10 +1494,10 @@ var data = [
 							abstract : "Model Driven Engineering (MDE) brings together multiple technologies and critical innovations and formalizes them into the next wave of software development methods. This tutorial will cover the basic patterns, principles and practices of MDE. The three main MDE categories include the development of Domain Specific Languages (DSL), Domain Specific Editors (and Views), and Domain Specific Transformation Engines or Generators. Expressed in terms of language development technology, these mirror the development of the Abstract Syntax, Concrete Syntax and Semantics of a new Domain Specific Language. This tutorial will cover the basic effective patterns, principles and practices for developing these MDE software artifacts. The tutorial will show how to apply these concepts as effective means with which to both raise levels of abstraction and domain specificity and thus increase power and value of tools and languages that allow developers to tackle the complexities of today’s software systems. It will also show how to effectively leverage abstraction without sacrificing the ability to robustly and precisely refine these abstractions to solve complex real world problems. To show these patterns and principles in action, this tutorial will cover the details of how to leverage MDE Language Workbenches and frameworks in support of robust software development.",
 							organizers : [
 								{
-									name : "Bruce Trask"	
+									name : "Bruce Trask	
 								},
 								{
-									name : "Angel Roman"	
+									name : "Angel Roman	
 								}
 							]
 						}
@@ -1507,8 +1507,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161003T090000Z",
-					icalEnd : "20161003T103000Z",
+					icalStart : "00161103T100000Z",
+					icalEnd : "00161103T113000Z",
 					room : "Charcot",
 					events : [
 						{
@@ -1541,8 +1541,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161003T090000Z",
-					icalEnd : "20161003T103000Z",
+					icalStart : "00161103T100000Z",
+					icalEnd : "00161103T113000Z",
 					room : "Vauban 1",
 					events : [
 						{
@@ -1557,8 +1557,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161003T090000Z",
-					icalEnd : "20161003T103000Z",
+					icalStart : "00161103T100000Z",
+					icalEnd : "00161103T113000Z",
 					room : "Vauban 2",
 					events : [
 						{
@@ -1595,8 +1595,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161003T090000Z",
-					icalEnd : "20161003T103000Z",
+					icalStart : "00161103T100000Z",
+					icalEnd : "00161103T113000Z",
 					room : "Lamennais 1",
 					events : [
 						{
@@ -1629,8 +1629,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161003T090000Z",
-					icalEnd : "20161003T103000Z",
+					icalStart : "00161103T100000Z",
+					icalEnd : "00161103T113000Z",
 					room : "Lamennais 2",
 					events : [
 						{
@@ -1659,8 +1659,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161003T090000Z",
-					icalEnd : "20161003T103000Z",
+					icalStart : "00161103T100000Z",
+					icalEnd : "00161103T113000Z",
 					room : "Lamennais 3",
 					events : [
 						{
@@ -1689,8 +1689,8 @@ var data = [
 					start : "12:30",
 					end : "14:00",
 					rowSpan : 6,
-					icalStart : "20161003T103000Z",
-					icalEnd : "20161003T120000Z",
+					icalStart : "00161103T113000Z",
+					icalEnd : "00161103T130000Z",
 					room : "Rotonde J. Cartier",
 					events : [
 						{
@@ -1738,8 +1738,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161003T120000Z",
-					icalEnd : "20161003T133000Z",
+					icalStart : "00161103T130000Z",
+					icalEnd : "00161103T143000Z",
 					room : "Rotonde Surcouf",
 					events : [
 						{
@@ -1755,8 +1755,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161003T120000Z",
-					icalEnd : "20161003T133000Z",
+					icalStart : "00161103T130000Z",
+					icalEnd : "00161103T143000Z",
 					room : "Bouvet 1",
 					events : [
 						{
@@ -1765,13 +1765,13 @@ var data = [
 							abstract : "Modelling is applied in many different ways in software engineering: for facilitating communication, for analyzing systems, for generating code and tests. Thus, the evaluation of modelling techniques, languages and tools is needed in order to assess their advantages and disadvantages, to ensure their applicability to different contexts, their ease of use, and other issues such as skills and costs. However, many papers submitted to the MODELS conference lack empirical validations of their proposed methods/techniques. This tutorial offers an introduction to empirical methods in software engineering and thereby aims to equip researchers in the MODELS community with knowledge required to perform evaluations. This tutorial is offered by a group of people with broad experience in several types of empirical studies (including experiments, surveys, case studies, action research).",
 							organizers : [
 								{
-									name : "Michel Chaudron"	
+									name : "Michel Chaudron	
 								},
 								{
-									name : "Regina Hebig"	
+									name : "Regina Hebig	
 								},
 								{
-									name : "Maria Teresa Baldassarre"	
+									name : "Maria Teresa Baldassarre	
 								}
 							]
 						}
@@ -1781,8 +1781,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161003T120000Z",
-					icalEnd : "20161003T133000Z",
+					icalStart : "00161103T130000Z",
+					icalEnd : "00161103T143000Z",
 					room : "Bouvet 2",
 					events : [
 						{
@@ -1791,10 +1791,10 @@ var data = [
 							abstract : "Model-Driven Engineering (MDE) promotes models as the primary artefacts in the software development process, from which code for the final application is derived. Standard approaches to MDE (like those based on MOF or EMF) advocate a two-level meta-modelling setting where domain-specific modelling languages are defined through a meta-model, which is instantiated to build models at the meta-level below. Multi-level modelling — also called deep meta-modelling — extends the standard approach to meta-modelling by enabling modelling at an arbitrary number of meta-levels, not necessarily two. This approach leads to simpler models in situations where the type-object pattern or some of its variants arises. In this tutorial, we will discuss the motivation for multi-level modelling and explain its basic concepts. These will be illustrated in practice with the MetaDepth tool, developed by the lecturers. The tutorial will also cover the use of constraint and model management languages (e.g., for code generation or model-to-model transformation) in a multi-level setting, and will finish by introducing more advanced multi-level concepts.",
 							organizers : [
 								{
-									name : "Juan De Lara"	
+									name : "Juan De Lara	
 								},
 								{
-									name : "Esther Guerra"	
+									name : "Esther Guerra	
 								}
 							]
 						}
@@ -1804,8 +1804,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161003T120000Z",
-					icalEnd : "20161003T133000Z",
+					icalStart : "00161103T130000Z",
+					icalEnd : "00161103T143000Z",
 					room : "Charcot",
 					events : [
 						{
@@ -1838,8 +1838,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161003T120000Z",
-					icalEnd : "20161003T133000Z",
+					icalStart : "00161103T130000Z",
+					icalEnd : "00161103T143000Z",
 					room : "Vauban 1",
 					events : [
 						{
@@ -1854,8 +1854,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161003T120000Z",
-					icalEnd : "20161003T133000Z",
+					icalStart : "00161103T130000Z",
+					icalEnd : "00161103T143000Z",
 					room : "Vauban 2",
 					events : [
 						{
@@ -1892,8 +1892,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161003T120000Z",
-					icalEnd : "20161003T133000Z",
+					icalStart : "00161103T130000Z",
+					icalEnd : "00161103T143000Z",
 					room : "Lamennais 1",
 					events : [
 						{
@@ -1926,8 +1926,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161003T120000Z",
-					icalEnd : "20161003T133000Z",
+					icalStart : "00161103T130000Z",
+					icalEnd : "00161103T143000Z",
 					room : "Lamennais 2",
 					events : [
 						{
@@ -1956,8 +1956,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161003T120000Z",
-					icalEnd : "20161003T133000Z",
+					icalStart : "00161103T130000Z",
+					icalEnd : "00161103T143000Z",
 					room : "Lamennais 3",
 					events : [
 						{
@@ -1983,8 +1983,8 @@ var data = [
 					start : "15:30",
 					end : "16:00",
 					rowSpan : 2,
-					icalStart : "20161003T133000Z",
-					icalEnd : "20161003T140000Z",
+					icalStart : "00161103T143000Z",
+					icalEnd : "00161103T150000Z",
 					room : "Rotonde Surcouf",
 					events : [
 						{
@@ -2039,8 +2039,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161003T140000Z",
-					icalEnd : "20161003T153000Z",
+					icalStart : "00161103T150000Z",
+					icalEnd : "00161103T163000Z",
 					room : "Rotonde Surcouf",
 					events : [
 						{
@@ -2056,8 +2056,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161003T140000Z",
-					icalEnd : "20161003T153000Z",
+					icalStart : "00161103T150000Z",
+					icalEnd : "00161103T163000Z",
 					room : "Bouvet 1",
 					events : [
 						{
@@ -2066,13 +2066,13 @@ var data = [
 							abstract : "Modelling is applied in many different ways in software engineering: for facilitating communication, for analyzing systems, for generating code and tests. Thus, the evaluation of modelling techniques, languages and tools is needed in order to assess their advantages and disadvantages, to ensure their applicability to different contexts, their ease of use, and other issues such as skills and costs. However, many papers submitted to the MODELS conference lack empirical validations of their proposed methods/techniques. This tutorial offers an introduction to empirical methods in software engineering and thereby aims to equip researchers in the MODELS community with knowledge required to perform evaluations. This tutorial is offered by a group of people with broad experience in several types of empirical studies (including experiments, surveys, case studies, action research).",
 							organizers : [
 								{
-									name : "Michel Chaudron"	
+									name : "Michel Chaudron	
 								},
 								{
-									name : "Regina Hebig"	
+									name : "Regina Hebig	
 								},
 								{
-									name : "Maria Teresa Baldassarre"	
+									name : "Maria Teresa Baldassarre	
 								}
 							]
 						}
@@ -2082,8 +2082,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161003T140000Z",
-					icalEnd : "20161003T153000Z",
+					icalStart : "00161103T150000Z",
+					icalEnd : "00161103T163000Z",
 					room : "Bouvet 2",
 					events : [
 						{
@@ -2092,10 +2092,10 @@ var data = [
 							abstract : "Model-Driven Engineering (MDE) promotes models as the primary artefacts in the software development process, from which code for the final application is derived. Standard approaches to MDE (like those based on MOF or EMF) advocate a two-level meta-modelling setting where domain-specific modelling languages are defined through a meta-model, which is instantiated to build models at the meta-level below. Multi-level modelling — also called deep meta-modelling — extends the standard approach to meta-modelling by enabling modelling at an arbitrary number of meta-levels, not necessarily two. This approach leads to simpler models in situations where the type-object pattern or some of its variants arises. In this tutorial, we will discuss the motivation for multi-level modelling and explain its basic concepts. These will be illustrated in practice with the MetaDepth tool, developed by the lecturers. The tutorial will also cover the use of constraint and model management languages (e.g., for code generation or model-to-model transformation) in a multi-level setting, and will finish by introducing more advanced multi-level concepts.",
 							organizers : [
 								{
-									name : "Juan De Lara"	
+									name : "Juan De Lara	
 								},
 								{
-									name : "Esther Guerra"	
+									name : "Esther Guerra	
 								}
 							]
 						}
@@ -2105,8 +2105,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161003T140000Z",
-					icalEnd : "20161003T153000Z",
+					icalStart : "00161103T150000Z",
+					icalEnd : "00161103T163000Z",
 					room : "Charcot",
 					events : [
 						{
@@ -2139,8 +2139,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161003T140000Z",
-					icalEnd : "20161003T153000Z",
+					icalStart : "00161103T150000Z",
+					icalEnd : "00161103T163000Z",
 					room : "Vauban 1",
 					events : [
 						{
@@ -2155,8 +2155,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161003T140000Z",
-					icalEnd : "20161003T153000Z",
+					icalStart : "00161103T150000Z",
+					icalEnd : "00161103T163000Z",
 					room : "Vauban 2",
 					events : [
 						{
@@ -2193,8 +2193,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161003T140000Z",
-					icalEnd : "20161003T153000Z",
+					icalStart : "00161103T150000Z",
+					icalEnd : "00161103T163000Z",
 					room : "Lamennais 1",
 					events : [
 						{
@@ -2227,8 +2227,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161003T140000Z",
-					icalEnd : "20161003T153000Z",
+					icalStart : "00161103T150000Z",
+					icalEnd : "00161103T163000Z",
 					room : "Lamennais 2",
 					events : [
 						{
@@ -2257,8 +2257,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161003T140000Z",
-					icalEnd : "20161003T153000Z",
+					icalStart : "00161103T150000Z",
+					icalEnd : "00161103T163000Z",
 					room : "Lamennais 3",
 					events : [
 						{
@@ -2278,59 +2278,14 @@ var data = [
 			[
 				{
 					start : "17:30",
-					rowSpan : 10
+					rowSpan : 6
 				},
 				{
-					rowSpan : 10
-				},
-				{
-					rowSpan : 10
-				},
-				{
-					rowSpan : 10
-				},
-				{
-					rowSpan : 10
-				},
-				{
-					rowSpan : 10
-				},
-				{
-					rowSpan : 10
-				},
-				{
-					rowSpan : 10
-				},
-				{
-					rowSpan : 10
-				},
-				{
-					rowSpan : 10
-				},
-				{
-					rowSpan : 10
-				}
-			],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[
-				{
-					start : "20:00",
-					rowSpan : 8
-				},
-				{
-					start : "20:00",
-					end : "22:00",
-					rowSpan : 8,
-					icalStart : "20161003T180000Z",
-					icalEnd : "20161003T200000Z",
+					start : "17:30",
+					end : "19:00",
+					rowSpan : 6,
+					icalStart : "00161103T163000Z",
+					icalEnd : "00161103T180000Z",
 					room : "Rotonde Surcouf",
 					events : [
 						{
@@ -2340,35 +2295,33 @@ var data = [
 					]
 				},
 				{
-					rowSpan : 8
+					rowSpan : 6
 				},
 				{
-					rowSpan : 8
+					rowSpan : 6
 				},
 				{
-					rowSpan : 8
+					rowSpan : 6
 				},
 				{
-					rowSpan : 8
+					rowSpan : 6
 				},
 				{
-					rowSpan : 8
+					rowSpan : 6
 				},
 				{
-					rowSpan : 8
+					rowSpan : 6
 				},
 				{
-					rowSpan : 8
+					rowSpan : 6
 				},
 				{
-					rowSpan : 8
+					rowSpan : 6
 				},
 				{
-					rowSpan : 8
+					rowSpan : 6
 				}
 			],
-			[],
-			[],
 			[],
 			[],
 			[],
@@ -2378,7 +2331,7 @@ var data = [
 	},
 	{
 		name : "Tuesday",
-		date : "20161004",
+		date : "00161104",
 		rooms : [
 			{
 				name : "Rotonde Surcouf"
@@ -2388,35 +2341,35 @@ var data = [
 			},
 			{
 				name : "Bouvet 1",
-				capacity : "45"
+				capacity : 45
 			},
 			{
 				name : "Bouvet 2",
-				capacity : "45"
+				capacity : 45
 			},
 			{
 				name : "Charcot",
-				capacity : "54"
+				capacity : 54
 			},
 			{
 				name : "Vauban 1",
-				capacity : "50"
+				capacity : 50
 			},
 			{
 				name : "Vauban 2",
-				capacity : "60"
+				capacity : 60
 			},
 			{
 				name : "Lamennais 1",
-				capacity : "80"
+				capacity : 80
 			},
 			{
 				name : "Lamennais 2",
-				capacity : "80"
+				capacity : 80
 			},
 			{
 				name : "Lamennais 3",
-				capacity : "80"
+				capacity : 80
 			}
 		],
 		sessionGroups : [
@@ -2438,8 +2391,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161004T070000Z",
-					icalEnd : "20161004T083000Z",
+					icalStart : "00161104T080000Z",
+					icalEnd : "00161104T093000Z",
 					room : "Bouvet 2",
 					events : [
 						{
@@ -2464,8 +2417,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161004T070000Z",
-					icalEnd : "20161004T083000Z",
+					icalStart : "00161104T080000Z",
+					icalEnd : "00161104T093000Z",
 					room : "Charcot",
 					events : [
 						{
@@ -2498,8 +2451,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161004T070000Z",
-					icalEnd : "20161004T083000Z",
+					icalStart : "00161104T080000Z",
+					icalEnd : "00161104T093000Z",
 					room : "Vauban 1",
 					events : [
 						{
@@ -2524,8 +2477,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161004T070000Z",
-					icalEnd : "20161004T083000Z",
+					icalStart : "00161104T080000Z",
+					icalEnd : "00161104T093000Z",
 					room : "Vauban 2",
 					events : [
 						{
@@ -2558,8 +2511,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161004T070000Z",
-					icalEnd : "20161004T083000Z",
+					icalStart : "00161104T080000Z",
+					icalEnd : "00161104T093000Z",
 					room : "Lamennais 1",
 					events : [
 						{
@@ -2588,8 +2541,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161004T070000Z",
-					icalEnd : "20161004T083000Z",
+					icalStart : "00161104T080000Z",
+					icalEnd : "00161104T093000Z",
 					room : "Lamennais 2",
 					events : [
 						{
@@ -2614,8 +2567,8 @@ var data = [
 					start : "09:00",
 					end : "10:30",
 					rowSpan : 6,
-					icalStart : "20161004T070000Z",
-					icalEnd : "20161004T083000Z",
+					icalStart : "00161104T080000Z",
+					icalEnd : "00161104T093000Z",
 					room : "Lamennais 3",
 					events : [
 						{
@@ -2641,8 +2594,8 @@ var data = [
 					start : "10:30",
 					end : "11:00",
 					rowSpan : 2,
-					icalStart : "20161004T083000Z",
-					icalEnd : "20161004T090000Z",
+					icalStart : "00161104T093000Z",
+					icalEnd : "00161104T100000Z",
 					room : "Rotonde Surcouf",
 					events : [
 						{
@@ -2698,8 +2651,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161004T090000Z",
-					icalEnd : "20161004T103000Z",
+					icalStart : "00161104T100000Z",
+					icalEnd : "00161104T113000Z",
 					room : "Bouvet 2",
 					events : [
 						{
@@ -2724,8 +2677,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161004T090000Z",
-					icalEnd : "20161004T103000Z",
+					icalStart : "00161104T100000Z",
+					icalEnd : "00161104T113000Z",
 					room : "Charcot",
 					events : [
 						{
@@ -2758,8 +2711,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161004T090000Z",
-					icalEnd : "20161004T103000Z",
+					icalStart : "00161104T100000Z",
+					icalEnd : "00161104T113000Z",
 					room : "Vauban 1",
 					events : [
 						{
@@ -2784,8 +2737,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161004T090000Z",
-					icalEnd : "20161004T103000Z",
+					icalStart : "00161104T100000Z",
+					icalEnd : "00161104T113000Z",
 					room : "Vauban 2",
 					events : [
 						{
@@ -2818,8 +2771,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161004T090000Z",
-					icalEnd : "20161004T103000Z",
+					icalStart : "00161104T100000Z",
+					icalEnd : "00161104T113000Z",
 					room : "Lamennais 1",
 					events : [
 						{
@@ -2848,8 +2801,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161004T090000Z",
-					icalEnd : "20161004T103000Z",
+					icalStart : "00161104T100000Z",
+					icalEnd : "00161104T113000Z",
 					room : "Lamennais 2",
 					events : [
 						{
@@ -2874,8 +2827,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161004T090000Z",
-					icalEnd : "20161004T103000Z",
+					icalStart : "00161104T100000Z",
+					icalEnd : "00161104T113000Z",
 					room : "Lamennais 3",
 					events : [
 						{
@@ -2904,8 +2857,8 @@ var data = [
 					start : "12:30",
 					end : "14:00",
 					rowSpan : 6,
-					icalStart : "20161004T103000Z",
-					icalEnd : "20161004T120000Z",
+					icalStart : "00161104T113000Z",
+					icalEnd : "00161104T130000Z",
 					room : "Rotonde J. Cartier",
 					events : [
 						{
@@ -2959,8 +2912,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161004T120000Z",
-					icalEnd : "20161004T133000Z",
+					icalStart : "00161104T130000Z",
+					icalEnd : "00161104T143000Z",
 					room : "Bouvet 1",
 					events : [
 						{
@@ -2973,8 +2926,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161004T120000Z",
-					icalEnd : "20161004T133000Z",
+					icalStart : "00161104T130000Z",
+					icalEnd : "00161104T143000Z",
 					room : "Bouvet 2",
 					events : [
 						{
@@ -2999,8 +2952,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161004T120000Z",
-					icalEnd : "20161004T133000Z",
+					icalStart : "00161104T130000Z",
+					icalEnd : "00161104T143000Z",
 					room : "Charcot",
 					events : [
 						{
@@ -3033,8 +2986,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161004T120000Z",
-					icalEnd : "20161004T133000Z",
+					icalStart : "00161104T130000Z",
+					icalEnd : "00161104T143000Z",
 					room : "Vauban 1",
 					events : [
 						{
@@ -3059,8 +3012,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161004T120000Z",
-					icalEnd : "20161004T133000Z",
+					icalStart : "00161104T130000Z",
+					icalEnd : "00161104T143000Z",
 					room : "Vauban 2",
 					events : [
 						{
@@ -3093,8 +3046,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161004T120000Z",
-					icalEnd : "20161004T133000Z",
+					icalStart : "00161104T130000Z",
+					icalEnd : "00161104T143000Z",
 					room : "Lamennais 1",
 					events : [
 						{
@@ -3123,8 +3076,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161004T120000Z",
-					icalEnd : "20161004T133000Z",
+					icalStart : "00161104T130000Z",
+					icalEnd : "00161104T143000Z",
 					room : "Lamennais 2",
 					events : [
 						{
@@ -3149,8 +3102,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161004T120000Z",
-					icalEnd : "20161004T133000Z",
+					icalStart : "00161104T130000Z",
+					icalEnd : "00161104T143000Z",
 					room : "Lamennais 3",
 					events : [
 						{
@@ -3176,8 +3129,8 @@ var data = [
 					start : "15:30",
 					end : "16:00",
 					rowSpan : 2,
-					icalStart : "20161004T133000Z",
-					icalEnd : "20161004T140000Z",
+					icalStart : "00161104T143000Z",
+					icalEnd : "00161104T150000Z",
 					room : "Rotonde Surcouf",
 					events : [
 						{
@@ -3230,8 +3183,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161004T140000Z",
-					icalEnd : "20161004T153000Z",
+					icalStart : "00161104T150000Z",
+					icalEnd : "00161104T163000Z",
 					room : "Bouvet 1",
 					events : [
 						{
@@ -3244,8 +3197,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161004T140000Z",
-					icalEnd : "20161004T153000Z",
+					icalStart : "00161104T150000Z",
+					icalEnd : "00161104T163000Z",
 					room : "Bouvet 2",
 					events : [
 						{
@@ -3270,8 +3223,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161004T140000Z",
-					icalEnd : "20161004T153000Z",
+					icalStart : "00161104T150000Z",
+					icalEnd : "00161104T163000Z",
 					room : "Charcot",
 					events : [
 						{
@@ -3304,8 +3257,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161004T140000Z",
-					icalEnd : "20161004T153000Z",
+					icalStart : "00161104T150000Z",
+					icalEnd : "00161104T163000Z",
 					room : "Vauban 1",
 					events : [
 						{
@@ -3330,8 +3283,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161004T140000Z",
-					icalEnd : "20161004T153000Z",
+					icalStart : "00161104T150000Z",
+					icalEnd : "00161104T163000Z",
 					room : "Vauban 2",
 					events : [
 						{
@@ -3364,8 +3317,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161004T140000Z",
-					icalEnd : "20161004T153000Z",
+					icalStart : "00161104T150000Z",
+					icalEnd : "00161104T163000Z",
 					room : "Lamennais 1",
 					events : [
 						{
@@ -3394,8 +3347,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161004T140000Z",
-					icalEnd : "20161004T153000Z",
+					icalStart : "00161104T150000Z",
+					icalEnd : "00161104T163000Z",
 					room : "Lamennais 2",
 					events : [
 						{
@@ -3420,8 +3373,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161004T140000Z",
-					icalEnd : "20161004T153000Z",
+					icalStart : "00161104T150000Z",
+					icalEnd : "00161104T163000Z",
 					room : "Lamennais 3",
 					events : [
 						{
@@ -3442,7 +3395,7 @@ var data = [
 	},
 	{
 		name : "Wednesday",
-		date : "20161005",
+		date : "00161105",
 		rooms : [
 			{
 				name : "Rotonde Surcouf"
@@ -3455,15 +3408,15 @@ var data = [
 			},
 			{
 				name : "Chateaubriand",
-				capacity : "400"
+				capacity : 400
 			},
 			{
 				name : "Lamennais 1+2",
-				capacity : "180"
+				capacity : 180
 			},
 			{
 				name : "Lamennais 4+5",
-				capacity : "150"
+				capacity : 150
 			}
 		],
 		sessionGroups : [
@@ -3485,8 +3438,43 @@ var data = [
 					start : "08:45",
 					end : "09:00",
 					rowSpan : 1,
-					icalStart : "20161005T064500Z",
-					icalEnd : "20161005T070000Z",
+					icalStart : "00161105T074500Z",
+					icalEnd : "00161105T080000Z",
+					room : "Chateaubriand",
+					events : [
+						{
+							type : "Opening",
+							title : "General Chairs Opening"
+						}
+					]
+				},
+				{
+					rowSpan : 1
+				},
+				{
+					rowSpan : 1
+				}
+			],			
+			[
+				{
+					start : "09:00",
+					rowSpan : 1
+				},
+				{
+					rowSpan : 1
+				},
+				{
+					rowSpan : 1
+				},
+				{
+					rowSpan : 1
+				},
+				{
+					start : "09:00",
+					end : "09:15",
+					rowSpan : 1,
+					icalStart : "00161105T080000Z",
+					icalEnd : "00161105T081500Z",
 					room : "Chateaubriand",
 					events : [
 						{
@@ -3504,41 +3492,6 @@ var data = [
 			],			
 			[
 				{
-					start : "09:00",
-					rowSpan : 1
-				},
-				{
-					rowSpan : 1
-				},
-				{
-					rowSpan : 1
-				},
-				{
-					rowSpan : 1
-				},
-				{
-					start : "09:00",
-					end : "09:15",
-					rowSpan : 1,
-					icalStart : "20161005T070000Z",
-					icalEnd : "20161005T071500Z",
-					room : "Chateaubriand",
-					events : [
-						{
-							type : "Opening",
-							title : "General Chairs Opening"
-						}
-					]
-				},
-				{
-					rowSpan : 1
-				},
-				{
-					rowSpan : 1
-				}
-			],			
-			[
-				{
 					start : "09:15",
 					rowSpan : 5
 				},
@@ -3555,15 +3508,15 @@ var data = [
 					start : "09:15",
 					end : "10:30",
 					rowSpan : 5,
-					icalStart : "20161005T071500Z",
-					icalEnd : "20161005T083000Z",
+					icalStart : "00161105T081500Z",
+					icalEnd : "00161105T093000Z",
 					room : "Chateaubriand",
 					events : [
 						{
 							type : "Keynote",
 							title : "Resurrecting Laplace’s Demon: The Case for Deterministic Models",
 							speaker : {
-								name : "Edward A. Lee"	
+								name : "Edward A. Lee	
 							}
 						}
 					]
@@ -3591,8 +3544,8 @@ var data = [
 					start : "10:30",
 					end : "11:00",
 					rowSpan : 2,
-					icalStart : "20161005T083000Z",
-					icalEnd : "20161005T090000Z",
+					icalStart : "00161105T093000Z",
+					icalEnd : "00161105T100000Z",
 					room : "Rotonde J. Cartier",
 					events : [
 						{
@@ -3605,8 +3558,8 @@ var data = [
 					start : "10:30",
 					end : "11:00",
 					rowSpan : 2,
-					icalStart : "20161005T083000Z",
-					icalEnd : "20161005T090000Z",
+					icalStart : "00161105T093000Z",
+					icalEnd : "00161105T100000Z",
 					room : "Grand Large",
 					events : [
 						{
@@ -3644,8 +3597,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161005T090000Z",
-					icalEnd : "20161005T103000Z",
+					icalStart : "00161105T100000Z",
+					icalEnd : "00161105T113000Z",
 					room : "Chateaubriand",
 					events : [
 						{
@@ -3657,14 +3610,14 @@ var data = [
 									title : "Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo",
 									abstract : "Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum Lorem ipsum dolor sit amet. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Vero eos et accusam et. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Diam voluptua at vero eos. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Eirmod tempor invidunt ut labore. Vero eos et accusam et. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor.",
 									start : "11:00",
-									icalStart : "20161005T090000Z",
-									icalEnd : "20161005T092500Z",
+									icalStart : "00161105T100000Z",
+									icalEnd : "00161105T102500Z",
 									authors : [
 										{
-											name : "Invidunt At"	
+											name : "Invidunt At	
 										},
 										{
-											name : "Sed Sea"	
+											name : "Sed Sea	
 										}
 									]
 								},
@@ -3672,17 +3625,17 @@ var data = [
 									title : "Sadipscing elitr sed diam nonumy",
 									abstract : "Stet clita kasd gubergren no sea Accusam et justo duo dolores. Sed diam voluptua at vero. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt. Diam nonumy eirmod tempor invidunt. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. At vero eos et accusam et justo duo dolores et ea.",
 									start : "11:25",
-									icalStart : "20161005T092500Z",
-									icalEnd : "20161005T095000Z",
+									icalStart : "00161105T102500Z",
+									icalEnd : "00161105T105000Z",
 									authors : [
 										{
-											name : "Dolores Et"	
+											name : "Dolores Et	
 										},
 										{
-											name : "Vero Et"	
+											name : "Vero Et	
 										},
 										{
-											name : "Sed Kasd"	
+											name : "Sed Kasd	
 										}
 									]
 								},
@@ -3690,26 +3643,26 @@ var data = [
 									title : "Amet consetetur sadipscing elitr sed",
 									abstract : "Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum Labore et dolore magna aliquyam erat sed diam voluptua at vero. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Aliquyam erat sed diam voluptua. Elitr sed diam nonumy eirmod tempor invidunt ut labore et. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Diam nonumy eirmod tempor invidunt. Et ea rebum stet clita. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet.",
 									start : "11:50",
-									icalStart : "20161005T095000Z",
-									icalEnd : "20161005T101500Z",
+									icalStart : "00161105T105000Z",
+									icalEnd : "00161105T111500Z",
 									authors : [
 										{
-											name : "Kasd Sanctus"	
+											name : "Kasd Sanctus	
 										},
 										{
-											name : "Gubergren Consetetur"	
+											name : "Gubergren Consetetur	
 										},
 										{
-											name : "Invidunt Nonumy"	
+											name : "Invidunt Nonumy	
 										},
 										{
-											name : "Et Eos"	
+											name : "Et Eos	
 										},
 										{
-											name : "Vero Et"	
+											name : "Vero Et	
 										},
 										{
-											name : "Ipsum Magna"	
+											name : "Ipsum Magna	
 										}
 									]
 								}
@@ -3721,8 +3674,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161005T090000Z",
-					icalEnd : "20161005T103000Z",
+					icalStart : "00161105T100000Z",
+					icalEnd : "00161105T113000Z",
 					room : "Lamennais 1+2",
 					events : [
 						{
@@ -3734,26 +3687,26 @@ var data = [
 									title : "Voluptua at vero eos et",
 									abstract : "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum. Sed diam voluptua at vero eos et accusam et. Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea. Magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Amet consetetur sadipscing elitr sed. Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita.",
 									start : "11:00",
-									icalStart : "20161005T090000Z",
-									icalEnd : "20161005T092500Z",
+									icalStart : "00161105T100000Z",
+									icalEnd : "00161105T102500Z",
 									authors : [
 										{
-											name : "Aliquyam At"	
+											name : "Aliquyam At	
 										},
 										{
-											name : "Ipsum Invidunt"	
+											name : "Ipsum Invidunt	
 										},
 										{
-											name : "Ipsum Magna"	
+											name : "Ipsum Magna	
 										},
 										{
-											name : "Takimata Et"	
+											name : "Takimata Et	
 										},
 										{
-											name : "Est Lorem"	
+											name : "Est Lorem	
 										},
 										{
-											name : "Invidunt At"	
+											name : "Invidunt At	
 										}
 									]
 								},
@@ -3761,23 +3714,23 @@ var data = [
 									title : "No sea takimata sanctus est",
 									abstract : "Magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo Eos et accusam et justo. Ipsum dolor sit amet consetetur sadipscing elitr sed diam. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos. Kasd gubergren no sea takimata. Nonumy eirmod tempor invidunt ut. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor.",
 									start : "11:25",
-									icalStart : "20161005T092500Z",
-									icalEnd : "20161005T095000Z",
+									icalStart : "00161105T102500Z",
+									icalEnd : "00161105T105000Z",
 									authors : [
 										{
-											name : "Eos Et"	
+											name : "Eos Et	
 										},
 										{
-											name : "No Aliquyam"	
+											name : "No Aliquyam	
 										},
 										{
-											name : "Kasd Dolores"	
+											name : "Kasd Dolores	
 										},
 										{
-											name : "Gubergren At"	
+											name : "Gubergren At	
 										},
 										{
-											name : "Eirmod Consetetur"	
+											name : "Eirmod Consetetur	
 										}
 									]
 								},
@@ -3785,32 +3738,32 @@ var data = [
 									title : "Consetetur sadipscing elitr sed diam",
 									abstract : "Dolores et ea rebum stet clita kasd Eirmod tempor invidunt ut labore et dolore magna. Elitr sed diam nonumy eirmod. Sit amet lorem ipsum dolor. Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita. Duo dolores et ea rebum. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam. Voluptua at vero eos et. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Diam voluptua at vero eos et accusam et justo duo dolores et ea. Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor.",
 									start : "11:50",
-									icalStart : "20161005T095000Z",
-									icalEnd : "20161005T101500Z",
+									icalStart : "00161105T105000Z",
+									icalEnd : "00161105T111500Z",
 									authors : [
 										{
-											name : "Ipsum Nonumy"	
+											name : "Ipsum Nonumy	
 										},
 										{
-											name : "Vero Ea"	
+											name : "Vero Ea	
 										},
 										{
-											name : "Kasd Sanctus"	
+											name : "Kasd Sanctus	
 										},
 										{
-											name : "Ipsum Invidunt"	
+											name : "Ipsum Invidunt	
 										},
 										{
-											name : "Nonumy Dolore"	
+											name : "Nonumy Dolore	
 										},
 										{
-											name : "Ipsum Nonumy"	
+											name : "Ipsum Nonumy	
 										},
 										{
-											name : "Clita Tempor"	
+											name : "Clita Tempor	
 										},
 										{
-											name : "Ipsum Magna"	
+											name : "Ipsum Magna	
 										}
 									]
 								}
@@ -3822,8 +3775,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161005T090000Z",
-					icalEnd : "20161005T103000Z",
+					icalStart : "00161105T100000Z",
+					icalEnd : "00161105T113000Z",
 					room : "Lamennais 4+5",
 					events : [
 						{
@@ -3835,23 +3788,23 @@ var data = [
 									title : "No sea takimata sanctus est",
 									abstract : "Magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo Eos et accusam et justo. Ipsum dolor sit amet consetetur sadipscing elitr sed diam. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos. Kasd gubergren no sea takimata. Nonumy eirmod tempor invidunt ut. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor.",
 									start : "11:00",
-									icalStart : "20161005T090000Z",
-									icalEnd : "20161005T092500Z",
+									icalStart : "00161105T100000Z",
+									icalEnd : "00161105T102500Z",
 									authors : [
 										{
-											name : "Eos Et"	
+											name : "Eos Et	
 										},
 										{
-											name : "No Aliquyam"	
+											name : "No Aliquyam	
 										},
 										{
-											name : "Kasd Dolores"	
+											name : "Kasd Dolores	
 										},
 										{
-											name : "Gubergren At"	
+											name : "Gubergren At	
 										},
 										{
-											name : "Eirmod Consetetur"	
+											name : "Eirmod Consetetur	
 										}
 									]
 								},
@@ -3859,26 +3812,26 @@ var data = [
 									title : "Voluptua at vero eos et",
 									abstract : "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum. Sed diam voluptua at vero eos et accusam et. Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea. Magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Amet consetetur sadipscing elitr sed. Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita.",
 									start : "11:25",
-									icalStart : "20161005T092500Z",
-									icalEnd : "20161005T095000Z",
+									icalStart : "00161105T102500Z",
+									icalEnd : "00161105T105000Z",
 									authors : [
 										{
-											name : "Aliquyam At"	
+											name : "Aliquyam At	
 										},
 										{
-											name : "Ipsum Invidunt"	
+											name : "Ipsum Invidunt	
 										},
 										{
-											name : "Ipsum Magna"	
+											name : "Ipsum Magna	
 										},
 										{
-											name : "Takimata Et"	
+											name : "Takimata Et	
 										},
 										{
-											name : "Est Lorem"	
+											name : "Est Lorem	
 										},
 										{
-											name : "Invidunt At"	
+											name : "Invidunt At	
 										}
 									]
 								},
@@ -3886,26 +3839,26 @@ var data = [
 									title : "Eirmod tempor invidunt ut labore et dolore magna aliquyam",
 									abstract : "Sadipscing elitr sed diam nonumy eirmod tempor invidunt Est lorem ipsum dolor sit amet lorem ipsum. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et. Invidunt ut labore et dolore. At vero eos et accusam et justo duo dolores et ea rebum stet clita. Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit. Vero eos et accusam et justo duo dolores et ea. Duo dolores et ea rebum stet clita kasd gubergren no sea.",
 									start : "11:50",
-									icalStart : "20161005T095000Z",
-									icalEnd : "20161005T101500Z",
+									icalStart : "00161105T105000Z",
+									icalEnd : "00161105T111500Z",
 									authors : [
 										{
-											name : "Nonumy Ea"	
+											name : "Nonumy Ea	
 										},
 										{
-											name : "Kasd Dolores"	
+											name : "Kasd Dolores	
 										},
 										{
-											name : "Voluptua Voluptua"	
+											name : "Voluptua Voluptua	
 										},
 										{
-											name : "Est Lorem"	
+											name : "Est Lorem	
 										},
 										{
-											name : "Ipsum Magna"	
+											name : "Ipsum Magna	
 										},
 										{
-											name : "Consetetur Ipsum"	
+											name : "Consetetur Ipsum	
 										}
 									]
 								}
@@ -3934,8 +3887,8 @@ var data = [
 					start : "12:30",
 					end : "14:00",
 					rowSpan : 6,
-					icalStart : "20161005T103000Z",
-					icalEnd : "20161005T120000Z",
+					icalStart : "00161105T113000Z",
+					icalEnd : "00161105T130000Z",
 					room : "Grand Large",
 					events : [
 						{
@@ -3977,8 +3930,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161005T120000Z",
-					icalEnd : "20161005T133000Z",
+					icalStart : "00161105T130000Z",
+					icalEnd : "00161105T143000Z",
 					room : "Chateaubriand",
 					events : [
 						{
@@ -3990,29 +3943,29 @@ var data = [
 									title : "Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit",
 									abstract : "Erat sed diam voluptua at vero eos et accusam et Elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy. Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita. Dolor sit amet lorem ipsum. Et ea rebum stet clita. Amet lorem ipsum dolor sit amet consetetur sadipscing. Elitr sed diam nonumy eirmod tempor invidunt ut. Amet consetetur sadipscing elitr sed. Invidunt ut labore et dolore.",
 									start : "14:00",
-									icalStart : "20161005T120000Z",
-									icalEnd : "20161005T122500Z",
+									icalStart : "00161105T130000Z",
+									icalEnd : "00161105T132500Z",
 									authors : [
 										{
-											name : "Gubergren Consetetur"	
+											name : "Gubergren Consetetur	
 										},
 										{
-											name : "Labore Sed"	
+											name : "Labore Sed	
 										},
 										{
-											name : "Voluptua Voluptua"	
+											name : "Voluptua Voluptua	
 										},
 										{
-											name : "Diam Et"	
+											name : "Diam Et	
 										},
 										{
-											name : "Ipsum Invidunt"	
+											name : "Ipsum Invidunt	
 										},
 										{
-											name : "Ipsum Magna"	
+											name : "Ipsum Magna	
 										},
 										{
-											name : "Ipsum Magna"	
+											name : "Ipsum Magna	
 										}
 									]
 								},
@@ -4020,20 +3973,20 @@ var data = [
 									title : "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit",
 									abstract : "Lorem ipsum dolor sit amet consetetur sadipscing elitr Eos et accusam et justo. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Labore et dolore magna aliquyam erat sed diam voluptua at. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. Lorem ipsum dolor sit amet. Ut labore et dolore magna aliquyam erat sed. Ut labore et dolore magna.",
 									start : "14:25",
-									icalStart : "20161005T122500Z",
-									icalEnd : "20161005T125000Z",
+									icalStart : "00161105T132500Z",
+									icalEnd : "00161105T135000Z",
 									authors : [
 										{
-											name : "Magna Dolore"	
+											name : "Magna Dolore	
 										},
 										{
-											name : "Magna Labore"	
+											name : "Magna Labore	
 										},
 										{
-											name : "Sit Sadipscing"	
+											name : "Sit Sadipscing	
 										},
 										{
-											name : "Eos Et"	
+											name : "Eos Et	
 										}
 									]
 								},
@@ -4041,29 +3994,29 @@ var data = [
 									title : "Sanctus est lorem ipsum dolor sit amet lorem ipsum",
 									abstract : "Voluptua at vero eos et accusam et justo duo dolores At vero eos et accusam et justo. Elitr sed diam nonumy eirmod tempor invidunt ut. Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd. Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy.",
 									start : "14:50",
-									icalStart : "20161005T125000Z",
-									icalEnd : "20161005T131500Z",
+									icalStart : "00161105T135000Z",
+									icalEnd : "00161105T141500Z",
 									authors : [
 										{
-											name : "At No"	
+											name : "At No	
 										},
 										{
-											name : "Sea Amet"	
+											name : "Sea Amet	
 										},
 										{
-											name : "Amet Sit"	
+											name : "Amet Sit	
 										},
 										{
-											name : "Diam Et"	
+											name : "Diam Et	
 										},
 										{
-											name : "Nonumy Ea"	
+											name : "Nonumy Ea	
 										},
 										{
-											name : "Est Et"	
+											name : "Est Et	
 										},
 										{
-											name : "Dolores Justo"	
+											name : "Dolores Justo	
 										}
 									]
 								}
@@ -4075,8 +4028,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161005T120000Z",
-					icalEnd : "20161005T133000Z",
+					icalStart : "00161105T130000Z",
+					icalEnd : "00161105T143000Z",
 					room : "Lamennais 1+2",
 					events : [
 						{
@@ -4088,29 +4041,29 @@ var data = [
 									title : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor",
 									abstract : "Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et. Rebum stet clita kasd gubergren no sea. Sanctus est lorem ipsum dolor sit amet lorem ipsum. Dolores et ea rebum stet clita kasd gubergren no sea. Sed diam voluptua at vero. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. Duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est. Lorem ipsum dolor sit amet. Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit. Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita. Magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores.",
 									start : "14:00",
-									icalStart : "20161005T120000Z",
-									icalEnd : "20161005T122500Z",
+									icalStart : "00161105T130000Z",
+									icalEnd : "00161105T132500Z",
 									authors : [
 										{
-											name : "Sed Consetetur"	
+											name : "Sed Consetetur	
 										},
 										{
-											name : "At No"	
+											name : "At No	
 										},
 										{
-											name : "Lorem No"	
+											name : "Lorem No	
 										},
 										{
-											name : "Tempor Ea"	
+											name : "Tempor Ea	
 										},
 										{
-											name : "Invidunt Nonumy"	
+											name : "Invidunt Nonumy	
 										},
 										{
-											name : "Diam Diam"	
+											name : "Diam Diam	
 										},
 										{
-											name : "Dolor Eirmod"	
+											name : "Dolor Eirmod	
 										}
 									]
 								},
@@ -4118,20 +4071,20 @@ var data = [
 									title : "Duo dolores et ea rebum",
 									abstract : "Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et Dolores et ea rebum stet. Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero. Ipsum dolor sit amet lorem ipsum dolor sit. Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et. Sanctus est lorem ipsum dolor.",
 									start : "14:25",
-									icalStart : "20161005T122500Z",
-									icalEnd : "20161005T125000Z",
+									icalStart : "00161105T132500Z",
+									icalEnd : "00161105T135000Z",
 									authors : [
 										{
-											name : "Kasd Dolores"	
+											name : "Kasd Dolores	
 										},
 										{
-											name : "Sed Consetetur"	
+											name : "Sed Consetetur	
 										},
 										{
-											name : "Sadipscing Ipsum"	
+											name : "Sadipscing Ipsum	
 										},
 										{
-											name : "Magna Labore"	
+											name : "Magna Labore	
 										}
 									]
 								},
@@ -4139,26 +4092,26 @@ var data = [
 									title : "Sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore",
 									abstract : "Diam nonumy eirmod tempor invidunt ut labore Erat sed diam voluptua at vero eos et accusam et justo duo. Est lorem ipsum dolor sit. Clita kasd gubergren no sea takimata sanctus est. Clita kasd gubergren no sea. Dolor sit amet lorem ipsum. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Sed diam voluptua at vero eos et accusam et justo. Justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est. At vero eos et accusam.",
 									start : "14:50",
-									icalStart : "20161005T125000Z",
-									icalEnd : "20161005T131500Z",
+									icalStart : "00161105T135000Z",
+									icalEnd : "00161105T141500Z",
 									authors : [
 										{
-											name : "Accusam Ipsum"	
+											name : "Accusam Ipsum	
 										},
 										{
-											name : "Amet Sit"	
+											name : "Amet Sit	
 										},
 										{
-											name : "Voluptua Dolore"	
+											name : "Voluptua Dolore	
 										},
 										{
-											name : "Sed Sea"	
+											name : "Sed Sea	
 										},
 										{
-											name : "Voluptua Voluptua"	
+											name : "Voluptua Voluptua	
 										},
 										{
-											name : "Dolores Et"	
+											name : "Dolores Et	
 										}
 									]
 								}
@@ -4170,8 +4123,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161005T120000Z",
-					icalEnd : "20161005T133000Z",
+					icalStart : "00161105T130000Z",
+					icalEnd : "00161105T143000Z",
 					room : "Lamennais 4+5",
 					events : [
 						{
@@ -4183,20 +4136,20 @@ var data = [
 									title : "Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit",
 									abstract : "Sit amet consetetur sadipscing elitr Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Stet clita kasd gubergren no. Amet consetetur sadipscing elitr sed. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est. Clita kasd gubergren no sea. Vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et.",
 									start : "14:00",
-									icalStart : "20161005T120000Z",
-									icalEnd : "20161005T122500Z",
+									icalStart : "00161105T130000Z",
+									icalEnd : "00161105T132500Z",
 									authors : [
 										{
-											name : "Accusam Ipsum"	
+											name : "Accusam Ipsum	
 										},
 										{
-											name : "Magna Dolore"	
+											name : "Magna Dolore	
 										},
 										{
-											name : "Accusam Ipsum"	
+											name : "Accusam Ipsum	
 										},
 										{
-											name : "Labore Sed"	
+											name : "Labore Sed	
 										}
 									]
 								},
@@ -4204,17 +4157,17 @@ var data = [
 									title : "Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed",
 									abstract : "Et accusam et justo duo Amet consetetur sadipscing elitr sed. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Clita kasd gubergren no sea. Eirmod tempor invidunt ut labore. Ipsum dolor sit amet consetetur sadipscing elitr sed. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Et accusam et justo duo. Consetetur sadipscing elitr sed diam.",
 									start : "14:25",
-									icalStart : "20161005T122500Z",
-									icalEnd : "20161005T125000Z",
+									icalStart : "00161105T132500Z",
+									icalEnd : "00161105T135000Z",
 									authors : [
 										{
-											name : "Labore Sed"	
+											name : "Labore Sed	
 										},
 										{
-											name : "Et Eos"	
+											name : "Et Eos	
 										},
 										{
-											name : "Stet No"	
+											name : "Stet No	
 										}
 									]
 								},
@@ -4222,17 +4175,17 @@ var data = [
 									title : "Sadipscing elitr sed diam nonumy",
 									abstract : "Stet clita kasd gubergren no sea Accusam et justo duo dolores. Sed diam voluptua at vero. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt. Diam nonumy eirmod tempor invidunt. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. At vero eos et accusam et justo duo dolores et ea.",
 									start : "14:50",
-									icalStart : "20161005T125000Z",
-									icalEnd : "20161005T131500Z",
+									icalStart : "00161105T135000Z",
+									icalEnd : "00161105T141500Z",
 									authors : [
 										{
-											name : "Dolores Et"	
+											name : "Dolores Et	
 										},
 										{
-											name : "Vero Et"	
+											name : "Vero Et	
 										},
 										{
-											name : "Sed Kasd"	
+											name : "Sed Kasd	
 										}
 									]
 								}
@@ -4258,8 +4211,8 @@ var data = [
 					start : "15:30",
 					end : "16:00",
 					rowSpan : 2,
-					icalStart : "20161005T133000Z",
-					icalEnd : "20161005T140000Z",
+					icalStart : "00161105T143000Z",
+					icalEnd : "00161105T150000Z",
 					room : "Rotonde J. Cartier",
 					events : [
 						{
@@ -4272,8 +4225,8 @@ var data = [
 					start : "15:30",
 					end : "16:00",
 					rowSpan : 2,
-					icalStart : "20161005T133000Z",
-					icalEnd : "20161005T140000Z",
+					icalStart : "00161105T143000Z",
+					icalEnd : "00161105T150000Z",
 					room : "Grand Large",
 					events : [
 						{
@@ -4311,8 +4264,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161005T140000Z",
-					icalEnd : "20161005T153000Z",
+					icalStart : "00161105T150000Z",
+					icalEnd : "00161105T163000Z",
 					room : "Chateaubriand",
 					events : [
 						{
@@ -4324,29 +4277,29 @@ var data = [
 									title : "Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore",
 									abstract : "Sed diam voluptua at vero eos et accusam et justo duo dolores Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur. Dolor sit amet consetetur sadipscing. Magna aliquyam erat sed diam. Aliquyam erat sed diam voluptua. Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et.",
 									start : "16:00",
-									icalStart : "20161005T140000Z",
-									icalEnd : "20161005T142500Z",
+									icalStart : "00161105T150000Z",
+									icalEnd : "00161105T152500Z",
 									authors : [
 										{
-											name : "Nonumy At"	
+											name : "Nonumy At	
 										},
 										{
-											name : "Gubergren At"	
+											name : "Gubergren At	
 										},
 										{
-											name : "Ea Diam"	
+											name : "Ea Diam	
 										},
 										{
-											name : "Et Diam"	
+											name : "Et Diam	
 										},
 										{
-											name : "At Justo"	
+											name : "At Justo	
 										},
 										{
-											name : "No Aliquyam"	
+											name : "No Aliquyam	
 										},
 										{
-											name : "Tempor Et"	
+											name : "Tempor Et	
 										}
 									]
 								},
@@ -4354,14 +4307,14 @@ var data = [
 									title : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
 									abstract : "Sadipscing elitr sed diam nonumy eirmod tempor invidunt Kasd gubergren no sea takimata sanctus est lorem ipsum. Kasd gubergren no sea takimata. Sed diam nonumy eirmod tempor invidunt ut labore. Voluptua at vero eos et. Dolore magna aliquyam erat sed. Nonumy eirmod tempor invidunt ut. Ipsum dolor sit amet lorem ipsum. Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et.",
 									start : "16:25",
-									icalStart : "20161005T142500Z",
-									icalEnd : "20161005T145000Z",
+									icalStart : "00161105T152500Z",
+									icalEnd : "00161105T155000Z",
 									authors : [
 										{
-											name : "Magna Takimata"	
+											name : "Magna Takimata	
 										},
 										{
-											name : "Lorem Lorem"	
+											name : "Lorem Lorem	
 										}
 									]
 								},
@@ -4369,23 +4322,23 @@ var data = [
 									title : "Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy",
 									abstract : "Vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam. Voluptua at vero eos et. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero. Et dolore magna aliquyam erat sed diam. Magna aliquyam erat sed diam voluptua at vero eos. Sit amet consetetur sadipscing elitr. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam. Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo.",
 									start : "16:50",
-									icalStart : "20161005T145000Z",
-									icalEnd : "20161005T151500Z",
+									icalStart : "00161105T155000Z",
+									icalEnd : "00161105T161500Z",
 									authors : [
 										{
-											name : "Lorem Lorem"	
+											name : "Lorem Lorem	
 										},
 										{
-											name : "Takimata Et"	
+											name : "Takimata Et	
 										},
 										{
-											name : "Dolores Justo"	
+											name : "Dolores Justo	
 										},
 										{
-											name : "Duo Nonumy"	
+											name : "Duo Nonumy	
 										},
 										{
-											name : "Sadipscing Ipsum"	
+											name : "Sadipscing Ipsum	
 										}
 									]
 								}
@@ -4397,8 +4350,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161005T140000Z",
-					icalEnd : "20161005T153000Z",
+					icalStart : "00161105T150000Z",
+					icalEnd : "00161105T163000Z",
 					room : "Lamennais 1+2",
 					events : [
 						{
@@ -4410,20 +4363,20 @@ var data = [
 									title : "Diam nonumy eirmod tempor invidunt",
 									abstract : "Lorem ipsum dolor sit amet lorem ipsum dolor Kasd gubergren no sea takimata. Voluptua at vero eos et accusam. Et dolore magna aliquyam erat sed diam voluptua at vero. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur. Diam voluptua at vero eos. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.",
 									start : "16:00",
-									icalStart : "20161005T140000Z",
-									icalEnd : "20161005T142500Z",
+									icalStart : "00161105T150000Z",
+									icalEnd : "00161105T152500Z",
 									authors : [
 										{
-											name : "Sed Kasd"	
+											name : "Sed Kasd	
 										},
 										{
-											name : "Nonumy At"	
+											name : "Nonumy At	
 										},
 										{
-											name : "Rebum Sadipscing"	
+											name : "Rebum Sadipscing	
 										},
 										{
-											name : "Consetetur Erat"	
+											name : "Consetetur Erat	
 										}
 									]
 								},
@@ -4431,32 +4384,32 @@ var data = [
 									title : "Justo duo dolores et ea",
 									abstract : "Sanctus est lorem ipsum dolor Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea. Ea rebum stet clita kasd gubergren no. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Sit amet lorem ipsum dolor sit amet. Gubergren no sea takimata sanctus. Sed diam voluptua at vero. Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita. Duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus. Elitr sed diam nonumy eirmod. Elitr sed diam nonumy eirmod.",
 									start : "16:25",
-									icalStart : "20161005T142500Z",
-									icalEnd : "20161005T145000Z",
+									icalStart : "00161105T152500Z",
+									icalEnd : "00161105T155000Z",
 									authors : [
 										{
-											name : "Stet Justo"	
+											name : "Stet Justo	
 										},
 										{
-											name : "Eirmod Consetetur"	
+											name : "Eirmod Consetetur	
 										},
 										{
-											name : "Ut Accusam"	
+											name : "Ut Accusam	
 										},
 										{
-											name : "Amet Sed"	
+											name : "Amet Sed	
 										},
 										{
-											name : "Stet Est"	
+											name : "Stet Est	
 										},
 										{
-											name : "Ipsum Magna"	
+											name : "Ipsum Magna	
 										},
 										{
-											name : "Ipsum Invidunt"	
+											name : "Ipsum Invidunt	
 										},
 										{
-											name : "Accusam Ipsum"	
+											name : "Accusam Ipsum	
 										}
 									]
 								},
@@ -4464,29 +4417,29 @@ var data = [
 									title : "Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus",
 									abstract : "Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed Voluptua at vero eos et. Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et. Elitr sed diam nonumy eirmod tempor invidunt ut labore et. Diam nonumy eirmod tempor invidunt. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Et justo duo dolores et. Clita kasd gubergren no sea takimata sanctus. Erat sed diam voluptua at vero eos et. Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus.",
 									start : "16:50",
-									icalStart : "20161005T145000Z",
-									icalEnd : "20161005T151500Z",
+									icalStart : "00161105T155000Z",
+									icalEnd : "00161105T161500Z",
 									authors : [
 										{
-											name : "Tempor Ut"	
+											name : "Tempor Ut	
 										},
 										{
-											name : "Est Lorem"	
+											name : "Est Lorem	
 										},
 										{
-											name : "Sit Sadipscing"	
+											name : "Sit Sadipscing	
 										},
 										{
-											name : "Et Eos"	
+											name : "Et Eos	
 										},
 										{
-											name : "Voluptua Voluptua"	
+											name : "Voluptua Voluptua	
 										},
 										{
-											name : "Diam Diam"	
+											name : "Diam Diam	
 										},
 										{
-											name : "Et Invidunt"	
+											name : "Et Invidunt	
 										}
 									]
 								}
@@ -4498,8 +4451,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161005T140000Z",
-					icalEnd : "20161005T153000Z",
+					icalStart : "00161105T150000Z",
+					icalEnd : "00161105T163000Z",
 					room : "Lamennais 4+5",
 					events : [
 						{
@@ -4511,20 +4464,20 @@ var data = [
 									title : "Clita kasd gubergren no sea",
 									abstract : "Vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren Ipsum dolor sit amet lorem. Consetetur sadipscing elitr sed diam nonumy eirmod tempor. Dolor sit amet lorem ipsum dolor sit amet. Aliquyam erat sed diam voluptua. Dolor sit amet consetetur sadipscing. Rebum stet clita kasd gubergren no sea takimata sanctus est. Et dolore magna aliquyam erat. Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing.",
 									start : "16:00",
-									icalStart : "20161005T140000Z",
-									icalEnd : "20161005T142500Z",
+									icalStart : "00161105T150000Z",
+									icalEnd : "00161105T152500Z",
 									authors : [
 										{
-											name : "Nonumy Dolore"	
+											name : "Nonumy Dolore	
 										},
 										{
-											name : "At No"	
+											name : "At No	
 										},
 										{
-											name : "Rebum Nonumy"	
+											name : "Rebum Nonumy	
 										},
 										{
-											name : "Nonumy Sed"	
+											name : "Nonumy Sed	
 										}
 									]
 								},
@@ -4532,29 +4485,29 @@ var data = [
 									title : "Rebum stet clita kasd gubergren no sea takimata",
 									abstract : "Tempor invidunt ut labore et Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum. Justo duo dolores et ea. Magna aliquyam erat sed diam. Voluptua at vero eos et. Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing. Magna aliquyam erat sed diam. Vero eos et accusam et justo duo dolores. Sed diam voluptua at vero. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam.",
 									start : "16:25",
-									icalStart : "20161005T142500Z",
-									icalEnd : "20161005T145000Z",
+									icalStart : "00161105T152500Z",
+									icalEnd : "00161105T155000Z",
 									authors : [
 										{
-											name : "Eos Sed"	
+											name : "Eos Sed	
 										},
 										{
-											name : "Magna Takimata"	
+											name : "Magna Takimata	
 										},
 										{
-											name : "Takimata Ea"	
+											name : "Takimata Ea	
 										},
 										{
-											name : "Nonumy Sed"	
+											name : "Nonumy Sed	
 										},
 										{
-											name : "Eos Et"	
+											name : "Eos Et	
 										},
 										{
-											name : "Amet At"	
+											name : "Amet At	
 										},
 										{
-											name : "Duo Accusam"	
+											name : "Duo Accusam	
 										}
 									]
 								},
@@ -4562,23 +4515,23 @@ var data = [
 									title : "Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit",
 									abstract : "Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor Kasd gubergren no sea takimata sanctus. Duo dolores et ea rebum. Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Lorem ipsum dolor sit amet lorem ipsum dolor sit. Clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Est lorem ipsum dolor sit. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut.",
 									start : "16:50",
-									icalStart : "20161005T145000Z",
-									icalEnd : "20161005T151500Z",
+									icalStart : "00161105T155000Z",
+									icalEnd : "00161105T161500Z",
 									authors : [
 										{
-											name : "Et Sadipscing"	
+											name : "Et Sadipscing	
 										},
 										{
-											name : "Ipsum Invidunt"	
+											name : "Ipsum Invidunt	
 										},
 										{
-											name : "Nonumy Ea"	
+											name : "Nonumy Ea	
 										},
 										{
-											name : "Duo Gubergren"	
+											name : "Duo Gubergren	
 										},
 										{
-											name : "Diam Sit"	
+											name : "Diam Sit	
 										}
 									]
 								}
@@ -4595,34 +4548,34 @@ var data = [
 			[
 				{
 					start : "17:30",
-					rowSpan : 6
+					rowSpan : 8
 				},
 				{
-					rowSpan : 6
+					rowSpan : 8
 				},
 				{
-					rowSpan : 6
+					rowSpan : 8
 				},
 				{
-					rowSpan : 6
+					rowSpan : 8
 				},
 				{
-					rowSpan : 6
+					rowSpan : 8
 				},
 				{
-					rowSpan : 6
+					rowSpan : 8
 				},
 				{
 					start : "17:30",
-					end : "19:00",
-					rowSpan : 6,
-					icalStart : "20161005T153000Z",
-					icalEnd : "20161005T170000Z",
+					end : "19:30",
+					rowSpan : 8,
+					icalStart : "00161105T163000Z",
+					icalEnd : "00161105T183000Z",
 					room : "Lamennais 4+5",
 					events : [
 						{
 							type : "Meeting",
-							title : "Models Steering Commitee Meeting"
+							title : "MODELS Steering Commitee Meeting"
 						}
 					]
 				}
@@ -4632,44 +4585,50 @@ var data = [
 			[],
 			[],
 			[],
+			[],
+			[],
 			[
 				{
-					start : "19:00",
-					rowSpan : 4
+					start : "19:30",
+					rowSpan : 8
 				},
 				{
-					rowSpan : 4
+					rowSpan : 8
 				},
 				{
-					rowSpan : 4
+					rowSpan : 8
 				},
 				{
-					rowSpan : 4
+					rowSpan : 8
 				},
 				{
-					rowSpan : 4
+					rowSpan : 8
 				},
 				{
-					rowSpan : 4
+					rowSpan : 8
 				},
 				{
-					rowSpan : 4
+					rowSpan : 8
 				}
 			],
 			[],
 			[],
 			[],
+			[],
+			[],
+			[],
+			[],
 			[
 				{
-					start : "20:00",
-					rowSpan : 8
+					start : "21:30",
+					rowSpan : 2
 				},
 				{
-					start : "20:00",
+					start : "21:30",
 					end : "22:00",
-					rowSpan : 8,
-					icalStart : "20161005T180000Z",
-					icalEnd : "20161005T200000Z",
+					rowSpan : 2,
+					icalStart : "00161105T203000Z",
+					icalEnd : "00161105T210000Z",
 					room : "Rotonde Surcouf",
 					events : [
 						{
@@ -4679,33 +4638,27 @@ var data = [
 					]
 				},
 				{
-					rowSpan : 8
+					rowSpan : 2
 				},
 				{
-					rowSpan : 8
+					rowSpan : 2
 				},
 				{
-					rowSpan : 8
+					rowSpan : 2
 				},
 				{
-					rowSpan : 8
+					rowSpan : 2
 				},
 				{
-					rowSpan : 8
+					rowSpan : 2
 				}
 			],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[],
 			[]
 		]
 	},
 	{
 		name : "Thursday",
-		date : "20161006",
+		date : "00161106",
 		rooms : [
 			{
 				name : "Rotonde J. Cartier"
@@ -4715,15 +4668,15 @@ var data = [
 			},
 			{
 				name : "Chateaubriand",
-				capacity : "400"
+				capacity : 400
 			},
 			{
 				name : "Lamennais 1+2",
-				capacity : "180"
+				capacity : 180
 			},
 			{
 				name : "Lamennais 4+5",
-				capacity : "150"
+				capacity : 150
 			}
 		],
 		sessionGroups : [
@@ -4736,8 +4689,8 @@ var data = [
 					start : "09:00",
 					end : "12:30",
 					rowSpan : 14,
-					icalStart : "20161006T070000Z",
-					icalEnd : "20161006T103000Z",
+					icalStart : "00161106T080000Z",
+					icalEnd : "00161106T113000Z",
 					room : "Rotonde J. Cartier",
 					events : [
 						{
@@ -4753,8 +4706,8 @@ var data = [
 					start : "09:00",
 					end : "09:15",
 					rowSpan : 1,
-					icalStart : "20161006T070000Z",
-					icalEnd : "20161006T071500Z",
+					icalStart : "00161106T080000Z",
+					icalEnd : "00161106T081500Z",
 					room : "Chateaubriand",
 					events : [
 						{
@@ -4782,15 +4735,15 @@ var data = [
 					start : "09:15",
 					end : "10:30",
 					rowSpan : 5,
-					icalStart : "20161006T071500Z",
-					icalEnd : "20161006T083000Z",
+					icalStart : "00161106T081500Z",
+					icalEnd : "00161106T093000Z",
 					room : "Chateaubriand",
 					events : [
 						{
 							type : "Keynote",
 							title : "Keynote 2",
 							speaker : {
-								name : "Gordon Blair"	
+								name : "Gordon Blair	
 							}
 						}
 					]
@@ -4815,8 +4768,8 @@ var data = [
 					start : "10:30",
 					end : "11:00",
 					rowSpan : 2,
-					icalStart : "20161006T083000Z",
-					icalEnd : "20161006T090000Z",
+					icalStart : "00161106T093000Z",
+					icalEnd : "00161106T100000Z",
 					room : "Grand Large",
 					events : [
 						{
@@ -4843,118 +4796,17 @@ var data = [
 			[
 				{
 					start : "11:00",
-					rowSpan : 6
+					rowSpan : 0
 				},
 				{
-					rowSpan : 6
-				},
-				{
-					start : "11:00",
-					end : "12:30",
-					rowSpan : 6,
-					icalStart : "20161006T090000Z",
-					icalEnd : "20161006T103000Z",
-					room : "Chateaubriand",
-					events : [
-						{
-							type : "TalkSession",
-							title : "Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero",
-							chair : "Stet No",
-							papers : [
-								{
-									title : "Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at",
-									abstract : "Sit amet consetetur sadipscing elitr Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Magna aliquyam erat sed diam. Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et. Diam voluptua at vero eos. Justo duo dolores et ea rebum stet clita kasd. Dolores et ea rebum stet clita kasd gubergren no sea.",
-									start : "11:00",
-									icalStart : "20161006T090000Z",
-									icalEnd : "20161006T092500Z",
-									authors : [
-										{
-											name : "Lorem Lorem"	
-										},
-										{
-											name : "Diam Et"	
-										},
-										{
-											name : "Dolores Et"	
-										},
-										{
-											name : "Lorem Sit"	
-										},
-										{
-											name : "Ipsum Invidunt"	
-										},
-										{
-											name : "Accusam Ipsum"	
-										},
-										{
-											name : "Clita Tempor"	
-										}
-									]
-								},
-								{
-									title : "Diam nonumy eirmod tempor invidunt",
-									abstract : "Lorem ipsum dolor sit amet lorem ipsum dolor Kasd gubergren no sea takimata. Voluptua at vero eos et accusam. Et dolore magna aliquyam erat sed diam voluptua at vero. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur. Diam voluptua at vero eos. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.",
-									start : "11:25",
-									icalStart : "20161006T092500Z",
-									icalEnd : "20161006T095000Z",
-									authors : [
-										{
-											name : "Sed Kasd"	
-										},
-										{
-											name : "Nonumy At"	
-										},
-										{
-											name : "Rebum Sadipscing"	
-										},
-										{
-											name : "Consetetur Erat"	
-										}
-									]
-								},
-								{
-									title : "Labore et dolore magna aliquyam erat sed diam voluptua",
-									abstract : "Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus. Et dolore magna aliquyam erat. Duo dolores et ea rebum. Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr. Sit amet consetetur sadipscing elitr. Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam. Dolor sit amet consetetur sadipscing. Dolore magna aliquyam erat sed. Lorem ipsum dolor sit amet consetetur.",
-									start : "11:50",
-									icalStart : "20161006T095000Z",
-									icalEnd : "20161006T101500Z",
-									authors : [
-										{
-											name : "Diam Diam"	
-										},
-										{
-											name : "Invidunt At"	
-										},
-										{
-											name : "Aliquyam Et"	
-										},
-										{
-											name : "Est Lorem"	
-										},
-										{
-											name : "Est Et"	
-										},
-										{
-											name : "Clita Tempor"	
-										},
-										{
-											name : "Et Sadipscing"	
-										},
-										{
-											name : "Kasd Dolores"	
-										}
-									]
-								}
-							]
-						}
-					]
+					rowSpan : 0
 				},
 				{
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161006T090000Z",
-					icalEnd : "20161006T103000Z",
+					icalStart : "00161106T100000Z",
+					icalEnd : "00161106T113000Z",
 					room : "Lamennais 1+2",
 					events : [
 						{
@@ -4966,14 +4818,14 @@ var data = [
 									title : "Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo",
 									abstract : "Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum Lorem ipsum dolor sit amet. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Vero eos et accusam et. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Diam voluptua at vero eos. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Eirmod tempor invidunt ut labore. Vero eos et accusam et. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor.",
 									start : "11:00",
-									icalStart : "20161006T090000Z",
-									icalEnd : "20161006T092500Z",
+									icalStart : "00161106T100000Z",
+									icalEnd : "00161106T102500Z",
 									authors : [
 										{
-											name : "Invidunt At"	
+											name : "Invidunt At	
 										},
 										{
-											name : "Sed Sea"	
+											name : "Sed Sea	
 										}
 									]
 								},
@@ -4981,32 +4833,32 @@ var data = [
 									title : "Invidunt ut labore et dolore",
 									abstract : "Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing. Et ea rebum stet clita. Dolores et ea rebum stet. Sadipscing elitr sed diam nonumy. Magna aliquyam erat sed diam. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Stet clita kasd gubergren no sea takimata sanctus.",
 									start : "11:25",
-									icalStart : "20161006T092500Z",
-									icalEnd : "20161006T095000Z",
+									icalStart : "00161106T102500Z",
+									icalEnd : "00161106T105000Z",
 									authors : [
 										{
-											name : "Lorem Sit"	
+											name : "Lorem Sit	
 										},
 										{
-											name : "Dolores Et"	
+											name : "Dolores Et	
 										},
 										{
-											name : "Aliquyam Et"	
+											name : "Aliquyam Et	
 										},
 										{
-											name : "Takimata Et"	
+											name : "Takimata Et	
 										},
 										{
-											name : "Kasd Dolores"	
+											name : "Kasd Dolores	
 										},
 										{
-											name : "Duo Nonumy"	
+											name : "Duo Nonumy	
 										},
 										{
-											name : "Amet Sed"	
+											name : "Amet Sed	
 										},
 										{
-											name : "Invidunt Amet"	
+											name : "Invidunt Amet	
 										}
 									]
 								},
@@ -5014,29 +4866,29 @@ var data = [
 									title : "Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero",
 									abstract : "Consetetur sadipscing elitr sed diam Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy. Et justo duo dolores et ea rebum stet clita kasd gubergren. Clita kasd gubergren no sea. Est lorem ipsum dolor sit amet lorem ipsum. Diam nonumy eirmod tempor invidunt. Ea rebum stet clita kasd. Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata.",
 									start : "11:50",
-									icalStart : "20161006T095000Z",
-									icalEnd : "20161006T101500Z",
+									icalStart : "00161106T105000Z",
+									icalEnd : "00161106T111500Z",
 									authors : [
 										{
-											name : "Gubergren Ea"	
+											name : "Gubergren Ea	
 										},
 										{
-											name : "Et Invidunt"	
+											name : "Et Invidunt	
 										},
 										{
-											name : "Stet No"	
+											name : "Stet No	
 										},
 										{
-											name : "Et Dolor"	
+											name : "Et Dolor	
 										},
 										{
-											name : "Amet At"	
+											name : "Amet At	
 										},
 										{
-											name : "Magna Labore"	
+											name : "Magna Labore	
 										},
 										{
-											name : "Dolor Eirmod"	
+											name : "Dolor Eirmod	
 										}
 									]
 								}
@@ -5048,8 +4900,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161006T090000Z",
-					icalEnd : "20161006T103000Z",
+					icalStart : "00161106T100000Z",
+					icalEnd : "00161106T113000Z",
 					room : "Lamennais 4+5",
 					events : [
 						{
@@ -5061,26 +4913,26 @@ var data = [
 									title : "Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem",
 									abstract : "Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero Sed diam voluptua at vero. Et ea rebum stet clita kasd. Aliquyam erat sed diam voluptua. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Stet clita kasd gubergren no sea takimata sanctus est. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea.",
 									start : "11:00",
-									icalStart : "20161006T090000Z",
-									icalEnd : "20161006T092500Z",
+									icalStart : "00161106T100000Z",
+									icalEnd : "00161106T102500Z",
 									authors : [
 										{
-											name : "Amet At"	
+											name : "Amet At	
 										},
 										{
-											name : "Consetetur Erat"	
+											name : "Consetetur Erat	
 										},
 										{
-											name : "Diam Diam"	
+											name : "Diam Diam	
 										},
 										{
-											name : "Rebum Nonumy"	
+											name : "Rebum Nonumy	
 										},
 										{
-											name : "Consetetur Ipsum"	
+											name : "Consetetur Ipsum	
 										},
 										{
-											name : "Sadipscing Ipsum"	
+											name : "Sadipscing Ipsum	
 										}
 									]
 								},
@@ -5088,26 +4940,26 @@ var data = [
 									title : "Takimata sanctus est lorem ipsum dolor sit",
 									abstract : "Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor Vero eos et accusam et justo duo dolores. Justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus. Duo dolores et ea rebum stet clita kasd gubergren no. Amet lorem ipsum dolor sit amet. Et ea rebum stet clita. Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor. Kasd gubergren no sea takimata sanctus. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur.",
 									start : "11:25",
-									icalStart : "20161006T092500Z",
-									icalEnd : "20161006T095000Z",
+									icalStart : "00161106T102500Z",
+									icalEnd : "00161106T105000Z",
 									authors : [
 										{
-											name : "Et Sadipscing"	
+											name : "Et Sadipscing	
 										},
 										{
-											name : "Sed Kasd"	
+											name : "Sed Kasd	
 										},
 										{
-											name : "Labore Sed"	
+											name : "Labore Sed	
 										},
 										{
-											name : "Diam Et"	
+											name : "Diam Et	
 										},
 										{
-											name : "Nonumy Dolore"	
+											name : "Nonumy Dolore	
 										},
 										{
-											name : "Lorem No"	
+											name : "Lorem No	
 										}
 									]
 								},
@@ -5115,20 +4967,130 @@ var data = [
 									title : "Aliquyam erat sed diam voluptua",
 									abstract : "Ipsum dolor sit amet consetetur sadipscing elitr sed diam Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum. Dolor sit amet lorem ipsum. Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore. Takimata sanctus est lorem ipsum.",
 									start : "11:50",
-									icalStart : "20161006T095000Z",
-									icalEnd : "20161006T101500Z",
+									icalStart : "00161106T105000Z",
+									icalEnd : "00161106T111500Z",
 									authors : [
 										{
-											name : "Ipsum Invidunt"	
+											name : "Ipsum Invidunt	
 										},
 										{
-											name : "Dolores Justo"	
+											name : "Dolores Justo	
 										},
 										{
-											name : "Dolores Eirmod"	
+											name : "Dolores Eirmod	
 										},
 										{
-											name : "Takimata Et"	
+											name : "Takimata Et	
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],			
+			[
+				{
+					start : "11:00",
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					start : "11:00",
+					end : "12:30",
+					rowSpan : 6,
+					icalStart : "00161106T100000Z",
+					icalEnd : "00161106T113000Z",
+					room : "Chateaubriand",
+					events : [
+						{
+							type : "TalkSession",
+							title : "Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero",
+							chair : "Stet No",
+							papers : [
+								{
+									title : "Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at",
+									abstract : "Sit amet consetetur sadipscing elitr Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Magna aliquyam erat sed diam. Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et. Diam voluptua at vero eos. Justo duo dolores et ea rebum stet clita kasd. Dolores et ea rebum stet clita kasd gubergren no sea.",
+									start : "11:00",
+									icalStart : "00161106T100000Z",
+									icalEnd : "00161106T102500Z",
+									authors : [
+										{
+											name : "Lorem Lorem	
+										},
+										{
+											name : "Diam Et	
+										},
+										{
+											name : "Dolores Et	
+										},
+										{
+											name : "Lorem Sit	
+										},
+										{
+											name : "Ipsum Invidunt	
+										},
+										{
+											name : "Accusam Ipsum	
+										},
+										{
+											name : "Clita Tempor	
+										}
+									]
+								},
+								{
+									title : "Diam nonumy eirmod tempor invidunt",
+									abstract : "Lorem ipsum dolor sit amet lorem ipsum dolor Kasd gubergren no sea takimata. Voluptua at vero eos et accusam. Et dolore magna aliquyam erat sed diam voluptua at vero. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur. Diam voluptua at vero eos. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.",
+									start : "11:25",
+									icalStart : "00161106T102500Z",
+									icalEnd : "00161106T105000Z",
+									authors : [
+										{
+											name : "Sed Kasd	
+										},
+										{
+											name : "Nonumy At	
+										},
+										{
+											name : "Rebum Sadipscing	
+										},
+										{
+											name : "Consetetur Erat	
+										}
+									]
+								},
+								{
+									title : "Labore et dolore magna aliquyam erat sed diam voluptua",
+									abstract : "Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus. Et dolore magna aliquyam erat. Duo dolores et ea rebum. Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr. Sit amet consetetur sadipscing elitr. Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam. Dolor sit amet consetetur sadipscing. Dolore magna aliquyam erat sed. Lorem ipsum dolor sit amet consetetur.",
+									start : "11:50",
+									icalStart : "00161106T105000Z",
+									icalEnd : "00161106T111500Z",
+									authors : [
+										{
+											name : "Diam Diam	
+										},
+										{
+											name : "Invidunt At	
+										},
+										{
+											name : "Aliquyam Et	
+										},
+										{
+											name : "Est Lorem	
+										},
+										{
+											name : "Est Et	
+										},
+										{
+											name : "Clita Tempor	
+										},
+										{
+											name : "Et Sadipscing	
+										},
+										{
+											name : "Kasd Dolores	
 										}
 									]
 								}
@@ -5145,6 +5107,21 @@ var data = [
 			[
 				{
 					start : "12:30",
+					rowSpan : 0
+				},
+				{
+					rowSpan : 0
+				},
+				{
+					rowSpan : 0
+				},
+				{
+					rowSpan : 0
+				}
+			],			
+			[
+				{
+					start : "12:30",
 					rowSpan : 6
 				},
 				{
@@ -5154,8 +5131,8 @@ var data = [
 					start : "12:30",
 					end : "14:00",
 					rowSpan : 6,
-					icalStart : "20161006T103000Z",
-					icalEnd : "20161006T120000Z",
+					icalStart : "00161106T113000Z",
+					icalEnd : "00161106T130000Z",
 					room : "Grand Large",
 					events : [
 						{
@@ -5182,14 +5159,204 @@ var data = [
 			[
 				{
 					start : "14:00",
+					rowSpan : 0
+				},
+				{
+					rowSpan : 0
+				},
+				{
+					rowSpan : 0
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "00161106T130000Z",
+					icalEnd : "00161106T143000Z",
+					room : "Lamennais 1+2",
+					events : [
+						{
+							type : "TalkSession",
+							title : "Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr",
+							chair : "Voluptua Voluptua",
+							papers : [
+								{
+									title : "Voluptua at vero eos et accusam et justo duo dolores et",
+									abstract : "Sit amet lorem ipsum dolor sit Erat sed diam voluptua at vero eos et accusam et justo duo. No sea takimata sanctus est. Ipsum dolor sit amet lorem. Sadipscing elitr sed diam nonumy. Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus. Ipsum dolor sit amet consetetur. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Diam voluptua at vero eos. Dolore magna aliquyam erat sed diam. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea.",
+									start : "14:00",
+									icalStart : "00161106T130000Z",
+									icalEnd : "00161106T132500Z",
+									authors : [
+										{
+											name : "Tempor Ea	
+										},
+										{
+											name : "Voluptua Voluptua	
+										},
+										{
+											name : "No Aliquyam	
+										},
+										{
+											name : "Dolor Eirmod	
+										},
+										{
+											name : "Sadipscing Ipsum	
+										},
+										{
+											name : "Sed Sea	
+										},
+										{
+											name : "Lorem Diam	
+										}
+									]
+								},
+								{
+									title : "Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et",
+									abstract : "Rebum stet clita kasd gubergren no sea takimata sanctus Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Ea rebum stet clita kasd gubergren no sea. Sed diam voluptua at vero eos. Dolore magna aliquyam erat sed. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum. Rebum stet clita kasd gubergren no sea takimata sanctus. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Est lorem ipsum dolor sit.",
+									start : "14:25",
+									icalStart : "00161106T132500Z",
+									icalEnd : "00161106T135000Z",
+									authors : [
+										{
+											name : "Vero Justo	
+										},
+										{
+											name : "Gubergren Duo	
+										},
+										{
+											name : "Voluptua Dolore	
+										},
+										{
+											name : "Et Diam	
+										},
+										{
+											name : "Gubergren Consetetur	
+										},
+										{
+											name : "Voluptua Gubergren	
+										}
+									]
+								},
+								{
+									title : "Tempor invidunt ut labore et dolore magna aliquyam erat sed",
+									abstract : "Elitr sed diam nonumy eirmod tempor Et ea rebum stet clita. Ut labore et dolore magna aliquyam erat. At vero eos et accusam. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Voluptua at vero eos et. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. Stet clita kasd gubergren no. Sit amet consetetur sadipscing elitr sed diam nonumy.",
+									start : "14:50",
+									icalStart : "00161106T135000Z",
+									icalEnd : "00161106T141500Z",
+									authors : [
+										{
+											name : "Nonumy Ea	
+										},
+										{
+											name : "Vero Clita	
+										},
+										{
+											name : "Lorem No	
+										},
+										{
+											name : "Invidunt Amet	
+										},
+										{
+											name : "No Aliquyam	
+										},
+										{
+											name : "Lorem Lorem	
+										},
+										{
+											name : "Amet At	
+										},
+										{
+											name : "Lorem Lorem	
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					start : "14:00",
+					end : "15:30",
+					rowSpan : 6,
+					icalStart : "00161106T130000Z",
+					icalEnd : "00161106T143000Z",
+					room : "Lamennais 4+5",
+					events : [
+						{
+							type : "TalkSession",
+							title : "Sit amet lorem ipsum dolor",
+							chair : "Clita Clita",
+							papers : [
+								{
+									title : "Dolore magna aliquyam erat sed",
+									abstract : "Sadipscing elitr sed diam nonumy eirmod tempor Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Stet clita kasd gubergren no. Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. Sea takimata sanctus est lorem. Lorem ipsum dolor sit amet. Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Duo dolores et ea rebum stet clita.",
+									start : "14:00",
+									icalStart : "00161106T130000Z",
+									icalEnd : "00161106T132500Z",
+									authors : [
+										{
+											name : "Labore Sed	
+										},
+										{
+											name : "Clita Tempor	
+										}
+									]
+								},
+								{
+									title : "Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod",
+									abstract : "Rebum stet clita kasd gubergren Dolor sit amet consetetur sadipscing elitr. Dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr. Amet consetetur sadipscing elitr sed. Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Sanctus est lorem ipsum dolor sit amet. Ut labore et dolore magna. Takimata sanctus est lorem ipsum. Sanctus est lorem ipsum dolor.",
+									start : "14:25",
+									icalStart : "00161106T132500Z",
+									icalEnd : "00161106T135000Z",
+									authors : [
+										{
+											name : "At No	
+										},
+										{
+											name : "Stet Justo	
+										},
+										{
+											name : "Est Et	
+										},
+										{
+											name : "Lorem Sit	
+										},
+										{
+											name : "Eos Et	
+										}
+									]
+								},
+								{
+									title : "Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo",
+									abstract : "Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum Lorem ipsum dolor sit amet. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Vero eos et accusam et. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Diam voluptua at vero eos. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Eirmod tempor invidunt ut labore. Vero eos et accusam et. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor.",
+									start : "14:50",
+									icalStart : "00161106T135000Z",
+									icalEnd : "00161106T141500Z",
+									authors : [
+										{
+											name : "Invidunt At	
+										},
+										{
+											name : "Sed Sea	
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],			
+			[
+				{
+					start : "14:00",
 					rowSpan : 6
 				},
 				{
 					start : "14:00",
 					end : "17:30",
 					rowSpan : 14,
-					icalStart : "20161006T120000Z",
-					icalEnd : "20161006T153000Z",
+					icalStart : "00161106T130000Z",
+					icalEnd : "00161106T163000Z",
 					room : "Rotonde J. Cartier",
 					events : [
 						{
@@ -5205,8 +5372,8 @@ var data = [
 					start : "14:00",
 					end : "15:30",
 					rowSpan : 6,
-					icalStart : "20161006T120000Z",
-					icalEnd : "20161006T133000Z",
+					icalStart : "00161106T130000Z",
+					icalEnd : "00161106T143000Z",
 					room : "Chateaubriand",
 					events : [
 						{
@@ -5218,32 +5385,32 @@ var data = [
 									title : "Et accusam et justo duo",
 									abstract : "Dolor sit amet lorem ipsum Labore et dolore magna aliquyam erat sed diam voluptua at vero. Et accusam et justo duo. Justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est. Dolor sit amet consetetur sadipscing. At vero eos et accusam et justo duo dolores. Aliquyam erat sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum stet. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos.",
 									start : "14:00",
-									icalStart : "20161006T120000Z",
-									icalEnd : "20161006T122500Z",
+									icalStart : "00161106T130000Z",
+									icalEnd : "00161106T132500Z",
 									authors : [
 										{
-											name : "Gubergren At"	
+											name : "Gubergren At	
 										},
 										{
-											name : "Accusam Ipsum"	
+											name : "Accusam Ipsum	
 										},
 										{
-											name : "Consetetur Erat"	
+											name : "Consetetur Erat	
 										},
 										{
-											name : "At No"	
+											name : "At No	
 										},
 										{
-											name : "Accusam Vero"	
+											name : "Accusam Vero	
 										},
 										{
-											name : "Clita Tempor"	
+											name : "Clita Tempor	
 										},
 										{
-											name : "Lorem At"	
+											name : "Lorem At	
 										},
 										{
-											name : "Magna Labore"	
+											name : "Magna Labore	
 										}
 									]
 								},
@@ -5251,26 +5418,26 @@ var data = [
 									title : "Amet consetetur sadipscing elitr sed",
 									abstract : "Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum Labore et dolore magna aliquyam erat sed diam voluptua at vero. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Aliquyam erat sed diam voluptua. Elitr sed diam nonumy eirmod tempor invidunt ut labore et. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Diam nonumy eirmod tempor invidunt. Et ea rebum stet clita. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet.",
 									start : "14:25",
-									icalStart : "20161006T122500Z",
-									icalEnd : "20161006T125000Z",
+									icalStart : "00161106T132500Z",
+									icalEnd : "00161106T135000Z",
 									authors : [
 										{
-											name : "Kasd Sanctus"	
+											name : "Kasd Sanctus	
 										},
 										{
-											name : "Gubergren Consetetur"	
+											name : "Gubergren Consetetur	
 										},
 										{
-											name : "Invidunt Nonumy"	
+											name : "Invidunt Nonumy	
 										},
 										{
-											name : "Et Eos"	
+											name : "Et Eos	
 										},
 										{
-											name : "Vero Et"	
+											name : "Vero Et	
 										},
 										{
-											name : "Ipsum Magna"	
+											name : "Ipsum Magna	
 										}
 									]
 								},
@@ -5278,207 +5445,29 @@ var data = [
 									title : "Accusam et justo duo dolores et ea rebum stet",
 									abstract : "Sed diam voluptua at vero eos et accusam et justo Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Gubergren no sea takimata sanctus. Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo. Dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Et ea rebum stet clita. Tempor invidunt ut labore et dolore magna aliquyam erat sed. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
 									start : "14:50",
-									icalStart : "20161006T125000Z",
-									icalEnd : "20161006T131500Z",
+									icalStart : "00161106T135000Z",
+									icalEnd : "00161106T141500Z",
 									authors : [
 										{
-											name : "Dolores Et"	
+											name : "Dolores Et	
 										},
 										{
-											name : "Accusam Vero"	
+											name : "Accusam Vero	
 										},
 										{
-											name : "Ipsum Magna"	
+											name : "Ipsum Magna	
 										},
 										{
-											name : "Stet No"	
+											name : "Stet No	
 										},
 										{
-											name : "Duo Nonumy"	
+											name : "Duo Nonumy	
 										},
 										{
-											name : "Consetetur Erat"	
+											name : "Consetetur Erat	
 										},
 										{
-											name : "Ea Diam"	
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					start : "14:00",
-					end : "15:30",
-					rowSpan : 6,
-					icalStart : "20161006T120000Z",
-					icalEnd : "20161006T133000Z",
-					room : "Lamennais 1+2",
-					events : [
-						{
-							type : "TalkSession",
-							title : "Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr",
-							chair : "Voluptua Voluptua",
-							papers : [
-								{
-									title : "Voluptua at vero eos et accusam et justo duo dolores et",
-									abstract : "Sit amet lorem ipsum dolor sit Erat sed diam voluptua at vero eos et accusam et justo duo. No sea takimata sanctus est. Ipsum dolor sit amet lorem. Sadipscing elitr sed diam nonumy. Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus. Ipsum dolor sit amet consetetur. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Diam voluptua at vero eos. Dolore magna aliquyam erat sed diam. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea.",
-									start : "14:00",
-									icalStart : "20161006T120000Z",
-									icalEnd : "20161006T122500Z",
-									authors : [
-										{
-											name : "Tempor Ea"	
-										},
-										{
-											name : "Voluptua Voluptua"	
-										},
-										{
-											name : "No Aliquyam"	
-										},
-										{
-											name : "Dolor Eirmod"	
-										},
-										{
-											name : "Sadipscing Ipsum"	
-										},
-										{
-											name : "Sed Sea"	
-										},
-										{
-											name : "Lorem Diam"	
-										}
-									]
-								},
-								{
-									title : "Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et",
-									abstract : "Rebum stet clita kasd gubergren no sea takimata sanctus Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Ea rebum stet clita kasd gubergren no sea. Sed diam voluptua at vero eos. Dolore magna aliquyam erat sed. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum. Rebum stet clita kasd gubergren no sea takimata sanctus. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Est lorem ipsum dolor sit.",
-									start : "14:25",
-									icalStart : "20161006T122500Z",
-									icalEnd : "20161006T125000Z",
-									authors : [
-										{
-											name : "Vero Justo"	
-										},
-										{
-											name : "Gubergren Duo"	
-										},
-										{
-											name : "Voluptua Dolore"	
-										},
-										{
-											name : "Et Diam"	
-										},
-										{
-											name : "Gubergren Consetetur"	
-										},
-										{
-											name : "Voluptua Gubergren"	
-										}
-									]
-								},
-								{
-									title : "Tempor invidunt ut labore et dolore magna aliquyam erat sed",
-									abstract : "Elitr sed diam nonumy eirmod tempor Et ea rebum stet clita. Ut labore et dolore magna aliquyam erat. At vero eos et accusam. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Voluptua at vero eos et. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. Stet clita kasd gubergren no. Sit amet consetetur sadipscing elitr sed diam nonumy.",
-									start : "14:50",
-									icalStart : "20161006T125000Z",
-									icalEnd : "20161006T131500Z",
-									authors : [
-										{
-											name : "Nonumy Ea"	
-										},
-										{
-											name : "Vero Clita"	
-										},
-										{
-											name : "Lorem No"	
-										},
-										{
-											name : "Invidunt Amet"	
-										},
-										{
-											name : "No Aliquyam"	
-										},
-										{
-											name : "Lorem Lorem"	
-										},
-										{
-											name : "Amet At"	
-										},
-										{
-											name : "Lorem Lorem"	
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					start : "14:00",
-					end : "15:30",
-					rowSpan : 6,
-					icalStart : "20161006T120000Z",
-					icalEnd : "20161006T133000Z",
-					room : "Lamennais 4+5",
-					events : [
-						{
-							type : "TalkSession",
-							title : "Sit amet lorem ipsum dolor",
-							chair : "Clita Clita",
-							papers : [
-								{
-									title : "Dolore magna aliquyam erat sed",
-									abstract : "Sadipscing elitr sed diam nonumy eirmod tempor Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Stet clita kasd gubergren no. Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. Sea takimata sanctus est lorem. Lorem ipsum dolor sit amet. Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Duo dolores et ea rebum stet clita.",
-									start : "14:00",
-									icalStart : "20161006T120000Z",
-									icalEnd : "20161006T122500Z",
-									authors : [
-										{
-											name : "Labore Sed"	
-										},
-										{
-											name : "Clita Tempor"	
-										}
-									]
-								},
-								{
-									title : "Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod",
-									abstract : "Rebum stet clita kasd gubergren Dolor sit amet consetetur sadipscing elitr. Dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr. Amet consetetur sadipscing elitr sed. Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Sanctus est lorem ipsum dolor sit amet. Ut labore et dolore magna. Takimata sanctus est lorem ipsum. Sanctus est lorem ipsum dolor.",
-									start : "14:25",
-									icalStart : "20161006T122500Z",
-									icalEnd : "20161006T125000Z",
-									authors : [
-										{
-											name : "At No"	
-										},
-										{
-											name : "Stet Justo"	
-										},
-										{
-											name : "Est Et"	
-										},
-										{
-											name : "Lorem Sit"	
-										},
-										{
-											name : "Eos Et"	
-										}
-									]
-								},
-								{
-									title : "Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo",
-									abstract : "Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum Lorem ipsum dolor sit amet. Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Vero eos et accusam et. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Diam voluptua at vero eos. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet. Eirmod tempor invidunt ut labore. Vero eos et accusam et. Kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor.",
-									start : "14:50",
-									icalStart : "20161006T125000Z",
-									icalEnd : "20161006T131500Z",
-									authors : [
-										{
-											name : "Invidunt At"	
-										},
-										{
-											name : "Sed Sea"	
+											name : "Ea Diam	
 										}
 									]
 								}
@@ -5495,14 +5484,29 @@ var data = [
 			[
 				{
 					start : "15:30",
+					rowSpan : 0
+				},
+				{
+					rowSpan : 0
+				},
+				{
+					rowSpan : 0
+				},
+				{
+					rowSpan : 0
+				}
+			],			
+			[
+				{
+					start : "15:30",
 					rowSpan : 2
 				},
 				{
 					start : "15:30",
 					end : "16:00",
 					rowSpan : 2,
-					icalStart : "20161006T133000Z",
-					icalEnd : "20161006T140000Z",
+					icalStart : "00161106T143000Z",
+					icalEnd : "00161106T150000Z",
 					room : "Grand Large",
 					events : [
 						{
@@ -5529,115 +5533,17 @@ var data = [
 			[
 				{
 					start : "16:00",
-					rowSpan : 6
+					rowSpan : 0
 				},
 				{
-					rowSpan : 6
-				},
-				{
-					start : "16:00",
-					end : "17:30",
-					rowSpan : 6,
-					icalStart : "20161006T140000Z",
-					icalEnd : "20161006T153000Z",
-					room : "Chateaubriand",
-					events : [
-						{
-							type : "TalkSession",
-							title : "Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem",
-							chair : "Duo Nonumy",
-							papers : [
-								{
-									title : "Ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam",
-									abstract : "Diam nonumy eirmod tempor invidunt Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea. Justo duo dolores et ea rebum stet clita kasd gubergren. Takimata sanctus est lorem ipsum. Labore et dolore magna aliquyam. At vero eos et accusam. Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo. Accusam et justo duo dolores. Magna aliquyam erat sed diam.",
-									start : "16:00",
-									icalStart : "20161006T140000Z",
-									icalEnd : "20161006T142500Z",
-									authors : [
-										{
-											name : "Voluptua Dolore"	
-										},
-										{
-											name : "Invidunt Nonumy"	
-										},
-										{
-											name : "Ipsum Invidunt"	
-										},
-										{
-											name : "Aliquyam Ipsum"	
-										},
-										{
-											name : "Vero Justo"	
-										},
-										{
-											name : "Nonumy Sed"	
-										},
-										{
-											name : "Stet No"	
-										},
-										{
-											name : "Amet At"	
-										}
-									]
-								},
-								{
-									title : "Amet consetetur sadipscing elitr sed",
-									abstract : "Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum Labore et dolore magna aliquyam erat sed diam voluptua at vero. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Aliquyam erat sed diam voluptua. Elitr sed diam nonumy eirmod tempor invidunt ut labore et. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Diam nonumy eirmod tempor invidunt. Et ea rebum stet clita. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet.",
-									start : "16:25",
-									icalStart : "20161006T142500Z",
-									icalEnd : "20161006T145000Z",
-									authors : [
-										{
-											name : "Kasd Sanctus"	
-										},
-										{
-											name : "Gubergren Consetetur"	
-										},
-										{
-											name : "Invidunt Nonumy"	
-										},
-										{
-											name : "Et Eos"	
-										},
-										{
-											name : "Vero Et"	
-										},
-										{
-											name : "Ipsum Magna"	
-										}
-									]
-								},
-								{
-									title : "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit",
-									abstract : "Lorem ipsum dolor sit amet consetetur sadipscing elitr Eos et accusam et justo. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Labore et dolore magna aliquyam erat sed diam voluptua at. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. Lorem ipsum dolor sit amet. Ut labore et dolore magna aliquyam erat sed. Ut labore et dolore magna.",
-									start : "16:50",
-									icalStart : "20161006T145000Z",
-									icalEnd : "20161006T151500Z",
-									authors : [
-										{
-											name : "Magna Dolore"	
-										},
-										{
-											name : "Magna Labore"	
-										},
-										{
-											name : "Sit Sadipscing"	
-										},
-										{
-											name : "Eos Et"	
-										}
-									]
-								}
-							]
-						}
-					]
+					rowSpan : 0
 				},
 				{
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161006T140000Z",
-					icalEnd : "20161006T153000Z",
+					icalStart : "00161106T150000Z",
+					icalEnd : "00161106T163000Z",
 					room : "Lamennais 1+2",
 					events : [
 						{
@@ -5649,29 +5555,29 @@ var data = [
 									title : "Rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit",
 									abstract : "Erat sed diam voluptua at vero eos et accusam et Elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy. Voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita. Dolor sit amet lorem ipsum. Et ea rebum stet clita. Amet lorem ipsum dolor sit amet consetetur sadipscing. Elitr sed diam nonumy eirmod tempor invidunt ut. Amet consetetur sadipscing elitr sed. Invidunt ut labore et dolore.",
 									start : "16:00",
-									icalStart : "20161006T140000Z",
-									icalEnd : "20161006T142500Z",
+									icalStart : "00161106T150000Z",
+									icalEnd : "00161106T152500Z",
 									authors : [
 										{
-											name : "Gubergren Consetetur"	
+											name : "Gubergren Consetetur	
 										},
 										{
-											name : "Labore Sed"	
+											name : "Labore Sed	
 										},
 										{
-											name : "Voluptua Voluptua"	
+											name : "Voluptua Voluptua	
 										},
 										{
-											name : "Diam Et"	
+											name : "Diam Et	
 										},
 										{
-											name : "Ipsum Invidunt"	
+											name : "Ipsum Invidunt	
 										},
 										{
-											name : "Ipsum Magna"	
+											name : "Ipsum Magna	
 										},
 										{
-											name : "Ipsum Magna"	
+											name : "Ipsum Magna	
 										}
 									]
 								},
@@ -5679,20 +5585,20 @@ var data = [
 									title : "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit",
 									abstract : "Lorem ipsum dolor sit amet consetetur sadipscing elitr Eos et accusam et justo. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Labore et dolore magna aliquyam erat sed diam voluptua at. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. Lorem ipsum dolor sit amet. Ut labore et dolore magna aliquyam erat sed. Ut labore et dolore magna.",
 									start : "16:25",
-									icalStart : "20161006T142500Z",
-									icalEnd : "20161006T145000Z",
+									icalStart : "00161106T152500Z",
+									icalEnd : "00161106T155000Z",
 									authors : [
 										{
-											name : "Magna Dolore"	
+											name : "Magna Dolore	
 										},
 										{
-											name : "Magna Labore"	
+											name : "Magna Labore	
 										},
 										{
-											name : "Sit Sadipscing"	
+											name : "Sit Sadipscing	
 										},
 										{
-											name : "Eos Et"	
+											name : "Eos Et	
 										}
 									]
 								},
@@ -5700,29 +5606,29 @@ var data = [
 									title : "Sanctus est lorem ipsum dolor sit amet lorem ipsum",
 									abstract : "Voluptua at vero eos et accusam et justo duo dolores At vero eos et accusam et justo. Elitr sed diam nonumy eirmod tempor invidunt ut. Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum. Consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd. Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy.",
 									start : "16:50",
-									icalStart : "20161006T145000Z",
-									icalEnd : "20161006T151500Z",
+									icalStart : "00161106T155000Z",
+									icalEnd : "00161106T161500Z",
 									authors : [
 										{
-											name : "At No"	
+											name : "At No	
 										},
 										{
-											name : "Sea Amet"	
+											name : "Sea Amet	
 										},
 										{
-											name : "Amet Sit"	
+											name : "Amet Sit	
 										},
 										{
-											name : "Diam Et"	
+											name : "Diam Et	
 										},
 										{
-											name : "Nonumy Ea"	
+											name : "Nonumy Ea	
 										},
 										{
-											name : "Est Et"	
+											name : "Est Et	
 										},
 										{
-											name : "Dolores Justo"	
+											name : "Dolores Justo	
 										}
 									]
 								}
@@ -5734,8 +5640,8 @@ var data = [
 					start : "16:00",
 					end : "17:30",
 					rowSpan : 6,
-					icalStart : "20161006T140000Z",
-					icalEnd : "20161006T153000Z",
+					icalStart : "00161106T150000Z",
+					icalEnd : "00161106T163000Z",
 					room : "Lamennais 4+5",
 					events : [
 						{
@@ -5747,29 +5653,29 @@ var data = [
 									title : "No sea takimata sanctus est lorem ipsum",
 									abstract : "Duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem Sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea. Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum. Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Sit amet consetetur sadipscing elitr. Dolores et ea rebum stet clita kasd gubergren no sea. Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam. Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no. Dolore magna aliquyam erat sed. Sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr.",
 									start : "16:00",
-									icalStart : "20161006T140000Z",
-									icalEnd : "20161006T142500Z",
+									icalStart : "00161106T150000Z",
+									icalEnd : "00161106T152500Z",
 									authors : [
 										{
-											name : "No Aliquyam"	
+											name : "No Aliquyam	
 										},
 										{
-											name : "Aliquyam Ipsum"	
+											name : "Aliquyam Ipsum	
 										},
 										{
-											name : "Amet Et"	
+											name : "Amet Et	
 										},
 										{
-											name : "Kasd Dolores"	
+											name : "Kasd Dolores	
 										},
 										{
-											name : "Accusam Vero"	
+											name : "Accusam Vero	
 										},
 										{
-											name : "Stet Justo"	
+											name : "Stet Justo	
 										},
 										{
-											name : "Duo Gubergren"	
+											name : "Duo Gubergren	
 										}
 									]
 								},
@@ -5777,26 +5683,26 @@ var data = [
 									title : "No sea takimata sanctus est lorem ipsum dolor sit amet",
 									abstract : "Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur Accusam et justo duo dolores et ea rebum stet clita kasd. Kasd gubergren no sea takimata sanctus est. Gubergren no sea takimata sanctus. Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt. Sit amet consetetur sadipscing elitr. Clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Erat sed diam voluptua at.",
 									start : "16:25",
-									icalStart : "20161006T142500Z",
-									icalEnd : "20161006T145000Z",
+									icalStart : "00161106T152500Z",
+									icalEnd : "00161106T155000Z",
 									authors : [
 										{
-											name : "Stet Est"	
+											name : "Stet Est	
 										},
 										{
-											name : "Accusam Ipsum"	
+											name : "Accusam Ipsum	
 										},
 										{
-											name : "Kasd Sanctus"	
+											name : "Kasd Sanctus	
 										},
 										{
-											name : "Amet At"	
+											name : "Amet At	
 										},
 										{
-											name : "Consetetur Ipsum"	
+											name : "Consetetur Ipsum	
 										},
 										{
-											name : "Sed Sea"	
+											name : "Sed Sea	
 										}
 									]
 								},
@@ -5804,20 +5710,127 @@ var data = [
 									title : "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam",
 									abstract : "Kasd gubergren no sea takimata Sit amet lorem ipsum dolor sit amet consetetur sadipscing. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Vero eos et accusam et justo duo dolores et ea rebum stet clita. Duo dolores et ea rebum. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Et justo duo dolores et. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Lorem ipsum dolor sit amet lorem ipsum.",
 									start : "16:50",
-									icalStart : "20161006T145000Z",
-									icalEnd : "20161006T151500Z",
+									icalStart : "00161106T155000Z",
+									icalEnd : "00161106T161500Z",
 									authors : [
 										{
-											name : "Amet Sed"	
+											name : "Amet Sed	
 										},
 										{
-											name : "Dolor No"	
+											name : "Dolor No	
 										},
 										{
-											name : "Aliquyam Ipsum"	
+											name : "Aliquyam Ipsum	
 										},
 										{
-											name : "Magna Takimata"	
+											name : "Magna Takimata	
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],			
+			[
+				{
+					start : "16:00",
+					rowSpan : 6
+				},
+				{
+					rowSpan : 6
+				},
+				{
+					start : "16:00",
+					end : "17:30",
+					rowSpan : 6,
+					icalStart : "00161106T150000Z",
+					icalEnd : "00161106T163000Z",
+					room : "Chateaubriand",
+					events : [
+						{
+							type : "TalkSession",
+							title : "Dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem",
+							chair : "Duo Nonumy",
+							papers : [
+								{
+									title : "Ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam",
+									abstract : "Diam nonumy eirmod tempor invidunt Erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea. Justo duo dolores et ea rebum stet clita kasd gubergren. Takimata sanctus est lorem ipsum. Labore et dolore magna aliquyam. At vero eos et accusam. Et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo. Accusam et justo duo dolores. Magna aliquyam erat sed diam.",
+									start : "16:00",
+									icalStart : "00161106T150000Z",
+									icalEnd : "00161106T152500Z",
+									authors : [
+										{
+											name : "Voluptua Dolore	
+										},
+										{
+											name : "Invidunt Nonumy	
+										},
+										{
+											name : "Ipsum Invidunt	
+										},
+										{
+											name : "Aliquyam Ipsum	
+										},
+										{
+											name : "Vero Justo	
+										},
+										{
+											name : "Nonumy Sed	
+										},
+										{
+											name : "Stet No	
+										},
+										{
+											name : "Amet At	
+										}
+									]
+								},
+								{
+									title : "Amet consetetur sadipscing elitr sed",
+									abstract : "Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum Labore et dolore magna aliquyam erat sed diam voluptua at vero. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. Aliquyam erat sed diam voluptua. Elitr sed diam nonumy eirmod tempor invidunt ut labore et. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Diam nonumy eirmod tempor invidunt. Et ea rebum stet clita. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet.",
+									start : "16:25",
+									icalStart : "00161106T152500Z",
+									icalEnd : "00161106T155000Z",
+									authors : [
+										{
+											name : "Kasd Sanctus	
+										},
+										{
+											name : "Gubergren Consetetur	
+										},
+										{
+											name : "Invidunt Nonumy	
+										},
+										{
+											name : "Et Eos	
+										},
+										{
+											name : "Vero Et	
+										},
+										{
+											name : "Ipsum Magna	
+										}
+									]
+								},
+								{
+									title : "Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit",
+									abstract : "Lorem ipsum dolor sit amet consetetur sadipscing elitr Eos et accusam et justo. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem. Labore et dolore magna aliquyam erat sed diam voluptua at. Stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et. Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. Lorem ipsum dolor sit amet. Ut labore et dolore magna aliquyam erat sed. Ut labore et dolore magna.",
+									start : "16:50",
+									icalStart : "00161106T155000Z",
+									icalEnd : "00161106T161500Z",
+									authors : [
+										{
+											name : "Magna Dolore	
+										},
+										{
+											name : "Magna Labore	
+										},
+										{
+											name : "Sit Sadipscing	
+										},
+										{
+											name : "Eos Et	
 										}
 									]
 								}
@@ -5834,26 +5847,20 @@ var data = [
 			[
 				{
 					start : "17:30",
-					rowSpan : 6
+					rowSpan : 0
 				},
 				{
-					rowSpan : 6
+					rowSpan : 0
 				},
 				{
-					rowSpan : 6
-				},
-				{
-					rowSpan : 6
-				},
-				{
-					rowSpan : 6
+					rowSpan : 0
 				},
 				{
 					start : "17:30",
-					end : "19:00",
-					rowSpan : 6,
-					icalStart : "20161006T153000Z",
-					icalEnd : "20161006T170000Z",
+					end : "19:30",
+					rowSpan : 8,
+					icalStart : "00161106T163000Z",
+					icalEnd : "00161106T183000Z",
 					room : "Lamennais 4+5",
 					events : [
 						{
@@ -5862,7 +5869,27 @@ var data = [
 						}
 					]
 				}
+			],			
+			[
+				{
+					start : "17:30",
+					rowSpan : 8
+				},
+				{
+					rowSpan : 8
+				},
+				{
+					rowSpan : 8
+				},
+				{
+					rowSpan : 8
+				},
+				{
+					rowSpan : 8
+				}
 			],
+			[],
+			[],
 			[],
 			[],
 			[],
@@ -5872,7 +5899,7 @@ var data = [
 	},
 	{
 		name : "Friday",
-		date : "20161007",
+		date : "00161107",
 		rooms : [
 			{
 				name : "Rotonde J. Cartier"
@@ -5882,15 +5909,15 @@ var data = [
 			},
 			{
 				name : "Chateaubriand",
-				capacity : "400"
+				capacity : 400
 			},
 			{
 				name : "Lamennais 1+2",
-				capacity : "180"
+				capacity : 180
 			},
 			{
 				name : "Lamennais 4+5",
-				capacity : "150"
+				capacity : 150
 			}
 		],
 		sessionGroups : [
@@ -5909,8 +5936,8 @@ var data = [
 					start : "09:00",
 					end : "09:15",
 					rowSpan : 1,
-					icalStart : "20161007T070000Z",
-					icalEnd : "20161007T071500Z",
+					icalStart : "00161107T080000Z",
+					icalEnd : "00161107T081500Z",
 					room : "Chateaubriand",
 					events : [
 						{
@@ -5941,15 +5968,15 @@ var data = [
 					start : "09:15",
 					end : "10:30",
 					rowSpan : 5,
-					icalStart : "20161007T071500Z",
-					icalEnd : "20161007T083000Z",
+					icalStart : "00161107T081500Z",
+					icalEnd : "00161107T093000Z",
 					room : "Chateaubriand",
 					events : [
 						{
 							type : "Keynote",
 							title : "The Straight Line is Ungodly",
 							speaker : {
-								name : "Jim Coplien"	
+								name : "Jim Coplien	
 							}
 						}
 					]
@@ -5974,8 +6001,8 @@ var data = [
 					start : "10:30",
 					end : "11:00",
 					rowSpan : 2,
-					icalStart : "20161007T083000Z",
-					icalEnd : "20161007T090000Z",
+					icalStart : "00161107T093000Z",
+					icalEnd : "00161107T100000Z",
 					room : "Rotonde J. Cartier",
 					events : [
 						{
@@ -5988,8 +6015,8 @@ var data = [
 					start : "10:30",
 					end : "11:00",
 					rowSpan : 2,
-					icalStart : "20161007T083000Z",
-					icalEnd : "20161007T090000Z",
+					icalStart : "00161107T093000Z",
+					icalEnd : "00161107T100000Z",
 					room : "Grand Large",
 					events : [
 						{
@@ -6024,8 +6051,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161007T090000Z",
-					icalEnd : "20161007T103000Z",
+					icalStart : "00161107T100000Z",
+					icalEnd : "00161107T113000Z",
 					room : "Chateaubriand",
 					events : [
 						{
@@ -6037,29 +6064,29 @@ var data = [
 									title : "Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus",
 									abstract : "Eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed Voluptua at vero eos et. Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et. Elitr sed diam nonumy eirmod tempor invidunt ut labore et. Diam nonumy eirmod tempor invidunt. Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Et justo duo dolores et. Clita kasd gubergren no sea takimata sanctus. Erat sed diam voluptua at vero eos et. Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus.",
 									start : "11:00",
-									icalStart : "20161007T090000Z",
-									icalEnd : "20161007T092500Z",
+									icalStart : "00161107T100000Z",
+									icalEnd : "00161107T102500Z",
 									authors : [
 										{
-											name : "Tempor Ut"	
+											name : "Tempor Ut	
 										},
 										{
-											name : "Est Lorem"	
+											name : "Est Lorem	
 										},
 										{
-											name : "Sit Sadipscing"	
+											name : "Sit Sadipscing	
 										},
 										{
-											name : "Et Eos"	
+											name : "Et Eos	
 										},
 										{
-											name : "Voluptua Voluptua"	
+											name : "Voluptua Voluptua	
 										},
 										{
-											name : "Diam Diam"	
+											name : "Diam Diam	
 										},
 										{
-											name : "Et Invidunt"	
+											name : "Et Invidunt	
 										}
 									]
 								},
@@ -6067,20 +6094,20 @@ var data = [
 									title : "Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet",
 									abstract : "Lorem ipsum dolor sit amet consetetur sadipscing elitr Ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam. Vero eos et accusam et. Diam voluptua at vero eos et accusam et justo. Consetetur sadipscing elitr sed diam. Sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Stet clita kasd gubergren no.",
 									start : "11:25",
-									icalStart : "20161007T092500Z",
-									icalEnd : "20161007T095000Z",
+									icalStart : "00161107T102500Z",
+									icalEnd : "00161107T105000Z",
 									authors : [
 										{
-											name : "Ut Accusam"	
+											name : "Ut Accusam	
 										},
 										{
-											name : "Duo Nonumy"	
+											name : "Duo Nonumy	
 										},
 										{
-											name : "No Aliquyam"	
+											name : "No Aliquyam	
 										},
 										{
-											name : "Accusam Vero"	
+											name : "Accusam Vero	
 										}
 									]
 								},
@@ -6088,17 +6115,17 @@ var data = [
 									title : "Gubergren no sea takimata sanctus",
 									abstract : "Sea takimata sanctus est lorem Lorem ipsum dolor sit amet. Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum. Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus. Dolores et ea rebum stet. Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et. Et dolore magna aliquyam erat. Est lorem ipsum dolor sit amet lorem ipsum. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum.",
 									start : "11:50",
-									icalStart : "20161007T095000Z",
-									icalEnd : "20161007T101500Z",
+									icalStart : "00161107T105000Z",
+									icalEnd : "00161107T111500Z",
 									authors : [
 										{
-											name : "Consetetur Erat"	
+											name : "Consetetur Erat	
 										},
 										{
-											name : "Duo Gubergren"	
+											name : "Duo Gubergren	
 										},
 										{
-											name : "Amet Sed"	
+											name : "Amet Sed	
 										}
 									]
 								}
@@ -6110,8 +6137,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161007T090000Z",
-					icalEnd : "20161007T103000Z",
+					icalStart : "00161107T100000Z",
+					icalEnd : "00161107T113000Z",
 					room : "Lamennais 1+2",
 					events : [
 						{
@@ -6123,20 +6150,20 @@ var data = [
 									title : "Gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit",
 									abstract : "Sit amet consetetur sadipscing elitr Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at. Stet clita kasd gubergren no. Amet consetetur sadipscing elitr sed. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est. Clita kasd gubergren no sea. Vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et.",
 									start : "11:00",
-									icalStart : "20161007T090000Z",
-									icalEnd : "20161007T092500Z",
+									icalStart : "00161107T100000Z",
+									icalEnd : "00161107T102500Z",
 									authors : [
 										{
-											name : "Accusam Ipsum"	
+											name : "Accusam Ipsum	
 										},
 										{
-											name : "Magna Dolore"	
+											name : "Magna Dolore	
 										},
 										{
-											name : "Accusam Ipsum"	
+											name : "Accusam Ipsum	
 										},
 										{
-											name : "Labore Sed"	
+											name : "Labore Sed	
 										}
 									]
 								},
@@ -6144,17 +6171,17 @@ var data = [
 									title : "Sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed",
 									abstract : "Et accusam et justo duo Amet consetetur sadipscing elitr sed. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Clita kasd gubergren no sea. Eirmod tempor invidunt ut labore. Ipsum dolor sit amet consetetur sadipscing elitr sed. Dolor sit amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed. Et accusam et justo duo. Consetetur sadipscing elitr sed diam.",
 									start : "11:25",
-									icalStart : "20161007T092500Z",
-									icalEnd : "20161007T095000Z",
+									icalStart : "00161107T102500Z",
+									icalEnd : "00161107T105000Z",
 									authors : [
 										{
-											name : "Labore Sed"	
+											name : "Labore Sed	
 										},
 										{
-											name : "Et Eos"	
+											name : "Et Eos	
 										},
 										{
-											name : "Stet No"	
+											name : "Stet No	
 										}
 									]
 								},
@@ -6162,17 +6189,17 @@ var data = [
 									title : "Sadipscing elitr sed diam nonumy",
 									abstract : "Stet clita kasd gubergren no sea Accusam et justo duo dolores. Sed diam voluptua at vero. Sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum. Invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et. Amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt. Diam nonumy eirmod tempor invidunt. Amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. At vero eos et accusam et justo duo dolores et ea.",
 									start : "11:50",
-									icalStart : "20161007T095000Z",
-									icalEnd : "20161007T101500Z",
+									icalStart : "00161107T105000Z",
+									icalEnd : "00161107T111500Z",
 									authors : [
 										{
-											name : "Dolores Et"	
+											name : "Dolores Et	
 										},
 										{
-											name : "Vero Et"	
+											name : "Vero Et	
 										},
 										{
-											name : "Sed Kasd"	
+											name : "Sed Kasd	
 										}
 									]
 								}
@@ -6184,8 +6211,8 @@ var data = [
 					start : "11:00",
 					end : "12:30",
 					rowSpan : 6,
-					icalStart : "20161007T090000Z",
-					icalEnd : "20161007T103000Z",
+					icalStart : "00161107T100000Z",
+					icalEnd : "00161107T113000Z",
 					room : "Lamennais 4+5",
 					events : [
 						{
@@ -6197,20 +6224,20 @@ var data = [
 									title : "Ea rebum stet clita kasd",
 									abstract : "Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet Dolor sit amet lorem ipsum. Erat sed diam voluptua at. Tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. Labore et dolore magna aliquyam. Et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea. Accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata. Clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit. Lorem ipsum dolor sit amet. Elitr sed diam nonumy eirmod. Aliquyam erat sed diam voluptua.",
 									start : "11:00",
-									icalStart : "20161007T090000Z",
-									icalEnd : "20161007T092500Z",
+									icalStart : "00161107T100000Z",
+									icalEnd : "00161107T102500Z",
 									authors : [
 										{
-											name : "Est Lorem"	
+											name : "Est Lorem	
 										},
 										{
-											name : "Tempor Ut"	
+											name : "Tempor Ut	
 										},
 										{
-											name : "Stet Est"	
+											name : "Stet Est	
 										},
 										{
-											name : "Ea Nonumy"	
+											name : "Ea Nonumy	
 										}
 									]
 								},
@@ -6218,29 +6245,29 @@ var data = [
 									title : "Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore",
 									abstract : "Sed diam voluptua at vero eos et accusam et justo duo dolores Ipsum dolor sit amet lorem ipsum dolor sit amet consetetur. Dolor sit amet consetetur sadipscing. Magna aliquyam erat sed diam. Aliquyam erat sed diam voluptua. Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut. Et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor. No sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum. Labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et.",
 									start : "11:25",
-									icalStart : "20161007T092500Z",
-									icalEnd : "20161007T095000Z",
+									icalStart : "00161107T102500Z",
+									icalEnd : "00161107T105000Z",
 									authors : [
 										{
-											name : "Nonumy At"	
+											name : "Nonumy At	
 										},
 										{
-											name : "Gubergren At"	
+											name : "Gubergren At	
 										},
 										{
-											name : "Ea Diam"	
+											name : "Ea Diam	
 										},
 										{
-											name : "Et Diam"	
+											name : "Et Diam	
 										},
 										{
-											name : "At Justo"	
+											name : "At Justo	
 										},
 										{
-											name : "No Aliquyam"	
+											name : "No Aliquyam	
 										},
 										{
-											name : "Tempor Et"	
+											name : "Tempor Et	
 										}
 									]
 								},
@@ -6248,32 +6275,32 @@ var data = [
 									title : "Dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod",
 									abstract : "Et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus Et accusam et justo duo. Dolor sit amet consetetur sadipscing elitr sed. Aliquyam erat sed diam voluptua at vero eos et accusam et justo duo. Ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore. Sed diam nonumy eirmod tempor. Justo duo dolores et ea. Elitr sed diam nonumy eirmod. Sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore. Aliquyam erat sed diam voluptua at vero eos et.",
 									start : "11:50",
-									icalStart : "20161007T095000Z",
-									icalEnd : "20161007T101500Z",
+									icalStart : "00161107T105000Z",
+									icalEnd : "00161107T111500Z",
 									authors : [
 										{
-											name : "Nonumy Accusam"	
+											name : "Nonumy Accusam	
 										},
 										{
-											name : "Et Et"	
+											name : "Et Et	
 										},
 										{
-											name : "Gubergren At"	
+											name : "Gubergren At	
 										},
 										{
-											name : "Kasd Sanctus"	
+											name : "Kasd Sanctus	
 										},
 										{
-											name : "Nonumy Sed"	
+											name : "Nonumy Sed	
 										},
 										{
-											name : "Magna Takimata"	
+											name : "Magna Takimata	
 										},
 										{
-											name : "Et Eos"	
+											name : "Et Eos	
 										},
 										{
-											name : "Eirmod Consetetur"	
+											name : "Eirmod Consetetur	
 										}
 									]
 								}
