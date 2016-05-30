@@ -3,6 +3,7 @@
  */
 package fr.inria.diverse.models2016.dsl.validation
 
+import fr.inria.diverse.models2016.dsl.utils.ProgramUtils
 import java.util.ArrayList
 import java.util.HashMap
 import java.util.HashSet
@@ -23,7 +24,7 @@ class ProgramValidator extends AbstractProgramValidator {
 
 	@Check
 	def checkSessionTimes(Session session) {
-		if (session.startingTime.compareTo(session.endingTime) >= 0) {
+		if (ProgramUtils.convertDate(session.startingTime).compareTo(ProgramUtils.convertDate(session.endingTime)) >= 0) {
 			error("Session starting time is greater or equal to its ending time.", session, Models2016Package.Literals.SESSION__STARTING_TIME)
 			error("Session starting time is greater or equal to its ending time.", session, Models2016Package.Literals.SESSION__ENDING_TIME)
 		}
@@ -47,8 +48,12 @@ class ProgramValidator extends AbstractProgramValidator {
 			l.forEach[s|
 				for (Session sesh : l) {
 					if (sesh != s) {
-						if (s.startingTime.compareTo(sesh.endingTime) < 0 && s.endingTime.compareTo(sesh.endingTime) >= 0
-							|| s.startingTime.compareTo(sesh.startingTime) <= 0 && s.endingTime.compareTo(sesh.startingTime) > 0) {
+						val s_startingTime = ProgramUtils.convertDate(s.startingTime)
+						val s_endingTime = ProgramUtils.convertDate(s.endingTime)
+						val sesh_startingTime = ProgramUtils.convertDate(sesh.startingTime)
+						val sesh_endingTime = ProgramUtils.convertDate(sesh.endingTime)
+						if (s_startingTime.compareTo(sesh_endingTime) < 0 && s_endingTime.compareTo(sesh_endingTime) >= 0
+							|| s_startingTime.compareTo(sesh_startingTime) <= 0 && s_endingTime.compareTo(sesh_startingTime) > 0) {
 							overlappingSessions.addAll(s,sesh)
 						}
 					}

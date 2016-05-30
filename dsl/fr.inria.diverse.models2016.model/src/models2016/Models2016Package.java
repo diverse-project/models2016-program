@@ -4,7 +4,6 @@ package models2016;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -78,22 +77,22 @@ public interface Models2016Package extends EPackage {
 	int DAY__WEEKDAY = 0;
 
 	/**
-	 * The feature id for the '<em><b>Date</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DAY__DATE = 1;
-
-	/**
 	 * The feature id for the '<em><b>Sessions</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DAY__SESSIONS = 2;
+	int DAY__SESSIONS = 1;
+
+	/**
+	 * The feature id for the '<em><b>Date</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DAY__DATE = 2;
 
 	/**
 	 * The number of structural features of the '<em>Day</em>' class.
@@ -179,7 +178,7 @@ public interface Models2016Package extends EPackage {
 	int SESSION__ROOM = 1;
 
 	/**
-	 * The feature id for the '<em><b>Starting Time</b></em>' attribute.
+	 * The feature id for the '<em><b>Starting Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -188,7 +187,7 @@ public interface Models2016Package extends EPackage {
 	int SESSION__STARTING_TIME = 2;
 
 	/**
-	 * The feature id for the '<em><b>Ending Time</b></em>' attribute.
+	 * The feature id for the '<em><b>Ending Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1435,6 +1434,79 @@ public interface Models2016Package extends EPackage {
 	int OPENING_OPERATION_COUNT = EVENT_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link models2016.impl.DateImpl <em>Date</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see models2016.impl.DateImpl
+	 * @see models2016.impl.Models2016PackageImpl#getDate()
+	 * @generated
+	 */
+	int DATE = 26;
+
+	/**
+	 * The feature id for the '<em><b>Year</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATE__YEAR = 0;
+
+	/**
+	 * The feature id for the '<em><b>Month</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATE__MONTH = 1;
+
+	/**
+	 * The feature id for the '<em><b>Day</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATE__DAY = 2;
+
+	/**
+	 * The feature id for the '<em><b>Hours</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATE__HOURS = 3;
+
+	/**
+	 * The feature id for the '<em><b>Minutes</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATE__MINUTES = 4;
+
+	/**
+	 * The number of structural features of the '<em>Date</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATE_FEATURE_COUNT = 5;
+
+	/**
+	 * The number of operations of the '<em>Date</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATE_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link models2016.WeekDay <em>Week Day</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1442,27 +1514,7 @@ public interface Models2016Package extends EPackage {
 	 * @see models2016.impl.Models2016PackageImpl#getWeekDay()
 	 * @generated
 	 */
-	int WEEK_DAY = 26;
-
-	/**
-	 * The meta object id for the '<em>Hour Data Type</em>' data type.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see java.util.Date
-	 * @see models2016.impl.Models2016PackageImpl#getHourDataType()
-	 * @generated
-	 */
-	int HOUR_DATA_TYPE = 27;
-
-	/**
-	 * The meta object id for the '<em>Day Data Type</em>' data type.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see java.util.Date
-	 * @see models2016.impl.Models2016PackageImpl#getDayDataType()
-	 * @generated
-	 */
-	int DAY_DATA_TYPE = 28;
+	int WEEK_DAY = 27;
 
 	/**
 	 * Returns the meta object for class '{@link models2016.Day <em>Day</em>}'.
@@ -1486,15 +1538,15 @@ public interface Models2016Package extends EPackage {
 	EAttribute getDay_Weekday();
 
 	/**
-	 * Returns the meta object for the attribute '{@link models2016.Day#getDate <em>Date</em>}'.
+	 * Returns the meta object for the containment reference '{@link models2016.Day#getDate <em>Date</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Date</em>'.
+	 * @return the meta object for the containment reference '<em>Date</em>'.
 	 * @see models2016.Day#getDate()
 	 * @see #getDay()
 	 * @generated
 	 */
-	EAttribute getDay_Date();
+	EReference getDay_Date();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link models2016.Day#getSessions <em>Sessions</em>}'.
@@ -1561,26 +1613,26 @@ public interface Models2016Package extends EPackage {
 	EReference getSession_Room();
 
 	/**
-	 * Returns the meta object for the attribute '{@link models2016.Session#getStartingTime <em>Starting Time</em>}'.
+	 * Returns the meta object for the containment reference '{@link models2016.Session#getStartingTime <em>Starting Time</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Starting Time</em>'.
+	 * @return the meta object for the containment reference '<em>Starting Time</em>'.
 	 * @see models2016.Session#getStartingTime()
 	 * @see #getSession()
 	 * @generated
 	 */
-	EAttribute getSession_StartingTime();
+	EReference getSession_StartingTime();
 
 	/**
-	 * Returns the meta object for the attribute '{@link models2016.Session#getEndingTime <em>Ending Time</em>}'.
+	 * Returns the meta object for the containment reference '{@link models2016.Session#getEndingTime <em>Ending Time</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Ending Time</em>'.
+	 * @return the meta object for the containment reference '<em>Ending Time</em>'.
 	 * @see models2016.Session#getEndingTime()
 	 * @see #getSession()
 	 * @generated
 	 */
-	EAttribute getSession_EndingTime();
+	EReference getSession_EndingTime();
 
 	/**
 	 * Returns the meta object for class '{@link models2016.Event <em>Event</em>}'.
@@ -2154,6 +2206,71 @@ public interface Models2016Package extends EPackage {
 	EClass getOpening();
 
 	/**
+	 * Returns the meta object for class '{@link models2016.Date <em>Date</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Date</em>'.
+	 * @see models2016.Date
+	 * @generated
+	 */
+	EClass getDate();
+
+	/**
+	 * Returns the meta object for the attribute '{@link models2016.Date#getYear <em>Year</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Year</em>'.
+	 * @see models2016.Date#getYear()
+	 * @see #getDate()
+	 * @generated
+	 */
+	EAttribute getDate_Year();
+
+	/**
+	 * Returns the meta object for the attribute '{@link models2016.Date#getMonth <em>Month</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Month</em>'.
+	 * @see models2016.Date#getMonth()
+	 * @see #getDate()
+	 * @generated
+	 */
+	EAttribute getDate_Month();
+
+	/**
+	 * Returns the meta object for the attribute '{@link models2016.Date#getDay <em>Day</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Day</em>'.
+	 * @see models2016.Date#getDay()
+	 * @see #getDate()
+	 * @generated
+	 */
+	EAttribute getDate_Day();
+
+	/**
+	 * Returns the meta object for the attribute '{@link models2016.Date#getHours <em>Hours</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Hours</em>'.
+	 * @see models2016.Date#getHours()
+	 * @see #getDate()
+	 * @generated
+	 */
+	EAttribute getDate_Hours();
+
+	/**
+	 * Returns the meta object for the attribute '{@link models2016.Date#getMinutes <em>Minutes</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Minutes</em>'.
+	 * @see models2016.Date#getMinutes()
+	 * @see #getDate()
+	 * @generated
+	 */
+	EAttribute getDate_Minutes();
+
+	/**
 	 * Returns the meta object for enum '{@link models2016.WeekDay <em>Week Day</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2162,28 +2279,6 @@ public interface Models2016Package extends EPackage {
 	 * @generated
 	 */
 	EEnum getWeekDay();
-
-	/**
-	 * Returns the meta object for data type '{@link java.util.Date <em>Hour Data Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for data type '<em>Hour Data Type</em>'.
-	 * @see java.util.Date
-	 * @model instanceClass="java.util.Date"
-	 * @generated
-	 */
-	EDataType getHourDataType();
-
-	/**
-	 * Returns the meta object for data type '{@link java.util.Date <em>Day Data Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for data type '<em>Day Data Type</em>'.
-	 * @see java.util.Date
-	 * @model instanceClass="java.util.Date"
-	 * @generated
-	 */
-	EDataType getDayDataType();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -2227,12 +2322,12 @@ public interface Models2016Package extends EPackage {
 		EAttribute DAY__WEEKDAY = eINSTANCE.getDay_Weekday();
 
 		/**
-		 * The meta object literal for the '<em><b>Date</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Date</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DAY__DATE = eINSTANCE.getDay_Date();
+		EReference DAY__DATE = eINSTANCE.getDay_Date();
 
 		/**
 		 * The meta object literal for the '<em><b>Sessions</b></em>' containment reference list feature.
@@ -2287,20 +2382,20 @@ public interface Models2016Package extends EPackage {
 		EReference SESSION__ROOM = eINSTANCE.getSession_Room();
 
 		/**
-		 * The meta object literal for the '<em><b>Starting Time</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Starting Time</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SESSION__STARTING_TIME = eINSTANCE.getSession_StartingTime();
+		EReference SESSION__STARTING_TIME = eINSTANCE.getSession_StartingTime();
 
 		/**
-		 * The meta object literal for the '<em><b>Ending Time</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Ending Time</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SESSION__ENDING_TIME = eINSTANCE.getSession_EndingTime();
+		EReference SESSION__ENDING_TIME = eINSTANCE.getSession_EndingTime();
 
 		/**
 		 * The meta object literal for the '{@link models2016.impl.EventImpl <em>Event</em>}' class.
@@ -2781,6 +2876,56 @@ public interface Models2016Package extends EPackage {
 		EClass OPENING = eINSTANCE.getOpening();
 
 		/**
+		 * The meta object literal for the '{@link models2016.impl.DateImpl <em>Date</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see models2016.impl.DateImpl
+		 * @see models2016.impl.Models2016PackageImpl#getDate()
+		 * @generated
+		 */
+		EClass DATE = eINSTANCE.getDate();
+
+		/**
+		 * The meta object literal for the '<em><b>Year</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATE__YEAR = eINSTANCE.getDate_Year();
+
+		/**
+		 * The meta object literal for the '<em><b>Month</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATE__MONTH = eINSTANCE.getDate_Month();
+
+		/**
+		 * The meta object literal for the '<em><b>Day</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATE__DAY = eINSTANCE.getDate_Day();
+
+		/**
+		 * The meta object literal for the '<em><b>Hours</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATE__HOURS = eINSTANCE.getDate_Hours();
+
+		/**
+		 * The meta object literal for the '<em><b>Minutes</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATE__MINUTES = eINSTANCE.getDate_Minutes();
+
+		/**
 		 * The meta object literal for the '{@link models2016.WeekDay <em>Week Day</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2789,26 +2934,6 @@ public interface Models2016Package extends EPackage {
 		 * @generated
 		 */
 		EEnum WEEK_DAY = eINSTANCE.getWeekDay();
-
-		/**
-		 * The meta object literal for the '<em>Hour Data Type</em>' data type.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see java.util.Date
-		 * @see models2016.impl.Models2016PackageImpl#getHourDataType()
-		 * @generated
-		 */
-		EDataType HOUR_DATA_TYPE = eINSTANCE.getHourDataType();
-
-		/**
-		 * The meta object literal for the '<em>Day Data Type</em>' data type.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see java.util.Date
-		 * @see models2016.impl.Models2016PackageImpl#getDayDataType()
-		 * @generated
-		 */
-		EDataType DAY_DATA_TYPE = eINSTANCE.getDayDataType();
 
 	}
 

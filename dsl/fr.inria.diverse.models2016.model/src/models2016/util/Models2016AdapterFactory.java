@@ -172,6 +172,10 @@ public class Models2016AdapterFactory extends AdapterFactoryImpl {
 				return createOpeningAdapter();
 			}
 			@Override
+			public Adapter caseDate(Date object) {
+				return createDateAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -552,6 +556,20 @@ public class Models2016AdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createOpeningAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link models2016.Date <em>Date</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see models2016.Date
+	 * @generated
+	 */
+	public Adapter createDateAdapter() {
 		return null;
 	}
 

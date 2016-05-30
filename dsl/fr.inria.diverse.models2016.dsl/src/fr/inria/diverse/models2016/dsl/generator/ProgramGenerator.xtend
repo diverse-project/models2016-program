@@ -45,6 +45,7 @@ import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.xtext.generator.AbstractGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess2
 import org.eclipse.xtext.generator.IGeneratorContext
+import fr.inria.diverse.models2016.dsl.utils.ProgramUtils
 
 /**
  * Generates code from your model files on save.
@@ -109,7 +110,8 @@ class ProgramGenerator extends AbstractGenerator {
 				val toBeSorted = new HashMap(sessionsPerRoom)
 				toBeSorted.forEach[r, s|
 					val sortedList = s.sortWith([s1,s2|
-						return s1.startingTime.compareTo(s2.startingTime)
+						return ProgramUtils.convertDate(s1.startingTime)
+								.compareTo(ProgramUtils.convertDate(s2.startingTime))
 					])
 					sessionsPerRoom.put(r, sortedList)
 				]
@@ -121,12 +123,14 @@ class ProgramGenerator extends AbstractGenerator {
 				sessionsPerRoom.forEach[r, l|
 					schedule.addColumn(r)
 					l.forEach[s|
-						schedule.addEventToColumn(r,new ScheduleEvent(s.startingTime,s.endingTime,s))
+						schedule.addEventToColumn(r,new ScheduleEvent(ProgramUtils.convertDate(s.startingTime),
+								ProgramUtils.convertDate(s.endingTime),s
+						))
 					]
 				]
 			]
 			
-			fsa.generateFile(conference.name.substring(1,conference.name.length-1) + '-data.js', 'var data = ' + generate)
+			fsa.generateFile(conference.name + '-data.js', 'var data = ' + generate)
 		}
 	}
 	
@@ -160,8 +164,8 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						name : «person.name»«IF person.email != null && person.email.length > 0»,
-						email : «person.email»
+						name : "«person.name»«IF person.email != null && person.email.length > 0»",
+						email : "«person.email»"
 						«ELSE»
 						
 						«ENDIF»
@@ -174,17 +178,17 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						type : "TalkSession",
-						title : «talkSession.name»,
+						title : "«talkSession.name»",
 						«IF talkSession.chair != null»
-						chair : «talkSession.chair.name»,
+						chair : "«talkSession.chair.name»",
 						«ENDIF»
 						papers : [
 							«var i = 0»
 							«FOR p : talkSession.papers SEPARATOR ","»
 							{
-								title : «p.name»,
+								title : "«p.name»",
 								«IF p.abstract != null && p.abstract.length > 0»
-								abstract : «p.abstract.replace("\n","\\n")»,
+								abstract : "«p.abstract.replace("\n","\\n")»",
 								«ENDIF»
 								«val talkStart = computeTalkStart(start,i++)»
 								«val talkEnd = computeTalkStart(start,i)»
@@ -208,12 +212,12 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						type : "Workshop",
-						title : «workshop.name»,
+						title : "«workshop.name»",
 						«IF workshop.abstract != null && workshop.abstract.length > 0»
-						abstract : «workshop.abstract.replace("\n","\\n")»,
+						abstract : "«workshop.abstract.replace("\n","\\n")»",
 						«ENDIF»
 						«IF workshop.url != null && workshop.url.length > 0»
-						url : «workshop.url»,
+						url : "«workshop.url»",
 						«ENDIF»
 						organizers : [
 							«FOR o : workshop.organizers SEPARATOR ","»
@@ -229,7 +233,7 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						type : "Lunch",
-						title : «lunch.name»
+						title : "«lunch.name»"
 					}
 				'''
 	}
@@ -239,7 +243,7 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						type : "Clinic",
-						title : «clinic.name»
+						title : "«clinic.name»"
 					}
 				'''
 	}
@@ -249,7 +253,7 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						type : "CoffeeBreak",
-						title : «coffeeBreak.name»
+						title : "«coffeeBreak.name»"
 					}
 				'''
 	}
@@ -259,7 +263,7 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						type : "Reception",
-						title : «reception.name»
+						title : "«reception.name»"
 					}
 				'''
 	}
@@ -269,15 +273,15 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						type : "Panel",
-						title : «panel.name»,
+						title : "«panel.name»",
 						moderators : [
 							«FOR o : panel.moderators SEPARATOR ","»
-							«o.name»
+							«getPerson(o)»
 							«ENDFOR»
 						],
 						panelists : [
 							«FOR o : panel.panelists SEPARATOR ","»
-							«o.name»
+							«getPerson(o)»
 							«ENDFOR»
 						]
 					}
@@ -289,7 +293,7 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						type : "EducatorSymposium",
-						title : «symposium.name»,
+						title : "«symposium.name»",
 						organizers : [
 							«FOR o : symposium.organizers SEPARATOR ","»
 							«getPerson(o)»
@@ -304,7 +308,7 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						type : "DoctoralSymposium",
-						title : «symposium.name»,
+						title : "«symposium.name»",
 						organizers : [
 							«FOR o : symposium.organizers SEPARATOR ","»
 							«getPerson(o)»
@@ -319,9 +323,9 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						type : "Tutorial",
-						title : «tutorial.name»,
+						title : "«tutorial.name»",
 						«IF tutorial.abstract != null && tutorial.abstract.length > 0»
-						abstract : «tutorial.abstract.replace("\n","\\n")»,
+						abstract : "«tutorial.abstract.replace("\n","\\n")»",
 						«ENDIF»
 						organizers : [
 							«FOR o : tutorial.organizers SEPARATOR ","»
@@ -337,7 +341,7 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						type : "Meeting",
-						title : «meeting.name»
+						title : "«meeting.name»"
 					}
 				'''
 	}
@@ -347,7 +351,7 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						type : "SRC",
-						title : «src.name»
+						title : "«src.name»"
 					}
 				'''
 	}
@@ -357,7 +361,7 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						type : "Poster",
-						title : «poster.name»
+						title : "«poster.name»"
 					}
 				'''
 	}
@@ -367,7 +371,7 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						type : "Keynote",
-						title : «keynote.name»,
+						title : "«keynote.name»",
 						speaker : «getPerson(keynote.speaker)»
 					}
 				'''
@@ -378,7 +382,7 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						type : "SponsorKeynote",
-						title : «keynote.name»,
+						title : "«keynote.name»",
 						speaker : «getPerson(keynote.speaker)»
 					}
 				'''
@@ -389,7 +393,7 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						type : "Opening",
-						title : «opening.name»
+						title : "«opening.name»"
 					}
 				'''
 	}
@@ -437,15 +441,15 @@ class ProgramGenerator extends AbstractGenerator {
 						«FOR d : conference.program.days SEPARATOR ","»
 						{
 							name : "«d.weekday.getName»",
-							date : "«dateFormat.format(d.date)»",
+							date : "«dateFormat.format(ProgramUtils.convertDate(d.date))»",
 							rooms : [
 								«val roomsOfDay = roomsPerDay.get(d)»
 								«FOR r : roomsOfDay SEPARATOR ","»
 								{
 									«val hasCapacity = r.capacity != null»
-									name : «r.name»«IF hasCapacity»,«ENDIF»
+									name : "«r.name»"«IF hasCapacity»,«ENDIF»
 									«IF hasCapacity»
-									capacity : "«r.capacity»"
+									capacity : «r.capacity»
 									«ENDIF»
 								}
 								«ENDFOR»
@@ -476,14 +480,14 @@ class ProgramGenerator extends AbstractGenerator {
 									«ELSEIF s.data instanceof Session»
 									{
 										«val s_cast = s.data as Session»
-										«val startingDate = computeDate(d.date,s.startDate)»
-										«val endingDate = computeDate(d.date,s.endDate)»
+										«val startingDate = computeDate(ProgramUtils.convertDate(d.date),s.startDate)»
+										«val endingDate = computeDate(ProgramUtils.convertDate(d.date),s.endDate)»
 										start : "«hourFormat.format(startingDate)»",
 										end : "«hourFormat.format(endingDate)»",
 										rowSpan : «computeSessionLength(s.startDate, s.endDate)»,
 										icalStart : "«icalFormat.format(startingDate)»",
 										icalEnd : "«icalFormat.format(endingDate)»",
-										room : «s_cast.room.name»,
+										room : "«s_cast.room.name»",
 										events : [
 											«val events = s_cast.events»
 											«IF events != null»

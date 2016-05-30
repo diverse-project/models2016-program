@@ -3,15 +3,10 @@
  */
 package fr.inria.diverse.models2016.dsl
 
-import org.eclipse.xtext.conversion.IValueConverterService
-import fr.inria.diverse.models2016.dsl.converter.ProgramValueConverter
-
 /**
  * Use this class to register components to be used at runtime / without the Equinox extension registry.
  */
 class ProgramRuntimeModule extends AbstractProgramRuntimeModule {
 
-	override public Class<? extends IValueConverterService> bindIValueConverterService() {
-		return ProgramValueConverter;
-	}
+	
 }

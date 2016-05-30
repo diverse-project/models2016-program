@@ -2,8 +2,6 @@
  */
 package models2016;
 
-import java.util.Date;
-
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
@@ -18,8 +16,8 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link models2016.Day#getWeekday <em>Weekday</em>}</li>
- *   <li>{@link models2016.Day#getDate <em>Date</em>}</li>
  *   <li>{@link models2016.Day#getSessions <em>Sessions</em>}</li>
+ *   <li>{@link models2016.Day#getDate <em>Date</em>}</li>
  * </ul>
  *
  * @see models2016.Models2016Package#getDay()
@@ -57,30 +55,30 @@ public interface Day extends EObject {
 	void setWeekday(WeekDay value);
 
 	/**
-	 * Returns the value of the '<em><b>Date</b></em>' attribute.
+	 * Returns the value of the '<em><b>Date</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Date</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Date</em>' attribute.
-	 * @see #setDate(Date)
+	 * @return the value of the '<em>Date</em>' containment reference.
+	 * @see #setDate(models2016.Date)
 	 * @see models2016.Models2016Package#getDay_Date()
-	 * @model dataType="models2016.DayDataType"
+	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	Date getDate();
+	models2016.Date getDate();
 
 	/**
-	 * Sets the value of the '{@link models2016.Day#getDate <em>Date</em>}' attribute.
+	 * Sets the value of the '{@link models2016.Day#getDate <em>Date</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Date</em>' attribute.
+	 * @param value the new value of the '<em>Date</em>' containment reference.
 	 * @see #getDate()
 	 * @generated
 	 */
-	void setDate(Date value);
+	void setDate(models2016.Date value);
 
 	/**
 	 * Returns the value of the '<em><b>Sessions</b></em>' containment reference list.

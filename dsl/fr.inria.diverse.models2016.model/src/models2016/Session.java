@@ -2,7 +2,6 @@
  */
 package models2016;
 
-import java.util.Date;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
@@ -69,55 +68,55 @@ public interface Session extends EObject {
 	void setRoom(Room value);
 
 	/**
-	 * Returns the value of the '<em><b>Starting Time</b></em>' attribute.
+	 * Returns the value of the '<em><b>Starting Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Starting Time</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Starting Time</em>' attribute.
-	 * @see #setStartingTime(Date)
+	 * @return the value of the '<em>Starting Time</em>' containment reference.
+	 * @see #setStartingTime(models2016.Date)
 	 * @see models2016.Models2016Package#getSession_StartingTime()
-	 * @model dataType="models2016.HourDataType"
+	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	Date getStartingTime();
+	models2016.Date getStartingTime();
 
 	/**
-	 * Sets the value of the '{@link models2016.Session#getStartingTime <em>Starting Time</em>}' attribute.
+	 * Sets the value of the '{@link models2016.Session#getStartingTime <em>Starting Time</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Starting Time</em>' attribute.
+	 * @param value the new value of the '<em>Starting Time</em>' containment reference.
 	 * @see #getStartingTime()
 	 * @generated
 	 */
-	void setStartingTime(Date value);
+	void setStartingTime(models2016.Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Ending Time</b></em>' attribute.
+	 * Returns the value of the '<em><b>Ending Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Ending Time</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Ending Time</em>' attribute.
-	 * @see #setEndingTime(Date)
+	 * @return the value of the '<em>Ending Time</em>' containment reference.
+	 * @see #setEndingTime(models2016.Date)
 	 * @see models2016.Models2016Package#getSession_EndingTime()
-	 * @model dataType="models2016.HourDataType"
+	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	Date getEndingTime();
+	models2016.Date getEndingTime();
 
 	/**
-	 * Sets the value of the '{@link models2016.Session#getEndingTime <em>Ending Time</em>}' attribute.
+	 * Sets the value of the '{@link models2016.Session#getEndingTime <em>Ending Time</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Ending Time</em>' attribute.
+	 * @param value the new value of the '<em>Ending Time</em>' containment reference.
 	 * @see #getEndingTime()
 	 * @generated
 	 */
-	void setEndingTime(Date value);
+	void setEndingTime(models2016.Date value);
 
 } // Session

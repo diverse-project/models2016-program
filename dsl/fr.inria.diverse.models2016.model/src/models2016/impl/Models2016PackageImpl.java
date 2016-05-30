@@ -2,7 +2,6 @@
  */
 package models2016.impl;
 
-import java.util.Date;
 import models2016.Clinic;
 import models2016.CoffeeBreak;
 import models2016.Conference;
@@ -34,7 +33,6 @@ import models2016.Workshop;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -235,21 +233,14 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass dateEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EEnum weekDayEEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType hourDataTypeEDataType = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType dayDataTypeEDataType = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -335,8 +326,8 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDay_Date() {
-		return (EAttribute)dayEClass.getEStructuralFeatures().get(1);
+	public EReference getDay_Date() {
+		return (EReference)dayEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -345,7 +336,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * @generated
 	 */
 	public EReference getDay_Sessions() {
-		return (EReference)dayEClass.getEStructuralFeatures().get(2);
+		return (EReference)dayEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -398,8 +389,8 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSession_StartingTime() {
-		return (EAttribute)sessionEClass.getEStructuralFeatures().get(2);
+	public EReference getSession_StartingTime() {
+		return (EReference)sessionEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -407,8 +398,8 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSession_EndingTime() {
-		return (EAttribute)sessionEClass.getEStructuralFeatures().get(3);
+	public EReference getSession_EndingTime() {
+		return (EReference)sessionEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -902,26 +893,62 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getDate() {
+		return dateEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDate_Year() {
+		return (EAttribute)dateEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDate_Month() {
+		return (EAttribute)dateEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDate_Day() {
+		return (EAttribute)dateEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDate_Hours() {
+		return (EAttribute)dateEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDate_Minutes() {
+		return (EAttribute)dateEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getWeekDay() {
 		return weekDayEEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EDataType getHourDataType() {
-		return hourDataTypeEDataType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EDataType getDayDataType() {
-		return dayDataTypeEDataType;
 	}
 
 	/**
@@ -954,8 +981,8 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		// Create classes and their features
 		dayEClass = createEClass(DAY);
 		createEAttribute(dayEClass, DAY__WEEKDAY);
-		createEAttribute(dayEClass, DAY__DATE);
 		createEReference(dayEClass, DAY__SESSIONS);
+		createEReference(dayEClass, DAY__DATE);
 
 		programEClass = createEClass(PROGRAM);
 		createEReference(programEClass, PROGRAM__DAYS);
@@ -963,8 +990,8 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		sessionEClass = createEClass(SESSION);
 		createEReference(sessionEClass, SESSION__EVENTS);
 		createEReference(sessionEClass, SESSION__ROOM);
-		createEAttribute(sessionEClass, SESSION__STARTING_TIME);
-		createEAttribute(sessionEClass, SESSION__ENDING_TIME);
+		createEReference(sessionEClass, SESSION__STARTING_TIME);
+		createEReference(sessionEClass, SESSION__ENDING_TIME);
 
 		eventEClass = createEClass(EVENT);
 		createEAttribute(eventEClass, EVENT__NAME);
@@ -1043,12 +1070,15 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 
 		openingEClass = createEClass(OPENING);
 
+		dateEClass = createEClass(DATE);
+		createEAttribute(dateEClass, DATE__YEAR);
+		createEAttribute(dateEClass, DATE__MONTH);
+		createEAttribute(dateEClass, DATE__DAY);
+		createEAttribute(dateEClass, DATE__HOURS);
+		createEAttribute(dateEClass, DATE__MINUTES);
+
 		// Create enums
 		weekDayEEnum = createEEnum(WEEK_DAY);
-
-		// Create data types
-		hourDataTypeEDataType = createEDataType(HOUR_DATA_TYPE);
-		dayDataTypeEDataType = createEDataType(DAY_DATA_TYPE);
 	}
 
 	/**
@@ -1100,8 +1130,8 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		// Initialize classes, features, and operations; add parameters
 		initEClass(dayEClass, Day.class, "Day", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDay_Weekday(), this.getWeekDay(), "weekday", null, 1, 1, Day.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getDay_Date(), this.getDayDataType(), "date", null, 0, 1, Day.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDay_Sessions(), this.getSession(), null, "sessions", null, 0, -1, Day.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDay_Date(), this.getDate(), null, "date", null, 1, 1, Day.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(programEClass, Program.class, "Program", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProgram_Days(), this.getDay(), null, "days", null, 0, -1, Program.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1109,8 +1139,8 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		initEClass(sessionEClass, Session.class, "Session", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getSession_Events(), this.getEvent(), null, "events", null, 0, -1, Session.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSession_Room(), this.getRoom(), null, "room", null, 0, 1, Session.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getSession_StartingTime(), this.getHourDataType(), "startingTime", null, 0, 1, Session.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getSession_EndingTime(), this.getHourDataType(), "endingTime", null, 0, 1, Session.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSession_StartingTime(), this.getDate(), null, "startingTime", null, 1, 1, Session.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSession_EndingTime(), this.getDate(), null, "endingTime", null, 1, 1, Session.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(eventEClass, Event.class, "Event", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getEvent_Name(), ecorePackage.getEString(), "name", null, 1, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1189,6 +1219,13 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 
 		initEClass(openingEClass, Opening.class, "Opening", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+		initEClass(dateEClass, models2016.Date.class, "Date", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDate_Year(), ecorePackage.getEInt(), "year", null, 0, 1, models2016.Date.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDate_Month(), ecorePackage.getEInt(), "month", null, 0, 1, models2016.Date.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDate_Day(), ecorePackage.getEInt(), "day", null, 0, 1, models2016.Date.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDate_Hours(), ecorePackage.getEInt(), "hours", null, 0, 1, models2016.Date.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDate_Minutes(), ecorePackage.getEInt(), "minutes", null, 0, 1, models2016.Date.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		// Initialize enums and add enum literals
 		initEEnum(weekDayEEnum, WeekDay.class, "WeekDay");
 		addEEnumLiteral(weekDayEEnum, WeekDay.MONDAY);
@@ -1198,10 +1235,6 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		addEEnumLiteral(weekDayEEnum, WeekDay.FRIDAY);
 		addEEnumLiteral(weekDayEEnum, WeekDay.SATURDAY);
 		addEEnumLiteral(weekDayEEnum, WeekDay.SUNDAY);
-
-		// Initialize data types
-		initEDataType(hourDataTypeEDataType, Date.class, "HourDataType", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
-		initEDataType(dayDataTypeEDataType, Date.class, "DayDataType", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

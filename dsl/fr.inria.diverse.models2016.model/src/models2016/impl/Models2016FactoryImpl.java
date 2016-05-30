@@ -2,7 +2,6 @@
  */
 package models2016.impl;
 
-import java.util.Date;
 import models2016.*;
 
 import org.eclipse.emf.ecore.EClass;
@@ -82,6 +81,7 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 			case Models2016Package.KIND: return createKind();
 			case Models2016Package.SPONSOR_KEYNOTE: return createSponsorKeynote();
 			case Models2016Package.OPENING: return createOpening();
+			case Models2016Package.DATE: return createDate();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -97,10 +97,6 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 		switch (eDataType.getClassifierID()) {
 			case Models2016Package.WEEK_DAY:
 				return createWeekDayFromString(eDataType, initialValue);
-			case Models2016Package.HOUR_DATA_TYPE:
-				return createHourDataTypeFromString(eDataType, initialValue);
-			case Models2016Package.DAY_DATA_TYPE:
-				return createDayDataTypeFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -116,10 +112,6 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 		switch (eDataType.getClassifierID()) {
 			case Models2016Package.WEEK_DAY:
 				return convertWeekDayToString(eDataType, instanceValue);
-			case Models2016Package.HOUR_DATA_TYPE:
-				return convertHourDataTypeToString(eDataType, instanceValue);
-			case Models2016Package.DAY_DATA_TYPE:
-				return convertDayDataTypeToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -370,6 +362,16 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public models2016.Date createDate() {
+		DateImpl date = new DateImpl();
+		return date;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public WeekDay createWeekDayFromString(EDataType eDataType, String initialValue) {
 		WeekDay result = WeekDay.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
@@ -383,42 +385,6 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 	 */
 	public String convertWeekDayToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Date createHourDataTypeFromString(EDataType eDataType, String initialValue) {
-		return (Date)super.createFromString(eDataType, initialValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertHourDataTypeToString(EDataType eDataType, Object instanceValue) {
-		return super.convertToString(eDataType, instanceValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Date createDayDataTypeFromString(EDataType eDataType, String initialValue) {
-		return (Date)super.createFromString(eDataType, initialValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertDayDataTypeToString(EDataType eDataType, Object instanceValue) {
-		return super.convertToString(eDataType, instanceValue);
 	}
 
 	/**

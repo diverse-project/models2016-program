@@ -4,9 +4,10 @@
   <eClassifiers xsi:type="ecore:EClass" name="Day">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="weekday" lowerBound="1"
         eType="#//WeekDay"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="date" eType="#//DayDataType"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="sessions" upperBound="-1"
         eType="#//Session" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="date" lowerBound="1" eType="#//Date"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Program">
     <eStructuralFeatures xsi:type="ecore:EReference" name="days" upperBound="-1" eType="#//Day"
@@ -16,8 +17,10 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="events" upperBound="-1"
         eType="#//Event"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="room" eType="#//Room"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="startingTime" eType="#//HourDataType"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endingTime" eType="#//HourDataType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="startingTime" lowerBound="1"
+        eType="#//Date" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="endingTime" lowerBound="1"
+        eType="#//Date" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Event" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -98,8 +101,6 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Lunch" eSuperTypes="#//Event"/>
   <eClassifiers xsi:type="ecore:EClass" name="CoffeeBreak" eSuperTypes="#//Event"/>
-  <eClassifiers xsi:type="ecore:EDataType" name="HourDataType" instanceClassName="java.util.Date"/>
-  <eClassifiers xsi:type="ecore:EDataType" name="DayDataType" instanceClassName="java.util.Date"/>
   <eClassifiers xsi:type="ecore:EClass" name="Meeting" eSuperTypes="#//Event"/>
   <eClassifiers xsi:type="ecore:EClass" name="SRC" eSuperTypes="#//Event"/>
   <eClassifiers xsi:type="ecore:EClass" name="Poster" eSuperTypes="#//Event"/>
@@ -112,4 +113,11 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SponsorKeynote" eSuperTypes="#//Keynote"/>
   <eClassifiers xsi:type="ecore:EClass" name="Opening" eSuperTypes="#//Event"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Date">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="year" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="month" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="day" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hours" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="minutes" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
 </ecore:EPackage>

@@ -3,13 +3,13 @@
 package models2016.impl;
 
 import java.util.Collection;
-import java.util.Date;
 import models2016.Event;
 import models2016.Models2016Package;
 import models2016.Room;
 import models2016.Session;
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -56,44 +56,24 @@ public class SessionImpl extends MinimalEObjectImpl.Container implements Session
 	protected Room room;
 
 	/**
-	 * The default value of the '{@link #getStartingTime() <em>Starting Time</em>}' attribute.
+	 * The cached value of the '{@link #getStartingTime() <em>Starting Time</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getStartingTime()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Date STARTING_TIME_EDEFAULT = null;
+	protected models2016.Date startingTime;
 
 	/**
-	 * The cached value of the '{@link #getStartingTime() <em>Starting Time</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getStartingTime()
-	 * @generated
-	 * @ordered
-	 */
-	protected Date startingTime = STARTING_TIME_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getEndingTime() <em>Ending Time</em>}' attribute.
+	 * The cached value of the '{@link #getEndingTime() <em>Ending Time</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getEndingTime()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Date ENDING_TIME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getEndingTime() <em>Ending Time</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getEndingTime()
-	 * @generated
-	 * @ordered
-	 */
-	protected Date endingTime = ENDING_TIME_EDEFAULT;
+	protected models2016.Date endingTime;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -169,7 +149,7 @@ public class SessionImpl extends MinimalEObjectImpl.Container implements Session
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Date getStartingTime() {
+	public models2016.Date getStartingTime() {
 		return startingTime;
 	}
 
@@ -178,11 +158,14 @@ public class SessionImpl extends MinimalEObjectImpl.Container implements Session
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setStartingTime(Date newStartingTime) {
-		Date oldStartingTime = startingTime;
+	public NotificationChain basicSetStartingTime(models2016.Date newStartingTime, NotificationChain msgs) {
+		models2016.Date oldStartingTime = startingTime;
 		startingTime = newStartingTime;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Models2016Package.SESSION__STARTING_TIME, oldStartingTime, startingTime));
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, Models2016Package.SESSION__STARTING_TIME, oldStartingTime, newStartingTime);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
 	}
 
 	/**
@@ -190,7 +173,26 @@ public class SessionImpl extends MinimalEObjectImpl.Container implements Session
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Date getEndingTime() {
+	public void setStartingTime(models2016.Date newStartingTime) {
+		if (newStartingTime != startingTime) {
+			NotificationChain msgs = null;
+			if (startingTime != null)
+				msgs = ((InternalEObject)startingTime).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - Models2016Package.SESSION__STARTING_TIME, null, msgs);
+			if (newStartingTime != null)
+				msgs = ((InternalEObject)newStartingTime).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - Models2016Package.SESSION__STARTING_TIME, null, msgs);
+			msgs = basicSetStartingTime(newStartingTime, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Models2016Package.SESSION__STARTING_TIME, newStartingTime, newStartingTime));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public models2016.Date getEndingTime() {
 		return endingTime;
 	}
 
@@ -199,11 +201,49 @@ public class SessionImpl extends MinimalEObjectImpl.Container implements Session
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEndingTime(Date newEndingTime) {
-		Date oldEndingTime = endingTime;
+	public NotificationChain basicSetEndingTime(models2016.Date newEndingTime, NotificationChain msgs) {
+		models2016.Date oldEndingTime = endingTime;
 		endingTime = newEndingTime;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Models2016Package.SESSION__ENDING_TIME, oldEndingTime, endingTime));
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, Models2016Package.SESSION__ENDING_TIME, oldEndingTime, newEndingTime);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setEndingTime(models2016.Date newEndingTime) {
+		if (newEndingTime != endingTime) {
+			NotificationChain msgs = null;
+			if (endingTime != null)
+				msgs = ((InternalEObject)endingTime).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - Models2016Package.SESSION__ENDING_TIME, null, msgs);
+			if (newEndingTime != null)
+				msgs = ((InternalEObject)newEndingTime).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - Models2016Package.SESSION__ENDING_TIME, null, msgs);
+			msgs = basicSetEndingTime(newEndingTime, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Models2016Package.SESSION__ENDING_TIME, newEndingTime, newEndingTime));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case Models2016Package.SESSION__STARTING_TIME:
+				return basicSetStartingTime(null, msgs);
+			case Models2016Package.SESSION__ENDING_TIME:
+				return basicSetEndingTime(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -244,10 +284,10 @@ public class SessionImpl extends MinimalEObjectImpl.Container implements Session
 				setRoom((Room)newValue);
 				return;
 			case Models2016Package.SESSION__STARTING_TIME:
-				setStartingTime((Date)newValue);
+				setStartingTime((models2016.Date)newValue);
 				return;
 			case Models2016Package.SESSION__ENDING_TIME:
-				setEndingTime((Date)newValue);
+				setEndingTime((models2016.Date)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -268,10 +308,10 @@ public class SessionImpl extends MinimalEObjectImpl.Container implements Session
 				setRoom((Room)null);
 				return;
 			case Models2016Package.SESSION__STARTING_TIME:
-				setStartingTime(STARTING_TIME_EDEFAULT);
+				setStartingTime((models2016.Date)null);
 				return;
 			case Models2016Package.SESSION__ENDING_TIME:
-				setEndingTime(ENDING_TIME_EDEFAULT);
+				setEndingTime((models2016.Date)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -290,29 +330,11 @@ public class SessionImpl extends MinimalEObjectImpl.Container implements Session
 			case Models2016Package.SESSION__ROOM:
 				return room != null;
 			case Models2016Package.SESSION__STARTING_TIME:
-				return STARTING_TIME_EDEFAULT == null ? startingTime != null : !STARTING_TIME_EDEFAULT.equals(startingTime);
+				return startingTime != null;
 			case Models2016Package.SESSION__ENDING_TIME:
-				return ENDING_TIME_EDEFAULT == null ? endingTime != null : !ENDING_TIME_EDEFAULT.equals(endingTime);
+				return endingTime != null;
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (startingTime: ");
-		result.append(startingTime);
-		result.append(", endingTime: ");
-		result.append(endingTime);
-		result.append(')');
-		return result.toString();
 	}
 
 } //SessionImpl
