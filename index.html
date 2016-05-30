@@ -20,32 +20,41 @@
         </div>
 
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-sm-2 col-md-2">
                 <div class="row"><strong>Legend:</strong></div>
+                <div class="row legend Opening">Opening</div>
+                <div class="row legend Keynote">Keynote</div>
                 <div class="row legend TalkSession">Talk Session</div>
-                <div class="row legend Panel">Panel</div>
+
                 <div class="row legend Workshop">Workshop</div>
                 <div class="row legend Tutorial">Tutorial</div>
-                <div class="row legend DoctoralSymposium">Doctoral Symposium</div>
-                <div class="row legend EducatorSymposium">Educator Symposium</div>
-                <div class="row legend Reception">Reception</div>
-                <div class="row legend Clinic">Clinic</div>
-                <div class="row legend Lunch">Lunch</div>
-                <div class="row legend CoffeeBreak">Coffee Break</div>
-                <div class="row legend SRC">Student Research Competition</div>
                 <div class="row legend Poster">Poster</div>
-                <div class="row legend Keynote">Keynote</div>
+                <div class="row legend DoctoralSymposium">Symposium</div>
+                <!--<div class="row legend DoctoralSymposium">Doctoral Symposium</div>-->
+                <!--<div class="row legend EducatorSymposium">Educator Symposium</div>-->
+                <div class="row legend SRC">Student Research Competition</div>
+
+
+
+                <div class="row legend Panel">Panel</div>
+                <div class="row legend Clinic">Clinic</div>
                 <div class="row legend Meeting">Meeting</div>
-                <div class="row legend Opening">Opening</div>
 
+                <!--<div class="row legend Reception">Reception</div>-->
+                <!--<div class="row legend Lunch">Lunch</div>-->
+                <!--<div class="row legend CoffeeBreak">Coffee Break</div>-->
             </div>
 
 
-            <div class="col-md-6">
-                <label class="checkbox-inline"><input type="checkbox" ng-model="showFavorites" ng-change="toggleFavorites()"> Show only <span class="glyphicon glyphicon-star"></span></label>
-                <button class="btn btn-default" ng-click="exportToCal(true)">Export <span class="glyphicon glyphicon-star"></span> to iCal</button>
-                <button class="btn btn-default" ng-click="exportToCal(false)">Export all to iCal</button>
+            <div class="col-sm-10 col-md-10">
+
             </div>
+        </div>
+
+        <div class="row">
+            <label class="checkbox-inline"><input type="checkbox" ng-model="showFavorites" ng-change="toggleFavorites()"> Show only <span class="glyphicon glyphicon-star"></span></label>
+            <button class="btn btn-default" ng-click="exportToCal(true)">Export <span class="glyphicon glyphicon-star"></span> to iCal</button>
+            <button class="btn btn-default" ng-click="exportToCal(false)">Export all to iCal</button>
         </div>
 
 
