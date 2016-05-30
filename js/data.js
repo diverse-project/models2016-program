@@ -3626,6 +3626,8 @@ var data = [
 							speaker : {
 								name : "Edward A. Lee"	
 							}
+							,
+							abstract : " In 1814, Pierre-Simon Laplace published an argument for determinism in the universe, arguing that if someone (a demon) were to know the precise location and momentum of every atom in the universe, then their past and future values for any given time are completely determined and can be calculated from the laws of classical mechanics. This principle, of course, has been roundly invalidated by quantum mechanics, and yet the laws of classical mechanics continue to be extremely useful for prediction.\nIn this talk, I will argue that models plays different (complementary) roles in engineering and science, and that deterministic models have historically proved proved even more valuable in engineering than in science. Moreover, I will show that deterministic models for cyber-physical systems, which combine computation with physical dynamics, remain elusive. I will argue that the next big advance in engineering methods must include deterministic models for CPS, and I will show that such models are both possible and practical. ",
 						}
 					]
 				},
@@ -4905,7 +4907,7 @@ var data = [
 							speaker : {
 								name : "Gordon Blair"	
 							}
-						}
+							}
 					]
 				},
 				{
@@ -6128,6 +6130,8 @@ var data = [
 							speaker : {
 								name : "Jim Coplien"	
 							}
+							,
+							abstract : " Model-based approaches are not thriving, and the blame is usually laid at the feet of the unsophistication of software engineers. Yet software engineers may tacitly know something that the formal folks seldom discuss: Software systems are complex, and it is only simple problems that yield to formal approaches, including most modeling approaches—especially the analytical and computer-supported ones.\nA system is complex proportional to its number of distinct, meaningful tops. However, these « tops » are rarely separable, so independent models based on such formalisms are relatively impotent. And such models are abstractions (i.e., they discard information) to the degree they are formal: and Gödel, Heisenberg, Rosen and a host of others note that there’s always a ghost in the machine. This matters more and more as we face increased complexity.\nI will propose that modeling efforts be redirected to the more realistic, logically inconsistent, human ways of understanding ourselves and our interactions with computers. Object-orientation started with Kay’s operational models that would become objects; we see them again in Model-View-Controller-User. Both of these approaches emphasize the need to mix multiple concurrent perspectives (called roles) when analyzing a system. DCI is one paradigm that provides a single computational model while accommodating “tops” for both the left and right brain, and it bridges the abstraction of modeling with concrete implementation. I will argue that design is less about reifying extrinsic, abstract models than it is about creating a “habitable » reality close to the implementation, guided by human mental models. Last, I’ll touch on the kinds of socially constructed complex models as we find in patterns, which were explicitly created out of a dissatisfaction with the ability of formal models to add value.",
 						}
 					]
 				},
