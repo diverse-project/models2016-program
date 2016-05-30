@@ -1,4 +1,4 @@
-name := """play-scala"""
+name := """models2016-program"""
 
 version := "1.0-SNAPSHOT"
 

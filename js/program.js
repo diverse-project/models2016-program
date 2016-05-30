@@ -3,10 +3,6 @@ var modelsApp = angular.module("models-app", []);
 modelsApp.controller("ProgramController", function($scope) {
 
     // Utils
-    $scope.getStartOfSessionGroup = function(sessionGroup) {
-        return sessionGroup[0].start;
-    };
-
     function parseTime(time) {
         var splittedTime = time.split(":");
         return {
@@ -15,8 +11,34 @@ modelsApp.controller("ProgramController", function($scope) {
         }
     }
 
+    $scope.getStartOfSessionGroup = function(sessionGroup) {
+        return sessionGroup[0].start;
+    };
+
+    $scope.getEndOfSessionGroup = function(sessionGroup) {
+        var maxEnd = "00:00";
+        sessionGroup.forEach(function(session) {
+            if (typeof session.end !== "undefined") {
+                var parsedSessionEnd = parseTime(session.end);
+                var parsedMaxEnd = parseTime(maxEnd);
+                if (parsedSessionEnd.hour > parsedMaxEnd.hour || (parsedSessionEnd.hour == parsedMaxEnd.hour && parsedSessionEnd.minutes > parsedMaxEnd.minutes)) {
+                    maxEnd = session.end;
+                }
+            }
+        });
+        return maxEnd;
+    };
+
+
+    var hiddenTypes = ["Poster", "SRC", "DoctoralSymposium", "Clinic", "EducatorSymposium", "Reception", "Opening"];
+
     $scope.hideType = function(talkType) {
-        return typeof talkType === "undefined" || ["Poster", "SRC", "DoctoralSymposium", "Clinic", "EducatorSymposium"].indexOf(talkType) !== -1
+        return typeof talkType === "undefined" || hiddenTypes.indexOf(talkType) !== -1
+    };
+
+    var hiddenModalsAndStars = ["Lunch", "CoffeeBreak", "Reception"];
+    $scope.showModalAndStar = function(talkType) {
+      return typeof talkType !== "undefined" && hiddenModalsAndStars.indexOf(talkType) === -1
     };
 
     ////// Preprocess data //////

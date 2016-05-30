@@ -98,9 +98,12 @@ hr {
 
 /* Type of events */
 
+.legend {
+    text-align: left !important;
+}
+
 .TalkSession {
     background-color: rgba(173, 255, 47, 0.5);
-    /*background-color: greenyellow;*/
 }
 
 .Panel {
@@ -125,6 +128,7 @@ hr {
 
 .Reception {
     background-color: rgba(61, 188, 255, 0.5);
+    text-align: center;
 }
 
 .Clinic {
@@ -154,5 +158,9 @@ hr {
 }
 
 .Meeting {
+    background-color: rgba(41, 150, 180, 0.5);
+}
+
+.Opening {
     background-color: rgba(41, 150, 180, 0.5);
 }
