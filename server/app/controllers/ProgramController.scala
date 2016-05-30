@@ -1,17 +1,25 @@
 package controllers
 
 import java.io.{File, FileWriter}
+import java.util.UUID
 import javax.inject._
 
+import akka.actor.ActorSystem
+import akka.pattern.Patterns
 import play.api._
 import play.api.libs.Files
 import play.api.libs.json.JsValue
 import play.api.mvc._
 
-import scala.concurrent.{ExecutionContext, Future}
+import scala.collection.mutable
+import scala.concurrent.duration._
+import scala.concurrent.{Await, ExecutionContext, Future}
+
 
 @Singleton
-class ProgramController @Inject()(webJarAssets : WebJarAssets)(implicit ec:ExecutionContext) extends Controller {
+class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSystem)(implicit ec:ExecutionContext) extends Controller {
+
+  val customCalendars : mutable.Map[String, String] = mutable.Map.empty
 
   def index = Action {
     Ok(views.html.index(webJarAssets))
@@ -28,31 +36,42 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets)(implicit ec:Execu
     Ok(generateIcalContent(None)).withHeaders("type" -> "text/calendar")
   }
 
+
   def generateIcal() = Action.async { request =>
     request.body.asJson.map { data =>
 
+      val id = UUID.randomUUID().toString
       val ical = generateIcalContent(Some(data))
-      val tempFile = File.createTempFile("models_", ".ics")
+      customCalendars.put(id, ical)
 
-      Future {
-        val writer = new FileWriter(tempFile)
-        writer.write(ical)
-        writer.close()
-      }.map { _ =>
-        Ok(tempFile.getName)
-      }
+      Future.successful(Ok(id))
     }.getOrElse {
       Future.successful(BadRequest("cannot generate ics file"))
     }
 
   }
 
-  def getIcal(id : String) = Action {
-    val file = new File("/tmp/" + id) // TODO : secure !
-    if (file.exists()) {
-      Ok.sendFile(file, onClose = () => file.delete()).withHeaders("type" -> "text/calendar")
-    } else {
-      NotFound("ics file not found")
+  def getIcal(id : String) = Action { request =>
+    val android = request.headers.get("user-agent").exists(userAgent => userAgent.contains("Android"))
+
+    println(id)
+    println(customCalendars.keys)
+    println(customCalendars.get(id).isDefined)
+    println("android = " + android)
+
+    customCalendars.get(id).map { customCalendar =>
+      if (android) {
+          akka.pattern.after(5.minutes, using = system.scheduler)(Future{
+            customCalendars.remove(id) // FIXME : not thread safe
+            println("removed")
+          })
+      } else {
+        customCalendars.remove(id) // FIXME : not thread safe
+      }
+
+      Ok(customCalendar).withHeaders("type" -> "text/calendar")
+    }.getOrElse {
+      NotFound("custom ics not found")
     }
   }
 

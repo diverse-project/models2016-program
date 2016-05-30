@@ -106,9 +106,10 @@ modelsApp.controller("ProgramController", function($scope, $http) {
     $scope.generateIcal = function() {
         $http.post("/generateIcal", $scope.data).then(function(response) {
             var elem = window.document.createElement('a');
-            elem.href = "/getIcal/" + response.data;
+            // elem.href = "/testmodels.ics?id=" + response.data;
+            elem.href="/" + response.data + "/models.ics";
             elem.download = "models.ics";
-            console.log(elem);
+            console.log(elem.href);
             document.body.appendChild(elem);
             elem.click();
             document.body.removeChild(elem);
