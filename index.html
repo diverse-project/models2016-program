@@ -131,9 +131,11 @@
                     <tbody>
                     <tr ng-repeat="sessionGroup in day.sessionGroups" ng-init="sessionGroupIndex = $index">
                         <td ng-if="sessionGroup.length > 0" ng-repeat="session in sessionGroup" rowspan="{{session.rowSpan}}">
-                            <div ng-if="$first">
+                            <div class="session" ng-if="$first">
                                 {{getStartOfSessionGroup(sessionGroup)}}
-                                {{sessionGroupIndex + session.rowSpan === day.sessionGroups.length ? " - " + getEndOfSessionGroup(sessionGroup) : ""}}
+                                <div class="sessionEnd">
+                                    {{sessionGroupIndex + session.rowSpan === day.sessionGroups.length ? getEndOfSessionGroup(sessionGroup) : ""}}
+                                </div>
                             </div>
 
                             <table class="table table-condensed" ng-if="$index > 0 && session.events">

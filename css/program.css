@@ -67,6 +67,17 @@ body {
 
 }
 
+.session {
+    height: 100%;
+    min-height: 50px;
+    position: relative;
+}
+
+.sessionEnd {
+    position: absolute;
+    bottom: 0;
+}
+
 
 /* Other styles */
 
