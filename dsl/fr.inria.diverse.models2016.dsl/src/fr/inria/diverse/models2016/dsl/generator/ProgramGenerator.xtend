@@ -372,7 +372,9 @@ class ProgramGenerator extends AbstractGenerator {
 					{
 						type : "Keynote",
 						title : "«keynote.name»",
-						speaker : «getPerson(keynote.speaker)»
+						speaker : «getPerson(keynote.speaker)»«IF keynote.abstract != null && keynote.abstract.length > 0»,
+						abstract : "«keynote.abstract.replace("\n","\\n")»",
+						«ENDIF»
 					}
 				'''
 	}
@@ -383,7 +385,9 @@ class ProgramGenerator extends AbstractGenerator {
 					{
 						type : "SponsorKeynote",
 						title : "«keynote.name»",
-						speaker : «getPerson(keynote.speaker)»
+						speaker : «getPerson(keynote.speaker)»«IF keynote.abstract != null && keynote.abstract.length > 0»,
+						abstract : "«keynote.abstract.replace("\n","\\n")»",
+						«ENDIF»
 					}
 				'''
 	}
