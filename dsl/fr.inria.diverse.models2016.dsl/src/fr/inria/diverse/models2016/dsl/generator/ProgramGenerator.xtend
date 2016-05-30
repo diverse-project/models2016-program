@@ -60,7 +60,7 @@ class ProgramGenerator extends AbstractGenerator {
 	private val List<Room> rooms = new ArrayList
 	private val Comparator<Room> roomComparator = [r1,r2|rooms.indexOf(r1) - rooms.indexOf(r2)]
 	
-	private val DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd")
+	private val DateFormat dateFormat = new SimpleDateFormat("EEEE, MMM d, yyyy")
 	private val DateFormat hourFormat = new SimpleDateFormat("HH:mm")
 	private val DateFormat icalFormat = new SimpleDateFormat("yyyyMMdd'T'HHmmss'Z'",Locale.UK)
 	
@@ -135,7 +135,7 @@ class ProgramGenerator extends AbstractGenerator {
 	}
 	
 	def private int computeSessionLength(Date start, Date end) {
-		return 4 * (end.hours - start.hours) + (end.minutes - start.minutes) / 15
+		return ((end.time - start.time) / (1000 * 60 * 15)) as int
 	}
 	
 	def private Date computeDate(Date dayDate, Date hourDate) {
@@ -164,7 +164,7 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						name : "«person.name»«IF person.email != null && person.email.length > 0»",
+						name : "«person.name»"«IF person.email != null && person.email.length > 0»,
 						email : "«person.email»"
 						«ELSE»
 						
@@ -440,8 +440,7 @@ class ProgramGenerator extends AbstractGenerator {
 					[
 						«FOR d : conference.program.days SEPARATOR ","»
 						{
-							name : "«d.weekday.getName»",
-							date : "«dateFormat.format(ProgramUtils.convertDate(d.date))»",
+							name : "«dateFormat.format(ProgramUtils.convertDate(d.date))»",
 							rooms : [
 								«val roomsOfDay = roomsPerDay.get(d)»
 								«FOR r : roomsOfDay SEPARATOR ","»
