@@ -3506,9 +3506,6 @@ var data = [
 		name : "Wednesday, Oct 5, 2016",
 		rooms : [
 			{
-				name : "Rotonde Surcouf"
-			},
-			{
 				name : "Rotonde J. Cartier"
 			},
 			{
@@ -3531,9 +3528,6 @@ var data = [
 			[
 				{
 					start : "08:45",
-					rowSpan : 1
-				},
-				{
 					rowSpan : 1
 				},
 				{
@@ -3575,9 +3569,6 @@ var data = [
 					rowSpan : 1
 				},
 				{
-					rowSpan : 1
-				},
-				{
 					start : "09:00",
 					end : "09:15",
 					rowSpan : 1,
@@ -3601,9 +3592,6 @@ var data = [
 			[
 				{
 					start : "09:15",
-					rowSpan : 5
-				},
-				{
 					rowSpan : 5
 				},
 				{
@@ -3649,9 +3637,6 @@ var data = [
 					rowSpan : 2
 				},
 				{
-					rowSpan : 2
-				},
-				{
 					start : "10:30",
 					end : "11:00",
 					rowSpan : 2,
@@ -3693,9 +3678,6 @@ var data = [
 			[
 				{
 					start : "11:00",
-					rowSpan : 6
-				},
-				{
 					rowSpan : 6
 				},
 				{
@@ -3992,9 +3974,6 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 6
-				},
-				{
 					start : "12:30",
 					end : "14:00",
 					rowSpan : 6,
@@ -4026,9 +4005,6 @@ var data = [
 			[
 				{
 					start : "14:00",
-					rowSpan : 6
-				},
-				{
 					rowSpan : 6
 				},
 				{
@@ -4316,9 +4292,6 @@ var data = [
 					rowSpan : 2
 				},
 				{
-					rowSpan : 2
-				},
-				{
 					start : "15:30",
 					end : "16:00",
 					rowSpan : 2,
@@ -4360,9 +4333,6 @@ var data = [
 			[
 				{
 					start : "16:00",
-					rowSpan : 6
-				},
-				{
 					rowSpan : 6
 				},
 				{
@@ -4674,9 +4644,6 @@ var data = [
 					rowSpan : 2
 				},
 				{
-					rowSpan : 2
-				},
-				{
 					start : "17:30",
 					end : "19:30",
 					rowSpan : 8,
@@ -4701,9 +4668,6 @@ var data = [
 					rowSpan : 6
 				},
 				{
-					rowSpan : 6
-				},
-				{
 					start : "18:00",
 					end : "00:00",
 					rowSpan : 24,
@@ -4713,7 +4677,7 @@ var data = [
 					events : [
 						{
 							type : "Reception",
-							title : "Conference Welcome Reception"
+							title : "Conference Welcome Reception and SRC Awards"
 						}
 					]
 				},
@@ -4732,22 +4696,19 @@ var data = [
 			[
 				{
 					start : "19:30",
-					rowSpan : 8
+					rowSpan : 18
 				},
 				{
-					rowSpan : 8
+					rowSpan : 18
 				},
 				{
-					rowSpan : 8
+					rowSpan : 18
 				},
 				{
-					rowSpan : 8
+					rowSpan : 18
 				},
 				{
-					rowSpan : 8
-				},
-				{
-					rowSpan : 8
+					rowSpan : 18
 				}
 			],
 			[],
@@ -4757,60 +4718,9 @@ var data = [
 			[],
 			[],
 			[],
-			[
-				{
-					start : "21:30",
-					rowSpan : 2
-				},
-				{
-					start : "21:30",
-					end : "22:00",
-					rowSpan : 2,
-					icalStart : "20161005T193000Z",
-					icalEnd : "20161005T200000Z",
-					room : "Rotonde Surcouf",
-					events : [
-						{
-							type : "SRC",
-							title : "SRC Awards"
-						}
-					]
-				},
-				{
-					rowSpan : 2
-				},
-				{
-					rowSpan : 2
-				},
-				{
-					rowSpan : 2
-				},
-				{
-					rowSpan : 2
-				}
-			],
 			[],
-			[
-				{
-					start : "22:00",
-					rowSpan : 8
-				},
-				{
-					rowSpan : 8
-				},
-				{
-					rowSpan : 8
-				},
-				{
-					rowSpan : 8
-				},
-				{
-					rowSpan : 8
-				},
-				{
-					rowSpan : 8
-				}
-			],
+			[],
+			[],
 			[],
 			[],
 			[],

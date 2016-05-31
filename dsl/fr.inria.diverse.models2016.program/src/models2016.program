@@ -291,7 +291,7 @@ Conference "MODELS 2016"
 		Meeting "SoSyM Editorial Board Meeting";
 		
 		Reception "Workshop Welcome Reception";
-		Reception "Conference Welcome Reception";
+		Reception "Conference Welcome Reception and SRC Awards";
 		Reception "Gala Dinner";
 		
 		Clinic "Clinic";
@@ -764,9 +764,6 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			
 			17:30 - 19:30 in "Lamennais 4+5" : "MODELS Steering Commitee Meeting"
 			
-			// Student Research Competition
-			21:30 - 22:00 in "Rotonde Surcouf" : "SRC Awards"
-			
 			11:00 - 12:30 in "Chateaubriand" : "Takimata sanctus est lorem ipsum dolor sit amet lorem"
 			11:00 - 12:30 in "Lamennais 1+2" : "Diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet"
 			11:00 - 12:30 in "Lamennais 4+5" : "Lorem ipsum dolor sit amet lorem ipsum dolor sit"
@@ -780,7 +777,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			16:00 - 17:30 in "Lamennais 4+5" : "Eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no"
 		
 		
-			18:00 - 24:00 in "Grand Large" : "Conference Welcome Reception"
+			18:00 - 24:00 in "Grand Large" : "Conference Welcome Reception and SRC Awards"
 			
 		Thursday
 			date 16.10.06
