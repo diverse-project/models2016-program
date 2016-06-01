@@ -1,6 +1,6 @@
 var modelsApp = angular.module("models-app", []);
 
-modelsApp.controller("ProgramController", function($scope) {
+modelsApp.controller("ProgramController", function($scope, $window) {
 
     // Utils
     function parseTime(time) {
@@ -180,12 +180,24 @@ modelsApp.controller("ProgramController", function($scope) {
         }
         else{
             var elem = window.document.createElement('a');
-            // elem.href = window.URL.createObjectURL(blob);
-            elem.href = inlinedDataUrl;
+
+            if (window.URL) {
+                elem.href = window.URL.createObjectURL(blob);
+            } else {
+                elem.href = window.webkitURL.createObjectURL(blob);
+            }
+            // elem.href = inlinedDataUrl;
             elem.download = filename;
             document.body.appendChild(elem);
             elem.click();
             document.body.removeChild(elem);
+
+            // var reader = new FileReader();
+            // reader.onloadend = function(e) {
+            //     console.log(reader);
+            //     $window.open(reader.result);
+            // };
+            // reader.readAsDataURL(blob); //
         }
     };
 
