@@ -18,6 +18,10 @@ body {
 
 /* Table style */
 
+.table-responsive {
+    overflow-x: scroll;
+}
+
 .table {
 
 }
