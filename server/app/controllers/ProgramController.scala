@@ -7,6 +7,7 @@ import javax.inject._
 import akka.actor.ActorSystem
 import com.fasterxml.jackson.core.JsonParser
 import com.fasterxml.jackson.databind.{DeserializationFeature, ObjectMapper}
+import play.api.Environment
 import play.api.libs.json.{JsArray, JsObject, JsValue, Json}
 import play.api.mvc._
 
@@ -17,10 +18,9 @@ import scala.io.Source
 
 
 @Singleton
-class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSystem)(implicit ec:ExecutionContext) extends Controller {
+class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSystem, env : Environment)(implicit ec:ExecutionContext) extends Controller {
 
-  val programDataFile = new File("public/javascripts/data.js")
-  val programData = Json.parse(Source.fromFile(programDataFile).mkString.substring("var data = ".size))
+  val programData = Json.parse(Source.fromInputStream(env.resourceAsStream("public/javascripts/data.js").get).mkString.substring("var data = ".size))
   val customCalendars : mutable.Map[String, String] = mutable.Map.empty
 
   def index = Action {
