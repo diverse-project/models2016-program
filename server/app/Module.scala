@@ -14,6 +14,7 @@ class Module extends AbstractModule {
 
   override def configure() = {
 
+
   }
 
 }

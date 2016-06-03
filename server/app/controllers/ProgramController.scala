@@ -10,18 +10,23 @@ import com.fasterxml.jackson.databind.{DeserializationFeature, ObjectMapper}
 import play.api.Environment
 import play.api.libs.json.{JsArray, JsObject, JsValue, Json}
 import play.api.mvc._
+import services.CustomCalendarActor
+import services.CustomCalendarActor.{GetCalendar, RemoveCalendar, SetCalendar}
 
 import scala.collection.mutable
 import scala.concurrent.duration._
 import scala.concurrent.{ExecutionContext, Future}
 import scala.io.Source
-
+import akka.pattern.ask
+import akka.util.Timeout
 
 @Singleton
 class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSystem, env : Environment)(implicit ec:ExecutionContext) extends Controller {
 
   val programData = Json.parse(Source.fromInputStream(env.resourceAsStream("public/javascripts/data.js").get).mkString.substring("var data = ".size))
-  val customCalendars : mutable.Map[String, String] = mutable.Map.empty
+
+  val customCalendarActor = system.actorOf(CustomCalendarActor.props, "custom-calendar")
+  implicit val timeout = Timeout(5.seconds)
 
   def index = Action {
     Ok(views.html.index(webJarAssets))
@@ -106,7 +111,7 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSyst
 
       val id = UUID.randomUUID().toString
       val ical = generateIcalCalendar(Some(data))
-      customCalendars.put(id, ical)
+      customCalendarActor ! SetCalendar(id, ical)
 
       Future.successful(Ok(id))
     }.getOrElse {
@@ -115,27 +120,20 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSyst
 
   }
 
-  def getIcal(id : String) = Action { request =>
+  def getIcal(id : String) = Action.async { request =>
     val android = request.headers.get("user-agent").exists(userAgent => userAgent.contains("Android"))
 
-    println(id)
-    println(customCalendars.keys)
-    println(customCalendars.get(id).isDefined)
-    println("android = " + android)
-
-    customCalendars.get(id).map { customCalendar =>
-      if (android) {
-        akka.pattern.after(3.minutes, using = system.scheduler)(Future{
-          customCalendars.remove(id) // FIXME : not thread safe
-          println("removed")
-        })
-      } else {
-        customCalendars.remove(id) // FIXME : not thread safe
-      }
-
-      Ok(customCalendar).withHeaders("type" -> "text/calendar")
-    }.getOrElse {
-      NotFound("custom ics not found")
+    (customCalendarActor ? GetCalendar(id)).map {
+      case customCalendar : String =>
+        if (android) {
+          akka.pattern.after(3.minutes, using = system.scheduler)(Future{
+            customCalendarActor ! RemoveCalendar(id)
+          })
+        } else {
+          customCalendarActor ! RemoveCalendar(id)
+        }
+        Ok(customCalendar).withHeaders("type" -> "text/calendar")
+      case _ => NotFound("ics file not found")
     }
   }
 
