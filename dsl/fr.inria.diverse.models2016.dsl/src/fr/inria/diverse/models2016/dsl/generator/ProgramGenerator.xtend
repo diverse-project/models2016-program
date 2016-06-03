@@ -164,9 +164,9 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						«IF person.homepage != null && person.homepage.length > 0»homepage : "«person.homepage»",«ENDIF»
-						name : "«person.name»"«IF person.email != null && person.email.length > 0»,
-						email : "«person.email»"
+						«IF person.homepage != null && person.homepage.length > 0»"homepage" : "«person.homepage»",«ENDIF»
+						"name" : "«person.name»"«IF person.email != null && person.email.length > 0»,
+						"email" : "«person.email»"
 						«ELSE»
 						
 						«ENDIF»
@@ -178,25 +178,25 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						type : "TalkSession",
-						title : "«talkSession.name»",
+						"type" : "TalkSession",
+						"title" : "«talkSession.name»",
 						«IF talkSession.chair != null»
-						chair : "«talkSession.chair.name»",
+						"chair" : "«talkSession.chair.name»",
 						«ENDIF»
-						papers : [
+						"papers" : [
 							«var i = 0»
 							«FOR p : talkSession.papers SEPARATOR ","»
 							{
-								title : "«p.name»",
+								"title" : "«p.name»",
 								«IF p.abstract != null && p.abstract.length > 0»
-								abstract : "«p.abstract.replace("\n","\\n")»",
+								"abstract" : "«p.abstract.replace("\n","\\n")»",
 								«ENDIF»
 								«val talkStart = computeTalkStart(start,i++)»
 								«val talkEnd = computeTalkStart(start,i)»
-								start : "«hourFormat.format(talkStart)»",
-								icalStart : "«icalFormat.format(talkStart)»",
-								icalEnd : "«icalFormat.format(talkEnd)»",
-								authors : [
+								"start" : "«hourFormat.format(talkStart)»",
+								"icalStart" : "«icalFormat.format(talkStart)»",
+								"icalEnd" : "«icalFormat.format(talkEnd)»",
+								"authors" : [
 									«FOR a : p.authors SEPARATOR ","»
 									«getPerson(a)»
 									«ENDFOR»
@@ -212,15 +212,15 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						type : "Workshop",
-						title : "«workshop.name»",
+						"type" : "Workshop",
+						"title" : "«workshop.name»",
 						«IF workshop.abstract != null && workshop.abstract.length > 0»
-						abstract : "«workshop.abstract.replace("\n","\\n")»",
+						"abstract" : "«workshop.abstract.replace("\n","\\n")»",
 						«ENDIF»
 						«IF workshop.url != null && workshop.url.length > 0»
-						url : "«workshop.url»",
+						"url" : "«workshop.url»",
 						«ENDIF»
-						organizers : [
+						"organizers" : [
 							«FOR o : workshop.organizers SEPARATOR ","»
 							«getPerson(o)»
 							«ENDFOR»
@@ -233,8 +233,8 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						type : "Lunch",
-						title : "«lunch.name»"
+						"type" : "Lunch",
+						"title" : "«lunch.name»"
 					}
 				'''
 	}
@@ -243,8 +243,8 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						type : "Clinic",
-						title : "«clinic.name»"
+						"type" : "Clinic",
+						"title" : "«clinic.name»"
 					}
 				'''
 	}
@@ -253,8 +253,8 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						type : "CoffeeBreak",
-						title : "«coffeeBreak.name»"
+						"type" : "CoffeeBreak",
+						"title" : "«coffeeBreak.name»"
 					}
 				'''
 	}
@@ -263,8 +263,8 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						type : "Reception",
-						title : "«reception.name»"
+						"type" : "Reception",
+						"title" : "«reception.name»"
 					}
 				'''
 	}
@@ -273,14 +273,14 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						type : "Panel",
-						title : "«panel.name»",
-						moderators : [
+						"type" : "Panel",
+						"title" : "«panel.name»",
+						"moderators" : [
 							«FOR o : panel.moderators SEPARATOR ","»
 							«getPerson(o)»
 							«ENDFOR»
 						],
-						panelists : [
+						"panelists" : [
 							«FOR o : panel.panelists SEPARATOR ","»
 							«getPerson(o)»
 							«ENDFOR»
@@ -293,9 +293,9 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						type : "EducatorSymposium",
-						title : "«symposium.name»",
-						organizers : [
+						"type" : "EducatorSymposium",
+						"title" : "«symposium.name»",
+						"organizers" : [
 							«FOR o : symposium.organizers SEPARATOR ","»
 							«getPerson(o)»
 							«ENDFOR»
@@ -308,9 +308,9 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						type : "DoctoralSymposium",
-						title : "«symposium.name»",
-						organizers : [
+						"type" : "DoctoralSymposium",
+						"title" : "«symposium.name»",
+						"organizers" : [
 							«FOR o : symposium.organizers SEPARATOR ","»
 							«getPerson(o)»
 							«ENDFOR»
@@ -323,12 +323,12 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						type : "Tutorial",
-						title : "«tutorial.name»",
+						"type" : "Tutorial",
+						"title" : "«tutorial.name»",
 						«IF tutorial.abstract != null && tutorial.abstract.length > 0»
-						abstract : "«tutorial.abstract.replace("\n","\\n")»",
+						"abstract" : "«tutorial.abstract.replace("\n","\\n")»",
 						«ENDIF»
-						organizers : [
+						"organizers" : [
 							«FOR o : tutorial.organizers SEPARATOR ","»
 							«getPerson(o)»
 							«ENDFOR»
@@ -341,8 +341,8 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						type : "Meeting",
-						title : "«meeting.name»"
+						"type" : "Meeting",
+						"title" : "«meeting.name»"
 					}
 				'''
 	}
@@ -351,8 +351,8 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						type : "SRC",
-						title : "«src.name»"
+						"type" : "SRC",
+						"title" : "«src.name»"
 					}
 				'''
 	}
@@ -361,8 +361,8 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						type : "Poster",
-						title : "«poster.name»"
+						"type" : "Poster",
+						"title" : "«poster.name»"
 					}
 				'''
 	}
@@ -371,10 +371,10 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						type : "Keynote",
-						title : "«keynote.name»",
-						speaker : «getPerson(keynote.speaker)»«IF keynote.abstract != null && keynote.abstract.length > 0»,
-						abstract : "«keynote.abstract.replace("\n","\\n")»",
+						"type" : "Keynote",
+						"title" : "«keynote.name»",
+						"speaker" : «getPerson(keynote.speaker)»«IF keynote.abstract != null && keynote.abstract.length > 0»,
+						"abstract" : "«keynote.abstract.replace("\n","\\n")»"
 						«ENDIF»
 					}
 				'''
@@ -384,10 +384,10 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						type : "SponsorKeynote",
-						title : "«keynote.name»",
-						speaker : «getPerson(keynote.speaker)»«IF keynote.abstract != null && keynote.abstract.length > 0»,
-						abstract : "«keynote.abstract.replace("\n","\\n")»",
+						"type" : "SponsorKeynote",
+						"title" : "«keynote.name»",
+						"speaker" : «getPerson(keynote.speaker)»«IF keynote.abstract != null && keynote.abstract.length > 0»,
+						"abstract" : "«keynote.abstract.replace("\n","\\n")»",
 						«ENDIF»
 					}
 				'''
@@ -397,8 +397,8 @@ class ProgramGenerator extends AbstractGenerator {
 		return
 				'''
 					{
-						type : "Opening",
-						title : "«opening.name»"
+						"type" : "Opening",
+						"title" : "«opening.name»"
 					}
 				'''
 	}
@@ -445,20 +445,20 @@ class ProgramGenerator extends AbstractGenerator {
 					[
 						«FOR d : conference.program.days SEPARATOR ","»
 						{
-							name : "«dateFormat.format(ProgramUtils.convertDate(d.date))»",
-							rooms : [
+							"name" : "«dateFormat.format(ProgramUtils.convertDate(d.date))»",
+							"rooms" : [
 								«val roomsOfDay = roomsPerDay.get(d)»
 								«FOR r : roomsOfDay SEPARATOR ","»
 								{
 									«val hasCapacity = r.capacity != null»
-									name : "«r.name»"«IF hasCapacity»,«ENDIF»
+									"name" : "«r.name»"«IF hasCapacity»,«ENDIF»
 									«IF hasCapacity»
-									capacity : «r.capacity»
+									"capacity" : «r.capacity»
 									«ENDIF»
 								}
 								«ENDFOR»
 							],
-							sessionGroups : [
+							"sessionGroups" : [
 								«val scheduleOfDay = schedulePerDay.get(d)»
 								«val startingDates = scheduleOfDay.allStartingDates»
 								«var i = 0»
@@ -472,27 +472,27 @@ class ProgramGenerator extends AbstractGenerator {
 										} else {
 											scheduleOfDay.lastDate
 										}»
-										start : "«hourFormat.format(startDate)»",
+										"start" : "«hourFormat.format(startDate)»",
 										«{rowSpan = computeSessionLength(startDate,endDate) null}»
-										rowSpan : «rowSpan»
+										"rowSpan" : «rowSpan»
 									},
 									«FOR s : row SEPARATOR ","»
 									«IF s.data == null»
 									{
-										rowSpan : «computeSessionLength(s.startDate, s.endDate)»
+										"rowSpan" : «computeSessionLength(s.startDate, s.endDate)»
 									}
 									«ELSEIF s.data instanceof Session»
 									{
 										«val s_cast = s.data as Session»
 										«val startingDate = computeDate(ProgramUtils.convertDate(d.date),s.startDate)»
 										«val endingDate = computeDate(ProgramUtils.convertDate(d.date),s.endDate)»
-										start : "«hourFormat.format(startingDate)»",
-										end : "«hourFormat.format(endingDate)»",
-										rowSpan : «computeSessionLength(s.startDate, s.endDate)»,
-										icalStart : "«icalFormat.format(startingDate)»",
-										icalEnd : "«icalFormat.format(endingDate)»",
-										room : "«s_cast.room.name»",
-										events : [
+										"start" : "«hourFormat.format(startingDate)»",
+										"end" : "«hourFormat.format(endingDate)»",
+										"rowSpan" : «computeSessionLength(s.startDate, s.endDate)»,
+										"icalStart" : "«icalFormat.format(startingDate)»",
+										"icalEnd" : "«icalFormat.format(endingDate)»",
+										"room" : "«s_cast.room.name»",
+										"events" : [
 											«val events = s_cast.events»
 											«IF events != null»
 											«FOR e : events SEPARATOR ","»

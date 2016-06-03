@@ -10,11 +10,13 @@
                 <h1 class="title">MODELS 2016 - Program</h1>
             </div>
 
+
             <div class="checkbox">
-                <label><input type="checkbox" ng-model="showFavorites" ng-change="toggleFavorites()"> Show only <span class="glyphicon glyphicon-star"></span></label>
+                <label class="checkbox-inline"><input type="checkbox" ng-model="showFavorites" ng-change="toggleFavorites()"> Show only <span class="glyphicon glyphicon-star"></span></label>
                 <button class="btn btn-default" ng-click="generateIcal()">Export <span class="glyphicon glyphicon-star"></span> to iCal</button>
                 <a class="btn btn-default" href='@routes.ProgramController.getCompleteIcal()' download="models.ics">Export all to iCal</a>
             </div>
+
 
                 <!-- Modal for more info on talk -->
             <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -51,6 +53,17 @@
                                 <span ng-repeat="author in selectedTalk.authors">{{$index > 0 ? ", " : ""}}<a ng-if="author.email" ng-href="mailto:{{author.email}}">{{author.name}}</a><span ng-if="!author.email">{{author.name}}</span></span>
                             </div>
 
+                                <!-- Speaker -->
+                            <div ng-if="selectedTalk.speaker">
+                                <strong>Speaker:</strong> {{selectedTalk.speaker.name}}
+                            </div>
+
+                                <!-- Homepage -->
+                            <div ng-if="selectedTalk.speaker.homepage">
+                                <strong>Homepage:</strong> <a ng-href="{{selectedTalk.speaker.homepage}}">{{selectedTalk.speaker.homepage}}</a>
+                            </div>
+
+                                <!-- Website -->
                             <div ng-if="selectedTalk.url">
                                 <strong>Website:</strong> <a ng-href="{{selectedTalk.url}}">{{selectedTalk.url}}</a>
                             </div>
@@ -79,10 +92,13 @@
                         </thead>
 
                         <tbody>
-                            <tr ng-repeat="sessionGroup in day.sessionGroups">
+                            <tr ng-repeat="sessionGroup in day.sessionGroups" ng-init="sessionGroupIndex = $index">
                                 <td ng-if="sessionGroup.length > 0" ng-repeat="session in sessionGroup" rowspan="{{session.rowSpan}}">
-                                    <div ng-if="$index == 0">
+                                    <div class="session" ng-if="$first" style="height: {{20*session.rowSpan}}px;">
                                         {{getStartOfSessionGroup(sessionGroup)}}
+                                        <div class="sessionEnd">
+                                            {{sessionGroupIndex + session.rowSpan === day.sessionGroups.length ? getEndOfSessionGroup(sessionGroup) : ""}}
+                                        </div>
                                     </div>
 
                                     <table class="table table-condensed" ng-if="$index > 0 && session.events">
@@ -93,9 +109,10 @@
                                                 <div ng-if="event.title && !event.papers" ng-show="!showFavorites || (showFavorites && event.selected)"  >
 
 
-                                                    <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(event, session.icalStart)" ng-if="event.type != 'CoffeeBreak' && event.type != 'Lunch' ">{{event.title}}</a>
-                                                    <span ng-if="event.type == 'CoffeeBreak' || event.type == 'Lunch' ">{{event.title}}</span>
-                                                    <button class="start btn btn-link btn-xs" ng-click="toggleFavoriteTalk(event, session.icalStart)" ng-if="event.type != 'CoffeeBreak' && event.type != 'Lunch' ">
+                                                    <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(event, session.icalStart)" ng-if="event.type !== 'Keynote' && showModalAndStar(event.type)">{{event.title}}</a>
+                                                    <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(event, session.icalStart)" ng-if="event.type === 'Keynote'">Keynote: {{event.speaker.name}}</a>
+                                                    <span ng-if="!showModalAndStar(event.type)">{{event.title}}</span>
+                                                    <button class="start btn btn-link btn-xs" ng-click="toggleFavoriteTalk(event, session.icalStart)" ng-if="showModalAndStar(event.type)">
                                                         <span ng-if="event.selected" class="glyphicon glyphicon-star"></span>
                                                         <span ng-if="!event.selected" class="glyphicon glyphicon-star-empty"></span>
                                                     </button>
@@ -127,8 +144,35 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-sm-2 col-md-2">
+                    <div class="row"><strong>Legend:</strong></div>
+                    <div class="row legend Opening">Opening</div>
+                    <div class="row legend Keynote">Keynote</div>
+                    <div class="row legend TalkSession">Talk Session</div>
+
+                    <div class="row legend Workshop">Workshop</div>
+                    <div class="row legend Tutorial">Tutorial</div>
+                    <div class="row legend Poster">Poster</div>
+                    <div class="row legend DoctoralSymposium">Symposium</div>
+                        <!--<div class="row legend DoctoralSymposium">Doctoral Symposium</div>-->
+                        <!--<div class="row legend EducatorSymposium">Educator Symposium</div>-->
+                    <div class="row legend SRC">Student Research Competition</div>
+
+
+
+                    <div class="row legend Panel">Panel</div>
+                    <div class="row legend Clinic">Clinic</div>
+                    <div class="row legend Meeting">Meeting</div>
+
+                        <!--<div class="row legend Reception">Reception</div>-->
+                        <!--<div class="row legend Lunch">Lunch</div>-->
+                        <!--<div class="row legend CoffeeBreak">Coffee Break</div>-->
+                </div>
+            </div>
+
             <footer class="row">
-                <p>Proudly powered by MDE techniques, including EMF, Xtext, Xtend and the GEMOC studio. Source code is available on <a href="https://github.com/gbecan/models2016-program">Github</a>.</p>
+                <p>Proudly powered by MDE techniques, including EMF, Xtext, Xtend and the GEMOC studio. Source code is available on <a href="https://github.com/diverse-project/models2016-program">Github</a>.</p>
             </footer>
         </div>
 

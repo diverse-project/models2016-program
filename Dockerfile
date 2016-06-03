@@ -1,7 +1,7 @@
 FROM java:latest
 
 
-ADD ./server/target/universal/models2016-program*.zip .
+COPY ./server/target/universal/models2016-program*.zip .
 RUN unzip *.zip && rm *.zip && mv models2016-program* server
 WORKDIR server
 

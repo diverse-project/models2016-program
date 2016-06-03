@@ -1,12 +1,8 @@
 var modelsApp = angular.module("models-app", []);
 
-modelsApp.controller("ProgramController", function($scope, $http) {
+modelsApp.controller("ProgramController", function($scope, $window, $http) {
 
     // Utils
-    $scope.getStartOfSessionGroup = function(sessionGroup) {
-        return sessionGroup[0].start;
-    };
-
     function parseTime(time) {
         var splittedTime = time.split(":");
         return {
@@ -15,8 +11,34 @@ modelsApp.controller("ProgramController", function($scope, $http) {
         }
     }
 
+    $scope.getStartOfSessionGroup = function(sessionGroup) {
+        return sessionGroup[0].start;
+    };
+
+    $scope.getEndOfSessionGroup = function(sessionGroup) {
+        var maxEnd = "00:00";
+        sessionGroup.forEach(function(session) {
+            if (typeof session.end !== "undefined") {
+                var parsedSessionEnd = parseTime(session.end);
+                var parsedMaxEnd = parseTime(maxEnd);
+                if (parsedSessionEnd.hour > parsedMaxEnd.hour || (parsedSessionEnd.hour == parsedMaxEnd.hour && parsedSessionEnd.minutes > parsedMaxEnd.minutes)) {
+                    maxEnd = session.end;
+                }
+            }
+        });
+        return maxEnd;
+    };
+
+
+    var hiddenTypes = ["Poster", "SRC", "DoctoralSymposium", "Clinic", "EducatorSymposium", "Reception", "Opening"];
+
     $scope.hideType = function(talkType) {
-        return typeof talkType === "undefined" || ["Poster", "SRC", "DoctoralSymposium", "Clinic"].indexOf(talkType) !== -1
+        return typeof talkType === "undefined" || hiddenTypes.indexOf(talkType) !== -1
+    };
+
+    var hiddenModalsAndStars = ["Lunch", "CoffeeBreak", "Reception"];
+    $scope.showModalAndStar = function(talkType) {
+        return typeof talkType !== "undefined" && hiddenModalsAndStars.indexOf(talkType) === -1
     };
 
     ////// Preprocess data //////
@@ -24,21 +46,6 @@ modelsApp.controller("ProgramController", function($scope, $http) {
     $scope.data = data;
 
     ////// Favorites /////
-
-    function updateFavoriteTalksUrl() {
-        var url = "models.ics";
-        var favorites = [];
-        for (var talk in $scope.favoriteTalks) {
-            if ($scope.favoriteTalks.hasOwnProperty(talk) && $scope.favoriteTalks[talk]) {
-                favorites.push(talk);
-            }
-        }
-        if (favorites.length > 0) {
-            url += "?favorites=" + encodeURIComponent(favorites.join(","));
-        }
-
-        $scope.favoriteTalksUrl = url;
-    }
 
     $scope.showFavorites = localStorage.getItem("showFavorites") === "true";
 
@@ -70,8 +77,6 @@ modelsApp.controller("ProgramController", function($scope, $http) {
         });
     });
 
-    updateFavoriteTalksUrl();
-
     $scope.toggleFavorites = function() {
         localStorage.setItem("showFavorites", $scope.showFavorites);
     };
@@ -79,8 +84,6 @@ modelsApp.controller("ProgramController", function($scope, $http) {
     $scope.toggleFavoriteTalk = function(talk, date) {
         talk.selected=!talk.selected;
         $scope.favoriteTalks[talk.title + date] = talk.selected;
-
-        updateFavoriteTalksUrl();
 
         if(typeof(Storage) !== "undefined") {
             localStorage.setItem("favoriteTalks", JSON.stringify($scope.favoriteTalks));
@@ -99,6 +102,7 @@ modelsApp.controller("ProgramController", function($scope, $http) {
 
         return !$scope.showFavorites || ($scope.showFavorites && atLeastOneSelected);
     };
+
 
 
     ///// Export to iCal /////
@@ -140,9 +144,7 @@ modelsApp.controller("ProgramController", function($scope, $http) {
     //     calendar.push("SUMMARY:" + title); // TODO : max line is 75 characters
     //     calendar.push("END:VEVENT");
     // }
-
-
-
+    //
     // $scope.exportToCal = function(favoritesOnly) {
     //
     //     // Create calendar
@@ -192,12 +194,24 @@ modelsApp.controller("ProgramController", function($scope, $http) {
     //     }
     //     else{
     //         var elem = window.document.createElement('a');
-    //         // elem.href = window.URL.createObjectURL(blob);
-    //         elem.href = inlinedDataUrl;
+    //
+    //         if (window.URL) {
+    //             elem.href = window.URL.createObjectURL(blob);
+    //         } else {
+    //             elem.href = window.webkitURL.createObjectURL(blob);
+    //         }
+    //         // elem.href = inlinedDataUrl;
     //         elem.download = filename;
     //         document.body.appendChild(elem);
     //         elem.click();
     //         document.body.removeChild(elem);
+    //
+    //         // var reader = new FileReader();
+    //         // reader.onloadend = function(e) {
+    //         //     console.log(reader);
+    //         //     $window.open(reader.result);
+    //         // };
+    //         // reader.readAsDataURL(blob); //
     //     }
     // };
 
@@ -205,8 +219,34 @@ modelsApp.controller("ProgramController", function($scope, $http) {
     $scope.getInfo = function(talk, date) {
         $scope.selectedTalk = talk;
         $scope.selectedTalkDate = date;
-    };
-
-
-
+    }
 });
+
+
+    // function updateFavoriteTalksUrl() {
+    //     var url = "models.ics";
+    //     var favorites = [];
+    //     for (var talk in $scope.favoriteTalks) {
+    //         if ($scope.favoriteTalks.hasOwnProperty(talk) && $scope.favoriteTalks[talk]) {
+    //             favorites.push(talk);
+    //         }
+    //     }
+    //     if (favorites.length > 0) {
+    //         url += "?favorites=" + encodeURIComponent(favorites.join(","));
+    //     }
+    //
+    //     $scope.favoriteTalksUrl = url;
+    // }
+
+    // updateFavoriteTalksUrl();
+
+    // $scope.toggleFavoriteTalk = function(talk, date) {
+    //     talk.selected=!talk.selected;
+    //     $scope.favoriteTalks[talk.title + date] = talk.selected;
+    //
+    //     updateFavoriteTalksUrl();
+    //
+    //     if(typeof(Storage) !== "undefined") {
+    //         localStorage.setItem("favoriteTalks", JSON.stringify($scope.favoriteTalks));
+    //     }
+    // };

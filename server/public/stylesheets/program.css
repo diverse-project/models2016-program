@@ -18,6 +18,10 @@ body {
 
 /* Table style */
 
+.table-responsive {
+    overflow-x: scroll;
+}
+
 .table {
 
 }
@@ -35,7 +39,7 @@ body {
 }
 
 .table td {
-    min-width: 100px;
+    min-width: 130px;
     max-width: 300px;
     word-wrap: break-word;
     padding: 2px !important;
@@ -56,6 +60,7 @@ body {
     border: none;
     padding: 2px;
     border-radius: 6px;
+    min-width: 10px;
 }
 
 .table .table td:not(:last-child) {
@@ -64,6 +69,15 @@ body {
 
 .sessionColumn {
 
+}
+
+.session {
+    position: relative;
+}
+
+.sessionEnd {
+    position: absolute;
+    bottom: 0;
 }
 
 
@@ -97,9 +111,13 @@ hr {
 
 /* Type of events */
 
+.legend {
+    text-align: left !important;
+    margin-top: 2px;
+}
+
 .TalkSession {
-    background-color: rgba(173, 255, 47, 0.5);
-    /*background-color: greenyellow;*/
+    background-color: rgba(68, 255, 28, 0.5);
 }
 
 .Panel {
@@ -115,7 +133,7 @@ hr {
 }
 
 .DoctoralSymposium {
-    background-color: rgba(162, 53, 255, 0.5);
+    background-color: rgba(119, 61, 255, 0.5);
 }
 
 .EducatorSymposium {
@@ -123,35 +141,40 @@ hr {
 }
 
 .Reception {
-    background-color: rgba(61, 188, 255, 0.5);
+    background-color: rgba(200, 200, 200, 0.5);
+    text-align: center;
+}
+
+.Lunch {
+    background-color: rgba(200, 200, 200, 0.5);
+    text-align: center;
+}
+
+.CoffeeBreak {
+    background-color: rgba(200, 200, 200, 0.5);
+    text-align: center;
 }
 
 .Clinic {
     background-color: rgba(54, 255, 225, 0.5);
 }
 
-.Lunch {
-    background-color: rgba(176, 180, 178, 0.5);
-    text-align: center;
-}
-
-.CoffeeBreak {
-    background-color: rgba(176, 180, 178, 0.5);
-    text-align: center;
-}
-
 .SRC {
-    background-color: rgba(41, 150, 180, 0.5);
+    background-color: rgba(174, 255, 35, 0.5);
 }
 
 .Poster {
-    background-color: rgba(41, 150, 180, 0.5);
+    background-color: rgba(34, 180, 31, 0.5);
 }
 
 .Keynote {
-    background-color: rgba(41, 150, 180, 0.5);
+    background-color: rgba(255, 13, 1, 0.5);
 }
 
 .Meeting {
+    background-color: rgba(150, 150, 150, 0.5);
+}
+
+.Opening {
     background-color: rgba(41, 150, 180, 0.5);
 }
