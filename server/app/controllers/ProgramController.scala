@@ -20,7 +20,7 @@ import scala.io.Source
 class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSystem)(implicit ec:ExecutionContext) extends Controller {
 
   val programDataFile = new File("public/javascripts/data.js")
-  val programData = Source.fromFile(programDataFile).mkString.substring("var data = ".size)
+  val programData = Json.parse(Source.fromFile(programDataFile).mkString.substring("var data = ".size))
   val customCalendars : mutable.Map[String, String] = mutable.Map.empty
 
   def index = Action {
@@ -28,15 +28,27 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSyst
   }
 
 
-  def generateIcalContent(data : Option[JsValue]): String = {
+  def generateIcalEvent(start: String, end: String, title: String, description: String, location: String) : List[String] = {
+    var event = List.empty[String]
+    event ::= "BEGIN:VEVENT"
+    event ::= "DTSTART:" + start
+    event ::= "DTEND:" + end
+    event ::= "DTSTAMP:" + start
+    event ::= "ORGANIZER;CN=models2016-gc@inria.fr:mailto:models2016-gc@inria.fr"
+    event ::= "UID:" + start + "-"  + title.hashCode + "@models.irisa.fr"
+    event ::= "DESCRIPTION:" + description // TODO : max line is 75 characters
+    event ::= "LOCATION:" + location
+    event ::= "SUMMARY:" + title // TODO : max line is 75 characters
+    event ::= "END:VEVENT"
+    event
+  }
+
+
+  def generateIcalCalendar(data : Option[JsValue]): String = {
     var ical = List.empty[String]
 
-    val mapper = play.libs.Json.newDefaultMapper().enable(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES)
-    play.libs.Json.setObjectMapper(mapper)
-
-//    val program = play.libs.Json.parse(programData)
-
-    val program = data.getOrElse(Json.parse(programData))
+    val favoritesOnly = data.isDefined
+    val program = data.getOrElse(programData)
     val days = program.as[List[JsObject]]
 
     ical ::= "BEGIN:VCALENDAR"
@@ -44,63 +56,48 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSyst
     ical ::= "PRODID:-//MODELS2016//Program"
 
     for (day <- days) {
-      println(day)
+      val sessionGroups = (day \ "sessionGroups").get.as[List[List[JsObject]]]
+
+      for (sessionGroup <- sessionGroups if sessionGroup.nonEmpty) {
+        for (session <- sessionGroup) {
+
+          val events = (session \ "events").asOpt[List[JsObject]]
+          if (events.isDefined) {
+            for (event <- events.get) {
+              val papers = (event \ "papers").asOpt[List[JsObject]]
+              if (papers.isDefined) {
+                for (paper <- papers.get) {
+                  val selected = (paper \ "selected").asOpt[Boolean].getOrElse(false)
+                  if (!favoritesOnly || selected) {
+                    val start = (paper \ "icalStart").as[String]
+                    val end = (paper \ "icalEnd").as[String]
+                    val title = (paper \ "title").as[String]
+                    val room = (session \ "room").as[String]
+                    ical :::= generateIcalEvent(start, end, title, title, room); // TODO : description
+                  }
+                }
+              } else {
+                val selected = (event \ "selected").asOpt[Boolean].getOrElse(false)
+                if (!favoritesOnly || selected) {
+                  val start = (session \ "icalStart").as[String]
+                  val end = (session \ "icalEnd").as[String]
+                  val title = (event \ "title").as[String]
+                  val room = (session \ "room").as[String]
+                  ical :::= generateIcalEvent(start, end, title, title, room); // TODO : description
+                }
+              }
+            }
+          }
+        }
+      }
     }
-
-
-    //     $scope.data.forEach(function(day) {
-    //
-    //         day.sessionGroups.forEach(function(sessionGroup) {
-    //             if (sessionGroup.length > 0) {
-    //                 sessionGroup.forEach(function (session, roomIndex) {
-    //                     if (typeof session.events !== "undefined") {
-    //                         session.events.forEach(function (event, eventIndex) {
-    //
-    //                             if (typeof event.papers === "undefined") {
-    //
-    //                                 if (!favoritesOnly || ((typeof event.selected !== "undefined") && event.selected === true)) {
-    //                                     createEvent(calendar, session.icalStart, session.icalEnd, event.title, event.title, session.room); // TODO : description
-    //                                 }
-    //                             } else {
-    //                                 event.papers.forEach(function(talk, talkIndex) {
-    //                                     if (!favoritesOnly || ((typeof talk.selected !== "undefined") && talk.selected === true)) {
-    //                                         createEvent(calendar, talk.icalStart, talk.icalEnd, talk.title, talk.title, session.room); // TODO : description
-    //                                     }
-    //                                 });
-    //                             }
-    //
-    //
-    //                         });
-    //                     }
-    //                 });
-    //             }
-    //         });
-    //     });
-
-
-    // function createEvent(calendar, start, end, title, description, location) {
-    //     calendar.push("BEGIN:VEVENT");
-    //     calendar.push("DTSTART:" + start);
-    //     calendar.push("DTEND:" + end);
-    //     calendar.push("DTSTAMP:" + start);
-    //     calendar.push("ORGANIZER;CN=models2016-gc@inria.fr:mailto:models2016-gc@inria.fr");
-    //     calendar.push("UID:" + start + "-"  + hash(title) + "@models.irisa.fr");
-    //     calendar.push("DESCRIPTION:" + description); // TODO : max line is 75 characters
-    //     calendar.push("LOCATION:" + location);
-    //     calendar.push("SUMMARY:" + title); // TODO : max line is 75 characters
-    //     calendar.push("END:VEVENT");
-
-    ical ::= "BEGIN:VEVENT"
-
-
-    ical ::= "END:VEVENT"
 
     ical ::= "END:VCALENDAR"
     ical.reverse.mkString("\n")
   }
 
   def getCompleteIcal() = Action {
-    Ok(generateIcalContent(None)).withHeaders("type" -> "text/calendar")
+    Ok(generateIcalCalendar(None)).withHeaders("type" -> "text/calendar")
   }
 
 
@@ -108,7 +105,7 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSyst
     request.body.asJson.map { data =>
 
       val id = UUID.randomUUID().toString
-      val ical = generateIcalContent(Some(data))
+      val ical = generateIcalCalendar(Some(data))
       customCalendars.put(id, ical)
 
       Future.successful(Ok(id))
@@ -128,10 +125,10 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSyst
 
     customCalendars.get(id).map { customCalendar =>
       if (android) {
-          akka.pattern.after(3.minutes, using = system.scheduler)(Future{
-            customCalendars.remove(id) // FIXME : not thread safe
-            println("removed")
-          })
+        akka.pattern.after(3.minutes, using = system.scheduler)(Future{
+          customCalendars.remove(id) // FIXME : not thread safe
+          println("removed")
+        })
       } else {
         customCalendars.remove(id) // FIXME : not thread safe
       }
