@@ -49,17 +49,16 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSyst
   }
 
 
-  def generateIcalCalendar(data : Option[JsValue]): String = {
+  def generateIcalCalendar(favoriteEvents : Option[JsValue]): String = {
+    val favorites = favoriteEvents.map{m => m.as[Map[String, Boolean]]}
+
     var ical = List.empty[String]
-
-    val favoritesOnly = data.isDefined
-    val program = data.getOrElse(programData)
-    val days = program.as[List[JsObject]]
-
     ical ::= "BEGIN:VCALENDAR"
     ical ::= "VERSION:2.0"
     ical ::= "PRODID:-//MODELS2016//Program"
 
+    val days = programData.as[List[JsObject]]
+      
     for (day <- days) {
       val sessionGroups = (day \ "sessionGroups").get.as[List[List[JsObject]]]
 
@@ -73,20 +72,24 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSyst
               if (papers.isDefined) {
                 for (paper <- papers.get) {
                   val selected = (paper \ "selected").asOpt[Boolean].getOrElse(false)
-                  if (!favoritesOnly || selected) {
-                    val start = (paper \ "icalStart").as[String]
+                  val start = (paper \ "icalStart").as[String]
+                  val title = (paper \ "title").as[String]
+
+                  if (!favorites.isDefined || favorites.get.getOrElse(title + start, false)) {
+
                     val end = (paper \ "icalEnd").as[String]
-                    val title = (paper \ "title").as[String]
+
                     val room = (session \ "room").as[String]
                     ical :::= generateIcalEvent(start, end, title, title, room); // TODO : description
                   }
                 }
               } else {
-                val selected = (event \ "selected").asOpt[Boolean].getOrElse(false)
-                if (!favoritesOnly || selected) {
-                  val start = (session \ "icalStart").as[String]
+                val start = (session \ "icalStart").as[String]
+                val title = (event \ "title").as[String]
+                if (!favorites.isDefined || favorites.get.getOrElse(title + start, false)) {
+
                   val end = (session \ "icalEnd").as[String]
-                  val title = (event \ "title").as[String]
+
                   val room = (session \ "room").as[String]
                   ical :::= generateIcalEvent(start, end, title, title, room); // TODO : description
                 }

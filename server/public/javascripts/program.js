@@ -107,7 +107,7 @@ modelsApp.controller("ProgramController", function($scope, $window, $http) {
 
     ///// Export to iCal /////
     $scope.generateIcal = function() {
-        $http.post("/generateIcal", $scope.data).then(function(response) {
+        $http.post("/generateIcal", $scope.favoriteTalks).then(function(response) {
             var elem = window.document.createElement('a');
             // elem.href = "/testmodels.ics?id=" + response.data;
             elem.href="/" + response.data + "/models.ics";
