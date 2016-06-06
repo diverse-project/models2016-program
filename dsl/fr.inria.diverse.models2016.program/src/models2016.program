@@ -142,7 +142,7 @@ As satellite event of MoDELS, the goal of ModComp’16 is to gather researchers 
 			
 		Workshop "OSS4MDE"
 			abstract "Just like the previous versions of the workshop, OSS4MDE’16 workshop will bring together researchers, educators and industry representatives interested in modeling and MDE with open source tools. However, compared to previous incarnations, OSS4MDE’16 will be less formal and more interactive, and place more emphasis on promoting open source by inspiring and encouraging potential users and contributors, and supporting existing users and contributors."
-			url "http://www.cs.queensu.ca/oss4mde"
+			url "http://mase.cs.queensu.ca/oss4mde"
 			name "2nd International Workshop on Open Source Software for Model Driven Engineering"
 			organizers 
 				"Juergen Dingel" email "dingel@cs.queensu.ca", 

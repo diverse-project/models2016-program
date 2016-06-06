@@ -58,7 +58,7 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSyst
     ical ::= "PRODID:-//MODELS2016//Program"
 
     val days = programData.as[List[JsObject]]
-      
+
     for (day <- days) {
       val sessionGroups = (day \ "sessionGroups").get.as[List[List[JsObject]]]
 
@@ -71,27 +71,24 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSyst
               val papers = (event \ "papers").asOpt[List[JsObject]]
               if (papers.isDefined) {
                 for (paper <- papers.get) {
-                  val selected = (paper \ "selected").asOpt[Boolean].getOrElse(false)
                   val start = (paper \ "icalStart").as[String]
                   val title = (paper \ "title").as[String]
 
-                  if (!favorites.isDefined || favorites.get.getOrElse(title + start, false)) {
-
+                  if (favorites.isEmpty || favorites.get.getOrElse(title + start, false)) {
                     val end = (paper \ "icalEnd").as[String]
-
                     val room = (session \ "room").as[String]
-                    ical :::= generateIcalEvent(start, end, title, title, room); // TODO : description
+                    val description = title // TODO : description
+                    ical :::= generateIcalEvent(start, end, title, description, room)
                   }
                 }
               } else {
                 val start = (session \ "icalStart").as[String]
                 val title = (event \ "title").as[String]
-                if (!favorites.isDefined || favorites.get.getOrElse(title + start, false)) {
-
+                if (favorites.isEmpty || favorites.get.getOrElse(title + start, false)) {
                   val end = (session \ "icalEnd").as[String]
-
                   val room = (session \ "room").as[String]
-                  ical :::= generateIcalEvent(start, end, title, title, room); // TODO : description
+                  val description = title // TODO : description
+                  ical :::= generateIcalEvent(start, end, title, description, room)
                 }
               }
             }
