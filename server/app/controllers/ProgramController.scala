@@ -77,7 +77,8 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSyst
                   if (favorites.isEmpty || favorites.get.getOrElse(title + start, false)) {
                     val end = (paper \ "icalEnd").as[String]
                     val room = (session \ "room").as[String]
-                    val description = title // TODO : description
+                    val paperAbstract = (paper \ "abstract").asOpt[String]
+                    val description = paperAbstract.getOrElse(title)
                     ical :::= generateIcalEvent(start, end, title, description, room)
                   }
                 }
@@ -87,7 +88,8 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSyst
                 if (favorites.isEmpty || favorites.get.getOrElse(title + start, false)) {
                   val end = (session \ "icalEnd").as[String]
                   val room = (session \ "room").as[String]
-                  val description = title // TODO : description
+                  val eventAbstract = (event \ "abstract").asOpt[String]
+                  val description = eventAbstract.getOrElse(title)
                   ical :::= generateIcalEvent(start, end, title, description, room)
                 }
               }
