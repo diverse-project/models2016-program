@@ -16,17 +16,7 @@ modelsApp.controller("ProgramController", function($scope, $window, $http) {
     };
 
     $scope.getEndOfSessionGroup = function(sessionGroup) {
-        var maxEnd = "00:00";
-        sessionGroup.forEach(function(session) {
-            if (typeof session.end !== "undefined") {
-                var parsedSessionEnd = parseTime(session.end);
-                var parsedMaxEnd = parseTime(maxEnd);
-                if (parsedSessionEnd.hour > parsedMaxEnd.hour || (parsedSessionEnd.hour == parsedMaxEnd.hour && parsedSessionEnd.minutes > parsedMaxEnd.minutes)) {
-                    maxEnd = session.end;
-                }
-            }
-        });
-        return maxEnd;
+        return sessionGroup[0].end;
     };
 
 

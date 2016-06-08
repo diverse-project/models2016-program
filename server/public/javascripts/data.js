@@ -45,6 +45,7 @@ var data = [
 			[
 				{
 					"start" : "09:00",
+					"end" : "10:30",
 					"rowSpan" : 6
 				},
 				{
@@ -273,6 +274,7 @@ var data = [
 			[
 				{
 					"start" : "10:30",
+					"end" : "11:00",
 					"rowSpan" : 2
 				},
 				{
@@ -321,6 +323,7 @@ var data = [
 			[
 				{
 					"start" : "11:00",
+					"end" : "12:30",
 					"rowSpan" : 6
 				},
 				{
@@ -549,6 +552,7 @@ var data = [
 			[
 				{
 					"start" : "12:30",
+					"end" : "14:00",
 					"rowSpan" : 6
 				},
 				{
@@ -601,6 +605,7 @@ var data = [
 			[
 				{
 					"start" : "14:00",
+					"end" : "15:30",
 					"rowSpan" : 6
 				},
 				{
@@ -820,6 +825,7 @@ var data = [
 			[
 				{
 					"start" : "15:30",
+					"end" : "16:00",
 					"rowSpan" : 2
 				},
 				{
@@ -868,6 +874,7 @@ var data = [
 			[
 				{
 					"start" : "16:00",
+					"end" : "17:30",
 					"rowSpan" : 6
 				},
 				{
@@ -1135,6 +1142,7 @@ var data = [
 			[
 				{
 					"start" : "09:00",
+					"end" : "10:30",
 					"rowSpan" : 6
 				},
 				{
@@ -1383,6 +1391,7 @@ var data = [
 			[
 				{
 					"start" : "10:30",
+					"end" : "11:00",
 					"rowSpan" : 2
 				},
 				{
@@ -1442,6 +1451,7 @@ var data = [
 			[
 				{
 					"start" : "11:00",
+					"end" : "12:30",
 					"rowSpan" : 6
 				},
 				{
@@ -1690,6 +1700,7 @@ var data = [
 			[
 				{
 					"start" : "12:30",
+					"end" : "14:00",
 					"rowSpan" : 6
 				},
 				{
@@ -1745,6 +1756,7 @@ var data = [
 			[
 				{
 					"start" : "14:00",
+					"end" : "15:30",
 					"rowSpan" : 6
 				},
 				{
@@ -1993,6 +2005,7 @@ var data = [
 			[
 				{
 					"start" : "15:30",
+					"end" : "16:00",
 					"rowSpan" : 2
 				},
 				{
@@ -2052,6 +2065,7 @@ var data = [
 			[
 				{
 					"start" : "16:00",
+					"end" : "17:30",
 					"rowSpan" : 6
 				},
 				{
@@ -2300,7 +2314,8 @@ var data = [
 			[
 				{
 					"start" : "17:30",
-					"rowSpan" : 2
+					"end" : "19:00",
+					"rowSpan" : 6
 				},
 				{
 					"start" : "17:30",
@@ -2317,6 +2332,51 @@ var data = [
 					]
 				},
 				{
+					"rowSpan" : 6
+				},
+				{
+					"rowSpan" : 6
+				},
+				{
+					"rowSpan" : 6
+				},
+				{
+					"rowSpan" : 6
+				},
+				{
+					"rowSpan" : 6
+				},
+				{
+					"rowSpan" : 6
+				},
+				{
+					"rowSpan" : 6
+				},
+				{
+					"rowSpan" : 6
+				},
+				{
+					"rowSpan" : 6
+				},
+				{
+					"rowSpan" : 6
+				}
+			],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[
+				{
+					"start" : "19:00",
+					"end" : "19:30",
+					"rowSpan" : 2
+				},
+				{
+					"rowSpan" : 2
+				},
+				{
 					"rowSpan" : 2
 				},
 				{
@@ -2350,42 +2410,46 @@ var data = [
 			[],
 			[
 				{
-					"start" : "18:00",
-					"rowSpan" : 4
+					"start" : "19:30",
+					"end" : "22:00",
+					"rowSpan" : 10
 				},
 				{
-					"rowSpan" : 4
+					"rowSpan" : 10
 				},
 				{
-					"rowSpan" : 4
+					"rowSpan" : 10
 				},
 				{
-					"rowSpan" : 4
+					"rowSpan" : 10
 				},
 				{
-					"rowSpan" : 4
+					"rowSpan" : 10
 				},
 				{
-					"rowSpan" : 4
+					"rowSpan" : 10
 				},
 				{
-					"rowSpan" : 4
+					"rowSpan" : 10
 				},
 				{
-					"rowSpan" : 4
+					"rowSpan" : 10
 				},
 				{
-					"rowSpan" : 4
+					"rowSpan" : 10
 				},
 				{
-					"rowSpan" : 4
+					"rowSpan" : 10
 				},
 				{
-					"start" : "18:00",
-					"end" : "20:00",
-					"rowSpan" : 8,
-					"icalStart" : "20161003T160000Z",
-					"icalEnd" : "20161003T180000Z",
+					"rowSpan" : 10
+				},
+				{
+					"start" : "19:30",
+					"end" : "22:00",
+					"rowSpan" : 10,
+					"icalStart" : "20161003T173000Z",
+					"icalEnd" : "20161003T200000Z",
 					"room" : "Grand Large",
 					"events" : [
 						{
@@ -2398,42 +2462,9 @@ var data = [
 			[],
 			[],
 			[],
-			[
-				{
-					"start" : "19:00",
-					"rowSpan" : 4
-				},
-				{
-					"rowSpan" : 4
-				},
-				{
-					"rowSpan" : 4
-				},
-				{
-					"rowSpan" : 4
-				},
-				{
-					"rowSpan" : 4
-				},
-				{
-					"rowSpan" : 4
-				},
-				{
-					"rowSpan" : 4
-				},
-				{
-					"rowSpan" : 4
-				},
-				{
-					"rowSpan" : 4
-				},
-				{
-					"rowSpan" : 4
-				},
-				{
-					"rowSpan" : 4
-				}
-			],
+			[],
+			[],
+			[],
 			[],
 			[],
 			[]
@@ -2485,6 +2516,7 @@ var data = [
 			[
 				{
 					"start" : "09:00",
+					"end" : "10:30",
 					"rowSpan" : 6
 				},
 				{
@@ -2697,6 +2729,7 @@ var data = [
 			[
 				{
 					"start" : "10:30",
+					"end" : "11:00",
 					"rowSpan" : 2
 				},
 				{
@@ -2745,6 +2778,7 @@ var data = [
 			[
 				{
 					"start" : "11:00",
+					"end" : "12:30",
 					"rowSpan" : 6
 				},
 				{
@@ -2957,6 +2991,7 @@ var data = [
 			[
 				{
 					"start" : "12:30",
+					"end" : "14:00",
 					"rowSpan" : 6
 				},
 				{
@@ -3009,6 +3044,7 @@ var data = [
 			[
 				{
 					"start" : "14:00",
+					"end" : "15:30",
 					"rowSpan" : 6
 				},
 				{
@@ -3232,6 +3268,7 @@ var data = [
 			[
 				{
 					"start" : "15:30",
+					"end" : "16:00",
 					"rowSpan" : 2
 				},
 				{
@@ -3280,6 +3317,7 @@ var data = [
 			[
 				{
 					"start" : "16:00",
+					"end" : "17:30",
 					"rowSpan" : 6
 				},
 				{
@@ -3524,6 +3562,7 @@ var data = [
 			[
 				{
 					"start" : "08:45",
+					"end" : "09:00",
 					"rowSpan" : 1
 				},
 				{
@@ -3553,6 +3592,7 @@ var data = [
 			[
 				{
 					"start" : "09:00",
+					"end" : "09:15",
 					"rowSpan" : 1
 				},
 				{
@@ -3582,6 +3622,7 @@ var data = [
 			[
 				{
 					"start" : "09:15",
+					"end" : "10:30",
 					"rowSpan" : 5
 				},
 				{
@@ -3621,6 +3662,7 @@ var data = [
 			[
 				{
 					"start" : "10:30",
+					"end" : "11:00",
 					"rowSpan" : 2
 				},
 				{
@@ -3662,6 +3704,7 @@ var data = [
 			[
 				{
 					"start" : "11:00",
+					"end" : "12:30",
 					"rowSpan" : 6
 				},
 				{
@@ -3685,6 +3728,7 @@ var data = [
 			[
 				{
 					"start" : "12:30",
+					"end" : "14:00",
 					"rowSpan" : 6
 				},
 				{
@@ -3719,6 +3763,7 @@ var data = [
 			[
 				{
 					"start" : "14:00",
+					"end" : "15:30",
 					"rowSpan" : 6
 				},
 				{
@@ -3742,6 +3787,7 @@ var data = [
 			[
 				{
 					"start" : "15:30",
+					"end" : "16:00",
 					"rowSpan" : 2
 				},
 				{
@@ -3783,6 +3829,7 @@ var data = [
 			[
 				{
 					"start" : "16:00",
+					"end" : "17:30",
 					"rowSpan" : 6
 				},
 				{
@@ -3806,16 +3853,17 @@ var data = [
 			[
 				{
 					"start" : "17:30",
-					"rowSpan" : 2
+					"end" : "19:30",
+					"rowSpan" : 8
 				},
 				{
-					"rowSpan" : 2
+					"rowSpan" : 8
 				},
 				{
-					"rowSpan" : 2
+					"rowSpan" : 8
 				},
 				{
-					"rowSpan" : 2
+					"rowSpan" : 8
 				},
 				{
 					"start" : "17:30",
@@ -3833,20 +3881,27 @@ var data = [
 				}
 			],
 			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
 			[
 				{
-					"start" : "18:00",
-					"rowSpan" : 6
+					"start" : "19:30",
+					"end" : "22:00",
+					"rowSpan" : 10
 				},
 				{
-					"rowSpan" : 6
+					"rowSpan" : 10
 				},
 				{
-					"start" : "18:00",
-					"end" : "00:00",
-					"rowSpan" : 24,
-					"icalStart" : "20161005T160000Z",
-					"icalEnd" : "20161004T220000Z",
+					"start" : "19:30",
+					"end" : "22:00",
+					"rowSpan" : 10,
+					"icalStart" : "20161005T173000Z",
+					"icalEnd" : "20161005T200000Z",
 					"room" : "Grand Large",
 					"events" : [
 						{
@@ -3856,37 +3911,12 @@ var data = [
 					]
 				},
 				{
-					"rowSpan" : 6
+					"rowSpan" : 10
+				},
+				{
+					"rowSpan" : 10
 				}
 			],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[
-				{
-					"start" : "19:30",
-					"rowSpan" : 18
-				},
-				{
-					"rowSpan" : 18
-				},
-				{
-					"rowSpan" : 18
-				},
-				{
-					"rowSpan" : 18
-				}
-			],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[],
 			[],
 			[],
 			[],
@@ -3920,6 +3950,7 @@ var data = [
 			[
 				{
 					"start" : "09:00",
+					"end" : "09:15",
 					"rowSpan" : 1
 				},
 				{
@@ -3960,6 +3991,7 @@ var data = [
 			[
 				{
 					"start" : "09:15",
+					"end" : "10:30",
 					"rowSpan" : 5
 				},
 				{
@@ -3994,6 +4026,7 @@ var data = [
 			[
 				{
 					"start" : "10:30",
+					"end" : "11:00",
 					"rowSpan" : 2
 				},
 				{
@@ -4025,6 +4058,7 @@ var data = [
 			[
 				{
 					"start" : "11:00",
+					"end" : "12:30",
 					"rowSpan" : 6
 				},
 				{
@@ -4045,6 +4079,7 @@ var data = [
 			[
 				{
 					"start" : "12:30",
+					"end" : "14:00",
 					"rowSpan" : 6
 				},
 				{
@@ -4079,6 +4114,7 @@ var data = [
 			[
 				{
 					"start" : "14:00",
+					"end" : "15:30",
 					"rowSpan" : 6
 				},
 				{
@@ -4113,6 +4149,7 @@ var data = [
 			[
 				{
 					"start" : "15:30",
+					"end" : "16:00",
 					"rowSpan" : 2
 				},
 				{
@@ -4144,6 +4181,7 @@ var data = [
 			[
 				{
 					"start" : "16:00",
+					"end" : "17:30",
 					"rowSpan" : 6
 				},
 				{
@@ -4164,16 +4202,17 @@ var data = [
 			[
 				{
 					"start" : "17:30",
-					"rowSpan" : 2
+					"end" : "19:30",
+					"rowSpan" : 8
 				},
 				{
-					"rowSpan" : 2
+					"rowSpan" : 8
 				},
 				{
-					"rowSpan" : 2
+					"rowSpan" : 8
 				},
 				{
-					"rowSpan" : 2
+					"rowSpan" : 8
 				},
 				{
 					"start" : "17:30",
@@ -4191,20 +4230,27 @@ var data = [
 				}
 			],
 			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
 			[
 				{
-					"start" : "18:00",
-					"rowSpan" : 6
+					"start" : "19:30",
+					"end" : "22:00",
+					"rowSpan" : 10
 				},
 				{
-					"rowSpan" : 6
+					"rowSpan" : 10
 				},
 				{
-					"start" : "18:00",
-					"end" : "00:00",
-					"rowSpan" : 24,
-					"icalStart" : "20161006T160000Z",
-					"icalEnd" : "20161005T220000Z",
+					"start" : "19:30",
+					"end" : "22:00",
+					"rowSpan" : 10,
+					"icalStart" : "20161006T173000Z",
+					"icalEnd" : "20161006T200000Z",
 					"room" : "Grand Large",
 					"events" : [
 						{
@@ -4214,37 +4260,12 @@ var data = [
 					]
 				},
 				{
-					"rowSpan" : 6
+					"rowSpan" : 10
+				},
+				{
+					"rowSpan" : 10
 				}
 			],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[
-				{
-					"start" : "19:30",
-					"rowSpan" : 18
-				},
-				{
-					"rowSpan" : 18
-				},
-				{
-					"rowSpan" : 18
-				},
-				{
-					"rowSpan" : 18
-				}
-			],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[],
 			[],
 			[],
 			[],
@@ -4274,6 +4295,7 @@ var data = [
 			[
 				{
 					"start" : "09:00",
+					"end" : "09:15",
 					"rowSpan" : 1
 				},
 				{
@@ -4300,6 +4322,7 @@ var data = [
 			[
 				{
 					"start" : "09:15",
+					"end" : "10:30",
 					"rowSpan" : 5
 				},
 				{
@@ -4336,6 +4359,7 @@ var data = [
 			[
 				{
 					"start" : "10:30",
+					"end" : "11:00",
 					"rowSpan" : 2
 				},
 				{

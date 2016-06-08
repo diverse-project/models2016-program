@@ -473,6 +473,7 @@ class ProgramGenerator extends AbstractGenerator {
 											scheduleOfDay.lastDate
 										}»
 										"start" : "«hourFormat.format(startDate)»",
+										"end" : "«hourFormat.format(endDate)»",
 										«{rowSpan = computeSessionLength(startDate,endDate) null}»
 										"rowSpan" : «rowSpan»
 									},
