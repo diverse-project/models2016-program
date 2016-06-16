@@ -2,6 +2,10 @@
 
 The web page for the program of the [Models 2016 conference](http://models2016.irisa.fr/) is realized with MDE techniques. We developed a DSL that allow the chairs to easily enter the information of the program. From this information, we generate a JSON file. We also developed a web page that basically reads the JSON file and generates a graphical representation of the program.
 
+## Metamodel
+
+![alt text](https://github.com/diverse-project/models2016-program/raw/master/models2016.png "Conference Metamodel")
+
 ## Features
 - select favorite talks
 - export all talks to ics file
