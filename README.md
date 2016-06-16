@@ -7,9 +7,13 @@ The web page for the program of the [Models 2016 conference](http://models2016.i
 ![alt text](https://github.com/diverse-project/models2016-program/raw/master/models2016.png "Conference Metamodel")
 
 ## Features
-- select favorite talks
-- export all talks to ics file
-- export favorite talks to ics file
+
+- A DSL
+- A generative approach
+- Angular app including :
+  - select favorite talks
+  - export all talks to ics file
+  - export favorite talks to ics file
 
 ## Implementation
 The DSL is implemented with xtext and xtend (see [dsl](https://github.com/gbecan/models2016-program/tree/master/dsl) folder).
