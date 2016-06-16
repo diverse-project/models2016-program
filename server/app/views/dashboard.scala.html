@@ -1,0 +1,75 @@
+@(implicit webJarAssets: WebJarAssets)
+
+@main("MODELS Dashboard") {
+  <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/dashboard.css")' />
+  }{
+
+  <div class="container">
+
+    <h1 class="title">MODELS 2016 Dashboard</h1>
+
+    <div class="row">
+      <div class="col-md-4">
+        <h2 class="text-center">Salle 1</h2>
+        <img src='@routes.Assets.versioned("images/dashboard.gif")' width="100%">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+            <span class="sr-only">60% Complete</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h2 class="text-center">Salle 2</h2>
+        <img src='@routes.Assets.versioned("images/dashboard.gif")' width="100%">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%;">
+            <span class="sr-only">60% Complete</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h2 class="text-center">Salle 3</h2>
+        <img src='@routes.Assets.versioned("images/dashboard.gif")' width="100%">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+            <span class="sr-only">60% Complete</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <h2 class="text-center">Salle 4</h2>
+        <img src='@routes.Assets.versioned("images/dashboard.gif")' width="100%">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+            <span class="sr-only">60% Complete</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h2 class="text-center">Salle 5</h2>
+        <img src='@routes.Assets.versioned("images/dashboard.gif")' width="100%">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width: 99%;">
+            <span class="sr-only">60% Complete</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h2 class="text-center">Salle 6</h2>
+        <img src='@routes.Assets.versioned("images/dashboard.gif")' width="100%">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100" style="width: 4%;">
+            <span class="sr-only">60% Complete</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+}{
+
+}

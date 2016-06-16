@@ -1,15 +1,16 @@
-@(content: Html)(implicit webJarAssets: WebJarAssets)
+@(title: String)(header: Html)(content: Html)(footer: Html)(implicit webJarAssets: WebJarAssets)
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>MODELS 2016 Program</title>
+        <title>@title</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
         <link rel="stylesheet" href="@routes.WebJarAssets.at(webJarAssets.locate("bootstrap.min.css"))" />
-        <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/program.css")' />
+
+        @header
     </head>
     <body ng-app="models-app">
 
@@ -18,8 +19,8 @@
         <script src='@routes.WebJarAssets.at(webJarAssets.locate("jquery.min.js"))'></script>
         <script src='@routes.WebJarAssets.at(webJarAssets.locate("bootstrap.min.js"))'></script>
         <script src='@routes.WebJarAssets.at(webJarAssets.locate("angular.min.js"))'></script>
-        <script src='@routes.Assets.versioned("javascripts/data.js")'></script>
-        <script src='@routes.Assets.versioned("javascripts/program.js")'></script>
+
+        @footer
 
     </body>
 </html>

@@ -1,6 +1,8 @@
 @(implicit webJarAssets: WebJarAssets)
 
-@main{
+@main("MODELS 2016 Program"){
+    <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/program.css")' />
+}{
 
     <div ng-controller="ProgramController" ng-cloak>
 
@@ -184,4 +186,7 @@
         </div>
 
     </div>
+} {
+    <script src='@routes.Assets.versioned("javascripts/data.js")'></script>
+    <script src='@routes.Assets.versioned("javascripts/program.js")'></script>
 }
