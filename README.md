@@ -10,7 +10,7 @@ The web page for the program of the [Models 2016 conference](http://models2016.i
 
 - A DSL
 - A generative approach
-- Angular app including :
+- An angular app including :
   - select favorite talks
   - export all talks to ics file
   - export favorite talks to ics file
