@@ -8,15 +8,14 @@ The web page for the program of the [Models 2016 conference](http://models2016.i
 
 ## Features
 
-- A DSL
-- A generative approach
+- A DSL, including an Xtext-based textual editor, to design the program of a conference (ressources, events, schedule of the events over the program, and assignement of ressources to the events)
+- A generative approach to generate a JSON file tailored for the following angular app
 - An angular app including :
   - select favorite talks
   - export all talks to ics file
   - export favorite talks to ics file
 
 ## Implementation
-The DSL is implemented with xtext and xtend (see [dsl](https://github.com/gbecan/models2016-program/tree/master/dsl) folder).
-The web page is implemented with Bootstrap and AngularJS (see [index.html](https://github.com/gbecan/models2016-program/blob/master/index.html), [css/program.css](https://github.com/gbecan/models2016-program/blob/master/css/program.css) and [js/program.js](https://github.com/gbecan/models2016-program/blob/master/js/program.js) files).
+The DSL is implemented with Xtext, and the generative approach is implemented with Kermeta and xtend, all included into the GEMOC studio (see [dsl](https://github.com/gbecan/models2016-program/tree/master/dsl) folder). The web page is implemented with Bootstrap and AngularJS (see [index.html](https://github.com/gbecan/models2016-program/blob/master/index.html), [css/program.css](https://github.com/gbecan/models2016-program/blob/master/css/program.css) and [js/program.js](https://github.com/gbecan/models2016-program/blob/master/js/program.js) files).
 An example of the generated JSON file is available in [js/data.js](https://github.com/gbecan/models2016-program/blob/master/js/data.js) file.
 
