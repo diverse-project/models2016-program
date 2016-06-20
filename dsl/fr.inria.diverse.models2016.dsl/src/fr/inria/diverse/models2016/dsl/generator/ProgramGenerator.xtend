@@ -342,7 +342,12 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						"type" : "Meeting",
-						"title" : "«meeting.name»"
+						"title" : "«meeting.name»",
+						"participants" : [
+							«FOR o : meeting.participants SEPARATOR ","»
+							«getPerson(o)»
+							«ENDFOR»
+						]
 					}
 				'''
 	}

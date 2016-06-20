@@ -133,7 +133,8 @@ CoffeeBreak returns CoffeeBreak:
 Meeting returns Meeting:
 	'Meeting'
 		name=STRING
-		('abstract' abstract=STRING)?;
+		('abstract' abstract=STRING)?
+		('participants' participants+=Person (',' participants+=Person)*)?;
 
 Opening returns Opening:
 	'Opening'

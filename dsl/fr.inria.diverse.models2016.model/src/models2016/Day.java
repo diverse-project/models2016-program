@@ -63,12 +63,12 @@ public interface Day extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Date</em>' containment reference.
-	 * @see #setDate(models2016.Date)
+	 * @see #setDate(Date)
 	 * @see models2016.Models2016Package#getDay_Date()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	models2016.Date getDate();
+	Date getDate();
 
 	/**
 	 * Sets the value of the '{@link models2016.Day#getDate <em>Date</em>}' containment reference.
@@ -78,7 +78,7 @@ public interface Day extends EObject {
 	 * @see #getDate()
 	 * @generated
 	 */
-	void setDate(models2016.Date value);
+	void setDate(Date value);
 
 	/**
 	 * Returns the value of the '<em><b>Sessions</b></em>' containment reference list.

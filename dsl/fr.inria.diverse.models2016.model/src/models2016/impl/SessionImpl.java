@@ -3,6 +3,7 @@
 package models2016.impl;
 
 import java.util.Collection;
+import models2016.Date;
 import models2016.Event;
 import models2016.Models2016Package;
 import models2016.Room;
@@ -63,7 +64,7 @@ public class SessionImpl extends MinimalEObjectImpl.Container implements Session
 	 * @generated
 	 * @ordered
 	 */
-	protected models2016.Date startingTime;
+	protected Date startingTime;
 
 	/**
 	 * The cached value of the '{@link #getEndingTime() <em>Ending Time</em>}' containment reference.
@@ -73,7 +74,7 @@ public class SessionImpl extends MinimalEObjectImpl.Container implements Session
 	 * @generated
 	 * @ordered
 	 */
-	protected models2016.Date endingTime;
+	protected Date endingTime;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,7 +150,7 @@ public class SessionImpl extends MinimalEObjectImpl.Container implements Session
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public models2016.Date getStartingTime() {
+	public Date getStartingTime() {
 		return startingTime;
 	}
 
@@ -158,8 +159,8 @@ public class SessionImpl extends MinimalEObjectImpl.Container implements Session
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetStartingTime(models2016.Date newStartingTime, NotificationChain msgs) {
-		models2016.Date oldStartingTime = startingTime;
+	public NotificationChain basicSetStartingTime(Date newStartingTime, NotificationChain msgs) {
+		Date oldStartingTime = startingTime;
 		startingTime = newStartingTime;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, Models2016Package.SESSION__STARTING_TIME, oldStartingTime, newStartingTime);
@@ -173,7 +174,7 @@ public class SessionImpl extends MinimalEObjectImpl.Container implements Session
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setStartingTime(models2016.Date newStartingTime) {
+	public void setStartingTime(Date newStartingTime) {
 		if (newStartingTime != startingTime) {
 			NotificationChain msgs = null;
 			if (startingTime != null)
@@ -192,7 +193,7 @@ public class SessionImpl extends MinimalEObjectImpl.Container implements Session
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public models2016.Date getEndingTime() {
+	public Date getEndingTime() {
 		return endingTime;
 	}
 
@@ -201,8 +202,8 @@ public class SessionImpl extends MinimalEObjectImpl.Container implements Session
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEndingTime(models2016.Date newEndingTime, NotificationChain msgs) {
-		models2016.Date oldEndingTime = endingTime;
+	public NotificationChain basicSetEndingTime(Date newEndingTime, NotificationChain msgs) {
+		Date oldEndingTime = endingTime;
 		endingTime = newEndingTime;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, Models2016Package.SESSION__ENDING_TIME, oldEndingTime, newEndingTime);
@@ -216,7 +217,7 @@ public class SessionImpl extends MinimalEObjectImpl.Container implements Session
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEndingTime(models2016.Date newEndingTime) {
+	public void setEndingTime(Date newEndingTime) {
 		if (newEndingTime != endingTime) {
 			NotificationChain msgs = null;
 			if (endingTime != null)
@@ -284,10 +285,10 @@ public class SessionImpl extends MinimalEObjectImpl.Container implements Session
 				setRoom((Room)newValue);
 				return;
 			case Models2016Package.SESSION__STARTING_TIME:
-				setStartingTime((models2016.Date)newValue);
+				setStartingTime((Date)newValue);
 				return;
 			case Models2016Package.SESSION__ENDING_TIME:
-				setEndingTime((models2016.Date)newValue);
+				setEndingTime((Date)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -308,10 +309,10 @@ public class SessionImpl extends MinimalEObjectImpl.Container implements Session
 				setRoom((Room)null);
 				return;
 			case Models2016Package.SESSION__STARTING_TIME:
-				setStartingTime((models2016.Date)null);
+				setStartingTime((Date)null);
 				return;
 			case Models2016Package.SESSION__ENDING_TIME:
-				setEndingTime((models2016.Date)null);
+				setEndingTime((Date)null);
 				return;
 		}
 		super.eUnset(featureID);

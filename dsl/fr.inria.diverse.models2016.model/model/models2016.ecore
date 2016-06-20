@@ -101,7 +101,10 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Lunch" eSuperTypes="#//Event"/>
   <eClassifiers xsi:type="ecore:EClass" name="CoffeeBreak" eSuperTypes="#//Event"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Meeting" eSuperTypes="#//Event"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Meeting" eSuperTypes="#//Event">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="participants" upperBound="-1"
+        eType="#//Person" containment="true"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SRC" eSuperTypes="#//Event"/>
   <eClassifiers xsi:type="ecore:EClass" name="Poster" eSuperTypes="#//Event"/>
   <eClassifiers xsi:type="ecore:EClass" name="Keynote" eSuperTypes="#//Event">

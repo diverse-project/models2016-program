@@ -76,12 +76,12 @@ public interface Session extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Starting Time</em>' containment reference.
-	 * @see #setStartingTime(models2016.Date)
+	 * @see #setStartingTime(Date)
 	 * @see models2016.Models2016Package#getSession_StartingTime()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	models2016.Date getStartingTime();
+	Date getStartingTime();
 
 	/**
 	 * Sets the value of the '{@link models2016.Session#getStartingTime <em>Starting Time</em>}' containment reference.
@@ -91,7 +91,7 @@ public interface Session extends EObject {
 	 * @see #getStartingTime()
 	 * @generated
 	 */
-	void setStartingTime(models2016.Date value);
+	void setStartingTime(Date value);
 
 	/**
 	 * Returns the value of the '<em><b>Ending Time</b></em>' containment reference.
@@ -102,12 +102,12 @@ public interface Session extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ending Time</em>' containment reference.
-	 * @see #setEndingTime(models2016.Date)
+	 * @see #setEndingTime(Date)
 	 * @see models2016.Models2016Package#getSession_EndingTime()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	models2016.Date getEndingTime();
+	Date getEndingTime();
 
 	/**
 	 * Sets the value of the '{@link models2016.Session#getEndingTime <em>Ending Time</em>}' containment reference.
@@ -117,6 +117,6 @@ public interface Session extends EObject {
 	 * @see #getEndingTime()
 	 * @generated
 	 */
-	void setEndingTime(models2016.Date value);
+	void setEndingTime(Date value);
 
 } // Session

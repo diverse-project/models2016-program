@@ -362,7 +362,7 @@ public class Models2016FactoryImpl extends EFactoryImpl implements Models2016Fac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public models2016.Date createDate() {
+	public Date createDate() {
 		DateImpl date = new DateImpl();
 		return date;
 	}

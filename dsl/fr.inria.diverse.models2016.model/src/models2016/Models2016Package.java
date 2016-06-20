@@ -1131,13 +1131,22 @@ public interface Models2016Package extends EPackage {
 	int MEETING__ABSTRACT = EVENT__ABSTRACT;
 
 	/**
+	 * The feature id for the '<em><b>Participants</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEETING__PARTICIPANTS = EVENT_FEATURE_COUNT + 0;
+
+	/**
 	 * The number of structural features of the '<em>Meeting</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MEETING_FEATURE_COUNT = EVENT_FEATURE_COUNT + 0;
+	int MEETING_FEATURE_COUNT = EVENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Meeting</em>' class.
@@ -2124,6 +2133,17 @@ public interface Models2016Package extends EPackage {
 	EClass getMeeting();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link models2016.Meeting#getParticipants <em>Participants</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Participants</em>'.
+	 * @see models2016.Meeting#getParticipants()
+	 * @see #getMeeting()
+	 * @generated
+	 */
+	EReference getMeeting_Participants();
+
+	/**
 	 * Returns the meta object for class '{@link models2016.SRC <em>SRC</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2798,6 +2818,14 @@ public interface Models2016Package extends EPackage {
 		 * @generated
 		 */
 		EClass MEETING = eINSTANCE.getMeeting();
+
+		/**
+		 * The meta object literal for the '<em><b>Participants</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MEETING__PARTICIPANTS = eINSTANCE.getMeeting_Participants();
 
 		/**
 		 * The meta object literal for the '{@link models2016.impl.SRCImpl <em>SRC</em>}' class.

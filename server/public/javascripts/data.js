@@ -3875,7 +3875,9 @@ var data = [
 					"events" : [
 						{
 							"type" : "Meeting",
-							"title" : "MODELS Steering Commitee Meeting"
+							"title" : "MODELS Steering Commitee Meeting",
+							"participants" : [
+							]
 						}
 					]
 				}
@@ -4224,7 +4226,9 @@ var data = [
 					"events" : [
 						{
 							"type" : "Meeting",
-							"title" : "SoSyM Editorial Board Meeting"
+							"title" : "SoSyM Editorial Board Meeting",
+							"participants" : [
+							]
 						}
 					]
 				}
@@ -4281,6 +4285,9 @@ var data = [
 		"name" : "Friday, Oct 7, 2016",
 		"rooms" : [
 			{
+				"name" : "Broussais"
+			},
+			{
 				"name" : "Rotonde J. Cartier"
 			},
 			{
@@ -4296,6 +4303,9 @@ var data = [
 				{
 					"start" : "09:00",
 					"end" : "09:15",
+					"rowSpan" : 1
+				},
+				{
 					"rowSpan" : 1
 				},
 				{
@@ -4323,6 +4333,9 @@ var data = [
 				{
 					"start" : "09:15",
 					"end" : "10:30",
+					"rowSpan" : 5
+				},
+				{
 					"rowSpan" : 5
 				},
 				{
@@ -4361,6 +4374,37 @@ var data = [
 					"start" : "10:30",
 					"end" : "11:00",
 					"rowSpan" : 2
+				},
+				{
+					"start" : "10:30",
+					"end" : "11:00",
+					"rowSpan" : 2,
+					"icalStart" : "20161007T083000Z",
+					"icalEnd" : "20161007T090000Z",
+					"room" : "Broussais",
+					"events" : [
+						{
+							"type" : "Meeting",
+							"title" : "MODELS: from 2016 to 2017!",
+							"participants" : [
+								{
+									"name" : "Benoit Combemale"	
+								},
+								{
+									"name" : "Benoit Baudry"	
+								},
+								{
+									"name" : "Don Bator"	
+								},
+								{
+									"name" : "Jeff Gray"	
+								},
+								{
+									"name" : "Vinay Vkulkarni"	
+								}
+							]
+						}
+					]
 				},
 				{
 					"start" : "10:30",

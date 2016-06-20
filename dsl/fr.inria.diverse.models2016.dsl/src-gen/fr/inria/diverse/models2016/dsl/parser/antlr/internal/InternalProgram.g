@@ -2496,6 +2496,56 @@ ruleMeeting returns [EObject current=null]
 				)
 			)
 		)?
+		(
+			otherlv_4='participants'
+			{
+				newLeafNode(otherlv_4, grammarAccess.getMeetingAccess().getParticipantsKeyword_3_0());
+			}
+			(
+				(
+					{
+						newCompositeNode(grammarAccess.getMeetingAccess().getParticipantsPersonParserRuleCall_3_1_0());
+					}
+					lv_participants_5_0=rulePerson
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getMeetingRule());
+						}
+						add(
+							$current,
+							"participants",
+							lv_participants_5_0,
+							"fr.inria.diverse.models2016.dsl.Program.Person");
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)
+			(
+				otherlv_6=','
+				{
+					newLeafNode(otherlv_6, grammarAccess.getMeetingAccess().getCommaKeyword_3_2_0());
+				}
+				(
+					(
+						{
+							newCompositeNode(grammarAccess.getMeetingAccess().getParticipantsPersonParserRuleCall_3_2_1_0());
+						}
+						lv_participants_7_0=rulePerson
+						{
+							if ($current==null) {
+								$current = createModelElementForParent(grammarAccess.getMeetingRule());
+							}
+							add(
+								$current,
+								"participants",
+								lv_participants_7_0,
+								"fr.inria.diverse.models2016.dsl.Program.Person");
+							afterParserOrEnumRuleCall();
+						}
+					)
+				)
+			)*
+		)?
 	)
 ;
 

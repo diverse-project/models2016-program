@@ -1508,13 +1508,21 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cAbstractKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
 		private final Assignment cAbstractAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
 		private final RuleCall cAbstractSTRINGTerminalRuleCall_2_1_0 = (RuleCall)cAbstractAssignment_2_1.eContents().get(0);
+		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
+		private final Keyword cParticipantsKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
+		private final Assignment cParticipantsAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
+		private final RuleCall cParticipantsPersonParserRuleCall_3_1_0 = (RuleCall)cParticipantsAssignment_3_1.eContents().get(0);
+		private final Group cGroup_3_2 = (Group)cGroup_3.eContents().get(2);
+		private final Keyword cCommaKeyword_3_2_0 = (Keyword)cGroup_3_2.eContents().get(0);
+		private final Assignment cParticipantsAssignment_3_2_1 = (Assignment)cGroup_3_2.eContents().get(1);
+		private final RuleCall cParticipantsPersonParserRuleCall_3_2_1_0 = (RuleCall)cParticipantsAssignment_3_2_1.eContents().get(0);
 		
 		//Meeting:
 		//	'Meeting'
-		//	name=STRING ('abstract' abstract=STRING)?;
+		//	name=STRING ('abstract' abstract=STRING)? ('participants' participants+=Person (',' participants+=Person)*)?;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'Meeting' name=STRING ('abstract' abstract=STRING)?
+		//'Meeting' name=STRING ('abstract' abstract=STRING)? ('participants' participants+=Person (',' participants+=Person)*)?
 		public Group getGroup() { return cGroup; }
 		
 		//'Meeting'
@@ -1537,6 +1545,30 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//STRING
 		public RuleCall getAbstractSTRINGTerminalRuleCall_2_1_0() { return cAbstractSTRINGTerminalRuleCall_2_1_0; }
+		
+		//('participants' participants+=Person (',' participants+=Person)*)?
+		public Group getGroup_3() { return cGroup_3; }
+		
+		//'participants'
+		public Keyword getParticipantsKeyword_3_0() { return cParticipantsKeyword_3_0; }
+		
+		//participants+=Person
+		public Assignment getParticipantsAssignment_3_1() { return cParticipantsAssignment_3_1; }
+		
+		//Person
+		public RuleCall getParticipantsPersonParserRuleCall_3_1_0() { return cParticipantsPersonParserRuleCall_3_1_0; }
+		
+		//(',' participants+=Person)*
+		public Group getGroup_3_2() { return cGroup_3_2; }
+		
+		//','
+		public Keyword getCommaKeyword_3_2_0() { return cCommaKeyword_3_2_0; }
+		
+		//participants+=Person
+		public Assignment getParticipantsAssignment_3_2_1() { return cParticipantsAssignment_3_2_1; }
+		
+		//Person
+		public RuleCall getParticipantsPersonParserRuleCall_3_2_1_0() { return cParticipantsPersonParserRuleCall_3_2_1_0; }
 	}
 	public class OpeningElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.Opening");
@@ -2195,7 +2227,7 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//Meeting:
 	//	'Meeting'
-	//	name=STRING ('abstract' abstract=STRING)?;
+	//	name=STRING ('abstract' abstract=STRING)? ('participants' participants+=Person (',' participants+=Person)*)?;
 	public MeetingElements getMeetingAccess() {
 		return pMeeting;
 	}

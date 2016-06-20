@@ -3,6 +3,7 @@
 package models2016.impl;
 
 import java.util.Collection;
+import models2016.Date;
 import models2016.Day;
 import models2016.Models2016Package;
 import models2016.Session;
@@ -76,7 +77,7 @@ public class DayImpl extends MinimalEObjectImpl.Container implements Day {
 	 * @generated
 	 * @ordered
 	 */
-	protected models2016.Date date;
+	protected Date date;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -123,7 +124,7 @@ public class DayImpl extends MinimalEObjectImpl.Container implements Day {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public models2016.Date getDate() {
+	public Date getDate() {
 		return date;
 	}
 
@@ -132,8 +133,8 @@ public class DayImpl extends MinimalEObjectImpl.Container implements Day {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDate(models2016.Date newDate, NotificationChain msgs) {
-		models2016.Date oldDate = date;
+	public NotificationChain basicSetDate(Date newDate, NotificationChain msgs) {
+		Date oldDate = date;
 		date = newDate;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, Models2016Package.DAY__DATE, oldDate, newDate);
@@ -147,7 +148,7 @@ public class DayImpl extends MinimalEObjectImpl.Container implements Day {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDate(models2016.Date newDate) {
+	public void setDate(Date newDate) {
 		if (newDate != date) {
 			NotificationChain msgs = null;
 			if (date != null)
@@ -224,7 +225,7 @@ public class DayImpl extends MinimalEObjectImpl.Container implements Day {
 				getSessions().addAll((Collection<? extends Session>)newValue);
 				return;
 			case Models2016Package.DAY__DATE:
-				setDate((models2016.Date)newValue);
+				setDate((Date)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -245,7 +246,7 @@ public class DayImpl extends MinimalEObjectImpl.Container implements Day {
 				getSessions().clear();
 				return;
 			case Models2016Package.DAY__DATE:
-				setDate((models2016.Date)null);
+				setDate((Date)null);
 				return;
 		}
 		super.eUnset(featureID);

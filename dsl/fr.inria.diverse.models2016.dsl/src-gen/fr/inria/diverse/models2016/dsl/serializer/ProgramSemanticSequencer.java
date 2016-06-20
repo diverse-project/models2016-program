@@ -322,7 +322,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Meeting returns Meeting
 	 *
 	 * Constraint:
-	 *     (name=STRING abstract=STRING?)
+	 *     (name=STRING abstract=STRING? (participants+=Person participants+=Person*)?)
 	 */
 	protected void sequence_Meeting(ISerializationContext context, Meeting semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
