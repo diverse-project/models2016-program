@@ -4394,7 +4394,7 @@ var data = [
 									"name" : "Benoit Baudry"	
 								},
 								{
-									"name" : "Don Bator"	
+									"name" : "Don Batory"	
 								},
 								{
 									"name" : "Jeff Gray"	
