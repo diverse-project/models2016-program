@@ -4009,12 +4009,14 @@ var data = [
 					"events" : [
 						{
 							"type" : "Keynote",
-							"title" : "Keynote 2",
+							"title" : "Grand Challenges, Grand Responses?",
 							"speaker" : {
 								"homepage" : "http://www.research.lancs.ac.uk/portal/en/people/gordon-blair",
 								"name" : "Gordon Blair"	
 							}
-							}
+							,
+							"abstract" : "The world is facing a period of unprecedented change and the resultant grand challenges demand a coordinated and significant response from all parties including scientists and engineers, academics, policy makers and citizens. Environmental change is arguably the greatest challenge and this talk will focus on the role of digital technology in both the understanding of the complexities of the natural environment and also in determining well-founded adaptation and mitigation strategies for a range of environmental problems including climate change. The talk builds on over five years of experience in working with earth and environmental scientists in providing tools to help move towards a new kind of science as demanded by areas such as climate change, a science that is more open, integrative and collaborative for example. The research includes the application of contemporary areas of digital innovation including cloud computing, Internet of Things technology and emerging areas of data science. But what does this have to do with Models? The systems we are building are highly complex both in terms of the underlying digital technologies and also in the phenomena being observed. New techniques are urgently required to help us to master this complexity and the Models community is the keeper of one of the most powerful tools in this area - namely abstraction. Is the Models community focusing on the right problems though at the right scale and does it have the ambition to take on such grand challenges? Grand challenges demand grand responses - through this keynote, and building on the insights last year from Steve Easterbrook, I would like to provoke a discussion over what this might mean for Models going forward."
+						}
 					]
 				},
 				{
