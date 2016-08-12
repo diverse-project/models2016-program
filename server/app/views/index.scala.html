@@ -127,8 +127,11 @@
 
                                                     <!-- Talk -->
                                                 <div ng-if="event.title && event.papers">
+                                                    <div>
+                                                        <p><strong>{{event.title}}</strong> <span ng-if="event.chair">(chair: {{event.chair}})</span></p>
+                                                    </div>
                                                     <div ng-repeat="talk in event.papers" ng-show="!showFavorites || (showFavorites && talk.selected)">
-                                                        <hr ng-if="$index > 0"/>
+                                                        <hr>
 
                                                         <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(talk, talk.icalStart)">{{talk.title}}</a>
 
