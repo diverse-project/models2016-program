@@ -4,6 +4,7 @@ Conference "MODELS 2016"
 	kinds "Foundations: Technical Paper", "Foundations: New Idea Paper", "Foundations: Vision Paper", "Practice and Innovation", "Demo", "SoSyM First"
 	
 	resources
+        room "Chateaubriand" capacity 400
 		room "Broussais"
 		room "Rotonde Surcouf"
 		room "Rotonde J. Cartier"
@@ -16,7 +17,6 @@ Conference "MODELS 2016"
 		room "Lamennais 2" capacity 80
 		room "Lamennais 3" capacity 80
 		room "Grand Large"
-		room "Chateaubriand" capacity 400
 		room "Lamennais 1+2" capacity 180
 		room "Lamennais 4+5" capacity 150
 	
@@ -209,7 +209,7 @@ Motivated by addressing the above limitations, we develop a domain model extract
             kind
                 "Foundations: New Idea Paper";
         
-        "Partial Loading of XMI Models"
+        "Towards Partial Loading of XMI Models"
             authors
                 "Ran Wei",
                 "Dimitris S. Kolovos",
@@ -452,7 +452,7 @@ Motivated by addressing the above limitations, we develop a domain model extract
                 abstract
                     "The cost savings introduced by Web services through code reuse and integration opportunities have motivated many businesses to develop Web APIs, with ever increasing numbers opting for the REST architectural style. RESTful Web APIs are decomposed in multiple resources, which the client can manipulate through HTTP interactions with well-defined semantics. Getting the resource in the desired state might require multiple client–server interactions, what we define as a RESTful conversation. RESTful conversations are dynamically guided by hypermedia controls, such as links. Thus, when deciding whether and how to use a given RESTful service, the client might not be aware of all the interactions which are necessary to achieve its goal. This is because existing documentation of RESTful APIs describes the static structure of the interface, exposing low-level HTTP details, while little attention has been paid to conceptual, high-level, modeling of the dynamics of RESTful conversations. Low-level HTTP details can be abstracted from during the design phase of the API, or when decid- ing which API to use. We argue that, in these situations, visual models of the required client–server interactions might increase developers’ efficiency and facilitate their understanding. Thus, to capture all possible interaction sequences in a given RESTful conversation, we propose RESTalk, an extension to the BPMN Choreography diagrams to render them more concise and yet sufficiently expressive in the specific REST domain. We also report on the results obtained from an exploratory survey we have conducted to assess the maturity of the field for a domain-specific language and to obtain feedback for future improvements of RESTalk."
                 kind
-                    "SoSyM First"
+                    "SoSyM First" 
 	}
 	
 	events {	
@@ -476,13 +476,18 @@ Motivated by addressing the above limitations, we develop a domain model extract
 		Opening "General Chairs Opening";
 		Opening "Program Commitee Opening";
 		
+		Panel "User Experience (UX) in Model-Based Software Engineering" 
+		   moderators "Jon Whittle";
+		Keynote "Thales" speaker "Véronique Normand";
+		
+		
 		Meeting "MODELS Steering Commitee Meeting";
 		Meeting "SoSyM Editorial Board Meeting";
 		Meeting "MODELS: from 2016 to 2017!"
 		    participants "Benoit Combemale", "Benoit Baudry", "Don Batory", "Jeff Gray", "Vinay Vkulkarni";
 		
 		Reception "Workshop Welcome Reception";
-		Reception "Conference Welcome Reception and SRC Awards";
+		Reception "Conference Welcome Reception";
 		Reception "Gala Dinner";
 		
 		Clinic "Clinic";
@@ -675,7 +680,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		
 		TalkSession "10 years after";
 		
-		TalkSession "AI Algorithms and Modelling (TODO: better name?)"
+		TalkSession "Advanced Algorithms and Modelling"
 			chair "To be determined"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Extracting Domain Models from Natural-Language Requirements: Approach and Industrial Evaluation", "Ground Setting Properties for an Efficient Translation of OCL in SMT-based Model Finding", "Feature Location in Models through a Genetic Algorithm Driven by Information Retrieval Techniques";
@@ -705,7 +710,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 				abstract "Session abstract"
 				papers "Towards a Categorical Approach for Meta-Modelling Epistemic Game Theory", "OCL2MSFOL: A Mapping to Many-Sorted First-Order Logic for Efficiently Checking the Satisfiability of OCL Constraints", "On the Synthesis of Protocol State Machines from Contracts";
 				
-		TalkSession "Model Characterization and Modelling Languages (TODO: find a better name)"
+		TalkSession "Modelling Models"
 			chair "To be determined"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Towards the Characterization of Realistic Models: Evaluation of Multidisciplinary Graph Metrics", "Unifying Explanatory and Constructive Modeling", "Metamodel Specialization for Graphical Modeling Language Support";
@@ -733,7 +738,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		TalkSession "Tooling"
 			chair "To be determined"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
-				papers "PrefetchML: A Framework for Prefetching and Caching Models", "Partial Loading of XMI Models", "Integration of a Graph-Based Model Indexer in Commercial Modelling Tools", "Query-based Access Control for Secure Collaborative Modeling Using Bidirectional Transformations";
+				papers "PrefetchML: A Framework for Prefetching and Caching Models", "Towards Partial Loading of XMI Models", "Integration of a Graph-Based Model Indexer in Commercial Modelling Tools", "Query-based Access Control for Secure Collaborative Modeling Using Bidirectional Transformations";
 	
 	    TalkSession "Domain-Specific Modelling"
 			chair "To be determined"	email "Chair mail"	homepage "Chair homepage"
@@ -761,7 +766,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			09:00 - 10:30 in "Lamennais 2" : "FlexMDE"
 			09:00 - 10:30 in "Lamennais 3" : "VOLT"
 			
-			10:30 - 11:00 in "Rotonde Surcouf" : "Coffee Break"
+			10:30 - 11:00 in "Rotonde J. Cartier" : "Coffee Break"
 			
 			11:00 - 12:30 in "Bouvet 1" : "Doctoral Symposium"
 			// Tutorials
@@ -774,7 +779,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			11:00 - 12:30 in "Lamennais 2" : "FlexMDE"
 			11:00 - 12:30 in "Lamennais 3" : "VOLT"
 			
-			12:30 - 14:00 in "Rotonde J. Cartier" : "Lunch"
+			12:30 - 14:00 in "Rotonde Surcouf" : "Lunch"
 			
 			14:00 - 15:30 in "Bouvet 1" : "Doctoral Symposium"
 			// Tutorials
@@ -787,7 +792,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			14:00 - 15:30 in "Lamennais 2" : "FlexMDE"
 			14:00 - 15:30 in "Lamennais 3" : "VOLT"
 			
-			15:30 - 16:00 in "Rotonde Surcouf" : "Coffee Break"
+			15:30 - 16:00 in "Rotonde J. Cartier" : "Coffee Break"
 			
 			16:00 - 17:30 in "Bouvet 1" : "Doctoral Symposium"
 			// Tutorials
@@ -815,9 +820,9 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			// Collocated Conferences
 			09:00 - 10:30 in "Lamennais 3" : "SAM"
 			// Clinic
-			09:00 - 10:30 in "Rotonde Surcouf" : "Clinic"
+			09:00 - 10:30 in "Rotonde J. Cartier" : "Clinic"
 			
-			10:30 - 11:00 in "Rotonde Surcouf" : "SRC Poster", "Clinic", "Coffee Break"
+			10:30 - 11:00 in "Rotonde J. Cartier" : "SRC Poster", "Clinic", "Coffee Break"
 			
 			11:00 - 12:30 in "Vauban 1" : "Educator Symposium"
 			// Tutorials
@@ -831,9 +836,9 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			// Collocated Conferences
 			11:00 - 12:30 in "Lamennais 3" : "SAM"
 			// Clinic
-			11:00 - 12:30 in "Rotonde Surcouf" : "Clinic"
+			11:00 - 12:30 in "Rotonde J. Cartier" : "Clinic"
 			
-			12:30 - 14:00 in "Rotonde J. Cartier" : "Lunch"
+			12:30 - 14:00 in "Rotonde Surcouf" : "Lunch"
 			
 			14:00 - 15:30 in "Vauban 1" : "Educator Symposium"
 			// Tutorials
@@ -847,9 +852,9 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			// Collocated Conferences
 			14:00 - 15:30 in "Lamennais 3" : "SAM"
 			// Clinic
-			14:00 - 15:30 in "Rotonde Surcouf" : "Clinic"
+			14:00 - 15:30 in "Rotonde J. Cartier" : "Clinic"
 			
-			15:30 - 16:00 in "Rotonde Surcouf" : "SRC Poster", "Clinic", "Coffee Break"
+			15:30 - 16:00 in "Rotonde J. Cartier" : "SRC Poster", "Clinic", "Coffee Break"
 			
 			16:00 - 17:30 in "Vauban 1" : "Educator Symposium"
 			// Tutorials
@@ -863,13 +868,13 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			// Collocated Conferences
 			16:00 - 17:30 in "Lamennais 3" : "SAM"
 			// Clinic
-			16:00 - 17:30 in "Rotonde Surcouf" : "Clinic"
+			16:00 - 17:30 in "Rotonde J. Cartier" : "Clinic"
 			
 			// Student Research Competition
-			17:30 - 19:00 in "Rotonde Surcouf" : "SRC Poster"
+			17:30 - 19:00 in "Rotonde J. Cartier" : "SRC Poster"
 
 
-			19:30 - 22:00 in "Grand Large" : "Workshop Welcome Reception"
+			19:00 - 22:00 in "Grand Large" : "Workshop Welcome Reception"
 			
 		Tuesday
 			date 16.10.04
@@ -884,7 +889,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			// Collocated Conferences
 			09:00 - 10:30 in "Lamennais 3" : "SAM"
 			
-			10:30 - 11:00 in "Rotonde Surcouf" : "Coffee Break"
+			10:30 - 11:00 in "Rotonde J. Cartier" : "Coffee Break"
 			
 			// Workshops
 			11:00 - 12:30 in "Bouvet 2" : "ModComp"
@@ -896,7 +901,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			// Collocated Conferences
 			11:00 - 12:30 in "Lamennais 3" : "SAM"
 			
-			12:30 - 14:00 in "Rotonde J. Cartier" : "Lunch"
+			12:30 - 14:00 in "Rotonde Surcouf" : "Lunch"
 			
 			// Student Research Competition
 			14:00 - 15:30 in "Bouvet 1" : "SRC Talk"
@@ -910,7 +915,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			// Collocated Conferences
 			14:00 - 15:30 in "Lamennais 3" : "SAM"
 			
-			15:30 - 16:00 in "Rotonde Surcouf" : "Coffee Break"
+			15:30 - 16:00 in "Rotonde J. Cartier" : "Coffee Break"
 			
 			// Student Research Competition
 			16:00 - 17:30 in "Bouvet 1" : "SRC Talk"
@@ -933,30 +938,27 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			
 			09:15 - 10:30 in "Chateaubriand" : "Resurrecting Laplace’s Demon: The Case for Deterministic Models"
 			
-			10:30 - 11:00 in "Grand Large" : "Coffee Break"
-			10:30 - 11:00 in "Rotonde J. Cartier" : "Poster"
+			10:30 - 11:00 in "Rotonde J. Cartier" : "Coffee Break", "Poster"
 			
-			11:00 - 12:15 in "Lamennais 1" : "Domain-Specific Modelling"
-			11:00 - 12:15 in "Lamennais 2" : "Applications I"
-			11:00 - 12:15 in "Lamennais 3" : "Modelling and Formal Methods"
+			11:00 - 12:15 in "Chateaubriand" : "Domain-Specific Modelling"
+			11:00 - 12:15 in "Lamennais 1+2" : "Applications I"
+			11:00 - 12:15 in "Lamennais 4+5" : "Modelling and Formal Methods"
 
 			12:30 - 14:00 in "Grand Large" : "Lunch"
 			
-			14:00 - 15:15 in "Lamennais 1" : "Model Characterization and Modelling Languages (TODO: find a better name)"
-			14:00 - 15:15 in "Lamennais 2" : "Applications II"
-			14:00 - 15:15 in "Lamennais 3" : "Demo I"
+			14:00 - 15:15 in "Chateaubriand" : "Modelling Models"
+			14:00 - 15:15 in "Lamennais 1+2" : "Applications II"
+			14:00 - 15:15 in "Lamennais 4+5" : "Demo I"
 			
+			15:15 - 15:45 in "Rotonde J. Cartier" : "Coffee Break", "Poster"
 			
-			15:15 - 15:45 in "Grand Large" : "Coffee Break"
-			15:15 - 15:45 in "Rotonde J. Cartier" : "Poster"
+			15:45 - 17:00 in "Chateaubriand" : "Models and Code"
+			15:45 - 17:00 in "Lamennais 1+2" : "Empirical Investigations I"
+			15:45 - 17:00 in "Lamennais 4+5" : "Demo II"
 			
-			15:45 - 17:00 in "Lamennais 1" : "Models and Code"
-			15:45 - 17:00 in "Lamennais 2" : "Empirical Investigations I"
-			15:45 - 17:00 in "Lamennais 3" : "Demo II"
+			17:00 - 19:00 in "Lamennais 4+5" : "MODELS Steering Commitee Meeting"
 			
-			17:30 - 19:30 in "Lamennais 4+5" : "MODELS Steering Commitee Meeting"
-			
-			19:30 - 22:00 in "Grand Large" : "Conference Welcome Reception and SRC Awards"
+			19:00 - 22:00 in "Grand Large" : "Conference Welcome Reception"
 			
 		Thursday
 			date 16.10.06
@@ -965,21 +967,26 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			
 			09:15 - 10:30 in "Chateaubriand" : "Grand Challenges, Grand Responses?"
 			
-			09:00 - 12:30 in "Rotonde J. Cartier" : "Clinic"
-			10:30 - 11:00 in "Grand Large" : "Poster", "Coffee Break"
+			10:30 - 11:00 in "Rotonde J. Cartier" : "Coffee Break", "Poster", "Clinic"
+			11:00 - 12:30 in "Rotonde J. Cartier" : "Clinic"
 			
-			11:00 - 12:15 in "Lamennais 1" : "Testing and Simulation"
-			11:00 - 12:15 in "Lamennais 2" : "Empirical Investigations II"
-			11:00 - 12:15 in "Lamennais 3" : "AI Algorithms and Modelling (TODO: better name?)"
+			11:00 - 12:15 in "Chateaubriand" : "Testing and Simulation"
+			11:00 - 12:15 in "Lamennais 1+2" : "Empirical Investigations II"
+			11:00 - 12:15 in "Lamennais 4+5" : "Advanced Algorithms and Modelling"
 			
 			12:30 - 14:00 in "Grand Large" : "Lunch"
 			
-			14:00 - 17:30 in "Rotonde J. Cartier" : "Clinic"
-			15:30 - 16:00 in "Grand Large" : "Poster", "Coffee Break"
+			14:00 - 14:30 in "Chateaubriand" : "Thales"
 			
-			17:30 - 19:30 in "Lamennais 4+5" : "SoSyM Editorial Board Meeting"
+			14:00 - 15:00 in "Rotonde J. Cartier" : "Clinic"
+			15:00 - 15:30 in "Rotonde J. Cartier" : "Coffee Break", "Poster", "Clinic"
+			15:30 - 18:30 in "Rotonde J. Cartier" : "Clinic"
 			
-			19:30 - 22:00 in "Grand Large" : "Gala Dinner"
+			15:30 - 16:00 in "Chateaubriand" :  "User Experience (UX) in Model-Based Software Engineering"
+			
+			16:30 - 18:30 in "Lamennais 4+5" : "SoSyM Editorial Board Meeting"
+			
+			19:00 - 22:00 in "Grand Large" : "Gala Dinner"
 		
 		Friday
 			date 16.10.07
@@ -988,13 +995,12 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			
 			09:15 - 10:30 in "Chateaubriand" : "The Straight Line is Ungodly"
 			
-			10:30 - 11:00 in "Grand Large" : "Coffee Break"
-			10:30 - 11:00 in "Rotonde J. Cartier" : "Poster"
+			10:30 - 11:00 in "Rotonde J. Cartier" : "Coffee Break", "Poster"
 			
 			10:30 - 11:00 in "Broussais" : "MODELS: from 2016 to 2017!"
 			
-			11:00 - 12:40 in "Lamennais 1" : "Model Transformation"
-			11:00 - 12:40 in "Lamennais 2" : "Tooling"
-			11:00 - 12:40 in "Lamennais 3" : "Testing and Analysis"
+			11:00 - 12:40 in "Chateaubriand" : "Model Transformation"
+			11:00 - 12:40 in "Lamennais 1+2" : "Tooling"
+			11:00 - 12:40 in "Lamennais 4+5" : "Testing and Analysis"
 			
 	}
