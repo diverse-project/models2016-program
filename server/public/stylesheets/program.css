@@ -80,6 +80,13 @@ body {
     bottom: 0;
 }
 
+.conferenceEnd {
+    text-align: center;
+    background-color: #588fb3;
+    color: white;
+    vertical-align: middle !important;
+}
+
 
 /* Other styles */
 
