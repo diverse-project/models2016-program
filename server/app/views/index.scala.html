@@ -37,6 +37,9 @@
                                 <strong ng-if="!hideType(selectedTalk.type)">{{selectedTalk.type}}:</strong>
                                 <a ng-if="selectedTalk.url" ng-href="{{selectedTalk.url}}">{{selectedTalk.title}}</a>
                                 <span ng-if="!selectedTalk.url">{{selectedTalk.title}}</span>
+
+                                <!-- Full name -->
+                                <span ng-if="selectedTalk.fullname">- {{selectedTalk.fullname}}</span>
                             </h4>
                         </div>
                         <div class="modal-body">
