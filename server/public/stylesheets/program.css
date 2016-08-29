@@ -87,6 +87,11 @@ body {
     vertical-align: middle !important;
 }
 
+.conferenceEndTime {
+    background-color: #588fb3;
+    color: white;
+}
+
 
 /* Other styles */
 
@@ -123,29 +128,63 @@ hr {
     margin-top: 2px;
 }
 
+
 .TalkSession {
-    background-color: rgba(68, 255, 28, 0.5);
+    /*background-color: rgba(68, 255, 28, 0.5);*/
+    background-color: rgba(229, 125, 0, 0.5);
 }
 
 .Panel {
-    background-color: rgba(255, 249, 40, 0.5);
+    /*background-color: rgba(255, 249, 40, 0.5);*/
+    background-color: rgba(0, 42, 229, 0.4);
 }
 
 .Workshop {
-    background-color: rgba(255, 167, 45, 0.5);
+    /*background-color: rgba(255, 167, 45, 0.5);*/
+    background-color: rgba(229, 214, 0, 0.5);
 }
 
 .Tutorial {
-    background-color: rgba(255, 46, 51, 0.5);
+    /*background-color: rgba(255, 46, 51, 0.5);*/
+    background-color: rgba(101, 52, 229, 0.4);
 }
 
 .DoctoralSymposium {
-    background-color: rgba(119, 61, 255, 0.5);
+    /*background-color: rgba(119, 61, 255, 0.5);*/
+    background-color: rgba(0, 229, 122, 0.5);
 }
 
 .EducatorSymposium {
-    background-color: rgba(119, 61, 255, 0.5);
+    /*background-color: rgba(119, 61, 255, 0.5);*/
+    background-color: rgba(0, 229, 122, 0.5);
 }
+
+.Clinic {
+    /*background-color: rgba(54, 255, 225, 0.5);*/
+    background-color: rgba(229, 0, 0, 0.4);
+}
+
+.SRC {
+    /*background-color: rgba(174, 255, 35, 0.5);*/
+    background-color: rgba(83, 229, 0, 0.5);
+}
+
+.Poster {
+    /*background-color: rgba(34, 180, 31, 0.5);*/
+    background-color: rgba(209, 0, 229, 0.4);
+}
+
+.Keynote {
+    /*background-color: rgba(87, 118, 255, 0.5);*/
+    background-color: rgba(229, 58, 149, 0.4);
+}
+
+.Opening {
+    /*background-color: rgba(41, 150, 180, 0.5);*/
+    background-color: rgba(0, 215, 229, 0.5);
+}
+
+
 
 .Reception {
     background-color: rgba(200, 200, 200, 0.5);
@@ -162,26 +201,6 @@ hr {
     text-align: center;
 }
 
-.Clinic {
-    background-color: rgba(54, 255, 225, 0.5);
-}
-
-.SRC {
-    background-color: rgba(174, 255, 35, 0.5);
-}
-
-.Poster {
-    background-color: rgba(34, 180, 31, 0.5);
-}
-
-.Keynote {
-    background-color: rgba(87, 118, 255, 0.5);
-}
-
 .Meeting {
     background-color: rgba(150, 150, 150, 0.5);
-}
-
-.Opening {
-    background-color: rgba(41, 150, 180, 0.5);
 }
