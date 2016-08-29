@@ -1,13 +1,12 @@
 Conference "MODELS 2016"
 	talk duration 25
 	
-	kinds "Foundations: Technical Paper", "Foundations: New Idea Paper", "Foundations: Vision Paper", "Practice and Innovation", "Demo", "SoSyM First"
+	kinds "Foundations: Technical Paper", "Foundations: New Idea Paper", "Foundations: Vision Paper", "Practice and Innovation", "Demo", "SoSyM First", "MIP", "Career Award"
 	
 	resources
         room "Chateaubriand" capacity 400
 		room "Broussais"
 		room "Rotonde Surcouf"
-		room "Rotonde J. Cartier"
 		room "Bouvet 1" capacity 45
 		room "Bouvet 2" capacity 45
 		room "Charcot" capacity 54
@@ -16,11 +15,27 @@ Conference "MODELS 2016"
 		room "Lamennais 1" capacity 80
 		room "Lamennais 2" capacity 80
 		room "Lamennais 3" capacity 80
-		room "Grand Large"
 		room "Lamennais 1+2" capacity 180
 		room "Lamennais 4+5" capacity 150
-	
+		room "Rotonde J. Cartier"
+		room "Grand Large"
+		room "Demeure de Corsaire"
+
 		papers {
+		"TBD (MIP)"
+			authors 
+				"TBD"
+			abstract 
+				"TBD"
+			kind "MIP";
+			
+		"TBD (Career Award)"
+			authors 
+				"TBD"
+			abstract 
+				"TBD"
+			kind "Career Award";
+		
 		"Controlled Experiment on the Comprehension of Runtime Phenomena Using Models at Runtime"
 			authors 
 				"Michael Szvetits" 	email "michael.szvetits@fhwn.ac.at",
@@ -463,7 +478,7 @@ Motivated by addressing the above limitations, we develop a domain model extract
 		
 		DoctoralSymposium "Doctoral Symposium";
 		
-		EducatorSymposium "Educator Symposium";
+		EducatorSymposium "Educators Symposium";
 		
 		SRC "SRC Poster";
 		
@@ -476,15 +491,15 @@ Motivated by addressing the above limitations, we develop a domain model extract
 		Opening "General Chairs Opening";
 		Opening "Program Commitee Opening";
 		
-		Panel "User Experience (UX) in Model-Based Software Engineering" 
+		Panel "Panel: User Experience (UX) in Model-Based Software Engineering" 
 		   moderators "Jon Whittle";
 		Keynote "Thales" speaker "Véronique Normand";
 		
 		
 		Meeting "MODELS Steering Commitee Meeting";
 		Meeting "SoSyM Editorial Board Meeting";
-		Meeting "MODELS: from 2016 to 2017!"
-		    participants "Benoit Combemale", "Benoit Baudry", "Don Batory", "Jeff Gray", "Vinay Vkulkarni";
+		Meeting "Hand-over to 2017"
+		    participants "Benoit Combemale", "Benoit Baudry", "Joerg Kienzle", "Alexander Pretschner", "Don Batory", "Jeff Gray", "Vinay Vkulkarni";
 		
 		Reception "Workshop Welcome Reception";
 		Reception "Conference Welcome Reception";
@@ -747,7 +762,12 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 				
 		TalkSession "Demo I";
 		
-		TalkSession "Demo II"
+		TalkSession "Demo II";
+		
+		TalkSession "Awards"
+		    chair "TBD"
+		    abstract "MODELS Community Awards"
+		    papers "TBD (MIP)", "TBD (Career Award)"
 	}
 
 	
@@ -808,7 +828,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		Monday
 			date 16.10.03
 			
-			09:00 - 10:30 in "Vauban 1" : "Educator Symposium"
+			09:00 - 10:30 in "Vauban 1" : "Educators Symposium"
 			// Tutorials
 			09:00 - 10:30 in "Bouvet 1" : "Empirical Research in Model Based Software Engineering"
 			09:00 - 10:30 in "Bouvet 2" : "Applying Model Driven Engineering Technologies in the Creation of Domain Specific Modeling Languages"
@@ -824,7 +844,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			
 			10:30 - 11:00 in "Rotonde J. Cartier" : "SRC Poster", "Clinic", "Coffee Break"
 			
-			11:00 - 12:30 in "Vauban 1" : "Educator Symposium"
+			11:00 - 12:30 in "Vauban 1" : "Educators Symposium"
 			// Tutorials
 			11:00 - 12:30 in "Bouvet 1" : "Empirical Research in Model Based Software Engineering"
 			11:00 - 12:30 in "Bouvet 2" : "Applying Model Driven Engineering Technologies in the Creation of Domain Specific Modeling Languages"
@@ -840,12 +860,11 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			
 			12:30 - 14:00 in "Rotonde Surcouf" : "Lunch"
 			
-			14:00 - 15:30 in "Vauban 1" : "Educator Symposium"
+			14:00 - 15:30 in "Vauban 1" : "Educators Symposium"
 			// Tutorials
 			14:00 - 15:30 in "Bouvet 1" : "Empirical Research in Model Based Software Engineering"
 			14:00 - 15:30 in "Bouvet 2" : "Multi-level Modelling with MetaDepth"
 			// Workshops
-			14:00 - 15:30 in "Charcot" : "PAME"
 			14:00 - 15:30 in "Vauban 2" : "OSS4MDE"
 			14:00 - 15:30 in "Lamennais 1" : "EXE"
 			14:00 - 15:30 in "Lamennais 2" : "MoDeVVa"
@@ -856,12 +875,11 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			
 			15:30 - 16:00 in "Rotonde J. Cartier" : "SRC Poster", "Clinic", "Coffee Break"
 			
-			16:00 - 17:30 in "Vauban 1" : "Educator Symposium"
+			16:00 - 17:30 in "Vauban 1" : "Educators Symposium"
 			// Tutorials
 			16:00 - 17:30 in "Bouvet 1" : "Empirical Research in Model Based Software Engineering"
 			16:00 - 17:30 in "Bouvet 2" : "Multi-level Modelling with MetaDepth"
 			// Workshops
-			16:00 - 17:30 in "Charcot" : "PAME"
 			16:00 - 17:30 in "Vauban 2" : "OSS4MDE"
 			16:00 - 17:30 in "Lamennais 1" : "EXE"
 			16:00 - 17:30 in "Lamennais 2" : "MoDeVVa"
@@ -881,7 +899,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			
 			// Workshops
 			09:00 - 10:30 in "Bouvet 2" : "ModComp"
-			09:00 - 10:30 in "Charcot" : "COMMitMDE"
+			09:00 - 10:30 in "Bouvet 1" : "COMMitMDE"
 			09:00 - 10:30 in "Vauban 1" : "HuFaMo"
 			09:00 - 10:30 in "Vauban 2" : "MRT"
 			09:00 - 10:30 in "Lamennais 1" : "MULTI"
@@ -893,7 +911,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			
 			// Workshops
 			11:00 - 12:30 in "Bouvet 2" : "ModComp"
-			11:00 - 12:30 in "Charcot" : "COMMitMDE"
+			11:00 - 12:30 in "Bouvet 1" : "COMMitMDE"
 			11:00 - 12:30 in "Vauban 1" : "HuFaMo"
 			11:00 - 12:30 in "Vauban 2" : "MRT"
 			11:00 - 12:30 in "Lamennais 1" : "MULTI"
@@ -904,10 +922,10 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			12:30 - 14:00 in "Rotonde Surcouf" : "Lunch"
 			
 			// Student Research Competition
-			14:00 - 15:30 in "Bouvet 1" : "SRC Talk"
+			14:00 - 15:30 in "Charcot" : "SRC Talk"
 			// Workshops
 			14:00 - 15:30 in "Bouvet 2" : "ModComp"
-			14:00 - 15:30 in "Charcot" : "COMMitMDE"
+			14:00 - 15:30 in "Bouvet 1" : "COMMitMDE"
 			14:00 - 15:30 in "Vauban 1" : "HuFaMo"
 			14:00 - 15:30 in "Vauban 2" : "MRT"
 			14:00 - 15:30 in "Lamennais 1" : "MULTI"
@@ -918,10 +936,10 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			15:30 - 16:00 in "Rotonde J. Cartier" : "Coffee Break"
 			
 			// Student Research Competition
-			16:00 - 17:30 in "Bouvet 1" : "SRC Talk"
+			16:00 - 17:30 in "Charcot" : "SRC Talk"
 			// Workshops
 			16:00 - 17:30 in "Bouvet 2" : "ModComp"
-			16:00 - 17:30 in "Charcot" : "COMMitMDE"
+			16:00 - 17:30 in "Bouvet 1" : "COMMitMDE"
 			16:00 - 17:30 in "Vauban 1" : "HuFaMo"
 			16:00 - 17:30 in "Vauban 2" : "MRT"
 			16:00 - 17:30 in "Lamennais 1" : "MULTI"
@@ -977,16 +995,18 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			12:30 - 14:00 in "Grand Large" : "Lunch"
 			
 			14:00 - 14:30 in "Chateaubriand" : "Thales"
+			14:30 - 15:30 in "Chateaubriand" : "Awards"
 			
-			14:00 - 15:00 in "Rotonde J. Cartier" : "Clinic"
-			15:00 - 15:30 in "Rotonde J. Cartier" : "Coffee Break", "Poster", "Clinic"
-			15:30 - 18:30 in "Rotonde J. Cartier" : "Clinic"
+			14:00 - 15:30 in "Rotonde J. Cartier" : "Clinic"
+			15:30 - 16:00 in "Rotonde J. Cartier" : "Coffee Break", "Poster", "Clinic"
+			16:00 - 18:30 in "Rotonde J. Cartier" : "Clinic"
 			
-			15:30 - 16:00 in "Chateaubriand" :  "User Experience (UX) in Model-Based Software Engineering"
 			
-			16:30 - 18:30 in "Lamennais 4+5" : "SoSyM Editorial Board Meeting"
+			16:00 - 17:00 in "Chateaubriand" :  "Panel: User Experience (UX) in Model-Based Software Engineering"
 			
-			19:00 - 22:00 in "Grand Large" : "Gala Dinner"
+			17:00 - 19:00 in "Lamennais 4+5" : "SoSyM Editorial Board Meeting"
+			
+			19:00 - 22:00 in "Demeure de Corsaire" : "Gala Dinner"
 		
 		Friday
 			date 16.10.07
@@ -997,7 +1017,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			
 			10:30 - 11:00 in "Rotonde J. Cartier" : "Coffee Break", "Poster"
 			
-			10:30 - 11:00 in "Broussais" : "MODELS: from 2016 to 2017!"
+			10:30 - 11:00 in "Broussais" : "Hand-over to 2017"
 			
 			11:00 - 12:40 in "Chateaubriand" : "Model Transformation"
 			11:00 - 12:40 in "Lamennais 1+2" : "Tooling"
