@@ -5,8 +5,6 @@ Conference "MODELS 2016"
 	
 	resources
         room "Chateaubriand" capacity 400
-		room "Broussais"
-		room "Rotonde Surcouf"
 		room "Bouvet 1" capacity 45
 		room "Bouvet 2" capacity 45
 		room "Charcot" capacity 54
@@ -18,8 +16,10 @@ Conference "MODELS 2016"
 		room "Lamennais 1+2" capacity 180
 		room "Lamennais 4+5" capacity 150
 		room "Rotonde J. Cartier"
+		room "Rotonde Surcouf"
 		room "Grand Large"
 		room "Demeure de Corsaire"
+		room "Broussais"
 
 		papers {
 		"TBD (MIP)"
@@ -467,7 +467,116 @@ Motivated by addressing the above limitations, we develop a domain model extract
                 abstract
                     "The cost savings introduced by Web services through code reuse and integration opportunities have motivated many businesses to develop Web APIs, with ever increasing numbers opting for the REST architectural style. RESTful Web APIs are decomposed in multiple resources, which the client can manipulate through HTTP interactions with well-defined semantics. Getting the resource in the desired state might require multiple client–server interactions, what we define as a RESTful conversation. RESTful conversations are dynamically guided by hypermedia controls, such as links. Thus, when deciding whether and how to use a given RESTful service, the client might not be aware of all the interactions which are necessary to achieve its goal. This is because existing documentation of RESTful APIs describes the static structure of the interface, exposing low-level HTTP details, while little attention has been paid to conceptual, high-level, modeling of the dynamics of RESTful conversations. Low-level HTTP details can be abstracted from during the design phase of the API, or when decid- ing which API to use. We argue that, in these situations, visual models of the required client–server interactions might increase developers’ efficiency and facilitate their understanding. Thus, to capture all possible interaction sequences in a given RESTful conversation, we propose RESTalk, an extension to the BPMN Choreography diagrams to render them more concise and yet sufficiently expressive in the specific REST domain. We also report on the results obtained from an exploratory survey we have conducted to assess the maturity of the field for a domain-specific language and to obtain feedback for future improvements of RESTalk."
                 kind
-                    "SoSyM First" 
+                    "SoSyM First";
+                    
+            "txtUML"
+            	authors
+            		"Gergely Dévai",
+            		"Tibor Gregorics",
+            		"Melinda Tóth",
+            		"Domonkos Asztalos"
+            	abstract
+            		"The name txtUML stands for textual, executable, translatable UML. It is an Eclipse-based tool built on top of JDT, Xtext/Xbase and Papyrus UML. The tool is designed for textual model editing. This makes storage, version control, compare and merge processes, editing and searching easier and more efficient. The tool supports two textual syntaxes for modeling: the standalone syntax, which is designed to be clean and short, and alternatively, the txtUML Java API, which can be used to define models as standard Java programs. The tool supports the generation of graphical UML diagrams from the textual descriptions: class- and state machine diagrams. The layout of the diagrams can be controlled by a simple textual diagram layout language. Models can be seamlessly integrated into Java programs: they can be executed and debugged. Generated state machine diagrams can be animated during model execution to further enhance comprehension of model dynamics. Compatibility with other tools is ensured by generating standard UML models in EMF-UML2 format. This representation is the input for our model compiler, which generates C++ code."
+            	kind
+            		"Demo";
+            		
+            "iOCL: A Interactive Tool for Specifying, Validating and Evaluating OCL Constraints"
+            	authors
+            		"Hammad Muhammad",
+            		"Tao Yue",
+            		"Shaukat Ali",
+            		"Shuai Wang"
+            	abstract
+            		"The Object Constraint Language (OCL) is frequently used to specify additional constraints on models, in addition, to the ones enforced by semantics of the models. It is a well- known fact that due to the lack of familiarity with OCL, practitioners and even researcher to some extent are reluctant in using OCL. To help practitioners and researchers in writing OCL constraints for their specific problem at hand, we developed a tool called interactive OCL (iOCL) for interactively specifying constraints on a given model. The basic philosophy behind the tool is to present only those details (e.g., operations) of OCL to modelers that are valid at a given step of constraint specification process, in addition to helping modelers with its syntax. Our ultimate aim is to reduce the effort required to specify constraints, subsequently lowering down training cost and increasing the correctness of the constraints. iOCL is a web-based application that integrates other tools including Eclipse OCL for validation and evaluation of OCL constraints, and EsOCL for automatically generating valid instances of models that satisfy the specified constraints."
+            	kind
+            		"Demo";
+            
+            "SAC-OCL: A Tool for A Semi Automatic Co-evolution of OCL Constraints"
+            	authors
+            		"Djamel Eddine Khelladi",
+            		"Reda Bendraou",
+					"Marie-Pierre Gervais"
+				abstract
+					"Object-Oriented Models (OOM) are widely used in Model-Driven Engineering (MDE). As a complement, OCL constraints are used to specify business rules and detailed aspects of the business domain, e.g. more than 750 constraints come with the UML metamodel (an OOM). Automatically co-evolving OCL constraints w.r.t. the evolved OOM is challenging since alternative resolutions can be applied but also a resolution cannot be applied to any arbitrary constraint. In this paper, we present SAC-OCL an Eclipse-based tool to automatically co-evolve OCL constraints when an OOM evolves. In contrast to existing tools, SAC-OCL propose alternative resolutions for an impacted OCL constraint and propose only the appropriate resolutions that can be applied on the impacted constraint. Our evaluation on six case studies shows an average correct co-evolution rate of 92%."
+          		kind
+          			"Demo";
+          			
+          	"Scenario-Based Modeling and Synthesis for Reactive Systems with Dynamic System Structure in ScenarioTools"
+          		authors
+          			"Joel Greenyer",
+          			"Daniel Gritzner",
+          			"Guy Katz",
+          			"Assaf Marron"
+          		abstract
+          			"Software-intensive systems such as communicating cars or collaborating robots consist of multiple interacting components, where physical or virtual relationships between components change at run-time. This dynamic system structure influences the components' behavior, which again affects the system's structure. This dynamic system structure and the often distributed and concurrent nature of the software bring substantial complexity that must be mastered during system design. For this purpose, we propose a specification method that combines scenario-based modeling and graph transformations. The specifications are executable and can be analyzed via simulation. We furthermore developed a formal synthesis procedure that can find inconsistencies or prove the specification's realizability. This method is implemented in ScenarioTools, an Eclipse-based tool suite that combines the Scenario Modeling Language, an extended variant of LSCs, and graph transformations modeled with Henshin. The particular novelty is the synthesis support for systems with dynamic structure."
+          		kind
+          			"Demo";
+          		
+          	"C Code Verification based on the Extended Labeled Transition System Model"
+          		authors
+          			"Dexi Wang",
+          			"Chao Zhang",
+          			"Guang Chen",
+          			"Ming Gu",
+          			"Jiaguang Sun" 
+          		abstract
+					"C programming language is widely used in safety-critical software systems. Together with its large appliance and increasing complexity, ensuring the correctness is urgent. This paper presents Ceagle , a fully automated program verifier for finding assertion violations in C programs. It is decent in both accuracy and efficiency by using a semantically equivalent program model language that is specifically designed for C program, together with various optimizations that make the satisfiability checking faster and memory-friendly. More specifically, Ceagle uses LLVM clang as front-end parser, an extended labeled transition system as program model, and Z3 SMT solver as the back-end satisfiability checker. Ceagle is designed to be fully automatic and requires no user interaction as long as the assertions are provided. For evaluation, we compare Ceagle with existing C program verifiers based on open benchmarks. Ceagle outperforms others in terms of accuracy, and time and memory consumption."
+            	kind
+            		"Demo";
+            		
+            "NeoEMF: a Multi-database Model Persistence Framework for Very Large Models"
+            	authors
+            		"Gwendal Daniel",
+            		"Gerson Sunyé",
+            		"Amine Benelallam",
+            		"Massimo Tisi",
+            		"Yoann Vernageau",
+            		"Abel Gomez",
+            		"Jordi Cabot"
+				abstract
+					"The growing use of Model Driven Engineering (MDE) techniques in industry has emphasized scalability of existing model persistence solutions as a major issue. Specifically, there is a need to store, query, and transform very large models in an efficient way. Several persistence solutions based on relational and NoSQL databases have been proposed to achieve scalability. However, existing solutions often rely on a single data store, which suits a specific modeling activity, but may not be optimized for other use cases. In this article we present NeoEMF, a multi-database model persistence framework able to store very large models in key-value stores, graph databases, and wide column databases. We introduce NeoEMF core features, and present the different data stores and their applications. NeoEMF is open source and available online."
+				kind
+					"Demo";
+			
+			"ModifRoundtrip: A Model-Based tool to reuse legacy transformations"
+				authors
+					"Paola Vallejo",
+					"Jean-Philippe Babau",
+					"Mickaël Kerboeuf"
+				abstract
+					"The legacy transformations dealing with domain specific data gathers important expertise. Nevertheless, in many cases, have to be rewritten in order to make them apply to semantically equivalent but structurally incompatible data. According to the complexity of the transformation, rewriting them can quickly become a difficult and error-prone task. We propose a coevolution approach to enable the reuse of legacy transformations instead of their rewriting. In this approach, the data conforming to the reuse context coevolve into data conforming to the legacy transformation context. Legacy transformation is applied and the result is migrated back to the reuse context. In this paper, we introduce ModifRoundtrip, a plug-in for the Eclipse development environment. It promotes the reuse of legacy transformations, providing guidance for the user during reuse process. Reuse process is done automatically, but ModifRoundtrip provides interaction points to the user to indicate custom reuse scenarios."
+				kind
+					"Demo";
+			
+			"Tsmart-BIPEX: An Integrated Graphical Design Toolkit for Software Systems"
+				authors
+					"Huafeng Zhang",
+					"Yu Jiang",
+					"Han Liu",
+					"Ming Gu",
+					"Jiaguang Sun"
+				abstract
+					"To help build reliable software systems efficiently, the com- ponent based model-driven design approach is widely used, and lots of modeling languages have been designed. In this paper, we propose an integrated graphical development toolkit Tsmart-BIPEX in support of building complex systems in the BIP modeling language, which features a rich semantics for composing sub-systems. First, we build a graphical interface for model construction and simulation, which is more intuitive than the existed command-line based toolchain. Furthermore, to enhance the original BIP verification tool RTD-Finder, we translate the graphical model to a labeled transition system for a thorough verification in verifier VCS. Finally, we can generate executable C++ code directly from the graphical model. Tsmart-BIPEX has been successfully applied in the development of a real-world train network controller."
+				kind
+					"Demo";
+					
+			"ArchFeature: A Modeling Environment Integrating Features into Product Line Architecture"
+				authors
+					"Gharib Gharibi",
+					"Yongjie Zheng" 
+				abstract
+					"An important task in product line architecture (PLA) modeling is developing the involved variation points and maintaining their conformance to product line features. However, existing modeling tools and approaches still require manual development of variation points and manual maintenance of feature-PLA relations, which is expensive and error prone. In this paper, we introduce a new PLA modeling environment named ArchFeature. It can automatically manage variation points in the PLA model, create and maintain feature-PLA relations, and derive new architectural instances. The key idea of ArchFeature is to develop the product line features and PLA side-by-side in the same environment, and integrate their specifications in a single model. The goal is to reduce the modeling effort and increase the quality of the PLA models."
+				kind
+					"Demo";
+					
+			"Reifier: Model-Driven Engineering of Component-Based and Service-Oriented JEE~Applications"
+				authors
+					"Jérôme Rocheteau",
+					"David Sferruzza"
+				abstract
+					"This paper aims at presenting Reifier, a tool for prototyping web modules of JEE applications by the means of a model-driven development. Code generation is driven by domain-specific models in which web services are defined by parametric components. Reification of JEE applications is obtained thanks to a model-to-text approach. The code generation covers every model elements but the basic components that should be developed manually and provided throughout libraries. This meta-model allows us to define web service patterns, to verify them formally and to apply them on different data model entities."
+				kind
+					"Demo"
 	}
 	
 	events {	
@@ -505,7 +614,8 @@ Motivated by addressing the above limitations, we develop a domain model extract
 		Reception "Conference Welcome Reception";
 		Reception "Gala Dinner";
 		
-		Clinic "Clinic";
+		Clinic "Clinic"
+			url "http://models2016.irisa.fr/clinic/";
 		
 		Keynote "Resurrecting Laplace’s Demon: The Case for Deterministic Models"
 			abstract " In 1814, Pierre-Simon Laplace published an argument for determinism in the universe, arguing that if someone (a demon) were to know the precise location and momentum of every atom in the universe, then their past and future values for any given time are completely determined and can be calculated from the laws of classical mechanics. This principle, of course, has been roundly invalidated by quantum mechanics, and yet the laws of classical mechanics continue to be extremely useful for prediction.
@@ -696,73 +806,75 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		TalkSession "10 years after";
 		
 		TalkSession "Advanced Algorithms and Modelling"
-			chair "To be determined"	email "Chair mail"	homepage "Chair homepage"
+			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Extracting Domain Models from Natural-Language Requirements: Approach and Industrial Evaluation", "Ground Setting Properties for an Efficient Translation of OCL in SMT-based Model Finding", "Feature Location in Models through a Genetic Algorithm Driven by Information Retrieval Techniques";
 		
 		TalkSession "Testing and Analysis"
-			chair "To be determined"	email "Chair mail"	homepage "Chair homepage"
+			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Towards Mutation Analysis for Use Cases", "A Generic Framework for Model-Set Selection for the Unification of Testing and Learning MDE Tasks", "Automatic Detection of Incomplete Requirements via Symbolic Analysis", "A Requirement Driven Testing Method for Multi-disciplinary System Design";
 				
 		TalkSession "Model Transformation"
-			chair "To be determined"	email "Chair mail"	homepage "Chair homepage"
+			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "A Generic Transformation Algorithm to Simplify the Development of Mapping Models", "Automated Refactoring of ATL Model Transformations: A Search-Based Approach", "VMTL: a Language for End-User Model Transformation", "Incremental Backward Change Propagation of View Models by Logic Solvers";
 				
 		TalkSession "Testing and Simulation"
-			chair "To be determined"	email "Chair mail"	homepage "Chair homepage"
+			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Incremental Diagram Layout for Concrete Syntax Migration", "A Model Management Approach for Assurance Case Reuse due to System Evolution", "Towards the Verification of Industrial Communication Protocols through a Simulation Environment Based on QEMU and SystemC";
 			
 		TalkSession "Models and Code"
-			chair "To be determined"	email "Chair mail"	homepage "Chair homepage"
+			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers	"ThingML: A Language and Code Generation Framework for Heterogeneous Targets", "Modern C++ as a Modeling Language for Automated Driving and Human-Robot Collaboration", "Handling Index-Out-Of-Bounds in Safety-Critical Embedded C Code Using Model-based Development";
 				
 		TalkSession "Modelling and Formal Methods"
-			chair "To be determined"	email "Chair mail"	homepage "Chair homepage"
+			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Towards a Categorical Approach for Meta-Modelling Epistemic Game Theory", "OCL2MSFOL: A Mapping to Many-Sorted First-Order Logic for Efficiently Checking the Satisfiability of OCL Constraints", "On the Synthesis of Protocol State Machines from Contracts";
 				
 		TalkSession "Modelling Models"
-			chair "To be determined"	email "Chair mail"	homepage "Chair homepage"
+			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Towards the Characterization of Realistic Models: Evaluation of Multidisciplinary Graph Metrics", "Unifying Explanatory and Constructive Modeling", "Metamodel Specialization for Graphical Modeling Language Support";
 				
 		TalkSession "Empirical Investigations I"
-			chair "To be determined"	email "Chair mail"	homepage "Chair homepage"
+			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Controlled Experiment on the Comprehension of Runtime Phenomena Using Models at Runtime", "Technical Debt in MDE: A Case Study on GMF/EMF-Based Projects", "The Quest for Open Source Projects that Use UML: Mining GitHub";
 				
 		TalkSession "Empirical Investigations II"
-			chair "To be determined"	email "Chair mail"	homepage "Chair homepage"
+			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Descriptive vs Prescriptive Models in Industry", "The Problems with Eclipse Modeling Tools: A Topic Analysis of Eclipse Forums", "Model-Driven Software Engineering in the openETCS Project: Project Experiences and Lessons Learned";		
 				
 		TalkSession "Applications I"
-			chair "To be determined"	email "Chair mail"	homepage "Chair homepage"
+			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Supporting the Model-Driven Development of Real-time Embedded Systems with Run-Time Monitoring and Animation via Highly Customizable Code Generation", "Model-driven Performance Prediction of Systems of Systems", "Automatic Generation of Detailed Flight Plans from High-level Mission Descriptions";		
 				
 		TalkSession "Applications II"
-			chair "To be determined"	email "Chair mail"	homepage "Chair homepage"
+			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Visual Modeling of RESTful Conversations with RESTalk", "Formalizing Knowledge in Multi-Scale Agent-Based Simulations", "Process Mining Using BPMN: Relating Event Logs and Process Models";
 				
 		TalkSession "Tooling"
-			chair "To be determined"	email "Chair mail"	homepage "Chair homepage"
+			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "PrefetchML: A Framework for Prefetching and Caching Models", "Towards Partial Loading of XMI Models", "Integration of a Graph-Based Model Indexer in Commercial Modelling Tools", "Query-based Access Control for Secure Collaborative Modeling Using Bidirectional Transformations";
 	
 	    TalkSession "Domain-Specific Modelling"
-			chair "To be determined"	email "Chair mail"	homepage "Chair homepage"
+			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Multi-Variability Modeling and Realization for Software Derivation in Industrial Automation Management", "A Model-based Approach for Multi-Device User Interactions", "Using Free Modeling as an Agile Method for Developing Domain Specific Modeling Languages";
 				
-		TalkSession "Demo I";
+		TalkSession "Demo I"
+				papers "txtUML", "iOCL: A Interactive Tool for Specifying, Validating and Evaluating OCL Constraints", "SAC-OCL: A Tool for A Semi Automatic Co-evolution of OCL Constraints", "Scenario-Based Modeling and Synthesis for Reactive Systems with Dynamic System Structure in ScenarioTools", "C Code Verification based on the Extended Labeled Transition System Model";
 		
-		TalkSession "Demo II";
+		TalkSession "Demo II"
+				papers "NeoEMF: a Multi-database Model Persistence Framework for Very Large Models", "ModifRoundtrip: A Model-Based tool to reuse legacy transformations", "Tsmart-BIPEX: An Integrated Graphical Design Toolkit for Software Systems", "ArchFeature: A Modeling Environment Integrating Features into Product Line Architecture", "Reifier: Model-Driven Engineering of Component-Based and Service-Oriented JEE~Applications";
 		
 		TalkSession "Awards"
 		    chair "TBD"

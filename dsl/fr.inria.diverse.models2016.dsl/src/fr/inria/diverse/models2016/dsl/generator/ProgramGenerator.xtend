@@ -214,6 +214,9 @@ class ProgramGenerator extends AbstractGenerator {
 					{
 						"type" : "Workshop",
 						"title" : "«workshop.name»",
+						«IF workshop.fullName != null»
+						"fullname" : "«workshop.fullName»",
+						«ENDIF»
 						«IF workshop.abstract != null && workshop.abstract.length > 0»
 						"abstract" : "«workshop.abstract.replace("\n","\\n")»",
 						«ENDIF»
@@ -244,6 +247,9 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						"type" : "Clinic",
+						«IF clinic.url != null»
+						"url" : "«clinic.url»",
+						«ENDIF»
 						"title" : "«clinic.name»"
 					}
 				'''

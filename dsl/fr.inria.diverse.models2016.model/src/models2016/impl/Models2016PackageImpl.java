@@ -435,6 +435,15 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getEvent_Url() {
+		return (EAttribute)eventEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getTalkSession() {
 		return talkSessionEClass;
 	}
@@ -498,17 +507,8 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWorkshop_Url() {
-		return (EAttribute)workshopEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EReference getWorkshop_Organizers() {
-		return (EReference)workshopEClass.getEStructuralFeatures().get(1);
+		return (EReference)workshopEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -517,7 +517,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * @generated
 	 */
 	public EAttribute getWorkshop_FullName() {
-		return (EAttribute)workshopEClass.getEStructuralFeatures().get(2);
+		return (EAttribute)workshopEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1006,6 +1006,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		eventEClass = createEClass(EVENT);
 		createEAttribute(eventEClass, EVENT__NAME);
 		createEAttribute(eventEClass, EVENT__ABSTRACT);
+		createEAttribute(eventEClass, EVENT__URL);
 
 		talkSessionEClass = createEClass(TALK_SESSION);
 		createEReference(talkSessionEClass, TALK_SESSION__CHAIR);
@@ -1016,7 +1017,6 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		createEReference(panelEClass, PANEL__MODERATORS);
 
 		workshopEClass = createEClass(WORKSHOP);
-		createEAttribute(workshopEClass, WORKSHOP__URL);
 		createEReference(workshopEClass, WORKSHOP__ORGANIZERS);
 		createEAttribute(workshopEClass, WORKSHOP__FULL_NAME);
 
@@ -1156,6 +1156,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		initEClass(eventEClass, Event.class, "Event", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getEvent_Name(), ecorePackage.getEString(), "name", null, 1, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEvent_Abstract(), ecorePackage.getEString(), "abstract", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEvent_Url(), ecorePackage.getEString(), "url", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(talkSessionEClass, TalkSession.class, "TalkSession", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTalkSession_Chair(), this.getPerson(), null, "chair", null, 0, 1, TalkSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1166,7 +1167,6 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		initEReference(getPanel_Moderators(), this.getPerson(), null, "moderators", null, 0, -1, Panel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(workshopEClass, Workshop.class, "Workshop", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getWorkshop_Url(), ecorePackage.getEString(), "url", null, 0, 1, Workshop.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getWorkshop_Organizers(), this.getPerson(), null, "organizers", null, 0, -1, Workshop.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getWorkshop_FullName(), ecorePackage.getEString(), "fullName", null, 0, 1, Workshop.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 

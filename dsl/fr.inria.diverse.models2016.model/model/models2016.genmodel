@@ -15,12 +15,10 @@
       <genEnumLiterals ecoreEnumLiteral="models2016.ecore#//WeekDay/Saturday"/>
       <genEnumLiterals ecoreEnumLiteral="models2016.ecore#//WeekDay/Sunday"/>
     </genEnums>
-    <genDataTypes ecoreDataType="models2016.ecore#//HourDataType"/>
-    <genDataTypes ecoreDataType="models2016.ecore#//DayDataType"/>
     <genClasses ecoreClass="models2016.ecore#//Day">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Day/weekday"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Day/date"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//Day/sessions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference models2016.ecore#//Day/date"/>
     </genClasses>
     <genClasses ecoreClass="models2016.ecore#//Program">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//Program/days"/>
@@ -28,12 +26,13 @@
     <genClasses ecoreClass="models2016.ecore#//Session">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference models2016.ecore#//Session/events"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference models2016.ecore#//Session/room"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Session/startingTime"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Session/endingTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference models2016.ecore#//Session/startingTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference models2016.ecore#//Session/endingTime"/>
     </genClasses>
     <genClasses ecoreClass="models2016.ecore#//Event">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Event/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Event/abstract"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Event/url"/>
     </genClasses>
     <genClasses ecoreClass="models2016.ecore#//TalkSession">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//TalkSession/chair"/>
@@ -44,7 +43,6 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//Panel/moderators"/>
     </genClasses>
     <genClasses ecoreClass="models2016.ecore#//Workshop">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Workshop/url"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//Workshop/organizers"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Workshop/fullName"/>
     </genClasses>
@@ -87,7 +85,9 @@
     </genClasses>
     <genClasses ecoreClass="models2016.ecore#//Lunch"/>
     <genClasses ecoreClass="models2016.ecore#//CoffeeBreak"/>
-    <genClasses ecoreClass="models2016.ecore#//Meeting"/>
+    <genClasses ecoreClass="models2016.ecore#//Meeting">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//Meeting/participants"/>
+    </genClasses>
     <genClasses ecoreClass="models2016.ecore#//SRC"/>
     <genClasses ecoreClass="models2016.ecore#//Poster"/>
     <genClasses ecoreClass="models2016.ecore#//Keynote">
@@ -98,5 +98,12 @@
     </genClasses>
     <genClasses ecoreClass="models2016.ecore#//SponsorKeynote"/>
     <genClasses ecoreClass="models2016.ecore#//Opening"/>
+    <genClasses ecoreClass="models2016.ecore#//Date">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Date/year"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Date/month"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Date/day"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Date/hours"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Date/minutes"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

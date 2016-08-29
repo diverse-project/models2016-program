@@ -13,7 +13,6 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link models2016.Workshop#getUrl <em>Url</em>}</li>
  *   <li>{@link models2016.Workshop#getOrganizers <em>Organizers</em>}</li>
  *   <li>{@link models2016.Workshop#getFullName <em>Full Name</em>}</li>
  * </ul>
@@ -23,32 +22,6 @@ import org.eclipse.emf.common.util.EList;
  * @generated
  */
 public interface Workshop extends Event {
-	/**
-	 * Returns the value of the '<em><b>Url</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Url</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Url</em>' attribute.
-	 * @see #setUrl(String)
-	 * @see models2016.Models2016Package#getWorkshop_Url()
-	 * @model
-	 * @generated
-	 */
-	String getUrl();
-
-	/**
-	 * Sets the value of the '{@link models2016.Workshop#getUrl <em>Url</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Url</em>' attribute.
-	 * @see #getUrl()
-	 * @generated
-	 */
-	void setUrl(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Organizers</b></em>' containment reference list.
 	 * The list contents are of type {@link models2016.Person}.
