@@ -80,6 +80,13 @@ body {
     bottom: 0;
 }
 
+.conferenceEnd {
+    text-align: center;
+    background-color: #588fb3;
+    color: white;
+    vertical-align: middle !important;
+}
+
 
 /* Other styles */
 
@@ -168,7 +175,7 @@ hr {
 }
 
 .Keynote {
-    background-color: rgba(255, 13, 1, 0.5);
+    background-color: rgba(87, 118, 255, 0.5);
 }
 
 .Meeting {

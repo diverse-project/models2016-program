@@ -37,6 +37,9 @@
                                 <strong ng-if="!hideType(selectedTalk.type)">{{selectedTalk.type}}:</strong>
                                 <a ng-if="selectedTalk.url" ng-href="{{selectedTalk.url}}">{{selectedTalk.title}}</a>
                                 <span ng-if="!selectedTalk.url">{{selectedTalk.title}}</span>
+
+                                <!-- Full name -->
+                                <span ng-if="selectedTalk.fullname">- {{selectedTalk.fullname}}</span>
                             </h4>
                         </div>
                         <div class="modal-body">
@@ -85,7 +88,7 @@
                 </div>
             </div>
 
-            <div ng-repeat="day in data" class="row">
+            <div ng-repeat="(dayIndex, day) in data" class="row">
                 <h3 class="day">{{day.name}}</h3>
 
                 <div>
@@ -103,7 +106,7 @@
                                     <div class="session" ng-if="$first" style="height: {{20*session.rowSpan}}px;">
                                         {{getStartOfSessionGroup(sessionGroup)}}
                                         <div class="sessionEnd">
-                                            {{sessionGroupIndex + session.rowSpan === day.sessionGroups.length ? getEndOfSessionGroup(sessionGroup) : ""}}
+                                            {{(sessionGroupIndex + session.rowSpan === day.sessionGroups.length) && (dayIndex < data.length - 1) ? getEndOfSessionGroup(sessionGroup) : ""}}
                                         </div>
                                     </div>
 
@@ -147,6 +150,10 @@
                                         </tr>
                                     </table>
                                 </td>
+                            </tr>
+                            <tr ng-if="$last">
+                                <td>12:40</td>
+                                <td colspan="{{day.rooms.length}}" class="conferenceEnd"><strong>End of the conference</strong></td>
                             </tr>
                         </tbody>
                     </table>
