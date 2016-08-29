@@ -24,7 +24,11 @@ import akka.util.Timeout
 class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSystem, env : Environment)(implicit ec:ExecutionContext) extends Controller {
 
   val dataFile = new File("/var/models2016/data.js")
-  def programData = Json.parse(Source.fromInputStream(env.resourceAsStream("public/javascripts/data.js").get).mkString.substring("var data = ".size))
+
+  def programData : JsValue = {
+    val content = Source.fromFile(dataFile).mkString.substring("var data = ".size)
+    Json.parse(content)
+  }
 
   val customCalendarActor = system.actorOf(CustomCalendarActor.props, "custom-calendar")
   implicit val timeout = Timeout(5.seconds)
