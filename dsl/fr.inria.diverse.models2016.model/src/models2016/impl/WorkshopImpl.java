@@ -29,7 +29,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link models2016.impl.WorkshopImpl#getUrl <em>Url</em>}</li>
  *   <li>{@link models2016.impl.WorkshopImpl#getOrganizers <em>Organizers</em>}</li>
  *   <li>{@link models2016.impl.WorkshopImpl#getFullName <em>Full Name</em>}</li>
  * </ul>
@@ -37,26 +36,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * @generated
  */
 public class WorkshopImpl extends EventImpl implements Workshop {
-	/**
-	 * The default value of the '{@link #getUrl() <em>Url</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getUrl()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String URL_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getUrl() <em>Url</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getUrl()
-	 * @generated
-	 * @ordered
-	 */
-	protected String url = URL_EDEFAULT;
-
 	/**
 	 * The cached value of the '{@link #getOrganizers() <em>Organizers</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -104,27 +83,6 @@ public class WorkshopImpl extends EventImpl implements Workshop {
 	@Override
 	protected EClass eStaticClass() {
 		return Models2016Package.Literals.WORKSHOP;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getUrl() {
-		return url;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setUrl(String newUrl) {
-		String oldUrl = url;
-		url = newUrl;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Models2016Package.WORKSHOP__URL, oldUrl, url));
 	}
 
 	/**
@@ -182,8 +140,6 @@ public class WorkshopImpl extends EventImpl implements Workshop {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case Models2016Package.WORKSHOP__URL:
-				return getUrl();
 			case Models2016Package.WORKSHOP__ORGANIZERS:
 				return getOrganizers();
 			case Models2016Package.WORKSHOP__FULL_NAME:
@@ -201,9 +157,6 @@ public class WorkshopImpl extends EventImpl implements Workshop {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case Models2016Package.WORKSHOP__URL:
-				setUrl((String)newValue);
-				return;
 			case Models2016Package.WORKSHOP__ORGANIZERS:
 				getOrganizers().clear();
 				getOrganizers().addAll((Collection<? extends Person>)newValue);
@@ -223,9 +176,6 @@ public class WorkshopImpl extends EventImpl implements Workshop {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case Models2016Package.WORKSHOP__URL:
-				setUrl(URL_EDEFAULT);
-				return;
 			case Models2016Package.WORKSHOP__ORGANIZERS:
 				getOrganizers().clear();
 				return;
@@ -244,8 +194,6 @@ public class WorkshopImpl extends EventImpl implements Workshop {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case Models2016Package.WORKSHOP__URL:
-				return URL_EDEFAULT == null ? url != null : !URL_EDEFAULT.equals(url);
 			case Models2016Package.WORKSHOP__ORGANIZERS:
 				return organizers != null && !organizers.isEmpty();
 			case Models2016Package.WORKSHOP__FULL_NAME:
@@ -264,9 +212,7 @@ public class WorkshopImpl extends EventImpl implements Workshop {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (url: ");
-		result.append(url);
-		result.append(", fullName: ");
+		result.append(" (fullName: ");
 		result.append(fullName);
 		result.append(')');
 		return result.toString();

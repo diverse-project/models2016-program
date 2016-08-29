@@ -242,13 +242,22 @@ public interface Models2016Package extends EPackage {
 	int EVENT__ABSTRACT = 1;
 
 	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EVENT__URL = 2;
+
+	/**
 	 * The number of structural features of the '<em>Event</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_FEATURE_COUNT = 2;
+	int EVENT_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Event</em>' class.
@@ -286,6 +295,15 @@ public interface Models2016Package extends EPackage {
 	 * @ordered
 	 */
 	int TALK_SESSION__ABSTRACT = EVENT__ABSTRACT;
+
+	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TALK_SESSION__URL = EVENT__URL;
 
 	/**
 	 * The feature id for the '<em><b>Chair</b></em>' containment reference.
@@ -350,6 +368,15 @@ public interface Models2016Package extends EPackage {
 	 * @ordered
 	 */
 	int PANEL__ABSTRACT = EVENT__ABSTRACT;
+
+	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PANEL__URL = EVENT__URL;
 
 	/**
 	 * The feature id for the '<em><b>Panelists</b></em>' containment reference list.
@@ -422,7 +449,7 @@ public interface Models2016Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKSHOP__URL = EVENT_FEATURE_COUNT + 0;
+	int WORKSHOP__URL = EVENT__URL;
 
 	/**
 	 * The feature id for the '<em><b>Organizers</b></em>' containment reference list.
@@ -431,7 +458,7 @@ public interface Models2016Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKSHOP__ORGANIZERS = EVENT_FEATURE_COUNT + 1;
+	int WORKSHOP__ORGANIZERS = EVENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Full Name</b></em>' attribute.
@@ -440,7 +467,7 @@ public interface Models2016Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKSHOP__FULL_NAME = EVENT_FEATURE_COUNT + 2;
+	int WORKSHOP__FULL_NAME = EVENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Workshop</em>' class.
@@ -449,7 +476,7 @@ public interface Models2016Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKSHOP_FEATURE_COUNT = EVENT_FEATURE_COUNT + 3;
+	int WORKSHOP_FEATURE_COUNT = EVENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Workshop</em>' class.
@@ -487,6 +514,15 @@ public interface Models2016Package extends EPackage {
 	 * @ordered
 	 */
 	int TUTORIAL__ABSTRACT = EVENT__ABSTRACT;
+
+	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TUTORIAL__URL = EVENT__URL;
 
 	/**
 	 * The feature id for the '<em><b>Organizers</b></em>' containment reference list.
@@ -544,6 +580,15 @@ public interface Models2016Package extends EPackage {
 	int DOCTORAL_SYMPOSIUM__ABSTRACT = EVENT__ABSTRACT;
 
 	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCTORAL_SYMPOSIUM__URL = EVENT__URL;
+
+	/**
 	 * The feature id for the '<em><b>Organizers</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -597,6 +642,15 @@ public interface Models2016Package extends EPackage {
 	 * @ordered
 	 */
 	int EDUCATOR_SYMPOSIUM__ABSTRACT = EVENT__ABSTRACT;
+
+	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EDUCATOR_SYMPOSIUM__URL = EVENT__URL;
 
 	/**
 	 * The feature id for the '<em><b>Organizers</b></em>' containment reference list.
@@ -728,6 +782,15 @@ public interface Models2016Package extends EPackage {
 	int RECEPTION__ABSTRACT = EVENT__ABSTRACT;
 
 	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECEPTION__URL = EVENT__URL;
+
+	/**
 	 * The number of structural features of the '<em>Reception</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -772,6 +835,15 @@ public interface Models2016Package extends EPackage {
 	 * @ordered
 	 */
 	int CLINIC__ABSTRACT = EVENT__ABSTRACT;
+
+	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLINIC__URL = EVENT__URL;
 
 	/**
 	 * The number of structural features of the '<em>Clinic</em>' class.
@@ -1039,6 +1111,15 @@ public interface Models2016Package extends EPackage {
 	int LUNCH__ABSTRACT = EVENT__ABSTRACT;
 
 	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LUNCH__URL = EVENT__URL;
+
+	/**
 	 * The number of structural features of the '<em>Lunch</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1085,6 +1166,15 @@ public interface Models2016Package extends EPackage {
 	int COFFEE_BREAK__ABSTRACT = EVENT__ABSTRACT;
 
 	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COFFEE_BREAK__URL = EVENT__URL;
+
+	/**
 	 * The number of structural features of the '<em>Coffee Break</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1129,6 +1219,15 @@ public interface Models2016Package extends EPackage {
 	 * @ordered
 	 */
 	int MEETING__ABSTRACT = EVENT__ABSTRACT;
+
+	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEETING__URL = EVENT__URL;
 
 	/**
 	 * The feature id for the '<em><b>Participants</b></em>' containment reference list.
@@ -1186,6 +1285,15 @@ public interface Models2016Package extends EPackage {
 	int SRC__ABSTRACT = EVENT__ABSTRACT;
 
 	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SRC__URL = EVENT__URL;
+
+	/**
 	 * The number of structural features of the '<em>SRC</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1232,6 +1340,15 @@ public interface Models2016Package extends EPackage {
 	int POSTER__ABSTRACT = EVENT__ABSTRACT;
 
 	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTER__URL = EVENT__URL;
+
+	/**
 	 * The number of structural features of the '<em>Poster</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1276,6 +1393,15 @@ public interface Models2016Package extends EPackage {
 	 * @ordered
 	 */
 	int KEYNOTE__ABSTRACT = EVENT__ABSTRACT;
+
+	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int KEYNOTE__URL = EVENT__URL;
 
 	/**
 	 * The feature id for the '<em><b>Speaker</b></em>' containment reference.
@@ -1370,6 +1496,15 @@ public interface Models2016Package extends EPackage {
 	int SPONSOR_KEYNOTE__ABSTRACT = KEYNOTE__ABSTRACT;
 
 	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPONSOR_KEYNOTE__URL = KEYNOTE__URL;
+
+	/**
 	 * The feature id for the '<em><b>Speaker</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1423,6 +1558,15 @@ public interface Models2016Package extends EPackage {
 	 * @ordered
 	 */
 	int OPENING__ABSTRACT = EVENT__ABSTRACT;
+
+	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPENING__URL = EVENT__URL;
 
 	/**
 	 * The number of structural features of the '<em>Opening</em>' class.
@@ -1676,6 +1820,17 @@ public interface Models2016Package extends EPackage {
 	EAttribute getEvent_Abstract();
 
 	/**
+	 * Returns the meta object for the attribute '{@link models2016.Event#getUrl <em>Url</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Url</em>'.
+	 * @see models2016.Event#getUrl()
+	 * @see #getEvent()
+	 * @generated
+	 */
+	EAttribute getEvent_Url();
+
+	/**
 	 * Returns the meta object for class '{@link models2016.TalkSession <em>Talk Session</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1748,17 +1903,6 @@ public interface Models2016Package extends EPackage {
 	 * @generated
 	 */
 	EClass getWorkshop();
-
-	/**
-	 * Returns the meta object for the attribute '{@link models2016.Workshop#getUrl <em>Url</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Url</em>'.
-	 * @see models2016.Workshop#getUrl()
-	 * @see #getWorkshop()
-	 * @generated
-	 */
-	EAttribute getWorkshop_Url();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link models2016.Workshop#getOrganizers <em>Organizers</em>}'.
@@ -2444,6 +2588,14 @@ public interface Models2016Package extends EPackage {
 		EAttribute EVENT__ABSTRACT = eINSTANCE.getEvent_Abstract();
 
 		/**
+		 * The meta object literal for the '<em><b>Url</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EVENT__URL = eINSTANCE.getEvent_Url();
+
+		/**
 		 * The meta object literal for the '{@link models2016.impl.TalkSessionImpl <em>Talk Session</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2504,14 +2656,6 @@ public interface Models2016Package extends EPackage {
 		 * @generated
 		 */
 		EClass WORKSHOP = eINSTANCE.getWorkshop();
-
-		/**
-		 * The meta object literal for the '<em><b>Url</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute WORKSHOP__URL = eINSTANCE.getWorkshop_Url();
 
 		/**
 		 * The meta object literal for the '<em><b>Organizers</b></em>' containment reference list feature.

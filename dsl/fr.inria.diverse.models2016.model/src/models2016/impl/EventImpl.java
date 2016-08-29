@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <ul>
  *   <li>{@link models2016.impl.EventImpl#getName <em>Name</em>}</li>
  *   <li>{@link models2016.impl.EventImpl#getAbstract <em>Abstract</em>}</li>
+ *   <li>{@link models2016.impl.EventImpl#getUrl <em>Url</em>}</li>
  * </ul>
  *
  * @generated
@@ -64,6 +65,26 @@ public abstract class EventImpl extends MinimalEObjectImpl.Container implements 
 	 * @ordered
 	 */
 	protected String abstract_ = ABSTRACT_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getUrl() <em>Url</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUrl()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String URL_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getUrl() <em>Url</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUrl()
+	 * @generated
+	 * @ordered
+	 */
+	protected String url = URL_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -131,6 +152,27 @@ public abstract class EventImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getUrl() {
+		return url;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setUrl(String newUrl) {
+		String oldUrl = url;
+		url = newUrl;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Models2016Package.EVENT__URL, oldUrl, url));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -138,6 +180,8 @@ public abstract class EventImpl extends MinimalEObjectImpl.Container implements 
 				return getName();
 			case Models2016Package.EVENT__ABSTRACT:
 				return getAbstract();
+			case Models2016Package.EVENT__URL:
+				return getUrl();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -155,6 +199,9 @@ public abstract class EventImpl extends MinimalEObjectImpl.Container implements 
 				return;
 			case Models2016Package.EVENT__ABSTRACT:
 				setAbstract((String)newValue);
+				return;
+			case Models2016Package.EVENT__URL:
+				setUrl((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -174,6 +221,9 @@ public abstract class EventImpl extends MinimalEObjectImpl.Container implements 
 			case Models2016Package.EVENT__ABSTRACT:
 				setAbstract(ABSTRACT_EDEFAULT);
 				return;
+			case Models2016Package.EVENT__URL:
+				setUrl(URL_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -190,6 +240,8 @@ public abstract class EventImpl extends MinimalEObjectImpl.Container implements 
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case Models2016Package.EVENT__ABSTRACT:
 				return ABSTRACT_EDEFAULT == null ? abstract_ != null : !ABSTRACT_EDEFAULT.equals(abstract_);
+			case Models2016Package.EVENT__URL:
+				return URL_EDEFAULT == null ? url != null : !URL_EDEFAULT.equals(url);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -208,6 +260,8 @@ public abstract class EventImpl extends MinimalEObjectImpl.Container implements 
 		result.append(name);
 		result.append(", abstract: ");
 		result.append(abstract_);
+		result.append(", url: ");
+		result.append(url);
 		result.append(')');
 		return result.toString();
 	}
