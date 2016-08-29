@@ -300,6 +300,9 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						"type" : "EducatorSymposium",
+						«IF symposium.url != null»
+						"url" : "«symposium.url»",
+						«ENDIF»
 						"title" : "«symposium.name»",
 						"organizers" : [
 							«FOR o : symposium.organizers SEPARATOR ","»
@@ -315,6 +318,9 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						"type" : "DoctoralSymposium",
+						«IF symposium.url != null»
+						"url" : "«symposium.url»",
+						«ENDIF»
 						"title" : "«symposium.name»",
 						"organizers" : [
 							«FOR o : symposium.organizers SEPARATOR ","»
