@@ -812,22 +812,22 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		TalkSession "Advanced Algorithms and Modelling"
 			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
-				papers "Extracting Domain Models from Natural-Language Requirements: Approach and Industrial Evaluation", "Ground Setting Properties for an Efficient Translation of OCL in SMT-based Model Finding", "Feature Location in Models through a Genetic Algorithm Driven by Information Retrieval Techniques";
+				papers "Extracting Domain Models from Natural-Language Requirements: Approach and Industrial Evaluation", "Incremental Backward Change Propagation of View Models by Logic Solvers", "Feature Location in Models through a Genetic Algorithm Driven by Information Retrieval Techniques";
 		
 		TalkSession "Testing and Analysis"
 			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
-				papers "Towards Mutation Analysis for Use Cases", "A Generic Framework for Model-Set Selection for the Unification of Testing and Learning MDE Tasks", "Automatic Detection of Incomplete Requirements via Symbolic Analysis", "A Requirement Driven Testing Method for Multi-disciplinary System Design";
+				papers "Towards Mutation Analysis for Use Cases", "A Model Management Approach for Assurance Case Reuse due to System Evolution", "Automatic Detection of Incomplete Requirements via Symbolic Analysis", "A Requirement Driven Testing Method for Multi-disciplinary System Design";
 				
 		TalkSession "Model Transformation"
 			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
-				papers "A Generic Transformation Algorithm to Simplify the Development of Mapping Models", "Automated Refactoring of ATL Model Transformations: A Search-Based Approach", "VMTL: a Language for End-User Model Transformation", "Incremental Backward Change Propagation of View Models by Logic Solvers";
+				papers "A Generic Transformation Algorithm to Simplify the Development of Mapping Models", "Automated Refactoring of ATL Model Transformations: A Search-Based Approach", "VMTL: a Language for End-User Model Transformation";
 				
 		TalkSession "Testing and Simulation"
 			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
-				papers "Incremental Diagram Layout for Concrete Syntax Migration", "A Model Management Approach for Assurance Case Reuse due to System Evolution", "Towards the Verification of Industrial Communication Protocols through a Simulation Environment Based on QEMU and SystemC";
+				papers "Incremental Diagram Layout for Concrete Syntax Migration", "A Generic Framework for Model-Set Selection for the Unification of Testing and Learning MDE Tasks", "Towards the Verification of Industrial Communication Protocols through a Simulation Environment Based on QEMU and SystemC";
 			
 		TalkSession "Models and Code"
 			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
@@ -867,7 +867,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		TalkSession "Tooling"
 			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
-				papers "PrefetchML: A Framework for Prefetching and Caching Models", "Towards Partial Loading of XMI Models", "Integration of a Graph-Based Model Indexer in Commercial Modelling Tools", "Query-based Access Control for Secure Collaborative Modeling Using Bidirectional Transformations";
+				papers "Query-based Access Control for Secure Collaborative Modeling Using Bidirectional Transformations", "PrefetchML: A Framework for Prefetching and Caching Models", "Towards Partial Loading of XMI Models", "Integration of a Graph-Based Model Indexer in Commercial Modelling Tools", "Ground Setting Properties for an Efficient Translation of OCL in SMT-based Model Finding";
 	
 	    TalkSession "Domain-Specific Modelling"
 			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
