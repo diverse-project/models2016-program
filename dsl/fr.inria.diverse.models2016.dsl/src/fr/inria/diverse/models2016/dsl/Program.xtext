@@ -65,7 +65,8 @@ Panel returns Panel:
 SRC returns SRC:
 	'SRC'
 		name=STRING
-		('abstract' abstract=STRING)?;
+		('abstract' abstract=STRING)?
+		('url' url=STRING)?;
 
 Poster returns Poster:
 	'Poster'

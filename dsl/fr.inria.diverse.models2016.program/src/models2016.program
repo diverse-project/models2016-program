@@ -585,15 +585,19 @@ Motivated by addressing the above limitations, we develop a domain model extract
 		
 		Lunch "Lunch";
 		
-		DoctoralSymposium "Doctoral Symposium";
+		DoctoralSymposium "Doctoral Symposium"
+		url "http://models2016.irisa.fr/doctoral-symposium/";
 		
 		EducatorSymposium "Educators Symposium";
 		
-		SRC "SRC Poster";
+		SRC "SRC Poster"
+		url "http://models2016.irisa.fr/acm-student-research-competition/";
 		
-		SRC "SRC Talk";
+		SRC "SRC Talk"
+		url "http://models2016.irisa.fr/acm-student-research-competition/";
 		
-		SRC "SRC Awards";
+		SRC "SRC Awards"
+		url "http://models2016.irisa.fr/acm-student-research-competition/";
 		
 		Poster "Poster";
 		

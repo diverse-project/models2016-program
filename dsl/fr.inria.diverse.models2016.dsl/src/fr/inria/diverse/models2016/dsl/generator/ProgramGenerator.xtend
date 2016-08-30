@@ -369,6 +369,9 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						"type" : "SRC",
+						«IF src.url != null»
+							"url" : "«src.url»",
+						«ENDIF»
 						"title" : "«src.name»"
 					}
 				'''
