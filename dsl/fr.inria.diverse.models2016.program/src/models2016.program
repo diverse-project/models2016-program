@@ -822,7 +822,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		TalkSession "Model Transformation"
 			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
-				papers "A Generic Transformation Algorithm to Simplify the Development of Mapping Models", "Automated Refactoring of ATL Model Transformations: A Search-Based Approach", "VMTL: a Language for End-User Model Transformation";
+				papers "A Generic Transformation Algorithm to Simplify the Development of Mapping Models", "Automated Refactoring of ATL Model Transformations: A Search-Based Approach", "VMTL: a Language for End-User Model Transformation", "Ground Setting Properties for an Efficient Translation of OCL in SMT-based Model Finding";
 				
 		TalkSession "Testing and Simulation"
 			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
@@ -867,7 +867,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		TalkSession "Tooling"
 			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
 				abstract "Session abstract"
-				papers "Query-based Access Control for Secure Collaborative Modeling Using Bidirectional Transformations", "PrefetchML: A Framework for Prefetching and Caching Models", "Towards Partial Loading of XMI Models", "Integration of a Graph-Based Model Indexer in Commercial Modelling Tools", "Ground Setting Properties for an Efficient Translation of OCL in SMT-based Model Finding";
+				papers "Query-based Access Control for Secure Collaborative Modeling Using Bidirectional Transformations", "PrefetchML: A Framework for Prefetching and Caching Models", "Towards Partial Loading of XMI Models", "Integration of a Graph-Based Model Indexer in Commercial Modelling Tools";
 	
 	    TalkSession "Domain-Specific Modelling"
 			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
