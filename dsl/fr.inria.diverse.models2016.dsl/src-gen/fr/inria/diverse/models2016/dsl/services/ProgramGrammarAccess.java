@@ -888,13 +888,17 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cAbstractKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
 		private final Assignment cAbstractAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
 		private final RuleCall cAbstractSTRINGTerminalRuleCall_2_1_0 = (RuleCall)cAbstractAssignment_2_1.eContents().get(0);
+		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
+		private final Keyword cUrlKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
+		private final Assignment cUrlAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
+		private final RuleCall cUrlSTRINGTerminalRuleCall_3_1_0 = (RuleCall)cUrlAssignment_3_1.eContents().get(0);
 		
 		//Poster:
 		//	'Poster'
-		//	name=STRING ('abstract' abstract=STRING)?;
+		//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)?;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'Poster' name=STRING ('abstract' abstract=STRING)?
+		//'Poster' name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)?
 		public Group getGroup() { return cGroup; }
 		
 		//'Poster'
@@ -917,6 +921,18 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//STRING
 		public RuleCall getAbstractSTRINGTerminalRuleCall_2_1_0() { return cAbstractSTRINGTerminalRuleCall_2_1_0; }
+		
+		//('url' url=STRING)?
+		public Group getGroup_3() { return cGroup_3; }
+		
+		//'url'
+		public Keyword getUrlKeyword_3_0() { return cUrlKeyword_3_0; }
+		
+		//url=STRING
+		public Assignment getUrlAssignment_3_1() { return cUrlAssignment_3_1; }
+		
+		//STRING
+		public RuleCall getUrlSTRINGTerminalRuleCall_3_1_0() { return cUrlSTRINGTerminalRuleCall_3_1_0; }
 	}
 	public class KeynoteElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.Keynote");
@@ -2171,7 +2187,7 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//Poster:
 	//	'Poster'
-	//	name=STRING ('abstract' abstract=STRING)?;
+	//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)?;
 	public PosterElements getPosterAccess() {
 		return pPoster;
 	}

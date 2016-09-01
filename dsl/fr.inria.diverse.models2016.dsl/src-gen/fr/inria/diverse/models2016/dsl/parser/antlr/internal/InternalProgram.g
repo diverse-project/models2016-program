@@ -1507,6 +1507,30 @@ rulePoster returns [EObject current=null]
 				)
 			)
 		)?
+		(
+			otherlv_4='url'
+			{
+				newLeafNode(otherlv_4, grammarAccess.getPosterAccess().getUrlKeyword_3_0());
+			}
+			(
+				(
+					lv_url_5_0=RULE_STRING
+					{
+						newLeafNode(lv_url_5_0, grammarAccess.getPosterAccess().getUrlSTRINGTerminalRuleCall_3_1_0());
+					}
+					{
+						if ($current==null) {
+							$current = createModelElement(grammarAccess.getPosterRule());
+						}
+						setWithLastConsumed(
+							$current,
+							"url",
+							lv_url_5_0,
+							"org.eclipse.xtext.common.Terminals.STRING");
+					}
+				)
+			)
+		)?
 	)
 ;
 

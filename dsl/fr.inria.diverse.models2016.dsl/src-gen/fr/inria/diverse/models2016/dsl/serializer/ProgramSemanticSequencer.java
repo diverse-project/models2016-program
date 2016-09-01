@@ -392,7 +392,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Poster returns Poster
 	 *
 	 * Constraint:
-	 *     (name=STRING abstract=STRING?)
+	 *     (name=STRING abstract=STRING? url=STRING?)
 	 */
 	protected void sequence_Poster(ISerializationContext context, Poster semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

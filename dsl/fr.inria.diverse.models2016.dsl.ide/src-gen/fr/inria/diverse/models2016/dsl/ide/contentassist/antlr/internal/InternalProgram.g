@@ -3978,6 +3978,7 @@ rule__Poster__Group__2
 	}
 :
 	rule__Poster__Group__2__Impl
+	rule__Poster__Group__3
 ;
 finally {
 	restoreStackSize(stackSize);
@@ -3992,6 +3993,32 @@ rule__Poster__Group__2__Impl
 	{ before(grammarAccess.getPosterAccess().getGroup_2()); }
 	(rule__Poster__Group_2__0)?
 	{ after(grammarAccess.getPosterAccess().getGroup_2()); }
+)
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__Poster__Group__3
+	@init {
+		int stackSize = keepStackSize();
+	}
+:
+	rule__Poster__Group__3__Impl
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__Poster__Group__3__Impl
+	@init {
+		int stackSize = keepStackSize();
+	}
+:
+(
+	{ before(grammarAccess.getPosterAccess().getGroup_3()); }
+	(rule__Poster__Group_3__0)?
+	{ after(grammarAccess.getPosterAccess().getGroup_3()); }
 )
 ;
 finally {
@@ -4046,6 +4073,60 @@ rule__Poster__Group_2__1__Impl
 	{ before(grammarAccess.getPosterAccess().getAbstractAssignment_2_1()); }
 	(rule__Poster__AbstractAssignment_2_1)
 	{ after(grammarAccess.getPosterAccess().getAbstractAssignment_2_1()); }
+)
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+
+rule__Poster__Group_3__0
+	@init {
+		int stackSize = keepStackSize();
+	}
+:
+	rule__Poster__Group_3__0__Impl
+	rule__Poster__Group_3__1
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__Poster__Group_3__0__Impl
+	@init {
+		int stackSize = keepStackSize();
+	}
+:
+(
+	{ before(grammarAccess.getPosterAccess().getUrlKeyword_3_0()); }
+	'url'
+	{ after(grammarAccess.getPosterAccess().getUrlKeyword_3_0()); }
+)
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__Poster__Group_3__1
+	@init {
+		int stackSize = keepStackSize();
+	}
+:
+	rule__Poster__Group_3__1__Impl
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__Poster__Group_3__1__Impl
+	@init {
+		int stackSize = keepStackSize();
+	}
+:
+(
+	{ before(grammarAccess.getPosterAccess().getUrlAssignment_3_1()); }
+	(rule__Poster__UrlAssignment_3_1)
+	{ after(grammarAccess.getPosterAccess().getUrlAssignment_3_1()); }
 )
 ;
 finally {
@@ -8441,6 +8522,21 @@ rule__Poster__AbstractAssignment_2_1
 		{ before(grammarAccess.getPosterAccess().getAbstractSTRINGTerminalRuleCall_2_1_0()); }
 		RULE_STRING
 		{ after(grammarAccess.getPosterAccess().getAbstractSTRINGTerminalRuleCall_2_1_0()); }
+	)
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__Poster__UrlAssignment_3_1
+	@init {
+		int stackSize = keepStackSize();
+	}
+:
+	(
+		{ before(grammarAccess.getPosterAccess().getUrlSTRINGTerminalRuleCall_3_1_0()); }
+		RULE_STRING
+		{ after(grammarAccess.getPosterAccess().getUrlSTRINGTerminalRuleCall_3_1_0()); }
 	)
 ;
 finally {

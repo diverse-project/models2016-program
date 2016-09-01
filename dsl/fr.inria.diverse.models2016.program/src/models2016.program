@@ -599,13 +599,15 @@ Motivated by addressing the above limitations, we develop a domain model extract
 		SRC "SRC Awards"
 		url "http://models2016.irisa.fr/acm-student-research-competition/";
 		
-		Poster "Poster";
+		Poster "Poster"
+		url "http://models2016.irisa.fr/posters/";
 		
 		Opening "General Chairs Opening";
 		Opening "Program Commitee Opening";
 		
 		Panel "Panel: User Experience (UX) in Model-Based Software Engineering" 
-		   moderators "Jon Whittle";
+			panelists "Betty Cheng", "Richard Paige", "Harald Stoerrle", "Francis Bordeleau"
+		   	moderators "Jon Whittle";
 		Keynote "Thales" speaker "Véronique Normand";
 		
 		

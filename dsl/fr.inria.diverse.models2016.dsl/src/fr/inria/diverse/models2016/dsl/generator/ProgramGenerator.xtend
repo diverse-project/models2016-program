@@ -382,6 +382,9 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						"type" : "Poster",
+						«IF poster.url != null»
+							"url" : "«poster.url»",
+						«ENDIF»
 						"title" : "«poster.name»"
 					}
 				'''

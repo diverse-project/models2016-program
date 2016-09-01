@@ -71,7 +71,8 @@ SRC returns SRC:
 Poster returns Poster:
 	'Poster'
 		name=STRING
-		('abstract' abstract=STRING)?;
+		('abstract' abstract=STRING)?
+		('url' url=STRING)?;
 
 Keynote returns Keynote:
 	'Keynote'
