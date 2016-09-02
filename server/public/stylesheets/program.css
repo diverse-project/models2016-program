@@ -3,6 +3,7 @@
 body {
     color: #555555;
     font-size: small;
+    height: 100%;
 }
 
 .title {
@@ -18,17 +19,16 @@ body {
 
 /* Table style */
 
-.table-responsive {
-    overflow-x: scroll;
-}
+/*.table-responsive {*/
+    /*overflow-x: scroll;*/
+/*}*/
 
 .table {
-
+    height: 100%;
 }
 
 .table tr {
     min-height: 30px;
-    height: 1px;
 }
 
 .table th {
@@ -44,16 +44,15 @@ body {
     word-wrap: break-word;
     padding: 2px !important;
     white-space: normal !important;
-    height: inherit;
     border: none !important;
 }
 
 
 
 .table .table {
-    background-color: transparent;
     height: 100%;
-    margin-bottom: 0px;
+    background-color: transparent;
+    margin-bottom: 0;
 }
 
 .table .table td {
@@ -63,14 +62,8 @@ body {
     min-width: 10px;
 }
 
-.table .table td:not(:last-child) {
-    border-right: 1px solid #ddd;
-}
 
-.sessionColumn {
-
-}
-
+/* Time */
 .session {
     position: relative;
 }
@@ -97,11 +90,6 @@ body {
 
 .star {
     text-align: center;
-}
-
-.eventType {
-    height: 5px;
-    width: 100%;
 }
 
 footer {
