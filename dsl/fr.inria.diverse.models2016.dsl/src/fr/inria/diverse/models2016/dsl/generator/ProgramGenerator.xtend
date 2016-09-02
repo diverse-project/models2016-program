@@ -188,6 +188,9 @@ class ProgramGenerator extends AbstractGenerator {
 							«FOR p : talkSession.papers SEPARATOR ","»
 							{
 								"title" : "«p.name»",
+								«IF p.kind != null»
+								"kind" : "«p.kind.name»",
+								«ENDIF»
 								«IF p.abstract != null && p.abstract.length > 0»
 								"abstract" : "«p.abstract.replace("\n","\\n")»",
 								«ENDIF»

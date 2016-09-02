@@ -44,6 +44,11 @@
                         </div>
                         <div class="modal-body">
 
+                                <!-- Kind -->
+                            <div ng-if="selectedTalk.kind">
+                                <strong>Type:</strong> {{selectedTalk.kind}}
+                            </div>
+
                                 <!-- Organizers -->
                             <div ng-if="selectedTalk.organizers.length > 0">
                                 <strong>Organizers:</strong>
