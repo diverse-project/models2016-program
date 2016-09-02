@@ -29,11 +29,11 @@ Conference "MODELS 2016"
 				"TBD"
 			kind "MIP";
 			
-		"TBD (Career Award)"
+		"What Went Right: The Secret History of UML and Related Matters (Career Award)"
 			authors 
-				"TBD"
+				"Bran Selic"
 			abstract 
-				"TBD"
+				"Model-driven Abstract: Model-driven reflections on modeling, model-driven careers, and all that."
 			kind "Career Award";
 		
 		"Controlled Experiment on the Comprehension of Runtime Phenomena Using Models at Runtime"
@@ -883,9 +883,9 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 				papers "NeoEMF: a Multi-database Model Persistence Framework for Very Large Models", "ModifRoundtrip: A Model-Based tool to reuse legacy transformations", "Tsmart-BIPEX: An Integrated Graphical Design Toolkit for Software Systems", "ArchFeature: A Modeling Environment Integrating Features into Product Line Architecture", "Reifier: Model-Driven Engineering of Component-Based and Service-Oriented JEE~Applications";
 		
 		TalkSession "Awards"
-		    chair "TBD"
+		    chair "Lionel Briand, Juergen Dingel"
 		    abstract "MODELS Community Awards"
-		    papers "TBD (MIP)", "TBD (Career Award)"
+		    papers "TBD (MIP)", "What Went Right: The Secret History of UML and Related Matters (Career Award)"
 	}
 
 	
@@ -1012,9 +1012,9 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			date 16.10.04
 			
 			// Workshops
-			09:00 - 10:30 in "Bouvet 2" : "ModComp"
+			09:00 - 10:30 in "Bouvet 2" : "HuFaMo"
 			09:00 - 10:30 in "Bouvet 1" : "COMMitMDE"
-			09:00 - 10:30 in "Vauban 1" : "HuFaMo"
+			09:00 - 10:30 in "Vauban 1" : "ModComp"
 			09:00 - 10:30 in "Vauban 2" : "MRT"
 			09:00 - 10:30 in "Lamennais 1" : "MULTI"
 			09:00 - 10:30 in "Lamennais 2" : "GEMOC"
@@ -1024,9 +1024,9 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			10:30 - 11:00 in "Rotonde J. Cartier" : "Coffee Break"
 			
 			// Workshops
-			11:00 - 12:30 in "Bouvet 2" : "ModComp"
+			11:00 - 12:30 in "Bouvet 2" : "HuFaMo"
 			11:00 - 12:30 in "Bouvet 1" : "COMMitMDE"
-			11:00 - 12:30 in "Vauban 1" : "HuFaMo"
+			11:00 - 12:30 in "Vauban 1" : "ModComp"
 			11:00 - 12:30 in "Vauban 2" : "MRT"
 			11:00 - 12:30 in "Lamennais 1" : "MULTI"
 			11:00 - 12:30 in "Lamennais 2" : "GEMOC"
@@ -1038,9 +1038,9 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			// Student Research Competition
 			14:00 - 15:30 in "Charcot" : "SRC Talk"
 			// Workshops
-			14:00 - 15:30 in "Bouvet 2" : "ModComp"
+			14:00 - 15:30 in "Bouvet 2" : "HuFaMo"
 			14:00 - 15:30 in "Bouvet 1" : "COMMitMDE"
-			14:00 - 15:30 in "Vauban 1" : "HuFaMo"
+			14:00 - 15:30 in "Vauban 1" : "ModComp"
 			14:00 - 15:30 in "Vauban 2" : "MRT"
 			14:00 - 15:30 in "Lamennais 1" : "MULTI"
 			14:00 - 15:30 in "Lamennais 2" : "GEMOC"
@@ -1052,9 +1052,9 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			// Student Research Competition
 			16:00 - 17:30 in "Charcot" : "SRC Talk"
 			// Workshops
-			16:00 - 17:30 in "Bouvet 2" : "ModComp"
+			16:00 - 17:30 in "Bouvet 2" : "HuFaMo"
 			16:00 - 17:30 in "Bouvet 1" : "COMMitMDE"
-			16:00 - 17:30 in "Vauban 1" : "HuFaMo"
+			16:00 - 17:30 in "Vauban 1" : "ModComp"
 			16:00 - 17:30 in "Vauban 2" : "MRT"
 			16:00 - 17:30 in "Lamennais 1" : "MULTI"
 			16:00 - 17:30 in "Lamennais 2" : "GEMOC"
@@ -1088,7 +1088,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			15:45 - 17:00 in "Lamennais 1+2" : "Empirical Investigations I"
 			15:45 - 17:00 in "Lamennais 4+5" : "Demo II"
 			
-			17:00 - 19:00 in "Lamennais 4+5" : "MODELS Steering Commitee Meeting"
+			17:00 - 19:00 in "Lamennais 1+2" : "MODELS Steering Commitee Meeting"
 			
 			19:00 - 22:00 in "Grand Large" : "Conference Welcome Reception"
 			
@@ -1118,7 +1118,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			
 			16:00 - 17:00 in "Chateaubriand" :  "Panel: User Experience (UX) in Model-Based Software Engineering"
 			
-			17:00 - 19:00 in "Lamennais 4+5" : "SoSyM Editorial Board Meeting"
+			17:00 - 19:00 in "Lamennais 1+2" : "SoSyM Editorial Board Meeting"
 			
 			19:00 - 22:00 in "Demeure de Corsaire" : "Gala Dinner"
 		
