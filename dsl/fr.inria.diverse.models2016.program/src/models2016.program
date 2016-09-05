@@ -877,10 +877,10 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 				papers "Multi-Variability Modeling and Realization for Software Derivation in Industrial Automation Management", "A Model-based Approach for Multi-Device User Interactions", "Using Free Modeling as an Agile Method for Developing Domain Specific Modeling Languages";
 				
 		TalkSession "Demo I"
-				papers "txtUML", "iOCL: A Interactive Tool for Specifying, Validating and Evaluating OCL Constraints", "SAC-OCL: A Tool for A Semi Automatic Co-evolution of OCL Constraints", "Scenario-Based Modeling and Synthesis for Reactive Systems with Dynamic System Structure in ScenarioTools", "C Code Verification based on the Extended Labeled Transition System Model";
+				papers "txtUML", "iOCL: A Interactive Tool for Specifying, Validating and Evaluating OCL Constraints", "SAC-OCL: A Tool for A Semi Automatic Co-evolution of OCL Constraints", "Scenario-Based Modeling and Synthesis for Reactive Systems with Dynamic System Structure in ScenarioTools";
 		
 		TalkSession "Demo II"
-				papers "NeoEMF: a Multi-database Model Persistence Framework for Very Large Models", "ModifRoundtrip: A Model-Based tool to reuse legacy transformations", "Tsmart-BIPEX: An Integrated Graphical Design Toolkit for Software Systems", "ArchFeature: A Modeling Environment Integrating Features into Product Line Architecture", "Reifier: Model-Driven Engineering of Component-Based and Service-Oriented JEE~Applications";
+				papers "C Code Verification based on the Extended Labeled Transition System Model", "NeoEMF: a Multi-database Model Persistence Framework for Very Large Models", "ModifRoundtrip: A Model-Based tool to reuse legacy transformations", "Tsmart-BIPEX: An Integrated Graphical Design Toolkit for Software Systems", "ArchFeature: A Modeling Environment Integrating Features into Product Line Architecture", "Reifier: Model-Driven Engineering of Component-Based and Service-Oriented JEE~Applications";
 		
 		TalkSession "Awards"
 		    chair "Lionel Briand, Juergen Dingel"
@@ -1086,7 +1086,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			
 			15:45 - 17:00 in "Chateaubriand" : "Models and Code"
 			15:45 - 17:00 in "Lamennais 1+2" : "Empirical Investigations I"
-			15:45 - 17:00 in "Lamennais 4+5" : "Demo II"
+			15:45 - 17:30 in "Lamennais 4+5" : "Demo II"
 			
 			17:00 - 19:00 in "Lamennais 1+2" : "MODELS Steering Commitee Meeting"
 			
