@@ -22,11 +22,11 @@ Conference "MODELS 2016"
 		room "Broussais"
 
 		papers {
-		"TBD (MIP)"
+		"Merging Models with the Epsilon Merging Language - A Decade Later"
 			authors 
-				"TBD"
+				"Dimitris Kolovos", "Richard Paige", "Fiona Polack"
 			abstract 
-				"TBD"
+				"In our 2006 MoDELS paper titled 'Merging Models with the Epsilon Merging Language', we introduced the Epsilon Merging Language (EML), a new domain-specific transformation language tailored for model merging. Ten years later, EML is still alive and actively maintained as part of the Eclipse Epsilon project (http://www.eclipse.org/epsilon/). This talk will provide an overview of the evolution of the syntax, semantics, and capabilities of the language and its underlying platform over the last decade. It will also present applications of EML, and reflect on the role of a dedicated model merging language in the Model-Driven Engineering toolbox."
 			kind "MIP";
 			
 		"What Went Right: The Secret History of UML and Related Matters (Career Award)"
@@ -605,9 +605,18 @@ Motivated by addressing the above limitations, we develop a domain model extract
 		Opening "General Chairs Opening";
 		Opening "Program Commitee Opening";
 		
-		Panel "Panel: User Experience (UX) in Model-Based Software Engineering" 
-			panelists "Betty Cheng", "Richard Paige", "Harald Stoerrle", "Francis Bordeleau"
-		   	moderators "Jon Whittle";
+		Panel "Panel: User Experience (UX) in Model-Based Software Engineering"
+			abstract "Most MDE tools are horrible to use. It well-known that UX is a key criterion affecting the successful adoption of new technologies. Despite this, there is almost no research in the MDE community on usability and UX for MDE. And commercial vendors also seem to pay little heed to the needs of their users. Although it is now common for MDE research papers to include 'user studies' as part of the evaluation, UX is often not the focus. In contrast, UX in the software development industry is a hot topic, with most companies investing heavily in UX teams. Key questions which this panel would address are: (1) What does UX mean for MDE? (2) Why are most MDE tools so horrible to use? (3) What can be done about it?"
+			panelists
+				"Harald Stoerrle" email "hsto@dtu.dk",
+				"Richard Paige" email "richard.paige@york.ac.uk",
+				"Betty Cheng" email "chengb@cse.msu.edu",
+				"Francis Bordeleau" email "francis.bordeleau@ericsson.com",
+				"Silva Abraho" email "sabrahao@dsic.upv.es",
+				"Sahar Kokaly" email "kokalys@mcmaster.ca"
+		   	moderators
+		   		"Jon Whittle" email "j.n.whittle@lancaster.ac.uk";
+		   	
 		Keynote "Thales" speaker "Véronique Normand";
 		
 		
@@ -885,7 +894,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		TalkSession "Awards"
 		    chair "Lionel Briand, Juergen Dingel"
 		    abstract "MODELS Community Awards"
-		    papers "TBD (MIP)", "What Went Right: The Secret History of UML and Related Matters (Career Award)"
+		    papers "Merging Models with the Epsilon Merging Language - A Decade Later", "What Went Right: The Secret History of UML and Related Matters (Career Award)"
 	}
 
 	
