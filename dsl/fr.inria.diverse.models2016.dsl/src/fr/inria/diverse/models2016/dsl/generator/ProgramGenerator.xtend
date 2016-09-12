@@ -284,6 +284,9 @@ class ProgramGenerator extends AbstractGenerator {
 					{
 						"type" : "Panel",
 						"title" : "«panel.name»",
+						«IF panel.abstract != null && panel.abstract.length > 0»
+						"abstract" : "«panel.abstract.replace("\n","\\n")»",
+						«ENDIF»
 						"moderators" : [
 							«FOR o : panel.moderators SEPARATOR ","»
 							«getPerson(o)»
