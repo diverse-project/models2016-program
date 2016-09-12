@@ -821,12 +821,12 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		TalkSession "10 years after";
 		
 		TalkSession "Advanced Algorithms and Modelling"
-			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
+			chair "Peter Herrmann"	email "herrmann@item.ntnu.no"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Extracting Domain Models from Natural-Language Requirements: Approach and Industrial Evaluation", "Incremental Backward Change Propagation of View Models by Logic Solvers", "Feature Location in Models through a Genetic Algorithm Driven by Information Retrieval Techniques";
 		
 		TalkSession "Testing and Analysis"
-			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
+			chair "Silvia Abrahao"	email "sabrahao@dsic.upv.es"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Towards Mutation Analysis for Use Cases", "A Model Management Approach for Assurance Case Reuse due to System Evolution", "Automatic Detection of Incomplete Requirements via Symbolic Analysis", "A Requirement Driven Testing Method for Multi-disciplinary System Design";
 				
@@ -836,59 +836,61 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 				papers "A Generic Transformation Algorithm to Simplify the Development of Mapping Models", "Automated Refactoring of ATL Model Transformations: A Search-Based Approach", "VMTL: a Language for End-User Model Transformation", "Ground Setting Properties for an Efficient Translation of OCL in SMT-based Model Finding";
 				
 		TalkSession "Testing and Simulation"
-			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
+			chair "Joel Greenyer"	email "greenyer@inf.uni-hannover.de"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Incremental Diagram Layout for Concrete Syntax Migration", "A Generic Framework for Model-Set Selection for the Unification of Testing and Learning MDE Tasks", "Towards the Verification of Industrial Communication Protocols through a Simulation Environment Based on QEMU and SystemC";
 			
 		TalkSession "Models and Code"
-			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
+			chair "Daniel Varro"	email "varro@mit.bme.hu"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers	"ThingML: A Language and Code Generation Framework for Heterogeneous Targets", "Modern C++ as a Modeling Language for Automated Driving and Human-Robot Collaboration", "Handling Index-Out-Of-Bounds in Safety-Critical Embedded C Code Using Model-based Development";
 				
 		TalkSession "Modelling and Formal Methods"
-			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
+			chair "Jürgen Dingel"	email "dingel@cs.queensu.ca"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Towards a Categorical Approach for Meta-Modelling Epistemic Game Theory", "OCL2MSFOL: A Mapping to Many-Sorted First-Order Logic for Efficiently Checking the Satisfiability of OCL Constraints", "On the Synthesis of Protocol State Machines from Contracts";
 				
 		TalkSession "Modelling Models"
-			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
+			chair "Gregor Engels"	email "	engels@upb.de"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Towards the Characterization of Realistic Models: Evaluation of Multidisciplinary Graph Metrics", "Unifying Explanatory and Constructive Modeling", "Metamodel Specialization for Graphical Modeling Language Support";
 				
 		TalkSession "Empirical Investigations I"
-			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
+			chair "Jon Whittle"	email "j.n.whittle@lancaster.ac.uk"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Controlled Experiment on the Comprehension of Runtime Phenomena Using Models at Runtime", "Technical Debt in MDE: A Case Study on GMF/EMF-Based Projects", "The Quest for Open Source Projects that Use UML: Mining GitHub";
 				
 		TalkSession "Empirical Investigations II"
-			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
+			chair "Shaukat Ali"	email "shaukat@simula.no"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Descriptive vs Prescriptive Models in Industry", "The Problems with Eclipse Modeling Tools: A Topic Analysis of Eclipse Forums", "Model-Driven Software Engineering in the openETCS Project: Project Experiences and Lessons Learned";		
 				
 		TalkSession "Applications I"
-			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
+			chair "Bernhard Rumpe"	email "rumpe@se-rwth.de"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Supporting the Model-Driven Development of Real-time Embedded Systems with Run-Time Monitoring and Animation via Highly Customizable Code Generation", "Model-driven Performance Prediction of Systems of Systems", "Automatic Generation of Detailed Flight Plans from High-level Mission Descriptions";		
 				
 		TalkSession "Applications II"
-			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
+			chair "Richard Paige"	email "richard.paige@york.ac.uk"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Visual Modeling of RESTful Conversations with RESTalk", "Formalizing Knowledge in Multi-Scale Agent-Based Simulations", "Process Mining Using BPMN: Relating Event Logs and Process Models";
 				
 		TalkSession "Tooling"
-			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
+			chair "Jean-Marc Jézéquel"	email "Jean-Marc.Jezequel@irisa.fr"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Query-based Access Control for Secure Collaborative Modeling Using Bidirectional Transformations", "PrefetchML: A Framework for Prefetching and Caching Models", "Towards Partial Loading of XMI Models", "Integration of a Graph-Based Model Indexer in Commercial Modelling Tools";
 	
 	    TalkSession "Domain-Specific Modelling"
-			chair "TBD"	email "Chair mail"	homepage "Chair homepage"
+			chair "Eugene Syriani"	email "syriani@iro.umontreal.ca"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Multi-Variability Modeling and Realization for Software Derivation in Industrial Automation Management", "A Model-based Approach for Multi-Device User Interactions", "Using Free Modeling as an Agile Method for Developing Domain Specific Modeling Languages";
 				
 		TalkSession "Demo I"
+			chair "Juan de Lara" email "Juan.deLara@uam.es"
 				papers "txtUML", "iOCL: A Interactive Tool for Specifying, Validating and Evaluating OCL Constraints", "SAC-OCL: A Tool for A Semi Automatic Co-evolution of OCL Constraints", "Scenario-Based Modeling and Synthesis for Reactive Systems with Dynamic System Structure in ScenarioTools";
 		
 		TalkSession "Demo II"
+			chair "Peter Clarke"
 				papers "C Code Verification based on the Extended Labeled Transition System Model", "NeoEMF: a Multi-database Model Persistence Framework for Very Large Models", "ModifRoundtrip: A Model-Based tool to reuse legacy transformations", "Tsmart-BIPEX: An Integrated Graphical Design Toolkit for Software Systems", "ArchFeature: A Modeling Environment Integrating Features into Product Line Architecture", "Reifier: Model-Driven Engineering of Component-Based and Service-Oriented JEE~Applications";
 		
 		TalkSession "Awards"
