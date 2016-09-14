@@ -856,12 +856,12 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 				papers "Incremental Diagram Layout for Concrete Syntax Migration", "A Generic Framework for Model-Set Selection for the Unification of Testing and Learning MDE Tasks", "Towards the Verification of Industrial Communication Protocols through a Simulation Environment Based on QEMU and SystemC";
 			
 		TalkSession "Models and Code"
-			chair "Daniel Varro"	email "varro@mit.bme.hu"	homepage "Chair homepage"
+			chair "Jürgen Dingel"	email "varro@mit.bme.hu"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers	"ThingML: A Language and Code Generation Framework for Heterogeneous Targets", "Modern C++ as a Modeling Language for Automated Driving and Human-Robot Collaboration", "Handling Index-Out-Of-Bounds in Safety-Critical Embedded C Code Using Model-based Development";
 				
 		TalkSession "Modelling and Formal Methods"
-			chair "Jürgen Dingel"	email "dingel@cs.queensu.ca"	homepage "Chair homepage"
+			chair "Daniel Varro"	email "dingel@cs.queensu.ca"	homepage "Chair homepage"
 				abstract "Session abstract"
 				papers "Towards a Categorical Approach for Meta-Modelling Epistemic Game Theory", "OCL2MSFOL: A Mapping to Many-Sorted First-Order Logic for Efficiently Checking the Satisfiability of OCL Constraints", "On the Synthesis of Protocol State Machines from Contracts";
 				
