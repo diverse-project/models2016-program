@@ -67,7 +67,19 @@
                                 <span ng-repeat="participant in selectedTalk.participants">{{$index > 0 ? ", " : ""}}<a ng-if="participant.email" ng-href="mailto:{{participant.email}}">{{participant.name}}</a><span ng-if="!participant.email">{{participant.name}}</span></span>
                             </div>
 
-                                <!-- Speaker -->
+                                <!-- Moderators -->
+                            <div ng-if="selectedTalk.moderators">
+                                <strong>Moderator:</strong>
+                                <span ng-repeat="moderator in selectedTalk.moderators">{{$index > 0 ? ", " : ""}}<a ng-if="moderator.email" ng-href="mailto:{{moderator.email}}">{{moderator.name}}</a><span ng-if="!moderator.email">{{moderator.name}}</span></span>
+                            </div>
+
+                                <!-- Panelists -->
+                            <div ng-if="selectedTalk.panelists">
+                                <strong>Panelists:</strong>
+                                <span ng-repeat="panelist in selectedTalk.panelists">{{$index > 0 ? ", " : ""}}<a ng-if="panelist.email" ng-href="mailto:{{panelist.email}}">{{panelist.name}}</a><span ng-if="!panelist.email">{{panelist.name}}</span></span>
+                            </div>
+
+                            <!-- Speaker -->
                             <div ng-if="selectedTalk.speaker">
                                 <strong>Speaker:</strong> {{selectedTalk.speaker.name}}
                             </div>
