@@ -825,7 +825,13 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 				"Moussa Amrani" email "moussa.amrani@unamur.be", 
 				"Eugene Syriani" email "syriani@iro.umontreal.ca";
 			
-		Workshop "SAM";
+		Workshop "SAM"
+			abstract "The System Analysis and Modelling (SAM) conference provides an open arena for participants from academia and industry to present and discuss the most recent innovations, trends, experiences and concerns in modelling, specification and analysis of distributed, communication and real-time systems using ITU-T Specification and Description Language and Message Sequence Chart notations, as well as related system design languages (including but not limited to UML, ASN.1, TTCN, SysML and the User Requirements Notation (URN))."
+			url "http://sdl-forum.org/Events/SAM2016/index.htm"
+			name "System Analysis and Modelling"
+			organizers
+				"Jens Grabowski" email "grabowski@informatik.uni-goettingen.de",
+				"Steffen Herbold" email "herbold@cs.uni-goettingen.de";
 		
 		TalkSession "10 years after";
 		
