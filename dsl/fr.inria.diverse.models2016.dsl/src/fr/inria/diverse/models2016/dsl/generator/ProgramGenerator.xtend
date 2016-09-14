@@ -410,7 +410,7 @@ class ProgramGenerator extends AbstractGenerator {
 						"abstract" : "«keynote.abstract.replace("\n","\\n")»"«IF chairPresent»,«ENDIF»
 						«ENDIF»
 						«IF chairPresent»
-						"chair" : "«getPerson(keynote.chair)»"
+						"chair" : «getPerson(keynote.chair)»
 						«ENDIF»
 					}
 				'''
@@ -430,7 +430,7 @@ class ProgramGenerator extends AbstractGenerator {
 						"abstract" : "«keynote.abstract.replace("\n","\\n")»"«IF chairPresent»,«ENDIF»
 						«ENDIF»
 						«IF chairPresent»
-						"chair" : "«getPerson(keynote.chair)»"
+						"chair" : «getPerson(keynote.chair)»
 						«ENDIF»
 					}
 				'''
