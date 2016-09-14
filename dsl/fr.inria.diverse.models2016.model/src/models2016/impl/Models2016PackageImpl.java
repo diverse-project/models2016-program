@@ -867,6 +867,15 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getKeynote_Chair() {
+		return (EReference)keynoteEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getKind() {
 		return kindEClass;
 	}
@@ -1073,6 +1082,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 
 		keynoteEClass = createEClass(KEYNOTE);
 		createEReference(keynoteEClass, KEYNOTE__SPEAKER);
+		createEReference(keynoteEClass, KEYNOTE__CHAIR);
 
 		kindEClass = createEClass(KIND);
 		createEAttribute(kindEClass, KIND__NAME);
@@ -1223,6 +1233,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 
 		initEClass(keynoteEClass, Keynote.class, "Keynote", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getKeynote_Speaker(), this.getPerson(), null, "speaker", null, 1, 1, Keynote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getKeynote_Chair(), this.getPerson(), null, "chair", null, 0, 1, Keynote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(kindEClass, Kind.class, "Kind", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getKind_Name(), ecorePackage.getEString(), "name", null, 1, 1, Kind.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

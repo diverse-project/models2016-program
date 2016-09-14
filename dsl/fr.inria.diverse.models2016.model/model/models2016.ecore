@@ -110,6 +110,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="Keynote" eSuperTypes="#//Event">
     <eStructuralFeatures xsi:type="ecore:EReference" name="speaker" lowerBound="1"
         eType="#//Person" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="chair" eType="#//Person"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Kind">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

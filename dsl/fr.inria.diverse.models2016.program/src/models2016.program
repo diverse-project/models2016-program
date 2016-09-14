@@ -616,14 +616,13 @@ Motivated by addressing the above limitations, we develop a domain model extract
 				"Sahar Kokaly" email "kokalys@mcmaster.ca"
 		   	moderators
 		   		"Jon Whittle" email "j.n.whittle@lancaster.ac.uk";
-		   	
-		Keynote "Thales" speaker "Véronique Normand";
 		
 		
 		Meeting "MODELS Steering Commitee Meeting";
 		Meeting "SoSyM Editorial Board Meeting";
 		Meeting "Hand-over to 2017"
 		    participants "Benoit Combemale", "Benoit Baudry", "Joerg Kienzle", "Alexander Pretschner", "Don Batory", "Jeff Gray", "Vinay Vkulkarni";
+		Meeting "AGM";
 		
 		Reception "Workshop Welcome Reception";
 		Reception "Conference Welcome Reception";
@@ -633,19 +632,29 @@ Motivated by addressing the above limitations, we develop a domain model extract
 			url "http://models2016.irisa.fr/clinic/";
 		
 		Keynote "Resurrecting Laplace’s Demon: The Case for Deterministic Models"
-			abstract " In 1814, Pierre-Simon Laplace published an argument for determinism in the universe, arguing that if someone (a demon) were to know the precise location and momentum of every atom in the universe, then their past and future values for any given time are completely determined and can be calculated from the laws of classical mechanics. This principle, of course, has been roundly invalidated by quantum mechanics, and yet the laws of classical mechanics continue to be extremely useful for prediction.
+			abstract "In 1814, Pierre-Simon Laplace published an argument for determinism in the universe, arguing that if someone (a demon) were to know the precise location and momentum of every atom in the universe, then their past and future values for any given time are completely determined and can be calculated from the laws of classical mechanics. This principle, of course, has been roundly invalidated by quantum mechanics, and yet the laws of classical mechanics continue to be extremely useful for prediction.
 In this talk, I will argue that models plays different (complementary) roles in engineering and science, and that deterministic models have historically proved proved even more valuable in engineering than in science. Moreover, I will show that deterministic models for cyber-physical systems, which combine computation with physical dynamics, remain elusive. I will argue that the next big advance in engineering methods must include deterministic models for CPS, and I will show that such models are both possible and practical. "
-			speaker "Edward A. Lee" homepage "http://ptolemy.eecs.berkeley.edu/~eal/";
+			speaker "Edward A. Lee" homepage "http://ptolemy.eecs.berkeley.edu/~eal/"
+			chair "Alexander Pretschner";
 		Keynote "Grand Challenges, Grand Responses?"
 		    abstract "The world is facing a period of unprecedented change and the resultant grand challenges demand a coordinated and significant response from all parties including scientists and engineers, academics, policy makers and citizens. Environmental change is arguably the greatest challenge and this talk will focus on the role of digital technology in both the understanding of the complexities of the natural environment and also in determining well-founded adaptation and mitigation strategies for a range of environmental problems including climate change. The talk builds on over five years of experience in working with earth and environmental scientists in providing tools to help move towards a new kind of science as demanded by areas such as climate change, a science that is more open, integrative and collaborative for example. The research includes the application of contemporary areas of digital innovation including cloud computing, Internet of Things technology and emerging areas of data science. But what does this have to do with Models? The systems we are building are highly complex both in terms of the underlying digital technologies and also in the phenomena being observed. New techniques are urgently required to help us to master this complexity and the Models community is the keeper of one of the most powerful tools in this area - namely abstraction. Is the Models community focusing on the right problems though at the right scale and does it have the ambition to take on such grand challenges? Grand challenges demand grand responses - through this keynote, and building on the insights last year from Steve Easterbrook, I would like to provoke a discussion over what this might mean for Models going forward."
-			speaker "Gordon Blair" homepage "http://www.research.lancs.ac.uk/portal/en/people/gordon-blair";
+			speaker "Gordon Blair" homepage "http://www.research.lancs.ac.uk/portal/en/people/gordon-blair"
+			chair "Benoit Combemale";
 		Keynote "The Straight Line is Ungodly"
-			abstract " Model-based approaches are not thriving, and the blame is usually laid at the feet of the unsophistication of software engineers. Yet software engineers may tacitly know something that the formal folks seldom discuss: Software systems are complex, and it is only simple problems that yield to formal approaches, including most modeling approaches—especially the analytical and computer-supported ones.
+			abstract "Model-based approaches are not thriving, and the blame is usually laid at the feet of the unsophistication of software engineers. Yet software engineers may tacitly know something that the formal folks seldom discuss: Software systems are complex, and it is only simple problems that yield to formal approaches, including most modeling approaches—especially the analytical and computer-supported ones.
 A system is complex proportional to its number of distinct, meaningful tops. However, these « tops » are rarely separable, so independent models based on such formalisms are relatively impotent. And such models are abstractions (i.e., they discard information) to the degree they are formal: and Gödel, Heisenberg, Rosen and a host of others note that there’s always a ghost in the machine. This matters more and more as we face increased complexity.
 I will propose that modeling efforts be redirected to the more realistic, logically inconsistent, human ways of understanding ourselves and our interactions with computers. Object-orientation started with Kay’s operational models that would become objects; we see them again in Model-View-Controller-User. Both of these approaches emphasize the need to mix multiple concurrent perspectives (called roles) when analyzing a system. DCI is one paradigm that provides a single computational model while accommodating “tops” for both the left and right brain, and it bridges the abstraction of modeling with concrete implementation. I will argue that design is less about reifying extrinsic, abstract models than it is about creating a “habitable » reality close to the implementation, guided by human mental models. Last, I’ll touch on the kinds of socially constructed complex models as we find in patterns, which were explicitly created out of a dissatisfaction with the ability of formal models to add value."
-			speaker "Jim Coplien" homepage "https://sites.google.com/a/gertrudandcope.com/www/jimcoplien";
-		SponsorKeynote "Thales"
-			speaker "Thales Speaker";
+			speaker "Jim Coplien" homepage "https://sites.google.com/a/gertrudandcope.com/www/jimcoplien"
+			chair "Jorg Kienzle";
+		SponsorKeynote "Models in industry, 20 years after UML 1.0 - Reflecting on the Thales experience"
+			abstract "As we are about to celebrate the 20th anniversary of the UML, industry has never been so close to fully harnessing the potential of model-based engineering (MBE). Never so close, yer not fully there, still struggling on the path towards transforming the engineering of complex, long-lived critical systems.
+Thales is a major player in the domains of defense, security, aerospace and transportation systems. Over the past 20 years, Thales has been actively developing internal as well as open innovation modelling ecosystems able to sustainably support engineering transformation stakes – know-how and training, organisation and processes, concepts and methods, technology and tooling. Actual roll out of industrial-strength systems model-based engineering has been underway since 2006, with significant business achievements.
+The challenges we are tackling today partly reflect the growing complexity of the systems that we need to produce, deliver, maintain and evolve, and a growing complexity of the organisations and workflows to address these developments. Those challenges also reflect a possibly emerging « post-MBE» situation where models of various types become a common practice, and more and more data are being produced and shared, leading to stringent global data management issues.
+Key challenges include scale and heterogeneity; effective abstraction and semantics management; cross-discipline human collaboration, design exploration and decision making; effective development chains for complex systems-on-chip; risk management; verification enhancement, including better integration of simulation capability and industrially tractable correct-by-design.
+This talk will be looking at the Thales experience and lessons learned, and will try and point at current industry challenges where more focus from the research community could be of help.
+Véronique Normand is in charge of the research & technology strategy in the domain of systems and software advanced engineering methods and tools at the Thales Group Technical Directorate."
+			speaker "Véronique Normand"
+			chair "Benoit Baudry";
 		
 		Tutorial "Empirical Research in Model Based Software Engineering"
 			abstract "Modelling is applied in many different ways in software engineering: for facilitating communication, for analyzing systems, for generating code and tests. Thus, the evaluation of modelling techniques, languages and tools is needed in order to assess their advantages and disadvantages, to ensure their applicability to different contexts, their ease of use, and other issues such as skills and costs. However, many papers submitted to the MODELS conference lack empirical validations of their proposed methods/techniques. This tutorial offers an introduction to empirical methods in software engineering and thereby aims to equip researchers in the MODELS community with knowledge required to perform evaluations. This tutorial is offered by a group of people with broad experience in several types of empirical studies (including experiments, surveys, case studies, action research)."
@@ -1013,6 +1022,8 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			// Clinic
 			16:00 - 17:30 in "Rotonde J. Cartier" : "Clinic"
 			
+			// Other
+			17:30 - 19:00 in "Lamennais 3" : "AGM"
 			// Student Research Competition
 			17:30 - 19:00 in "Rotonde J. Cartier" : "SRC Poster"
 
@@ -1119,7 +1130,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			
 			12:30 - 14:00 in "Grand Large" : "Lunch"
 			
-			14:00 - 14:30 in "Chateaubriand" : "Thales"
+			14:00 - 14:30 in "Chateaubriand" : "Models in industry, 20 years after UML 1.0 - Reflecting on the Thales experience"
 			14:30 - 15:30 in "Chateaubriand" : "Awards"
 			
 			14:00 - 15:30 in "Rotonde J. Cartier" : "Clinic"

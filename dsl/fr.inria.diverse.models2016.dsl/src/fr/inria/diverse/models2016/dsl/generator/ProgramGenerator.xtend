@@ -397,26 +397,40 @@ class ProgramGenerator extends AbstractGenerator {
 	}
 	
 	def private String getKeynote(Keynote keynote) {
+		val abstractPresent = keynote.abstract != null && keynote.abstract.length > 0
+		val chairPresent = keynote.chair != null
 		return
 				'''
 					{
 						"type" : "Keynote",
 						"title" : "«keynote.name»",
-						"speaker" : «getPerson(keynote.speaker)»«IF keynote.abstract != null && keynote.abstract.length > 0»,
-						"abstract" : "«keynote.abstract.replace("\n","\\n")»"
+						"speaker" : «getPerson(keynote.speaker)»
+						«IF abstractPresent || chairPresent»,«ENDIF»
+						«IF abstractPresent»
+						"abstract" : "«keynote.abstract.replace("\n","\\n")»"«IF chairPresent»,«ENDIF»
+						«ENDIF»
+						«IF chairPresent»
+						"chair" : "«getPerson(keynote.chair)»"
 						«ENDIF»
 					}
 				'''
 	}
 	
 	def private String getSponsorKeynote(SponsorKeynote keynote) {
+		val abstractPresent = keynote.abstract != null && keynote.abstract.length > 0
+		val chairPresent = keynote.chair != null
 		return
 				'''
 					{
 						"type" : "SponsorKeynote",
 						"title" : "«keynote.name»",
-						"speaker" : «getPerson(keynote.speaker)»«IF keynote.abstract != null && keynote.abstract.length > 0»,
-						"abstract" : "«keynote.abstract.replace("\n","\\n")»",
+						"speaker" : «getPerson(keynote.speaker)»
+						«IF abstractPresent || chairPresent»,«ENDIF»
+						«IF abstractPresent»
+						"abstract" : "«keynote.abstract.replace("\n","\\n")»"«IF chairPresent»,«ENDIF»
+						«ENDIF»
+						«IF chairPresent»
+						"chair" : "«getPerson(keynote.chair)»"
 						«ENDIF»
 					}
 				'''

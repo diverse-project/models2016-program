@@ -1413,13 +1413,22 @@ public interface Models2016Package extends EPackage {
 	int KEYNOTE__SPEAKER = EVENT_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Chair</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int KEYNOTE__CHAIR = EVENT_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Keynote</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int KEYNOTE_FEATURE_COUNT = EVENT_FEATURE_COUNT + 1;
+	int KEYNOTE_FEATURE_COUNT = EVENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Keynote</em>' class.
@@ -1512,6 +1521,15 @@ public interface Models2016Package extends EPackage {
 	 * @ordered
 	 */
 	int SPONSOR_KEYNOTE__SPEAKER = KEYNOTE__SPEAKER;
+
+	/**
+	 * The feature id for the '<em><b>Chair</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPONSOR_KEYNOTE__CHAIR = KEYNOTE__CHAIR;
 
 	/**
 	 * The number of structural features of the '<em>Sponsor Keynote</em>' class.
@@ -2329,6 +2347,17 @@ public interface Models2016Package extends EPackage {
 	EReference getKeynote_Speaker();
 
 	/**
+	 * Returns the meta object for the containment reference '{@link models2016.Keynote#getChair <em>Chair</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Chair</em>'.
+	 * @see models2016.Keynote#getChair()
+	 * @see #getKeynote()
+	 * @generated
+	 */
+	EReference getKeynote_Chair();
+
+	/**
 	 * Returns the meta object for class '{@link models2016.Kind <em>Kind</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3008,6 +3037,14 @@ public interface Models2016Package extends EPackage {
 		 * @generated
 		 */
 		EReference KEYNOTE__SPEAKER = eINSTANCE.getKeynote_Speaker();
+
+		/**
+		 * The meta object literal for the '<em><b>Chair</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference KEYNOTE__CHAIR = eINSTANCE.getKeynote_Chair();
 
 		/**
 		 * The meta object literal for the '{@link models2016.impl.KindImpl <em>Kind</em>}' class.

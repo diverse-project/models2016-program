@@ -23,6 +23,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * </p>
  * <ul>
  *   <li>{@link models2016.impl.KeynoteImpl#getSpeaker <em>Speaker</em>}</li>
+ *   <li>{@link models2016.impl.KeynoteImpl#getChair <em>Chair</em>}</li>
  * </ul>
  *
  * @generated
@@ -37,6 +38,16 @@ public class KeynoteImpl extends EventImpl implements Keynote {
 	 * @ordered
 	 */
 	protected Person speaker;
+
+	/**
+	 * The cached value of the '{@link #getChair() <em>Chair</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getChair()
+	 * @generated
+	 * @ordered
+	 */
+	protected Person chair;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -105,11 +116,56 @@ public class KeynoteImpl extends EventImpl implements Keynote {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Person getChair() {
+		return chair;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetChair(Person newChair, NotificationChain msgs) {
+		Person oldChair = chair;
+		chair = newChair;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, Models2016Package.KEYNOTE__CHAIR, oldChair, newChair);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setChair(Person newChair) {
+		if (newChair != chair) {
+			NotificationChain msgs = null;
+			if (chair != null)
+				msgs = ((InternalEObject)chair).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - Models2016Package.KEYNOTE__CHAIR, null, msgs);
+			if (newChair != null)
+				msgs = ((InternalEObject)newChair).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - Models2016Package.KEYNOTE__CHAIR, null, msgs);
+			msgs = basicSetChair(newChair, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Models2016Package.KEYNOTE__CHAIR, newChair, newChair));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case Models2016Package.KEYNOTE__SPEAKER:
 				return basicSetSpeaker(null, msgs);
+			case Models2016Package.KEYNOTE__CHAIR:
+				return basicSetChair(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -124,6 +180,8 @@ public class KeynoteImpl extends EventImpl implements Keynote {
 		switch (featureID) {
 			case Models2016Package.KEYNOTE__SPEAKER:
 				return getSpeaker();
+			case Models2016Package.KEYNOTE__CHAIR:
+				return getChair();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -138,6 +196,9 @@ public class KeynoteImpl extends EventImpl implements Keynote {
 		switch (featureID) {
 			case Models2016Package.KEYNOTE__SPEAKER:
 				setSpeaker((Person)newValue);
+				return;
+			case Models2016Package.KEYNOTE__CHAIR:
+				setChair((Person)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -154,6 +215,9 @@ public class KeynoteImpl extends EventImpl implements Keynote {
 			case Models2016Package.KEYNOTE__SPEAKER:
 				setSpeaker((Person)null);
 				return;
+			case Models2016Package.KEYNOTE__CHAIR:
+				setChair((Person)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -168,6 +232,8 @@ public class KeynoteImpl extends EventImpl implements Keynote {
 		switch (featureID) {
 			case Models2016Package.KEYNOTE__SPEAKER:
 				return speaker != null;
+			case Models2016Package.KEYNOTE__CHAIR:
+				return chair != null;
 		}
 		return super.eIsSet(featureID);
 	}

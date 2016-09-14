@@ -78,13 +78,15 @@ Keynote returns Keynote:
 	'Keynote'
 		name=STRING
 		('abstract' abstract=STRING)?
-		('speaker' speaker=Person)?;
+		('speaker' speaker=Person)?
+		('chair' chair=Person)?;
 
 SponsorKeynote returns SponsorKeynote:
 	'SponsorKeynote'
 		name=STRING
 		('abstract' abstract=STRING)?
-		('speaker' speaker=Person)?;
+		('speaker' speaker=Person)?
+		('chair' chair=Person)?;
 
 Workshop returns Workshop:
 	'Workshop'
