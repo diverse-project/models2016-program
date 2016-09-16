@@ -624,7 +624,7 @@ Motivated by addressing the above limitations, we develop a domain model extract
 		    participants "Benoit Combemale", "Benoit Baudry", "Joerg Kienzle", "Alexander Pretschner", "Don Batory", "Jeff Gray", "Vinay Vkulkarni";
 		Meeting "AGM";
 		
-		Reception "Workshop Welcome Reception";
+		Reception "Satellite Events Welcome Reception";
 		Reception "Conference Welcome Reception";
 		Reception "Gala Dinner";
 		
@@ -1034,7 +1034,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			17:30 - 19:00 in "Rotonde J. Cartier" : "SRC Poster"
 
 
-			19:00 - 22:00 in "Rotonde J. Cartier" : "Workshop Welcome Reception"
+			19:00 - 22:00 in "Rotonde J. Cartier" : "Satellite Events Welcome Reception"
 			
 		Tuesday
 			date 16.10.04
