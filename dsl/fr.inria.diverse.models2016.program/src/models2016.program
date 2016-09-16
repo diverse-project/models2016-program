@@ -588,7 +588,8 @@ Motivated by addressing the above limitations, we develop a domain model extract
 		DoctoralSymposium "Doctoral Symposium"
 		url "http://models2016.irisa.fr/doctoral-symposium/";
 		
-		EducatorSymposium "Educators Symposium";
+		EducatorSymposium "Educators Symposium"
+		url "http://models2016.irisa.fr/educators-symposium/";
 		
 		SRC "SRC Poster"
 		url "http://models2016.irisa.fr/acm-student-research-competition/";
