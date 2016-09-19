@@ -99,6 +99,11 @@
                                 <strong>Website:</strong> <a ng-href="{{selectedTalk.url}}">{{selectedTalk.url}}</a>
                             </div>
 
+                                <!-- Proceedings -->
+                            <div ng-if="selectedTalk.proceedings">
+                                <strong>Proceedings:</strong> <a ng-href="{{selectedTalk.proceedings}}">{{selectedTalk.proceedings}}</a>
+                            </div>
+
                                 <!-- Abstract -->
                             <div ng-if="selectedTalk.abstract" class="abstract">
                                 <strong>Abstract:</strong> {{selectedTalk.abstract}}
