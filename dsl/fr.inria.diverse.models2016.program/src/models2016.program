@@ -779,7 +779,8 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			name "4th International Workshop On the Globalization of Modeling Languages"
 			organizers 
 				"Julien Deantoni" email "julien.deantoni@polytech.unice.fr", 
-				"Jeff Gray" email "gray@cs.ua.edu";
+				"Jeff Gray" email "gray@cs.ua.edu",
+				"Eugene Syriani" email "syriani@iro.umontreal.ca";	
 			
 		Workshop "MULTI"
 			abstract "As interest in multi-level modelling grows, and the range of multi-level modelling tools expands, there is growing interest in consolidating the key principles of the paradigm and clarifying the essential differences between heterogeneous approaches.  Although multi-level modelling has now been used successfully in a variety of industrial projects and standards initiatives, there is still no clear consensus on what the paradigm actually entails and how it should be applied. For example, there are different views on whether it is sound to combine instance facets and type facets into so-called clabjects, whether strict metamodeling is too restrictive, and what tool architectures provide the best framework for modelling with multiple classification levels. This lack of a foundational consensus is mirrored by the lack of a common focus in current multi-level tools. The goal of MULTI 2016 is to address these challenges and continue the community building established in the previous workshops. In particular, the goal is to encourage the community to delineate different approaches to multi-level modelling and define objective ways to evaluate their respective strengths/weaknesses."
