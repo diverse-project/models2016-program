@@ -478,7 +478,9 @@ Motivated by addressing the above limitations, we develop a domain model extract
             	abstract
             		"The name txtUML stands for textual, executable, translatable UML. It is an Eclipse-based tool built on top of JDT, Xtext/Xbase and Papyrus UML. The tool is designed for textual model editing. This makes storage, version control, compare and merge processes, editing and searching easier and more efficient. The tool supports two textual syntaxes for modeling: the standalone syntax, which is designed to be clean and short, and alternatively, the txtUML Java API, which can be used to define models as standard Java programs. The tool supports the generation of graphical UML diagrams from the textual descriptions: class- and state machine diagrams. The layout of the diagrams can be controlled by a simple textual diagram layout language. Models can be seamlessly integrated into Java programs: they can be executed and debugged. Generated state machine diagrams can be animated during model execution to further enhance comprehension of model dynamics. Compatibility with other tools is ensured by generating standard UML models in EMF-UML2 format. This representation is the input for our model compiler, which generates C++ code."
             	kind
-            		"Demo";
+            		"Demo"
+            	proceedings
+            		"http://models2016.irisa.fr/proceedings/demos/MODELS_2016_Demos_paper_4.pdf";
             		
             "iOCL: A Interactive Tool for Specifying, Validating and Evaluating OCL Constraints"
             	authors
@@ -489,7 +491,9 @@ Motivated by addressing the above limitations, we develop a domain model extract
             	abstract
             		"The Object Constraint Language (OCL) is frequently used to specify additional constraints on models, in addition, to the ones enforced by semantics of the models. It is a well- known fact that due to the lack of familiarity with OCL, practitioners and even researcher to some extent are reluctant in using OCL. To help practitioners and researchers in writing OCL constraints for their specific problem at hand, we developed a tool called interactive OCL (iOCL) for interactively specifying constraints on a given model. The basic philosophy behind the tool is to present only those details (e.g., operations) of OCL to modelers that are valid at a given step of constraint specification process, in addition to helping modelers with its syntax. Our ultimate aim is to reduce the effort required to specify constraints, subsequently lowering down training cost and increasing the correctness of the constraints. iOCL is a web-based application that integrates other tools including Eclipse OCL for validation and evaluation of OCL constraints, and EsOCL for automatically generating valid instances of models that satisfy the specified constraints."
             	kind
-            		"Demo";
+            		"Demo"
+            	proceedings
+            		"http://models2016.irisa.fr/proceedings/demos/MODELS_2016_Demos_paper_12.pdf";
             
             "SAC-OCL: A Tool for A Semi Automatic Co-evolution of OCL Constraints"
             	authors
@@ -499,7 +503,9 @@ Motivated by addressing the above limitations, we develop a domain model extract
 				abstract
 					"Object-Oriented Models (OOM) are widely used in Model-Driven Engineering (MDE). As a complement, OCL constraints are used to specify business rules and detailed aspects of the business domain, e.g. more than 750 constraints come with the UML metamodel (an OOM). Automatically co-evolving OCL constraints w.r.t. the evolved OOM is challenging since alternative resolutions can be applied but also a resolution cannot be applied to any arbitrary constraint. In this paper, we present SAC-OCL an Eclipse-based tool to automatically co-evolve OCL constraints when an OOM evolves. In contrast to existing tools, SAC-OCL propose alternative resolutions for an impacted OCL constraint and propose only the appropriate resolutions that can be applied on the impacted constraint. Our evaluation on six case studies shows an average correct co-evolution rate of 92%."
           		kind
-          			"Demo";
+          			"Demo"
+          		proceedings
+          			"http://models2016.irisa.fr/proceedings/demos/MODELS_2016_Demos_paper_8.pdf";
           			
           	"Scenario-Based Modeling and Synthesis for Reactive Systems with Dynamic System Structure in ScenarioTools"
           		authors
@@ -510,7 +516,9 @@ Motivated by addressing the above limitations, we develop a domain model extract
           		abstract
           			"Software-intensive systems such as communicating cars or collaborating robots consist of multiple interacting components, where physical or virtual relationships between components change at run-time. This dynamic system structure influences the components' behavior, which again affects the system's structure. This dynamic system structure and the often distributed and concurrent nature of the software bring substantial complexity that must be mastered during system design. For this purpose, we propose a specification method that combines scenario-based modeling and graph transformations. The specifications are executable and can be analyzed via simulation. We furthermore developed a formal synthesis procedure that can find inconsistencies or prove the specification's realizability. This method is implemented in ScenarioTools, an Eclipse-based tool suite that combines the Scenario Modeling Language, an extended variant of LSCs, and graph transformations modeled with Henshin. The particular novelty is the synthesis support for systems with dynamic structure."
           		kind
-          			"Demo";
+          			"Demo"
+          		proceedings
+          			"http://models2016.irisa.fr/proceedings/demos/MODELS_2016_Demos_paper_11.pdf";
           		
           	"C Code Verification based on the Extended Labeled Transition System Model"
           		authors
@@ -522,7 +530,9 @@ Motivated by addressing the above limitations, we develop a domain model extract
           		abstract
 					"C programming language is widely used in safety-critical software systems. Together with its large appliance and increasing complexity, ensuring the correctness is urgent. This paper presents Ceagle , a fully automated program verifier for finding assertion violations in C programs. It is decent in both accuracy and efficiency by using a semantically equivalent program model language that is specifically designed for C program, together with various optimizations that make the satisfiability checking faster and memory-friendly. More specifically, Ceagle uses LLVM clang as front-end parser, an extended labeled transition system as program model, and Z3 SMT solver as the back-end satisfiability checker. Ceagle is designed to be fully automatic and requires no user interaction as long as the assertions are provided. For evaluation, we compare Ceagle with existing C program verifiers based on open benchmarks. Ceagle outperforms others in terms of accuracy, and time and memory consumption."
             	kind
-            		"Demo";
+            		"Demo"
+            	proceedings
+            		"http://models2016.irisa.fr/proceedings/demos/MODELS_2016_Demos_paper_6.pdf";
             		
             "NeoEMF: a Multi-database Model Persistence Framework for Very Large Models"
             	authors
@@ -536,7 +546,9 @@ Motivated by addressing the above limitations, we develop a domain model extract
 				abstract
 					"The growing use of Model Driven Engineering (MDE) techniques in industry has emphasized scalability of existing model persistence solutions as a major issue. Specifically, there is a need to store, query, and transform very large models in an efficient way. Several persistence solutions based on relational and NoSQL databases have been proposed to achieve scalability. However, existing solutions often rely on a single data store, which suits a specific modeling activity, but may not be optimized for other use cases. In this article we present NeoEMF, a multi-database model persistence framework able to store very large models in key-value stores, graph databases, and wide column databases. We introduce NeoEMF core features, and present the different data stores and their applications. NeoEMF is open source and available online."
 				kind
-					"Demo";
+					"Demo"
+				proceedings
+					"http://models2016.irisa.fr/proceedings/demos/MODELS_2016_Demos_paper_9.pdf";
 			
 			"ModifRoundtrip: A Model-Based tool to reuse legacy transformations"
 				authors
@@ -546,7 +558,9 @@ Motivated by addressing the above limitations, we develop a domain model extract
 				abstract
 					"The legacy transformations dealing with domain specific data gathers important expertise. Nevertheless, in many cases, have to be rewritten in order to make them apply to semantically equivalent but structurally incompatible data. According to the complexity of the transformation, rewriting them can quickly become a difficult and error-prone task. We propose a coevolution approach to enable the reuse of legacy transformations instead of their rewriting. In this approach, the data conforming to the reuse context coevolve into data conforming to the legacy transformation context. Legacy transformation is applied and the result is migrated back to the reuse context. In this paper, we introduce ModifRoundtrip, a plug-in for the Eclipse development environment. It promotes the reuse of legacy transformations, providing guidance for the user during reuse process. Reuse process is done automatically, but ModifRoundtrip provides interaction points to the user to indicate custom reuse scenarios."
 				kind
-					"Demo";
+					"Demo"
+				proceedings
+					"http://models2016.irisa.fr/proceedings/demos/MODELS_2016_Demos_paper_7.pdf";
 			
 			"Tsmart-BIPEX: An Integrated Graphical Design Toolkit for Software Systems"
 				authors
@@ -558,7 +572,9 @@ Motivated by addressing the above limitations, we develop a domain model extract
 				abstract
 					"To help build reliable software systems efficiently, the com- ponent based model-driven design approach is widely used, and lots of modeling languages have been designed. In this paper, we propose an integrated graphical development toolkit Tsmart-BIPEX in support of building complex systems in the BIP modeling language, which features a rich semantics for composing sub-systems. First, we build a graphical interface for model construction and simulation, which is more intuitive than the existed command-line based toolchain. Furthermore, to enhance the original BIP verification tool RTD-Finder, we translate the graphical model to a labeled transition system for a thorough verification in verifier VCS. Finally, we can generate executable C++ code directly from the graphical model. Tsmart-BIPEX has been successfully applied in the development of a real-world train network controller."
 				kind
-					"Demo";
+					"Demo"
+				proceedings
+					"http://models2016.irisa.fr/proceedings/demos/MODELS_2016_Demos_paper_2.pdf";
 					
 			"ArchFeature: A Modeling Environment Integrating Features into Product Line Architecture"
 				authors
@@ -567,7 +583,9 @@ Motivated by addressing the above limitations, we develop a domain model extract
 				abstract
 					"An important task in product line architecture (PLA) modeling is developing the involved variation points and maintaining their conformance to product line features. However, existing modeling tools and approaches still require manual development of variation points and manual maintenance of feature-PLA relations, which is expensive and error prone. In this paper, we introduce a new PLA modeling environment named ArchFeature. It can automatically manage variation points in the PLA model, create and maintain feature-PLA relations, and derive new architectural instances. The key idea of ArchFeature is to develop the product line features and PLA side-by-side in the same environment, and integrate their specifications in a single model. The goal is to reduce the modeling effort and increase the quality of the PLA models."
 				kind
-					"Demo";
+					"Demo"
+				proceedings
+					"http://models2016.irisa.fr/proceedings/demos/MODELS_2016_Demos_paper_10.pdf";
 					
 			"Reifier: Model-Driven Engineering of Component-Based and Service-Oriented JEE~Applications"
 				authors
@@ -577,6 +595,8 @@ Motivated by addressing the above limitations, we develop a domain model extract
 					"This paper aims at presenting Reifier, a tool for prototyping web modules of JEE applications by the means of a model-driven development. Code generation is driven by domain-specific models in which web services are defined by parametric components. Reification of JEE applications is obtained thanks to a model-to-text approach. The code generation covers every model elements but the basic components that should be developed manually and provided throughout libraries. This meta-model allows us to define web service patterns, to verify them formally and to apply them on different data model entities."
 				kind
 					"Demo"
+				proceedings
+					"http://models2016.irisa.fr/proceedings/demos/MODELS_2016_Demos_paper_3.pdf"
 	}
 	
 	events {	
