@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link models2016.Paper#getAbstract <em>Abstract</em>}</li>
  *   <li>{@link models2016.Paper#getName <em>Name</em>}</li>
  *   <li>{@link models2016.Paper#getKind <em>Kind</em>}</li>
+ *   <li>{@link models2016.Paper#getProceedings <em>Proceedings</em>}</li>
  * </ul>
  *
  * @see models2016.Models2016Package#getPaper()
@@ -94,6 +95,32 @@ public interface Paper extends EObject {
 	 * @generated
 	 */
 	void setKind(Kind value);
+
+	/**
+	 * Returns the value of the '<em><b>Proceedings</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Proceedings</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Proceedings</em>' attribute.
+	 * @see #setProceedings(String)
+	 * @see models2016.Models2016Package#getPaper_Proceedings()
+	 * @model
+	 * @generated
+	 */
+	String getProceedings();
+
+	/**
+	 * Sets the value of the '{@link models2016.Paper#getProceedings <em>Proceedings</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Proceedings</em>' attribute.
+	 * @see #getProceedings()
+	 * @generated
+	 */
+	void setProceedings(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Abstract</b></em>' attribute.

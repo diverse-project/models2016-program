@@ -32,9 +32,9 @@
 'capacity'=30
 'chair'=37
 'date'=31
-'email'=64
+'email'=65
 'events'=27
-'homepage'=65
+'homepage'=66
 'in'=35
 'kind'=63
 'kinds'=20
@@ -45,6 +45,7 @@
 'papers'=23
 'participants'=59
 'preprint'=62
+'proceedings'=64
 'program'=28
 'resources'=22
 'room'=29
@@ -115,3 +116,4 @@ T__62=62
 T__63=63
 T__64=64
 T__65=65
+T__66=66

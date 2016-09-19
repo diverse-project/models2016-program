@@ -1065,13 +1065,22 @@ public interface Models2016Package extends EPackage {
 	int PAPER__KIND = 4;
 
 	/**
+	 * The feature id for the '<em><b>Proceedings</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAPER__PROCEEDINGS = 5;
+
+	/**
 	 * The number of structural features of the '<em>Paper</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PAPER_FEATURE_COUNT = 5;
+	int PAPER_FEATURE_COUNT = 6;
 
 	/**
 	 * The number of operations of the '<em>Paper</em>' class.
@@ -2243,6 +2252,17 @@ public interface Models2016Package extends EPackage {
 	EReference getPaper_Kind();
 
 	/**
+	 * Returns the meta object for the attribute '{@link models2016.Paper#getProceedings <em>Proceedings</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Proceedings</em>'.
+	 * @see models2016.Paper#getProceedings()
+	 * @see #getPaper()
+	 * @generated
+	 */
+	EAttribute getPaper_Proceedings();
+
+	/**
 	 * Returns the meta object for the attribute '{@link models2016.Paper#getAbstract <em>Abstract</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2945,6 +2965,14 @@ public interface Models2016Package extends EPackage {
 		 * @generated
 		 */
 		EReference PAPER__KIND = eINSTANCE.getPaper_Kind();
+
+		/**
+		 * The meta object literal for the '<em><b>Proceedings</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PAPER__PROCEEDINGS = eINSTANCE.getPaper_Proceedings();
 
 		/**
 		 * The meta object literal for the '<em><b>Abstract</b></em>' attribute feature.

@@ -35,6 +35,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link models2016.impl.PaperImpl#getAbstract <em>Abstract</em>}</li>
  *   <li>{@link models2016.impl.PaperImpl#getName <em>Name</em>}</li>
  *   <li>{@link models2016.impl.PaperImpl#getKind <em>Kind</em>}</li>
+ *   <li>{@link models2016.impl.PaperImpl#getProceedings <em>Proceedings</em>}</li>
  * </ul>
  *
  * @generated
@@ -119,6 +120,26 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 	 * @ordered
 	 */
 	protected Kind kind;
+
+	/**
+	 * The default value of the '{@link #getProceedings() <em>Proceedings</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProceedings()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String PROCEEDINGS_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getProceedings() <em>Proceedings</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProceedings()
+	 * @generated
+	 * @ordered
+	 */
+	protected String proceedings = PROCEEDINGS_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -215,6 +236,27 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getProceedings() {
+		return proceedings;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setProceedings(String newProceedings) {
+		String oldProceedings = proceedings;
+		proceedings = newProceedings;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Models2016Package.PAPER__PROCEEDINGS, oldProceedings, proceedings));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public String getAbstract() {
 		return abstract_;
 	}
@@ -285,6 +327,8 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 			case Models2016Package.PAPER__KIND:
 				if (resolve) return getKind();
 				return basicGetKind();
+			case Models2016Package.PAPER__PROCEEDINGS:
+				return getProceedings();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -314,6 +358,9 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 			case Models2016Package.PAPER__KIND:
 				setKind((Kind)newValue);
 				return;
+			case Models2016Package.PAPER__PROCEEDINGS:
+				setProceedings((String)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -341,6 +388,9 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 			case Models2016Package.PAPER__KIND:
 				setKind((Kind)null);
 				return;
+			case Models2016Package.PAPER__PROCEEDINGS:
+				setProceedings(PROCEEDINGS_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -363,6 +413,8 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case Models2016Package.PAPER__KIND:
 				return kind != null;
+			case Models2016Package.PAPER__PROCEEDINGS:
+				return PROCEEDINGS_EDEFAULT == null ? proceedings != null : !PROCEEDINGS_EDEFAULT.equals(proceedings);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -383,6 +435,8 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 		result.append(abstract_);
 		result.append(", name: ");
 		result.append(name);
+		result.append(", proceedings: ");
+		result.append(proceedings);
 		result.append(')');
 		return result.toString();
 	}

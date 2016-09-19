@@ -1750,15 +1750,19 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cKindAssignment_7_1 = (Assignment)cGroup_7.eContents().get(1);
 		private final CrossReference cKindKindCrossReference_7_1_0 = (CrossReference)cKindAssignment_7_1.eContents().get(0);
 		private final RuleCall cKindKindSTRINGTerminalRuleCall_7_1_0_1 = (RuleCall)cKindKindCrossReference_7_1_0.eContents().get(1);
+		private final Group cGroup_8 = (Group)cGroup.eContents().get(8);
+		private final Keyword cProceedingsKeyword_8_0 = (Keyword)cGroup_8.eContents().get(0);
+		private final Assignment cProceedingsAssignment_8_1 = (Assignment)cGroup_8.eContents().get(1);
+		private final RuleCall cProceedingsSTRINGTerminalRuleCall_8_1_0 = (RuleCall)cProceedingsAssignment_8_1.eContents().get(0);
 		
 		//Paper:
 		//	{Paper} name=STRING
 		//	'authors' authors+=Person (',' authors+=Person)* ('abstract' abstract=STRING)? ('preprint' preprint=STRING)? ('kind'
-		//	kind=[Kind|STRING])?;
+		//	kind=[Kind|STRING])? ('proceedings' proceedings=STRING)?;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//{Paper} name=STRING 'authors' authors+=Person (',' authors+=Person)* ('abstract' abstract=STRING)? ('preprint'
-		//preprint=STRING)? ('kind' kind=[Kind|STRING])?
+		//preprint=STRING)? ('kind' kind=[Kind|STRING])? ('proceedings' proceedings=STRING)?
 		public Group getGroup() { return cGroup; }
 		
 		//{Paper}
@@ -1829,6 +1833,18 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//STRING
 		public RuleCall getKindKindSTRINGTerminalRuleCall_7_1_0_1() { return cKindKindSTRINGTerminalRuleCall_7_1_0_1; }
+		
+		//('proceedings' proceedings=STRING)?
+		public Group getGroup_8() { return cGroup_8; }
+		
+		//'proceedings'
+		public Keyword getProceedingsKeyword_8_0() { return cProceedingsKeyword_8_0; }
+		
+		//proceedings=STRING
+		public Assignment getProceedingsAssignment_8_1() { return cProceedingsAssignment_8_1; }
+		
+		//STRING
+		public RuleCall getProceedingsSTRINGTerminalRuleCall_8_1_0() { return cProceedingsSTRINGTerminalRuleCall_8_1_0; }
 	}
 	public class PersonElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.Person");
@@ -2366,7 +2382,7 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	//Paper:
 	//	{Paper} name=STRING
 	//	'authors' authors+=Person (',' authors+=Person)* ('abstract' abstract=STRING)? ('preprint' preprint=STRING)? ('kind'
-	//	kind=[Kind|STRING])?;
+	//	kind=[Kind|STRING])? ('proceedings' proceedings=STRING)?;
 	public PaperElements getPaperAccess() {
 		return pPaper;
 	}

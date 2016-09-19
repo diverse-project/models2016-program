@@ -154,7 +154,8 @@ Paper returns Paper:
 		'authors' authors+=Person (',' authors+=Person)*
 		('abstract' abstract=STRING)?
 		('preprint' preprint=STRING)?
-		('kind' kind=[Kind|STRING])?;
+		('kind' kind=[Kind|STRING])?
+		('proceedings' proceedings=STRING)?;
 
 Person returns Person:
 	{Person}

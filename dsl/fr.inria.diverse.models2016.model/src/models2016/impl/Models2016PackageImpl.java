@@ -777,6 +777,15 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getPaper_Proceedings() {
+		return (EAttribute)paperEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EAttribute getPaper_Abstract() {
 		return (EAttribute)paperEClass.getEStructuralFeatures().get(2);
 	}
@@ -1068,6 +1077,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		createEAttribute(paperEClass, PAPER__ABSTRACT);
 		createEAttribute(paperEClass, PAPER__NAME);
 		createEReference(paperEClass, PAPER__KIND);
+		createEAttribute(paperEClass, PAPER__PROCEEDINGS);
 
 		lunchEClass = createEClass(LUNCH);
 
@@ -1219,6 +1229,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		initEAttribute(getPaper_Abstract(), ecorePackage.getEString(), "abstract", null, 0, 1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPaper_Name(), ecorePackage.getEString(), "name", null, 0, 1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPaper_Kind(), this.getKind(), null, "kind", null, 0, 1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPaper_Proceedings(), ecorePackage.getEString(), "proceedings", null, 0, 1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(lunchEClass, Lunch.class, "Lunch", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

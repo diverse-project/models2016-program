@@ -2940,6 +2940,30 @@ rulePaper returns [EObject current=null]
 				)
 			)
 		)?
+		(
+			otherlv_12='proceedings'
+			{
+				newLeafNode(otherlv_12, grammarAccess.getPaperAccess().getProceedingsKeyword_8_0());
+			}
+			(
+				(
+					lv_proceedings_13_0=RULE_STRING
+					{
+						newLeafNode(lv_proceedings_13_0, grammarAccess.getPaperAccess().getProceedingsSTRINGTerminalRuleCall_8_1_0());
+					}
+					{
+						if ($current==null) {
+							$current = createModelElement(grammarAccess.getPaperRule());
+						}
+						setWithLastConsumed(
+							$current,
+							"proceedings",
+							lv_proceedings_13_0,
+							"org.eclipse.xtext.common.Terminals.STRING");
+					}
+				)
+			)
+		)?
 	)
 ;
 

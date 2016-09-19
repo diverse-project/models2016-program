@@ -122,6 +122,7 @@ public class ProgramParser extends AbstractContentAssistParser {
 					put(grammarAccess.getPaperAccess().getGroup_5(), "rule__Paper__Group_5__0");
 					put(grammarAccess.getPaperAccess().getGroup_6(), "rule__Paper__Group_6__0");
 					put(grammarAccess.getPaperAccess().getGroup_7(), "rule__Paper__Group_7__0");
+					put(grammarAccess.getPaperAccess().getGroup_8(), "rule__Paper__Group_8__0");
 					put(grammarAccess.getPersonAccess().getGroup(), "rule__Person__Group__0");
 					put(grammarAccess.getPersonAccess().getGroup_2(), "rule__Person__Group_2__0");
 					put(grammarAccess.getPersonAccess().getGroup_3(), "rule__Person__Group_3__0");
@@ -221,6 +222,7 @@ public class ProgramParser extends AbstractContentAssistParser {
 					put(grammarAccess.getPaperAccess().getAbstractAssignment_5_1(), "rule__Paper__AbstractAssignment_5_1");
 					put(grammarAccess.getPaperAccess().getPreprintAssignment_6_1(), "rule__Paper__PreprintAssignment_6_1");
 					put(grammarAccess.getPaperAccess().getKindAssignment_7_1(), "rule__Paper__KindAssignment_7_1");
+					put(grammarAccess.getPaperAccess().getProceedingsAssignment_8_1(), "rule__Paper__ProceedingsAssignment_8_1");
 					put(grammarAccess.getPersonAccess().getNameAssignment_1(), "rule__Person__NameAssignment_1");
 					put(grammarAccess.getPersonAccess().getEmailAssignment_2_1(), "rule__Person__EmailAssignment_2_1");
 					put(grammarAccess.getPersonAccess().getHomepageAssignment_3_1(), "rule__Person__HomepageAssignment_3_1");

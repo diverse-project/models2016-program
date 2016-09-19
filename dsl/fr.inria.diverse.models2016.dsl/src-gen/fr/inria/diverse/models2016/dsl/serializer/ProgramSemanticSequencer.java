@@ -366,7 +366,8 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *         authors+=Person* 
 	 *         abstract=STRING? 
 	 *         preprint=STRING? 
-	 *         kind=[Kind|STRING]?
+	 *         kind=[Kind|STRING]? 
+	 *         proceedings=STRING?
 	 *     )
 	 */
 	protected void sequence_Paper(ISerializationContext context, Paper semanticObject) {

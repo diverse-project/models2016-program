@@ -194,6 +194,9 @@ class ProgramGenerator extends AbstractGenerator {
 								«IF p.abstract != null && p.abstract.length > 0»
 								"abstract" : "«p.abstract.replace("\n","\\n")»",
 								«ENDIF»
+								«IF p.proceedings != null && p.proceedings.length > 0»
+								"proceedings" : "«p.proceedings»",
+								«ENDIF»
 								«val talkStart = computeTalkStart(start,i++)»
 								«val talkEnd = computeTalkStart(start,i)»
 								"start" : "«hourFormat.format(talkStart)»",
