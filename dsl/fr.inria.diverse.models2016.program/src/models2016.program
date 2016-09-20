@@ -424,7 +424,7 @@ Motivated by addressing the above limitations, we develop a domain model extract
                 kind
                     "Practice and Innovation";
                     
-            "Process Mining Using BPMN: Relating Event Logs and Process Models"
+            "Process Mining Using BPMN: Relating Event Logs and Process Models (SoSyM First)"
                 authors
                     "Anna A. Kalenkova" email "akalenkova@hse.ru",
                     "Wil M. P. van der Aalst",
@@ -435,7 +435,7 @@ Motivated by addressing the above limitations, we develop a domain model extract
                 kind
                     "SoSyM First";
                     
-            "Model-driven Performance Prediction of Systems of Systems"
+            "Model-driven Performance Prediction of Systems of Systems (SoSyM First)"
                 authors
                     "Katrina Falkner",
                     "Claudia Szabo" email "claudia.szabo@adelaide.edu.au",
@@ -449,7 +449,7 @@ Motivated by addressing the above limitations, we develop a domain model extract
                 kind
                     "SoSyM First";
                     
-            "VMTL: a Language for End-User Model Transformation"
+            "VMTL: a Language for End-User Model Transformation (SoSyM First)"
                 authors
                     "Vlad Acreţoaie" email "rvac@dtu.dk",
                     "Harald Störrle",
@@ -459,7 +459,7 @@ Motivated by addressing the above limitations, we develop a domain model extract
                 kind
                     "SoSyM First";
                     
-            "Visual Modeling of RESTful Conversations with RESTalk"
+            "Visual Modeling of RESTful Conversations with RESTalk (SoSyM First)"
                 authors
                     "Ana Ivanchikj" email "ana.ivanchikj@usi.ch",
                     "Cesare Pautasso",
@@ -870,7 +870,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		TalkSession "Model Transformation"
 			chair "Friedrich Steimann"	email "steimann@fernuni-hagen.de"	homepage "Chair homepage"
 				abstract "Session abstract"
-				papers "A Generic Transformation Algorithm to Simplify the Development of Mapping Models", "Automated Refactoring of ATL Model Transformations: A Search-Based Approach", "VMTL: a Language for End-User Model Transformation", "Ground Setting Properties for an Efficient Translation of OCL in SMT-based Model Finding";
+				papers "A Generic Transformation Algorithm to Simplify the Development of Mapping Models", "Automated Refactoring of ATL Model Transformations: A Search-Based Approach", "VMTL: a Language for End-User Model Transformation (SoSyM First)", "Ground Setting Properties for an Efficient Translation of OCL in SMT-based Model Finding";
 				
 		TalkSession "Testing and Simulation"
 			chair "Joel Greenyer"	email "greenyer@inf.uni-hannover.de"	homepage "Chair homepage"
@@ -905,12 +905,12 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		TalkSession "Applications I"
 			chair "Bernhard Rumpe"	email "rumpe@se-rwth.de"	homepage "Chair homepage"
 				abstract "Session abstract"
-				papers "Supporting the Model-Driven Development of Real-time Embedded Systems with Run-Time Monitoring and Animation via Highly Customizable Code Generation", "Model-driven Performance Prediction of Systems of Systems", "Automatic Generation of Detailed Flight Plans from High-level Mission Descriptions";		
+				papers "Supporting the Model-Driven Development of Real-time Embedded Systems with Run-Time Monitoring and Animation via Highly Customizable Code Generation", "Model-driven Performance Prediction of Systems of Systems (SoSyM First)", "Automatic Generation of Detailed Flight Plans from High-level Mission Descriptions";		
 				
 		TalkSession "Applications II"
 			chair "Richard Paige"	email "richard.paige@york.ac.uk"	homepage "Chair homepage"
 				abstract "Session abstract"
-				papers "Visual Modeling of RESTful Conversations with RESTalk", "Formalizing Knowledge in Multi-Scale Agent-Based Simulations", "Process Mining Using BPMN: Relating Event Logs and Process Models";
+				papers "Visual Modeling of RESTful Conversations with RESTalk (SoSyM First)", "Formalizing Knowledge in Multi-Scale Agent-Based Simulations", "Process Mining Using BPMN: Relating Event Logs and Process Models (SoSyM First)";
 				
 		TalkSession "Tooling"
 			chair "Jean-Marc Jézéquel"	email "Jean-Marc.Jezequel@irisa.fr"	homepage "Chair homepage"
