@@ -36,12 +36,12 @@ Conference "MODELS 2016"
 				"Model-driven Abstract: Model-driven reflections on modeling, model-driven careers, and all that."
 			kind "Career Award";
 		
-		"Controlled Experiment on the Comprehension of Runtime Phenomena Using Models at Runtime"
+		"Controlled Experiment on the Comprehension of Runtime Phenomena Using Models Created at Design Time"
 			authors 
 				"Michael Szvetits" 	email "michael.szvetits@fhwn.ac.at",
 				"Uwe Zdun" homepage "https://cs.univie.ac.at/swa/team/worker/infpers/Uwe_Zdun"
-			abstract 
-				"Utilizing models for software construction is a well-studied research topic. Recent research investigates the integration of models into running systems to provide additional information about the system configuration at runtime. While this additional information enables innovative self-adaptive mechanisms, it is still an open research question if the information provided by models can also improve the analysis capabilities of human users where manual intervention is inevitable for investigating runtime phenomena. This paper contributes to fill this gap by conducting a controlled experiment where the correctness and completion time of tasks regarding runtime information are assessed. A control and experiment group had to analyze the output of a software system, and the experiment group additionally received traceability links between models and associated runtime records. The results show that improvements of the analysis can especially be observed where model elements emphasize relationships between system parts that are hardly recognizable in the implementation code."
+			abstract
+				"Utilizing models for software construction is a well-studied research topic. Recent research investigates the integration of models into running systems to provide additional information about the system configuration at runtime. While this additional information enables innovative self-adaptive mechanisms, it is still an open research question if the information provided by models can also improve the analysis capabilities of human users where manual intervention is inevitable for investigating runtime phenomena. This paper contributes to fill this gap by conducting a controlled experiment where the correctness and completion time of tasks regarding runtime information are assessed. A control and experiment group had to analyze the output of a software system, and the experiment group additionally received traceability links between models and associated runtime records. The results show that improvements of the analysis can especially be observed where model elements emphasize relationships between system parts that are hardly recognizable in the implementation code." 
 			kind "Foundations: Technical Paper";
 		
 		"Extracting Domain Models from Natural-Language Requirements: Approach and Industrial Evaluation"
@@ -224,7 +224,7 @@ Motivated by addressing the above limitations, we develop a domain model extract
             kind
                 "Foundations: New Idea Paper";
         
-        "Towards Partial Loading of XMI Models"
+        "Partial Loading of XMI Models"
             authors
                 "Ran Wei",
                 "Dimitris S. Kolovos",
@@ -232,7 +232,7 @@ Motivated by addressing the above limitations, we develop a domain model extract
                 "Konstantinos Barmpis",
                 "Richard Paige"
             abstract
-                "XML Metadata Interchange (XMI) is an OMG-standardised model exchange format, which is natively supported by the Eclipse Modeling Framework (EMF) and the majority of the modelling and model management languages and tools. Whilst XMI is widely supported, the XMI parser provided by EMF is inefficient in some cases where models are read-only (such as input models for model query, model-to-model transformation, etc) as it always requires loading the entire model into memory. In this paper we present a novel algorithm, and a prototype implementation (SmartSAX), which is capable of partially loading models persisted in XMI.  SmartSAX offers improved performance, in terms of loading time and memory footprint, over the default EMF XMI parser. We describe the algorithm in detail, and present benchmarking results that demonstrate the substantial improvements of the prototype implementation over the XMI parser provided by EMF."
+                "XML Metadata Interchange (XMI) is an OMG-standardised model exchange format, which is natively supported by the Eclipse Modeling Framework (EMF) and the majority of the modelling and model management languages and tools. Whilst XMI is widely supported, the XMI parser provided by EMF is inefficient in some cases where models are read-only (such as input models for model query, model-to-model transformation, etc) as it always requires loading the entire model into memory. In this paper we present a novel algorithm, and a prototype implementation (SmartSAX), which is capable of partially loading models persisted in XMI. SmartSAX offers improved performance, in terms of loading time and memory footprint, over the default EMF XMI parser. We describe the algorithm in detail, and present benchmarking results that demonstrate the substantial improvements of the prototype implementation over the XMI parser provided by EMF."
             kind
                 "Foundations: Technical Paper";
                 
@@ -449,7 +449,7 @@ Motivated by addressing the above limitations, we develop a domain model extract
                 kind
                     "SoSyM First";
                     
-            "VMTL: a Language for End-User Model Transformation (SoSyM First)"
+            "Model Transformation for End-User Modelers with VMTL (SoSyM First)"
                 authors
                     "Vlad Acreţoaie" email "rvac@dtu.dk",
                     "Harald Störrle",
@@ -870,7 +870,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		TalkSession "Model Transformation"
 			chair "Friedrich Steimann"	email "steimann@fernuni-hagen.de"	homepage "Chair homepage"
 				abstract "Session abstract"
-				papers "A Generic Transformation Algorithm to Simplify the Development of Mapping Models", "Automated Refactoring of ATL Model Transformations: A Search-Based Approach", "VMTL: a Language for End-User Model Transformation (SoSyM First)", "Ground Setting Properties for an Efficient Translation of OCL in SMT-based Model Finding";
+				papers "A Generic Transformation Algorithm to Simplify the Development of Mapping Models", "Automated Refactoring of ATL Model Transformations: A Search-Based Approach", "Model Transformation for End-User Modelers with VMTL (SoSyM First)", "Ground Setting Properties for an Efficient Translation of OCL in SMT-based Model Finding";
 				
 		TalkSession "Testing and Simulation"
 			chair "Joel Greenyer"	email "greenyer@inf.uni-hannover.de"	homepage "Chair homepage"
@@ -895,7 +895,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		TalkSession "Empirical Investigations I"
 			chair "Jon Whittle"	email "j.n.whittle@lancaster.ac.uk"	homepage "Chair homepage"
 				abstract "Session abstract"
-				papers "Controlled Experiment on the Comprehension of Runtime Phenomena Using Models at Runtime", "Technical Debt in MDE: A Case Study on GMF/EMF-Based Projects", "The Quest for Open Source Projects that Use UML: Mining GitHub";
+				papers "Controlled Experiment on the Comprehension of Runtime Phenomena Using Models Created at Design Time", "Technical Debt in MDE: A Case Study on GMF/EMF-Based Projects", "The Quest for Open Source Projects that Use UML: Mining GitHub";
 				
 		TalkSession "Empirical Investigations II"
 			chair "Shaukat Ali"	email "shaukat@simula.no"	homepage "Chair homepage"
@@ -915,7 +915,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		TalkSession "Tooling"
 			chair "Jean-Marc Jézéquel"	email "Jean-Marc.Jezequel@irisa.fr"	homepage "Chair homepage"
 				abstract "Session abstract"
-				papers "Query-based Access Control for Secure Collaborative Modeling Using Bidirectional Transformations", "PrefetchML: A Framework for Prefetching and Caching Models", "Towards Partial Loading of XMI Models", "Integration of a Graph-Based Model Indexer in Commercial Modelling Tools";
+				papers "Query-based Access Control for Secure Collaborative Modeling Using Bidirectional Transformations", "PrefetchML: A Framework for Prefetching and Caching Models", "Partial Loading of XMI Models", "Integration of a Graph-Based Model Indexer in Commercial Modelling Tools";
 	
 	    TalkSession "Domain-Specific Modelling"
 			chair "Eugene Syriani"	email "syriani@iro.umontreal.ca"	homepage "Chair homepage"
