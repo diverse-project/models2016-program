@@ -644,6 +644,7 @@ Motivated by addressing the above limitations, we develop a domain model extract
 		Meeting "Hand-over to 2017"
 		    participants "Benoit Combemale", "Benoit Baudry", "Joerg Kienzle", "Alexander Pretschner", "Don Batory", "Jeff Gray", "Vinay Vkulkarni";
 		Meeting "AGM";
+		Meeting "SRC Jury";
 		
 		Reception "Satellite Events Welcome Reception";
 		Reception "Conference Welcome Reception";
@@ -1084,6 +1085,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 			11:00 - 12:30 in "Lamennais 3" : "SAM"
 			
 			12:30 - 14:00 in "Rotonde Surcouf" : "Lunch"
+			12:30 - 14:00 in "Broussais" : "SRC Jury"
 			
 			// Student Research Competition
 			14:00 - 15:30 in "Charcot" : "SRC Talk"

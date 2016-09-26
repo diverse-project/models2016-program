@@ -42,19 +42,25 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSyst
   }
 
 
-  def generateIcalEvent(start: String, end: String, title: String, description: String, location: String) : List[String] = {
-    var event = List.empty[String]
-    event ::= "BEGIN:VEVENT"
-    event ::= "DTSTART:" + start
-    event ::= "DTEND:" + end
-    event ::= "DTSTAMP:" + start
-    event ::= "ORGANIZER;CN=models2016-gc@inria.fr:mailto:models2016-gc@inria.fr"
-    event ::= "UID:" + start + "-"  + title.hashCode + "@models.irisa.fr"
-    event ::= "DESCRIPTION:" + description // TODO : max line is 75 characters
-    event ::= "LOCATION:" + location
-    event ::= "SUMMARY:" + title // TODO : max line is 75 characters
-    event ::= "END:VEVENT"
-    event
+  def generateIcalEvent(event : JsObject, session : JsObject, start: String, end : String, title: String, favorites : Option[Map[String, Boolean]]) : List[String] = {
+
+    val room = (session \ "room").as[String]
+    val eventAbstract = (event \ "abstract").asOpt[String]
+    val description = eventAbstract.getOrElse(title)
+    val authors = (event \ "authors").asOpt[String]
+
+    var icsEvent = List.empty[String]
+    icsEvent ::= "BEGIN:VEVENT"
+    icsEvent ::= "DTSTART:" + start
+    icsEvent ::= "DTEND:" + end
+    icsEvent ::= "DTSTAMP:" + start
+    icsEvent ::= "ORGANIZER;CN=models2016-gc@inria.fr:mailto:models2016-gc@inria.fr"
+    icsEvent ::= "UID:" + start + "-"  + title.hashCode + "@models.irisa.fr"
+    icsEvent ::= "DESCRIPTION:" + description // TODO : max line is 75 characters
+    icsEvent ::= "LOCATION:" + room
+    icsEvent ::= "SUMMARY:" + title // TODO : max line is 75 characters
+    icsEvent ::= "END:VEVENT"
+    icsEvent
   }
 
 
@@ -81,25 +87,19 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSyst
               if (papers.isDefined) {
                 for (paper <- papers.get) {
                   val start = (paper \ "icalStart").as[String]
+                  val end = (paper \ "icalEnd").as[String]
                   val title = (paper \ "title").as[String]
 
                   if (favorites.isEmpty || favorites.get.getOrElse(title + start, false)) {
-                    val end = (paper \ "icalEnd").as[String]
-                    val room = (session \ "room").as[String]
-                    val paperAbstract = (paper \ "abstract").asOpt[String]
-                    val description = paperAbstract.getOrElse(title)
-                    ical :::= generateIcalEvent(start, end, title, description, room)
+                    ical :::= generateIcalEvent(paper, session, start, end, title, favorites)
                   }
                 }
               } else {
                 val start = (session \ "icalStart").as[String]
+                val end = (session \ "icalEnd").as[String]
                 val title = (event \ "title").as[String]
                 if (favorites.isEmpty || favorites.get.getOrElse(title + start, false)) {
-                  val end = (session \ "icalEnd").as[String]
-                  val room = (session \ "room").as[String]
-                  val eventAbstract = (event \ "abstract").asOpt[String]
-                  val description = eventAbstract.getOrElse(title)
-                  ical :::= generateIcalEvent(start, end, title, description, room)
+                  ical :::= generateIcalEvent(event, session, start, end, title, favorites)
                 }
               }
             }

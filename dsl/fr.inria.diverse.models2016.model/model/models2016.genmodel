@@ -82,6 +82,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Paper/abstract"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Paper/name"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference models2016.ecore#//Paper/kind"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Paper/proceedings"/>
     </genClasses>
     <genClasses ecoreClass="models2016.ecore#//Lunch"/>
     <genClasses ecoreClass="models2016.ecore#//CoffeeBreak"/>
@@ -92,6 +93,7 @@
     <genClasses ecoreClass="models2016.ecore#//Poster"/>
     <genClasses ecoreClass="models2016.ecore#//Keynote">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//Keynote/speaker"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//Keynote/chair"/>
     </genClasses>
     <genClasses ecoreClass="models2016.ecore#//Kind">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Kind/name"/>
