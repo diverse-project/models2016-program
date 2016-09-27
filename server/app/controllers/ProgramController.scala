@@ -51,11 +51,14 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSyst
     val organizers = (event \ "organizers").asOpt[List[JsObject]]
       .map(opt => opt.map(a => (a \ "name").as[String]).mkString(", "))
     val url = (event \ "url").asOpt[String]
+    val speaker = (event \ "speaker").asOpt[JsObject]
+      .map(s => (s \ "name").as[String])
 
 
     val description = List(
       Some(title),
       url.map(e => "url: " + e),
+      speaker.map(s => "speaker: " + s),
       authors.map(a => "authors: " + a),
       organizers.map(a => "organizers: " + a),
       eventAbstract.map (a => "abstract: " + a.replaceAll("\n", ""))
