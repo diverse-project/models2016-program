@@ -14,7 +14,8 @@ libraryDependencies ++= Seq(
   "org.webjars" %% "webjars-play" % "2.5.0",
   "org.webjars.npm" % "jquery" % "2.2.4",
   "org.webjars.npm" % "bootstrap" % "3.3.6",
-  "org.webjars.npm" % "angular" % "1.5.5"
+  "org.webjars.npm" % "angular" % "1.5.5",
+  "org.webjars.npm" % "font-awesome" % "4.6.3"
 )
 
 resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
