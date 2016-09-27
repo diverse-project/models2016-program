@@ -52,8 +52,10 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSyst
       .map(opt => opt.map(a => (a \ "name").as[String]).mkString(", "))
     val url = (event \ "url").asOpt[String]
 
+
     val description = List(
       Some(title),
+      url.map(e => "url: " + e),
       authors.map(a => "authors: " + a),
       organizers.map(a => "organizers: " + a),
       eventAbstract.map (a => "abstract: " + a.replaceAll("\n", ""))
