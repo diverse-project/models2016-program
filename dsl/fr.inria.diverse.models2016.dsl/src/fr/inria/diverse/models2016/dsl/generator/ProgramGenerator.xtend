@@ -418,14 +418,13 @@ class ProgramGenerator extends AbstractGenerator {
 					{
 						"type" : "Keynote",
 						"title" : "«keynote.name»",
-						"speaker" : «getPerson(keynote.speaker)»
-						«IF abstractPresent || chairPresent»,«ENDIF»
+						"speaker" : «getPerson(keynote.speaker)»,
 						«IF abstractPresent»
 						"abstract" : "«keynote.abstract.replace("\n","\\n")»",
 						«ENDIF»
 						«IF chairPresent»
 						"chair" : «getPerson(keynote.chair)»,
-						«ENDIF»,
+						«ENDIF»
 						"cancelled" : «keynote.cancelled»
 					}
 				'''
@@ -439,14 +438,13 @@ class ProgramGenerator extends AbstractGenerator {
 					{
 						"type" : "SponsorKeynote",
 						"title" : "«keynote.name»",
-						"speaker" : «getPerson(keynote.speaker)»
-						«IF abstractPresent || chairPresent»,«ENDIF»
+						"speaker" : «getPerson(keynote.speaker)»,
 						«IF abstractPresent»
 						"abstract" : "«keynote.abstract.replace("\n","\\n")»",
 						«ENDIF»
 						«IF chairPresent»
 						"chair" : «getPerson(keynote.chair)»
-						«ENDIF»,
+						«ENDIF»
 						"cancelled" : «keynote.cancelled»
 					}
 				'''

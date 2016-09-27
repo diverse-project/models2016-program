@@ -147,7 +147,7 @@
 
                                                     <!-- Event -->
                                                 <div ng-if="event.title && !event.papers" ng-show="!showFavorites || (showFavorites && event.selected)"  >
-
+                                                    <strong ng-if="talk.cancelled">(cancelled)</strong>
 
                                                     <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(event, session.icalStart)" ng-if="event.type !== 'Keynote' && showModalAndStar(event.type)">{{event.title}}</a>
                                                     <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(event, session.icalStart)" ng-if="event.type === 'Keynote'">Keynote: "{{event.title}}" ({{event.speaker.name}})</a>
@@ -166,6 +166,8 @@
                                                     </div>
                                                     <div ng-repeat="talk in event.papers" ng-show="!showFavorites || (showFavorites && talk.selected)">
                                                         <hr>
+
+                                                        <strong ng-if="talk.cancelled">(cancelled)</strong>
 
                                                         <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(talk, talk.icalStart)">{{talk.title}}</a>
 
