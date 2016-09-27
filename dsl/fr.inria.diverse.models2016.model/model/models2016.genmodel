@@ -33,6 +33,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Event/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Event/abstract"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Event/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Event/cancelled"/>
     </genClasses>
     <genClasses ecoreClass="models2016.ecore#//TalkSession">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference models2016.ecore#//TalkSession/chair"/>
@@ -83,6 +84,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Paper/name"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference models2016.ecore#//Paper/kind"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Paper/proceedings"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute models2016.ecore#//Paper/cancelled"/>
     </genClasses>
     <genClasses ecoreClass="models2016.ecore#//Lunch"/>
     <genClasses ecoreClass="models2016.ecore#//CoffeeBreak"/>

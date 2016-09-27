@@ -1353,6 +1353,20 @@ rulePanel returns [EObject current=null]
 				)
 			)*
 		)?
+		(
+			(
+				lv_cancelled_12_0='cancelled'
+				{
+					newLeafNode(lv_cancelled_12_0, grammarAccess.getPanelAccess().getCancelledCancelledKeyword_5_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getPanelRule());
+					}
+					setWithLastConsumed($current, "cancelled", true, "cancelled");
+				}
+			)
+		)?
 	)
 ;
 
@@ -1442,6 +1456,20 @@ ruleSRC returns [EObject current=null]
 				)
 			)
 		)?
+		(
+			(
+				lv_cancelled_6_0='cancelled'
+				{
+					newLeafNode(lv_cancelled_6_0, grammarAccess.getSRCAccess().getCancelledCancelledKeyword_4_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getSRCRule());
+					}
+					setWithLastConsumed($current, "cancelled", true, "cancelled");
+				}
+			)
+		)?
 	)
 ;
 
@@ -1529,6 +1557,20 @@ rulePoster returns [EObject current=null]
 							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
+			)
+		)?
+		(
+			(
+				lv_cancelled_6_0='cancelled'
+				{
+					newLeafNode(lv_cancelled_6_0, grammarAccess.getPosterAccess().getCancelledCancelledKeyword_4_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getPosterRule());
+					}
+					setWithLastConsumed($current, "cancelled", true, "cancelled");
+				}
 			)
 		)?
 	)
@@ -1646,6 +1688,20 @@ ruleKeynote returns [EObject current=null]
 				)
 			)
 		)?
+		(
+			(
+				lv_cancelled_8_0='cancelled'
+				{
+					newLeafNode(lv_cancelled_8_0, grammarAccess.getKeynoteAccess().getCancelledCancelledKeyword_5_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getKeynoteRule());
+					}
+					setWithLastConsumed($current, "cancelled", true, "cancelled");
+				}
+			)
+		)?
 	)
 ;
 
@@ -1759,6 +1815,20 @@ ruleSponsorKeynote returns [EObject current=null]
 						afterParserOrEnumRuleCall();
 					}
 				)
+			)
+		)?
+		(
+			(
+				lv_cancelled_8_0='cancelled'
+				{
+					newLeafNode(lv_cancelled_8_0, grammarAccess.getSponsorKeynoteAccess().getCancelledCancelledKeyword_5_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getSponsorKeynoteRule());
+					}
+					setWithLastConsumed($current, "cancelled", true, "cancelled");
+				}
 			)
 		)?
 	)
@@ -1924,6 +1994,20 @@ ruleWorkshop returns [EObject current=null]
 				)
 			)*
 		)?
+		(
+			(
+				lv_cancelled_12_0='cancelled'
+				{
+					newLeafNode(lv_cancelled_12_0, grammarAccess.getWorkshopAccess().getCancelledCancelledKeyword_6_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getWorkshopRule());
+					}
+					setWithLastConsumed($current, "cancelled", true, "cancelled");
+				}
+			)
+		)?
 	)
 ;
 
@@ -2038,6 +2122,20 @@ ruleTutorial returns [EObject current=null]
 					)
 				)
 			)*
+		)?
+		(
+			(
+				lv_cancelled_8_0='cancelled'
+				{
+					newLeafNode(lv_cancelled_8_0, grammarAccess.getTutorialAccess().getCancelledCancelledKeyword_4_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getTutorialRule());
+					}
+					setWithLastConsumed($current, "cancelled", true, "cancelled");
+				}
+			)
 		)?
 	)
 ;
@@ -2178,6 +2276,20 @@ ruleDoctoralSymposium returns [EObject current=null]
 				)
 			)*
 		)?
+		(
+			(
+				lv_cancelled_10_0='cancelled'
+				{
+					newLeafNode(lv_cancelled_10_0, grammarAccess.getDoctoralSymposiumAccess().getCancelledCancelledKeyword_5_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getDoctoralSymposiumRule());
+					}
+					setWithLastConsumed($current, "cancelled", true, "cancelled");
+				}
+			)
+		)?
 	)
 ;
 
@@ -2317,6 +2429,20 @@ ruleEducatorSymposium returns [EObject current=null]
 				)
 			)*
 		)?
+		(
+			(
+				lv_cancelled_10_0='cancelled'
+				{
+					newLeafNode(lv_cancelled_10_0, grammarAccess.getEducatorSymposiumAccess().getCancelledCancelledKeyword_5_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getEducatorSymposiumRule());
+					}
+					setWithLastConsumed($current, "cancelled", true, "cancelled");
+				}
+			)
+		)?
 	)
 ;
 
@@ -2380,6 +2506,20 @@ ruleReception returns [EObject current=null]
 							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
+			)
+		)?
+		(
+			(
+				lv_cancelled_4_0='cancelled'
+				{
+					newLeafNode(lv_cancelled_4_0, grammarAccess.getReceptionAccess().getCancelledCancelledKeyword_3_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getReceptionRule());
+					}
+					setWithLastConsumed($current, "cancelled", true, "cancelled");
+				}
 			)
 		)?
 	)
@@ -2469,6 +2609,20 @@ ruleClinic returns [EObject current=null]
 							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
+			)
+		)?
+		(
+			(
+				lv_cancelled_6_0='cancelled'
+				{
+					newLeafNode(lv_cancelled_6_0, grammarAccess.getClinicAccess().getCancelledCancelledKeyword_4_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getClinicRule());
+					}
+					setWithLastConsumed($current, "cancelled", true, "cancelled");
+				}
 			)
 		)?
 	)
@@ -2716,6 +2870,20 @@ ruleMeeting returns [EObject current=null]
 				)
 			)*
 		)?
+		(
+			(
+				lv_cancelled_8_0='cancelled'
+				{
+					newLeafNode(lv_cancelled_8_0, grammarAccess.getMeetingAccess().getCancelledCancelledKeyword_4_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getMeetingRule());
+					}
+					setWithLastConsumed($current, "cancelled", true, "cancelled");
+				}
+			)
+		)?
 	)
 ;
 
@@ -2779,6 +2947,20 @@ ruleOpening returns [EObject current=null]
 							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
+			)
+		)?
+		(
+			(
+				lv_cancelled_4_0='cancelled'
+				{
+					newLeafNode(lv_cancelled_4_0, grammarAccess.getOpeningAccess().getCancelledCancelledKeyword_3_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getOpeningRule());
+					}
+					setWithLastConsumed($current, "cancelled", true, "cancelled");
+				}
 			)
 		)?
 	)
@@ -2962,6 +3144,20 @@ rulePaper returns [EObject current=null]
 							"org.eclipse.xtext.common.Terminals.STRING");
 					}
 				)
+			)
+		)?
+		(
+			(
+				lv_cancelled_14_0='cancelled'
+				{
+					newLeafNode(lv_cancelled_14_0, grammarAccess.getPaperAccess().getCancelledCancelledKeyword_9_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getPaperRule());
+					}
+					setWithLastConsumed($current, "cancelled", true, "cancelled");
+				}
 			)
 		)?
 	)

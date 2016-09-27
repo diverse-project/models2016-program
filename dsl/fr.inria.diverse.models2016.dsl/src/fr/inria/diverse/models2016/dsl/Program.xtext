@@ -60,33 +60,38 @@ Panel returns Panel:
 		name=STRING
 		('abstract' abstract=STRING)?
 		('panelists' panelists+=Person (',' panelists+=Person)*)?
-		('moderators' moderators+=Person (',' moderators+=Person)*)?;
+		('moderators' moderators+=Person (',' moderators+=Person)*)?
+		(cancelled ?= 'cancelled')?;
 
 SRC returns SRC:
 	'SRC'
 		name=STRING
 		('abstract' abstract=STRING)?
-		('url' url=STRING)?;
+		('url' url=STRING)?
+		(cancelled ?= 'cancelled')?;
 
 Poster returns Poster:
 	'Poster'
 		name=STRING
 		('abstract' abstract=STRING)?
-		('url' url=STRING)?;
+		('url' url=STRING)?
+		(cancelled ?= 'cancelled')?;
 
 Keynote returns Keynote:
 	'Keynote'
 		name=STRING
 		('abstract' abstract=STRING)?
 		('speaker' speaker=Person)?
-		('chair' chair=Person)?;
+		('chair' chair=Person)?
+		(cancelled ?= 'cancelled')?;
 
 SponsorKeynote returns SponsorKeynote:
 	'SponsorKeynote'
 		name=STRING
 		('abstract' abstract=STRING)?
 		('speaker' speaker=Person)?
-		('chair' chair=Person)?;
+		('chair' chair=Person)?
+		(cancelled ?= 'cancelled')?;
 
 Workshop returns Workshop:
 	'Workshop'
@@ -94,38 +99,44 @@ Workshop returns Workshop:
 		('abstract' abstract=STRING)?
 		('url' url=STRING)?
 		('name' fullName=STRING)?
-		('organizers' organizers+=Person (',' organizers+=Person)*)?;
+		('organizers' organizers+=Person (',' organizers+=Person)*)?
+		(cancelled ?= 'cancelled')?;
 
 Tutorial returns Tutorial:
 	'Tutorial'
 		name=STRING
 		('abstract' abstract=STRING)?
-		('organizers' organizers+=Person (',' organizers+=Person)*)?;
+		('organizers' organizers+=Person (',' organizers+=Person)*)?
+		(cancelled ?= 'cancelled')?;
 
 DoctoralSymposium returns DoctoralSymposium:
 	'DoctoralSymposium'
 		name=STRING
 		('abstract' abstract=STRING)?
 		('url' url=STRING)?
-		('organizers' organizers+=Person (',' organizers+=Person)*)?;
+		('organizers' organizers+=Person (',' organizers+=Person)*)?
+		(cancelled ?= 'cancelled')?;
 
 EducatorSymposium returns EducatorSymposium:
 	'EducatorSymposium'
 		name=STRING
 		('abstract' abstract=STRING)?
 		('url' url=STRING)?
-		('organizers' organizers+=Person (',' organizers+=Person)*)?;
+		('organizers' organizers+=Person (',' organizers+=Person)*)?
+		(cancelled ?= 'cancelled')?;
 
 Reception returns Reception:
 	'Reception'
 		name=STRING
-		('abstract' abstract=STRING)?;
+		('abstract' abstract=STRING)?
+		(cancelled ?= 'cancelled')?;
 
 Clinic returns Clinic:
 	'Clinic'
 		name=STRING
 		('abstract' abstract=STRING)?
-		('url' url=STRING)?;
+		('url' url=STRING)?
+		(cancelled ?= 'cancelled')?;
 
 Lunch returns Lunch:
 	'Lunch'
@@ -141,12 +152,14 @@ Meeting returns Meeting:
 	'Meeting'
 		name=STRING
 		('abstract' abstract=STRING)?
-		('participants' participants+=Person (',' participants+=Person)*)?;
+		('participants' participants+=Person (',' participants+=Person)*)?
+		(cancelled ?= 'cancelled')?;
 
 Opening returns Opening:
 	'Opening'
 		name=STRING
-		('abstract' abstract=STRING)?;
+		('abstract' abstract=STRING)?
+		(cancelled ?= 'cancelled')?;
 
 Paper returns Paper:
 	{Paper}
@@ -155,7 +168,8 @@ Paper returns Paper:
 		('abstract' abstract=STRING)?
 		('preprint' preprint=STRING)?
 		('kind' kind=[Kind|STRING])?
-		('proceedings' proceedings=STRING)?;
+		('proceedings' proceedings=STRING)?
+		(cancelled ?= 'cancelled')?;
 
 Person returns Person:
 	{Person}

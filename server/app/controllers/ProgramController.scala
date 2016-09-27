@@ -46,8 +46,19 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSyst
 
     val room = (session \ "room").as[String]
     val eventAbstract = (event \ "abstract").asOpt[String]
-    val description = eventAbstract.getOrElse(title)
-    val authors = (event \ "authors").asOpt[String]
+    val authors = (event \ "authors").asOpt[List[JsObject]]
+      .map(opt => opt.map(a => (a \ "name").as[String]).mkString(", "))
+    val organizers = (event \ "organizers").asOpt[List[JsObject]]
+      .map(opt => opt.map(a => (a \ "name").as[String]).mkString(", "))
+    val url = (event \ "url").asOpt[String]
+
+    println(authors)
+    val description = List(
+      title,
+      authors.map(a => "authors: " + a),
+      organizers.map(a => "organizers: " + a),
+      eventAbstract.map (a => "abstract: " + a)
+    )
 
     var icsEvent = List.empty[String]
     icsEvent ::= "BEGIN:VEVENT"
@@ -56,7 +67,7 @@ class ProgramController @Inject()(webJarAssets : WebJarAssets, system: ActorSyst
     icsEvent ::= "DTSTAMP:" + start
     icsEvent ::= "ORGANIZER;CN=models2016-gc@inria.fr:mailto:models2016-gc@inria.fr"
     icsEvent ::= "UID:" + start + "-"  + title.hashCode + "@models.irisa.fr"
-    icsEvent ::= "DESCRIPTION:" + description // TODO : max line is 75 characters
+    icsEvent ::= "DESCRIPTION:" + description..mkString("\n") // TODO : max line is 75 characters
     icsEvent ::= "LOCATION:" + room
     icsEvent ::= "SUMMARY:" + title // TODO : max line is 75 characters
     icsEvent ::= "END:VEVENT"

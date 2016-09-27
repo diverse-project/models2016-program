@@ -149,7 +149,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Clinic returns Clinic
 	 *
 	 * Constraint:
-	 *     (name=STRING abstract=STRING? url=STRING?)
+	 *     (name=STRING abstract=STRING? url=STRING? cancelled?='cancelled'?)
 	 */
 	protected void sequence_Clinic(ISerializationContext context, Clinic semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -231,7 +231,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     DoctoralSymposium returns DoctoralSymposium
 	 *
 	 * Constraint:
-	 *     (name=STRING abstract=STRING? url=STRING? (organizers+=Person organizers+=Person*)?)
+	 *     (name=STRING abstract=STRING? url=STRING? (organizers+=Person organizers+=Person*)? cancelled?='cancelled'?)
 	 */
 	protected void sequence_DoctoralSymposium(ISerializationContext context, DoctoralSymposium semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -244,7 +244,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     EducatorSymposium returns EducatorSymposium
 	 *
 	 * Constraint:
-	 *     (name=STRING abstract=STRING? url=STRING? (organizers+=Person organizers+=Person*)?)
+	 *     (name=STRING abstract=STRING? url=STRING? (organizers+=Person organizers+=Person*)? cancelled?='cancelled'?)
 	 */
 	protected void sequence_EducatorSymposium(ISerializationContext context, EducatorSymposium semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -278,7 +278,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Keynote returns Keynote
 	 *
 	 * Constraint:
-	 *     (name=STRING abstract=STRING? speaker=Person? chair=Person?)
+	 *     (name=STRING abstract=STRING? speaker=Person? chair=Person? cancelled?='cancelled'?)
 	 */
 	protected void sequence_Keynote(ISerializationContext context, Keynote semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -322,7 +322,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Meeting returns Meeting
 	 *
 	 * Constraint:
-	 *     (name=STRING abstract=STRING? (participants+=Person participants+=Person*)?)
+	 *     (name=STRING abstract=STRING? (participants+=Person participants+=Person*)? cancelled?='cancelled'?)
 	 */
 	protected void sequence_Meeting(ISerializationContext context, Meeting semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -335,7 +335,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Opening returns Opening
 	 *
 	 * Constraint:
-	 *     (name=STRING abstract=STRING?)
+	 *     (name=STRING abstract=STRING? cancelled?='cancelled'?)
 	 */
 	protected void sequence_Opening(ISerializationContext context, Opening semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -348,7 +348,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Panel returns Panel
 	 *
 	 * Constraint:
-	 *     (name=STRING abstract=STRING? (panelists+=Person panelists+=Person*)? (moderators+=Person moderators+=Person*)?)
+	 *     (name=STRING abstract=STRING? (panelists+=Person panelists+=Person*)? (moderators+=Person moderators+=Person*)? cancelled?='cancelled'?)
 	 */
 	protected void sequence_Panel(ISerializationContext context, Panel semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -367,7 +367,8 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *         abstract=STRING? 
 	 *         preprint=STRING? 
 	 *         kind=[Kind|STRING]? 
-	 *         proceedings=STRING?
+	 *         proceedings=STRING? 
+	 *         cancelled?='cancelled'?
 	 *     )
 	 */
 	protected void sequence_Paper(ISerializationContext context, Paper semanticObject) {
@@ -393,7 +394,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Poster returns Poster
 	 *
 	 * Constraint:
-	 *     (name=STRING abstract=STRING? url=STRING?)
+	 *     (name=STRING abstract=STRING? url=STRING? cancelled?='cancelled'?)
 	 */
 	protected void sequence_Poster(ISerializationContext context, Poster semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -418,7 +419,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Reception returns Reception
 	 *
 	 * Constraint:
-	 *     (name=STRING abstract=STRING?)
+	 *     (name=STRING abstract=STRING? cancelled?='cancelled'?)
 	 */
 	protected void sequence_Reception(ISerializationContext context, Reception semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -444,7 +445,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     SRC returns SRC
 	 *
 	 * Constraint:
-	 *     (name=STRING abstract=STRING? url=STRING?)
+	 *     (name=STRING abstract=STRING? url=STRING? cancelled?='cancelled'?)
 	 */
 	protected void sequence_SRC(ISerializationContext context, SRC semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -469,7 +470,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     SponsorKeynote returns SponsorKeynote
 	 *
 	 * Constraint:
-	 *     (name=STRING abstract=STRING? speaker=Person? chair=Person?)
+	 *     (name=STRING abstract=STRING? speaker=Person? chair=Person? cancelled?='cancelled'?)
 	 */
 	protected void sequence_SponsorKeynote(ISerializationContext context, SponsorKeynote semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -495,7 +496,7 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Tutorial returns Tutorial
 	 *
 	 * Constraint:
-	 *     (name=STRING abstract=STRING? (organizers+=Person organizers+=Person*)?)
+	 *     (name=STRING abstract=STRING? (organizers+=Person organizers+=Person*)? cancelled?='cancelled'?)
 	 */
 	protected void sequence_Tutorial(ISerializationContext context, Tutorial semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -508,7 +509,14 @@ public class ProgramSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Workshop returns Workshop
 	 *
 	 * Constraint:
-	 *     (name=STRING abstract=STRING? url=STRING? fullName=STRING? (organizers+=Person organizers+=Person*)?)
+	 *     (
+	 *         name=STRING 
+	 *         abstract=STRING? 
+	 *         url=STRING? 
+	 *         fullName=STRING? 
+	 *         (organizers+=Person organizers+=Person*)? 
+	 *         cancelled?='cancelled'?
+	 *     )
 	 */
 	protected void sequence_Workshop(ISerializationContext context, Workshop semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

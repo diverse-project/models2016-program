@@ -29,6 +29,7 @@
 'Workshop'=48
 'abstract'=38
 'authors'=61
+'cancelled'=67
 'capacity'=30
 'chair'=37
 'date'=31
@@ -117,3 +118,4 @@ T__63=63
 T__64=64
 T__65=65
 T__66=66
+T__67=67

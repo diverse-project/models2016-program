@@ -742,15 +742,18 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cCommaKeyword_4_2_0 = (Keyword)cGroup_4_2.eContents().get(0);
 		private final Assignment cModeratorsAssignment_4_2_1 = (Assignment)cGroup_4_2.eContents().get(1);
 		private final RuleCall cModeratorsPersonParserRuleCall_4_2_1_0 = (RuleCall)cModeratorsAssignment_4_2_1.eContents().get(0);
+		private final Assignment cCancelledAssignment_5 = (Assignment)cGroup.eContents().get(5);
+		private final Keyword cCancelledCancelledKeyword_5_0 = (Keyword)cCancelledAssignment_5.eContents().get(0);
 		
 		//Panel:
 		//	'Panel'
 		//	name=STRING ('abstract' abstract=STRING)? ('panelists' panelists+=Person (',' panelists+=Person)*)? ('moderators'
-		//	moderators+=Person (',' moderators+=Person)*)?;
+		//	moderators+=Person (',' moderators+=Person)*)?
+		//	cancelled?='cancelled'?;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//'Panel' name=STRING ('abstract' abstract=STRING)? ('panelists' panelists+=Person (',' panelists+=Person)*)?
-		//('moderators' moderators+=Person (',' moderators+=Person)*)?
+		//('moderators' moderators+=Person (',' moderators+=Person)*)? cancelled?='cancelled'?
 		public Group getGroup() { return cGroup; }
 		
 		//'Panel'
@@ -821,6 +824,12 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//Person
 		public RuleCall getModeratorsPersonParserRuleCall_4_2_1_0() { return cModeratorsPersonParserRuleCall_4_2_1_0; }
+		
+		//cancelled?='cancelled'?
+		public Assignment getCancelledAssignment_5() { return cCancelledAssignment_5; }
+		
+		//'cancelled'
+		public Keyword getCancelledCancelledKeyword_5_0() { return cCancelledCancelledKeyword_5_0; }
 	}
 	public class SRCElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.SRC");
@@ -836,13 +845,16 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cUrlKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
 		private final Assignment cUrlAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
 		private final RuleCall cUrlSTRINGTerminalRuleCall_3_1_0 = (RuleCall)cUrlAssignment_3_1.eContents().get(0);
+		private final Assignment cCancelledAssignment_4 = (Assignment)cGroup.eContents().get(4);
+		private final Keyword cCancelledCancelledKeyword_4_0 = (Keyword)cCancelledAssignment_4.eContents().get(0);
 		
 		//SRC:
 		//	'SRC'
-		//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)?;
+		//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)?
+		//	cancelled?='cancelled'?;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'SRC' name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)?
+		//'SRC' name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)? cancelled?='cancelled'?
 		public Group getGroup() { return cGroup; }
 		
 		//'SRC'
@@ -877,6 +889,12 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//STRING
 		public RuleCall getUrlSTRINGTerminalRuleCall_3_1_0() { return cUrlSTRINGTerminalRuleCall_3_1_0; }
+		
+		//cancelled?='cancelled'?
+		public Assignment getCancelledAssignment_4() { return cCancelledAssignment_4; }
+		
+		//'cancelled'
+		public Keyword getCancelledCancelledKeyword_4_0() { return cCancelledCancelledKeyword_4_0; }
 	}
 	public class PosterElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.Poster");
@@ -892,13 +910,16 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cUrlKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
 		private final Assignment cUrlAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
 		private final RuleCall cUrlSTRINGTerminalRuleCall_3_1_0 = (RuleCall)cUrlAssignment_3_1.eContents().get(0);
+		private final Assignment cCancelledAssignment_4 = (Assignment)cGroup.eContents().get(4);
+		private final Keyword cCancelledCancelledKeyword_4_0 = (Keyword)cCancelledAssignment_4.eContents().get(0);
 		
 		//Poster:
 		//	'Poster'
-		//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)?;
+		//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)?
+		//	cancelled?='cancelled'?;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'Poster' name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)?
+		//'Poster' name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)? cancelled?='cancelled'?
 		public Group getGroup() { return cGroup; }
 		
 		//'Poster'
@@ -933,6 +954,12 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//STRING
 		public RuleCall getUrlSTRINGTerminalRuleCall_3_1_0() { return cUrlSTRINGTerminalRuleCall_3_1_0; }
+		
+		//cancelled?='cancelled'?
+		public Assignment getCancelledAssignment_4() { return cCancelledAssignment_4; }
+		
+		//'cancelled'
+		public Keyword getCancelledCancelledKeyword_4_0() { return cCancelledCancelledKeyword_4_0; }
 	}
 	public class KeynoteElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.Keynote");
@@ -952,13 +979,17 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cChairKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
 		private final Assignment cChairAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
 		private final RuleCall cChairPersonParserRuleCall_4_1_0 = (RuleCall)cChairAssignment_4_1.eContents().get(0);
+		private final Assignment cCancelledAssignment_5 = (Assignment)cGroup.eContents().get(5);
+		private final Keyword cCancelledCancelledKeyword_5_0 = (Keyword)cCancelledAssignment_5.eContents().get(0);
 		
 		//Keynote:
 		//	'Keynote'
-		//	name=STRING ('abstract' abstract=STRING)? ('speaker' speaker=Person)? ('chair' chair=Person)?;
+		//	name=STRING ('abstract' abstract=STRING)? ('speaker' speaker=Person)? ('chair' chair=Person)?
+		//	cancelled?='cancelled'?;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//'Keynote' name=STRING ('abstract' abstract=STRING)? ('speaker' speaker=Person)? ('chair' chair=Person)?
+		//cancelled?='cancelled'?
 		public Group getGroup() { return cGroup; }
 		
 		//'Keynote'
@@ -1005,6 +1036,12 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//Person
 		public RuleCall getChairPersonParserRuleCall_4_1_0() { return cChairPersonParserRuleCall_4_1_0; }
+		
+		//cancelled?='cancelled'?
+		public Assignment getCancelledAssignment_5() { return cCancelledAssignment_5; }
+		
+		//'cancelled'
+		public Keyword getCancelledCancelledKeyword_5_0() { return cCancelledCancelledKeyword_5_0; }
 	}
 	public class SponsorKeynoteElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.SponsorKeynote");
@@ -1024,13 +1061,17 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cChairKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
 		private final Assignment cChairAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
 		private final RuleCall cChairPersonParserRuleCall_4_1_0 = (RuleCall)cChairAssignment_4_1.eContents().get(0);
+		private final Assignment cCancelledAssignment_5 = (Assignment)cGroup.eContents().get(5);
+		private final Keyword cCancelledCancelledKeyword_5_0 = (Keyword)cCancelledAssignment_5.eContents().get(0);
 		
 		//SponsorKeynote:
 		//	'SponsorKeynote'
-		//	name=STRING ('abstract' abstract=STRING)? ('speaker' speaker=Person)? ('chair' chair=Person)?;
+		//	name=STRING ('abstract' abstract=STRING)? ('speaker' speaker=Person)? ('chair' chair=Person)?
+		//	cancelled?='cancelled'?;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//'SponsorKeynote' name=STRING ('abstract' abstract=STRING)? ('speaker' speaker=Person)? ('chair' chair=Person)?
+		//cancelled?='cancelled'?
 		public Group getGroup() { return cGroup; }
 		
 		//'SponsorKeynote'
@@ -1077,6 +1118,12 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//Person
 		public RuleCall getChairPersonParserRuleCall_4_1_0() { return cChairPersonParserRuleCall_4_1_0; }
+		
+		//cancelled?='cancelled'?
+		public Assignment getCancelledAssignment_5() { return cCancelledAssignment_5; }
+		
+		//'cancelled'
+		public Keyword getCancelledCancelledKeyword_5_0() { return cCancelledCancelledKeyword_5_0; }
 	}
 	public class WorkshopElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.Workshop");
@@ -1104,15 +1151,18 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cCommaKeyword_5_2_0 = (Keyword)cGroup_5_2.eContents().get(0);
 		private final Assignment cOrganizersAssignment_5_2_1 = (Assignment)cGroup_5_2.eContents().get(1);
 		private final RuleCall cOrganizersPersonParserRuleCall_5_2_1_0 = (RuleCall)cOrganizersAssignment_5_2_1.eContents().get(0);
+		private final Assignment cCancelledAssignment_6 = (Assignment)cGroup.eContents().get(6);
+		private final Keyword cCancelledCancelledKeyword_6_0 = (Keyword)cCancelledAssignment_6.eContents().get(0);
 		
 		//Workshop:
 		//	'Workshop'
 		//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)? ('name' fullName=STRING)? ('organizers'
-		//	organizers+=Person (',' organizers+=Person)*)?;
+		//	organizers+=Person (',' organizers+=Person)*)?
+		//	cancelled?='cancelled'?;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//'Workshop' name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)? ('name' fullName=STRING)? ('organizers'
-		//organizers+=Person (',' organizers+=Person)*)?
+		//organizers+=Person (',' organizers+=Person)*)? cancelled?='cancelled'?
 		public Group getGroup() { return cGroup; }
 		
 		//'Workshop'
@@ -1183,6 +1233,12 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//Person
 		public RuleCall getOrganizersPersonParserRuleCall_5_2_1_0() { return cOrganizersPersonParserRuleCall_5_2_1_0; }
+		
+		//cancelled?='cancelled'?
+		public Assignment getCancelledAssignment_6() { return cCancelledAssignment_6; }
+		
+		//'cancelled'
+		public Keyword getCancelledCancelledKeyword_6_0() { return cCancelledCancelledKeyword_6_0; }
 	}
 	public class TutorialElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.Tutorial");
@@ -1202,13 +1258,17 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cCommaKeyword_3_2_0 = (Keyword)cGroup_3_2.eContents().get(0);
 		private final Assignment cOrganizersAssignment_3_2_1 = (Assignment)cGroup_3_2.eContents().get(1);
 		private final RuleCall cOrganizersPersonParserRuleCall_3_2_1_0 = (RuleCall)cOrganizersAssignment_3_2_1.eContents().get(0);
+		private final Assignment cCancelledAssignment_4 = (Assignment)cGroup.eContents().get(4);
+		private final Keyword cCancelledCancelledKeyword_4_0 = (Keyword)cCancelledAssignment_4.eContents().get(0);
 		
 		//Tutorial:
 		//	'Tutorial'
-		//	name=STRING ('abstract' abstract=STRING)? ('organizers' organizers+=Person (',' organizers+=Person)*)?;
+		//	name=STRING ('abstract' abstract=STRING)? ('organizers' organizers+=Person (',' organizers+=Person)*)?
+		//	cancelled?='cancelled'?;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//'Tutorial' name=STRING ('abstract' abstract=STRING)? ('organizers' organizers+=Person (',' organizers+=Person)*)?
+		//cancelled?='cancelled'?
 		public Group getGroup() { return cGroup; }
 		
 		//'Tutorial'
@@ -1255,6 +1315,12 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//Person
 		public RuleCall getOrganizersPersonParserRuleCall_3_2_1_0() { return cOrganizersPersonParserRuleCall_3_2_1_0; }
+		
+		//cancelled?='cancelled'?
+		public Assignment getCancelledAssignment_4() { return cCancelledAssignment_4; }
+		
+		//'cancelled'
+		public Keyword getCancelledCancelledKeyword_4_0() { return cCancelledCancelledKeyword_4_0; }
 	}
 	public class DoctoralSymposiumElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.DoctoralSymposium");
@@ -1278,15 +1344,18 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cCommaKeyword_4_2_0 = (Keyword)cGroup_4_2.eContents().get(0);
 		private final Assignment cOrganizersAssignment_4_2_1 = (Assignment)cGroup_4_2.eContents().get(1);
 		private final RuleCall cOrganizersPersonParserRuleCall_4_2_1_0 = (RuleCall)cOrganizersAssignment_4_2_1.eContents().get(0);
+		private final Assignment cCancelledAssignment_5 = (Assignment)cGroup.eContents().get(5);
+		private final Keyword cCancelledCancelledKeyword_5_0 = (Keyword)cCancelledAssignment_5.eContents().get(0);
 		
 		//DoctoralSymposium:
 		//	'DoctoralSymposium'
 		//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)? ('organizers' organizers+=Person (','
-		//	organizers+=Person)*)?;
+		//	organizers+=Person)*)?
+		//	cancelled?='cancelled'?;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//'DoctoralSymposium' name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)? ('organizers' organizers+=Person (','
-		//organizers+=Person)*)?
+		//organizers+=Person)*)? cancelled?='cancelled'?
 		public Group getGroup() { return cGroup; }
 		
 		//'DoctoralSymposium'
@@ -1345,6 +1414,12 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//Person
 		public RuleCall getOrganizersPersonParserRuleCall_4_2_1_0() { return cOrganizersPersonParserRuleCall_4_2_1_0; }
+		
+		//cancelled?='cancelled'?
+		public Assignment getCancelledAssignment_5() { return cCancelledAssignment_5; }
+		
+		//'cancelled'
+		public Keyword getCancelledCancelledKeyword_5_0() { return cCancelledCancelledKeyword_5_0; }
 	}
 	public class EducatorSymposiumElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.EducatorSymposium");
@@ -1368,15 +1443,18 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cCommaKeyword_4_2_0 = (Keyword)cGroup_4_2.eContents().get(0);
 		private final Assignment cOrganizersAssignment_4_2_1 = (Assignment)cGroup_4_2.eContents().get(1);
 		private final RuleCall cOrganizersPersonParserRuleCall_4_2_1_0 = (RuleCall)cOrganizersAssignment_4_2_1.eContents().get(0);
+		private final Assignment cCancelledAssignment_5 = (Assignment)cGroup.eContents().get(5);
+		private final Keyword cCancelledCancelledKeyword_5_0 = (Keyword)cCancelledAssignment_5.eContents().get(0);
 		
 		//EducatorSymposium:
 		//	'EducatorSymposium'
 		//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)? ('organizers' organizers+=Person (','
-		//	organizers+=Person)*)?;
+		//	organizers+=Person)*)?
+		//	cancelled?='cancelled'?;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//'EducatorSymposium' name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)? ('organizers' organizers+=Person (','
-		//organizers+=Person)*)?
+		//organizers+=Person)*)? cancelled?='cancelled'?
 		public Group getGroup() { return cGroup; }
 		
 		//'EducatorSymposium'
@@ -1435,6 +1513,12 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//Person
 		public RuleCall getOrganizersPersonParserRuleCall_4_2_1_0() { return cOrganizersPersonParserRuleCall_4_2_1_0; }
+		
+		//cancelled?='cancelled'?
+		public Assignment getCancelledAssignment_5() { return cCancelledAssignment_5; }
+		
+		//'cancelled'
+		public Keyword getCancelledCancelledKeyword_5_0() { return cCancelledCancelledKeyword_5_0; }
 	}
 	public class ReceptionElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.Reception");
@@ -1446,13 +1530,16 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cAbstractKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
 		private final Assignment cAbstractAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
 		private final RuleCall cAbstractSTRINGTerminalRuleCall_2_1_0 = (RuleCall)cAbstractAssignment_2_1.eContents().get(0);
+		private final Assignment cCancelledAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final Keyword cCancelledCancelledKeyword_3_0 = (Keyword)cCancelledAssignment_3.eContents().get(0);
 		
 		//Reception:
 		//	'Reception'
-		//	name=STRING ('abstract' abstract=STRING)?;
+		//	name=STRING ('abstract' abstract=STRING)?
+		//	cancelled?='cancelled'?;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'Reception' name=STRING ('abstract' abstract=STRING)?
+		//'Reception' name=STRING ('abstract' abstract=STRING)? cancelled?='cancelled'?
 		public Group getGroup() { return cGroup; }
 		
 		//'Reception'
@@ -1475,6 +1562,12 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//STRING
 		public RuleCall getAbstractSTRINGTerminalRuleCall_2_1_0() { return cAbstractSTRINGTerminalRuleCall_2_1_0; }
+		
+		//cancelled?='cancelled'?
+		public Assignment getCancelledAssignment_3() { return cCancelledAssignment_3; }
+		
+		//'cancelled'
+		public Keyword getCancelledCancelledKeyword_3_0() { return cCancelledCancelledKeyword_3_0; }
 	}
 	public class ClinicElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.Clinic");
@@ -1490,13 +1583,16 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cUrlKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
 		private final Assignment cUrlAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
 		private final RuleCall cUrlSTRINGTerminalRuleCall_3_1_0 = (RuleCall)cUrlAssignment_3_1.eContents().get(0);
+		private final Assignment cCancelledAssignment_4 = (Assignment)cGroup.eContents().get(4);
+		private final Keyword cCancelledCancelledKeyword_4_0 = (Keyword)cCancelledAssignment_4.eContents().get(0);
 		
 		//Clinic:
 		//	'Clinic'
-		//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)?;
+		//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)?
+		//	cancelled?='cancelled'?;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'Clinic' name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)?
+		//'Clinic' name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)? cancelled?='cancelled'?
 		public Group getGroup() { return cGroup; }
 		
 		//'Clinic'
@@ -1531,6 +1627,12 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//STRING
 		public RuleCall getUrlSTRINGTerminalRuleCall_3_1_0() { return cUrlSTRINGTerminalRuleCall_3_1_0; }
+		
+		//cancelled?='cancelled'?
+		public Assignment getCancelledAssignment_4() { return cCancelledAssignment_4; }
+		
+		//'cancelled'
+		public Keyword getCancelledCancelledKeyword_4_0() { return cCancelledCancelledKeyword_4_0; }
 	}
 	public class LunchElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.Lunch");
@@ -1630,13 +1732,17 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cCommaKeyword_3_2_0 = (Keyword)cGroup_3_2.eContents().get(0);
 		private final Assignment cParticipantsAssignment_3_2_1 = (Assignment)cGroup_3_2.eContents().get(1);
 		private final RuleCall cParticipantsPersonParserRuleCall_3_2_1_0 = (RuleCall)cParticipantsAssignment_3_2_1.eContents().get(0);
+		private final Assignment cCancelledAssignment_4 = (Assignment)cGroup.eContents().get(4);
+		private final Keyword cCancelledCancelledKeyword_4_0 = (Keyword)cCancelledAssignment_4.eContents().get(0);
 		
 		//Meeting:
 		//	'Meeting'
-		//	name=STRING ('abstract' abstract=STRING)? ('participants' participants+=Person (',' participants+=Person)*)?;
+		//	name=STRING ('abstract' abstract=STRING)? ('participants' participants+=Person (',' participants+=Person)*)?
+		//	cancelled?='cancelled'?;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//'Meeting' name=STRING ('abstract' abstract=STRING)? ('participants' participants+=Person (',' participants+=Person)*)?
+		//cancelled?='cancelled'?
 		public Group getGroup() { return cGroup; }
 		
 		//'Meeting'
@@ -1683,6 +1789,12 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//Person
 		public RuleCall getParticipantsPersonParserRuleCall_3_2_1_0() { return cParticipantsPersonParserRuleCall_3_2_1_0; }
+		
+		//cancelled?='cancelled'?
+		public Assignment getCancelledAssignment_4() { return cCancelledAssignment_4; }
+		
+		//'cancelled'
+		public Keyword getCancelledCancelledKeyword_4_0() { return cCancelledCancelledKeyword_4_0; }
 	}
 	public class OpeningElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.Opening");
@@ -1694,13 +1806,16 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cAbstractKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
 		private final Assignment cAbstractAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
 		private final RuleCall cAbstractSTRINGTerminalRuleCall_2_1_0 = (RuleCall)cAbstractAssignment_2_1.eContents().get(0);
+		private final Assignment cCancelledAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final Keyword cCancelledCancelledKeyword_3_0 = (Keyword)cCancelledAssignment_3.eContents().get(0);
 		
 		//Opening:
 		//	'Opening'
-		//	name=STRING ('abstract' abstract=STRING)?;
+		//	name=STRING ('abstract' abstract=STRING)?
+		//	cancelled?='cancelled'?;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'Opening' name=STRING ('abstract' abstract=STRING)?
+		//'Opening' name=STRING ('abstract' abstract=STRING)? cancelled?='cancelled'?
 		public Group getGroup() { return cGroup; }
 		
 		//'Opening'
@@ -1723,6 +1838,12 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//STRING
 		public RuleCall getAbstractSTRINGTerminalRuleCall_2_1_0() { return cAbstractSTRINGTerminalRuleCall_2_1_0; }
+		
+		//cancelled?='cancelled'?
+		public Assignment getCancelledAssignment_3() { return cCancelledAssignment_3; }
+		
+		//'cancelled'
+		public Keyword getCancelledCancelledKeyword_3_0() { return cCancelledCancelledKeyword_3_0; }
 	}
 	public class PaperElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.Paper");
@@ -1754,15 +1875,18 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cProceedingsKeyword_8_0 = (Keyword)cGroup_8.eContents().get(0);
 		private final Assignment cProceedingsAssignment_8_1 = (Assignment)cGroup_8.eContents().get(1);
 		private final RuleCall cProceedingsSTRINGTerminalRuleCall_8_1_0 = (RuleCall)cProceedingsAssignment_8_1.eContents().get(0);
+		private final Assignment cCancelledAssignment_9 = (Assignment)cGroup.eContents().get(9);
+		private final Keyword cCancelledCancelledKeyword_9_0 = (Keyword)cCancelledAssignment_9.eContents().get(0);
 		
 		//Paper:
 		//	{Paper} name=STRING
 		//	'authors' authors+=Person (',' authors+=Person)* ('abstract' abstract=STRING)? ('preprint' preprint=STRING)? ('kind'
-		//	kind=[Kind|STRING])? ('proceedings' proceedings=STRING)?;
+		//	kind=[Kind|STRING])? ('proceedings' proceedings=STRING)?
+		//	cancelled?='cancelled'?;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//{Paper} name=STRING 'authors' authors+=Person (',' authors+=Person)* ('abstract' abstract=STRING)? ('preprint'
-		//preprint=STRING)? ('kind' kind=[Kind|STRING])? ('proceedings' proceedings=STRING)?
+		//preprint=STRING)? ('kind' kind=[Kind|STRING])? ('proceedings' proceedings=STRING)? cancelled?='cancelled'?
 		public Group getGroup() { return cGroup; }
 		
 		//{Paper}
@@ -1845,6 +1969,12 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//STRING
 		public RuleCall getProceedingsSTRINGTerminalRuleCall_8_1_0() { return cProceedingsSTRINGTerminalRuleCall_8_1_0; }
+		
+		//cancelled?='cancelled'?
+		public Assignment getCancelledAssignment_9() { return cCancelledAssignment_9; }
+		
+		//'cancelled'
+		public Keyword getCancelledCancelledKeyword_9_0() { return cCancelledCancelledKeyword_9_0; }
 	}
 	public class PersonElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.inria.diverse.models2016.dsl.Program.Person");
@@ -2213,7 +2343,8 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	//Panel:
 	//	'Panel'
 	//	name=STRING ('abstract' abstract=STRING)? ('panelists' panelists+=Person (',' panelists+=Person)*)? ('moderators'
-	//	moderators+=Person (',' moderators+=Person)*)?;
+	//	moderators+=Person (',' moderators+=Person)*)?
+	//	cancelled?='cancelled'?;
 	public PanelElements getPanelAccess() {
 		return pPanel;
 	}
@@ -2224,7 +2355,8 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//SRC:
 	//	'SRC'
-	//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)?;
+	//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)?
+	//	cancelled?='cancelled'?;
 	public SRCElements getSRCAccess() {
 		return pSRC;
 	}
@@ -2235,7 +2367,8 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//Poster:
 	//	'Poster'
-	//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)?;
+	//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)?
+	//	cancelled?='cancelled'?;
 	public PosterElements getPosterAccess() {
 		return pPoster;
 	}
@@ -2246,7 +2379,8 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//Keynote:
 	//	'Keynote'
-	//	name=STRING ('abstract' abstract=STRING)? ('speaker' speaker=Person)? ('chair' chair=Person)?;
+	//	name=STRING ('abstract' abstract=STRING)? ('speaker' speaker=Person)? ('chair' chair=Person)?
+	//	cancelled?='cancelled'?;
 	public KeynoteElements getKeynoteAccess() {
 		return pKeynote;
 	}
@@ -2257,7 +2391,8 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//SponsorKeynote:
 	//	'SponsorKeynote'
-	//	name=STRING ('abstract' abstract=STRING)? ('speaker' speaker=Person)? ('chair' chair=Person)?;
+	//	name=STRING ('abstract' abstract=STRING)? ('speaker' speaker=Person)? ('chair' chair=Person)?
+	//	cancelled?='cancelled'?;
 	public SponsorKeynoteElements getSponsorKeynoteAccess() {
 		return pSponsorKeynote;
 	}
@@ -2269,7 +2404,8 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	//Workshop:
 	//	'Workshop'
 	//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)? ('name' fullName=STRING)? ('organizers'
-	//	organizers+=Person (',' organizers+=Person)*)?;
+	//	organizers+=Person (',' organizers+=Person)*)?
+	//	cancelled?='cancelled'?;
 	public WorkshopElements getWorkshopAccess() {
 		return pWorkshop;
 	}
@@ -2280,7 +2416,8 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//Tutorial:
 	//	'Tutorial'
-	//	name=STRING ('abstract' abstract=STRING)? ('organizers' organizers+=Person (',' organizers+=Person)*)?;
+	//	name=STRING ('abstract' abstract=STRING)? ('organizers' organizers+=Person (',' organizers+=Person)*)?
+	//	cancelled?='cancelled'?;
 	public TutorialElements getTutorialAccess() {
 		return pTutorial;
 	}
@@ -2292,7 +2429,8 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	//DoctoralSymposium:
 	//	'DoctoralSymposium'
 	//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)? ('organizers' organizers+=Person (','
-	//	organizers+=Person)*)?;
+	//	organizers+=Person)*)?
+	//	cancelled?='cancelled'?;
 	public DoctoralSymposiumElements getDoctoralSymposiumAccess() {
 		return pDoctoralSymposium;
 	}
@@ -2304,7 +2442,8 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	//EducatorSymposium:
 	//	'EducatorSymposium'
 	//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)? ('organizers' organizers+=Person (','
-	//	organizers+=Person)*)?;
+	//	organizers+=Person)*)?
+	//	cancelled?='cancelled'?;
 	public EducatorSymposiumElements getEducatorSymposiumAccess() {
 		return pEducatorSymposium;
 	}
@@ -2315,7 +2454,8 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//Reception:
 	//	'Reception'
-	//	name=STRING ('abstract' abstract=STRING)?;
+	//	name=STRING ('abstract' abstract=STRING)?
+	//	cancelled?='cancelled'?;
 	public ReceptionElements getReceptionAccess() {
 		return pReception;
 	}
@@ -2326,7 +2466,8 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//Clinic:
 	//	'Clinic'
-	//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)?;
+	//	name=STRING ('abstract' abstract=STRING)? ('url' url=STRING)?
+	//	cancelled?='cancelled'?;
 	public ClinicElements getClinicAccess() {
 		return pClinic;
 	}
@@ -2359,7 +2500,8 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//Meeting:
 	//	'Meeting'
-	//	name=STRING ('abstract' abstract=STRING)? ('participants' participants+=Person (',' participants+=Person)*)?;
+	//	name=STRING ('abstract' abstract=STRING)? ('participants' participants+=Person (',' participants+=Person)*)?
+	//	cancelled?='cancelled'?;
 	public MeetingElements getMeetingAccess() {
 		return pMeeting;
 	}
@@ -2370,7 +2512,8 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//Opening:
 	//	'Opening'
-	//	name=STRING ('abstract' abstract=STRING)?;
+	//	name=STRING ('abstract' abstract=STRING)?
+	//	cancelled?='cancelled'?;
 	public OpeningElements getOpeningAccess() {
 		return pOpening;
 	}
@@ -2382,7 +2525,8 @@ public class ProgramGrammarAccess extends AbstractGrammarElementFinder {
 	//Paper:
 	//	{Paper} name=STRING
 	//	'authors' authors+=Person (',' authors+=Person)* ('abstract' abstract=STRING)? ('preprint' preprint=STRING)? ('kind'
-	//	kind=[Kind|STRING])? ('proceedings' proceedings=STRING)?;
+	//	kind=[Kind|STRING])? ('proceedings' proceedings=STRING)?
+	//	cancelled?='cancelled'?;
 	public PaperElements getPaperAccess() {
 		return pPaper;
 	}

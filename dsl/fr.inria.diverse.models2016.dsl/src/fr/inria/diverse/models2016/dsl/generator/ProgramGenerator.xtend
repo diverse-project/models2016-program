@@ -206,7 +206,8 @@ class ProgramGenerator extends AbstractGenerator {
 									«FOR a : p.authors SEPARATOR ","»
 									«getPerson(a)»
 									«ENDFOR»
-								]
+								],
+								"cancelled" : «p.cancelled»
 							}
 							«ENDFOR»
 						]
@@ -233,7 +234,8 @@ class ProgramGenerator extends AbstractGenerator {
 							«FOR o : workshop.organizers SEPARATOR ","»
 							«getPerson(o)»
 							«ENDFOR»
-						]
+						],
+						"cancelled" : «workshop.cancelled»
 					}
 				'''
 	}
@@ -256,7 +258,8 @@ class ProgramGenerator extends AbstractGenerator {
 						«IF clinic.url != null»
 						"url" : "«clinic.url»",
 						«ENDIF»
-						"title" : "«clinic.name»"
+						"title" : "«clinic.name»",
+						"cancelled" : «clinic.cancelled»
 					}
 				'''
 	}
@@ -276,7 +279,8 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						"type" : "Reception",
-						"title" : "«reception.name»"
+						"title" : "«reception.name»",
+						"cancelled" : «reception.cancelled»
 					}
 				'''
 	}
@@ -299,7 +303,8 @@ class ProgramGenerator extends AbstractGenerator {
 							«FOR o : panel.panelists SEPARATOR ","»
 							«getPerson(o)»
 							«ENDFOR»
-						]
+						],
+						"cancelled" : «panel.cancelled»
 					}
 				'''
 	}
@@ -317,7 +322,8 @@ class ProgramGenerator extends AbstractGenerator {
 							«FOR o : symposium.organizers SEPARATOR ","»
 							«getPerson(o)»
 							«ENDFOR»
-						]
+						],
+						"cancelled" : «symposium.cancelled»
 					}
 				'''
 	}
@@ -335,7 +341,8 @@ class ProgramGenerator extends AbstractGenerator {
 							«FOR o : symposium.organizers SEPARATOR ","»
 							«getPerson(o)»
 							«ENDFOR»
-						]
+						],
+						"cancelled" : «symposium.cancelled»
 					}
 				'''
 	}
@@ -353,7 +360,8 @@ class ProgramGenerator extends AbstractGenerator {
 							«FOR o : tutorial.organizers SEPARATOR ","»
 							«getPerson(o)»
 							«ENDFOR»
-						]
+						],
+						"cancelled" : «tutorial.cancelled»
 					}
 				'''
 	}
@@ -368,7 +376,8 @@ class ProgramGenerator extends AbstractGenerator {
 							«FOR o : meeting.participants SEPARATOR ","»
 							«getPerson(o)»
 							«ENDFOR»
-						]
+						],
+						"cancelled" : «meeting.cancelled»
 					}
 				'''
 	}
@@ -381,7 +390,8 @@ class ProgramGenerator extends AbstractGenerator {
 						«IF src.url != null»
 							"url" : "«src.url»",
 						«ENDIF»
-						"title" : "«src.name»"
+						"title" : "«src.name»",
+						"cancelled" : «src.cancelled»
 					}
 				'''
 	}
@@ -394,7 +404,8 @@ class ProgramGenerator extends AbstractGenerator {
 						«IF poster.url != null»
 							"url" : "«poster.url»",
 						«ENDIF»
-						"title" : "«poster.name»"
+						"title" : "«poster.name»",
+						"cancelled" : «poster.cancelled»
 					}
 				'''
 	}
@@ -410,11 +421,12 @@ class ProgramGenerator extends AbstractGenerator {
 						"speaker" : «getPerson(keynote.speaker)»
 						«IF abstractPresent || chairPresent»,«ENDIF»
 						«IF abstractPresent»
-						"abstract" : "«keynote.abstract.replace("\n","\\n")»"«IF chairPresent»,«ENDIF»
+						"abstract" : "«keynote.abstract.replace("\n","\\n")»",
 						«ENDIF»
 						«IF chairPresent»
-						"chair" : «getPerson(keynote.chair)»
-						«ENDIF»
+						"chair" : «getPerson(keynote.chair)»,
+						«ENDIF»,
+						"cancelled" : «keynote.cancelled»
 					}
 				'''
 	}
@@ -430,11 +442,12 @@ class ProgramGenerator extends AbstractGenerator {
 						"speaker" : «getPerson(keynote.speaker)»
 						«IF abstractPresent || chairPresent»,«ENDIF»
 						«IF abstractPresent»
-						"abstract" : "«keynote.abstract.replace("\n","\\n")»"«IF chairPresent»,«ENDIF»
+						"abstract" : "«keynote.abstract.replace("\n","\\n")»",
 						«ENDIF»
 						«IF chairPresent»
 						"chair" : «getPerson(keynote.chair)»
-						«ENDIF»
+						«ENDIF»,
+						"cancelled" : «keynote.cancelled»
 					}
 				'''
 	}
@@ -444,7 +457,8 @@ class ProgramGenerator extends AbstractGenerator {
 				'''
 					{
 						"type" : "Opening",
-						"title" : "«opening.name»"
+						"title" : "«opening.name»",
+						"cancelled" : «opening.cancelled»
 					}
 				'''
 	}

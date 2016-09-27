@@ -585,7 +585,8 @@ Motivated by addressing the above limitations, we develop a domain model extract
 				kind
 					"Demo"
 				proceedings
-					"http://models2016.irisa.fr/proceedings/demos/MODELS_2016_Demos_paper_10.pdf";
+					"http://models2016.irisa.fr/proceedings/demos/MODELS_2016_Demos_paper_10.pdf"
+					cancelled;
 					
 			"Reifier: Model-Driven Engineering of Component-Based and Service-Oriented JEE~Applications"
 				authors
@@ -866,7 +867,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		TalkSession "Testing and Analysis"
 			chair "Silvia Abrahao"	email "sabrahao@dsic.upv.es"	homepage "Chair homepage"
 				abstract "Session abstract"
-				papers "Towards Mutation Analysis for Use Cases", "A Generic Framework for Model-Set Selection for the Unification of Testing and Learning MDE Tasks", "Automatic Detection of Incomplete Requirements via Symbolic Analysis", "A Requirement Driven Testing Method for Multi-disciplinary System Design";
+				papers "Towards Mutation Analysis for Use Cases", "A Model Management Approach for Assurance Case Reuse due to System Evolution", "Automatic Detection of Incomplete Requirements via Symbolic Analysis", "A Requirement Driven Testing Method for Multi-disciplinary System Design";
 				
 		TalkSession "Model Transformation"
 			chair "Friedrich Steimann"	email "steimann@fernuni-hagen.de"	homepage "Chair homepage"
@@ -876,7 +877,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		TalkSession "Testing and Simulation"
 			chair "Joel Greenyer"	email "greenyer@inf.uni-hannover.de"	homepage "Chair homepage"
 				abstract "Session abstract"
-				papers "Incremental Diagram Layout for Concrete Syntax Migration", "A Model Management Approach for Assurance Case Reuse due to System Evolution", "Towards the Verification of Industrial Communication Protocols through a Simulation Environment Based on QEMU and SystemC";
+				papers "Incremental Diagram Layout for Concrete Syntax Migration", "A Generic Framework for Model-Set Selection for the Unification of Testing and Learning MDE Tasks", "Towards the Verification of Industrial Communication Protocols through a Simulation Environment Based on QEMU and SystemC";
 			
 		TalkSession "Models and Code"
 			chair "Jürgen Dingel"	email "varro@mit.bme.hu"	homepage "Chair homepage"
@@ -916,7 +917,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		TalkSession "Tooling"
 			chair "Jean-Marc Jézéquel"	email "Jean-Marc.Jezequel@irisa.fr"	homepage "Chair homepage"
 				abstract "Session abstract"
-				papers "PrefetchML: A Framework for Prefetching and Caching Models", "Partial Loading of XMI Models", "Integration of a Graph-Based Model Indexer in Commercial Modelling Tools", "Query-based Access Control for Secure Collaborative Modeling Using Bidirectional Transformations";
+				papers "Query-based Access Control for Secure Collaborative Modeling Using Bidirectional Transformations", "PrefetchML: A Framework for Prefetching and Caching Models", "Partial Loading of XMI Models", "Integration of a Graph-Based Model Indexer in Commercial Modelling Tools";
 	
 	    TalkSession "Domain-Specific Modelling"
 			chair "Eugene Syriani"	email "syriani@iro.umontreal.ca"	homepage "Chair homepage"

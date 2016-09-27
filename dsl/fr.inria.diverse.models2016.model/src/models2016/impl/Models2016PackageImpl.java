@@ -444,6 +444,15 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getEvent_Cancelled() {
+		return (EAttribute)eventEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getTalkSession() {
 		return talkSessionEClass;
 	}
@@ -786,6 +795,15 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getPaper_Cancelled() {
+		return (EAttribute)paperEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EAttribute getPaper_Abstract() {
 		return (EAttribute)paperEClass.getEStructuralFeatures().get(2);
 	}
@@ -1025,6 +1043,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		createEAttribute(eventEClass, EVENT__NAME);
 		createEAttribute(eventEClass, EVENT__ABSTRACT);
 		createEAttribute(eventEClass, EVENT__URL);
+		createEAttribute(eventEClass, EVENT__CANCELLED);
 
 		talkSessionEClass = createEClass(TALK_SESSION);
 		createEReference(talkSessionEClass, TALK_SESSION__CHAIR);
@@ -1078,6 +1097,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		createEAttribute(paperEClass, PAPER__NAME);
 		createEReference(paperEClass, PAPER__KIND);
 		createEAttribute(paperEClass, PAPER__PROCEEDINGS);
+		createEAttribute(paperEClass, PAPER__CANCELLED);
 
 		lunchEClass = createEClass(LUNCH);
 
@@ -1177,6 +1197,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		initEAttribute(getEvent_Name(), ecorePackage.getEString(), "name", null, 1, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEvent_Abstract(), ecorePackage.getEString(), "abstract", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEvent_Url(), ecorePackage.getEString(), "url", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEvent_Cancelled(), ecorePackage.getEBoolean(), "cancelled", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(talkSessionEClass, TalkSession.class, "TalkSession", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTalkSession_Chair(), this.getPerson(), null, "chair", null, 0, 1, TalkSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1230,6 +1251,7 @@ public class Models2016PackageImpl extends EPackageImpl implements Models2016Pac
 		initEAttribute(getPaper_Name(), ecorePackage.getEString(), "name", null, 0, 1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPaper_Kind(), this.getKind(), null, "kind", null, 0, 1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPaper_Proceedings(), ecorePackage.getEString(), "proceedings", null, 0, 1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPaper_Cancelled(), ecorePackage.getEBoolean(), "cancelled", null, 0, 1, Paper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(lunchEClass, Lunch.class, "Lunch", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

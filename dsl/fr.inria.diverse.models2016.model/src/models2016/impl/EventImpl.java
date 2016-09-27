@@ -21,6 +21,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link models2016.impl.EventImpl#getName <em>Name</em>}</li>
  *   <li>{@link models2016.impl.EventImpl#getAbstract <em>Abstract</em>}</li>
  *   <li>{@link models2016.impl.EventImpl#getUrl <em>Url</em>}</li>
+ *   <li>{@link models2016.impl.EventImpl#isCancelled <em>Cancelled</em>}</li>
  * </ul>
  *
  * @generated
@@ -85,6 +86,26 @@ public abstract class EventImpl extends MinimalEObjectImpl.Container implements 
 	 * @ordered
 	 */
 	protected String url = URL_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #isCancelled() <em>Cancelled</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isCancelled()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean CANCELLED_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isCancelled() <em>Cancelled</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isCancelled()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean cancelled = CANCELLED_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,6 +194,27 @@ public abstract class EventImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean isCancelled() {
+		return cancelled;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setCancelled(boolean newCancelled) {
+		boolean oldCancelled = cancelled;
+		cancelled = newCancelled;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Models2016Package.EVENT__CANCELLED, oldCancelled, cancelled));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -182,6 +224,8 @@ public abstract class EventImpl extends MinimalEObjectImpl.Container implements 
 				return getAbstract();
 			case Models2016Package.EVENT__URL:
 				return getUrl();
+			case Models2016Package.EVENT__CANCELLED:
+				return isCancelled();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -202,6 +246,9 @@ public abstract class EventImpl extends MinimalEObjectImpl.Container implements 
 				return;
 			case Models2016Package.EVENT__URL:
 				setUrl((String)newValue);
+				return;
+			case Models2016Package.EVENT__CANCELLED:
+				setCancelled((Boolean)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -224,6 +271,9 @@ public abstract class EventImpl extends MinimalEObjectImpl.Container implements 
 			case Models2016Package.EVENT__URL:
 				setUrl(URL_EDEFAULT);
 				return;
+			case Models2016Package.EVENT__CANCELLED:
+				setCancelled(CANCELLED_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -242,6 +292,8 @@ public abstract class EventImpl extends MinimalEObjectImpl.Container implements 
 				return ABSTRACT_EDEFAULT == null ? abstract_ != null : !ABSTRACT_EDEFAULT.equals(abstract_);
 			case Models2016Package.EVENT__URL:
 				return URL_EDEFAULT == null ? url != null : !URL_EDEFAULT.equals(url);
+			case Models2016Package.EVENT__CANCELLED:
+				return cancelled != CANCELLED_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -262,6 +314,8 @@ public abstract class EventImpl extends MinimalEObjectImpl.Container implements 
 		result.append(abstract_);
 		result.append(", url: ");
 		result.append(url);
+		result.append(", cancelled: ");
+		result.append(cancelled);
 		result.append(')');
 		return result.toString();
 	}

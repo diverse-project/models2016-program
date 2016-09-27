@@ -36,6 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link models2016.impl.PaperImpl#getName <em>Name</em>}</li>
  *   <li>{@link models2016.impl.PaperImpl#getKind <em>Kind</em>}</li>
  *   <li>{@link models2016.impl.PaperImpl#getProceedings <em>Proceedings</em>}</li>
+ *   <li>{@link models2016.impl.PaperImpl#isCancelled <em>Cancelled</em>}</li>
  * </ul>
  *
  * @generated
@@ -140,6 +141,26 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 	 * @ordered
 	 */
 	protected String proceedings = PROCEEDINGS_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #isCancelled() <em>Cancelled</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isCancelled()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean CANCELLED_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isCancelled() <em>Cancelled</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isCancelled()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean cancelled = CANCELLED_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -257,6 +278,27 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean isCancelled() {
+		return cancelled;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setCancelled(boolean newCancelled) {
+		boolean oldCancelled = cancelled;
+		cancelled = newCancelled;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Models2016Package.PAPER__CANCELLED, oldCancelled, cancelled));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public String getAbstract() {
 		return abstract_;
 	}
@@ -329,6 +371,8 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 				return basicGetKind();
 			case Models2016Package.PAPER__PROCEEDINGS:
 				return getProceedings();
+			case Models2016Package.PAPER__CANCELLED:
+				return isCancelled();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -361,6 +405,9 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 			case Models2016Package.PAPER__PROCEEDINGS:
 				setProceedings((String)newValue);
 				return;
+			case Models2016Package.PAPER__CANCELLED:
+				setCancelled((Boolean)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -391,6 +438,9 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 			case Models2016Package.PAPER__PROCEEDINGS:
 				setProceedings(PROCEEDINGS_EDEFAULT);
 				return;
+			case Models2016Package.PAPER__CANCELLED:
+				setCancelled(CANCELLED_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -415,6 +465,8 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 				return kind != null;
 			case Models2016Package.PAPER__PROCEEDINGS:
 				return PROCEEDINGS_EDEFAULT == null ? proceedings != null : !PROCEEDINGS_EDEFAULT.equals(proceedings);
+			case Models2016Package.PAPER__CANCELLED:
+				return cancelled != CANCELLED_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -437,6 +489,8 @@ public class PaperImpl extends MinimalEObjectImpl.Container implements Paper {
 		result.append(name);
 		result.append(", proceedings: ");
 		result.append(proceedings);
+		result.append(", cancelled: ");
+		result.append(cancelled);
 		result.append(')');
 		return result.toString();
 	}

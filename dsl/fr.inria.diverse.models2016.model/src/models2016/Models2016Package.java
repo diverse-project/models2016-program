@@ -251,13 +251,22 @@ public interface Models2016Package extends EPackage {
 	int EVENT__URL = 2;
 
 	/**
+	 * The feature id for the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EVENT__CANCELLED = 3;
+
+	/**
 	 * The number of structural features of the '<em>Event</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_FEATURE_COUNT = 3;
+	int EVENT_FEATURE_COUNT = 4;
 
 	/**
 	 * The number of operations of the '<em>Event</em>' class.
@@ -304,6 +313,15 @@ public interface Models2016Package extends EPackage {
 	 * @ordered
 	 */
 	int TALK_SESSION__URL = EVENT__URL;
+
+	/**
+	 * The feature id for the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TALK_SESSION__CANCELLED = EVENT__CANCELLED;
 
 	/**
 	 * The feature id for the '<em><b>Chair</b></em>' containment reference.
@@ -379,6 +397,15 @@ public interface Models2016Package extends EPackage {
 	int PANEL__URL = EVENT__URL;
 
 	/**
+	 * The feature id for the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PANEL__CANCELLED = EVENT__CANCELLED;
+
+	/**
 	 * The feature id for the '<em><b>Panelists</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -450,6 +477,15 @@ public interface Models2016Package extends EPackage {
 	 * @ordered
 	 */
 	int WORKSHOP__URL = EVENT__URL;
+
+	/**
+	 * The feature id for the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORKSHOP__CANCELLED = EVENT__CANCELLED;
 
 	/**
 	 * The feature id for the '<em><b>Organizers</b></em>' containment reference list.
@@ -525,6 +561,15 @@ public interface Models2016Package extends EPackage {
 	int TUTORIAL__URL = EVENT__URL;
 
 	/**
+	 * The feature id for the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TUTORIAL__CANCELLED = EVENT__CANCELLED;
+
+	/**
 	 * The feature id for the '<em><b>Organizers</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -589,6 +634,15 @@ public interface Models2016Package extends EPackage {
 	int DOCTORAL_SYMPOSIUM__URL = EVENT__URL;
 
 	/**
+	 * The feature id for the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCTORAL_SYMPOSIUM__CANCELLED = EVENT__CANCELLED;
+
+	/**
 	 * The feature id for the '<em><b>Organizers</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -651,6 +705,15 @@ public interface Models2016Package extends EPackage {
 	 * @ordered
 	 */
 	int EDUCATOR_SYMPOSIUM__URL = EVENT__URL;
+
+	/**
+	 * The feature id for the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EDUCATOR_SYMPOSIUM__CANCELLED = EVENT__CANCELLED;
 
 	/**
 	 * The feature id for the '<em><b>Organizers</b></em>' containment reference list.
@@ -791,6 +854,15 @@ public interface Models2016Package extends EPackage {
 	int RECEPTION__URL = EVENT__URL;
 
 	/**
+	 * The feature id for the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECEPTION__CANCELLED = EVENT__CANCELLED;
+
+	/**
 	 * The number of structural features of the '<em>Reception</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -844,6 +916,15 @@ public interface Models2016Package extends EPackage {
 	 * @ordered
 	 */
 	int CLINIC__URL = EVENT__URL;
+
+	/**
+	 * The feature id for the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLINIC__CANCELLED = EVENT__CANCELLED;
 
 	/**
 	 * The number of structural features of the '<em>Clinic</em>' class.
@@ -1074,13 +1155,22 @@ public interface Models2016Package extends EPackage {
 	int PAPER__PROCEEDINGS = 5;
 
 	/**
+	 * The feature id for the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAPER__CANCELLED = 6;
+
+	/**
 	 * The number of structural features of the '<em>Paper</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PAPER_FEATURE_COUNT = 6;
+	int PAPER_FEATURE_COUNT = 7;
 
 	/**
 	 * The number of operations of the '<em>Paper</em>' class.
@@ -1127,6 +1217,15 @@ public interface Models2016Package extends EPackage {
 	 * @ordered
 	 */
 	int LUNCH__URL = EVENT__URL;
+
+	/**
+	 * The feature id for the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LUNCH__CANCELLED = EVENT__CANCELLED;
 
 	/**
 	 * The number of structural features of the '<em>Lunch</em>' class.
@@ -1184,6 +1283,15 @@ public interface Models2016Package extends EPackage {
 	int COFFEE_BREAK__URL = EVENT__URL;
 
 	/**
+	 * The feature id for the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COFFEE_BREAK__CANCELLED = EVENT__CANCELLED;
+
+	/**
 	 * The number of structural features of the '<em>Coffee Break</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1237,6 +1345,15 @@ public interface Models2016Package extends EPackage {
 	 * @ordered
 	 */
 	int MEETING__URL = EVENT__URL;
+
+	/**
+	 * The feature id for the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEETING__CANCELLED = EVENT__CANCELLED;
 
 	/**
 	 * The feature id for the '<em><b>Participants</b></em>' containment reference list.
@@ -1303,6 +1420,15 @@ public interface Models2016Package extends EPackage {
 	int SRC__URL = EVENT__URL;
 
 	/**
+	 * The feature id for the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SRC__CANCELLED = EVENT__CANCELLED;
+
+	/**
 	 * The number of structural features of the '<em>SRC</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1358,6 +1484,15 @@ public interface Models2016Package extends EPackage {
 	int POSTER__URL = EVENT__URL;
 
 	/**
+	 * The feature id for the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTER__CANCELLED = EVENT__CANCELLED;
+
+	/**
 	 * The number of structural features of the '<em>Poster</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1411,6 +1546,15 @@ public interface Models2016Package extends EPackage {
 	 * @ordered
 	 */
 	int KEYNOTE__URL = EVENT__URL;
+
+	/**
+	 * The feature id for the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int KEYNOTE__CANCELLED = EVENT__CANCELLED;
 
 	/**
 	 * The feature id for the '<em><b>Speaker</b></em>' containment reference.
@@ -1523,6 +1667,15 @@ public interface Models2016Package extends EPackage {
 	int SPONSOR_KEYNOTE__URL = KEYNOTE__URL;
 
 	/**
+	 * The feature id for the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPONSOR_KEYNOTE__CANCELLED = KEYNOTE__CANCELLED;
+
+	/**
 	 * The feature id for the '<em><b>Speaker</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1594,6 +1747,15 @@ public interface Models2016Package extends EPackage {
 	 * @ordered
 	 */
 	int OPENING__URL = EVENT__URL;
+
+	/**
+	 * The feature id for the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPENING__CANCELLED = EVENT__CANCELLED;
 
 	/**
 	 * The number of structural features of the '<em>Opening</em>' class.
@@ -1856,6 +2018,17 @@ public interface Models2016Package extends EPackage {
 	 * @generated
 	 */
 	EAttribute getEvent_Url();
+
+	/**
+	 * Returns the meta object for the attribute '{@link models2016.Event#isCancelled <em>Cancelled</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cancelled</em>'.
+	 * @see models2016.Event#isCancelled()
+	 * @see #getEvent()
+	 * @generated
+	 */
+	EAttribute getEvent_Cancelled();
 
 	/**
 	 * Returns the meta object for class '{@link models2016.TalkSession <em>Talk Session</em>}'.
@@ -2263,6 +2436,17 @@ public interface Models2016Package extends EPackage {
 	EAttribute getPaper_Proceedings();
 
 	/**
+	 * Returns the meta object for the attribute '{@link models2016.Paper#isCancelled <em>Cancelled</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cancelled</em>'.
+	 * @see models2016.Paper#isCancelled()
+	 * @see #getPaper()
+	 * @generated
+	 */
+	EAttribute getPaper_Cancelled();
+
+	/**
 	 * Returns the meta object for the attribute '{@link models2016.Paper#getAbstract <em>Abstract</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2645,6 +2829,14 @@ public interface Models2016Package extends EPackage {
 		EAttribute EVENT__URL = eINSTANCE.getEvent_Url();
 
 		/**
+		 * The meta object literal for the '<em><b>Cancelled</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EVENT__CANCELLED = eINSTANCE.getEvent_Cancelled();
+
+		/**
 		 * The meta object literal for the '{@link models2016.impl.TalkSessionImpl <em>Talk Session</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2973,6 +3165,14 @@ public interface Models2016Package extends EPackage {
 		 * @generated
 		 */
 		EAttribute PAPER__PROCEEDINGS = eINSTANCE.getPaper_Proceedings();
+
+		/**
+		 * The meta object literal for the '<em><b>Cancelled</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PAPER__CANCELLED = eINSTANCE.getPaper_Cancelled();
 
 		/**
 		 * The meta object literal for the '<em><b>Abstract</b></em>' attribute feature.

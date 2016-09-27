@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link models2016.Event#getName <em>Name</em>}</li>
  *   <li>{@link models2016.Event#getAbstract <em>Abstract</em>}</li>
  *   <li>{@link models2016.Event#getUrl <em>Url</em>}</li>
+ *   <li>{@link models2016.Event#isCancelled <em>Cancelled</em>}</li>
  * </ul>
  *
  * @see models2016.Models2016Package#getEvent()
@@ -100,5 +101,31 @@ public interface Event extends EObject {
 	 * @generated
 	 */
 	void setUrl(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Cancelled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Cancelled</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Cancelled</em>' attribute.
+	 * @see #setCancelled(boolean)
+	 * @see models2016.Models2016Package#getEvent_Cancelled()
+	 * @model
+	 * @generated
+	 */
+	boolean isCancelled();
+
+	/**
+	 * Sets the value of the '{@link models2016.Event#isCancelled <em>Cancelled</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Cancelled</em>' attribute.
+	 * @see #isCancelled()
+	 * @generated
+	 */
+	void setCancelled(boolean value);
 
 } // Event
