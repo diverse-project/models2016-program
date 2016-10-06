@@ -867,7 +867,7 @@ The proposed GEMOC 2016 will be a full-day workshop that brings together researc
 		TalkSession "Testing and Analysis"
 			chair "Silvia Abrahao"	email "sabrahao@dsic.upv.es"	homepage "Chair homepage"
 				abstract "Session abstract"
-				papers "Towards Mutation Analysis for Use Cases", "A Model Management Approach for Assurance Case Reuse due to System Evolution", "Automatic Detection of Incomplete Requirements via Symbolic Analysis", "A Requirement Driven Testing Method for Multi-disciplinary System Design";
+				papers "Towards Mutation Analysis for Use Cases", "A Requirement Driven Testing Method for Multi-disciplinary System Design", "Automatic Detection of Incomplete Requirements via Symbolic Analysis", "A Model Management Approach for Assurance Case Reuse due to System Evolution";
 				
 		TalkSession "Model Transformation"
 			chair "Friedrich Steimann"	email "steimann@fernuni-hagen.de"	homepage "Chair homepage"
